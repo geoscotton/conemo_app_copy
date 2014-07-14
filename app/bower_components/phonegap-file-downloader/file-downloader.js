@@ -37,7 +37,6 @@ function filetransfer(download_link,fp) {
             if (downloaderGlobal.completionTally === dl.download_links.length) {
                 alert("Download Complete!");
             }
-            progressContainer.setAttribute("class","fader");
         },
         function(error) {
             console.log("download error source " + error.source);
