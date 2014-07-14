@@ -37871,7 +37871,7 @@ var downloaderGlobal = {
     failureTally: 0,
     rootdir: ''
   };
-function filetransfer(download_link, fp) {
+function filetransfer(download_links, fp) {
   var fileTransfer = new FileTransfer();
   var progressContainer = document.getElementById('progressContainer');
   progressContainer.setAttribute('style', 'display: block');
@@ -37889,14 +37889,13 @@ function filetransfer(download_link, fp) {
       progressContainer.appendChild(document.createTextNode('Downloading files...'));
     }
   };
-  fileTransfer.download(download_link, fp, function (entry) {
+  fileTransfer.download(download_links, fp, function (entry) {
     var dl = new Downloader();
     console.log('download complete: ' + entry.fullPath);
     downloaderGlobal.completionTally++;
     if (downloaderGlobal.completionTally === dl.download_links.length) {
       alert('Download Complete!');
     }
-    progressContainer.setAttribute('class', 'fader');
   }, function (error) {
     console.log('download error source ' + error.source);
     downloaderGlobal.failureTally++;

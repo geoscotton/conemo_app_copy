@@ -341,6 +341,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
       _.each(dateSortedLessons, function (el, idx) {
         if (el.dayInTreatment <= daysInTreatment) {
           mostRecentLesson = el;
+          mostRecentLesson.currentSessionIndex = idx + 1;
         }
       });
       return mostRecentLesson;
@@ -353,6 +354,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     $scope.currentLessonMonth = l10nStrings.months[dateToday.getMonth()];
     $scope.currentLessonDay = dateToday.getDate();
     $scope.l10n = l10n;
+    $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
   }
 ]);

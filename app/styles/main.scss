@@ -156,9 +156,6 @@ ol.well li {
     font-size: 1.5em !important;
 }
 
-p {
-    font-size: 1.2em;
-}
 
 .label {
     font-size: 1em !important;
@@ -168,19 +165,11 @@ p {
     font-size: 1.7em !important;
 }
 
-div.slide {
-    font-size: 1.4em;
-}
-
 .main-title {
     font-size: 1.7em !important;
 }
 
-.fader {
-    opacity: 0;
-    -webkit-transition: opacity 2s ease-in-out;
-    -moz-transition: opactiy 2s ease-in-out;
-    -ms-transition: opacity 2s ease-in-out;
-    -o-transition: opacity 2s ease-in-out;
-    transition: opacity 2s ease-in-out;
+video {
+    padding: 5px;
+    width: 100%
 }

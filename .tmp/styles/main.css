@@ -9902,39 +9902,27 @@ ol.well li {
   font-size: 1.5em !important;
 }
 
-/* line 159, ../../app/styles/main.scss */
-
-p {
-  font-size: 1.2em;
-}
-
-/* line 163, ../../app/styles/main.scss */
+/* line 160, ../../app/styles/main.scss */
 
 .label {
   font-size: 1em !important;
 }
 
-/* line 167, ../../app/styles/main.scss */
+/* line 164, ../../app/styles/main.scss */
 
 .navigation-button {
   font-size: 1.7em !important;
 }
 
-/* line 171, ../../app/styles/main.scss */
-
-div.slide {
-  font-size: 1.4em;
-}
-
-/* line 175, ../../app/styles/main.scss */
+/* line 168, ../../app/styles/main.scss */
 
 .main-title {
   font-size: 1.7em !important;
 }
 
-/* line 179, ../../app/styles/main.scss */
+/* line 172, ../../app/styles/main.scss */
 
-.fader {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
+video {
+  padding: 5px;
+  width: 100%;
 }

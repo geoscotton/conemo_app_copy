@@ -5,7 +5,7 @@ var downloaderGlobal = {
 };
 
 
-function filetransfer(download_link,fp) {
+function filetransfer(download_links,fp) {
     var fileTransfer = new FileTransfer();
     var progressContainer = document.getElementById('progressContainer');
         progressContainer.setAttribute("style","display: block"); 
@@ -28,7 +28,7 @@ function filetransfer(download_link,fp) {
 
     
     fileTransfer.download(
-        download_link,
+        download_links,
         fp,
         function(entry) {
             var dl = new Downloader();

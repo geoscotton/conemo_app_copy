@@ -53,7 +53,7 @@ angular.module('conemoAppApp')
         _.each(dateSortedLessons,function(el,idx){
             if (el.dayInTreatment <= daysInTreatment){
                 mostRecentLesson = el;
-                mostRecentLesson.currentSessionIndex = idx;
+                mostRecentLesson.currentSessionIndex = idx+1;
             }
         })
 
