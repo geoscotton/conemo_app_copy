@@ -1,27 +1,48 @@
-var app = {
+var downloaderGlobal = {
+    completionTally: 0,
     failureTally: 0,
     rootdir: ''
 };
 
+
 function filetransfer(download_link,fp) {
     var fileTransfer = new FileTransfer();
-
+    var progressContainer = document.getElementById('progressContainer');
+        progressContainer.setAttribute("style","display: block"); 
+    var progressbar = document.createElement("div");
+        progressbar.setAttribute("class","progress-bar progress-bar-striped");
+        progressContainer.appendChild(progressbar);
 
     if (typeof FileTransfer === 'undefined') {
         alert("File transfer plug in is missing. Downloads may not be complete.");
         return;
     }
+    fileTransfer.onprogress = function(progressEvent) {
+        
+        if (progressEvent.lengthComputable) {
+            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+            progressbar.setAttribute("style","width: "+perc+"%");
+            progressContainer.appendChild(document.createTextNode("Downloading files..."));
+        }
+    };
+
     
     fileTransfer.download(
         download_link,
         fp,
         function(entry) {
+            var dl = new Downloader();
             console.log("download complete: " + entry.fullPath);
+            downloaderGlobal.completionTally++;
+            if (downloaderGlobal.completionTally === dl.download_links.length) {
+                alert("Download Complete!");
+            }
+            progressContainer.setAttribute("class","fader");
         },
         function(error) {
             console.log("download error source " + error.source);
-            app.failureTally++;
-            console.log(app.failureTally);
+            downloaderGlobal.failureTally++;
+            console.log(downloaderGlobal.failureTally);
         }
     );
 }
@@ -46,7 +67,7 @@ Downloader.prototype = {
         document.addEventListener('deviceready', function() {
         window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, fileSystemSuccess, fileSystemFail);
         function fileSystemSuccess(fileSystem) {
-            app.rootdir = fileSystem.root.toURL();
+            downloaderGlobal.rootdir = fileSystem.root.toURL();
         }
         function fileSystemFail(evt) {
             //Unable to access file system
@@ -69,7 +90,7 @@ Downloader.prototype = {
         for (var i = 0; i < numDownloads; i++) {
             ext = download_links[i].substr(download_links[i].lastIndexOf('.') + 1);
 
-            fp.push(app.rootdir + "downloaded_video" + i + "." + ext); // file path and name
+            fp.push(downloaderGlobal.rootdir + "downloaded_video" + i + "." + ext); // file path and name
             localStorage.setItem('fp',JSON.stringify(fp));
 
             // call file transfer function
@@ -77,13 +98,10 @@ Downloader.prototype = {
         }
 
         setTimeout(function() {
-            if (app.failureTally === 0) {
-                alert("Download Complete!");
-            }
-            else {
+            if (downloaderGlobal.failureTally !== 0) {
                 alert("Something went wrong with the download and people have been notified.");
             }
-            app.failureTally = 0;
+            downloaderGlobal.failureTally = 0;
         }, 500);
     },
 
@@ -145,3 +163,5 @@ Downloader.prototype = {
         return content;
     }
 };
+
+

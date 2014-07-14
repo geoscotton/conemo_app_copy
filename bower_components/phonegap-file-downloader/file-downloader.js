@@ -17,6 +17,18 @@ function filetransfer(download_link,fp) {
             console.log(app.failureTally);
         }
     );
+    fileTransfer.onprogress = function(progressEvent) {
+        if (progressEvent.lengthComputable) {
+            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+            statusDom.innerHTML = perc + "% loaded...";
+        } else {
+            if(statusDom.innerHTML == "") {
+                statusDom.innerHTML = "Loading";
+            } else {
+                statusDom.innerHTML += ".";
+            }
+        }
+    };
 }
 
 var Downloader = function Downloader() {

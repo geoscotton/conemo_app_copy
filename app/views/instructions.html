@@ -4,8 +4,10 @@
 
 	<div ng-bind-html="'instructionsContent' | translate">
 	</div>
-	<button ng-click="download()" class="btn btn-info">Test Download</button>
-	
+	<button ng-click="downloadTest()" id="download-button" class="btn btn-info">Test Download</button>
+	<div class="progress" id="progressContainer" style="display: none;">
+	</div>
 	<div class="well">Conemo Phone App V{{ appVersion }}</div>
+
 
 </div>

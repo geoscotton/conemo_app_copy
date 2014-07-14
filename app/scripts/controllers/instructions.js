@@ -4,7 +4,9 @@ angular.module('conemoAppApp')
   .controller('InstructionsCtrl', function ($scope, $rootScope) {
 
   $scope.instructionsLabel = l10nStrings.instructionsLabel;
-  
+  $scope.downloadTest = function() {
+    $rootScope.downloader.download();
+  };
   $scope.prompt = function(){
 		var PurpleRobotClient = new PurpleRobot();
       	PurpleRobotClient.showNativeDialog({

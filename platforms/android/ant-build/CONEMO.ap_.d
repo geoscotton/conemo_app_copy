@@ -77,12 +77,12 @@
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransfer.js \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransferError.js \
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/4f7c2d9d.scripts.js \
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/568f74b2.vendor.js \
+/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/0f429bea.scripts.js \
+/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/1b6a97ec.vendor.js \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/cbits.js \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/lessons.json \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/styles/29403685.vendor.css \
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/styles/8df1f24f.main.css \
+/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/styles/ae8b3885.main.css \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/styles/bootstrap.min.css \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/views/contact.html \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/views/instructions.html \
