@@ -1,0 +1,32 @@
+[
+  {
+    "_class": "Lesson",
+    "title": "Lesson 1",
+    "dayInTreatment": 1,
+    "l10n": "en",
+    "guid": "64a339f1-a4b9-4114-992f-f7b40743a6c6",
+    "slides": [
+      {
+        "_class": "Slide",
+        "position": 1,
+        "title": "Slide 1",
+        "content": "<h1>I'm a slide</h1>"
+      }
+    ]
+  },
+  {
+    "_class": "Lesson",
+    "title": "Lição 1",
+    "dayInTreatment": 1,
+    "l10n": "pt-BR",
+    "guid": "82397e8f-cf7d-4d01-8cf4-cdc4f9ac7da5",
+    "slides": [
+      {
+        "_class": "Slide",
+        "position": 1,
+        "title": "Página 1",
+        "content": "<h1>Eu sou uma página</h1>"
+      }
+    ]
+  }
+]
