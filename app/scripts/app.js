@@ -109,4 +109,5 @@ angular.module('conemoAppApp', [
             "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true"
         ];
         $rootScope.downloader.setDownloadLinks(filesToDownload);
+
     });

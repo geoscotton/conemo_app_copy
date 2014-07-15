@@ -3,17 +3,20 @@ var Downloader = function Downloader() {
 };
 
 var downloaderGlobal = {
+    includeProgressbar: true,
     completionTally: 0,
     failureTally: 0,
     rootdir: '',
-    textDownloadComplete: '',
-    textDownloading: '',
-    textDownloadingError: '',
-    textDownloadButton: '',
-    textMissingPlugin: '',
-    textMissingContent: '',
-    textUnavailableMedia: '',
-    textUnsupportedFileType: '',
+    textDownloadComplete: 'Download Complete!',
+    textDownloading: 'Downloading',
+    textFile: 'file',
+    textFiles: 'files',
+    textDownloadingError: 'Something went wrong with the download and a report has been sent.',
+    textDownloadButton: 'Download',
+    textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
+    textMissingContent: 'Please download the most recent content.',
+    textUnavailableMedia: '<p>This media is unavailable.</p>',
+    textUnsupportedFileType: 'That file type is not currently supported.',
     download_links: [
         "http://techslides.com/demos/sample-videos/small.mp4",
         "http://techslides.com/demos/sample-videos/small.mp4",
@@ -57,7 +60,7 @@ Downloader.prototype = {
 
         setTimeout(function() {
             if (downloaderGlobal.failureTally !== 0) {
-                alert("Something went wrong with the download and people have been notified.");
+                alert(downloaderGlobal.textDownloadingError);
             }
             downloaderGlobal.failureTally = 0;
         }, 500);
@@ -82,7 +85,7 @@ Downloader.prototype = {
 
         setTimeout(function() {
             if (downloaderGlobal.failureTally !== 0) {
-                alert("Something went wrong with the download and people have been notified.");
+                alert(downloaderGlobal.textDownloadingError);
             }
             downloaderGlobal.failureTally = 0;
         }, 500);
@@ -116,7 +119,7 @@ Downloader.prototype = {
         for (i = 0; i < elements.length; i++) {
             // access local storage if files have already been downloaded
             if (typeof localStorage.fp === 'undefined') {
-                alert("Please download the most recent content.");
+                alert(downloaderGlobal.textMissingContent);
                 return content;
             }
             else if (elements[0] === "null") {
@@ -139,7 +142,7 @@ Downloader.prototype = {
                     elemTag = "<audio controls style='max-width:100%;'><source type='audio/mpeg' src='"+fileSrc+"'/></audio>";
                 }
                 else {
-                    alert("That file type is not currently supported.");
+                    alert(downloaderGlobal.textUnsupportedFileType);
                     return content;
                 }
             elemNew.push(elemTag);
@@ -147,7 +150,7 @@ Downloader.prototype = {
                 content = content.replace(elements[i],elemNew[i]);
             }
             else {
-                content = content.replace(elements[i],"<p>This video is unavailable.</p>");
+                content = content.replace(elements[i],downloaderGlobal.textUnavailableMedia);
             }
         }
         return content;
@@ -159,12 +162,12 @@ Downloader.prototype = {
         content = dl.replaceElements(fileType,content,thingsToReplace);
 
         return content;
-    },
+    }
 
 };
 
 function constructProgressBar (ftObject, numDownloads) {
-    document.getElementById("download-counter").innerHTML = "Downloading "+numDownloads+" files...";
+    document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " " +numDownloads+ " " + downloaderGlobal.textFiles + "...";
 
     var progressContainer = document.getElementById('progressContainer');
         progressContainer.setAttribute("style","display: block"); 
@@ -190,16 +193,17 @@ function constructProgressBar (ftObject, numDownloads) {
                     progress.setAttribute("class","progress fade");
 
                     var numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
+
                     if (numDownloads > 1) {
-                        document.getElementById("download-counter").innerHTML = "Downloading "+numDownloadsRemaining+" files...";
+                        document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " "+numDownloadsRemaining+" "+downloaderGlobal.textFiles + "...";
                     }
                     else if (numDownloadsRemaining === 1) {
-                        document.getElementById("download-counter").innerHTML = "Downloading 1 file...";
+                        document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " 1 " + downloaderGlobal.textFile + "...";
                     }
                     else {
                         progressContainer.setAttribute("style","display: none");
                     }
-                }, 500);
+                }, 1000);
             }
         }
     };
@@ -210,11 +214,12 @@ function filetransfer(file,filepath,numFiles) {
     var fileTransfer = new FileTransfer();
     downloaderGlobal.completionTally = 0;
     var numDownloads = numFiles;
-    constructProgressBar(fileTransfer,numDownloads);
-
+    if (downloaderGlobal.includeProgressbar === true) {
+        constructProgressBar(fileTransfer,numDownloads);
+    }
 
     if (typeof FileTransfer === 'undefined') {
-        alert("File transfer plug in is missing. Downloads may not be complete.");
+        alert(downloaderGlobal.textMissingPlugin);
         return;
     }
     
@@ -225,16 +230,14 @@ function filetransfer(file,filepath,numFiles) {
             console.log("download complete: " + entry.fullPath);
             downloaderGlobal.completionTally++;
 
-
             if (downloaderGlobal.completionTally === numDownloads) {
-                alert("Download Complete!");
-                document.getElementById('progressContainer').setAttribute("style","display: none");
+                alert(downloaderGlobal.textDownloadComplete);
             }
         },
         function(error) {
             console.log("download error source " + error.source);
+            (new PurpleRobot()).emitReading('download_error', 'download error source' + error.source).execute();
             downloaderGlobal.failureTally++;
-            console.log(downloaderGlobal.failureTally);
         }
     );
 }

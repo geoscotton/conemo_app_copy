@@ -63,7 +63,17 @@ i18nStrings.generalContent.push({
     'I am having issues with connectivity'
   ],
   thankYouAlert: 'Thank you, the study staff have been contacted.',
-  unreadLabel: 'unread'
+  unreadLabel: 'unread',
+  textDownloadComplete: 'Download Complete!',
+  textDownloading: 'Downloading',
+  textFile: 'file',
+  textFiles: 'files',
+  textDownloadingError: 'Something went wrong with the download and a report has been sent.',
+  textDownloadButton: 'Download',
+  textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
+  textMissingContent: 'Please download the most recent content.',
+  textUnavailableMedia: '<p>This media is unavailable.</p>',
+  textUnsupportedFileType: 'That file type is not currently supported.'
 });
 i18nStrings.generalContent.push({
   l10n: 'pt-BR',
