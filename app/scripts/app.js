@@ -98,14 +98,15 @@ angular.module('conemoAppApp', [
     .run(function($rootScope) {
         $rootScope.downloader = new Downloader();
         $rootScope.downloader.getFileSystem();
-        $rootScope.downloader.download_links = [
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4"
+        var filesToDownload = [
+            "https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
+            "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true"
         ];
+        $rootScope.downloader.setDownloadLinks(filesToDownload);
     })

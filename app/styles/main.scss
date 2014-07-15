@@ -171,5 +171,23 @@ ol.well li {
 
 video {
     padding: 5px;
-    width: 100%
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+div.slide h2 {
+    font-size: 1.7em !important;
+}
+
+div.progress {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+div.progress.fade {
+    display: none;
 }

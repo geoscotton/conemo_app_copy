@@ -9925,4 +9925,30 @@ ol.well li {
 video {
   padding: 5px;
   width: 100%;
+  height: auto;
+}
+
+/* line 178, ../../app/styles/main.scss */
+
+p {
+  font-size: 1.2em;
+}
+
+/* line 182, ../../app/styles/main.scss */
+
+div.slide h2 {
+  font-size: 1.7em !important;
+}
+
+/* line 186, ../../app/styles/main.scss */
+
+div.progress {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* line 191, ../../app/styles/main.scss */
+
+div.progress.fade {
+  display: none;
 }

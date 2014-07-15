@@ -1,63 +1,24 @@
+var Downloader = function Downloader() {
+    this.className = "Downloader";
+};
+
 var downloaderGlobal = {
     completionTally: 0,
     failureTally: 0,
-    rootdir: ''
-};
-
-
-function filetransfer(download_links,fp) {
-    var fileTransfer = new FileTransfer();
-    var progressContainer = document.getElementById('progressContainer');
-        progressContainer.setAttribute("style","display: block"); 
-    var progressbar = document.createElement("div");
-        progressbar.setAttribute("class","progress-bar progress-bar-striped");
-        progressContainer.appendChild(progressbar);
-
-    if (typeof FileTransfer === 'undefined') {
-        alert("File transfer plug in is missing. Downloads may not be complete.");
-        return;
-    }
-    fileTransfer.onprogress = function(progressEvent) {
-        
-        if (progressEvent.lengthComputable) {
-            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
-            progressbar.setAttribute("style","width: "+perc+"%");
-            progressContainer.appendChild(document.createTextNode("Downloading files..."));
-        }
-    };
-
-    
-    fileTransfer.download(
-        download_links,
-        fp,
-        function(entry) {
-            var dl = new Downloader();
-            console.log("download complete: " + entry.fullPath);
-            downloaderGlobal.completionTally++;
-            if (downloaderGlobal.completionTally === dl.download_links.length) {
-                alert("Download Complete!");
-            }
-        },
-        function(error) {
-            console.log("download error source " + error.source);
-            downloaderGlobal.failureTally++;
-            console.log(downloaderGlobal.failureTally);
-        }
-    );
-}
-
-var Downloader = function Downloader() {
-    this.download_links = [
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
-            "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true"
-        ];
-    this.className = "Downloader";
+    rootdir: '',
+    textDownloadComplete: '',
+    textDownloading: '',
+    textDownloadingError: '',
+    textDownloadButton: '',
+    textMissingPlugin: '',
+    textMissingContent: '',
+    textUnavailableMedia: '',
+    textUnsupportedFileType: '',
+    download_links: [
+        "http://techslides.com/demos/sample-videos/small.mp4",
+        "http://techslides.com/demos/sample-videos/small.mp4",
+        "http://techslides.com/demos/sample-videos/small.mp4"
+    ]
 };
 
 Downloader.prototype = {
@@ -82,18 +43,19 @@ Downloader.prototype = {
     download: function() {
         // the order that these links are listed is the order that corresponds to the content.
         // e.g. the first link in this array will correspond to the string 'video01' in the content.
-        var dl = new Downloader();
-        var download_links = dl.download_links;
-        var numDownloads = download_links.length;
+        // var dl = new Downloader();
+        var dl_links = downloaderGlobal.download_links;
+        var numDownloads = dl_links.length;
+        document.getElementById("download-button").innerHTML = "Downloading "+numDownloads+" files...";
         fp = [];
         for (var i = 0; i < numDownloads; i++) {
-            ext = download_links[i].substr(download_links[i].lastIndexOf('.') + 1);
+            ext = dl_links[i].substr(dl_links[i].lastIndexOf('.') + 1);
 
             fp.push(downloaderGlobal.rootdir + "downloaded_video" + i + "." + ext); // file path and name
             localStorage.setItem('fp',JSON.stringify(fp));
 
             // call file transfer function
-            filetransfer(download_links[i], fp[i]);
+            filetransfer(dl_links[i], fp[i]);
         }
 
         setTimeout(function() {
@@ -102,6 +64,16 @@ Downloader.prototype = {
             }
             downloaderGlobal.failureTally = 0;
         }, 500);
+    },
+
+    setDownloadLinks: function(links) {
+        if (links instanceof Array) {
+            downloaderGlobal.download_links = links;
+        }
+        else {
+            downloaderGlobal.download_links = links;
+        }
+        console.log(downloaderGlobal.download_links);
     },
 
     findInstances: function(fileType,content) {
@@ -163,4 +135,65 @@ Downloader.prototype = {
     }
 };
 
+function constructProgressBar (ftObject) {
+
+    var progressContainer = document.getElementById('progressContainer');
+        progressContainer.setAttribute("style","display: block"); 
+    var progress = document.createElement("div");
+        progress.setAttribute("class","progress");
+        progressContainer.appendChild(progress);
+    var progressbar = document.createElement("div");
+        progressbar.setAttribute("class","progress-bar progress-bar-striped");
+        progressbar.setAttribute("aria-valuemin","0");
+        progressbar.setAttribute("aria-valuemax","100");
+        progressbar.setAttribute("role","progressbar");
+        progress.appendChild(progressbar);
+
+    ftObject.onprogress = function(progressEvent) {
+        
+        if (progressEvent.lengthComputable) {
+            var perc = Math.floor(progressEvent.loaded / progressEvent.total * 100);
+            progressbar.setAttribute("style","width: "+perc+"%");
+            progressbar.setAttribute("aria-valuenow",perc);
+
+            if (perc === 100) {
+                setTimeout(function() {
+                    progress.setAttribute("class","progress fade");
+                }, 500);
+            }
+        }
+    };
+}
+
+
+function filetransfer(file,filepath) {
+    var fileTransfer = new FileTransfer();
+    downloaderGlobal.completionTally = 0;
+
+    if (typeof FileTransfer === 'undefined') {
+        alert("File transfer plug in is missing. Downloads may not be complete.");
+        return;
+    }
+
+    constructProgressBar(fileTransfer);
+    
+    fileTransfer.download(
+        file,
+        filepath,
+        function(entry) {
+            var dl = new Downloader();
+            console.log("download complete: " + entry.fullPath);
+            downloaderGlobal.completionTally++;
+            if (downloaderGlobal.completionTally === downloaderGlobal.download_links.length) {
+                alert("Download Complete!");
+                document.getElementById("download-button").innerHTML = "Testing Download";
+            }
+        },
+        function(error) {
+            console.log("download error source " + error.source);
+            downloaderGlobal.failureTally++;
+            console.log(downloaderGlobal.failureTally);
+        }
+    );
+}
 
