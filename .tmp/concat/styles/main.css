@@ -9952,3 +9952,9 @@ div.progress {
 div.progress.fade {
   display: none;
 }
+
+/* line 195, ../../app/styles/main.scss */
+
+div#progressContainer {
+  margin-top: 15px;
+}

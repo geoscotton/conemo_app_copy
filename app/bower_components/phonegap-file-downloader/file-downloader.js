@@ -46,7 +46,7 @@ Downloader.prototype = {
         // var dl = new Downloader();
         var dl_links = downloaderGlobal.download_links;
         var numDownloads = dl_links.length;
-        document.getElementById("download-button").innerHTML = "Downloading "+numDownloads+" files...";
+
         fp = [];
         for (var i = 0; i < numDownloads; i++) {
             ext = dl_links[i].substr(dl_links[i].lastIndexOf('.') + 1);
@@ -73,12 +73,10 @@ Downloader.prototype = {
         else {
             downloaderGlobal.download_links = links;
         }
-        console.log(downloaderGlobal.download_links);
     },
 
-    findInstances: function(fileType,content) {
-        // global variable for use with insert function
-        elements = [];
+    findElements: function(fileType,content) {
+        var elements = [];
 
         // currently supported file types: video, audio and should appear with the file type and id numbers following
         // e.g. video1, audio2, video52, audio12, etc.
@@ -88,12 +86,11 @@ Downloader.prototype = {
         elements.push(found);
         elements = elements[0].split(',');
         return elements;
-
     },
 
-    insert: function(fileType,content) {
-        elemNums = [];
-        elemNew = [];
+    replaceElements: function(fileType,content,elements) {
+        var elemNums = [];
+        var elemNew = [];
         for (i = 0; i < elements.length; i++) {
             // access local storage if files have already been downloaded
             if (typeof localStorage.fp === 'undefined') {
@@ -132,10 +129,21 @@ Downloader.prototype = {
             }
         }
         return content;
-    }
+    },
+
+    insert: function(fileType,content) {
+        var dl = new Downloader();
+        thingsToReplace = dl.findElements(fileType,content);
+        content = dl.replaceElements(fileType,content,thingsToReplace);
+
+        return content;
+    },
+
 };
 
 function constructProgressBar (ftObject) {
+    var numDownloads = downloaderGlobal.download_links.length;
+    document.getElementById("download-button").innerHTML = "Downloading "+numDownloads+" files...";
 
     var progressContainer = document.getElementById('progressContainer');
         progressContainer.setAttribute("style","display: block"); 
@@ -159,6 +167,12 @@ function constructProgressBar (ftObject) {
             if (perc === 100) {
                 setTimeout(function() {
                     progress.setAttribute("class","progress fade");
+
+                    var numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
+                    document.getElementById("download-button").innerHTML = "Downloading "+numDownloadsRemaining+" files...";
+                    if (numDownloadsRemaining === 1) {
+                        document.getElementById("download-button").innerHTML = "Downloading 1 file...";
+                    }
                 }, 500);
             }
         }
@@ -168,6 +182,7 @@ function constructProgressBar (ftObject) {
 
 function filetransfer(file,filepath) {
     var fileTransfer = new FileTransfer();
+    var numDownloads = downloaderGlobal.download_links.length;
     downloaderGlobal.completionTally = 0;
 
     if (typeof FileTransfer === 'undefined') {
@@ -181,12 +196,12 @@ function filetransfer(file,filepath) {
         file,
         filepath,
         function(entry) {
-            var dl = new Downloader();
             console.log("download complete: " + entry.fullPath);
             downloaderGlobal.completionTally++;
-            if (downloaderGlobal.completionTally === downloaderGlobal.download_links.length) {
+
+            if (downloaderGlobal.completionTally === numDownloads) {
                 alert("Download Complete!");
-                document.getElementById("download-button").innerHTML = "Testing Download";
+                document.getElementById("download-button").innerHTML = "Download";
             }
         },
         function(error) {

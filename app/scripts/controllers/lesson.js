@@ -21,10 +21,10 @@ angular.module('conemoAppApp')
                 concatenatedSlides += '<div style="height:' + docHeight + 'px;" class="slide"  data-index="' + idx + '" data-position="' + el.position + '">' + el.content + '</div>';
 
             });
-            var videos = $rootScope.downloader.findInstances("video",concatenatedSlides);
-            concatenatedSlides = $rootScope.downloader.insert("video",concatenatedSlides,videos);
+            // var videos = $rootScope.downloader.findInstances("video",concatenatedSlides);
+            concatenatedSlides = $rootScope.downloader.insert("video",concatenatedSlides);
 
-            return concatenatedSlides
+            return concatenatedSlides;
         };
         
         $scope.navButtonGenerator = function (slideIndex) {

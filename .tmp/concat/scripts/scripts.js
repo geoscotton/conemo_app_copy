@@ -376,8 +376,8 @@ angular.module('conemoAppApp').controller('LessonCtrl', [
       _.each(slides, function (el, idx) {
         concatenatedSlides += '<div style="height:' + docHeight + 'px;" class="slide"  data-index="' + idx + '" data-position="' + el.position + '">' + el.content + '</div>';
       });
-      var videos = $rootScope.downloader.findInstances('video', concatenatedSlides);
-      concatenatedSlides = $rootScope.downloader.insert('video', concatenatedSlides, videos);
+      // var videos = $rootScope.downloader.findInstances("video",concatenatedSlides);
+      concatenatedSlides = $rootScope.downloader.insert('video', concatenatedSlides);
       return concatenatedSlides;
     };
     $scope.navButtonGenerator = function (slideIndex) {
