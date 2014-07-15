@@ -77,9 +77,9 @@
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransfer.js \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/plugins/org.apache.cordova.file-transfer/www/FileTransferError.js \
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/3e6c0609.vendor.js \
+/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/7817cb5d.scripts.js \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/cbits.js \
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/da20ebf9.scripts.js \
+/Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/cf25d5d7.vendor.js \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/scripts/lessons.json \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/styles/29403685.vendor.css \
 /Users/jeaniechung/projects/conemo_app_video/platforms/android/assets/www/styles/866d199d.main.css \
