@@ -1,6 +1,6 @@
 {
   "name": "phonegap_file_downloader",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "authors": [
     "Jeanie Chung <jeanie.chung@gmail.com>"
   ],
@@ -15,13 +15,13 @@
     "cordova.js",
     "FileTransfer.js"
   ],
-  "_release": "0.1.1",
+  "_release": "0.1.5",
   "_resolution": {
     "type": "version",
-    "tag": "v0.1.1",
-    "commit": "cd5ee733239be21ca91ffc4dcbd41f6ed7866338"
+    "tag": "v0.1.5",
+    "commit": "933589ceffaca2c3d760fa82c57f4fce46a52f1a"
   },
   "_source": "git://github.com/jchung1005/phonegap_file_downloader.git",
-  "_target": "~0.1.1",
+  "_target": "~0.1.5",
   "_originalSource": "phonegap-file-downloader"
 }

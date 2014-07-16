@@ -30,13 +30,13 @@ Config:
 -------
 Upon initial app installation, any files that you will want to insert into content will have to be downloaded from a remote server. 
 
-The URLs to the files can be changed by modifying the array `files.download_links`.
+The URLs to the files can be changed by modifying the array `downloaderGlobal.download_links`.
 
 The order in the array should correspond to the numerical ID you will use to identify the media in the content.
 
 For example:
 ```
-files.download_links = [
+downloaderGlobal.download_links = [
 		"http://example.com/video_funny.mp4",
 		"http://example.com/video_mediocre.mp4",
 		"http://example.com/video_sad.mp4"
@@ -59,5 +59,45 @@ files.insert('video',sampleText);
 
 will result in video0 playing the "funny" video and video1 and video01 playing the "mediocre" video.
 
+Downloading Single/Multiple Files
+---------------------------------
+
+To download multiple files, set an array of links, and set downloaderGlobal.download_links to that array (as shown above).
+
+Then you can call the function downloadMultiple() after creating a new instance of Downloader.
+```
+var downloader = new Downloader();
+downloaderGlobal.download_links = [
+		"http://example.com/video_funny.mp4",
+		"http://example.com/video_mediocre.mp4",
+		"http://example.com/video_sad.mp4"
+	];
+downloader.downloadMultiple();
+```
+
+For a single file, you can call the function downloadSingle with the target URL and optional argument of a folder path.
+
+```
+downloadSingle("http://www.example.com/picture.png")
+downloadSingle("http://www.example.com/specific_picture.png","/www/images");
+```
+
+Progress Bars
+-------------
+Where you want a progress bar, add the following markup:
+```
+<div id="progressContainer" style="display: none;">
+</div>
+```
+and the following CSS
+```
+div.progress {
+	opacity: 1;
+	transition: opacity 1s;
+}
+div.progress.fade {
+	display: none;
+}
+```
 
 

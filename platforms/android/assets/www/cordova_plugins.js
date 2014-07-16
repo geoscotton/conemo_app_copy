@@ -159,13 +159,29 @@ module.exports = [
         "clobbers": [
             "window.FileTransfer"
         ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.network-information/www/network.js",
+        "id": "org.apache.cordova.network-information.network",
+        "clobbers": [
+            "navigator.connection",
+            "navigator.network.connection"
+        ]
+    },
+    {
+        "file": "plugins/org.apache.cordova.network-information/www/Connection.js",
+        "id": "org.apache.cordova.network-information.Connection",
+        "clobbers": [
+            "Connection"
+        ]
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
     "org.apache.cordova.file": "1.2.1-dev",
-    "org.apache.cordova.file-transfer": "0.4.5-dev"
+    "org.apache.cordova.file-transfer": "0.4.5-dev",
+    "org.apache.cordova.network-information": "0.2.11-dev"
 }
 // BOTTOM OF METADATA
 });

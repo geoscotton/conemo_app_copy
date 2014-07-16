@@ -167,6 +167,18 @@ Downloader.prototype = {
 };
 
 function constructProgressBar (ftObject, numDownloads) {
+    // Where you want a progress bar, add the following markup:
+    //  <div id="progressContainer" style="display: none;">
+    //  </div>
+    // and the following CSS
+    // div.progress {
+    //     opacity: 1;
+    //     transition: opacity 1s;
+    // }
+    // div.progress.fade {
+    //     display: none;
+    // }
+
     document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " " +numDownloads+ " " + downloaderGlobal.textFiles + "...";
 
     var progressContainer = document.getElementById('progressContainer');
@@ -193,15 +205,12 @@ function constructProgressBar (ftObject, numDownloads) {
                     progress.setAttribute("class","progress fade");
 
                     var numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
-
+                    console.log(numDownloadsRemaining);
                     if (numDownloads > 1) {
                         document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " "+numDownloadsRemaining+" "+downloaderGlobal.textFiles + "...";
                     }
-                    else if (numDownloadsRemaining === 1) {
-                        document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " 1 " + downloaderGlobal.textFile + "...";
-                    }
                     else {
-                        progressContainer.setAttribute("style","display: none");
+                        document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " 1 " + downloaderGlobal.textFile + "...";
                     }
                 }, 1000);
             }
@@ -209,14 +218,10 @@ function constructProgressBar (ftObject, numDownloads) {
     };
 }
 
-
 function filetransfer(file,filepath,numFiles) {
     var fileTransfer = new FileTransfer();
     downloaderGlobal.completionTally = 0;
-    var numDownloads = numFiles;
-    if (downloaderGlobal.includeProgressbar === true) {
-        constructProgressBar(fileTransfer,numDownloads);
-    }
+    constructProgressBar(fileTransfer,numFiles);
 
     if (typeof FileTransfer === 'undefined') {
         alert(downloaderGlobal.textMissingPlugin);
@@ -229,15 +234,17 @@ function filetransfer(file,filepath,numFiles) {
         function(entry) {
             console.log("download complete: " + entry.fullPath);
             downloaderGlobal.completionTally++;
-
-            if (downloaderGlobal.completionTally === numDownloads) {
+            console.log(downloaderGlobal.completionTally+","+numFiles);
+            if (downloaderGlobal.completionTally === numFiles) {
                 alert(downloaderGlobal.textDownloadComplete);
+                // get rid of progress bar
+                document.getElementById('progressContainer').setAttribute("style","display: none");
             }
         },
         function(error) {
             console.log("download error source " + error.source);
-            (new PurpleRobot()).emitReading('download_error', 'download error source' + error.source).execute();
             downloaderGlobal.failureTally++;
+            console.log(downloaderGlobal.failureTally);
         }
     );
 }

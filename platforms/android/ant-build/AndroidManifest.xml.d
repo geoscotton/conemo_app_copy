@@ -1,2 +1,2 @@
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/ant-build/AndroidManifest.xml : \
-/Users/jeaniechung/projects/conemo_app_video/platforms/android/AndroidManifest.xml \
+/Users/jeaniechung/projects/conemo_app/platforms/android/ant-build/AndroidManifest.xml : \
+/Users/jeaniechung/projects/conemo_app/platforms/android/AndroidManifest.xml \
