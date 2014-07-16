@@ -5,9 +5,6 @@ PurpleRobot.setEnvironment('production');
 //set user's Purple Robot Id to the CONEMO project
 PurpleRobotClient.setUserId('CONEMO').execute();
 
-
-
-
 //configure internationalization defaults
 if (typeof localStorage.l10n === 'undefined' || localStorage.l10n === 'undefined') {
     var l10n = 'pt-BR'; //options are en | pt-BR | es-PE 
@@ -26,6 +23,9 @@ if (typeof localStorage.startDate === 'undefined') {
     var startDate = new Date();
     startDate.setHours(0, 0, 0, 0);
     localStorage.startDate = startDate;
+
+
+
 
 } else {
     var startDate = new Date(localStorage.startDate);
@@ -115,7 +115,6 @@ angular.module('conemoAppApp', [
         // set locale variables to downloader global variables
         downloaderGlobal.text = l10nStrings.downloaderText;
 
-
     })
     .run(function() {
         document.addEventListener("deviceready", onDeviceReady, false);
@@ -135,4 +134,49 @@ angular.module('conemoAppApp', [
 
             localStorage.setItem('connection',states[networkState]);
         }
+    })
+    .run(function($rootScope) {
+        var lessonDates = [];
+                function PRNotification(lesson){
+            var PurpleRobotClient = new PurpleRobot();
+            PurpleRobotClient.showScriptNotification({
+                title: "CONEMO",
+                message: "Lesson today: " + lesson,
+                isPersistent: true,
+                isSticky: false,
+                script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+              }).execute();
+        };
+
+            //WHERE TO ADD THE TRIGGERS
+            //grab the appropriate lessons from the locale
+            //loop over the lessons from the locale
+            //for each lesson, schedule a trigger that occurs at 8 am on the number of days in treatment listed in the object
+            //the script is the load notification pop up
+            //startDat
+        var startDate = new Date();
+
+      //   PurpleRobotClient.updateTrigger({
+      //       script: PurpleRobotClient.,
+      //       startAt: "20140505T020304",
+      //       endAt: "20140505T020404"
+      //     });
+      //   PurpleRobotClient.updateTrigger = function(options) {
+      //   options = options || {};
+
+      //   var timestamp = (new Date()).getTime();
+      //   var triggerId = options.triggerId || ("TRIGGER-" + timestamp);
+      //   var triggerJson = JSON.stringify({
+      //     type: options.type || "datetime",
+      //     name: triggerId,
+      //     identifier: triggerId,
+      //     action: options.script.toString(),
+      //     datetime_start: options.startAt,
+      //     datetime_end: options.endAt,
+      //     datetime_repeat: options.repeatRule || "FREQ=DAILY;INTERVAL=1"
+      //   });
+
+      //   return this._push("updateTrigger", q(triggerId) + ", " + triggerJson);
+      // };
+
     });

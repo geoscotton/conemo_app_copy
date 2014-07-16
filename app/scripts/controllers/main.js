@@ -46,6 +46,8 @@ angular.module('conemoAppApp')
     //Sort lessons by date to determine first lesson
     var dateSortedLessons = _.sortBy($rootScope.lessons,'dayInTreatment');
 
+
+
     var getRecentLesson = function(daysInTreatment,dateSortedLessons){
 
         var mostRecentLesson = {}; 
@@ -54,7 +56,11 @@ angular.module('conemoAppApp')
             if (el.dayInTreatment <= daysInTreatment){
                 mostRecentLesson = el;
                 mostRecentLesson.currentSessionIndex = idx+1;
+                // if (el.dayInTreatment === daysInTreatment) {
+                //     PRNotification(mostRecentLesson.title);
+                // }
             }
+
         })
 
         return mostRecentLesson
@@ -63,6 +69,41 @@ angular.module('conemoAppApp')
     var mostRecentLesson = getRecentLesson(daysInTreatment,dateSortedLessons);
 
     var dateToday = new Date();
+
+    (function schedulePRTriggers() {
+        if (typeof localStorage.triggersScheduled === 'undefined' || localStorage.triggersScheduled === 'undefined'){
+            var lessonReleaseDays = [];
+            var prTriggerDays = [];
+
+            for (var i = 0; i < dateSortedLessons.length; i++) {
+                lessonReleaseDays.push(dateSortedLessons[i].dayInTreatment);
+            }
+            _.each(lessonReleaseDays,function(el) {
+                prTriggerDays.push(moment().add('days',el).toISOString());
+            })
+            
+            _.each(prTriggerDays,function(el) {
+                var triggerStart = el;
+                var triggerEnd = moment(el).add('seconds',5).toISOString();
+
+                PurpleRobotClient.updateTrigger({
+                    script: PurpleRobotClient.showScriptNotification({
+                        title: "CONEMO",
+                        message: "Lesson today: " + mostRecentLesson.title,
+                        isPersistent: true,
+                        isSticky: false,
+                        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+                      }),
+                    startAt: triggerStart,
+                    endAt: triggerEnd,
+                    repeatRule: "FREQ=ONCE"
+                }).execute();
+            });
+
+            localStorage.setItem("triggersScheduled", moment().toISOString());
+        }
+    })();
+
 
 
     //Set page view vars
