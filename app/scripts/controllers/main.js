@@ -68,7 +68,6 @@ angular.module('conemoAppApp')
     //Set page view vars
     $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
-    $scope.currentLessonMonth = l10nStrings.months[dateToday.getMonth()];
     $scope.currentLessonDay = dateToday.getDate();
     $scope.l10n = l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;

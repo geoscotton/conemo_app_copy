@@ -64,16 +64,19 @@ i18nStrings.generalContent.push({
   ],
   thankYouAlert: 'Thank you, the study staff have been contacted.',
   unreadLabel: 'unread',
-  textDownloadComplete: 'Download Complete!',
-  textDownloading: 'Downloading',
-  textFile: 'file',
-  textFiles: 'files',
-  textDownloadingError: 'Something went wrong with the download and a report has been sent.',
-  textDownloadButton: 'Download',
-  textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
-  textMissingContent: 'Please download the most recent content.',
-  textUnavailableMedia: '<p>This media is unavailable.</p>',
-  textUnsupportedFileType: 'That file type is not currently supported.'
+  download: 'download',
+  downloaderText: {
+    textDownloadComplete: 'Download Complete!',
+    textDownloading: 'Downloading',
+    textFile: 'file',
+    textFiles: 'files',
+    textDownloadingError: 'Something went wrong with the download and a report has been sent.',
+    textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
+    textMissingContent: 'Please download the most recent content.',
+    textUnavailableMedia: '<p>This media is unavailable.</p>',
+    textUnsupportedFileType: 'That file type is not currently supported.',
+    textAlert: 'That file type is not currently supported.'
+  }
 });
 i18nStrings.generalContent.push({
   l10n: 'pt-BR',
@@ -107,7 +110,20 @@ i18nStrings.generalContent.push({
     'Estou com problemas em conectar a internet'
   ],
   thankYouAlert: 'Obrigado, a equipe do estudo foram contactados',
-  unreadLabel: 'n\xe3o lido'
+  unreadLabel: 'n\xe3o lido',
+  download: 'Baixar',
+  downloaderText: {
+    textDownloadComplete: 'Baixado completo!',
+    textDownloading: 'Baixando',
+    textFile: 'arquivo',
+    textFiles: 'arquivos',
+    textDownloadingError: 'Something went wrong with the download and a report has been sent.',
+    textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
+    textMissingContent: 'Please download the most recent content.',
+    textUnavailableMedia: '<p>This media is unavailable.</p>',
+    textUnsupportedFileType: 'That file type is not currently supported.',
+    textAlert: 'Testing in spanish'
+  }
 });
 i18nStrings.generalContent.push({
   l10n: 'es-PE',
@@ -141,7 +157,20 @@ i18nStrings.generalContent.push({
     'Tengo dificultades con la conexi\xf3n de internet'
   ],
   thankYouAlert: 'Gracias. Tu mensaje ha sido enviado. Tu enfermera o enfermero te llamar\xe1 pronto.',
-  unreadLabel: 'No le\xeddo'
+  unreadLabel: 'No le\xeddo',
+  download: 'Descargar',
+  downloaderText: {
+    textDownloadComplete: 'Descarga completa!',
+    textDownloading: 'Descargando',
+    textFile: 'archivo',
+    textFiles: 'archivos',
+    textDownloadingError: 'Something went wrong with the download and a report has been sent.',
+    textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
+    textMissingContent: 'Please download the most recent content.',
+    textUnavailableMedia: '<p>This media is unavailable.</p>',
+    textUnsupportedFileType: 'That file type is not currently supported.',
+    textAlert: 'Testing in spanish'
+  }
 });
 /*jslint node: true */
 'use strict';
@@ -245,6 +274,8 @@ angular.module('conemoAppApp', [
         'https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true'
       ];
     $rootScope.downloader.setDownloadLinks(filesToDownload);
+    // set locale variables to downloader global variables
+    downloaderGlobal.text = l10nStrings.downloaderText;
   }
 ]).run(function () {
   document.addEventListener('deviceready', onDeviceReady, false);
@@ -377,7 +408,6 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     //Set page view vars
     $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
-    $scope.currentLessonMonth = l10nStrings.months[dateToday.getMonth()];
     $scope.currentLessonDay = dateToday.getDate();
     $scope.l10n = l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
@@ -507,6 +537,7 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
   '$rootScope',
   function ($scope, $rootScope) {
     $scope.instructionsLabel = l10nStrings.instructionsLabel;
+    $scope.downloadLabel = l10nStrings.download;
     $scope.downloadVideos = function () {
       $rootScope.downloader.downloadMultiple();
     };

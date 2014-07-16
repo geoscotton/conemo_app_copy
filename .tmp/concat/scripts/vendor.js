@@ -37874,22 +37874,25 @@ var downloaderGlobal = {
     completionTally: 0,
     failureTally: 0,
     rootdir: '',
-    textDownloadComplete: 'Download Complete!',
-    textDownloading: 'Downloading',
-    textFile: 'file',
-    textFiles: 'files',
-    textDownloadingError: 'Something went wrong with the download and a report has been sent.',
-    textDownloadButton: 'Download',
-    textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
-    textMissingContent: 'Please download the most recent content.',
-    textUnavailableMedia: '<p>This media is unavailable.</p>',
-    textUnsupportedFileType: 'That file type is not currently supported.',
+    text: {
+      textDownloadComplete: 'Download Complete!',
+      textDownloading: 'Downloading',
+      textFile: 'file',
+      textFiles: 'files',
+      textDownloadingError: 'Something went wrong with the download and a report has been sent.',
+      textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
+      textMissingContent: 'Please download the most recent content.',
+      textUnavailableMedia: '<p>This media is unavailable.</p>',
+      textUnsupportedFileType: 'That file type is not currently supported.',
+      textAlert: 'That file type is not currently supported.'
+    },
     download_links: [
       'http://techslides.com/demos/sample-videos/small.mp4',
       'http://techslides.com/demos/sample-videos/small.mp4',
       'http://techslides.com/demos/sample-videos/small.mp4'
     ]
   };
+var textStrings;
 Downloader.prototype = {
   getFileSystem: function () {
     document.addEventListener('deviceready', function () {
@@ -37904,7 +37907,7 @@ Downloader.prototype = {
     });
   },
   test: function () {
-    return 'test';
+    alert(downloaderGlobal.text.textAlert);
   },
   downloadSingle: function (url, folder) {
     fpSingle = '';
@@ -37921,7 +37924,7 @@ Downloader.prototype = {
     filetransfer(url, fpSingle, 1);
     setTimeout(function () {
       if (downloaderGlobal.failureTally !== 0) {
-        alert(downloaderGlobal.textDownloadingError);
+        alert(downloaderGlobal.text.textDownloadingError);
       }
       downloaderGlobal.failureTally = 0;
     }, 500);
@@ -37942,7 +37945,7 @@ Downloader.prototype = {
     }
     setTimeout(function () {
       if (downloaderGlobal.failureTally !== 0) {
-        alert(downloaderGlobal.textDownloadingError);
+        alert(downloaderGlobal.text.textDownloadingError);
       }
       downloaderGlobal.failureTally = 0;
     }, 500);
@@ -37967,10 +37970,10 @@ Downloader.prototype = {
   replaceElements: function (fileType, content, elements) {
     var elemNums = [];
     var elemNew = [];
-    for (i = 0; i < elements.length; i++) {
+    for (var i = 0; i < elements.length; i++) {
       // access local storage if files have already been downloaded
       if (typeof localStorage.fp === 'undefined') {
-        alert(downloaderGlobal.textMissingContent);
+        alert(downloaderGlobal.text.textMissingContent);
         return content;
       } else if (elements[0] === 'null') {
         return content;
@@ -37988,14 +37991,14 @@ Downloader.prototype = {
       } else if (fileType === 'audio') {
         elemTag = '<audio controls style=\'max-width:100%;\'><source type=\'audio/mpeg\' src=\'' + fileSrc + '\'/></audio>';
       } else {
-        alert(downloaderGlobal.textUnsupportedFileType);
+        alert(downloaderGlobal.text.textUnsupportedFileType);
         return content;
       }
       elemNew.push(elemTag);
       if (elemNew[i].indexOf('undefined') === -1) {
         content = content.replace(elements[i], elemNew[i]);
       } else {
-        content = content.replace(elements[i], downloaderGlobal.textUnavailableMedia);
+        content = content.replace(elements[i], downloaderGlobal.text.textUnavailableMedia);
       }
     }
     return content;
@@ -38019,7 +38022,7 @@ function constructProgressBar(ftObject, numDownloads) {
   // div.progress.fade {
   //     display: none;
   // }
-  document.getElementById('download-counter').innerHTML = downloaderGlobal.textDownloading + ' ' + numDownloads + ' ' + downloaderGlobal.textFiles + '...';
+  document.getElementById('download-counter').innerHTML = downloaderGlobal.text.textDownloading + ' ' + numDownloads + ' ' + downloaderGlobal.text.textFiles + '...';
   var progressContainer = document.getElementById('progressContainer');
   progressContainer.setAttribute('style', 'display: block');
   var progress = document.createElement('div');
@@ -38042,9 +38045,9 @@ function constructProgressBar(ftObject, numDownloads) {
           var numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
           console.log(numDownloadsRemaining);
           if (numDownloads > 1) {
-            document.getElementById('download-counter').innerHTML = downloaderGlobal.textDownloading + ' ' + numDownloadsRemaining + ' ' + downloaderGlobal.textFiles + '...';
+            document.getElementById('download-counter').innerHTML = downloaderGlobal.text.textDownloading + ' ' + numDownloadsRemaining + ' ' + downloaderGlobal.text.textFiles + '...';
           } else {
-            document.getElementById('download-counter').innerHTML = downloaderGlobal.textDownloading + ' 1 ' + downloaderGlobal.textFile + '...';
+            document.getElementById('download-counter').innerHTML = downloaderGlobal.text.textDownloading + ' 1 ' + downloaderGlobal.text.textFile + '...';
           }
         }, 1000);
       }
@@ -38056,7 +38059,7 @@ function filetransfer(file, filepath, numFiles) {
   downloaderGlobal.completionTally = 0;
   constructProgressBar(fileTransfer, numFiles);
   if (typeof FileTransfer === 'undefined') {
-    alert(downloaderGlobal.textMissingPlugin);
+    alert(downloaderGlobal.text.textMissingPlugin);
     return;
   }
   fileTransfer.download(file, filepath, function (entry) {
@@ -38064,7 +38067,7 @@ function filetransfer(file, filepath, numFiles) {
     downloaderGlobal.completionTally++;
     console.log(downloaderGlobal.completionTally + ',' + numFiles);
     if (downloaderGlobal.completionTally === numFiles) {
-      alert(downloaderGlobal.textDownloadComplete);
+      alert(downloaderGlobal.text.textDownloadComplete);
       // get rid of progress bar
       document.getElementById('progressContainer').setAttribute('style', 'display: none');
     }

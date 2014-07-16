@@ -4,6 +4,7 @@ angular.module('conemoAppApp')
   .controller('InstructionsCtrl', function ($scope, $rootScope) {
 
   $scope.instructionsLabel = l10nStrings.instructionsLabel;
+  $scope.downloadLabel = l10nStrings.download;
   $scope.downloadVideos = function() {
     $rootScope.downloader.downloadMultiple();
   };
