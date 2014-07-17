@@ -75,35 +75,41 @@ angular.module('conemoAppApp')
             var lessonReleaseDays = [];
             var prTriggerDays = [];
 
+
             for (var i = 0; i < dateSortedLessons.length; i++) {
                 lessonReleaseDays.push(dateSortedLessons[i].dayInTreatment);
             }
             _.each(lessonReleaseDays,function(el) {
-                prTriggerDays.push(moment().add('days',el).toISOString());
+                // prTriggerDays.push(moment().hour(8).minute(0).second(0).add('days',el).format("YYYYMMDD[T]HHmmss"));
+                prTriggerDays.push(moment().hour(9).minute(2).add('minutes',el));
             })
             
             _.each(prTriggerDays,function(el) {
-                var triggerStart = el;
-                var triggerEnd = moment(el).add('seconds',5).toISOString();
+                var dateFormat = "YYYYMMDDTHHmmss";
+                var triggerStart = moment(el).format(dateFormat);
+                var triggerEnd = moment(el,"YYYYMMDDTHHmmss").add('minutes',1).format(dateFormat);
+                console.log(triggerStart);
+                console.log(triggerEnd);
 
                 PurpleRobotClient.updateTrigger({
-                    script: PurpleRobotClient.showScriptNotification({
-                        title: "CONEMO",
-                        message: "Lesson today: " + mostRecentLesson.title,
-                        isPersistent: true,
-                        isSticky: false,
-                        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
-                      }),
+                    script: PurpleRobotClient.vibrate("buzz"),
+                    // PurpleRobotClient.showScriptNotification({
+                        // title: "CONEMO",
+                    //     message: "Lesson today: " + mostRecentLesson.title,
+                    //     isPersistent: true,
+                    //     isSticky: false,
+                    //     script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+                    //   }),
+                    triggerId: triggerStart,
                     startAt: triggerStart,
                     endAt: triggerEnd,
                     repeatRule: "FREQ=ONCE"
-                }).execute();
+                });
             });
 
-            localStorage.setItem("triggersScheduled", moment().toISOString());
+            localStorage.setItem("triggersScheduled", moment().toDate());
         }
     })();
-
 
 
     //Set page view vars
