@@ -60,16 +60,16 @@ i18nStrings.generalContent.push({
 	unreadLabel:"não lido",
 	download: "Baixar",
 	downloaderText: {
-        textDownloadComplete: 'Baixado completo!',
+        textDownloadComplete: 'Download completo!',
         textDownloading: 'Baixando',
         textFile: 'arquivo',
         textFiles: 'arquivos',
-        textDownloadingError: 'Something went wrong with the download and a report has been sent.',
-        textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
-        textMissingContent: 'Please download the most recent content.',
-        textUnavailableMedia: '<p>This media is unavailable.</p>',
-        textUnsupportedFileType: 'That file type is not currently supported.',
-        textAlert: 'Testing in spanish'
+        textDownloadingError: 'Falha no download! Uma mensagem foi enviada.',
+        textMissingPlugin: 'Um plugin está faltando. O download pode não estar completo.',
+        textMissingContent: 'Por favor, baixe os videos mais recentes em "Instruções."',
+        textUnavailableMedia: '<p>Arquivo indisponível no momento</p>',
+        textUnsupportedFileType: 'Este tipo de arquivo não é compatível.',
+        textAlert: 'Testing in Português'
     }
 });
 
@@ -95,11 +95,11 @@ i18nStrings.generalContent.push({
         textDownloading: 'Descargando',
         textFile: 'archivo',
         textFiles: 'archivos',
-        textDownloadingError: 'Something went wrong with the download and a report has been sent.',
-        textMissingPlugin: 'File transfer plug in is missing. Downloads may not be complete.',
-        textMissingContent: 'Please download the most recent content.',
-        textUnavailableMedia: '<p>This media is unavailable.</p>',
-        textUnsupportedFileType: 'That file type is not currently supported.',
-        textAlert: 'Testing in spanish'
+        textDownloadingError: 'Algo falló con la descarga y un reporte ha sido enviado.',
+        textMissingPlugin: 'Falta una aplicación. Puede que las descargas no se hayan completado.',
+        textMissingContent: 'Por favor, descargue la versión más reciente de los vídeos en "Instrucciones."',
+        textUnavailableMedia: '<p>En este momento este archivo no está disponible.</p>',
+        textUnsupportedFileType: 'En este momento este archivo no es compatible.',
+        textAlert: 'Testing in Português'
     }
 });
