@@ -451,32 +451,39 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     var dateToday = new Date();
     (function schedulePRTriggers() {
       if (typeof localStorage.triggersScheduled === 'undefined' || localStorage.triggersScheduled === 'undefined') {
-        var lessonReleaseDays = [];
-        var prTriggerDays = [];
-        for (var i = 0; i < dateSortedLessons.length; i++) {
-          lessonReleaseDays.push(dateSortedLessons[i].dayInTreatment);
+        PurpleRobotClient.clearTriggers().execute();
+        var lessonReleases = [];
+        var dateFormat = 'YYYYMMDDTHHmmss';
+        // skip first lesson
+        for (var i = 1; i < dateSortedLessons.length; i++) {
+          var lesson = {
+              releaseDay: moment().add('d', dateSortedLessons[i].dayInTreatment),
+              title: dateSortedLessons[i].title
+            };
+          lessonReleases.push(lesson);
         }
-        _.each(lessonReleaseDays, function (el) {
-          // prTriggerDays.push(moment().hour(8).minute(0).second(0).add('days',el).format("YYYYMMDD[T]HHmmss"));
-          prTriggerDays.push(moment().hour(9).minute(2).add('minutes', el));
-        });
-        _.each(prTriggerDays, function (el) {
-          var dateFormat = 'YYYYMMDDTHHmmss';
-          var triggerStart = moment(el).format(dateFormat);
-          var triggerEnd = moment(el, 'YYYYMMDDTHHmmss').add('minutes', 1).format(dateFormat);
+        _.each(lessonReleases, function (el) {
+          var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
+          var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
           console.log(triggerStart);
-          console.log(triggerEnd);
+          var myJSONString = JSON.stringify(el.title);
+          var encodedTitle = myJSONString.replace(/\\n/g, '\\n').replace(/\\'/g, '\\\'').replace(/\\"/g, '\\"').replace(/\\&/g, '\\&').replace(/\\r/g, '\\r').replace(/\\t/g, '\\t').replace(/\\b/g, '\\b').replace(/\\f/g, '\\f');
           PurpleRobotClient.updateTrigger({
-            script: PurpleRobotClient.vibrate('buzz'),
-            title: 'CONEMO',
+            script: PurpleRobotClient.vibrate('buzz').showScriptNotification({
+              title: 'CONEMO LESSON:',
+              message: encodedTitle,
+              isPersistent: true,
+              isSticky: false,
+              script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+            }),
             triggerId: triggerStart,
             startAt: triggerStart,
             endAt: triggerEnd,
-            repeatRule: 'FREQ=ONCE'
+            repeatRule: 'FREQ=DAILY;COUNT=1'
           }).execute();
         });
-        localStorage.setItem('triggersScheduled', moment().toDate());
       }
+      localStorage.setItem('triggersScheduled', moment().toDate());
     }());
     //Set page view vars
     $scope.userId = localStorage.userId;
