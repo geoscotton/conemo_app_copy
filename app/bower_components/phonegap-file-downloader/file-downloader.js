@@ -25,7 +25,7 @@ var downloaderGlobal = {
         "http://techslides.com/demos/sample-videos/small.mp4"
     ]
 };
-var textStrings;
+
 Downloader.prototype = {
     getFileSystem: function() {
         document.addEventListener('deviceready', function() {
@@ -194,6 +194,20 @@ function constructProgressBar (ftObject, numDownloads) {
         progressbar.setAttribute("role","progressbar");
         progress.appendChild(progressbar);
 
+    function getAveragePercentage(array) {
+        var ariaValues = [];
+        for (var i = 0; i < array.length; i++) {
+            ariaValues.push(array[i].getAttribute("aria-valuenow"));
+        }
+
+        var sum = 0;
+        for (var j = 0; j < ariaValues.length; j++) {
+            sum += parseInt(ariaValues[j],10);
+        }
+        var averageCompletion = sum/(ariaValues.length);
+        return averageCompletion;
+    }
+
     ftObject.onprogress = function(progressEvent) {
         
         if (progressEvent.lengthComputable) {
@@ -201,12 +215,15 @@ function constructProgressBar (ftObject, numDownloads) {
             progressbar.setAttribute("style","width: "+perc+"%");
             progressbar.setAttribute("aria-valuenow",perc);
 
+            var progressCollection = document.getElementsByClassName("progress-bar");
+            var averagePerc = getAveragePercentage(progressCollection);
+            console.log(averagePerc);
+
             if (perc === 100) {
                 setTimeout(function() {
                     progress.setAttribute("class","progress fade");
-
+                    
                     var numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
-                    console.log(numDownloadsRemaining);
                     if (numDownloads > 1) {
                         document.getElementById("download-counter").innerHTML = downloaderGlobal.text.textDownloading + " "+numDownloadsRemaining+" "+downloaderGlobal.text.textFiles + "...";
                     }
@@ -235,7 +252,6 @@ function filetransfer(file,filepath,numFiles) {
         function(entry) {
             console.log("download complete: " + entry.fullPath);
             downloaderGlobal.completionTally++;
-            console.log(downloaderGlobal.completionTally+","+numFiles);
             if (downloaderGlobal.completionTally === numFiles) {
                 alert(downloaderGlobal.text.textDownloadComplete);
                 // get rid of progress bar

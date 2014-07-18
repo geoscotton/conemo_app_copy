@@ -70,7 +70,13 @@ i18nStrings.generalContent.push({
         textUnavailableMedia: '<p>Arquivo indisponível no momento</p>',
         textUnsupportedFileType: 'Este tipo de arquivo não é compatível.',
         textAlert: 'Testing in Português'
-    }
+    },
+    videoLinks: [
+    	"https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true"
+    ]
 });
 
 i18nStrings.generalContent.push({
@@ -101,5 +107,11 @@ i18nStrings.generalContent.push({
         textUnavailableMedia: '<p>En este momento este archivo no está disponible.</p>',
         textUnsupportedFileType: 'En este momento este archivo no es compatible.',
         textAlert: 'Testing in Português'
-    }
+    },
+    videoLinks: [
+		"https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true"
+    ]
 });

@@ -120,8 +120,8 @@ angular.module('conemoAppApp')
     $scope.currentLessonDay = dateToday.getDate();
     $scope.l10n = l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
-
-
     $scope.currentLessonGuid = mostRecentLesson.guid;
+    $scope.downloadLabel = l10nStrings.download;
+
   });
 

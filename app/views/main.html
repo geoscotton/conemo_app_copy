@@ -22,6 +22,10 @@
 
 		<br/>
 		<br/>
+		<button type="button" ng-click="downloadVideos()" class="btn btn-info btn-wide">{{ downloadLabel }}</button>
+		<div id="progressContainer" class="well" style="display: none;">
+			<div id="download-counter"></div>
+		</div>
 
 		<button ng-disabled="accountSetup.userId.$invalid && accountSetup.l10n.$pristine" class="btn btn-primary" type="submit" id="submit">
 			{{ 'beginLessonButtonLabel' | translate }}

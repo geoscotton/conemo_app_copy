@@ -2,25 +2,25 @@
 
 angular.module('conemoAppApp')
   .controller('InstructionsCtrl', function ($scope, $rootScope) {
+    $scope.downloadLabel = l10nStrings.download;
 
-  $scope.instructionsLabel = l10nStrings.instructionsLabel;
-  $scope.downloadLabel = l10nStrings.download;
-  $scope.downloadVideos = function() {
-    $rootScope.downloader.downloadMultiple();
-  };
-  $scope.downloadLessons = function() {
-    $rootScope.downloader.downloadSingle("https://conemo.northwestern.edu/lesson_api/lessons.json","android_asset/www/scripts/");
-  };
+    $scope.instructionsLabel = l10nStrings.instructionsLabel;
+    $scope.downloadVideos = function() {
+      $rootScope.downloader.downloadMultiple();
+    };
+    $scope.downloadLessons = function() {
+      $rootScope.downloader.downloadSingle("https://conemo.northwestern.edu/lesson_api/lessons.json","android_asset/www/scripts/");
+    };
 
-  $scope.prompt = function(){
-		var PurpleRobotClient = new PurpleRobot();
-      	PurpleRobotClient.showNativeDialog({
-        title: 'CONEMO',
-        message: 'Login no aplicativo CONEMO',
-        buttonLabelA: 'Sim',
-        buttonLabelB: 'Noo',
-        scriptA: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo'),
-        scriptB: PurpleRobotClient.doNothing()
-      }).execute();
-  };
+    $scope.prompt = function(){
+  		var PurpleRobotClient = new PurpleRobot();
+        	PurpleRobotClient.showNativeDialog({
+          title: 'CONEMO',
+          message: 'Login no aplicativo CONEMO',
+          buttonLabelA: 'Sim',
+          buttonLabelB: 'Noo',
+          scriptA: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo'),
+          scriptB: PurpleRobotClient.doNothing()
+        }).execute();
+    };
 });	

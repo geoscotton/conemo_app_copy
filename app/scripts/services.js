@@ -2,7 +2,7 @@
 
 angular.module('conemoAppApp')
   .factory('conemoConfig', ['$rootScope', function($rootScope) {
-    $rootScope.appVersion = "0.1.9";
+    $rootScope.appVersion = "0.1.10";
     
     function ConemoConfig() {}
 
