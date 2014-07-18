@@ -2,12 +2,9 @@
 
 angular.module('conemoAppApp')
   .controller('InstructionsCtrl', function ($scope, $rootScope) {
-    $scope.downloadLabel = l10nStrings.download;
 
     $scope.instructionsLabel = l10nStrings.instructionsLabel;
-    $scope.downloadVideos = function() {
-      $rootScope.downloader.downloadMultiple();
-    };
+
     $scope.downloadLessons = function() {
       $rootScope.downloader.downloadSingle("https://conemo.northwestern.edu/lesson_api/lessons.json","android_asset/www/scripts/");
     };
