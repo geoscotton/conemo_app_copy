@@ -41,10 +41,10 @@
 		</span>
 		<h2 class="main-title">{{ currentSessionIndex }}. {{currentLessonTitle}}</h2>
 		
-		<h3 ng-show="l10n=='en'">
+		<h3 class="main-date" ng-show="l10n=='en'">
 			{{ 'months' | translate }} {{currentLessonDay}} 
 		</h3>
-		<h3 ng-show="l10n=='pt-BR' || l10n=='es-PE'">
+		<h3 class="main-date" ng-show="l10n=='pt-BR' || l10n=='es-PE'">
 			{{currentLessonDay}} de {{ 'months' | translate }}
 		</h3>
 

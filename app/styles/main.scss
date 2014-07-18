@@ -166,7 +166,7 @@ ol.well li {
 }
 
 .main-title {
-    font-size: 1.7em !important;
+    font-size: 1.5em !important;
 }
 
 video {
@@ -175,8 +175,8 @@ video {
     height: auto;
 }
 
-p {
-    font-size: 1.2em;
+p, div.slide > * {
+    font-size: 1.3em;
 }
 
 div.slide h2 {
@@ -206,4 +206,8 @@ a h2.navigation-button i {
 
 .btn-corner .navigation-button {
     font-size: .7em !important;
+}
+
+h3.main-date {
+    font-size: 1.2em !important;
 }
