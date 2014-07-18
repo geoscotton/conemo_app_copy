@@ -279,6 +279,10 @@ angular.module('conemoAppApp', [
     $rootScope.downloader.setDownloadLinks(l10nStrings.videoLinks);
     // set locale variables to downloader global variables
     downloaderGlobal.text = l10nStrings.downloaderText;
+    $rootScope.downloadLabel = l10nStrings.download;
+    $rootScope.downloadVideos = function () {
+      $rootScope.downloader.downloadMultiple();
+    };
   }
 ]).run(function () {
   document.addEventListener('deviceready', onDeviceReady, false);

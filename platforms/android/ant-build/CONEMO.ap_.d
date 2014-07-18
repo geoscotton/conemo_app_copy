@@ -81,8 +81,8 @@
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/abb6f0ac.scripts.js \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/b8ab5dc0.vendor.js \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/4cdb133d.vendor.js \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/a0e1256d.scripts.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/cbits.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/lessons.json \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/17676f64.main.css \
