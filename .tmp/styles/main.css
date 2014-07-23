@@ -20504,7 +20504,7 @@ h3.main-date {
   font-size: 1.2em !important;
 }
 
-@media all and (max-height: 500px) {
+@media all and (max-height: 550px) {
 @media -sass-debug-info {
     filename {
       font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
@@ -20517,7 +20517,7 @@ h3.main-date {
 
   p,
   div.slide > * {
-    font-size: 1.4em;
+    font-size: 1.4em !important;
   }
 
 @media -sass-debug-info {

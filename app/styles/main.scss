@@ -212,12 +212,12 @@ h3.main-date {
     font-size: 1.2em !important;
 }
 
-@media all and (max-height: 500px) {
+@media all and (max-height: 550px) {
     p, div.slide > * {
-        font-size: 1.4em;
+        font-size: 1.4em !important;
     }
 
     .btn {
-    font-size: 1.5em !important;
+        font-size: 1.5em !important;
     }
 }
