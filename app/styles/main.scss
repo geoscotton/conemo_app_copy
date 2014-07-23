@@ -153,7 +153,7 @@ ol.well li {
 
 
 .btn {
-    font-size: 1.5em !important;
+    font-size: 1em !important;
 }
 
 
@@ -176,7 +176,7 @@ video {
 }
 
 p, div.slide > * {
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 div.slide h2 {
@@ -210,4 +210,14 @@ a h2.navigation-button i {
 
 h3.main-date {
     font-size: 1.2em !important;
+}
+
+@media all and (max-height: 500px) {
+    p, div.slide > * {
+        font-size: 1.4em;
+    }
+
+    .btn {
+    font-size: 1.5em !important;
+    }
 }

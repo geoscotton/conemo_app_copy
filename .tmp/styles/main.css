@@ -20315,7 +20315,7 @@ ol.well li {
 }
 
 .btn {
-  font-size: 1.5em !important;
+  font-size: 1em !important;
 }
 
 @media -sass-debug-info {
@@ -20388,7 +20388,7 @@ video {
 
 p,
 div.slide > * {
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 @media -sass-debug-info {
@@ -20502,4 +20502,35 @@ a h2.navigation-button i {
 
 h3.main-date {
   font-size: 1.2em !important;
+}
+
+@media all and (max-height: 500px) {
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003216;
+    }
+}
+
+  p,
+  div.slide > * {
+    font-size: 1.4em;
+  }
+
+@media -sass-debug-info {
+    filename {
+      font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
+    }
+
+    line {
+      font-family: \00003220;
+    }
+}
+
+  .btn {
+    font-size: 1.5em !important;
+  }
 }
