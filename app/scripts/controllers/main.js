@@ -56,9 +56,6 @@ angular.module('conemoAppApp')
             if (el.dayInTreatment <= daysInTreatment){
                 mostRecentLesson = el;
                 mostRecentLesson.currentSessionIndex = idx+1;
-                // if (el.dayInTreatment === daysInTreatment) {
-                //     PRNotification(mostRecentLesson.title);
-                // }
             }
 
         })
@@ -71,9 +68,10 @@ angular.module('conemoAppApp')
     var dateToday = new Date();
 
     (function schedulePRTriggersLessons() {
-        if (typeof localStorage.triggersScheduled === 'undefined' || localStorage.triggersScheduled === 'undefined'){
+        if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined'){
             PurpleRobotClient.clearTriggers().execute();
             var lessonReleases = [];
+        }
             var dateFormat = "YYYYMMDDTHHmmss";
 
             // skip first lesson
@@ -104,52 +102,55 @@ angular.module('conemoAppApp')
                     repeatRule: "FREQ=DAILY;COUNT=1"
                 }).execute();
             });
-        }
-            localStorage.setItem("triggersScheduled", moment().toDate());
+        // }
+            localStorage.setItem("lessonTriggersScheduled", moment().toDate());
     })();
-    // (function schedulePRTriggersDialogues() {
-        // if (typeof localStorage.triggersScheduled === 'undefined' || localStorage.triggersScheduled === 'undefined'){
-        //     PurpleRobotClient.clearTriggers().execute();
-        //     var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
-        // }
-            // var dialogueReleases = [];
-            // var dateFormat = "YYYYMMDDTHHmmss";
+    (function schedulePRTriggersDialogues() {
+        if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
+            PurpleRobotClient.clearTriggers().execute();
+            var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
+        }
+            var dialogueReleases = [];
+            var dateFormat = "YYYYMMDDTHHmmss";
 
-            // skip first lesson
-            // for (var i = 1; i < dateSortedDialogues.length; i++) {
-            //     var dialogue = {
-            //         releaseDay: (moment().add('d',dateSortedLessons[i].dayInTreatment)),
-            //         guid: dateSortedLessons[i].guid,
-            //         message: 
-            //     };
+            for (var i = 1; i < dateSortedDialogues.length; i++) {
+                var dialogue = {
+                    releaseDay: (moment().add('m',dateSortedDialogues[i].dayInTreatment)),
+                    days_in_treatment_assigned: dateSortedDialogues.dayInTreatment,
+                    days_in_treatment: daysInTreatment,
+                    guid: dateSortedDialogues[i].guid,
+                    message: dateSortedDialogues[i].message,
+                    yes_text: dateSortedDialogues[i].yes_text,
+                    no_text: dateSortedDialogues[i].no_text,
+                    yes_button: l10nStrings.yes,
+                    no_button: l10nStrings.no
+                };
                 
-            //     dialogueReleases.push(dialogue);
-            // }
-        //     _.each(lessonReleases,function(el) {
+                dialogueReleases.push(dialogue);
+            }
+            _.each(dialogueReleases,function(el) {
 
-        //         var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
-        //         var triggerEnd = moment(triggerStart,dateFormat).add('minutes',1).format(dateFormat);
-        //         console.log(triggerStart);
+                var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
+                var triggerEnd = moment(triggerStart,dateFormat).add('minutes',1).format(dateFormat);
 
- 
-
-        //         PurpleRobotClient.updateTrigger({
-        //             script: PurpleRobotClient.vibrate("buzz").showScriptNotification({
-        //                 title: "CONEMO LESSON:",
-        //                 message: el.title,
-        //                 isPersistent: true,
-        //                 isSticky: false,
-        //                 script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
-        //               }),
-        //             triggerId: triggerStart,
-        //             startAt: triggerStart,
-        //             endAt: triggerEnd,
-        //             repeatRule: "FREQ=DAILY;COUNT=1"
-        //         }).execute();
-        //     });
-        // }
-        //     localStorage.setItem("triggersScheduled", moment().toDate());
-    // })();
+                PurpleRobotClient.updateTrigger({
+                    script: PurpleRobotClient.vibrate("buzz").showNativeDialog({
+                        title: "CONEMO: ",
+                        message: el.message,
+                        buttonLabelA: el.no_button,
+                        scriptA: PurpleRobotClient.emitToast(el.no_text).emitReading("dialogue_data",{userId: localStorage.userId, dialogue_guid: el.guid, days_in_treatment: el.days_in_treatment, days_in_treatment_assigned: el.days_in_treatment_assigned, answer: l10nStrings.no}),
+                        buttonLabelB: el.yes_button,
+                        scriptB: PurpleRobotClient.emitToast(el.yes_text).emitReading("dialogue_data",{userId: localStorage.userId, dialogue_guid: el.guid, days_in_treatment: el.days_in_treatment, days_in_treatment_assigned: el.days_in_treatment_assigned, answer: l10nStrings.yes}),
+                        priority: 1
+                      }),
+                    triggerId: "DIALOGUE",
+                    startAt: triggerStart,
+                    endAt: triggerEnd,
+                    repeatRule: "FREQ=DAILY;COUNT=1"
+                }).execute();
+            });
+            localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
+    })();
 
 
 

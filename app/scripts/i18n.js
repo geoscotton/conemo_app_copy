@@ -39,7 +39,9 @@ i18nStrings.generalContent.push({
         textUnavailableMedia: '<p>This media is unavailable.</p>',
         textUnsupportedFileType: 'That file type is not currently supported.',
         textAlert: 'That file type is not currently supported.'
-    }
+    },
+    yes: 'yes',
+    no: 'no'
 });
 
 i18nStrings.generalContent.push({
@@ -76,7 +78,9 @@ i18nStrings.generalContent.push({
         "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true"
-    ]
+    ],
+    yes: 'sim',
+    no: 'não'
 });
 
 i18nStrings.generalContent.push({
@@ -113,5 +117,7 @@ i18nStrings.generalContent.push({
         "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true"
-    ]
+    ],
+    yes: 'sí',
+    no: 'no'
 });

@@ -94,13 +94,15 @@ angular.module('conemoAppApp', [
     .run(function($rootScope, LessonService) {
         LessonService.get(function(data) {
             $rootScope.lessons  = _.where(data.lessons, {
-            l10n: l10n,
-            lesson_type: "default"
+            l10n: l10n
             })
-            $rootScope.dialogues = _.where(data.lessons, {
-            l10n: l10n,
-            lesson_type: "dialogue"
-            });
+        });
+    })
+    .run(function($rootScope, DialogueService) {
+        DialogueService.get(function(data) {
+            $rootScope.dialogues = _.where(data.dialogues, {
+            l10n: l10n
+            })
         });
     })
     .run(function($rootScope) {

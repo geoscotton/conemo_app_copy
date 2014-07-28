@@ -255,7 +255,8 @@ function filetransfer(file,filepath,numFiles) {
             if (downloaderGlobal.completionTally === numFiles) {
                 alert(downloaderGlobal.text.textDownloadComplete);
                 // get rid of progress bar
-                localStorage.setItem("lastDownload",new Date());
+                var dateComplete = new Date();
+                localStorage.setItem("lastDownload", dateComplete.toLocaleDateString());
 
                 document.getElementById('progressContainer').setAttribute("style","display: none");
             }
