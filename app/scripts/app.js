@@ -94,7 +94,12 @@ angular.module('conemoAppApp', [
     .run(function($rootScope, LessonService) {
         LessonService.get(function(data) {
             $rootScope.lessons  = _.where(data.lessons, {
-            l10n: l10n
+            l10n: l10n,
+            lesson_type: "default"
+            })
+            $rootScope.dialogues = _.where(data.lessons, {
+            l10n: l10n,
+            lesson_type: "dialogue"
             });
         });
     })
@@ -111,6 +116,9 @@ angular.module('conemoAppApp', [
         $rootScope.downloadVideos = function() {
             $rootScope.downloader.downloadMultiple();
         };
+        if (localStorage.lastDownload !== undefined ) {
+            $rootScope.lastDownloadDate = localStorage.lastDownload;
+        }
     })
     .run(function() {
         document.addEventListener("deviceready", onDeviceReady, false);
