@@ -69,7 +69,7 @@ angular.module('conemoAppApp')
             // skip first lesson
             for (var i = 1; i < dateSortedLessons.length; i++) {
                 var lesson = {
-                    releaseDay: (moment().add('d',dateSortedLessons[i].dayInTreatment)),
+                    releaseDay: (moment().add('d',(dateSortedLessons[i].dayInTreatment)-1)),
                     title: dateSortedLessons[i].title
                 };
                 
@@ -106,7 +106,7 @@ angular.module('conemoAppApp')
 
             for (var i = 0; i < dateSortedDialogues.length; i++) {
                 var dialogue = {
-                    releaseDay: (moment().add('d',dateSortedDialogues[i].dayInTreatment)),
+                    releaseDay: (moment().add('d',(dateSortedDialogues[i].dayInTreatment)-1)),
                     days_in_treatment: daysInTreatment,
                     guid: dateSortedDialogues[i].guid,
                     message: dateSortedDialogues[i].message,
@@ -163,7 +163,14 @@ angular.module('conemoAppApp')
         window.location.reload();
     }
 
-
+    $scope.isDownloading = function() {
+        if (angular.element('#progressContainer').css('display') === 'none') {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     //Set page view vars
     $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
