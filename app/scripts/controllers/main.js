@@ -32,12 +32,6 @@ angular.module('conemoAppApp')
         conemoConfig.set({ l10n: this.locale });
     }
 
-    $scope.setUserAccountInfo = function(){
-        
-        localStorage.userId = this.userId;
-
-        window.location.reload();
-    }
 
 
     var daysInTreatment = cbits.getDaysInTreatment();
@@ -103,7 +97,7 @@ angular.module('conemoAppApp')
         }
             localStorage.setItem("lessonTriggersScheduled", moment().toDate());
     })();
-    (function schedulePRTriggersDialogues() {
+    $scope.schedulePRTriggersDialogues = function() {
         if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
             var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
         
@@ -112,9 +106,7 @@ angular.module('conemoAppApp')
 
             for (var i = 0; i < dateSortedDialogues.length; i++) {
                 var dialogue = {
-                    userId: localStorage.userId,
                     releaseDay: (moment().add('d',dateSortedDialogues[i].dayInTreatment)),
-                    days_in_treatment_assigned: dateSortedDialogues.dayInTreatment,
                     days_in_treatment: daysInTreatment,
                     guid: dateSortedDialogues[i].guid,
                     message: dateSortedDialogues[i].message,
@@ -136,9 +128,21 @@ angular.module('conemoAppApp')
                         title: "CONEMO: ",
                         message: el.message,
                         buttonLabelA: el.no_button,
-                        scriptA: PurpleRobotClient.emitToast(el.no_text).emitReading("dialogue_data",{user_id: el.userId, dialogue_guid: el.guid, days_in_treatment: el.days_in_treatment, days_in_treatment_assigned: el.days_in_treatment_assigned, answer: l10nStrings.no}),
+                        scriptA: PurpleRobotClient.emitToast(el.no_text)
+                                    .emitReading("dialogue_data", {
+                                        user_id: localStorage.userId,
+                                        dialogue_guid: el.guid,
+                                        days_in_treatment: el.days_in_treatment,
+                                        answer: l10nStrings.no
+                                    }),
                         buttonLabelB: el.yes_button,
-                        scriptB: PurpleRobotClient.emitToast(el.yes_text).emitReading("dialogue_data",{user_id: el.userId, dialogue_guid: el.guid, days_in_treatment: el.days_in_treatment, days_in_treatment_assigned: el.days_in_treatment_assigned, answer: l10nStrings.yes}),
+                        scriptB: PurpleRobotClient.emitToast(el.yes_text)
+                                    .emitReading("dialogue_data", {
+                                        dialogue_guid: el.guid,
+                                        user_id: el.userId,
+                                        days_in_treatment: el.days_in_treatment,
+                                        answer: l10nStrings.yes
+                                    }),
                         priority: 1
                       }),
                     triggerId: "DIALOGUE"+triggerStart,
@@ -149,8 +153,15 @@ angular.module('conemoAppApp')
             });
         }
             localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
-    })();
+    };
 
+    $scope.setUserAccountInfoAndDialogues = function(){
+        
+        localStorage.userId = this.userId;
+
+        $scope.schedulePRTriggersDialogues();
+        window.location.reload();
+    }
 
 
     //Set page view vars

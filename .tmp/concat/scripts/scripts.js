@@ -363,7 +363,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.13';
+    $rootScope.appVersion = '0.1.14';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -414,10 +414,6 @@ angular.module('conemoAppApp').controller('MainCtrl', [
       l10n, localStorage.l10n = this.locale;
       conemoConfig.set({ l10n: this.locale });
     };
-    $scope.setUserAccountInfo = function () {
-      localStorage.userId = this.userId;
-      window.location.reload();
-    };
     var daysInTreatment = cbits.getDaysInTreatment();
     //Sort lessons by date to determine first lesson
     var dateSortedLessons = _.sortBy($rootScope.lessons, 'dayInTreatment');
@@ -465,16 +461,15 @@ angular.module('conemoAppApp').controller('MainCtrl', [
       }
       localStorage.setItem('lessonTriggersScheduled', moment().toDate());
     }());
-    (function schedulePRTriggersDialogues() {
+    $scope.schedulePRTriggersDialogues = function () {
       if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined') {
         var dateSortedDialogues = _.sortBy($rootScope.dialogues, 'dayInTreatment');
         var dialogueReleases = [];
         var dateFormat = 'YYYYMMDDTHHmmss';
         for (var i = 0; i < dateSortedDialogues.length; i++) {
           var dialogue = {
-              userId: localStorage.userId,
               releaseDay: moment().add('d', dateSortedDialogues[i].dayInTreatment),
-              days_in_treatment_assigned: dateSortedDialogues.dayInTreatment,
+              days_in_treatment_assigned: '5',
               days_in_treatment: daysInTreatment,
               guid: dateSortedDialogues[i].guid,
               message: dateSortedDialogues[i].message,
@@ -494,7 +489,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
               message: el.message,
               buttonLabelA: el.no_button,
               scriptA: PurpleRobotClient.emitToast(el.no_text).emitReading('dialogue_data', {
-                user_id: el.userId,
+                user_id: localStorage.userId,
                 dialogue_guid: el.guid,
                 days_in_treatment: el.days_in_treatment,
                 days_in_treatment_assigned: el.days_in_treatment_assigned,
@@ -502,8 +497,8 @@ angular.module('conemoAppApp').controller('MainCtrl', [
               }),
               buttonLabelB: el.yes_button,
               scriptB: PurpleRobotClient.emitToast(el.yes_text).emitReading('dialogue_data', {
-                user_id: el.userId,
                 dialogue_guid: el.guid,
+                user_id: el.userId,
                 days_in_treatment: el.days_in_treatment,
                 days_in_treatment_assigned: el.days_in_treatment_assigned,
                 answer: l10nStrings.yes
@@ -518,7 +513,12 @@ angular.module('conemoAppApp').controller('MainCtrl', [
         });
       }
       localStorage.setItem('dialogueTriggersScheduled', moment().toDate());
-    }());
+    };
+    $scope.setUserAccountInfoAndDialogues = function () {
+      localStorage.userId = this.userId;
+      $scope.schedulePRTriggersDialogues();
+      window.location.reload();
+    };
     //Set page view vars
     $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
