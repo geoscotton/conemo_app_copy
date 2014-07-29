@@ -469,7 +469,6 @@ angular.module('conemoAppApp').controller('MainCtrl', [
         for (var i = 0; i < dateSortedDialogues.length; i++) {
           var dialogue = {
               releaseDay: moment().add('d', dateSortedDialogues[i].dayInTreatment),
-              days_in_treatment_assigned: '5',
               days_in_treatment: daysInTreatment,
               guid: dateSortedDialogues[i].guid,
               message: dateSortedDialogues[i].message,
@@ -492,7 +491,6 @@ angular.module('conemoAppApp').controller('MainCtrl', [
                 user_id: localStorage.userId,
                 dialogue_guid: el.guid,
                 days_in_treatment: el.days_in_treatment,
-                days_in_treatment_assigned: el.days_in_treatment_assigned,
                 answer: l10nStrings.no
               }),
               buttonLabelB: el.yes_button,
@@ -500,7 +498,6 @@ angular.module('conemoAppApp').controller('MainCtrl', [
                 dialogue_guid: el.guid,
                 user_id: el.userId,
                 days_in_treatment: el.days_in_treatment,
-                days_in_treatment_assigned: el.days_in_treatment_assigned,
                 answer: l10nStrings.yes
               }),
               priority: 1
