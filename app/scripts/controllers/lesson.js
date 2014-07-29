@@ -83,20 +83,6 @@ angular.module('conemoAppApp')
         $scope.currentSlideIndex = 0;
         $scope.slideNavigator($scope.currentSlideIndex);
 
-        $scope.saveSelections = function() {
-            var selectedValues = [];
-            var selectCheck = document.getElementsByTagName("select")
-            if (selectCheck !== null) {
-                for(var i = 0; i < selectCheck.length; i++) {
-                    var selectedValue = selectCheck[i].options[selectCheck[i].selectedIndex].value;
-                    selectedValues.push(selectedValue);
-                }
-            }
-            return selectedValues;
-        };
-
-
-
         $scope.saveForm = function (path) {
             var saveContents = {
                 user_id: localStorage.userId,
@@ -106,9 +92,7 @@ angular.module('conemoAppApp')
                 date_created: new Date(),
                 l10n: localStorage.l10n
             };
-            var selectedValues = $scope.saveSelections();
 
-            localStorage.setItem("selectedValues",selectedValues);
 
             saveContents.form_payload = JSON.stringify($("#slideShowForm").serializeObject());
             (new PurpleRobot()).emitReading('lesson_data', saveContents).execute();

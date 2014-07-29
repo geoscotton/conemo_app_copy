@@ -363,7 +363,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.12';
+    $rootScope.appVersion = '0.1.13';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -435,90 +435,88 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     var dateToday = new Date();
     (function schedulePRTriggersLessons() {
       if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined') {
-        PurpleRobotClient.clearTriggers().execute();
         var lessonReleases = [];
+        var dateFormat = 'YYYYMMDDTHHmmss';
+        // skip first lesson
+        for (var i = 1; i < dateSortedLessons.length; i++) {
+          var lesson = {
+              releaseDay: moment().add('d', dateSortedLessons[i].dayInTreatment),
+              title: dateSortedLessons[i].title
+            };
+          lessonReleases.push(lesson);
+        }
+        _.each(lessonReleases, function (el) {
+          var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
+          var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
+          PurpleRobotClient.updateTrigger({
+            script: PurpleRobotClient.vibrate('buzz').showScriptNotification({
+              title: 'CONEMO LESSON:',
+              message: el.title,
+              isPersistent: true,
+              isSticky: false,
+              script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+            }),
+            triggerId: 'LESSON' + triggerStart,
+            startAt: triggerStart,
+            endAt: triggerEnd,
+            repeatRule: 'FREQ=DAILY;COUNT=1'
+          }).execute();
+        });
       }
-      var dateFormat = 'YYYYMMDDTHHmmss';
-      // skip first lesson
-      for (var i = 1; i < dateSortedLessons.length; i++) {
-        var lesson = {
-            releaseDay: moment().add('d', dateSortedLessons[i].dayInTreatment),
-            title: dateSortedLessons[i].title
-          };
-        lessonReleases.push(lesson);
-      }
-      _.each(lessonReleases, function (el) {
-        var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
-        var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
-        PurpleRobotClient.updateTrigger({
-          script: PurpleRobotClient.vibrate('buzz').showScriptNotification({
-            title: 'CONEMO LESSON:',
-            message: el.title,
-            isPersistent: true,
-            isSticky: false,
-            script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
-          }),
-          triggerId: triggerStart,
-          startAt: triggerStart,
-          endAt: triggerEnd,
-          repeatRule: 'FREQ=DAILY;COUNT=1'
-        }).execute();
-      });
-      // }
       localStorage.setItem('lessonTriggersScheduled', moment().toDate());
     }());
     (function schedulePRTriggersDialogues() {
       if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined') {
-        PurpleRobotClient.clearTriggers().execute();
         var dateSortedDialogues = _.sortBy($rootScope.dialogues, 'dayInTreatment');
-      }
-      var dialogueReleases = [];
-      var dateFormat = 'YYYYMMDDTHHmmss';
-      for (var i = 1; i < dateSortedDialogues.length; i++) {
-        var dialogue = {
-            releaseDay: moment().add('m', dateSortedDialogues[i].dayInTreatment),
-            days_in_treatment_assigned: dateSortedDialogues.dayInTreatment,
-            days_in_treatment: daysInTreatment,
-            guid: dateSortedDialogues[i].guid,
-            message: dateSortedDialogues[i].message,
-            yes_text: dateSortedDialogues[i].yes_text,
-            no_text: dateSortedDialogues[i].no_text,
-            yes_button: l10nStrings.yes,
-            no_button: l10nStrings.no
-          };
-        dialogueReleases.push(dialogue);
-      }
-      _.each(dialogueReleases, function (el) {
-        var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
-        var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
-        PurpleRobotClient.updateTrigger({
-          script: PurpleRobotClient.vibrate('buzz').showNativeDialog({
-            title: 'CONEMO: ',
-            message: el.message,
-            buttonLabelA: el.no_button,
-            scriptA: PurpleRobotClient.emitToast(el.no_text).emitReading('dialogue_data', {
+        var dialogueReleases = [];
+        var dateFormat = 'YYYYMMDDTHHmmss';
+        for (var i = 0; i < dateSortedDialogues.length; i++) {
+          var dialogue = {
               userId: localStorage.userId,
-              dialogue_guid: el.guid,
-              days_in_treatment: el.days_in_treatment,
-              days_in_treatment_assigned: el.days_in_treatment_assigned,
-              answer: l10nStrings.no
+              releaseDay: moment().add('d', dateSortedDialogues[i].dayInTreatment),
+              days_in_treatment_assigned: dateSortedDialogues.dayInTreatment,
+              days_in_treatment: daysInTreatment,
+              guid: dateSortedDialogues[i].guid,
+              message: dateSortedDialogues[i].message,
+              yes_text: dateSortedDialogues[i].yes_text,
+              no_text: dateSortedDialogues[i].no_text,
+              yes_button: l10nStrings.yes,
+              no_button: l10nStrings.no
+            };
+          dialogueReleases.push(dialogue);
+        }
+        _.each(dialogueReleases, function (el) {
+          var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
+          var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
+          PurpleRobotClient.updateTrigger({
+            script: PurpleRobotClient.vibrate('buzz').showNativeDialog({
+              title: 'CONEMO: ',
+              message: el.message,
+              buttonLabelA: el.no_button,
+              scriptA: PurpleRobotClient.emitToast(el.no_text).emitReading('dialogue_data', {
+                user_id: el.userId,
+                dialogue_guid: el.guid,
+                days_in_treatment: el.days_in_treatment,
+                days_in_treatment_assigned: el.days_in_treatment_assigned,
+                answer: l10nStrings.no
+              }),
+              buttonLabelB: el.yes_button,
+              scriptB: PurpleRobotClient.emitToast(el.yes_text).emitReading('dialogue_data', {
+                user_id: el.userId,
+                dialogue_guid: el.guid,
+                days_in_treatment: el.days_in_treatment,
+                days_in_treatment_assigned: el.days_in_treatment_assigned,
+                answer: l10nStrings.yes
+              }),
+              priority: 1
             }),
-            buttonLabelB: el.yes_button,
-            scriptB: PurpleRobotClient.emitToast(el.yes_text).emitReading('dialogue_data', {
-              userId: localStorage.userId,
-              dialogue_guid: el.guid,
-              days_in_treatment: el.days_in_treatment,
-              days_in_treatment_assigned: el.days_in_treatment_assigned,
-              answer: l10nStrings.yes
-            }),
-            priority: 1
-          }),
-          triggerId: 'DIALOGUE',
-          startAt: triggerStart,
-          endAt: triggerEnd,
-          repeatRule: 'FREQ=DAILY;COUNT=1'
-        }).execute();
-      });
+            triggerId: 'DIALOGUE' + triggerStart,
+            startAt: triggerStart,
+            endAt: triggerEnd,
+            repeatRule: 'FREQ=DAILY;COUNT=1'
+          }).execute();
+        });
+      }
       localStorage.setItem('dialogueTriggersScheduled', moment().toDate());
     }());
     //Set page view vars
@@ -599,17 +597,6 @@ angular.module('conemoAppApp').controller('LessonCtrl', [
     $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
     $scope.currentSlideIndex = 0;
     $scope.slideNavigator($scope.currentSlideIndex);
-    $scope.saveSelections = function () {
-      var selectedValues = [];
-      var selectCheck = document.getElementsByTagName('select');
-      if (selectCheck !== null) {
-        for (var i = 0; i < selectCheck.length; i++) {
-          var selectedValue = selectCheck[i].options[selectCheck[i].selectedIndex].value;
-          selectedValues.push(selectedValue);
-        }
-      }
-      return selectedValues;
-    };
     $scope.saveForm = function (path) {
       var saveContents = {
           user_id: localStorage.userId,
@@ -619,8 +606,6 @@ angular.module('conemoAppApp').controller('LessonCtrl', [
           date_created: new Date(),
           l10n: localStorage.l10n
         };
-      var selectedValues = $scope.saveSelections();
-      localStorage.setItem('selectedValues', selectedValues);
       saveContents.form_payload = JSON.stringify($('#slideShowForm').serializeObject());
       new PurpleRobot().emitReading('lesson_data', saveContents).execute();
       // mark lesson as read    
