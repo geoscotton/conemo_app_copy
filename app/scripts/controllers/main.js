@@ -30,9 +30,8 @@ angular.module('conemoAppApp')
     $scope.setLocale = function() {
         l10n, localStorage.l10n = this.locale;
         conemoConfig.set({ l10n: this.locale });
+
     }
-
-
 
     var daysInTreatment = cbits.getDaysInTreatment();
     
@@ -100,7 +99,6 @@ angular.module('conemoAppApp')
     $scope.schedulePRTriggersDialogues = function() {
         if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
             var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
-        
             var dialogueReleases = [];
             var dateFormat = "YYYYMMDDTHHmmss";
 
@@ -143,6 +141,7 @@ angular.module('conemoAppApp')
                                         days_in_treatment: el.days_in_treatment,
                                         answer: l10nStrings.yes
                                     }),
+                        tag: "CONEMO DIALOGUE",
                         priority: 1
                       }),
                     triggerId: "DIALOGUE"+triggerStart,

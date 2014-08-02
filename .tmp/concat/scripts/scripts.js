@@ -363,7 +363,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.14';
+    $rootScope.appVersion = '0.1.15';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -500,6 +500,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
                 days_in_treatment: el.days_in_treatment,
                 answer: l10nStrings.yes
               }),
+              tag: 'CONEMO DIALOGUE',
               priority: 1
             }),
             triggerId: 'DIALOGUE' + triggerStart,
