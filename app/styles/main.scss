@@ -212,6 +212,10 @@ h3.main-date {
     font-size: 1.2em !important;
 }
 
+select {
+    width: 80%;
+}
+
 @media all and (max-height: 550px) {
     p, div.slide > * {
         font-size: 1.4em !important;

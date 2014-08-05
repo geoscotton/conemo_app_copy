@@ -9984,15 +9984,21 @@ h3.main-date {
   font-size: 1.2em !important;
 }
 
+/* line 215, ../../app/styles/main.scss */
+
+select {
+  width: 80%;
+}
+
 @media all and (max-height: 550px) {
-  /* line 216, ../../app/styles/main.scss */
+  /* line 220, ../../app/styles/main.scss */
 
   p,
   div.slide > * {
     font-size: 1.4em !important;
   }
 
-  /* line 220, ../../app/styles/main.scss */
+  /* line 224, ../../app/styles/main.scss */
 
   .btn {
     font-size: 1.5em !important;

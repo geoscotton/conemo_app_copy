@@ -64,7 +64,6 @@ angular.module('conemoAppApp')
             if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined'){
                 var lessonReleases = [];
                 var dateFormat = "YYYYMMDDTHHmmss";
-                debugger;
                 // skip first lesson
                 for (var i = 1; i < dateSortedLessons.length; i++) {
                     var lesson = {
@@ -100,7 +99,6 @@ angular.module('conemoAppApp')
             if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
                 var dialogueReleases = [];
                 var dateFormat = "YYYYMMDDTHHmmss";
-                debugger;
                 for (var i = 0; i < dateSortedDialogues.length; i++) {
                     var dialogue = {
                         releaseDay: (moment().add('d',(dateSortedDialogues[i].dayInTreatment)-1)),
@@ -135,8 +133,8 @@ angular.module('conemoAppApp')
                             buttonLabelB: el.yes_button,
                             scriptB: PurpleRobotClient.emitToast(el.yes_text)
                                         .emitReading("dialogue_data", {
+                                            user_id: localStorage.userId,
                                             dialogue_guid: el.guid,
-                                            user_id: el.userId,
                                             days_in_treatment: el.days_in_treatment,
                                             answer: l10nStrings.yes
                                         }),
@@ -151,7 +149,7 @@ angular.module('conemoAppApp')
                 });
             }
                 localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
-        }, 200);
+        }, 500);
     };
     
 

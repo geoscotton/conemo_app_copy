@@ -363,7 +363,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.15';
+    $rootScope.appVersion = '0.1.16';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -431,11 +431,10 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     var mostRecentLesson = getRecentLesson(daysInTreatment, dateSortedLessons);
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
-      (function schedulePRTriggersLessons() {
+      setTimeout(function schedulePRTriggersLessons() {
         if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined') {
           var lessonReleases = [];
           var dateFormat = 'YYYYMMDDTHHmmss';
-          debugger;
           // skip first lesson
           for (var i = 1; i < dateSortedLessons.length; i++) {
             var lesson = {
@@ -463,12 +462,11 @@ angular.module('conemoAppApp').controller('MainCtrl', [
           });
         }
         localStorage.setItem('lessonTriggersScheduled', moment().toDate());
-      }());
+      }, 100);
       setTimeout(function schedulePRTriggersDialogues() {
         if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined') {
           var dialogueReleases = [];
           var dateFormat = 'YYYYMMDDTHHmmss';
-          debugger;
           for (var i = 0; i < dateSortedDialogues.length; i++) {
             var dialogue = {
                 releaseDay: moment().add('d', dateSortedDialogues[i].dayInTreatment - 1),
@@ -498,8 +496,8 @@ angular.module('conemoAppApp').controller('MainCtrl', [
                 }),
                 buttonLabelB: el.yes_button,
                 scriptB: PurpleRobotClient.emitToast(el.yes_text).emitReading('dialogue_data', {
+                  user_id: localStorage.userId,
                   dialogue_guid: el.guid,
-                  user_id: el.userId,
                   days_in_treatment: el.days_in_treatment,
                   answer: l10nStrings.yes
                 }),
@@ -514,7 +512,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
           });
         }
         localStorage.setItem('dialogueTriggersScheduled', moment().toDate());
-      }, 200);
+      }, 500);
     }
     ;
     $scope.setUserAccountInfo = function () {
@@ -591,7 +589,6 @@ angular.module('conemoAppApp').controller('LessonCtrl', [
           break;
         }
       }
-      $scope.pageCounter = $scope.currentSlideIndex + 1 + ' / ' + slides.length;
       $('html, body').animate({ scrollTop: docHeight * $scope.currentSlideIndex + 'px' });
     };
     $scope.updatePageCounter = function () {
@@ -605,6 +602,7 @@ angular.module('conemoAppApp').controller('LessonCtrl', [
     $scope.showSlides = false;
     $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
     $scope.currentSlideIndex = 0;
+    $scope.pageCounter = $scope.currentSlideIndex + 1 + ' / ' + slides.length;
     $scope.slideNavigator($scope.currentSlideIndex);
     $scope.saveForm = function (path) {
       var saveContents = {

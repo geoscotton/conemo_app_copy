@@ -63,7 +63,6 @@ angular.module('conemoAppApp')
                     break;
                 }
             } 
-            $scope.pageCounter = ($scope.currentSlideIndex + 1) + " / " + slides.length;
             $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + "px" });
 
         };
@@ -81,6 +80,8 @@ angular.module('conemoAppApp')
         $scope.showSlides = false;
         $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
         $scope.currentSlideIndex = 0;
+        $scope.pageCounter = ($scope.currentSlideIndex + 1) + " / " + slides.length;
+
         $scope.slideNavigator($scope.currentSlideIndex);
 
         $scope.saveForm = function (path) {
