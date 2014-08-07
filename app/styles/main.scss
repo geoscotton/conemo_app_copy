@@ -221,7 +221,14 @@ p, div.slide > * {
     font-size: 1em;
 }
 
+.es-PE p {
+    font-size: 1.4em;
+}
 
-body.es-PE p, div.slide > *, .btn {
-    font-size: 1.4em !important;
+.es-PE div.slide > * {
+    font-size: 1.4em;
+}
+
+.es-PE .btn {
+    font-size: 1.4em;
 }

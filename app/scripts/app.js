@@ -130,6 +130,16 @@ angular.module('conemoAppApp', [
             $rootScope.downloader.setDownloadLinks(videoLinks)
         });
     })
+    .run(function($rootScope) {
+        $rootScope.$on('$routeChangeSuccess', function() {
+            if (l10n === "es-PE") {
+                $("body").addClass("es-PE");
+            }
+            else {
+                $("body").removeClass("es-PE");
+            }
+        });
+    })
     .run(function() {
         document.addEventListener("deviceready", onDeviceReady, false);
 

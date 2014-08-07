@@ -20538,12 +20538,38 @@ div.slide > * {
   }
 
   line {
-    font-family: \00003225;
+    font-family: \00003224;
   }
 }
 
-body.es-PE p,
-div.slide > *,
-.btn {
-  font-size: 1.4em !important;
+.es-PE p {
+  font-size: 1.4em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003228;
+  }
+}
+
+.es-PE div.slide > * {
+  font-size: 1.4em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003232;
+  }
+}
+
+.es-PE .btn {
+  font-size: 1.4em;
 }
