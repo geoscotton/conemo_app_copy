@@ -153,7 +153,7 @@ ol.well li {
 
 
 .btn {
-    font-size: 1em !important;
+    font-size: 1em;
 }
 
 
@@ -175,9 +175,6 @@ video {
     height: auto;
 }
 
-p, div.slide > * {
-    font-size: 1.2em;
-}
 
 div.slide h2 {
     font-size: 1.7em !important;
@@ -216,12 +213,15 @@ select {
     width: 80%;
 }
 
-@media all and (max-height: 550px) {
-    p, div.slide > * {
-        font-size: 1.4em !important;
-    }
+p, div.slide > * {
+    font-size: 1.2em;
+}
 
-    .btn {
-        font-size: 1.5em !important;
-    }
+.btn {
+    font-size: 1em;
+}
+
+
+body.es-PE p, div.slide > *, .btn {
+    font-size: 1.4em !important;
 }

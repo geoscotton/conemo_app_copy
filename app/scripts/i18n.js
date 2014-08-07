@@ -40,6 +40,10 @@ i18nStrings.generalContent.push({
         textUnsupportedFileType: 'That file type is not currently supported.',
         textAlert: 'That file type is not currently supported.'
     },
+    videoLinks: [
+    	"https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true",
+        "https://github.com/cbitstech/conemo_videos/blob/master/EN2.mp4?raw=true"
+    ],
     yes: 'yes',
     no: 'no'
 });

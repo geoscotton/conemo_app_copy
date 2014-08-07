@@ -108,7 +108,6 @@ angular.module('conemoAppApp')
             $location.path(path);
             return false
         };
-
     })
     .directive("scroll", function ($window) {
         return function(scope, element, attrs) {

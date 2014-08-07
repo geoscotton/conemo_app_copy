@@ -21,5 +21,4 @@ angular.module('conemoAppApp')
     	$scope.successAlertVisible = true;
 
     }
-
   });

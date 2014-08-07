@@ -12,6 +12,9 @@ angular.module('conemoAppApp')
 
     ConemoConfig.prototype.set = function(config) {
       localStorage.config = JSON.stringify(config);
+      if (config.l10n === "es-PE") {
+        $("body").addClass("es-PE");
+      }
       $rootScope.$emit('conemoConfig:changed', config);
     };
 

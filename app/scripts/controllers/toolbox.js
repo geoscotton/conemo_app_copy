@@ -12,7 +12,6 @@ angular.module('conemoAppApp')
 	  }
 
 	 var daysInTreatment = dateDiff(startDate,dateToday)+1;
-
    $scope.availableLessons = _.filter($rootScope.lessons,function(el){return el.dayInTreatment <= daysInTreatment});
    $scope.beginLessonButtonLabel = l10nStrings.beginLessonButtonLabel;
 });

@@ -3,36 +3,37 @@
 
 <div id="account-setup" ng-show="showAccountSetup" class="well">
 	<form name="accountSetup" ng-submit="setUserAccountInfo();">
-	<label for="l10n">Locale</label><br/>
+	<h4>1. Locale</h4><br/>
 	<button type="button" 
 		name="l10n" 
 		class="btn btn-info btn-language"
 		ng-model="l10n" 
-		ng-click="setLocale()"  
+		ng-click="setLocale(); enableStep('download');"  
 		ng-repeat="locale in availableLocales"  
 		value="{{locale}}">
 		{{locale}}
 	</button>
 	<br/>
 	<br/>
-	<label>Videos</label><br/>
+	<h4>2. Videos</h4><br/>
+	
 
-	<button type="button" ng-click="downloadVideos()" class="btn btn-info">{{ 'download' | translate }}</button>
+	<button type="button" ng-click="enableStep('userId'); downloadVideos();" class="hidden btn btn-info" id="download">{{ 'download' | translate }}</button>
 	{{ lastDownloadDate }}
 
-	<div id="progressContainer" ng-model="downloading" class="well" style="display: none;">
+	<div id="progressContainer" class="well" style="display: none;">
 	<div id="download-counter"></div>
-	</div>
-	<h2>{{ 'configureUserLabel' | translate }}</h2>
+	</div><br/>
+	<h4>3. {{ 'configureUserLabel' | translate }}</h4>
 	<label for="userId">ID #</label><br/>
 
-		<input type="text" id="userId" name="userId" ng-model="userId" required>
+		<input type="text" id="userId" name="userId" ng-model="userId" class="hidden" required>
 		<br/>
 
 
 		<br/>
 
-		<button ng-disabled="accountSetup.l10n.$dirty || !isDownloading() || accountSetup.userId.$invalid" class="btn btn-primary" type="submit" id="submit">
+		<button class="btn btn-primary" ng-disabled="accountSetup.userId.$pristine || !isDownloading()" type="submit" id="submit">
 			{{ 'beginLessonButtonLabel' | translate }}
 		</button>
 	</form>
