@@ -126,20 +126,36 @@ angular.module('conemoAppApp')
                         title: "CONEMO: ",
                         message: el.message,
                         buttonLabelA: el.no_button,
-                        scriptA: PurpleRobotClient.emitToast(el.no_text)
-                                    .emitReading("dialogue_data", {
-                                        user_id: localStorage.userId,
-                                        dialogue_guid: el.guid,
-                                        days_in_treatment: el.days_in_treatment,
-                                        answer: l10nStrings.no
+                        scriptA: PurpleRobotClient.showNativeDialog({
+                                        title: "CONEMO: ",
+                                        message: el.no_text,
+                                        buttonLabelA: "OK",
+                                        scriptA: PurpleRobotClient.emitReading("dialogue_data", {
+                                            user_id: localStorage.userId,
+                                            dialogue_guid: el.guid,
+                                            days_in_treatment: el.days_in_treatment,
+                                            answer: l10nStrings.no
+                                        }),
+                                        buttonLabelB: "",
+                                        scriptB: PurpleRobotClient.doNothing(),
+                                        tag: "",
+                                        priority: 1
                                     }),
                         buttonLabelB: el.yes_button,
-                        scriptB: PurpleRobotClient.emitToast(el.yes_text)
-                                    .emitReading("dialogue_data", {
-                                        user_id: localStorage.userId,
-                                        dialogue_guid: el.guid,
-                                        days_in_treatment: el.days_in_treatment,
-                                        answer: l10nStrings.yes
+                        scriptB: PurpleRobotClient.showNativeDialog({
+                                        title: "CONEMO: ",
+                                        message: el.yes_text,
+                                        buttonLabelA: "OK",
+                                        scriptA: PurpleRobotClient.emitReading("dialogue_data", {
+                                            user_id: localStorage.userId,
+                                            dialogue_guid: el.guid,
+                                            days_in_treatment: el.days_in_treatment,
+                                            answer: l10nStrings.yes
+                                        }),
+                                        buttonLabelB: "",
+                                        scriptB: PurpleRobotClient.doNothing(),
+                                        tag: "",
+                                        priority: 1
                                     }),
                         tag: "CONEMO DIALOGUE",
                         priority: 1
