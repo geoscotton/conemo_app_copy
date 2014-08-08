@@ -125,10 +125,12 @@ angular.module('conemoAppApp', [
         $rootScope.$watch(function() {
             return localStorage.config;
         }, function() {
-            var currLocale = JSON.parse(localStorage.config).l10n
-            downloaderGlobal.text = l10nStrings.downloaderText;
+            var currLocale = JSON.parse(localStorage.config).l10n;
+            var currLocaleStrings = i18nStrings.filterLocale(currLocale)[0];
 
-            var videoLinks = i18nStrings.filterLocale(currLocale)[0].videoLinks;
+            // set downloader settings as per locale
+            downloaderGlobal.text = currLocaleStrings.downloaderText;
+            var videoLinks = currLocaleStrings.videoLinks;
             $rootScope.downloader.setDownloadLinks(videoLinks)
         });
     })
