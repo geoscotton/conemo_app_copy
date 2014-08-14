@@ -5,19 +5,73 @@ angular.module('conemoAppApp')
 
     $scope.instructionsLabel = l10nStrings.instructionsLabel;
 
-    $scope.downloadLessons = function() {
-      $rootScope.downloader.downloadSingle("https://conemo.northwestern.edu/lesson_api/lessons.json","android_asset/www/scripts/");
-    };
+    $scope.$watch('checked', function(newValue, oldValue) {
+        if (newValue !== oldValue) {
+            var videocontainer = document.getElementById('samplevideo');
+            var downloader = new Downloader();
+            videocontainer.innerHTML = downloader.insert("video",videocontainer.textContent);
+        }
+    });
 
-    $scope.prompt = function(){
-  		var PurpleRobotClient = new PurpleRobot();
-        	PurpleRobotClient.showNativeDialog({
-          title: 'CONEMO',
-          message: 'Login no aplicativo CONEMO',
-          buttonLabelA: 'Sim',
-          buttonLabelB: 'Noo',
-          scriptA: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo'),
-          scriptB: PurpleRobotClient.doNothing()
-        }).execute();
+    $scope.l10n = l10n;
+    $scope.demoDialogue_esPE = function() {
+      PurpleRobotClient.vibrate("buzz").showNativeDialog({
+        title: "CONEMO: ",
+        message: "¿Has podido seguir las instrucciones de esta sesión de entrenamiento?",
+        buttonLabelA: "No",
+        scriptA: PurpleRobotClient.showNativeDialog({
+                        title: "CONEMO: ",
+                        message: "¡Pregunta a tu enfermera todas tus dudas! Te ayudará a usar el aplicativo la mejor manera posible.",
+                        buttonLabelA: "OK",
+                        scriptA: PurpleRobotClient.doNothing(),
+                        buttonLabelB: "",
+                        scriptB: PurpleRobotClient.doNothing(),
+                        tag: "",
+                        priority: 1
+                    }),
+        buttonLabelB: "Sí",
+        scriptB: PurpleRobotClient.showNativeDialog({
+                        title: "CONEMO: ",
+                        message: "¡Qué bien! ¡Empecemos!",
+                        buttonLabelA: "OK",
+                        scriptA: PurpleRobotClient.doNothing(),
+                        buttonLabelB: "",
+                        scriptB: PurpleRobotClient.doNothing(),
+                        tag: "",
+                        priority: 1
+                    }),
+        tag: "CONEMO EJEMPLO",
+        priority: 1
+      }).execute();
     };
-});	
+    $scope.demoDialogue_ptBR = function() {
+      PurpleRobotClient.vibrate("buzz").showNativeDialog({
+        title: "CONEMO: ",
+        message: "Benvindo ao CONEMO!",
+        buttonLabelA: "Não",
+        scriptA: PurpleRobotClient.doNothing(),
+        buttonLabelB: "Sim",
+        scriptB: PurpleRobotClient.doNothing(),
+        tag: "CONEMO",
+        priority: 1
+      }).execute();
+    };
+    $scope.demoNotification_esPE = function() {
+      PurpleRobotClient.vibrate("buzz").showScriptNotification({
+        title: "CONEMO LESSON:",
+        message: "¡Bienvenido a CONEMO!",
+        isPersistent: true,
+        isSticky: false,
+        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+      }).execute();
+    };
+    $scope.demoNotification_ptBR = function() {
+      PurpleRobotClient.vibrate("buzz").showScriptNotification({
+        title: "CONEMO LESSON:",
+        message: "Benvindo ao CONEMO!",
+        isPersistent: true,
+        isSticky: false,
+        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+      }).execute();
+    };
+});

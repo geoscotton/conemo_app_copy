@@ -2,7 +2,7 @@
 
 angular.module('conemoAppApp')
   .factory('conemoConfig', ['$rootScope', function($rootScope) {
-    $rootScope.appVersion = "0.1.18";
+    $rootScope.appVersion = "0.1.20";
     
     function ConemoConfig() {}
 
@@ -23,4 +23,3 @@ angular.module('conemoAppApp')
   .factory('DialogueService', ['$resource', function($resource) {
     return $resource('scripts/dialogues.json');
   }]);
-

@@ -81,7 +81,8 @@ i18nStrings.generalContent.push({
     	"https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true"
+        "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true",
+    	"https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true"
     ],
     yes: 'sim',
     no: 'não'
@@ -120,7 +121,8 @@ i18nStrings.generalContent.push({
 		"https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true"
+        "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true",
+    	"https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true"
     ],
     yes: 'sí',
     no: 'no'

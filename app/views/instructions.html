@@ -9,9 +9,125 @@
 
 	<div ng-bind-html="'instructionsContent' | translate">
 	</div>
-
+	<input type="checkbox" ng-model="checked"> Sample Lesson
+	<div ng-show="checked && l10n=='es-PE'">
+		<h2>¡Bienvenido a CONEMO!</h2>
+		<div class='well'>
+			<p>CONEMO es un programa que te permite leer textos, mirar vídeos y responder preguntas, todo con el objetivo de mejorar tu salud física y emocional.</p>
+			<p>En esta sesión te mostraremos cómo puedes usar cada función de CONEMO.</p>
+		</div>
+		<h2>Siguiente y atrás</h2>
+		<div class='well'>
+			<p>Cuando abres el aplicativo y la sesión que corresponde de ese día, lee el texto de esa página y luego presiona el botón “siguiente”</p>
+			<img src='images/next.png' />
+			<p>Si quieres regresar a la página anterior presiona el botón “atrás”.</p>
+			<img src='images/back.png' />
+		</div>
+		<h2>Ver vídeos</h2>
+		<div class='well'>
+			<p>Para ver un vídeo, presiona el triángulo en el centro ►.</p>
+			<p>Para agrandar la pantalla, presiona el botón <img src='images/fullscreen.png' /> y voltea el teléfono en posición horizontal. Cuando termine el vídeo, presiona el botón “atrás”.</p>
+			<p>Para pausar el vídeo, presiona el botón “pausa” <img src='images/pause.png' /></p>
+			<div id="samplevideo">video4</div>
+		</div>
+		<h2>Elegir respuestas</h2>
+		<div class='well'>
+			<p>Para responder una pregunta o elegir actividades, simplemente presiona el cuadrado blanco.</p>
+			<p>Se abrirá una página con todas las opciones.</p>
+			<p>Para elegir una opción presiónala.</p>
+			<p>Una vez que hayas hecho tu selección, presiona “aceptar”.</p>
+		</div>
+		<h2>Elegir varias respuestas</h2>
+		<div class='well'>
+			<p>En algunas preguntas se puede elegir varias opciones.Para elegir cualquiera de esas opciones presiónala.</p>
+			<p>Si has elegido una respuesta y te gustaría cambiarla, presiona nuevamente la respuesta seleccionada para “des-marcarlo”. Acá un ejemplo:</p>
+			<p>¿Qué tipo de comida te gusta? Elige todas las opciones que corresponden.</p>
+			<select multiple='true' name='comida' size='3'>
+				<option value='Lomo saltado'>Lomo saltado</option>
+				<option value='Arroz con pollo'>Arroz con pollo</option>
+				<option value='Ceviche'>Ceviche</option>
+				<option value='Papa a la huancaína'>Papa a la huanca&iacute;na</option>
+				<option value='Pizzas y pastas'>Pizzas y pastas</option>
+				<option value='Carnes'>Carnes</option>
+				<option value='Pescados y Mariscos'>Pescados y Mariscos</option>
+				<option value='Frutas y verduras'>Frutas y verduras</option>
+			</select>
+		</div>
+		<h2>Elegir una sola respuesta</h2>
+		<div class="well">
+			<p>En otras preguntas sólo debes elegir una opción de las presentes. Acá un ejemplo:</p>
+			<p>¿Cuál es tu color favorito?</p>
+			<select>
+				<option value="rojo">rojo</option>
+				<option value="verde">verde</option>
+				<option value="azul">azul</option>
+				<option value="amarillo">amarillo</option>
+				<option value="otro">otro</option>
+			</select>
+		</div>
+		<h2>Retroceder</h2>
+		<div class="well">
+			<p>Recuerda siempre puedes apretar el botón “atrás” en tu teléfono si no quieres responder una pregunta en ese momento o si quieres regresar a la sesión. <img src="images/back-phone.png" /></p>
+		</div>
+		<h2>Diálogos</h2>
+		<div class="well">
+			<p>A veces recibirás un mensaje del sistema, un “diálogo”, al cual deberías responder.
+			<p>Ese aparecerá en tu pantalla y te indicará qué es lo que deberías hacer.</p>
+			<p>Después que hayas seleccionado una de las opciones, una respuesta aparecerá en tu pantalla.</p>
+			<p>Presiona “aceptar” cuando terminas de leerlo.</p>
+			<p>Para ver la notificación del diálogo:</p>
+			<button type="button" class="btn btn-info" style="font-size: 1em" ng-click="demoDialogue_esPE()">Presiona acá</button>
+		</div>
+		<h2>Notificaciones de sesiones</h2>
+		<div class="well">
+			<p>Además te mandaremos notificaciones para recordarte que hay una nueva sesión disponible en CONEMO que debes realizar.</p>
+			<p>Esa notificación aparecerá en forma de un símbolo en la esquina derecha de tu pantalla. [Image of notification icon / screenshot]</p>
+			<p>Desliza tu dedo encima de la pantalla desde el borde superior hacia abajo, para ver la notificación.</p>
+			<p>Luego presiona el mensaje de notificación para abrir el aplicativo CONEMO.</p>
+			<p>Para ver notificaciones:</p>
+			<button type="button" class="btn btn-info" style="font-size: 1em" ng-click="demoNotification_esPE()">Presiona acá</button>
+		</div>
+		<h2>Calendario</h2>
+		<div class="well">
+			<p>Para seleccionar una fecha en la cual quieres hacer una actividad, presiona el cuadro blanco correspondiente.</p>
+			<p>Se abrirá un calendario en el cual puedes cambiar el día, mes y año. Elige una fecha en esta misma semana para realizar tu actividad.</p>
+			<input type="date" />
+		</div>
+		<h2>Hora</h2>
+		<div class="well">
+			<p>Para programar una hora en la cual quieres hacer la actividad elegida, presiona el cuadrado blanco y selecciona la hora correspondiente.</p>
+			<p>Para modificar la hora, desliza tu dedo hacia arriba y abajo hasta la hora en el centro es la que quieres seleccionar.</p>
+			<input type="time" />
+		</div>
+		<h2>¿Preguntas?</h2>
+		<div class="well">
+			<p>Si tienes alguna pregunta, por favor, pregunta a tu enfermera o enfermero.</p>
+		</div>
+	</div>
+	<div ng-show="checked && l10n=='pt-BR'">
+		<h2>Benvindo ao CONEMO!</h2>
+		<div class='well'>
+			<p>CONEMO é um programa que permite que você leia, assista vídeos e responda questões sobre como você está se sentido, usando seu telefone.</p>
+			<p>Para assistir um vídeo, pressione a seta no vídeo abaixo.</p>
+			<div id="samplevideo">video4</div>
+			<p>Para responder uma pergunta, simplesmente pressione a questão e você poderá selecionar uma opção.</p>
+			<p>Lembre-se que você pode pressionar no telefone o botão para voltar se você não quiser responder ou se tiver esquecido a pergunta.</p>
+			<p>[Pergunta] Qual é sua cor favorita?</p>
+			<select name='color'>
+				<option value='vermelha'>Vermelha</option>
+				<option value='verde'>Verde</option>
+				<option value='azul'>Azul</option>
+			</select>
+			<p>De vez em quando você também receberá algumas mensagens pelo sistema. Essas mensagens irão se abrir na tela e lhe indicar se há alguma coisa que você deve fazer.</p>
+			<p>Para visualizar um caixa de diálogo se abrindo:</p>
+			<button type="button" class="btn btn-info" style="font-size: 1em" ng-click="demoDialogue_ptBR()">Pressione aqui
+			</button>
+			<p>Para mudar de página, pressione a seta à direita na parte inferior da tela.</p>
+			<p>Para voltar à página anterior, pressione a seta à esquerda na parte inferior da tela.</p>
+			<p>Se você tiver alguma pergunta, por favor, pergunte à sua enfermeira!</p>
+		</div>
+	</div>
 	<div class="well">Conemo Phone App V{{ appVersion }}</div>
-
 
 </div>
 
