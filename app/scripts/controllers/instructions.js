@@ -7,9 +7,13 @@ angular.module('conemoAppApp')
 
     $scope.$watch('checked', function(newValue, oldValue) {
         if (newValue !== oldValue) {
-            var videocontainer = document.getElementById('samplevideo');
+            var videocontainerES = document.getElementById('samplevideo-es');
+            var videocontainerPT = document.getElementById('samplevideo-pt');
+
             var downloader = new Downloader();
-            videocontainer.innerHTML = downloader.insert("video",videocontainer.textContent);
+            videocontainerES.innerHTML = downloader.insert("video",videocontainerES.textContent);
+            videocontainerPT.innerHTML = downloader.insert("video",videocontainerPT.textContent);
+
         }
     });
 
