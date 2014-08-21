@@ -20615,3 +20615,31 @@ div.slide > * {
 .es-PE div.well p {
   font-size: 18px;
 }
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003248;
+  }
+}
+
+.es-PE #instructions {
+  font-size: 1.4em;
+}
+
+@media -sass-debug-info {
+  filename {
+    font-family: file\:\/\/\/Users\/jeaniechung\/projects\/conemo_app\/app\/styles\/main\.scss;
+  }
+
+  line {
+    font-family: \00003252;
+  }
+}
+
+#instructions img {
+  max-width: 100%;
+}

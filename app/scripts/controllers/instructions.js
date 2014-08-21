@@ -17,6 +17,11 @@ angular.module('conemoAppApp')
         }
     });
 
+    $scope.checked = false;
+    $scope.toggleChecked = function() {
+        $scope.checked = $scope.checked === false ? true: false;
+    };
+
     $scope.l10n = l10n;
     $scope.demoDialogue_esPE = function() {
       PurpleRobotClient.vibrate("buzz").showNativeDialog({
@@ -62,7 +67,7 @@ angular.module('conemoAppApp')
     };
     $scope.demoNotification_esPE = function() {
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
-        title: "CONEMO LESSON:",
+        title: "Nueva sesión en CONEMO: ",
         message: "¡Bienvenido a CONEMO!",
         isPersistent: true,
         isSticky: false,

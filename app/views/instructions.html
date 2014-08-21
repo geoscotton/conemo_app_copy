@@ -9,7 +9,8 @@
 
 	<div ng-bind-html="'instructionsContent' | translate">
 	</div>
-	<input type="checkbox" ng-model="checked">{{'instructionsLesson' | translate}}
+	<button type="button" class="btn btn-info" style="font-size: 1em" ng-click="toggleChecked()">{{'instructionsLesson' | translate}}</button>
+
 	<div ng-show="checked && l10n=='es-PE'">
 		<h2>¡Bienvenido a CONEMO!</h2>
 		<div class='well'>
@@ -41,7 +42,7 @@
 		</div>
 		<h2>Elegir varias respuestas</h2>
 		<div class='well'>
-			<p>En algunas preguntas se puede elegir varias opciones.</p>
+			<p>En algunas preguntas se puede elegir varias opciones. Para elegir cualquiera de esas opciones presiónala.</p>
 			<p>Si has elegido una respuesta y te gustaría cambiarla, presiona nuevamente la respuesta seleccionada para “des-marcarlo”. Acá un ejemplo:</p>
 			<p>¿Qué tipo de comida te gusta? Elige todas las opciones que corresponden.</p>
 			<select multiple='true' name='comida' size='3'>
@@ -70,7 +71,8 @@
 		</div>
 		<h2>Retroceder</h2>
 		<div class="well">
-			<p>Recuerda siempre puedes apretar el botón “atrás” en tu teléfono si no quieres responder una pregunta en ese momento o si quieres regresar a la sesión. <img src="images/back-phone.png" /></p>
+			<p>Recuerda, siempre puedes apretar el botón “atrás” en tu teléfono si no quieres responder una pregunta en ese momento o si quieres regresar a la sesión. <img src="images/back-phone.png" /></p>
+			<p>Para volver a la página inicial de CONEMO, presiona el símbolo de la casita. <img src="images/home.png" /></p>
 		</div>
 		<h2>Diálogos</h2>
 		<div class="well">
@@ -95,7 +97,7 @@
 		<h2>Calendario</h2>
 		<div class="well">
 			<p>Para seleccionar una fecha en la cual quieres hacer una actividad, presiona el rectángulo blanco correspondiente.</p>
-			<p>Se abrirá un calendario en el cual puedes cambiar el día, mes y año. Presiona el “+” para aumentar el número o mes y “-” para disminuirlo. Elige una fecha en esta misma semana para realizar tu actividad.</p>
+			<p>Se abrirá un calendario en el cual puedes cambiar el día, mes y año. Presiona el “+” para aumentar el número o mes y “-” para disminuirlo. Luego presiona “Establecer”</p>
 			<input type="date" />
 		</div>
 		<h2>Hora</h2>

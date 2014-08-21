@@ -90,13 +90,13 @@
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/7a98c4ea.scripts.js \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/41ca6fec.scripts.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/cbits.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/dialogues.json \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/fd424053.vendor.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/lessons.json \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/2493021a.main.css \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/29403685.vendor.css \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/b6648af4.main.css \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/bootstrap.min.css \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/views/contact.html \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/views/instructions.html \
