@@ -60,7 +60,7 @@ i18nStrings.generalContent.push({
 	configureUserLabel:'Configure sua Conta de Usuário',
 	contactHelpLabel:"Solicitação de ajuda",
 	instructionsLabel:"Instruções",
-	instructionsLesson: "Sample Lesson",
+	instructionsLesson: "Sessão de exemplo",
 	instructionsContent:"<h2><i class='glyphicon glyphicon-question-sign'></i> Como funciona o App:</h2><ol class='well'><li>3 vezes por semana você deverá fazer o login no aplicativo CONEMO, haverá novas ferramentas e informações cada vez que você acessá-lo</li><li>Cada vez que você fizer seu login, você irá aprender algumas estratégias testadas que são desenvolvidas para mantê-lo mais saudável e feliz</li><li>Se você esquecer de acessar o aplicativo por mais de duas vezes, você será contactado por seu auxiliar de enfermagem para ter certeza de que você continue acessando e participando do programa</li></ol><h2><i class='glyphicon glyphicon-wrench'></i> Sessões anteriores</h2><ol class='well'><li>Você pode voltar para sessões mais antigas (dos dias anteriores), se você quiser, visitando a caixa de ferramentas</li><li>Se você pular sessões, você pode visitar as sessões anteriores para voltar a elas</li></ol> <h2><i class='glyphicon glyphicon-phone'></i> Solicitação de Ajuda</h2> <ol class='well'><li>Se precisar de ajuda a qualquer momento, pressione o botão de Solicitação de ajuda.</li><li>Não se preocupe, você pode pedir ajuda <ol><li>com o aplicativo</li><li>para uma auxiliar de enfermagem com o seu telefone</li></ol>",
 	contactTypes:['Preciso de ajuda com o aplicativo','Preciso de assistência geral da minha Auxiliar de Enfermagem','Estou com problemas em conectar a internet'],
 	thankYouAlert:"Obrigado, a equipe do estudo foi contactada",
@@ -83,7 +83,7 @@ i18nStrings.generalContent.push({
         "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true",
-    	"https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true"
+    	"https://github.com/cbitstech/conemo_videos/blob/master/countdown.mp4?raw=true"
     ],
     yes: 'sim',
     no: 'não'
@@ -124,7 +124,7 @@ i18nStrings.generalContent.push({
         "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
         "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true",
-    	"https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true"
+    	"https://github.com/cbitstech/conemo_videos/blob/master/countdown.mp4?raw=true"
     ],
     yes: 'sí',
     no: 'no'

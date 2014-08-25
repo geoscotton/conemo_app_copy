@@ -53,6 +53,7 @@
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/41531bba.notification.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/47b431ed.yeoman.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/48a8305d.next.png \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/87551666.home.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/8ac94569.back-phone.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/9f63d40d.fullscreen.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/c51eb281.play.png \
@@ -90,13 +91,13 @@
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/41ca6fec.scripts.js \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/7d99fa34.scripts.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/cbits.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/dialogues.json \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/fd424053.vendor.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/lessons.json \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/29403685.vendor.css \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/b6648af4.main.css \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/91bd4195.main.css \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/styles/bootstrap.min.css \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/views/contact.html \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/views/instructions.html \
