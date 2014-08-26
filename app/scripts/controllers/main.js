@@ -83,7 +83,7 @@ angular.module('conemoAppApp')
 
                 PurpleRobotClient.updateTrigger({
                     script: PurpleRobotClient.vibrate("buzz").showScriptNotification({
-                        title: "CONEMO LESSON:",
+                        title: "CONEMO: ",
                         message: el.title,
                         isPersistent: true,
                         isSticky: false,

@@ -144,10 +144,12 @@ angular.module('conemoAppApp', [
             }
         });
     })
-    .run(function() {
+    .run(function($window) {
         document.addEventListener("deviceready", onDeviceReady, false);
 
         function onDeviceReady() {
+            document.addEventListener("resume",onResume,false);
+
             var networkState = navigator.connection.type;
 
             var states = {};
@@ -161,5 +163,8 @@ angular.module('conemoAppApp', [
             states[Connection.NONE]     = 'No network connection';
 
             localStorage.setItem('connection',states[networkState]);
+        }
+        function onResume() {
+            $window.location.href = "";
         }
     });

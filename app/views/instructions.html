@@ -11,7 +11,7 @@
 	</div>
 	<button type="button" class="btn btn-info" style="font-size: 1em" ng-click="toggleChecked()">{{'instructionsLesson' | translate}}</button>
 
-	<div ng-show="checked && l10n=='es-PE'">
+	<div ng-show="checked && l10n=='es-PE'" class="sampleLesson">
 		<h2>¡Bienvenido a CONEMO!</h2>
 		<div class='well'>
 			<p>CONEMO es un programa que te permite leer textos, mirar vídeos y responder preguntas, todo con el objetivo de mejorar tu salud física y emocional.</p>
@@ -26,11 +26,12 @@
 		</div>
 		<h2>Ver vídeos</h2>
 		<div class='well'>
-			<p>Para ver un vídeo, presiona el triángulo en el centro. <img src='images/play.png' /></p>
-			<p>Para agrandar la pantalla, presiona el botón <img src='images/fullscreen.png' /> y voltea el teléfono en posición horizontal. Cuando termine el vídeo, presiona el botón “atrás”.</p>
+			<p>Para ver un vídeo, presiona el botón “agrandar pantalla” <img src='images/fullscreen.png' /> y voltea el teléfono en posición horizontal.</p>
+			<p>Luego, presiona el triángulo en el centro <img src='images/play.png' /></p>
 			<p>Para pausar el vídeo, presiona el botón “pausa” <img src='images/pause.png' /></p>
+			<p>Para regresar al aplicativo cuando termine el vídeo, presiona la pantalla para ver los botones del teléfono y presiona el botón “atrás” <img src='images/back-phone.png' /></p>
 			<div id="samplevideo-es">video4</div>
-			<p>Para regresar al aplicativo, presiona la pantalla y luego el botón “atrás” del teléfono. <img src='images/back-phone.png' /></p>
+
 		</div>
 		<h2>Elegir respuestas</h2>
 		<div class='well'>
