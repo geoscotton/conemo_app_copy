@@ -67,7 +67,7 @@ angular.module('conemoAppApp')
     };
     $scope.demoNotification_esPE = function() {
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
-        title: "Nueva sesión en CONEMO: ",
+        title: "CONEMO: ",
         message: "¡Bienvenido a CONEMO!",
         isPersistent: true,
         isSticky: false,
@@ -76,7 +76,7 @@ angular.module('conemoAppApp')
     };
     $scope.demoNotification_ptBR = function() {
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
-        title: "CONEMO LESSON:",
+        title: "CONEMO: ",
         message: "Benvindo ao CONEMO!",
         isPersistent: true,
         isSticky: false,

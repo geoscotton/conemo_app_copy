@@ -48,7 +48,7 @@
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/fonts/glyphicons-halflings-regular.ttf \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/fonts/glyphicons-halflings-regular.woff \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/06f99eed.back.png \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/2dd657db.notification2.png \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/39b3b0c5.notification2.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/3fd4f6d8.multiselect.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/41531bba.notification.png \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/images/47b431ed.yeoman.png \
@@ -91,7 +91,7 @@
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
-/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/0224259d.scripts.js \
+/Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/3bf5beda.scripts.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/cbits.js \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/dialogues.json \
 /Users/jeaniechung/projects/conemo_app/platforms/android/assets/www/scripts/fd424053.vendor.js \

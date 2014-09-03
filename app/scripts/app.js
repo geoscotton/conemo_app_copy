@@ -117,7 +117,9 @@ angular.module('conemoAppApp', [
         // set locale variables to downloader global variables
 
         $rootScope.downloadVideos = function() {
+
             $rootScope.downloader.downloadMultiple();
+
         };
 
     })

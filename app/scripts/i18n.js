@@ -51,7 +51,7 @@ i18nStrings.generalContent.push({
 i18nStrings.generalContent.push({
 	l10n:'pt-BR',
 	language:'Português',
-	months:['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Septembro','Outubro','Novembro','Dezembro'],
+	months:['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
 	appName:'CONEMO',
 	beginLessonButtonLabel:'Iniciar',
 	toolBoxLabel:'Sessões anteriores',

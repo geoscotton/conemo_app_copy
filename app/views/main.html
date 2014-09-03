@@ -3,7 +3,7 @@
 
 <div id="account-setup" ng-show="showAccountSetup" class="well">
 	<form name="accountSetup" ng-submit="setUserAccountInfo();">
-	<h4>1. Locale</h4><br/>
+	<h4>1. Locale </h4> <br/>
 	<button type="button" 
 		name="l10n" 
 		class="btn btn-info btn-language"
@@ -15,19 +15,18 @@
 	</button>
 	<br/>
 	<br/>
-	<h4>2. Videos</h4><br/>
+	<h4>2. Videos <i ng-show="filesDownloaded != 'undefined'" class="glyphicon glyphicon-ok"></i></h4><br/>
 	
 
 	<button type="button" ng-click="enableStep('userId'); downloadVideos();" class="hidden btn btn-info" id="download">{{ 'download' | translate }}</button>
-	{{ lastDownloadDate }}
-
+	
 	<div id="progressContainer" class="well" style="display: none;">
 	<div id="download-counter"></div>
 	</div><br/>
 	<h4>3. {{ 'configureUserLabel' | translate }}</h4>
 	<label for="userId">ID #</label><br/>
 
-		<input type="text" id="userId" name="userId" ng-model="userId" class="hidden" required>
+		<input type="text" id="userId" name="userId" ng-model="userId" ng-class="filesDownloaded != 'undefined' ? '' : 'hidden'" required>
 		<br/>
 
 
