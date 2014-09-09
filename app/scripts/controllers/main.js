@@ -71,7 +71,8 @@ angular.module('conemoAppApp')
             // skip first lesson
             for (var i = 1; i < dateSortedLessons.length; i++) {
                 var lesson = {
-                    releaseDay: (moment().add('m',(dateSortedLessons[i].dayInTreatment)-1)),
+                    // releaseDay: (moment().add('m',(dateSortedLessons[i].dayInTreatment)-1)),
+                    releaseDay: (moment().add('m',(i*5)),
                     title: dateSortedLessons[i].title
                 };
                 
@@ -106,7 +107,8 @@ angular.module('conemoAppApp')
             var dateFormat = "YYYYMMDDTHHmmss";
             for (var i = 0; i < dateSortedDialogues.length; i++) {
                 var dialogue = {
-                    releaseDay: (moment().add('m',(dateSortedDialogues[i].dayInTreatment)-1)),
+                    // releaseDay: (moment().add('m',(dateSortedDialogues[i].dayInTreatment)-1)),
+                    releaseDay: (moment().add('m',(i*5)),
                     days_in_treatment: daysInTreatment,
                     guid: dateSortedDialogues[i].guid,
                     message: dateSortedDialogues[i].message,
