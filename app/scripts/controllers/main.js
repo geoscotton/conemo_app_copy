@@ -88,7 +88,7 @@ angular.module('conemoAppApp')
                         title: "CONEMO: ",
                         message: el.title,
                         isPersistent: true,
-                        isSticky: false,
+                        isSticky: true,
                         script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
                       }),
                     triggerId: "LESSON"+triggerStart,

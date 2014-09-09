@@ -96,7 +96,7 @@ i18nStrings.generalContent.push({
     'Junho',
     'Julho',
     'Agosto',
-    'Septembro',
+    'Setembro',
     'Outubro',
     'Novembro',
     'Dezembro'
@@ -302,7 +302,6 @@ angular.module('conemoAppApp', [
     // set locale variables to downloader global variables
     $rootScope.downloadVideos = function () {
       $rootScope.downloader.downloadMultiple();
-      localStorage.setItem('filesDownloaded', 'true');
     };
   }
 ]).run([
@@ -402,7 +401,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.26';
+    $rootScope.appVersion = '0.1.27';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -495,7 +494,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
               title: 'CONEMO: ',
               message: el.title,
               isPersistent: true,
-              isSticky: false,
+              isSticky: true,
               script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
             }),
             triggerId: 'LESSON' + triggerStart,
