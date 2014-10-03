@@ -3,7 +3,7 @@
 
 angular.module('conemoAppApp')
 
-.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $route) {
+.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $route, startDateService) {
 
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
@@ -25,6 +25,9 @@ angular.module('conemoAppApp')
         (new PurpleRobot()).emitReading('app_login', loginLog).execute();
     }
 
+    //set up intervention start date
+    $scope.setStartDate = startDateService.setStartDate;
+
     $scope.availableLocales = l10nStrings.availableLocales;
 
     $scope.setLocale = function() {
@@ -32,7 +35,7 @@ angular.module('conemoAppApp')
         conemoConfig.set({ l10n: this.locale });
     };
 
-    var daysInTreatment = cbits.getDaysInTreatment();
+    var daysInTreatment = startDateService.getDaysInTreatment();
     
 
     //Sort lessons and dialogues by date to determine first lesson and schedule triggers
@@ -40,27 +43,11 @@ angular.module('conemoAppApp')
     var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
 
 
-    var getRecentLesson = function(daysInTreatment,dateSortedLessons){
 
-        var mostRecentLesson = {}; 
-
-        _.each(dateSortedLessons,function(el,idx){
-            if (el.dayInTreatment <= daysInTreatment){
-                mostRecentLesson = el;
-                mostRecentLesson.currentSessionIndex = idx+1;
-            }
-
-        })
-
-        return mostRecentLesson
-    }
-
-    var mostRecentLesson = getRecentLesson(daysInTreatment,dateSortedLessons);
-
-    
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
         // PurpleRobotClient.clearTriggers();
+        $scope.setStartDate();
         schedulePRTriggersLessons();
         schedulePRTriggersDialogues();
     }
@@ -71,17 +58,16 @@ angular.module('conemoAppApp')
             // skip first lesson
             for (var i = 1; i < dateSortedLessons.length; i++) {
                 var lesson = {
-                    // releaseDay: (moment().add('m',(dateSortedLessons[i].dayInTreatment)-1)),
-                    releaseDay: (moment().add('m',(i*5)),
+                    releaseDay: (moment().add('d',(dateSortedLessons[i].dayInTreatment)-1)),
                     title: dateSortedLessons[i].title
                 };
                 
                 lessonReleases.push(lesson);
             }
             _.each(lessonReleases,function(el) {
-                var triggerStart = moment(el.releaseDay).format(dateFormat);
+                // var triggerStart = moment(el.releaseDay).format(dateFormat);
 
-                // var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
+                var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
                 var triggerEnd = moment(triggerStart,dateFormat).add('minutes',1).format(dateFormat);
 
                 PurpleRobotClient.updateTrigger({
@@ -107,8 +93,7 @@ angular.module('conemoAppApp')
             var dateFormat = "YYYYMMDDTHHmmss";
             for (var i = 0; i < dateSortedDialogues.length; i++) {
                 var dialogue = {
-                    // releaseDay: (moment().add('m',(dateSortedDialogues[i].dayInTreatment)-1)),
-                    releaseDay: (moment().add('m',(i*5)),
+                    releaseDay: (moment().add('d',(dateSortedDialogues[i].dayInTreatment)-1)),
                     days_in_treatment: daysInTreatment,
                     guid: dateSortedDialogues[i].guid,
                     message: dateSortedDialogues[i].message,
@@ -121,9 +106,9 @@ angular.module('conemoAppApp')
                 dialogueReleases.push(dialogue);
             }
             _.each(dialogueReleases,function(el) {
-                var triggerStart = moment(el.releaseDay).format(dateFormat);
+                // var triggerStart = moment(el.releaseDay).format(dateFormat);
 
-                // var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).format(dateFormat);
+                var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).format(dateFormat);
                 var triggerEnd = moment(triggerStart,dateFormat).add('minutes',1).format(dateFormat);
 
                 PurpleRobotClient.updateTrigger({
@@ -193,6 +178,26 @@ angular.module('conemoAppApp')
             return false;
         }
     }
+
+    var getRecentLesson = function(daysInTreatment,dateSortedLessons){
+
+        var mostRecentLesson = {}; 
+        var daysInTreatment = startDateService.getDaysInTreatment();
+
+        _.each(dateSortedLessons,function(el,idx){
+            if (el.dayInTreatment <= daysInTreatment){
+                mostRecentLesson = el;
+                mostRecentLesson.currentSessionIndex = idx+1;
+            }
+
+        })
+
+        return mostRecentLesson
+    }
+
+    var mostRecentLesson = getRecentLesson(daysInTreatment,dateSortedLessons);
+
+    
 
     $scope.filesDownloaded = typeof localStorage.lastDownload;
     $scope.userId = localStorage.userId;

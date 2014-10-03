@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('conemoAppApp')
-    .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location, $rootScope) {
+    .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location, $rootScope, startDateService) {
         var docHeight = $(window).height();
         var docWidth = $(window).width();
 
@@ -73,7 +73,7 @@ angular.module('conemoAppApp')
             $scope.navButtonGenerator($scope.currentSlideIndex);
         };
 
-        var daysInTreatment = cbits.getDaysInTreatment();
+        var daysInTreatment = startDateService.getDaysInTreatment();
 
         $scope.backLabel = l10nStrings.backLabel;
         $scope.nextLabel = l10nStrings.nextLabel;

@@ -17,27 +17,7 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
 
 l10nStrings.availableLocales = _.pluck(i18nStrings.generalContent, 'l10n');
 
-//set up intervention start date
-if (typeof localStorage.startDate === 'undefined') {
-    //could replace later with server side start date
-    var startDate = new Date();
-    startDate.setHours(0, 0, 0, 0);
-    localStorage.startDate = startDate;
 
-
-
-
-} else {
-    var startDate = new Date(localStorage.startDate);
-    var startDateLog = {
-        user_id: localStorage.userId,
-        date_created: new Date(),
-        start_date: startDate,
-        l10n: localStorage.l10n
-    };
-
-    PurpleRobotClient.emitReading('start_date', startDateLog).execute();
-}
 
 var lessonsRead = [];
 //set up lesson read cache

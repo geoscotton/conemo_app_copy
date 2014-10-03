@@ -14,21 +14,3 @@ $.fn.serializeObject = function()
    });
    return o;
 };
-
-var cbits = {};
-
-cbits.getDaysInTreatment = function(){
-
-     //Get current time zeroed date for comparison with start
-        var dateToday = new Date();
-        dateToday.setHours(0,0,0,0);
-
-        var dateDiff = function (dateEarlier, dateLater) {
-            var oneDay=1000*60*60*24
-            return (  Math.round((dateLater.getTime()-dateEarlier.getTime())/oneDay)  );
-        }
-
-        return dateDiff(startDate,dateToday)+1;
-
-
-}
