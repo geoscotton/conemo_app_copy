@@ -1,14 +1,32 @@
-;(function() {
-  // ## Example
-  //
-  //     var pr = new PurpleRobot();
-  //     pr.playDefaultTone().execute();
+// ## Examples
+//
+// Basic
+//
+//     var pr = new PurpleRobot();
+//     pr.playDefaultTone().execute();
+//
+// Nesting (API calls within calls)
+//
+//     var playTone = pr.playDefaultTone();
+//     var toast = pr.emitToast("sorry");
+//     var dialog1 = pr.showNativeDialog(
+//       "dialog 1", "are you happy?", "Yes", "No", playTone, toast
+//     );
+//     pr.scheduleScript("dialog 1", 10, "minutes", dialog1)
+//       .execute();
+//
+// Chaining (sequential API calls)
+//
+//     pr.playDefaultTone().emitToast("hey there").execute();
 
+// ## Implementation
+
+;(function() {
   // __constructor__
   //
   // Initialize the client with an options object made up of
   // `serverUrl` - the url to which commands are sent
-  function PurpleRobot(options) {
+  function PR(options) {
     options = options || {};
 
     // __className__
@@ -25,9 +43,6 @@
     // `@private`
     this._script = options.script || "";
   }
-
-  var PR = PurpleRobot;
-  var root = window;
 
   function PurpleRobotArgumentException(methodName, argument, expectedArgument) {
     this.methodName = methodName;
@@ -52,7 +67,7 @@
   // `@public`
   //
   // The version of the API, corresponding to the version of Purple Robot.
-  PR.apiVersion = "1.5.10.0";
+  PR.apiVersion = "1.5.16.1";
 
   // __setEnvironment()__
   //
@@ -75,44 +90,6 @@
     return this;
   };
 
-  // ___push(nextScript)__
-  //
-  // `@private`  
-  // `@returns {Object}` A new PurpleRobot instance.
-  //
-  // Enables chaining of method calls.
-  PR.prototype._push = function(methodName, argStr) {
-    var nextScript = ["PurpleRobot.", methodName, "(", argStr, ");"].join("");
-
-    return new PR({
-      serverUrl: this._serverUrl,
-      script: [this._script, nextScript].join(" ").trim()
-    });
-  };
-
-  // ___stringify(value)__
-  //
-  // `@private`  
-  // `@param {*} value` The value to be stringified.  
-  // `@returns {string}` The stringified representation.
-  //
-  // Returns a string representation of the input. If the input is a
-  // `PurpleRobot` instance, a string expression is returned, otherwise a JSON
-  // stringified version is returned.
-  PR.prototype._stringify = function(value) {
-    var str;
-
-    if (value !== null &&
-        typeof value === "object" &&
-        value.className === this.className) {
-      str = value.toStringExpression();
-    } else {
-      str = JSON.stringify(value);
-    }
-
-    return str;
-  };
-
   // __toString()__
   //
   // `@returns {string}` The current script as a string.
@@ -130,7 +107,6 @@
   // Example
   //
   //     pr.emitToast("foo").toStringExpression();
-  //     // "(function() { return PurpleRobot.emitToast('foo'); })()"
   PR.prototype.toStringExpression = function () {
     return "(function() { return " + this._script + " })()";
   };
@@ -162,22 +138,23 @@
       script: this.toString()
     });
 
-    if (PR.env !== 'web') {
-      function onChange() {
-        if (callbacks && httpRequest.readyState === XMLHttpRequest.DONE) {
-          if (httpRequest.response === null) {
-            callbacks.fail && callbacks.fail();
-          } else if (callbacks.done) {
-            callbacks.done(JSON.parse(httpRequest.response).payload);
-          }
+    function onChange() {
+      if (callbacks && httpRequest.readyState === XMLHttpRequest.DONE) {
+        if (httpRequest.response === null &&
+            typeof callbacks.fail === "function") {
+          callbacks.fail();
+        } else if (callbacks.done) {
+          callbacks.done(JSON.parse(httpRequest.response).payload);
         }
       }
+    }
 
+    if (PR.env !== 'web') {
       var httpRequest = new XMLHttpRequest();
       httpRequest.onreadystatechange = onChange;
       var isAsynchronous = true;
       httpRequest.open("POST", this._serverUrl, isAsynchronous);
-      httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+      httpRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=UTF-8");
       httpRequest.send("json=" + json);
     } else {
       console.log('PurpleRobot POSTing to "' + this._serverUrl + '": ' + json);
@@ -293,19 +270,11 @@
     });
   };
 
-  // __q(value)__
-  //
-  // `@private`  
-  // `@param {string} value` A string argument.  
-  // `@returns {string}` A string with extra single quotes surrounding it.
-  function q(value) {
-    return "'" + value + "'";
-  };
-
-  // ##Purple Robot API
+  // ## Purple Robot API
 
   // __addNamespace(namespace)__
   //
+  // `@param {string} namespace` The name of the namespace.  
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Adds a namespace under which unencrypted values might be stored.
@@ -347,7 +316,7 @@
   // __clearNativeDialogs()__  
   // __clearNativeDialogs(tag)__
   //
-  // `@param {string} tag (optional)` An identifier of a specific dialog.
+  // `@param {string} tag (optional)` An identifier of a specific dialog.  
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Removes all native dialogs from the screen.
@@ -405,6 +374,19 @@
     return this._push("deleteTrigger", q(id));
   };
 
+  // __disableProbes()__
+  //
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Disables all probes.
+  //
+  // Example
+  //
+  //     pr.disableProbes();
+  PR.prototype.disableProbes = function() {
+    return this._push("disableProbes");
+  };
+
   // __disableTrigger(id)__
   //
   // `@param {string} id` The id of the trigger.  
@@ -453,6 +435,19 @@
     return this._push("emitToast", q(message) + ", " + hasLongDuration);
   };
 
+  // __enableProbes()__
+  //
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Enables all individually enabled probes.
+  //
+  // Example
+  //
+  //     pr.enableProbes();
+  PR.prototype.enableProbes = function() {
+    return this._push("enableProbes");
+  };
+
   // __enableTrigger(id)__
   //
   // `@param {string} id` The trigger ID.
@@ -467,6 +462,14 @@
   };
 
   // __fetchConfig()__
+  //
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Returns the Purple Robot configuration.
+  //
+  // Example
+  //
+  //     pr.fetchConfig();
   PR.prototype.fetchConfig = function() {
     return this._push("fetchConfig");
   };
@@ -568,14 +571,27 @@
     return this._push("fetchUserId");
   };
 
-  // __fetchWidget()__
+  // __fetchWidget(id)__
+  //
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Returns the widget identified by id.
+  //
+  // Example
+  //
+  //    pr.fetchWidget("asdf").execute({
+  //      done: function(widget) {
+  //        ...
+  //      }
+  //    });
   PR.prototype.fetchWidget = function(id) {
-    throw new Error("PurpleRobot.prototype.fetchWidget not implemented yet");
+    return this._push("fetchWidget", q(id));
   };
 
   // __fireTrigger(id)__
   //
-  // `@param {string} id` The trigger ID.
+  // `@param {string} id` The trigger ID.  
+  // `@returns {Object}` A new PurpleRobot instance.
   //
   // Fires the trigger immediately.
   //
@@ -587,8 +603,14 @@
   };
 
   // __formatDate(date)__
+  //
+  // `@param {date} date` The date to be formatted for trigger purposes
+  // `@returns {string}` The trigger date format for iCal compatibility
+  //  Wed Sep 24 2014 11:17:40 GMT-0500 (CDT) is transformed to "20140924T111740" 
   PR.prototype.formatDate = function(date) {
-    throw new Error("PurpleRobot.prototype.formatDate not implemented yet");
+
+   throw new error('There is no formatDate function on PR client');
+
   };
 
   // __launchApplication(name)__
@@ -607,6 +629,7 @@
 
   // __launchInternalUrl(url)__
   //
+  // `@param {string} url` The URL to request.  
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Launches a URL within the Purple Robot application WebView.
@@ -633,8 +656,23 @@
   };
 
   // __loadLibrary(name)__
+  //
+  // `@param {string} name` The name of the JavaScript library to load.  
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Loads a JavaScript library in the context of Purple Robot.
+  //
+  // Example
+  //
+  //     pr.loadLibrary("Underscore");
+  //
+  // Possible values
+  //
+  //     D3
+  //     Moment
+  //     Underscore
   PR.prototype.loadLibrary = function(name) {
-    throw new Error("PurpleRobot.prototype.loadLibrary not implemented yet");
+    return this._push("loadLibrary", q(name));
   };
 
   // __log(name, value)__
@@ -699,6 +737,10 @@
   // __persistEncryptedString(key, value, namespace)__  
   // __persistEncryptedString(key, value)__
   //
+  // `@param {string} key` The name of the key where the value will be stored.  
+  // `@param {*} value` The thing to store.  
+  // `@param {string} namespace (optional)` The namespace in which to store the
+  // data.  
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Stores the *value* within the *namespace*, identified by the *key*.
@@ -712,6 +754,29 @@
       return this._push("persistEncryptedString", q(key) + ", " + q(value));
     } else {
       return this._push("persistEncryptedString", q(namespace) + ", " + q(key) + ", " + q(value));
+    }
+  };
+
+  // __persistString(key, value, namespace)__  
+  // __persistString(key, value)__
+  //
+  // `@param {string} key` The name of the key where the value will be stored.  
+  // `@param {*} value` The thing to store.  
+  // `@param {string} namespace (optional)` The namespace in which to store the
+  // data.  
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Stores the *value* within the *namespace*, identified by the *key*.
+  //
+  // Examples
+  //
+  //     pr.persistString("foo", "bar", "app Q");
+  //     pr.persistString("foo", "bar");
+  PR.prototype.persistString = function(key, value, namespace) {
+    if (typeof namespace === "undefined") {
+      return this._push("persistString", q(key) + ", " + q(value));
+    } else {
+      return this._push("persistString", q(namespace) + ", " + q(key) + ", " + q(value));
     }
   };
 
@@ -753,13 +818,18 @@
 
   // __readUrl(url)__
   //
+  // `@param {string}` The URL to GET.  
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Attempts to GET a URL and return the body as a string.
   //
   // Example
   //
-  //     pr.readUrl("http://www.northwestern.edu");
+  //     pr.readUrl("http://www.northwestern.edu").execute({
+  //       done: function(body) {
+  //         ...
+  //       }
+  //     });
   PR.prototype.readUrl = function(url) {
     return this._push("readUrl", q(url));
   };
@@ -890,16 +960,7 @@
 
   // __updateConfig(options)__
   //
-  // `@param {Object} options` The options to configure. Included:
-  // `config_data_server_uri`  
-  // `config_enable_data_server`  
-  // `config_feature_weather_underground_enabled`  
-  // `config_http_liberal_ssl`  
-  // `config_last_weather_underground_check`  
-  // `config_probe_running_software_enabled`  
-  // `config_probe_running_software_frequency`  
-  // `config_probes_enabled`  
-  // `config_restrict_data_wifi`  
+  // `@param {Object} options` The options to configure.
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Example
@@ -908,6 +969,18 @@
   //       config_enable_data_server: true,
   //       config_restrict_data_wifi: false
   //     });
+  //
+  // Options
+  //
+  //     config_data_server_uri
+  //     config_enable_data_server
+  //     config_feature_weather_underground_enabled
+  //     config_http_liberal_ssl
+  //     config_last_weather_underground_check
+  //     config_probe_running_software_enabled
+  //     config_probe_running_software_frequency
+  //     config_probes_enabled
+  //     config_restrict_data_wifi
   PR.prototype.updateConfig = function(options) {
     return this._push("updateConfig", [JSON.stringify(options)].join(", "));
   };
@@ -925,22 +998,54 @@
   //
   //     pr.updateTrigger({
   //       script: pr.emitToast("butter"),
-  //       startAt: "20140505T020304",
-  //       endAt: "20140505T020404"
+  //       startAt: new Date(2014, 10, 24, 13, 54, 33, 0),
+  //       endAt: new Date(2014, 10, 24, 13, 54, 34, 0)"
   //     });
   PR.prototype.updateTrigger = function(options) {
     options = options || {};
 
     var timestamp = (new Date()).getTime();
     var triggerId = options.triggerId || ("TRIGGER-" + timestamp);
+
+    function formatDate (date){
+      function formatYear(date){
+        return date.getFullYear();
+      }
+
+      function formatMonth(date){
+        return ("0" + parseInt(1+date.getMonth())).slice(-2);
+      }
+
+      function formatDays(date){
+        return ("0" + parseInt(date.getDate())).slice(-2);
+      }
+
+      function formatHours(date){
+        return ("0" + date.getHours()).slice(-2);
+      }
+
+      function formatMinutes(date){
+        return ("0" + date.getMinutes()).slice(-2);
+      }
+
+      function formatSeconds  (date){
+        return ("0" + date.getSeconds()).slice(-2);
+      }
+
+      return formatYear(date) + formatMonth(date) + formatDays(date) + "T" +
+             formatHours(date) + formatMinutes(date) + formatSeconds(date);
+    
+    }
+
     var triggerJson = JSON.stringify({
       type: options.type || "datetime",
       name: triggerId,
       identifier: triggerId,
       action: options.script.toString(),
-      datetime_start: options.startAt,
-      datetime_end: options.endAt,
-      datetime_repeat: options.repeatRule || "FREQ=DAILY;INTERVAL=1"
+      datetime_start: formatDate(options.startAt),
+      datetime_end: formatDate(options.endAt),
+      datetime_repeat: options.repeatRule || "FREQ=DAILY;INTERVAL=1",
+      fire_on_boot: options.fire_on_boot || true
     });
 
     return this._push("updateTrigger", q(triggerId) + ", " + triggerJson);
@@ -959,22 +1064,31 @@
   //
   // Example
   //
-  //     pr.version();
+  //     pr.version().execute({
+  //       done: function(version) {
+  //         ...
+  //       }
+  //     });
   PR.prototype.version = function() {
     return this._push("version");
   };
 
   // __vibrate(pattern)__
   //
+  // `@param {string} pattern` The name of the vibration pattern.  
   // `@returns {Object}` A new PurpleRobot instance.
   //
   // Vibrates the phone with a preset pattern.
   //
-  // Examples
+  // Example
   //
   //     pr.vibrate("buzz");
-  //     pr.vibrate("blip");
-  //     pr.vibrate("sos");
+  //
+  // Patterns
+  //
+  //     blip
+  //     buzz
+  //     sos
   PR.prototype.vibrate = function(pattern) {
     pattern = pattern || "buzz";
 
@@ -986,21 +1100,54 @@
     throw new Error("PurpleRobot.prototype.widgets not implemented yet");
   };
 
-  // ## More complex examples
-  //
-  // Example of nesting
-  //
-  //     var playTone = pr.playDefaultTone();
-  //     var toast = pr.emitToast("sorry");
-  //     var dialog1 = pr.showNativeDialog(
-  //       "dialog 1", "are you happy?", "Yes", "No", playTone, toast
-  //     );
-  //     pr.scheduleScript("dialog 1", 10, "minutes", dialog1)
-  //       .execute();
-  //
-  // Example of chaining
-  //
-  //     pr.playDefaultTone().emitToast("hey there").execute();
+  // ## Internal methods
 
-  root.PurpleRobot = PurpleRobot;
-}.call(this));
+  // ___push(nextScript)__
+  //
+  // `@private`  
+  // `@returns {Object}` A new PurpleRobot instance.
+  //
+  // Enables chaining of method calls.
+  PR.prototype._push = function(methodName, argStr) {
+    var nextScript = ["PurpleRobot.", methodName, "(", argStr, ");"].join("");
+
+    return new PR({
+      serverUrl: this._serverUrl,
+      script: [this._script, nextScript].join(" ").trim()
+    });
+  };
+
+  // ___stringify(value)__
+  //
+  // `@private`  
+  // `@param {*} value` The value to be stringified.  
+  // `@returns {string}` The stringified representation.
+  //
+  // Returns a string representation of the input. If the input is a
+  // `PurpleRobot` instance, a string expression is returned, otherwise a JSON
+  // stringified version is returned.
+  PR.prototype._stringify = function(value) {
+    var str;
+
+    if (value !== null &&
+        typeof value === "object" &&
+        value.className === this.className) {
+      str = value.toStringExpression();
+    } else {
+      str = JSON.stringify(value);
+    }
+
+    return str;
+  };
+
+  // __q(value)__
+  //
+  // `@private`  
+  // `@param {string} value` A string argument.  
+  // `@returns {string}` A string with extra single quotes surrounding it.
+  function q(value) {
+    return "'" + value + "'";
+  }
+
+  window.PurpleRobot = PR;
+})();

@@ -7,9 +7,6 @@
   ],
   "description": "JavaScript client for Purple Robot services",
   "main": "purple-robot.js",
-  "devDependencies": {
-    "jasmine": "2"
-  },
   "ignore": [
     "README.md",
     "default-triggers.js",
@@ -20,13 +17,14 @@
     "docs",
     "spec"
   ],
-  "_release": "1.5.10.0",
+  "_release": "1.5.16.1",
   "_resolution": {
     "type": "tag",
-    "tag": "1.5.10.0",
-    "commit": "c3f27a19f14a86699d1bc4a19f3df38d8a160a4f"
+    "tag": "1.5.16.1",
+    "commit": "9f8dc0519099fdaf593ca82d071d654ba7ce7438"
   },
   "_source": "git@github.com:cbitstech/PurpleRobotClient.git",
-  "_target": "1.5.10.0",
-  "_originalSource": "git@github.com:cbitstech/PurpleRobotClient.git"
+  "_target": "1.5.16.1",
+  "_originalSource": "git@github.com:cbitstech/PurpleRobotClient.git",
+  "_direct": true
 }

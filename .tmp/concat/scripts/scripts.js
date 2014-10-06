@@ -374,7 +374,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.31';
+    $rootScope.appVersion = '0.1.32';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -475,7 +475,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     function schedulePRTriggersLessons() {
       if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined') {
         var lessonReleases = [];
-        var dateFormat = 'YYYYMMDDTHHmmss';
+        var dateFormatCustom = 'YYYYMMDDTHHmmss';
         // skip first lesson
         for (var i = 1; i < dateSortedLessons.length; i++) {
           var lesson = {
@@ -485,9 +485,9 @@ angular.module('conemoAppApp').controller('MainCtrl', [
           lessonReleases.push(lesson);
         }
         _.each(lessonReleases, function (el) {
-          // var triggerStart = moment(el.releaseDay).format(dateFormat);
-          var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormat);
-          var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
+          // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
+          var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormatCustom);
+          var triggerEnd = moment(triggerStart, dateFormatCustom).add('minutes', 1).format(dateFormatCustom);
           PurpleRobotClient.updateTrigger({
             script: PurpleRobotClient.vibrate('buzz').showScriptNotification({
               title: 'CONEMO: ',
@@ -499,7 +499,8 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             triggerId: 'LESSON' + triggerStart,
             startAt: triggerStart,
             endAt: triggerEnd,
-            repeatRule: 'FREQ=DAILY;COUNT=1'
+            repeatRule: 'FREQ=DAILY;COUNT=1',
+            fire_on_boot: true
           }).execute();
         });
       }
@@ -509,7 +510,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     function schedulePRTriggersDialogues() {
       if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined') {
         var dialogueReleases = [];
-        var dateFormat = 'YYYYMMDDTHHmmss';
+        var dateFormatCustom = 'YYYYMMDDTHHmmss';
         for (var i = 0; i < dateSortedDialogues.length; i++) {
           var dialogue = {
               releaseDay: moment().add('d', dateSortedDialogues[i].dayInTreatment - 1),
@@ -524,9 +525,9 @@ angular.module('conemoAppApp').controller('MainCtrl', [
           dialogueReleases.push(dialogue);
         }
         _.each(dialogueReleases, function (el) {
-          // var triggerStart = moment(el.releaseDay).format(dateFormat);
-          var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).format(dateFormat);
-          var triggerEnd = moment(triggerStart, dateFormat).add('minutes', 1).format(dateFormat);
+          // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
+          var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).format(dateFormatCustom);
+          var triggerEnd = moment(triggerStart, dateFormatCustom).add('minutes', 1).format(dateFormatCustom);
           PurpleRobotClient.updateTrigger({
             script: PurpleRobotClient.vibrate('buzz').showNativeDialog({
               title: 'CONEMO: ',
@@ -569,7 +570,8 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             triggerId: 'DIALOGUE' + triggerStart,
             startAt: triggerStart,
             endAt: triggerEnd,
-            repeatRule: 'FREQ=DAILY;COUNT=1'
+            repeatRule: 'FREQ=DAILY;COUNT=1',
+            fire_on_boot: true
           }).execute();
         });
       }

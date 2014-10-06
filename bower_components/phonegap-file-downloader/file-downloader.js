@@ -167,6 +167,18 @@ Downloader.prototype = {
 };
 
 function constructProgressBar (ftObject, numDownloads) {
+    // Where you want a progress bar, add the following markup:
+    //  <div id="progressContainer" style="display: none;">
+    //  </div>
+    // and the following CSS
+    // div.progress {
+    //     opacity: 1;
+    //     transition: opacity 1s;
+    // }
+    // div.progress.fade {
+    //     display: none;
+    // }
+
     document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " " +numDownloads+ " " + downloaderGlobal.textFiles + "...";
 
     var progressContainer = document.getElementById('progressContainer');
@@ -192,13 +204,16 @@ function constructProgressBar (ftObject, numDownloads) {
                 setTimeout(function() {
                     progress.setAttribute("class","progress fade");
 
-                    numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
-                    console.log(numDownloadsRemaining);
+                    var numDownloadsRemaining = numDownloads - downloaderGlobal.completionTally;
+
                     if (numDownloads > 1) {
                         document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " "+numDownloadsRemaining+" "+downloaderGlobal.textFiles + "...";
                     }
-                    else {
+                    else if (numDownloadsRemaining === 1) {
                         document.getElementById("download-counter").innerHTML = downloaderGlobal.textDownloading + " 1 " + downloaderGlobal.textFile + "...";
+                    }
+                    else {
+                        progressContainer.setAttribute("style","display: none");
                     }
                 }, 1000);
             }
@@ -209,7 +224,6 @@ function constructProgressBar (ftObject, numDownloads) {
 function filetransfer(file,filepath,numFiles) {
     var fileTransfer = new FileTransfer();
     downloaderGlobal.completionTally = 0;
-    console.log(numFiles);
     constructProgressBar(fileTransfer,numFiles);
 
     if (typeof FileTransfer === 'undefined') {
@@ -223,12 +237,9 @@ function filetransfer(file,filepath,numFiles) {
         function(entry) {
             console.log("download complete: " + entry.fullPath);
             downloaderGlobal.completionTally++;
-            console.log(numDownloadsRemaining);
 
             if (downloaderGlobal.completionTally === numFiles) {
                 alert(downloaderGlobal.textDownloadComplete);
-                // get rid of progress bar
-                document.getElementById('progressContainer').setAttribute("style","display: none");
             }
         },
         function(error) {
