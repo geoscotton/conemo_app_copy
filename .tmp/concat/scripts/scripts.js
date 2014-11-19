@@ -439,7 +439,10 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined') {
       //set user's Purple Robot Id to the CONEMO project
-      PurpleRobotClient.setUserId('CONEMO').execute({
+      PurpleRobotClient.setUserId('CONEMO').updateConfig({
+        config_enable_data_server: true,
+        config_restrict_data_wifi: false
+      }).execute({
         done: function () {
           $('body').prepend('<div id=\'confirm\' style=\'background-color: green;\'>User ID set</div>');
           $('#confirm').fadeOut(2000);
@@ -521,7 +524,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
         });
         setTimeout(function () {
           if (lessonCount !== lessonReleases.length) {
-            $('body').prepend('<div id=\'error-lessons\' style=\'background-color: red;\'>PR Error</div>');
+            $('body').prepend('<div id=\'error-lessons\' style=\'background-color: red;\'>PR Error lessons</div>');
           }
         }, 4000);
       }
@@ -608,9 +611,9 @@ angular.module('conemoAppApp').controller('MainCtrl', [
         });
         setTimeout(function () {
           if (dialogueCount !== dialogueReleases.length) {
-            $('body').prepend('<div id=\'confirm-dialogues\' style=\'background-color: red;\'>PR Error</div>');
+            $('body').prepend('<div id=\'error-dialogues\' style=\'background-color: red;\'>PR Error dialogues</div>');
           }
-        }, 4000);
+        }, 5500);
       }
       localStorage.setItem('dialogueTriggersScheduled', moment().toDate());
     }
