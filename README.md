@@ -34,15 +34,14 @@ Install the application dependencies
 
 `bower install`
 
-Serve this application using the built-in Grunt server from the root of a local clone
+Copy bower components for the web-view.
 
-`grunt serve`
+    cp -r bower* app/
 
-OR
+Serve this application using the built-in Grunt server from the app folder to work on the webview.
+	cd app
+    grunt serve
 
-Build this application including code quality review into a distribution copy from the root of a local clone
-
-`grunt`
 
 Add Purple Robot Client to Dependencies
 ---------------------------------------
@@ -82,19 +81,18 @@ Linting the application code
 Building Conemo Phone App
 ----------------------------
 
-1. Navigate to app folder and run `bash build_dist.bash` in the command line.
+Build this application including code quality review into a distribution copy from the root of a local clone
 
-2. This will copy the most recent lesson.json from the CONEMO api and copy it over to the www folder (effectively, the build folder for cordova). Grunt build will also run, minifying and copying necessary files over to the www folder.
+`bash build_dist.bash`
 
-3. From the command line, run
+If first time running cordova, 
+
+`cordova platform rm android`
+`cordova platform add android`
+
+Subsequent builds only requires
 
 `cordova run android`
-
-4. This will both build and run the app on an emulator or a phone you have plugged in. 
-
-5. Once you have verified that the app is running, you can grab the apk file in the directory
-`APPNAME/platforms/android/ant-build`
-
 
 
 Still need help?
