@@ -7,6 +7,13 @@ angular.module('conemoAppApp')
 
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
+        //set user's Purple Robot Id to the CONEMO project
+        PurpleRobotClient.setUserId('CONEMO').execute({
+            done: function() {
+                $('body').prepend("<div id='confirm' style='background-color: green;'>User ID set</div>");
+                $('#confirm').fadeOut(2000);
+            }
+        });
         $scope.showAccountSetup = true;
         $scope.showHomeScreen = false;
     }
@@ -46,7 +53,7 @@ angular.module('conemoAppApp')
 
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
-        // PurpleRobotClient.clearTriggers();
+        PurpleRobotClient.clearTriggers().execute();
         $scope.setStartDate();
         schedulePRTriggersLessons();
         schedulePRTriggersDialogues();
@@ -64,6 +71,7 @@ angular.module('conemoAppApp')
                 
                 lessonReleases.push(lesson);
             }
+            var lessonCount = 0;
             _.each(lessonReleases,function(el) {
                 // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
 
@@ -83,10 +91,25 @@ angular.module('conemoAppApp')
                     endAt: triggerEnd,
                     repeatRule: "FREQ=DAILY;COUNT=1",
                     fire_on_boot: true
-                }).execute();
+                }).execute({
+                    done: function() {
+                        lessonCount++;
+                        if (lessonCount === lessonReleases.length) {
+                            $('body').prepend("<div id='confirm-lessons' style='background-color: green;'>Lessons set</div>");
+                        }
+                        setTimeout(function(){
+                            $('#confirm-lessons').fadeOut("slow");
+                        },2000);
+                    }
+                });
             });
+            setTimeout(function() {
+                if (lessonCount !== lessonReleases.length) {
+                    $('body').prepend("<div id='error-lessons' style='background-color: red;'>PR Error</div>");
+                }
+            }, 4000);
         }
-            localStorage.setItem("lessonTriggersScheduled", moment().toDate());
+        localStorage.setItem("lessonTriggersScheduled", moment().toDate());
     };
     function schedulePRTriggersDialogues() {
         if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
@@ -106,6 +129,7 @@ angular.module('conemoAppApp')
                 
                 dialogueReleases.push(dialogue);
             }
+            var dialogueCount = 0;
             _.each(dialogueReleases,function(el) {
                 // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
 
@@ -156,8 +180,23 @@ angular.module('conemoAppApp')
                     endAt: triggerEnd,
                     repeatRule: "FREQ=DAILY;COUNT=1",
                     fire_on_boot: true
-                }).execute();
+                }).execute({
+                    done: function() {
+                        dialogueCount++;
+                        if (dialogueCount === dialogueReleases.length) {
+                            $('body').prepend("<div id='confirm-dialogues' style='background-color: green;'>Dialogues set</div>");
+                        }
+                        setTimeout(function(){
+                            $('#confirm-dialogues').fadeOut("slow");
+                        },2000);
+                    }
+                });
             });
+            setTimeout(function() {
+                if (dialogueCount !== dialogueReleases.length) {
+                    $('body').prepend("<div id='confirm-dialogues' style='background-color: red;'>PR Error</div>");
+                }
+            }, 4000);
         }
             localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
     };

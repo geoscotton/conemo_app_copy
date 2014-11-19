@@ -2,8 +2,7 @@
 'use strict';
 var PurpleRobotClient = new PurpleRobot();
 PurpleRobot.setEnvironment('production');
-//set user's Purple Robot Id to the CONEMO project
-PurpleRobotClient.setUserId('CONEMO').execute();
+
 
 //configure internationalization defaults
 if (typeof localStorage.l10n === 'undefined' || localStorage.l10n === 'undefined') {

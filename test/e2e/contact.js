@@ -9,6 +9,8 @@ var ContactPage = function() {
   this.get = function() {
     browser.get('http://localhost:9000/#/contact');
   };
+
+
 };
 
 describe('Contact Page', function() {
@@ -22,20 +24,20 @@ describe('Contact Page', function() {
     contactPage.appHelpButton.click();
 
     expect(contactPage.successAlert.getText())
-      .toBe('Obrigado, a equipe do estudo foram contactados');
+      .toBe('Obrigado, a equipe do estudo foi contactada');
   });
 
   it('should notify the user when nurse assistance is requested', function() {
     contactPage.nurseAssistButton.click();
 
     expect(contactPage.successAlert.getText())
-      .toBe('Obrigado, a equipe do estudo foram contactados');
+      .toBe('Obrigado, a equipe do estudo foi contactada');
   });
 
   it('should notify the user when connectivity issues are reported', function() {
     contactPage.connectionIssuesButton.click();
 
     expect(contactPage.successAlert.getText())
-      .toBe('Obrigado, a equipe do estudo foram contactados');
+      .toBe('Obrigado, a equipe do estudo foi contactada');
   });
 });

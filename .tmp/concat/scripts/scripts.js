@@ -67,8 +67,8 @@ i18nStrings.generalContent.push({
     textAlert: 'That file type is not currently supported.'
   },
   videoLinks: [
-    'https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/EN2.mp4?raw=true'
+    'https://conemo.northwestern.edu/system/EN1.mp4',
+    'https://conemo.northwestern.edu/system/EN2.mp4'
   ],
   yes: 'yes',
   no: 'no'
@@ -121,11 +121,11 @@ i18nStrings.generalContent.push({
     textAlert: 'Testing in Portugu\xeas'
   },
   videoLinks: [
-    'https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/countdown.mp4?raw=true'
+    'https://conemo.northwestern.edu/system/SP1.mp4',
+    'https://conemo.northwestern.edu/system/SP2.mp4',
+    'https://conemo.northwestern.edu/system/SP3.mp4',
+    'https://conemo.northwestern.edu/system/SP4.mp4',
+    'https://conemo.northwestern.edu/system/countdown.mp4'
   ],
   yes: 'sim',
   no: 'n\xe3o'
@@ -178,11 +178,11 @@ i18nStrings.generalContent.push({
     textAlert: 'Testing in Portugu\xeas'
   },
   videoLinks: [
-    'https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true',
-    'https://github.com/cbitstech/conemo_videos/blob/master/countdown.mp4?raw=true'
+    'https://conemo.northwestern.edu/system/LM1.mp4',
+    'https://conemo.northwestern.edu/system/LM2.mp4',
+    'https://conemo.northwestern.edu/system/LM3.mp4',
+    'https://conemo.northwestern.edu/system/LM4.mp4',
+    'https://conemo.northwestern.edu/system/countdown.mp4'
   ],
   yes: 's\xed',
   no: 'no'
@@ -191,8 +191,6 @@ i18nStrings.generalContent.push({
 'use strict';
 var PurpleRobotClient = new PurpleRobot();
 PurpleRobot.setEnvironment('production');
-//set user's Purple Robot Id to the CONEMO project
-PurpleRobotClient.setUserId('CONEMO').execute();
 //configure internationalization defaults
 if (typeof localStorage.l10n === 'undefined' || localStorage.l10n === 'undefined') {
   var l10n = 'pt-BR';
@@ -374,7 +372,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.32';
+    $rootScope.appVersion = '0.1.34';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -440,6 +438,13 @@ angular.module('conemoAppApp').controller('MainCtrl', [
   function ($scope, conemoConfig, $rootScope, $route, startDateService) {
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined') {
+      //set user's Purple Robot Id to the CONEMO project
+      PurpleRobotClient.setUserId('CONEMO').execute({
+        done: function () {
+          $('body').prepend('<div id=\'confirm\' style=\'background-color: green;\'>User ID set</div>');
+          $('#confirm').fadeOut(2000);
+        }
+      });
       $scope.showAccountSetup = true;
       $scope.showHomeScreen = false;
     } else {
@@ -467,7 +472,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     var dateSortedDialogues = _.sortBy($rootScope.dialogues, 'dayInTreatment');
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
-      // PurpleRobotClient.clearTriggers();
+      PurpleRobotClient.clearTriggers().execute();
       $scope.setStartDate();
       schedulePRTriggersLessons();
       schedulePRTriggersDialogues();
@@ -484,6 +489,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             };
           lessonReleases.push(lesson);
         }
+        var lessonCount = 0;
         _.each(lessonReleases, function (el) {
           // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
           var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormatCustom);
@@ -501,8 +507,23 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             endAt: triggerEnd,
             repeatRule: 'FREQ=DAILY;COUNT=1',
             fire_on_boot: true
-          }).execute();
+          }).execute({
+            done: function () {
+              lessonCount++;
+              if (lessonCount === lessonReleases.length) {
+                $('body').prepend('<div id=\'confirm-lessons\' style=\'background-color: green;\'>Lessons set</div>');
+              }
+              setTimeout(function () {
+                $('#confirm-lessons').fadeOut('slow');
+              }, 2000);
+            }
+          });
         });
+        setTimeout(function () {
+          if (lessonCount !== lessonReleases.length) {
+            $('body').prepend('<div id=\'error-lessons\' style=\'background-color: red;\'>PR Error</div>');
+          }
+        }, 4000);
       }
       localStorage.setItem('lessonTriggersScheduled', moment().toDate());
     }
@@ -524,6 +545,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             };
           dialogueReleases.push(dialogue);
         }
+        var dialogueCount = 0;
         _.each(dialogueReleases, function (el) {
           // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
           var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).format(dateFormatCustom);
@@ -572,8 +594,23 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             endAt: triggerEnd,
             repeatRule: 'FREQ=DAILY;COUNT=1',
             fire_on_boot: true
-          }).execute();
+          }).execute({
+            done: function () {
+              dialogueCount++;
+              if (dialogueCount === dialogueReleases.length) {
+                $('body').prepend('<div id=\'confirm-dialogues\' style=\'background-color: green;\'>Dialogues set</div>');
+              }
+              setTimeout(function () {
+                $('#confirm-dialogues').fadeOut('slow');
+              }, 2000);
+            }
+          });
         });
+        setTimeout(function () {
+          if (dialogueCount !== dialogueReleases.length) {
+            $('body').prepend('<div id=\'confirm-dialogues\' style=\'background-color: red;\'>PR Error</div>');
+          }
+        }, 4000);
       }
       localStorage.setItem('dialogueTriggersScheduled', moment().toDate());
     }

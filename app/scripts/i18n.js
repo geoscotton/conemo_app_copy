@@ -41,8 +41,8 @@ i18nStrings.generalContent.push({
         textAlert: 'That file type is not currently supported.'
     },
     videoLinks: [
-    	"https://github.com/cbitstech/conemo_videos/blob/master/EN1.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/EN2.mp4?raw=true"
+    	"https://conemo.northwestern.edu/system/EN1.mp4",
+        "https://conemo.northwestern.edu/system/EN2.mp4"
     ],
     yes: 'yes',
     no: 'no'
@@ -79,11 +79,11 @@ i18nStrings.generalContent.push({
         textAlert: 'Testing in Português'
     },
     videoLinks: [
-    	"https://github.com/cbitstech/conemo_videos/blob/master/SP1.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/SP2.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/SP3.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/SP4.mp4?raw=true",
-    	"https://github.com/cbitstech/conemo_videos/blob/master/countdown.mp4?raw=true"
+    	"https://conemo.northwestern.edu/system/SP1.mp4",
+        "https://conemo.northwestern.edu/system/SP2.mp4",
+        "https://conemo.northwestern.edu/system/SP3.mp4",
+        "https://conemo.northwestern.edu/system/SP4.mp4",
+    	"https://conemo.northwestern.edu/system/countdown.mp4"
     ],
     yes: 'sim',
     no: 'não'
@@ -120,11 +120,11 @@ i18nStrings.generalContent.push({
         textAlert: 'Testing in Português'
     },
     videoLinks: [
-		"https://github.com/cbitstech/conemo_videos/blob/master/LM1.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/LM2.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/LM3.mp4?raw=true",
-        "https://github.com/cbitstech/conemo_videos/blob/master/LM4.mp4?raw=true",
-    	"https://github.com/cbitstech/conemo_videos/blob/master/countdown.mp4?raw=true"
+		"https://conemo.northwestern.edu/system/LM1.mp4",
+        "https://conemo.northwestern.edu/system/LM2.mp4",
+        "https://conemo.northwestern.edu/system/LM3.mp4",
+        "https://conemo.northwestern.edu/system/LM4.mp4",
+    	"https://conemo.northwestern.edu/system/countdown.mp4"
     ],
     yes: 'sí',
     no: 'no'

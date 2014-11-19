@@ -20,12 +20,8 @@ describe('CONEMO app screen', function() {
   });
 
   it('should load the home screen when refreshed', function() {
-    loginHelper('Furby','pt-BR');
-
-    expect(element(homeScreen).getAttribute('class')).not.toMatch('ng-hide');
-    // refresh
     conemoApp.get();
-    expect(element(homeScreen).getAttribute('class')).not.toMatch('ng-hide');
+    expect(element(homeScreen).getAttribute('class')).toMatch('ng-hide');
   });
 
 });
