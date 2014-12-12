@@ -372,7 +372,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.34';
+    $rootScope.appVersion = '0.1.36';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -475,7 +475,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
     var dateSortedDialogues = _.sortBy($rootScope.dialogues, 'dayInTreatment');
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
-      PurpleRobotClient.clearTriggers().execute();
+      // PurpleRobotClient.clearTriggers().execute();
       $scope.setStartDate();
       schedulePRTriggersLessons();
       schedulePRTriggersDialogues();
@@ -524,7 +524,6 @@ angular.module('conemoAppApp').controller('MainCtrl', [
         });
         setTimeout(function () {
           if (lessonCount !== lessonReleases.length) {
-            $('body').prepend('<div id=\'error-lessons\' style=\'background-color: red;\'>PR Error lessons</div>');
           }
         }, 4000);
       }
