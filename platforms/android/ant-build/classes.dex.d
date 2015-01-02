@@ -1,6 +1,6 @@
 /Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes.dex : \
 /Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes/edu/northwestern/cbits/conemo/BuildConfig.class \
-/Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes/edu/northwestern/cbits/conemo/CONEMO.class \
+/Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes/edu/northwestern/cbits/conemo/CordovaApp.class \
 /Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes/edu/northwestern/cbits/conemo/R$attr.class \
 /Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes/edu/northwestern/cbits/conemo/R$drawable.class \
 /Users/markbegale/projects/conemo_app/platforms/android/ant-build/classes/edu/northwestern/cbits/conemo/R$string.class \

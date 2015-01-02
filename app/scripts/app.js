@@ -1,4 +1,4 @@
-/*jslint node: true */
+    /*jslint node: true */
 'use strict';
 var PurpleRobotClient = new PurpleRobot();
 PurpleRobot.setEnvironment('production');
@@ -54,6 +54,10 @@ angular.module('conemoAppApp', [
                 controller: 'ContactCtrl'
             })
             .when('/instructions', {
+                templateUrl: 'views/instructions.html',
+                controller: 'InstructionsCtrl'
+            })
+            .when('/instructions/:key', {
                 templateUrl: 'views/instructions.html',
                 controller: 'InstructionsCtrl'
             })
@@ -146,6 +150,13 @@ angular.module('conemoAppApp', [
             localStorage.setItem('connection',states[networkState]);
         }
         function onResume() {
-            $window.location.href = "";
+            if (localStorage['onResume'] == undefined){
+            $window.location.href = '';
+            }
+            else {
+            var pageToGoto = localStorage['onResume'];
+            localStorage['onResume'] = '';
+            $window.location.path = pageToGoto;
+            }
         }
     });

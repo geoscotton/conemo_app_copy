@@ -1,8 +1,9 @@
 'use strict';
 
 angular.module('conemoAppApp')
-  .controller('InstructionsCtrl', function ($scope, $rootScope) {
+  .controller('InstructionsCtrl', function ($scope, $rootScope, $routeParams) {
 
+    localStorage['onResume'] = '';
     $scope.instructionsLabel = l10nStrings.instructionsLabel;
 
     $scope.$watch('checked', function(newValue, oldValue) {
@@ -18,12 +19,19 @@ angular.module('conemoAppApp')
     });
 
     $scope.checked = false;
+
+    if ($routeParams.key == 'showSample'){
+        $scope.checked = true;
+        window.scrollTo(0,document.body.scrollHeight);
+    }
+
     $scope.toggleChecked = function() {
         $scope.checked = $scope.checked === false ? true: false;
     };
 
     $scope.l10n = l10n;
     $scope.demoDialogue_esPE = function() {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showNativeDialog({
         title: "CONEMO: ",
         message: "¿Has podido seguir las instrucciones de esta sesión de entrenamiento?",
@@ -54,6 +62,7 @@ angular.module('conemoAppApp')
       }).execute();
     };
     $scope.demoDialogue_ptBR = function() {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showNativeDialog({
         title: "CONEMO: ",
         message: "Benvindo ao CONEMO!",
@@ -66,21 +75,23 @@ angular.module('conemoAppApp')
       }).execute();
     };
     $scope.demoNotification_esPE = function() {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
         title: "CONEMO: ",
         message: "¡Bienvenido a CONEMO!",
         isPersistent: true,
         isSticky: false,
-        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+        script: PurpleRobotClient.doNothing()
       }).execute();
     };
     $scope.demoNotification_ptBR = function() {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
         title: "CONEMO: ",
         message: "Benvindo ao CONEMO!",
         isPersistent: true,
         isSticky: false,
-        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+        script: PurpleRobotClient.doNothing()
       }).execute();
     };
 });

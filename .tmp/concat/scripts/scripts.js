@@ -99,7 +99,7 @@ i18nStrings.generalContent.push({
   contactHelpLabel: 'Solicita\xe7\xe3o de ajuda',
   instructionsLabel: 'Instru\xe7\xf5es',
   instructionsLesson: 'Sess\xe3o de exemplo',
-  instructionsContent: '<h2><i class=\'glyphicon glyphicon-question-sign\'></i> Como funciona o App:</h2><ol class=\'well\'><li>3 vezes por semana voc\xea dever\xe1 fazer o login no aplicativo CONEMO, haver\xe1 novas ferramentas e informa\xe7\xf5es cada vez que voc\xea acess\xe1-lo</li><li>Cada vez que voc\xea fizer seu login, voc\xea ir\xe1 aprender algumas estrat\xe9gias testadas que s\xe3o desenvolvidas para mant\xea-lo mais saud\xe1vel e feliz</li><li>Se voc\xea esquecer de acessar o aplicativo por mais de duas vezes, voc\xea ser\xe1 contactado por seu auxiliar de enfermagem para ter certeza de que voc\xea continue acessando e participando do programa</li></ol><h2><i class=\'glyphicon glyphicon-wrench\'></i> Sess\xf5es anteriores</h2><ol class=\'well\'><li>Voc\xea pode voltar para sess\xf5es mais antigas (dos dias anteriores), se voc\xea quiser, visitando a caixa de ferramentas</li><li>Se voc\xea pular sess\xf5es, voc\xea pode visitar as sess\xf5es anteriores para voltar a elas</li></ol> <h2><i class=\'glyphicon glyphicon-phone\'></i> Solicita\xe7\xe3o de Ajuda</h2> <ol class=\'well\'><li>Se precisar de ajuda a qualquer momento, pressione o bot\xe3o de Solicita\xe7\xe3o de ajuda.</li><li>N\xe3o se preocupe, voc\xea pode pedir ajuda <ol><li>com o aplicativo</li><li>para uma auxiliar de enfermagem com o seu telefone</li></ol>',
+  instructionsContent: '<h2><i class=\'glyphicon glyphicon-question-sign\'></i> Como funciona o App:</h2><ol class=\'well\'><li>3 vezes por semana voc\xea dever\xe1 fazer o login no aplicativo CONEMO, haver\xe1 novas ferramentas e informa\xe7\xf5es cada vez que voc\xea acess\xe1-lo</li><li>Cada vez que voc\xea fizer seu login, voc\xea ir\xe1 aprender algumas estrat\xe9gias testadas que s\xe3o desenvolvidas para mant\xea-lo mais saud\xe1vel e feliz</li><li>Se voc\xea esquecer de acessar o aplicativo por mais de duas vezes, voc\xea ser\xe1 contactado por seu auxiliar de enfermagem para ter certeza de que voc\xea continue acessando e participando do programa</li></ol><h2><i class=\'glyphicon glyphicon-wrench\'></i> Sess\xf5es anteriores</h2><ol class=\'well\'><li>Voc\xea pode voltar para sess\xf5es mais antigas (dos dias anteriores), se voc\xea quiser, visitando a caixa de ferramentas</li><li>Se voc\xea pular sess\xf5es, voc\xea pode visitar as sess\xf5es anteriores para voltar a elas</li></ol> <h2><i class=\'glyphicon glyphicon-phone\'></i> Solicita\xe7\xe3o de Ajuda</h2> <ol class=\'well\'><li>Se precisar de ajuda a qualquer momento, pressione o bot\xe3o de Solicita\xe7\xe3o de ajuda.</li><li>N\xe3o se preocupe, voc\xea pode pedir ajuda <ol><li>com o aplicativo, se voc\xea estiver com problemas com a internet, o CONEMO ou precisa de assist\xeancia geral da auxiliar de enfermagem</li><li>para uma auxiliar de enfermagem com o seu telefone</li></ol>',
   contactTypes: [
     'Preciso de ajuda com o aplicativo',
     'Preciso de assist\xeancia geral da minha Auxiliar de Enfermagem',
@@ -233,6 +233,9 @@ angular.module('conemoAppApp', [
     }).when('/instructions', {
       templateUrl: 'views/instructions.html',
       controller: 'InstructionsCtrl'
+    }).when('/instructions/:key', {
+      templateUrl: 'views/instructions.html',
+      controller: 'InstructionsCtrl'
     }).otherwise({ redirectTo: '/' });
   }
 ]).run([
@@ -321,7 +324,13 @@ angular.module('conemoAppApp', [
       localStorage.setItem('connection', states[networkState]);
     }
     function onResume() {
-      $window.location.href = '';
+      if (localStorage['onResume'] == undefined) {
+        $window.location.href = '';
+      } else {
+        var pageToGoto = localStorage['onResume'];
+        localStorage['onResume'] = '';
+        $window.location.path = pageToGoto;
+      }
     }
   }
 ]);
@@ -372,7 +381,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.36';
+    $rootScope.appVersion = '0.1.38';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -502,7 +511,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
               title: 'CONEMO: ',
               message: el.title,
               isPersistent: true,
-              isSticky: true,
+              isSticky: false,
               script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
             }),
             triggerId: 'LESSON' + triggerStart,
@@ -806,7 +815,9 @@ angular.module('conemoAppApp').controller('ContactCtrl', [
 angular.module('conemoAppApp').controller('InstructionsCtrl', [
   '$scope',
   '$rootScope',
-  function ($scope, $rootScope) {
+  '$routeParams',
+  function ($scope, $rootScope, $routeParams) {
+    localStorage['onResume'] = '';
     $scope.instructionsLabel = l10nStrings.instructionsLabel;
     $scope.$watch('checked', function (newValue, oldValue) {
       if (newValue !== oldValue) {
@@ -818,11 +829,16 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
       }
     });
     $scope.checked = false;
+    if ($routeParams.key == 'showSample') {
+      $scope.checked = true;
+      window.scrollTo(0, document.body.scrollHeight);
+    }
     $scope.toggleChecked = function () {
       $scope.checked = $scope.checked === false ? true : false;
     };
     $scope.l10n = l10n;
     $scope.demoDialogue_esPE = function () {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showNativeDialog({
         title: 'CONEMO: ',
         message: '\xbfHas podido seguir las instrucciones de esta sesi\xf3n de entrenamiento?',
@@ -853,6 +869,7 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
       }).execute();
     };
     $scope.demoDialogue_ptBR = function () {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showNativeDialog({
         title: 'CONEMO: ',
         message: 'Benvindo ao CONEMO!',
@@ -865,21 +882,23 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
       }).execute();
     };
     $scope.demoNotification_esPE = function () {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showScriptNotification({
         title: 'CONEMO: ',
         message: '\xa1Bienvenido a CONEMO!',
         isPersistent: true,
         isSticky: false,
-        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+        script: PurpleRobotClient.doNothing()
       }).execute();
     };
     $scope.demoNotification_ptBR = function () {
+      localStorage['onResume'] = '/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showScriptNotification({
         title: 'CONEMO: ',
         message: 'Benvindo ao CONEMO!',
         isPersistent: true,
         isSticky: false,
-        script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
+        script: PurpleRobotClient.doNothing()
       }).execute();
     };
   }
