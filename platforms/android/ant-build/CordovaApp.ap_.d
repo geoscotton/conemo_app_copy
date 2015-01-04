@@ -84,7 +84,7 @@
 /Users/markbegale/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/Connection.js \
 /Users/markbegale/projects/conemo_app/platforms/android/assets/www/plugins/org.apache.cordova.network-information/www/network.js \
 /Users/markbegale/projects/conemo_app/platforms/android/assets/www/scripts/8ec2b8db.vendor.js \
-/Users/markbegale/projects/conemo_app/platforms/android/assets/www/scripts/ba21a916.scripts.js \
+/Users/markbegale/projects/conemo_app/platforms/android/assets/www/scripts/b826815a.scripts.js \
 /Users/markbegale/projects/conemo_app/platforms/android/assets/www/scripts/cbits.js \
 /Users/markbegale/projects/conemo_app/platforms/android/assets/www/scripts/dialogues.json \
 /Users/markbegale/projects/conemo_app/platforms/android/assets/www/scripts/lessons.json \

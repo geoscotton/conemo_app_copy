@@ -309,8 +309,8 @@ angular.module('conemoAppApp', [
   '$window',
   function ($window) {
     document.addEventListener('deviceready', onDeviceReady, false);
+    document.addEventListener('resume', onResume, false);
     function onDeviceReady() {
-      document.addEventListener('resume', onResume, false);
       var networkState = navigator.connection.type;
       var states = {};
       states[Connection.UNKNOWN] = 'Unknown connection';
@@ -324,12 +324,13 @@ angular.module('conemoAppApp', [
       localStorage.setItem('connection', states[networkState]);
     }
     function onResume() {
+      debugger;
       if (localStorage['onResume'] == undefined) {
-        $window.location.href = '';
+        window.location.href = '';
       } else {
         var pageToGoto = localStorage['onResume'];
         localStorage['onResume'] = '';
-        $window.location.path = pageToGoto;
+        window.location.href = pageToGoto;
       }
     }
   }
@@ -838,7 +839,7 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
     };
     $scope.l10n = l10n;
     $scope.demoDialogue_esPE = function () {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showNativeDialog({
         title: 'CONEMO: ',
         message: '\xbfHas podido seguir las instrucciones de esta sesi\xf3n de entrenamiento?',
@@ -869,7 +870,7 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
       }).execute();
     };
     $scope.demoDialogue_ptBR = function () {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showNativeDialog({
         title: 'CONEMO: ',
         message: 'Benvindo ao CONEMO!',
@@ -882,7 +883,7 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
       }).execute();
     };
     $scope.demoNotification_esPE = function () {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showScriptNotification({
         title: 'CONEMO: ',
         message: '\xa1Bienvenido a CONEMO!',
@@ -892,7 +893,7 @@ angular.module('conemoAppApp').controller('InstructionsCtrl', [
       }).execute();
     };
     $scope.demoNotification_ptBR = function () {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate('buzz').showScriptNotification({
         title: 'CONEMO: ',
         message: 'Benvindo ao CONEMO!',

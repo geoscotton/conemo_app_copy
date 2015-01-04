@@ -31,7 +31,7 @@ angular.module('conemoAppApp')
 
     $scope.l10n = l10n;
     $scope.demoDialogue_esPE = function() {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showNativeDialog({
         title: "CONEMO: ",
         message: "¿Has podido seguir las instrucciones de esta sesión de entrenamiento?",
@@ -62,7 +62,7 @@ angular.module('conemoAppApp')
       }).execute();
     };
     $scope.demoDialogue_ptBR = function() {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showNativeDialog({
         title: "CONEMO: ",
         message: "Benvindo ao CONEMO!",
@@ -75,7 +75,7 @@ angular.module('conemoAppApp')
       }).execute();
     };
     $scope.demoNotification_esPE = function() {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
         title: "CONEMO: ",
         message: "¡Bienvenido a CONEMO!",
@@ -85,7 +85,7 @@ angular.module('conemoAppApp')
       }).execute();
     };
     $scope.demoNotification_ptBR = function() {
-      localStorage['onResume'] = '/instructions/showSample';
+      localStorage['onResume'] = '#/instructions/showSample';
       PurpleRobotClient.vibrate("buzz").showScriptNotification({
         title: "CONEMO: ",
         message: "Benvindo ao CONEMO!",

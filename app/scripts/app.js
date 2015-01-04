@@ -131,10 +131,9 @@ angular.module('conemoAppApp', [
     })
     .run(function($window) {
         document.addEventListener("deviceready", onDeviceReady, false);
+        document.addEventListener("resume",onResume,false);
 
         function onDeviceReady() {
-            document.addEventListener("resume",onResume,false);
-
             var networkState = navigator.connection.type;
 
             var states = {};
@@ -150,13 +149,14 @@ angular.module('conemoAppApp', [
             localStorage.setItem('connection',states[networkState]);
         }
         function onResume() {
+            debugger;
             if (localStorage['onResume'] == undefined){
-            $window.location.href = '';
+            window.location.href = '';
             }
             else {
             var pageToGoto = localStorage['onResume'];
             localStorage['onResume'] = '';
-            $window.location.path = pageToGoto;
+            window.location.href = pageToGoto;
             }
         }
     });
