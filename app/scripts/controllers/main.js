@@ -3,10 +3,28 @@
 
 angular.module('conemoAppApp')
 
-.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $route, startDateService) {
+.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $route, $http, startDateService) {
 
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
+        //check that Purple Robot has been properly set up
+        
+        var verifyPurpleRobotExists = function(){
+                var responsePromise = $http.get("http://localhost:12345/json/submit");
+
+                responsePromise.success(function(data, status, headers, config) {
+                    $('body').prepend("<div id='confirm' style='background-color: green;'>Purple Robot properly started.</div>");
+                    $('#confirm').fadeOut(2000);
+                });
+                responsePromise.error(function(data, status, headers, config) {
+                    $('body').html('');
+                    $('body').prepend("<div id='confirm' style='background-color: red;'>Purple Robot was not properly started, please start Purple Robot.</div>");
+ 
+                });
+        }
+
+        verifyPurpleRobotExists();                         
+
         //set user's Purple Robot Id to the CONEMO project
         PurpleRobotClient.setUserId('CONEMO')
                          .updateConfig({
