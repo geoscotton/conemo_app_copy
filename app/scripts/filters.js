@@ -17,7 +17,6 @@ angular.module('conemoAppApp')
       }
       else if (typeof t[key] === 'undefined') {
         return 'translation not found: ' + data.l10n + ' => ' + key;
-
       }
 
       return t[key];

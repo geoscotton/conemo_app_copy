@@ -79,11 +79,16 @@ i18nStrings.generalContent.push({
         textAlert: 'Testing in Português'
     },
     videoLinks: [
-    	"https://conemo.northwestern.edu/system/SP1.mp4",
-      "https://conemo.northwestern.edu/system/SP2.mp4",
-      "https://conemo.northwestern.edu/system/SP3.mp4",
-      "https://conemo.northwestern.edu/system/SP4.mp4",
-    	"https://conemo.northwestern.edu/system/countdown.mp4"
+    	// "https://conemo.northwestern.edu/system/SP1.mp4",
+     //  "https://conemo.northwestern.edu/system/SP2.mp4",
+     //  "https://conemo.northwestern.edu/system/SP3.mp4",
+     //  "https://conemo.northwestern.edu/system/SP4.mp4",
+    	// "https://conemo.northwestern.edu/system/countdown.mp4"
+    	"https://github.com/cbitstech/conemo_app/raw/cordova-master/video/SP1.mp4",
+      "https://github.com/cbitstech/conemo_app/raw/cordova-master/video/SP2.mp4",
+      "https://github.com/cbitstech/conemo_app/raw/cordova-master/video/SP3.mp4",
+      "https://github.com/cbitstech/conemo_app/raw/cordova-master/video/SP4.mp4",
+    	"https://github.com/cbitstech/conemo_app/raw/cordova-master/video/countdown.mp4"
     ],
     yes: 'sim',
     no: 'não'

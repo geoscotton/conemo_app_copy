@@ -20,6 +20,8 @@ angular.module('conemoAppApp')
 
     $scope.checked = false;
 
+    $scope.userId = localStorage.userId;
+
     if ($routeParams.key == 'showSample'){
         $scope.checked = true;
         window.scrollTo(0,document.body.scrollHeight);
