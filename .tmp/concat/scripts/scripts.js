@@ -382,7 +382,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.38';
+    $rootScope.appVersion = '0.1.39';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
