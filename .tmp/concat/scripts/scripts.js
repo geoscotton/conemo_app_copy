@@ -533,6 +533,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
           });
         });
         setTimeout(function () {
+          debugger;
           if (lessonCount !== lessonReleases.length) {
           }
         }, 4000);

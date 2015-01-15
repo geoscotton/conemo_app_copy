@@ -49,12 +49,9 @@ angular.module('conemoAppApp')
 
     var daysInTreatment = startDateService.getDaysInTreatment();
     
-
     //Sort lessons and dialogues by date to determine first lesson and schedule triggers
     var dateSortedLessons = _.sortBy($rootScope.lessons,'dayInTreatment');
     var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
-
-
 
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
@@ -109,6 +106,7 @@ angular.module('conemoAppApp')
                 });
             });
             setTimeout(function() {
+                debugger;
                 if (lessonCount !== lessonReleases.length) {
                     // $('body').prepend("<div id='error-lessons' style='background-color: red;'>PR Error lessons</div>");
                 }

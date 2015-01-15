@@ -80,9 +80,9 @@ i18nStrings.generalContent.push({
     },
     videoLinks: [
     	"https://conemo.northwestern.edu/system/SP1.mp4",
-        "https://conemo.northwestern.edu/system/SP2.mp4",
-        "https://conemo.northwestern.edu/system/SP3.mp4",
-        "https://conemo.northwestern.edu/system/SP4.mp4",
+      "https://conemo.northwestern.edu/system/SP2.mp4",
+      "https://conemo.northwestern.edu/system/SP3.mp4",
+      "https://conemo.northwestern.edu/system/SP4.mp4",
     	"https://conemo.northwestern.edu/system/countdown.mp4"
     ],
     yes: 'sim',
@@ -120,11 +120,11 @@ i18nStrings.generalContent.push({
         textAlert: 'Testing in Português'
     },
     videoLinks: [
-		"https://conemo.northwestern.edu/system/LM1.mp4",
-        "https://conemo.northwestern.edu/system/LM2.mp4",
-        "https://conemo.northwestern.edu/system/LM3.mp4",
-        "https://conemo.northwestern.edu/system/LM4.mp4",
-    	"https://conemo.northwestern.edu/system/countdown.mp4"
+			"https://conemo.northwestern.edu/system/LM1.mp4",
+	    "https://conemo.northwestern.edu/system/LM2.mp4",
+	    "https://conemo.northwestern.edu/system/LM3.mp4",
+	    "https://conemo.northwestern.edu/system/LM4.mp4",
+	   	"https://conemo.northwestern.edu/system/countdown.mp4"
     ],
     yes: 'sí',
     no: 'no'
