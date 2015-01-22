@@ -94,7 +94,6 @@ angular.module('conemoAppApp')
                 l10n: localStorage.l10n
             };
 
-
             saveContents.form_payload = JSON.stringify($("#slideShowForm").serializeObject());
             (new PurpleRobot()).emitReading('lesson_data', saveContents).execute();
 

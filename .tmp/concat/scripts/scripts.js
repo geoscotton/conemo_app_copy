@@ -177,13 +177,7 @@ i18nStrings.generalContent.push({
     textUnsupportedFileType: 'En este momento este archivo no es compatible.',
     textAlert: 'Testing in Portugu\xeas'
   },
-  videoLinks: [
-    'https://conemo.northwestern.edu/system/LM1.mp4',
-    'https://conemo.northwestern.edu/system/LM2.mp4',
-    'https://conemo.northwestern.edu/system/LM3.mp4',
-    'https://conemo.northwestern.edu/system/LM4.mp4',
-    'https://conemo.northwestern.edu/system/countdown.mp4'
-  ],
+  videoLinks: [],
   yes: 's\xed',
   no: 'no'
 });
@@ -382,7 +376,7 @@ angular.module('conemoAppApp').filter('translate', [
 angular.module('conemoAppApp').factory('conemoConfig', [
   '$rootScope',
   function ($rootScope) {
-    $rootScope.appVersion = '0.1.39';
+    $rootScope.appVersion = '0.1.40';
     function ConemoConfig() {
     }
     ConemoConfig.prototype.get = function () {
@@ -443,10 +437,10 @@ angular.module('conemoAppApp').controller('MainCtrl', [
   '$scope',
   'conemoConfig',
   '$rootScope',
-  '$route',
   '$http',
+  '$route',
   'startDateService',
-  function ($scope, conemoConfig, $rootScope, $route, $http, startDateService) {
+  function ($scope, conemoConfig, $rootScope, $http, $route, startDateService) {
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined') {
       //check that Purple Robot has been properly set up
@@ -591,9 +585,9 @@ angular.module('conemoAppApp').controller('MainCtrl', [
                   dialogue_guid: el.guid,
                   days_in_treatment: el.days_in_treatment,
                   answer: l10nStrings.no
-                }),
+                }).disableTrigger('DIALOGUE' + idx),
                 buttonLabelB: '',
-                scriptB: PurpleRobotClient.doNothing(),
+                scriptB: PurpleRobotClient.disableTrigger('DIALOGUE' + idx),
                 tag: '',
                 priority: 1
               }),
@@ -619,7 +613,7 @@ angular.module('conemoAppApp').controller('MainCtrl', [
             triggerId: 'DIALOGUE' + idx,
             startAt: triggerStart,
             endAt: triggerEnd,
-            repeatRule: 'FREQ=DAILY;COUNT=1',
+            repeatRule: 'FREQ=MINUTELY;INTERVAL=15',
             fire_on_boot: true
           }).execute({
             done: function () {

@@ -3,27 +3,25 @@
 
 angular.module('conemoAppApp')
 
-.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $route, $http, startDateService) {
+.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $http, $route, startDateService) {
 
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
-        //check that Purple Robot has been properly set up
-        
-        var verifyPurpleRobotExists = function(){
-                var responsePromise = $http.get("http://localhost:12345/json/submit");
 
-                responsePromise.success(function(data, status, headers, config) {
-                    $('body').prepend("<div id='confirm' style='background-color: green;'>Purple Robot properly started.</div>");
-                    $('#confirm').fadeOut(2000);
-                });
-                responsePromise.error(function(data, status, headers, config) {
-                    $('body').html('');
-                    $('body').prepend("<div id='confirm' style='background-color: red;'>Purple Robot was not properly started, please start Purple Robot.</div>");
- 
-                });
-        }
+    //check that Purple Robot has been properly set up
+      var verifyPurpleRobotExists = function () {
+        var responsePromise = $http.get('http://localhost:12345/json/submit');
+        responsePromise.success(function (data, status, headers, config) {
+          $('body').prepend('<div id=\'confirm\' style=\'background-color: green;\'>Purple Robot properly started.</div>');
+          $('#confirm').fadeOut(2000);
+        });
+        responsePromise.error(function (data, status, headers, config) {
+          $('body').html('');
+          $('body').prepend('<div id=\'confirm\' style=\'background-color: red;\'>Purple Robot was not properly started, please start Purple Robot.</div>');
+        });
+      };
+      verifyPurpleRobotExists();
 
-        verifyPurpleRobotExists();                         
 
         //set user's Purple Robot Id to the CONEMO project
         PurpleRobotClient.setUserId('CONEMO')
@@ -150,6 +148,7 @@ angular.module('conemoAppApp')
                 
                 dialogueReleases.push(dialogue);
             }
+
             var dialogueCount = 0;
             _.each(dialogueReleases,function(el,idx) {
                 // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
@@ -171,9 +170,9 @@ angular.module('conemoAppApp')
                                             dialogue_guid: el.guid,
                                             days_in_treatment: el.days_in_treatment,
                                             answer: l10nStrings.no
-                                        }),
+                                        }).disableTrigger("DIALOGUE"+idx),
                                         buttonLabelB: "",
-                                        scriptB: PurpleRobotClient.doNothing(),
+                                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx),
                                         tag: "",
                                         priority: 1
                                     }),
@@ -199,7 +198,7 @@ angular.module('conemoAppApp')
                     triggerId: "DIALOGUE"+idx,
                     startAt: triggerStart,
                     endAt: triggerEnd,
-                    repeatRule: "FREQ=DAILY;COUNT=1",
+                    repeatRule: "FREQ=MINUTELY;INTERVAL=15",
                     fire_on_boot: true
                 }).execute({
                     done: function() {
@@ -274,4 +273,3 @@ angular.module('conemoAppApp')
     $scope.downloadLabel = l10nStrings.download;
     $scope.downloadComplete = l10nStrings.downloaderText.textDownloadComplete;
   });
-
