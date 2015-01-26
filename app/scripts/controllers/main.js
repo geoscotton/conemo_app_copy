@@ -161,34 +161,34 @@ angular.module('conemoAppApp')
                         title: "CONEMO: ",
                         message: el.message,
                         buttonLabelA: el.no_button,
-                        scriptA: PurpleRobotClient.showNativeDialog({
+                        scriptA: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).showNativeDialog({
                                         title: "CONEMO: ",
                                         message: el.no_text,
                                         buttonLabelA: "OK",
-                                        scriptA: PurpleRobotClient.emitReading("dialogue_data", {
+                                        scriptA: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).emitReading("dialogue_data", {
                                             user_id: localStorage.userId,
                                             dialogue_guid: el.guid,
                                             days_in_treatment: el.days_in_treatment,
                                             answer: l10nStrings.no
-                                        }).disableTrigger("DIALOGUE"+idx),
+                                        }),
                                         buttonLabelB: "",
-                                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx),
+                                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).disableTrigger("DIALOGUE"+idx),
                                         tag: "",
                                         priority: 1
                                     }),
                         buttonLabelB: el.yes_button,
-                        scriptB: PurpleRobotClient.showNativeDialog({
+                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).showNativeDialog({
                                         title: "CONEMO: ",
                                         message: el.yes_text,
                                         buttonLabelA: "OK",
-                                        scriptA: PurpleRobotClient.emitReading("dialogue_data", {
+                                        scriptA: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).emitReading("dialogue_data", {
                                             user_id: localStorage.userId,
                                             dialogue_guid: el.guid,
                                             days_in_treatment: el.days_in_treatment,
                                             answer: l10nStrings.yes
                                         }),
                                         buttonLabelB: "",
-                                        scriptB: PurpleRobotClient.doNothing(),
+                                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx),
                                         tag: "",
                                         priority: 1
                                     }),
