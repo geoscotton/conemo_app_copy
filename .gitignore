@@ -1,0 +1,16 @@
+# temp files
+.DS_Store
+.idea
+*.swp
+npm-debug.log
+/.sass-cache
+/.tmp
+
+# build directories
+/platforms
+/www
+
+# development directories
+bower_components
+/node_modules
+/plugins
