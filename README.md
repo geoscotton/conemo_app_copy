@@ -94,12 +94,12 @@ If there is an error during the grunt build process, install the missing gems.
 
 If first time running cordova, 
 
-`cordova platform rm android`
-`cordova platform add android`
+`./node_modules/.bin/cordova platform rm android`
+`./node_modules/.bin/cordova platform add android`
 
 Subsequent builds only requires
 
-`cordova run android`
+`./node_modules/.bin/cordova run android`
 
 
 Still need help?
