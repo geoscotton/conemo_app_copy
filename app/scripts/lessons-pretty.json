@@ -53,7 +53,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 4,
+            "dayInTreatment": 3,
             "guid": "e7625a9f-2b86-4d3a-9828-3a74b6bc39c1",
             "l10n": "pt-BR",
             "slides": [
@@ -74,7 +74,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 7,
+            "dayInTreatment": 6,
             "guid": "0d934e95-e7fe-4fb9-84fd-e62ea5af5d9d",
             "l10n": "pt-BR",
             "slides": [
@@ -128,7 +128,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 11,
+            "dayInTreatment": 10,
             "guid": "c3905713-9f96-483c-899e-d9a83650fa6d",
             "l10n": "pt-BR",
             "slides": [
@@ -167,7 +167,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 14,
+            "dayInTreatment": 13,
             "guid": "524df35a-ab2b-4c56-b8a8-748255e9e5f7",
             "l10n": "pt-BR",
             "slides": [
@@ -251,7 +251,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 18,
+            "dayInTreatment": 17,
             "guid": "21a15760-403c-424b-8126-cb07dd27dfc9",
             "l10n": "pt-BR",
             "slides": [
@@ -278,7 +278,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 21,
+            "dayInTreatment": 20,
             "guid": "5c897add-e38b-449c-896b-e01e7349c4e9",
             "l10n": "pt-BR",
             "slides": [
@@ -338,7 +338,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 25,
+            "dayInTreatment": 24,
             "guid": "6e80f83a-3c40-4d95-a641-a40946a32548",
             "l10n": "pt-BR",
             "slides": [
@@ -359,7 +359,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 28,
+            "dayInTreatment": 27,
             "guid": "33afd2b5-bee3-482d-bf0c-a90da2490d7b",
             "l10n": "pt-BR",
             "slides": [
@@ -419,7 +419,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 32,
+            "dayInTreatment": 31,
             "guid": "62bb2ec6-294e-467c-b3e9-8a8299b8f1a8",
             "l10n": "pt-BR",
             "slides": [
@@ -440,7 +440,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 35,
+            "dayInTreatment": 34,
             "guid": "a7fdaa0b-2b88-454c-a192-70d89cbf8b8b",
             "l10n": "pt-BR",
             "slides": [
@@ -524,7 +524,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 39,
+            "dayInTreatment": 38,
             "guid": "f755864c-fc35-4aaa-8d60-6fd6cd246eca",
             "l10n": "pt-BR",
             "slides": [
@@ -545,7 +545,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 42,
+            "dayInTreatment": 41,
             "guid": "62f30e6b-0fff-4afb-9220-9b9ab7cad265",
             "l10n": "pt-BR",
             "slides": [
@@ -635,7 +635,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 4,
+            "dayInTreatment": 3,
             "guid": "529a2f05-65f8-41f7-ab18-2a673e6eb0f3",
             "l10n": "es-PE",
             "slides": [
@@ -680,7 +680,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 7,
+            "dayInTreatment": 6,
             "guid": "2f6ea7cb-a281-4bf7-98ff-02ac557de206",
             "l10n": "es-PE",
             "slides": [
@@ -722,7 +722,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 11,
+            "dayInTreatment": 10,
             "guid": "481c9380-d8a7-42c7-b010-7aabfca37e4d",
             "l10n": "es-PE",
             "slides": [
@@ -749,7 +749,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 14,
+            "dayInTreatment": 13,
             "guid": "bbb5abf3-f8c7-46c2-8bb8-a5296bf00f49",
             "l10n": "es-PE",
             "slides": [
@@ -815,7 +815,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 18,
+            "dayInTreatment": 17,
             "guid": "410a6881-dc59-4651-8915-4bb7ddab4dbe",
             "l10n": "es-PE",
             "slides": [
@@ -842,7 +842,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 21,
+            "dayInTreatment": 20,
             "guid": "6e5925d2-c9a8-42ab-b67f-52d95d2a6ed3",
             "l10n": "es-PE",
             "slides": [
@@ -902,7 +902,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 25,
+            "dayInTreatment": 24,
             "guid": "f6f33efc-d66b-4c9f-a22b-cbc77fa1de87",
             "l10n": "es-PE",
             "slides": [
@@ -923,7 +923,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 28,
+            "dayInTreatment": 27,
             "guid": "fd91e151-2a83-4012-b7b0-0c4bd685432f",
             "l10n": "es-PE",
             "slides": [
@@ -989,7 +989,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 32,
+            "dayInTreatment": 31,
             "guid": "a8282a46-9b11-45a2-b735-e65fc470b33e",
             "l10n": "es-PE",
             "slides": [
@@ -1016,7 +1016,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 35,
+            "dayInTreatment": 34,
             "guid": "40b9d58f-47b8-43a0-a73f-1d76a1033f04",
             "l10n": "es-PE",
             "slides": [
@@ -1064,7 +1064,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 39,
+            "dayInTreatment": 38,
             "guid": "94b9b930-f396-4c43-913c-9b8ac12ab14d",
             "l10n": "es-PE",
             "slides": [
@@ -1085,7 +1085,7 @@
         },
         {
             "_class": "Lesson",
-            "dayInTreatment": 42,
+            "dayInTreatment": 41,
             "guid": "40dd808e-83dd-4218-94d0-1f6ce80c0abf",
             "l10n": "es-PE",
             "slides": [
