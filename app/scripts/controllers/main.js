@@ -122,7 +122,6 @@ angular.module('conemoAppApp')
                 });
             });
             setTimeout(function() {
-                debugger;
                 if (lessonCount !== lessonReleases.length) {
                     // $('body').prepend("<div id='error-lessons' style='background-color: red;'>PR Error lessons</div>");
                 }
@@ -212,14 +211,6 @@ angular.module('conemoAppApp')
                     }
                 });
             });
-            // RACE CONDITION MAKES THIS TEST FAIL
-            // setTimeout(function() {
-            //     if (dialogueCount !== dialogueReleases.length) {
-            //         alert();
-            //         debugger;
-            //         $('body').prepend("<div id='error-dialogues' style='background-color: red;'>PR Error dialogues</div>");
-            //     }
-            // }, 5500);
         }
             localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
     };

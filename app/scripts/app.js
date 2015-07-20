@@ -149,7 +149,6 @@ angular.module('conemoAppApp', [
             localStorage.setItem('connection',states[networkState]);
         }
         function onResume() {
-            debugger;
             if (localStorage['onResume'] == undefined){
             window.location.href = '';
             }
