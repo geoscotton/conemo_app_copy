@@ -1,0 +1,114 @@
+{
+    "dialogues": [
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "2",
+            "guid": "9c364ec5-f338-4bfe-bab8-ba517483a28d",
+            "l10n": "pt-BR",
+            "message": "Voc\u00ea completou a sua atividade esta semana? ",
+            "no_text": "Continue tentando! Pode demorar um pouco at\u00e9 que voc\u00ea sinta a diferen\u00e7a.",
+            "title": "Di\u00e1logo",
+            "yes_text": "Legal! Fazer atividades prazerosas ou divertidas pode nos ajudar a nos sentirmos melhor!"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "3",
+            "guid": "9525d8df-b3e3-4a49-ac14-62a31a75ea76",
+            "l10n": "pt-BR",
+            "message": "Voc\u00ea tem alguma atividade que n\u00e3o consegue completar, ou que est\u00e1 exigindo demais de voc\u00ea? ",
+            "no_text": "Muito bem!  Siga em frente!",
+            "title": "Di\u00e1logo",
+            "yes_text": "Todos n\u00f3s temos algumas estrat\u00e9gias para lidar com as dificuldades. Pense  em alguma estrat\u00e9gia que pode ajudar voc\u00ea a completar a sua tarefa. Se voc\u00ea n\u00e3o consegue pensar em nada, n\u00e3o se preocupe; na pr\u00f3xima semana n\u00f3s iremos lhe ensinar uma estrat\u00e9gia para lidar com tarefas dif\u00edceis. "
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "4",
+            "guid": "21122375-d573-41ca-92d3-75d606ecd4ef",
+            "l10n": "pt-BR",
+            "message": "Voc\u00ea completou a sua tarefa esta semana?",
+            "no_text": "Se voc\u00ea est\u00e1 tendo dificuldades com o programa, entre em contato com a sua enfermeira.",
+            "title": "Di\u00e1logo",
+            "yes_text": "\u00d3timo! Parab\u00e9ns!"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "5",
+            "guid": "38f266f4-3665-48f5-aca4-751a807d3b1d",
+            "l10n": "pt-BR",
+            "message": "Voc\u00ea conseguiu completar sua tarefa?",
+            "no_text": "N\u00e3o desista! Continue tentando! Talvez voc\u00ea possa escolher uma atividade da lista que seja mais f\u00e1cil de realizar.",
+            "title": "Di\u00e1logo",
+            "yes_text": "\u00d3timo! Continue em frente! Escolha uma nova atividade da sua lista e siga em frente!"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "2",
+            "guid": "5a538d7c-8c4d-4e78-8b68-dc0729f0d9aa",
+            "l10n": "es-PE",
+            "message": "\u00bfHas podido realizar las actividades de esta semana?",
+            "no_text": "Sigue intentando. Puede demorar un poco hasta que sientas la diferencia. La siguiente semana tienes otra oportunidad para volverte activo.",
+            "title": "Di\u00e1logo",
+            "yes_text": "\u00a1Excelente! \u00a1Felicitaciones!"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "3",
+            "guid": "4c795138-3c89-4ab2-aadf-2217bb17a3fc",
+            "l10n": "es-PE",
+            "message": "\u00bfDentro de tus obligaciones existe alguna tarea dif\u00edcil de realizar que requiere planificaci\u00f3n? ",
+            "no_text": "Bien, sigue para adelante. Si afrontas una situaci\u00f3n as\u00ed en el futuro, piensa en c\u00f3mo puedes hacerlo m\u00e1s f\u00e1cil para ti, respetando tus propios l\u00edmites, planeando tu tiempo, cuid\u00e1ndote, no haciendo demasiadas cosas a la vez, etc.",
+            "title": "Di\u00e1logo.",
+            "yes_text": "Piensa en c\u00f3mo puedes hacer esta situaci\u00f3n m\u00e1s f\u00e1cil para ti, respetando tus propios l\u00edmites, planeando tu tiempo, cuid\u00e1ndote, no haciendo demasiadas cosas a la vez, etc. "
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "4",
+            "guid": "fc55cbdc-43c1-45d2-b0a2-1cf6666a1617",
+            "l10n": "es-PE",
+            "message": "\u00bfHas podido realizar la actividad de esta semana?",
+            "no_text": "Todav\u00eda tienes tiempo, sigue adelante con tus tareas para esta semana. \u00a1Si tienes problemas con el programa contacta a la enfermera o enfermero responsable! ",
+            "title": "Di\u00e1logo",
+            "yes_text": "Muy bien. \u00a1Felicitaciones!"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "5",
+            "guid": "2a394b15-a2e3-4adf-933a-08283a160777",
+            "l10n": "es-PE",
+            "message": " \u00bfHas podido realizar la actividad de esta semana?",
+            "no_text": "\u00a1No te rindas! \u00a1Sigue intentando! Tal vez puedes intentar una actividad m\u00e1s f\u00e1cil de tu lista.",
+            "title": "Di\u00e1logo",
+            "yes_text": "\u00a1Muy bien! \u00a1Elige otra actividad de tu lista y sigue para adelante!"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "1",
+            "guid": "52345f6d-13a5-46a4-a761-94732b029998",
+            "l10n": "en",
+            "message": "en message dialogue",
+            "no_text": "no text",
+            "title": "Dialogue Day 1",
+            "yes_text": "yest text"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "3",
+            "guid": "86701691-9ffa-4a36-afd0-99b7c6914537",
+            "l10n": "en",
+            "message": "Dialogue Day 3 message",
+            "no_text": "no text",
+            "title": "Dialogue Day 3",
+            "yes_text": "yes text"
+        },
+        {
+            "_class": "Dialogue",
+            "dayInTreatment": "5",
+            "guid": "38c17e72-5f46-4945-93e9-07e84cfd1264",
+            "l10n": "en",
+            "message": "Dialogue Day 5 text",
+            "no_text": "no text",
+            "title": "Dialogue Day 5",
+            "yes_text": "yes text"
+        }
+    ]
+}
