@@ -5,6 +5,7 @@
     "cordova": "^4.1.2"
   },
   "devDependencies": {
+    "chai": "^3.1.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bower-install": "~0.7.0",
@@ -34,12 +35,14 @@
     "karma-ng-html2js-preprocessor": "~0.1.0",
     "karma-ng-scenario": "~0.1.0",
     "load-grunt-tasks": "~0.2.0",
+    "mocha": "^2.2.5",
+    "testem": "^0.8.5",
     "time-grunt": "~0.2.1"
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "./node_modules/.bin/testem $TESTEM_ENV"
   }
 }
