@@ -15,6 +15,7 @@ Key dependencies
 - Yeoman Angular Generator
 - Purple Robot Client
 - Cordova 4.1.2
+- Purple Robot 1.5.23b
 
 Installation process
 --------------------

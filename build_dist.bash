@@ -30,3 +30,11 @@ cp config.xml www/
 
 
 echo 'Completed building distribution folder'
+
+./node_modules/.bin/cordova plugin remove org.apache.cordova.file-transfer
+./node_modules/.bin/cordova plugin remove org.apache.cordova.file
+./node_modules/.bin/cordova plugin remove org.apache.cordova.network-information
+
+./node_modules/.bin/cordova plugin add org.apache.cordova.file@1.2.0
+./node_modules/.bin/cordova plugin add org.apache.cordova.file-transfer@0.4.5
+./node_modules/.bin/cordova plugin add org.apache.cordova.network-information@0.2.10

@@ -12,5 +12,6 @@ npm-debug.log
 
 # development directories
 bower_components
+/app/bower.json
 /node_modules
 /plugins

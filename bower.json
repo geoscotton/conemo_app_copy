@@ -13,8 +13,7 @@
     "angular-route": "1.2.6",
     "lodash": "~2.4.1",
     "moment": "~2.6.0",
-    "PurpleRobotClient": "git@github.com:cbitstech/PurpleRobotClient.git#1.5.10.0",
-    "phonegap-file-downloader":"0.1.5"
+    "PurpleRobotClient": "git@github.com:cbitstech/PurpleRobotClient.git#1.5.10.0"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",
