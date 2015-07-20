@@ -19,10 +19,10 @@ else
 fi
 
 
-cp app/scripts/lessons.json www/scripts
-cp app/scripts/dialogues.json www/scripts
-cp app/scripts/cbits.js www/scripts
-cp app/styles/bootstrap.min.css www/styles
+cp app/scripts/lessons.json www/scripts/
+cp app/scripts/dialogues.json www/scripts/
+cp app/scripts/cbits.js www/scripts/
+cp app/styles/bootstrap.min.css www/styles/
 cp config.xml www/
 
 

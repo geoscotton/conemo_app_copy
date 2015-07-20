@@ -200,7 +200,16 @@ module.exports = function (grunt) {
     useminPrepare: {
       html: '<%= yeoman.app %>/index.html',
       options: {
-        dest: '<%= yeoman.dist %>'
+        dest: '<%= yeoman.dist %>',
+        flow: {
+          html: {
+            steps: {
+              js: ['concat'],
+              css: ['cssmin']
+            },
+            post: {}
+          }
+        }
       }
     },
 
@@ -393,10 +402,10 @@ module.exports = function (grunt) {
     'copy:dist',
     'cdnify',
     'cssmin',
-    'uglify',
+    //'uglify',
     'rev',
     'usemin',
-    'htmlmin'
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [
