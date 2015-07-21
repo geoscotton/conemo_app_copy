@@ -5,7 +5,9 @@
     "cordova": "^4.1.2"
   },
   "devDependencies": {
-    "chai": "^3.1.0",
+    "appium": "^1.4.8",
+    "chai": "^3.2.0",
+    "chai-as-promised": "^5.1.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.4.0",
     "grunt-bower-install": "~0.7.0",
@@ -37,7 +39,8 @@
     "load-grunt-tasks": "~0.2.0",
     "mocha": "^2.2.5",
     "testem": "^0.8.5",
-    "time-grunt": "~0.2.1"
+    "time-grunt": "~0.2.1",
+    "wd": "^0.3.12"
   },
   "engines": {
     "node": ">=0.8.0"

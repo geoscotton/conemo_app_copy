@@ -11,6 +11,7 @@
     'exports': true,
     'inject': true,
     'it': true,
+    'localStorage': true,
     'module': true,
     'moment': true,
     'require': true,

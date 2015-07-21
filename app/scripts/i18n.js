@@ -45,7 +45,8 @@ i18nStrings.generalContent.push({
         "https://conemo.northwestern.edu/system/EN2.mp4"
     ],
     yes: 'yes',
-    no: 'no'
+    no: 'no',
+    welcomeToConemo: 'Welcome to CONEMO!'
 });
 
 i18nStrings.generalContent.push({
@@ -86,7 +87,8 @@ i18nStrings.generalContent.push({
     	"https://conemo.northwestern.edu/system/countdown.mp4"
     ],
     yes: 'sim',
-    no: 'não'
+    no: 'não',
+    welcomeToConemo: 'Benvindo ao CONEMO!'
 });
 
 i18nStrings.generalContent.push({
@@ -127,5 +129,6 @@ i18nStrings.generalContent.push({
 	   	"https://conemo.northwestern.edu/system/countdown.mp4"
     ],
     yes: 'sí',
-    no: 'no'
+    no: 'no',
+    welcomeToConemo: '¡Bienvenido a CONEMO!'
 });

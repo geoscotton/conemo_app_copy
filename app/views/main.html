@@ -4,31 +4,32 @@
 <div id="account-setup" ng-show="showAccountSetup" class="well">
 	<form name="accountSetup" ng-submit="setUserAccountInfo();">
 		<h4>1.</h4>
-	<button type="button" 
-		name="l10n" 
-		class="btn btn-info btn-language"
-		ng-model="l10n" 
-		ng-click="setLocale(); enableStep('download');"  
-		ng-repeat="locale in availableLocales"  
-		value="{{locale}}">
-		{{locale}}
-	</button>
-	<br/>
-	<br/>
-	<h4>2. Videos <i ng-show="filesDownloaded != 'undefined'" class="glyphicon glyphicon-ok"></i></h4><br/>
-	
-	<button type="button" ng-click="enableStep('userId'); downloadVideos();" class="hidden btn btn-info" id="download">{{ 'download' | translate }}</button>
-	
-	<div id="progressContainer" class="well" style="display: none;">
-	<div id="download-counter"></div>
-	</div><br/>
-	<h4>3. {{ 'configureUserLabel' | translate }}</h4>
-	<label for="userId">ID #</label><br/>
+
+    <a
+      name="l10n"
+      class="btn btn-info btn-language"
+      ng-model="l10n"
+      ng-click="setLocale(); enableStep('download');"
+      ng-repeat="locale in availableLocales"
+      value="{{ locale }}">
+      {{ locale }}
+    </a>
+    <br/>
+    <br/>
+
+    <h4>2. Videos <i ng-show="filesDownloaded != 'undefined'" class="glyphicon glyphicon-ok"></i></h4><br/>
+
+    <a ng-click="enableStep('userId'); downloadVideos();" class="hidden btn btn-info" id="download">{{ 'download' | translate }}</a>
+
+    <div id="progressContainer" class="well" style="display: none;">
+      <div id="download-counter"></div>
+    </div><br/>
+
+    <h4>3. {{ 'configureUserLabel' | translate }}</h4>
+    <label for="userId">ID #</label><br/>
 
 		<input type="text" id="userId" name="userId" ng-model="userId" ng-class="filesDownloaded != 'undefined' ? '' : 'hidden'" required>
 		<br/>
-
-
 		<br/>
 
 		<button class="btn btn-primary" ng-disabled="accountSetup.userId.$pristine || !isDownloading()" type="submit" id="submit">
@@ -36,7 +37,6 @@
 		</button>
 	</form>
 </div>
-
 
 <div id="home-screen" ng-hide="showAccountSetup">
 	<div class="jumbotron">
@@ -57,15 +57,19 @@
 		</a>
 	</div>
 
-	<a ng-href="#/toolbox" class="btn btn-warning btn-wide"><i class="glyphicon glyphicon-wrench"></i> 
+	<a href="#/toolbox" class="btn btn-warning btn-wide"><i class="glyphicon glyphicon-wrench"></i> 
 		{{ 'toolBoxLabel' | translate }}
 	</a>
 
-	<a ng-href="#/contact" class="btn btn-info btn-wide"><i class="glyphicon glyphicon-phone"></i> 
+	<a href="#/contact" class="btn btn-info btn-wide"><i class="glyphicon glyphicon-phone"></i> 
 		{{ 'contactHelpLabel' | translate }}
 	</a>
 
-	<a ng-href="#/instructions" class="btn btn-info btn-wide"><i class="glyphicon glyphicon-question-sign"></i> 
+	<a href="#/instructions" class="btn btn-info btn-wide"><i class="glyphicon glyphicon-question-sign"></i> 
 		{{ 'instructionsLabel' | translate }}
+	</a>
+
+	<a href="#/sample_lesson" class="btn btn-info btn-wide"><i class="glyphicon glyphicon-book"></i> 
+		{{ 'instructionsLesson' | translate }}
 	</a>
 </div>
