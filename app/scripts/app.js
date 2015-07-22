@@ -31,6 +31,7 @@ angular.module('conemoAppApp', [
     'ngSanitize',
     'ngRoute'
 ])
+    .constant('l10n', l10n)
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
@@ -60,6 +61,11 @@ angular.module('conemoAppApp', [
             .when('/instructions/:key', {
                 templateUrl: 'views/instructions.html',
                 controller: 'InstructionsCtrl'
+            })
+            .when('/sample_lesson', {
+                templateUrl: 'views/sample_lesson.html',
+                controller: 'SampleLessonController',
+                controllerAs: 'sampleLesson'
             })
             .otherwise({
                 redirectTo: '/'
@@ -149,7 +155,6 @@ angular.module('conemoAppApp', [
             localStorage.setItem('connection',states[networkState]);
         }
         function onResume() {
-            debugger;
             if (localStorage['onResume'] == undefined){
             window.location.href = '';
             }

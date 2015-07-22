@@ -71,7 +71,6 @@ angular.module('conemoAppApp')
 
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
-        // PurpleRobotClient.clearTriggers().execute();
         $scope.setStartDate();
         schedulePRTriggersLessons();
         schedulePRTriggersDialogues();
@@ -91,10 +90,8 @@ angular.module('conemoAppApp')
             }
             var lessonCount = 0;
             _.each(lessonReleases,function(el,idx) {
-                // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
-
-                var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).format(dateFormatCustom);
-                var triggerEnd = moment(triggerStart,dateFormatCustom).add('minutes',1).format(dateFormatCustom);
+                var triggerStart = moment(el.releaseDay).hour(8).minute(0).second(0).toDate(),
+                    triggerEnd = moment(triggerStart,dateFormatCustom).add('minutes',1).toDate();
 
                 PurpleRobotClient.updateTrigger({
                     script: PurpleRobotClient.vibrate("buzz").showScriptNotification({
@@ -121,12 +118,6 @@ angular.module('conemoAppApp')
                     }
                 });
             });
-            setTimeout(function() {
-                debugger;
-                if (lessonCount !== lessonReleases.length) {
-                    // $('body').prepend("<div id='error-lessons' style='background-color: red;'>PR Error lessons</div>");
-                }
-            }, 4000);
         }
         localStorage.setItem("lessonTriggersScheduled", moment().toDate());
     };
@@ -151,10 +142,8 @@ angular.module('conemoAppApp')
 
             var dialogueCount = 0;
             _.each(dialogueReleases,function(el,idx) {
-                // var triggerStart = moment(el.releaseDay).format(dateFormatCustom);
-
-                var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).format(dateFormatCustom);
-                var triggerEnd = moment(triggerStart,dateFormatCustom).add('minutes',1).format(dateFormatCustom);
+                var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).toDate(),
+                    triggerEnd = moment(triggerStart,dateFormatCustom).add('minutes',1).toDate();
 
                 PurpleRobotClient.updateTrigger({
                     script: PurpleRobotClient.vibrate("buzz").showNativeDialog({
@@ -212,14 +201,6 @@ angular.module('conemoAppApp')
                     }
                 });
             });
-            // RACE CONDITION MAKES THIS TEST FAIL
-            // setTimeout(function() {
-            //     if (dialogueCount !== dialogueReleases.length) {
-            //         alert();
-            //         debugger;
-            //         $('body').prepend("<div id='error-dialogues' style='background-color: red;'>PR Error dialogues</div>");
-            //     }
-            // }, 5500);
         }
             localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
     };

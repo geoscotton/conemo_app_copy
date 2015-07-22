@@ -53,14 +53,6 @@ cd app
 grunt serve
 ```
 
-Add Purple Robot Client to Dependencies
----------------------------------------
-
-Add `"PurpleRobotClient": "git@github.com:cbitstech/PurpleRobotClient.git#1.5.10.0"`
-as a bower dependency in bower.json.
-
-Run `bower install`.
-
 Running tests
 -------------
 
@@ -111,6 +103,14 @@ If first time running cordova,
 Subsequent builds only requires
 
 `./node_modules/.bin/cordova run android`
+
+Running in an emulator
+----------------------
+
+Make sure you have an SD card enabled so that the video downloads work.
+
+If your computer is on WiFi, disable your LAN (it may be called "Thunderbolt Bridge").
+Restart your virtual device and confirm that it has access to the internet.
 
 If you still need help
 ----------------------
