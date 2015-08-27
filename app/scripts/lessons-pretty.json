@@ -718,7 +718,7 @@
                     "title": "Slide 2"
                 }
             ],
-            "title": "Realizar actividades placenteras nos hacen sentir bien."
+            "title": "Realizar actividades placenteras nos hace sentir bien."
         },
         {
             "_class": "Lesson",
@@ -743,6 +743,24 @@
                     "content": "<p>&nbsp;</p>\r\n\r\n<p>Realizar m&aacute;s actividades placenteras y deberes o tareas diariamente te ayudar&aacute; a mejorar tu salud f&iacute;sica y emocional.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>As&iacute; te sentir&aacute;s mejor contigo mismo. &nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Cu&eacute;ntanos de alguna actividad o tarea que deber&iacute;as haber hecho pero que que dejaste sin terminar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, pagar tus cuentas, hacer tareas de la casa, mejorar tu alimentaci&oacute;n, todo es v&aacute;lido.&nbsp;</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4 new"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Revisa la siguiente lista de actividades y escoge 2 o 3 actividades que deber&iacute;as cumplir, pero que has dejado de hacer.&nbsp;</p>\r\n\r\n<p style=\"text-align: center;\">&nbsp;</p>\r\n\r\n<p><select multiple=\"true\" name=\"Deberes_Pensar\"><option value=\"Hacer ejercicio\">Hacer ejercicio</option><option value=\"Ayudar a un familiar\">Ayudar a un familiar</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Pagar una cuenta\">Pagar una cuenta</option><option value=\"Resolver un problema personal\">Resolver un problema personal</option><option value=\"Ir al m\u00e9dico\">Ir al m&eacute;dico</option><option value=\"Limpiar u ordenar la casa\">Limpiar u ordenar la casa</option><option value=\"Salir a caminar\">Salir a caminar</option><option value=\"Comer comida m\u00e1s sana\">Comer comida m&aacute;s sana</option><option value=\"Controlar mi nivel de az\u00facar sanguina\">Controlar mi nivel de az&uacute;car sanguina</option><option value=\"Tener mi presi\u00f3n bajo control\">Tener mi presi&oacute;n bajo control</option></select></p>\r\n\r\n<p><span style=\"line-height:1.6\">Durante los pr&oacute;ximos d&iacute;as, piensa cu&aacute;les son aquellos deberes y tareas que no has estado haciendo &uacute;ltimamente.&nbsp;</span></p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5 new"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Identifica y recuerda especialmente aquellas que, si las hicieras, te har&iacute;an sentir satisfecho y orgulloso de ti mismo y que te ayudar&iacute;an a lograr tu objetivo en este programa.&nbsp;</p>\r\n\r\n<p>F&iacute;jate si es que tienes la oportunidad de hacerlas. &iexcl;Recuerda estas oportunidades!</p>\r\n",
+                    "position": 6,
+                    "title": "Slide 6 new"
                 }
             ],
             "title": "Terminar nuestras tareas nos hace sentir mejor."
@@ -773,7 +791,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><strong>Dialogo:</strong></p>\r\n\r\n<p>&iquest;Qu&eacute; actividad te gustar&iacute;a intentar para mejorar tu salud?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Mira la siguiente lista y elige alguna.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"actividades_saludables_pensar\"><option value=\"Salir a caminar o a correr \">Salir a caminar o a correr</option><option value=\"Practicar un deporte (jugar v\u00f3ley, f\u00fatbol, ir al gimnasio, ir a bailar)\">Practicar un deporte (jugar v&oacute;ley, f&uacute;tbol, ir al gimnasio, ir a bailar)</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Comer m\u00e1s frutas y verduras\">Comer m&aacute;s frutas y verduras</option><option value=\"Comer menos dulces o grasas\">Comer menos dulces o grasas</option><option value=\"Ir al m\u00e9dico regularmente\">Ir al m&eacute;dico regularmente</option><option value=\"Controlar mi glucosa (az\u00facar en la sangre)\">Controlar mi glucosa (az&uacute;car en la sangre)</option><option value=\"Controlar mi presi\u00f3n arterial \">Controlar mi presi&oacute;n arterial</option><option selected=\"selected\" value=\"\"></option></select></p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">&iquest;Qu&eacute; actividad te gustar&iacute;a intentar para mejorar tu salud?</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Mira la siguiente lista y elige alguna.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"actividades_saludables_pensar\"><option value=\"Salir a caminar o a correr \">Salir a caminar o a correr</option><option value=\"Practicar un deporte (jugar v\u00f3ley, f\u00fatbol, ir al gimnasio, ir a bailar)\">Practicar un deporte (jugar v&oacute;ley, f&uacute;tbol, ir al gimnasio, ir a bailar)</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Comer m\u00e1s frutas y verduras\">Comer m&aacute;s frutas y verduras</option><option value=\"Comer menos dulces o grasas\">Comer menos dulces o grasas</option><option value=\"Ir al m\u00e9dico regularmente\">Ir al m&eacute;dico regularmente</option><option value=\"Controlar mi glucosa (az\u00facar en la sangre)\">Controlar mi glucosa (az&uacute;car en la sangre)</option><option value=\"Controlar mi presi\u00f3n arterial \">Controlar mi presi&oacute;n arterial</option><option selected=\"selected\" value=\"\"></option></select></p>\r\n",
                     "position": 4,
                     "title": "Slide 3"
                 },
@@ -784,7 +802,7 @@
                     "title": "Slide 4"
                 }
             ],
-            "title": "\u00a1Cuidar a tu salud es importante!"
+            "title": "\u00a1Cuidar tu salud es importante!"
         },
         {
             "_class": "Lesson",
@@ -887,7 +905,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><strong>Di&aacute;logo</strong>:</p>\r\n\r\n<p>&iquest;Qu&eacute; deberes y tareas puedes hacer en los siguientes d&iacute;as?&nbsp;</p>\r\n\r\n<p>Puede ser algo muy sencillo, lo importante es empezar.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>A continuaci&oacute;n te mostramos una lista con ejemplos de actividades que a veces uno debe cumplir. Estas actividades pueden ser distintas para cada persona.</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&iquest;Qu&eacute; deberes y tareas puedes hacer en los siguientes d&iacute;as?&nbsp;</p>\r\n\r\n<p>Puede ser algo muy sencillo, lo importante es empezar.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>A continuaci&oacute;n te mostramos una lista con ejemplos de actividades que a veces uno debe cumplir. Estas actividades pueden ser distintas para cada persona.</p>\r\n",
                     "position": 3,
                     "title": "Slide 2"
                 },
@@ -956,7 +974,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Esperamos que la semana pasada hayas podido hacer alguna actividad positiva.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Aunque haya sido solo peque&ntilde;a es importante. Peque&ntilde;os pasos pueden generar grandes cambios.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora queremos que pienses en actividades nuevas que pueden mejorar tu salud.</p>\r\n",
+                    "content": "<p>Esperamos que la semana pasada hayas podido hacer alguna actividad positiva.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Aunque haya sido solo peque&ntilde;a es importante. Peque&ntilde;os pasos pueden generar grandes cambios.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora queremos que pienses en actividades nuevas que pueden <u>mejorar tu salud</u>.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -974,7 +992,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><strong>Di&aacute;logo</strong>:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iquest;Qu&eacute; actividad te gustar&iacute;a experimentar para mejorar tu salud?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Elige una actividad de la siguiente lista.&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"actividade_saludable_realizar\"><option value=\"Salir a caminar o a correr \">Salir a caminar o a correr</option><option value=\"Practicar un deporte (jugar v\u00f3ley, f\u00fatbol, ir al gimnasio, ir a bailar)\">Practicar un deporte (jugar v&oacute;ley, f&uacute;tbol, ir al gimnasio, ir a bailar)</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Comer m\u00e1s frutas y verduras\">Comer m&aacute;s frutas y verduras</option><option value=\"Comer menos dulces o grasas\">Comer menos dulces o grasas</option><option value=\"Ir al m\u00e9dico regularmente\">Ir al m&eacute;dico regularmente</option><option value=\"Controlar mi glucosa (az\u00facar en la sangre)\">Controlar mi glucosa (az&uacute;car en la sangre)</option><option value=\"Controlar mi presi\u00f3n arterial \">Controlar mi presi&oacute;n arterial</option><option selected=\"selected\" value=\"\"></option></select></p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&iquest;Qu&eacute; actividad te gustar&iacute;a experimentar para mejorar tu salud?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Elige una actividad de la siguiente lista.&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"actividade_saludable_realizar\"><option value=\"Salir a caminar o a correr \">Salir a caminar o a correr</option><option value=\"Practicar un deporte (jugar v\u00f3ley, f\u00fatbol, ir al gimnasio, ir a bailar)\">Practicar un deporte (jugar v&oacute;ley, f&uacute;tbol, ir al gimnasio, ir a bailar)</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Comer m\u00e1s frutas y verduras\">Comer m&aacute;s frutas y verduras</option><option value=\"Comer menos dulces o grasas\">Comer menos dulces o grasas</option><option value=\"Ir al m\u00e9dico regularmente\">Ir al m&eacute;dico regularmente</option><option value=\"Controlar mi glucosa (az\u00facar en la sangre)\">Controlar mi glucosa (az&uacute;car en la sangre)</option><option value=\"Controlar mi presi\u00f3n arterial \">Controlar mi presi&oacute;n arterial</option><option selected=\"selected\" value=\"\"></option></select></p>\r\n",
                     "position": 4,
                     "title": "Slide 3"
                 },
@@ -1103,21 +1121,21 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Dentro de poco te contactar&aacute; tu enfermera o enfermero para programar una cita para que puedas reunirte con el equipo de investigaci&oacute;n del proyecto.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El equipo de investigaci&oacute;n quiere saber c&oacute;mo est&aacute;s y c&oacute;mo fue tu experiencia de participar en nuestro programa.</p>\r\n",
+                    "content": "<p>Dentro de poco te contactaramos para programar una cita para que puedas reunirte con el equipo de investigaci&oacute;n del proyecto.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El equipo de investigaci&oacute;n quiere saber c&oacute;mo est&aacute;s y c&oacute;mo fue tu experiencia de participar en nuestro programa.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esperamos que participar te haya servido y que te sientas mejor ahora.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Sigue para adelante realizando tus actividades diarias!&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Al final de la conversaci&oacute;n deber&aacute;s entregar el tel&eacute;fono que has usado durante estas semanas en el programa.</p>\r\n",
                     "position": 4,
-                    "title": "Slide 4"
+                    "title": "Slide 3a"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Al final de la conversaci&oacute;n deber&aacute;s entregar el tel&eacute;fono que has usado durante estas semanas en el programa.</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esperamos que participar te haya servido y que te sientas mejor ahora.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Sigue para adelante realizando tus actividades diarias!&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 5,
-                    "title": "Slide 3a"
+                    "title": "Slide 4"
                 }
             ],
             "title": "Sesi\u00f3n final"
