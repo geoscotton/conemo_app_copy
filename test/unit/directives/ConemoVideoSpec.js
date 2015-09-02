@@ -33,9 +33,13 @@ describe('ConemoVideo', function() {
 
   it('appends the video markup to the element', function() {
     var element = $compile('<div conemo-video></div>')($rootScope);
+    // required (for now) due to the way the run phase is configured
+    localStorage.config = '{}';
 
     $rootScope.$digest();
 
     expect(element.html()).to.equal('inserted video');
+
+    localStorage.clear();
   });
 });
