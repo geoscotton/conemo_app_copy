@@ -8,3 +8,6 @@ launch_in_dev:
 launch_in_ci:
   - PhantomJS
 test_page: test/runner.html
+src_files:
+  - test/**/*Spec.js
+  - app/**/*.js
