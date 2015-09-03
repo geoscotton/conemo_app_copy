@@ -129,7 +129,7 @@ angular.module('conemoAppApp')
     function schedulePRTriggersDialogues() {
         if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
             var dialogueReleases = [];
-            var dateFormatCustom = "YYYYMMDDTHHmmss";
+
             for (var i = 0; i < dateSortedDialogues.length; i++) {
                 var dialogue = {
                     releaseDay: (moment().add('d',(dateSortedDialogues[i].dayInTreatment)-1)),
@@ -147,8 +147,13 @@ angular.module('conemoAppApp')
 
             var dialogueCount = 0;
             _.each(dialogueReleases,function(el,idx) {
-                var triggerStart = moment(el.releaseDay).hour(8).minute(1).second(0).toDate(),
-                    triggerEnd = moment(triggerStart,dateFormatCustom).add('minutes',1).toDate();
+                var dialogueTime = Constants.DIALOGUE_RELEASE_TRIGGER_TIME,
+                    triggerStart = moment(el.releaseDay)
+                                   .hour(dialogueTime.hour)
+                                   .minute(dialogueTime.minute)
+                                   .second(dialogueTime.second)
+                                   .toDate(),
+                    triggerEnd = moment(triggerStart).add('minutes', 1).toDate();
 
                 PurpleRobotClient.updateTrigger({
                     script: PurpleRobotClient.vibrate("buzz").showNativeDialog({

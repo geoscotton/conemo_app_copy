@@ -15,6 +15,9 @@ describe('MainController', function() {
     sinon.spy(startDateService, 'setStartDate');
     prClient = {
       updateTrigger: function() { return prClient; },
+      disableTrigger: function() { return prClient; },
+      emitReading: function() { return prClient; },
+      showNativeDialog: function() { return prClient; },
       vibrate: function() { return prClient; },
       showScriptNotification: function() { return prClient; },
       launchApplication: function() { return prClient; },
@@ -28,8 +31,8 @@ describe('MainController', function() {
   }));
 
   afterEach(function() {
-    delete window.PurpleRobotClientTmp;
     window.PurpleRobotClient = window.PurpleRobotClientTmp;
+    delete window.PurpleRobotClientTmp;
   });
 
   function injectController($controller) {
@@ -68,6 +71,30 @@ describe('MainController', function() {
 
           var expectedArgs = sinon.match({ triggerId: 'LESSON0' });
           expect(prClient.updateTrigger.calledWith(expectedArgs)).to.be.true;
+
+          localStorage.clear();
+        });
+      });
+
+      describe('when the dialogueTriggersScheduled is not cached', function() {
+        it('creates a trigger for each dialog', function() {
+          localStorage.clear();
+          cacheUserId();
+          inject(function($rootScope) {
+            $rootScope.dialogues = [
+              { dayInTreatment: 1, title: 'lesson 1' },
+              { dayInTreatment: 2, title: 'lesson 2' }
+            ];
+          });
+
+          inject(injectController);
+
+          var expectedArgs = [
+            sinon.match({ triggerId: 'DIALOGUE0' }),
+            sinon.match({ triggerId: 'DIALOGUE1' })
+          ];
+          expect(prClient.updateTrigger.calledWith(expectedArgs[0])).to.be.true;
+          expect(prClient.updateTrigger.calledWith(expectedArgs[1])).to.be.true;
 
           localStorage.clear();
         });
