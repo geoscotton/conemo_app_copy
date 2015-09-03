@@ -25,11 +25,13 @@ if (typeof localStorage.lessonsRead === 'undefined') {
     localStorage.lessonsRead = JSON.stringify([]);
 }
 
+angular.module('conemoApp.constants', []);
 angular.module('conemoAppApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'conemoApp.constants'
 ])
     .constant('l10n', l10n)
     .config(function ($routeProvider) {
