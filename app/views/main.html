@@ -52,9 +52,7 @@
 			{{currentLessonDay}} de {{ 'months' | translate }}
 		</h3>
 
-		<a ng-href="#/lesson/{{currentLessonGuid}}" class="btn btn-primary" id="begin-assignment">
-			{{ 'beginLessonButtonLabel' | translate }}
-		</a>
+    <session-access-link guid="currentLessonGuid" />
 	</div>
 
 	<a href="#/toolbox" class="btn btn-warning btn-wide"><i class="glyphicon glyphicon-wrench"></i> 
