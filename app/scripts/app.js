@@ -166,4 +166,12 @@ angular.module('conemoAppApp', [
             window.location.href = pageToGoto;
             }
         }
+    })
+    .run(function(purpleRobot) {
+      purpleRobot.updateConfig({
+        config_enable_log_server: true,
+        config_log_server_uri: 'https://conemo-staging.cbits.northwestern.edu/debug_logs',
+        config_restrict_log_wifi: false,
+        config_log_heartbeat: false
+      }).execute();
     });

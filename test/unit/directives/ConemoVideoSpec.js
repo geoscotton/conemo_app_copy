@@ -7,28 +7,18 @@ describe('ConemoVideo', function() {
 
   beforeEach(module('conemoAppApp'));
 
-  beforeEach(module(function($provide) {
-    var mockGlobal;
-
-    function MockDownloader() {}
-
-    MockDownloader.prototype.insert = function() {
-      return 'inserted video';
-    };
-
-    mockGlobal = {
-      Downloader: MockDownloader
-    };
-
-    $provide.constant('$window', mockGlobal);
-  }));
-
-  beforeEach(inject(function(_$compile_, _$rootScope_, _$httpBackend_) {
+  beforeEach(inject(function(_$compile_, _$rootScope_, _$httpBackend_, _$window_) {
     $compile = _$compile_;
     $rootScope = _$rootScope_;
     // required (for now) due to the way the run phase is configured
     _$httpBackend_.when('GET', 'scripts/lessons.json').respond();
     _$httpBackend_.when('GET', 'scripts/dialogues.json').respond();
+
+    _$window_.Downloader = function() {
+      this.insert = function() {
+        return 'inserted video';
+      };
+    };
   }));
 
   it('appends the video markup to the element', function() {
