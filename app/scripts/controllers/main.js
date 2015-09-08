@@ -109,7 +109,7 @@ angular.module('conemoAppApp')
                   triggerId: "LESSON"+idx,
                   startAt: triggerStart,
                   endAt: triggerEnd,
-                  repeatRule: "FREQ=DAILY;COUNT=1",
+                  repeatRule: "FREQ=YEARLY;COUNT=5", // explicitly specify repeat on long period
                   fire_on_boot: true
               }).execute({
                   done: function() {
