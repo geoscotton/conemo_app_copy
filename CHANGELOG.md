@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.1 - 2015-09-08
+
+* extend lesson notification repeat period
+* remove blank options in lessons
+
 ## 0.3.0 - 2015-09-04
 
 * capture session access events and emit with PR
