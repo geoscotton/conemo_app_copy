@@ -9,6 +9,7 @@ grunt build
 wait
 
 curl 'https://conemo.northwestern.edu/api/lessons.json' -o "app/scripts/lessons.json"
+./scripts/fix_empty_options.js
 cat app/scripts/lessons.json | python -m json.tool > app/scripts/lessons-pretty.json
 curl 'https://conemo.northwestern.edu/api/dialogues.json' -o "app/scripts/dialogues.json"
 cat app/scripts/dialogues.json | python -m json.tool > app/scripts/dialogues-pretty.json
