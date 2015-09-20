@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.4 - 2015-09-19
+
+* make training lesson date/time inputs like lessons
+* add unselectable default blank option to selects
+
 ## 0.3.1 - 2015-09-08
 
 * extend lesson notification repeat period
