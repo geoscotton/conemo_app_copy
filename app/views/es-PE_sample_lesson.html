@@ -25,7 +25,8 @@
       </li>
       <li>Programar una hora
       </li>
-    </p>
+    </ul>
+  </p>
 </div>
 
 <h2>Siguiente y atrás</h2>
@@ -106,7 +107,6 @@
   <p>¿Cuál es tu color favorito?</p>
 
   <select>
-    <option disabled selected value="" style="display: none;"></option>
     <option value="rojo">rojo</option>
     <option value="verde">verde</option>
     <option value="azul">azul</option>
@@ -181,3 +181,9 @@
 <div class="well">
   <p>Si tienes alguna pregunta, por favor, pregunta a tu enfermera o enfermero.</p>
 </div>
+
+<script>
+  $.each($('select'), function(i, select) {
+    select.selectedIndex = -1;
+  });
+</script>

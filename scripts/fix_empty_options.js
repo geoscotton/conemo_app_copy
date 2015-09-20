@@ -8,7 +8,7 @@ fs.readFile(lessonsFile, 'utf8', function(err, data) {
     return console.log(err);
   }
 
-  var result = data.replace(/\\u003coption\\u003e\\u003c\/option\\u003e/g, "\\u003coption disabled selected style=\\\"display: none;\\\"\\u003e\\u003c/option\\u003e");
+  var result = data.replace(/\\u003coption\\u003e\\u003c\/option\\u003e/g, "");
 
   fs.writeFile(lessonsFile, result, 'utf8', function(err) {
     if (err) return console.log(err);

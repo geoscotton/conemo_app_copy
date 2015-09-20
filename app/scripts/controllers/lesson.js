@@ -1,7 +1,9 @@
 'use strict';
 
 angular.module('conemoAppApp')
-    .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location, $rootScope, startDateService) {
+    .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location,
+                                        $timeout, $window, $rootScope,
+                                        startDateService) {
         var docHeight = $(window).height();
         var docWidth = $(window).width();
 
@@ -79,6 +81,12 @@ angular.module('conemoAppApp')
         $scope.nextLabel = l10nStrings.nextLabel;
         $scope.showSlides = false;
         $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
+        $timeout(function() {
+          var selects = $window.document.getElementsByTagName('select');
+          Array.prototype.forEach.call(selects, function(select) {
+            select.selectedIndex = -1;
+          });
+        });
         $scope.currentSlideIndex = 0;
         $scope.pageCounter = ($scope.currentSlideIndex + 1) + " / " + slides.length;
 
