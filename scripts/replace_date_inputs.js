@@ -5,7 +5,6 @@ var fs = require('fs'),
 
 function datePickerHtml(name) {
   var html = "<select name=\\\"" + name + "\\\" style=\\\"width: inherit;\\\">" +
-    "  <option disabled=\\\"\\\" value=\\\"\\\" selected=\\\"\\\" style=\\\"display: none;\\\">día</option>" +
     '  <option>1</option>' +
     '  <option>2</option>' +
     '  <option>3</option>' +
@@ -39,7 +38,6 @@ function datePickerHtml(name) {
     '  <option>31</option>' +
     '</select>' +
     "<select name=\\\"" + name + "\\\" style=\\\"width: inherit;\\\">" +
-    "  <option disabled=\\\"\\\" value=\\\"\\\" selected=\\\"\\\" style=\\\"display: none;\\\">mes</option>" +
     '  <option>enero</option>' +
     '  <option>febrero</option>' +
     '  <option>marzo</option>' +
@@ -54,7 +52,6 @@ function datePickerHtml(name) {
     '  <option>diciembre</option>  ' +
     '</select>' +
     "<select name=\\\"" + name + "\\\" style=\\\"width: inherit;\\\">" +
-    "  <option disabled=\\\"\\\" value=\\\"\\\" selected=\\\"\\\" style=\\\"display: none;\\\">año</option>" +
     '  <option>2014</option>' +
     '  <option>2015</option>' +
     '  <option>2016</option>' +
@@ -71,7 +68,6 @@ function datePickerHtml(name) {
 
 function timePickerHtml(name) {
   var html = "<select name=\\\"" + name + "\\\" style=\\\"width: inherit;\\\">" +
-    "  <option disabled=\\\"\\\" value=\\\"\\\" selected=\\\"\\\" style=\\\"display: none;\\\"></option>" +
     '  <option value=\\\"1h\\\">1</option>' +
     '  <option value=\\\"2h\\\">2</option>' +
     '  <option value=\\\"3h\\\">3</option>' +
@@ -87,7 +83,6 @@ function timePickerHtml(name) {
     '</select>' +
     ' : ' +
     "<select name=\\\"" + name + "\\\" style=\\\"width: inherit;\\\">" +
-    "  <option disabled=\\\"\\\" value=\\\"\\\" selected=\\\"\\\" style=\\\"display: none;\\\"></option>" +
     '  <option value=\\\"00m\\\">00</option>' +
     '  <option value=\\\"01m\\\">01</option>' +
     '  <option value=\\\"02m\\\">02</option>' +
@@ -150,7 +145,6 @@ function timePickerHtml(name) {
     '  <option value=\\\"59m\\\">59</option>' +
     '</select>' +
     "<select name=\\\"" + name + "\\\" style=\\\"width: inherit;\\\">" +
-    "  <option disabled=\\\"\\\" value=\\\"\\\" selected=\\\"\\\" style=\\\"display: none;\\\"></option>" +
     '  <option value=\\\"am\\\">am</option>' +
     '  <option value=\\\"pm\\\">pm</option>' +
     '</select>';
