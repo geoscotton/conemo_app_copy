@@ -614,7 +614,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el bot&oacute;n &quot;agrandar pantalla&quot; y luego presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p>video0</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p>video0</p>\r\n",
                     "position": 7,
                     "title": "Slide 3 Video 1"
                 },
@@ -812,7 +812,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Planeando actividades para la semana!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el bot&oacute;n &quot;agrandar pantalla&quot; y luego presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p><span style=\"font-size:13px; line-height:1.6\">video1</span></p>\r\n",
+                    "content": "<p>&iexcl;Planeando actividades para la semana!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p><span style=\"font-size:13px\">video1</span></p>\r\n",
                     "position": 1,
                     "title": " Slide 1 Video 2"
                 },
@@ -1013,7 +1013,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Un paso a la vez!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el bot&oacute;n &quot;agrandar pantalla&quot; y luego presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p>video2</p>\r\n",
+                    "content": "<p>&iexcl;Un paso a la vez!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p>video2</p>\r\n",
                     "position": 1,
                     "title": " Slide 1 Video 3"
                 },
@@ -1073,7 +1073,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el bot&oacute;n &quot;agrandar pantalla&quot; y luego presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>video3</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo en el centro.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>video3</p>\r\n",
                     "position": 4,
                     "title": "Slide 4 Video 4"
                 }

@@ -4,12 +4,6 @@ angular.module('conemoAppApp')
     .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location,
                                         $timeout, $window, $rootScope,
                                         startDateService) {
-      function reloadPage(event) {
-        if ($window.document.webkitIsFullScreen === false) {
-          $window.location.reload();
-        }
-      }
-
         var docHeight = $(window).height();
         var docWidth = $(window).width();
 
@@ -91,12 +85,6 @@ angular.module('conemoAppApp')
           var selects = $window.document.getElementsByTagName('select');
           Array.prototype.forEach.call(selects, function(select) {
             select.selectedIndex = -1;
-          });
-          // reload the page when exiting fullscreen due to lesson page
-          // 'de-formatting' bug
-          var videos = $window.document.getElementsByTagName('video')
-          Array.prototype.forEach.call(videos, function(video) {
-            video.addEventListener('webkitfullscreenchange', reloadPage);
           });
         });
         $scope.currentSlideIndex = 0;

@@ -137,7 +137,7 @@ Downloader.prototype = {
             var elemTag;
             var fileSrc = fp[parseFloat(elemNums[i])];
                 if (fileType === "video") {
-                    elemTag = "<video controls style='max-width:100%;'><source type='video/mp4' src='"+fileSrc+"'/></video>";
+                    elemTag = "<video style='max-width:100%;'><source type='video/mp4' src='"+fileSrc+"'/></video>";
                 }
                 else if (fileType === "audio") {
                     elemTag = "<audio controls style='max-width:100%;'><source type='audio/mpeg' src='"+fileSrc+"'/></audio>";
