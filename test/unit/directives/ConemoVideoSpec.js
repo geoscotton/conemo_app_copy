@@ -7,6 +7,14 @@ describe('ConemoVideo', function() {
 
   beforeEach(module('conemoAppApp'));
 
+  beforeEach(module(function($provide) {
+    var VideoControl = {
+      addTo: function() {}
+    };
+
+    $provide.constant('VideoControl', VideoControl);
+  }));
+
   beforeEach(inject(function(_$compile_, _$rootScope_, _$httpBackend_, _$window_) {
     $compile = _$compile_;
     $rootScope = _$rootScope_;
