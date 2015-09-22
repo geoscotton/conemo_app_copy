@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.7 - 2015-09-22
+
+* update content
+
 ## 0.3.6 - 2015-09-21
 
 * replace video controls with simple play/pause icon
