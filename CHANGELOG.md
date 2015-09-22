@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.6 - 2015-09-21
+
+* replace video controls with simple play/pause icon
+
 ## 0.3.4 - 2015-09-19
 
 * make training lesson date/time inputs like lessons
