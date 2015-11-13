@@ -27,28 +27,37 @@
     <script src="support/sinon.js"></script>
 
     <!-- test coverage -->
-    <script src="support/blanket.min.js"></script>
-    <script src="support/mocha-blanket.js"></script>
+    <script
+      src="support/blanket.min.js"
+      data-cover-adapter="support/mocha-blanket.js"
+      data-cover-only="[app/scripts/]"
+      data-cover-flags="branchTracking"></script>
 
     <!-- appplication files -->
-    <script data-cover src="../app/scripts/i18n.js"></script>
-    <script data-cover src="../app/scripts/app.js"></script>
-    <script data-cover src="../app/scripts/cbits.js"></script>
-    <script data-cover src="../app/scripts/constants.js"></script>
-    <script data-cover src="../app/scripts/filters.js"></script>
-    <script data-cover src="../app/scripts/services.js"></script>
+    <script src="../app/scripts/i18n.js"></script>
+    <script src="../app/scripts/app.js"></script>
+    <script src="../app/scripts/cbits.js"></script>
+    <script src="../app/scripts/constants.js"></script>
+    <script src="../app/scripts/filters.js"></script>
+    <script src="../app/scripts/services.js"></script>
 
-    <script data-cover src="../app/scripts/controllers/contact.js"></script>
-    <script data-cover src="../app/scripts/controllers/instructions.js"></script>
-    <script data-cover src="../app/scripts/controllers/lesson.js"></script>
-    <script data-cover src="../app/scripts/controllers/main.js"></script>
-    <script data-cover src="../app/scripts/controllers/sample_lesson.js"></script>
-    <script data-cover src="../app/scripts/controllers/toolbox.js"></script>
+    <script src="../app/scripts/components/VideoControl.js"></script>
 
-    <script data-cover src="../app/scripts/directives/conemo_video.js"></script>
-    <script data-cover src="../app/scripts/directives/SessionAccessLink.js"></script>
+    <script src="../app/scripts/controllers/contact.js"></script>
+    <script src="../app/scripts/controllers/instructions.js"></script>
+    <script src="../app/scripts/controllers/lesson.js"></script>
+    <script src="../app/scripts/controllers/main.js"></script>
+    <script src="../app/scripts/controllers/sample_lesson.js"></script>
+    <script src="../app/scripts/controllers/toolbox.js"></script>
 
-    <script data-cover src="../app/scripts/services/purple_robot.js"></script>
+    <script src="../app/scripts/directives/ConemoSlides.js"></script>
+    <script src="../app/scripts/directives/conemo_video.js"></script>
+    <script src="../app/scripts/directives/SessionAccessLink.js"></script>
+
+    <script src="../app/scripts/services/demo_dialogue.js"></script>
+    <script src="../app/scripts/services/demo_notification.js"></script>
+    <script src="../app/scripts/services/purple_robot.js"></script>
+    <script src="../app/scripts/services/Settings.js"></script>
 
     <!-- tests -->
     <script src="unit/controllers/LessonControllerSpec.js"></script>
