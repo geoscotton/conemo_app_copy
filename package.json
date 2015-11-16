@@ -20,7 +20,6 @@
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-htmlmin": "~0.1.3",
     "grunt-contrib-imagemin": "~0.3.0",
-    "grunt-contrib-jshint": "~0.7.1",
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-watch": "~0.5.2",
     "grunt-google-cdn": "~0.2.0",
@@ -29,17 +28,19 @@
     "grunt-rev": "~0.1.0",
     "grunt-svgmin": "~0.2.0",
     "grunt-usemin": "~2.0.0",
-    "jshint-stylish": "~0.1.3",
     "load-grunt-tasks": "~0.2.0",
     "mocha": "^2.2.5",
     "testem": "^0.8.5",
     "time-grunt": "~0.2.1",
-    "wd": "^0.3.12"
+    "wd": "^0.3.12",
+    "eslint": "~1.9.0"
   },
   "engines": {
     "node": ">=0.8.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/testem $TESTEM_ENV"
+    "lint": "./node_modules/.bin/eslint test/unit",
+    "test": "./node_modules/.bin/testem",
+    "test:ci": "./node_modules/.bin/testem ci"
   }
 }
