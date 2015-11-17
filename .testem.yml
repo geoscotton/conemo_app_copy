@@ -11,3 +11,4 @@ test_page: test/runner.html
 src_files:
   - test/**/*Spec.js
   - app/**/*.js
+before_tests: "./node_modules/.bin/eslint test/unit"

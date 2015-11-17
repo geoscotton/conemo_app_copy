@@ -58,24 +58,6 @@ Running tests
 
 `grunt test`
 
-Running protractor tests
-------------------------
-
-Set up a standalone selenium server using instructions found at:
-[Protractor](https://github.com/angular/protractor)
-
-`npm install -g protractor`
-`webdriver-manager`
-`webdriver-manager update`
-
-To run E2E tests,
-
-Start selenium server using:
-`webdriver-manager start`
-
-Run protractor tests using:
-`protractor protractor.conf.js`
-
 Linting the application code
 ----------------------------
 

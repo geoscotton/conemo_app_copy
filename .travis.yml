@@ -5,3 +5,5 @@ notifications:
   slack:
     secure: dAY1v20/AcToVPC5yjQYEdJQs3xtc82CdrE+c/u2AOpN98gtEJMY3TRViaosUTBNTn1sLMaZ8RYLRgjFNEDnKquy0vT2teHjH5+YhGucxFSleLqS2NfEFWXp8jMMkR04+Ynd/+P9r0RBY6lQbwVgmFp9vR8K2qyRwzdsI7e5B1E=
 sudo: false
+script:
+- npm run test:ci
