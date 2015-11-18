@@ -5,7 +5,7 @@ CONEMO project.
 
 ## Key dependencies
 
-- NodeJS (v0.10.29)
+- NodeJS
 - NPM (NodeJS Package Manager)
 - Bower
 - Purple Robot Client
