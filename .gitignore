@@ -5,6 +5,8 @@
 npm-debug.log
 /.sass-cache
 /.tmp
+/.irb-history
+/screenshot*
 
 # build directories
 /platforms
@@ -14,4 +16,4 @@ npm-debug.log
 bower_components
 /app/bower.json
 /node_modules
-/plugins
+/plugins/*/*

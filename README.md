@@ -1,36 +1,26 @@
-conemo_app
-==========
+# CONEMO Android App
 
 This application serves as the patient-facing PhoneGap portion of the NIH funded
 CONEMO project.
 
-Key dependencies
-----------------
+## Key dependencies
 
 - NodeJS (v0.10.29)
 - NPM (NodeJS Package Manager)
 - Bower
-- Grunt
-- Yeoman
-- Yeoman Angular Generator
 - Purple Robot Client
-- Cordova 4.1.2
-- Purple Robot 1.5.23b
+- Cordova 5.4.0
+- Purple Robot 1.6.22
 
-Installation process
---------------------
+## Installation process
 
 [Download and install NodeJS and the Node Package Manager](http://nodejs.org/download/)
 
-Install Yeoman, Grunt Commmand Line Interface, and Bower
+Install Bower
 
-`npm install -g yo grunt-cli bower`
+`npm install -g bower`
 
-Install the Yeoman Angular Generator tools
-
-`npm install -g generator-angular`
-
-Note: you may have to prepend `sudo` to the previous two commands, depending on your
+Note: you may have to prepend `sudo` to the previous command, depending on your
 environment and permissions
 
 Install the application dependencies
@@ -39,32 +29,19 @@ Install the application dependencies
 
 `bower install`
 
-Copy bower components for the web-view.
+## Running tests
+
+`npm test`
+
+## Linting the application code
+
+`eslint .`
+
+## Building Conemo Phone App
 
 ```
-cp -r bower* app/
+npm run build
 ```
-
-Serve this application using the built-in Grunt server from the app folder to work
-on the webview.
-
-```
-cd app
-grunt serve
-```
-
-Running tests
--------------
-
-`grunt test`
-
-Linting the application code
-----------------------------
-
-`jshint .`
-
-Building Conemo Phone App
-----------------------------
 
 Build this application including code quality review into a distribution copy
 from the root of a local clone
@@ -86,15 +63,9 @@ Subsequent builds only requires
 
 `./node_modules/.bin/cordova run android`
 
-Running in an emulator
-----------------------
+## Running in an emulator
 
 Make sure you have an SD card enabled so that the video downloads work.
 
 If your computer is on WiFi, disable your LAN (it may be called "Thunderbolt Bridge").
 Restart your virtual device and confirm that it has access to the internet.
-
-If you still need help
-----------------------
-
-[An example tutorial](http://www.sitepoint.com/kickstart-your-angularjs-development-with-yeoman-grunt-and-bower/)

@@ -2,45 +2,25 @@
   "name": "conemoapp",
   "version": "0.2.0",
   "dependencies": {
-    "cordova": "^4.1.2"
+    "angular": "=1.4.7",
+    "angular-resource": "=1.4.7",
+    "angular-route": "=1.4.7",
+    "angular-sanitize": "=1.4.7",
+    "cordova": "=5.4.0",
+    "jquery": "=1.11.3",
+    "lodash": "=3.10.1",
+    "moment": "=2.10.6"
   },
   "devDependencies": {
+    "angular-mocks": "=1.4.7",
     "chai": "^3.2.0",
-    "chai-as-promised": "^5.1.0",
-    "grunt": "~0.4.1",
-    "grunt-autoprefixer": "~0.4.0",
-    "grunt-bower-install": "~0.7.0",
-    "grunt-concurrent": "~0.4.1",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-compass": "^0.7.2",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-connect": "~0.5.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-htmlmin": "~0.1.3",
-    "grunt-contrib-imagemin": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.2",
-    "grunt-google-cdn": "~0.2.0",
-    "grunt-newer": "~0.5.4",
-    "grunt-ngmin": "~0.0.2",
-    "grunt-rev": "~0.1.0",
-    "grunt-svgmin": "~0.2.0",
-    "grunt-usemin": "~2.0.0",
-    "load-grunt-tasks": "~0.2.0",
     "mocha": "^2.2.5",
-    "testem": "^0.8.5",
-    "time-grunt": "~0.2.1",
-    "wd": "^0.3.12",
-    "eslint": "~1.9.0"
-  },
-  "engines": {
-    "node": ">=0.8.0"
+    "ncp": "^2.0.0",
+    "sync-request": "^2.1.0",
+    "testem": "^0.8.5"
   },
   "scripts": {
-    "lint": "./node_modules/.bin/eslint test/unit",
-    "test": "./node_modules/.bin/testem",
-    "test:ci": "./node_modules/.bin/testem ci"
+    "build": "rm -rf www; mkdir www; ./node_modules/.bin/cordova build android",
+    "test": "./node_modules/.bin/testem $TESTEM_ENV"
   }
 }
