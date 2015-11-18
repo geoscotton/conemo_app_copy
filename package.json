@@ -13,6 +13,7 @@
   "devDependencies": {
     "angular-mocks": "=1.4.7",
     "chai": "^3.2.0",
+    "eslint": "^1.9.0",
     "mocha": "^2.2.5",
     "ncp": "^2.0.0",
     "sync-request": "^2.1.0",
@@ -20,6 +21,7 @@
   },
   "scripts": {
     "build": "rm -rf www; mkdir www; ./node_modules/.bin/cordova build android",
-    "test": "./node_modules/.bin/testem $TESTEM_ENV"
+    "test": "./node_modules/.bin/testem",
+    "test:ci": "./node_modules/.bin/testem ci"
   }
 }

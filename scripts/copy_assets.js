@@ -7,6 +7,15 @@ module.exports = function(context) {
       "app/index.html": "www/index.html"
     },
     {
+      "app/icon.png": "www/icon.png"
+    },
+    {
+      "app/pause.png": "www/pause.png"
+    },
+    {
+      "app/play.png": "www/play.png"
+    },
+    {
       "bower_components/bootstrap/dist/css/bootstrap.min.css":
         "www/vendor/bootstrap.min.css"
     },
