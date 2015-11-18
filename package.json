@@ -8,7 +8,6 @@
     "angular-sanitize": "=1.4.7",
     "cordova": "=5.4.0",
     "jquery": "=1.11.3",
-    "lodash": "=3.10.1",
     "moment": "=2.10.6"
   },
   "devDependencies": {

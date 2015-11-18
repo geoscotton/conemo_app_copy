@@ -9,14 +9,15 @@
   </author>
   <icon src="icon.png" />
   <content src="index.html" />
-
   <access origin="https://*.northwestern.edu" />
   <allow-navigation href="http://localhost:12345/*" />
-
   <preference name="Fullscreen" value="true" />
   <preference name="AndroidPersistentFileLocation" value="Compatibility" />
-
-  <hook type="before_prepare" src="scripts/fetch_content.js" />
-  <hook type="before_prepare" src="scripts/prettify_content.sh" />
-  <hook type="before_compile" src="scripts/copy_assets.js" />
+  <hook src="scripts/fetch_content.js" type="before_prepare" />
+  <hook src="scripts/prettify_content.sh" type="before_prepare" />
+  <hook src="scripts/copy_assets.js" type="before_compile" />
+  <preference name="xwalkVersion" value="15+" />
+  <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+  <preference name="xwalkMode" value="embedded" />
+  <preference name="xwalkMultipleApk" value="true" />
 </widget>

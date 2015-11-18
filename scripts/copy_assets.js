@@ -15,6 +15,10 @@ module.exports = function(context) {
         "www/vendor/bootstrap.min.js"
     },
     {
+      "bower_components/lodash/lodash.min.js":
+        "www/vendor/lodash.min.js"
+    },
+    {
       "bower_components/PurpleRobotClient/purple-robot.min.js":
         "www/vendor/purple-robot.min.js"
     },
@@ -37,10 +41,6 @@ module.exports = function(context) {
     {
       "node_modules/jquery/dist/jquery.min.js":
         "www/vendor/jquery.min.js"
-    },
-    {
-      "node_modules/lodash/dist/lodash.min.js":
-        "www/vendor/lodash.min.js"
     },
     {
       "node_modules/moment/min/moment.min.js":
@@ -73,6 +73,7 @@ module.exports = function(context) {
   var ncp = require('ncp').ncp;
 
   var directoriesToCopy = [
+    { "app/fonts": "www/fonts" },
     { "app/images": "www/images" },
     { "app/scripts": "www/scripts" },
     { "app/styles": "www/styles" },
