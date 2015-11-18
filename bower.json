@@ -2,7 +2,6 @@
   "name": "conemo-app",
   "version": "0.0.0",
   "dependencies": {
-    "PurpleRobotClient": "git@github.com:cbitstech/PurpleRobotClient.git#1.5.16.1",
     "bootstrap": "~3.0.2",
     "lodash": "~3.10.1"
   }
