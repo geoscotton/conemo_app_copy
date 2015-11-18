@@ -33,26 +33,11 @@ Install the application dependencies
 
 `npm test`
 
-## Linting the application code
-
-`eslint .`
-
 ## Building Conemo Phone App
 
 ```
 npm run build
 ```
-
-Build this application including code quality review into a distribution copy
-from the root of a local clone
-
-`./build_dist.bash`
-
-If there is an error during the grunt build process, install the missing gems.
-
-1. Verify that ruby is installed using ruby -v
-1. Update gems using `gem update --system`
-1. Possibly install individual gems e.g. `gem install compass`
 
 If first time running cordova,
 
