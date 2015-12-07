@@ -7,7 +7,6 @@ CONEMO project.
 
 - NodeJS
 - NPM (NodeJS Package Manager)
-- Bower
 - Purple Robot Client
 - Cordova 5.4.0
 - Purple Robot 1.6.22
@@ -16,18 +15,11 @@ CONEMO project.
 
 [Download and install NodeJS and the Node Package Manager](http://nodejs.org/download/)
 
-Install Bower
-
-`npm install -g bower`
-
-Note: you may have to prepend `sudo` to the previous command, depending on your
-environment and permissions
-
 Install the application dependencies
 
 `npm install`
 
-`bower install`
+`./node_modules/.bin/bower install`
 
 ## Running tests
 
