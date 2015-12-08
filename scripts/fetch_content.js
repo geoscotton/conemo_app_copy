@@ -21,7 +21,7 @@ module.exports = function(context) {
       var destFile = path.join(rootDir, dataMap[srcUrl]);
       var response = request('GET', srcUrl);
 
-      fs.writeFile(destFile, response.getBody());
+      fs.writeFileSync(destFile, response.getBody());
     });
   });
 };

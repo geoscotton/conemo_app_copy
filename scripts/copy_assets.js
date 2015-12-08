@@ -86,6 +86,7 @@ module.exports = function(context) {
     { "app/images": "www/images" },
     { "app/scripts": "www/scripts" },
     { "app/styles": "www/styles" },
+    { "video": "www/videos" },
     { "app/views": "www/views" }
   ];
 

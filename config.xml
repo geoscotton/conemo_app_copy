@@ -13,6 +13,7 @@
   <allow-navigation href="http://localhost:12345/*" />
   <preference name="AndroidPersistentFileLocation" value="Compatibility" />
   <hook src="scripts/fetch_content.js" type="before_prepare" />
+  <hook src="scripts/embed_videos.js" type="before_prepare" />
   <hook src="scripts/prettify_content.sh" type="before_prepare" />
   <hook src="scripts/copy_assets.js" type="before_compile" />
   <preference name="xwalkVersion" value="15+" />
