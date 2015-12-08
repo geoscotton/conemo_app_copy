@@ -28,7 +28,7 @@ Install the application dependencies
 ## Building Conemo Phone App
 
 ```
-npm run build
+LOCALE=es-PE npm run build
 ```
 
 If first time running cordova,

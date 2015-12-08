@@ -3,7 +3,7 @@
 
 angular.module('conemoAppApp')
 
-.controller('MainCtrl', function ($scope, conemoConfig, $rootScope, $http,
+.controller('MainCtrl', function ($scope, $rootScope, $http,
                                   $route, startDateService, Constants) {
 
     //check to see if the user has been created on app load
@@ -61,7 +61,6 @@ angular.module('conemoAppApp')
 
     $scope.setLocale = function() {
         l10n, localStorage.l10n = this.locale;
-        conemoConfig.set({ l10n: this.locale });
     };
 
     var daysInTreatment = startDateService.getDaysInTreatment();
