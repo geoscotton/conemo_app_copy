@@ -29,7 +29,6 @@ angular.module('conemoApp.constants', []);
 angular.module('conemoApp.directives', ['conemoApp.services']);
 angular.module('conemoApp.services', []);
 angular.module('conemoAppApp', [
-    'ngCookies',
     'ngResource',
     'ngSanitize',
     'ngRoute',

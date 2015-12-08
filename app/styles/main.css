@@ -1,0 +1,250 @@
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#slides {
+    font-size:1em;
+}
+.btn-wide {
+    width:100%;
+    margin-bottom:.5em !important;
+    display:block;
+    white-space: normal;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+h1,h2,h3 {margin-top:.25em !important; margin-bottom:.25em !important;}
+
+h1 {font-size:2.0em !important;}
+h2 {font-size:1.1em !important; font-weight:bold !important;}
+h3 {font-size:1.7em !important;}
+
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    margin:0 !important;
+    margin-bottom:0.5em !important;
+    padding:1em !important;
+}
+
+.jumbotron .btn {
+    font-size: 1.05em;
+    padding: 5px 10px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+#lesson-nav {
+max-width: 730px;
+position:fixed;
+bottom:5px;
+width:100%;
+text-align:center;
+}
+
+input, select {
+    color:black !important;
+}
+
+#back, #next, #complete {
+    font-size:1em;
+    margin:0 !important;
+    padding:0 !important;
+    text-align:center;
+}
+
+ol.well {
+    padding:1em;
+}
+
+ol.well li {
+    margin:0em 1em;
+}
+
+#instructions {font-size: 1.2em;}
+
+.btn-language {
+    display: block !important;
+    width: 30%;
+    margin: 5px 0;
+}
+
+.btn-contact {
+    white-space: normal !important;
+}
+
+
+.btn {
+    font-size: 1em;
+}
+
+
+.label {
+    font-size: 1em !important;
+}
+
+.navigation-button {
+    font-size: 1.7em !important;
+}
+
+.main-title {
+    font-size: 1.5em !important;
+}
+
+video {
+    padding: 5px;
+    width: 100%;
+    height: auto;
+    max-height: 190px;
+}
+
+
+div.slide h2 {
+    font-size: 1.7em !important;
+}
+
+div.progress {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+div.progress.fade {
+    display: none;
+}
+
+div#progressContainer {
+    margin-top: 15px;
+}
+
+a h2.navigation-button i {
+    color: white;
+}
+
+.btn-corner {
+    float: right;
+}
+
+.btn-corner .navigation-button {
+    font-size: .7em !important;
+}
+
+h3.main-date {
+    font-size: 1.2em !important;
+}
+
+select {
+    width: 85%;
+}
+
+p, div.slide > * {
+    font-size: 1.2em;
+}
+
+.btn {
+    font-size: 1em;
+}
+
+.es-PE p {
+    font-size: 1.6em;
+}
+
+.es-PE .main-title {
+    font-size: 1.2em !important;
+}
+
+.es-PE div.slide > * {
+    font-size: 1.6em;
+}
+
+.es-PE .btn {
+    font-size: 1.4em;
+}
+
+.es-PE div.alert {
+    font-size: 1.6em;
+}
+
+
+.es-PE #instructions {
+    font-size: 1.4em;
+}
+
+.es-PE .sampleLesson p {
+    font-size: 1em;
+}
+
+#instructions img {
+    max-width: 100%;
+}
