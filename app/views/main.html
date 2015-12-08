@@ -9,6 +9,11 @@
 		<input type="text" id="userId" name="userId" ng-model="userId" required>
 		<br/>
 		<br/>
+    Today's date: {{ timestamp | date:'medium' }}
+    <br />
+    If this is correct, please Continue.
+    <br />
+    <br />
 
 		<button class="btn btn-primary" ng-disabled="accountSetup.userId.$pristine" type="submit" id="submit">
 			{{ 'beginLessonButtonLabel' | translate }}

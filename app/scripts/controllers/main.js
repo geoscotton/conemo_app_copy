@@ -262,4 +262,5 @@ angular.module('conemoAppApp')
     $scope.currentLessonGuid = mostRecentLesson.guid;
     $scope.downloadLabel = l10nStrings.download;
     $scope.downloadComplete = l10nStrings.downloaderText.textDownloadComplete;
+    $scope.timestamp = (new Date()).valueOf();
   });

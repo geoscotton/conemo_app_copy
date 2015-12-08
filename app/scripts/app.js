@@ -24,6 +24,7 @@ angular.module('conemoAppApp', [
     'ngResource',
     'ngSanitize',
     'ngRoute',
+    'tmh.dynamicLocale',
     'conemoApp.constants',
     'conemoApp.directives'
 ])
@@ -160,6 +161,12 @@ angular.module('conemoAppApp', [
             window.location.href = pageToGoto;
             }
         }
+    })
+    .config(function(tmhDynamicLocaleProvider) {
+      tmhDynamicLocaleProvider.localeLocationPattern('scripts/vendor/angular-locale_{{locale}}.js');
+    })
+    .run(function(tmhDynamicLocale) {
+      tmhDynamicLocale.set(localStorage.l10n);
     })
     .run(function(purpleRobot) {
       purpleRobot.updateConfig({
