@@ -36,6 +36,10 @@ module.exports = function(context) {
         "www/vendor/angular.min.js"
     },
     {
+      "node_modules/angular-dynamic-locale/tmhDynamicLocale.min.js":
+        "www/vendor/tmhDynamicLocale.min.js"
+    },
+    {
       "node_modules/angular-resource/angular-resource.min.js":
         "www/vendor/angular-resource.min.js"
     },

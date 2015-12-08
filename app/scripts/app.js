@@ -3,20 +3,12 @@
 var PurpleRobotClient = new PurpleRobot();
 PurpleRobot.setEnvironment('production');
 
+/* REPLACE */ var l10n = 'pt-BR'; /* REPLACE */
 
-//configure internationalization defaults
-if (typeof localStorage.l10n === 'undefined' || localStorage.l10n === 'undefined') {
-    var l10n = 'pt-BR'; //options are en | pt-BR | es-PE 
-    localStorage.config = JSON.stringify({ l10n: l10n });
-} else {
-    var l10n = localStorage.l10n;
-}
+localStorage.l10n = l10n;
 var l10nStrings = i18nStrings.filterLocale(l10n)[0];
 
-
 l10nStrings.availableLocales = _.pluck(i18nStrings.generalContent, 'l10n');
-
-
 
 var lessonsRead = [];
 //set up lesson read cache
@@ -32,6 +24,7 @@ angular.module('conemoAppApp', [
     'ngResource',
     'ngSanitize',
     'ngRoute',
+    'tmh.dynamicLocale',
     'conemoApp.constants',
     'conemoApp.directives'
 ])
@@ -120,7 +113,7 @@ angular.module('conemoAppApp', [
         $rootScope.$watch(function() {
             return localStorage.config;
         }, function() {
-            var currLocale = JSON.parse(localStorage.config).l10n;
+            var currLocale = localStorage.l10n;
             var currLocaleStrings = i18nStrings.filterLocale(currLocale)[0];
 
             // set downloader settings as per locale
@@ -168,6 +161,12 @@ angular.module('conemoAppApp', [
             window.location.href = pageToGoto;
             }
         }
+    })
+    .config(function(tmhDynamicLocaleProvider) {
+      tmhDynamicLocaleProvider.localeLocationPattern('scripts/vendor/angular-locale_{{locale}}.js');
+    })
+    .run(function(tmhDynamicLocale) {
+      tmhDynamicLocale.set(localStorage.l10n);
     })
     .run(function(purpleRobot) {
       purpleRobot.updateConfig({
