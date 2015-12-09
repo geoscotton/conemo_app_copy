@@ -65,15 +65,13 @@ angular.module('conemoAppApp')
 
     var daysInTreatment = startDateService.getDaysInTreatment();
     
-    //Sort lessons and dialogues by date to determine first lesson and schedule triggers
+    //Sort lessons by date to determine first lesson and schedule triggers
     var dateSortedLessons = _.sortBy($rootScope.lessons,'dayInTreatment');
-    var dateSortedDialogues = _.sortBy($rootScope.dialogues,'dayInTreatment');
 
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
         $scope.setStartDate();
         schedulePRTriggersLessons();
-        schedulePRTriggersDialogues();
     }
     function schedulePRTriggersLessons() {
         if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined'){
@@ -124,94 +122,6 @@ angular.module('conemoAppApp')
             });
         }
         localStorage.setItem("lessonTriggersScheduled", moment().toDate());
-    };
-    function schedulePRTriggersDialogues() {
-        if (typeof localStorage.dialogueTriggersScheduled === 'undefined' || localStorage.dialogueTriggersScheduled === 'undefined'){
-            var dialogueReleases = [];
-
-            for (var i = 0; i < dateSortedDialogues.length; i++) {
-                var dialogue = {
-                    releaseDay: (moment().add('d',(dateSortedDialogues[i].dayInTreatment)-1)),
-                    days_in_treatment: daysInTreatment,
-                    guid: dateSortedDialogues[i].guid,
-                    message: dateSortedDialogues[i].message,
-                    yes_text: dateSortedDialogues[i].yes_text,
-                    no_text: dateSortedDialogues[i].no_text,
-                    yes_button: l10nStrings.yes,
-                    no_button: l10nStrings.no
-                };
-                
-                dialogueReleases.push(dialogue);
-            }
-
-            var dialogueCount = 0;
-            _.each(dialogueReleases,function(el,idx) {
-                var dialogueTime = Constants.DIALOGUE_RELEASE_TRIGGER_TIME,
-                    triggerStart = moment(el.releaseDay)
-                                   .hour(dialogueTime.hour)
-                                   .minute(dialogueTime.minute)
-                                   .second(dialogueTime.second)
-                                   .toDate(),
-                    triggerEnd = moment(triggerStart).add('minutes', 1).toDate();
-
-                PurpleRobotClient.updateTrigger({
-                    script: PurpleRobotClient.vibrate("buzz").showNativeDialog({
-                        title: "CONEMO: ",
-                        message: el.message,
-                        buttonLabelA: el.no_button,
-                        scriptA: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).showNativeDialog({
-                                        title: "CONEMO: ",
-                                        message: el.no_text,
-                                        buttonLabelA: "OK",
-                                        scriptA: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).emitReading("dialogue_data", {
-                                            user_id: localStorage.userId,
-                                            dialogue_guid: el.guid,
-                                            days_in_treatment: el.days_in_treatment,
-                                            answer: l10nStrings.no
-                                        }),
-                                        buttonLabelB: "",
-                                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).disableTrigger("DIALOGUE"+idx),
-                                        tag: "",
-                                        priority: 1
-                                    }),
-                        buttonLabelB: el.yes_button,
-                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).showNativeDialog({
-                                        title: "CONEMO: ",
-                                        message: el.yes_text,
-                                        buttonLabelA: "OK",
-                                        scriptA: PurpleRobotClient.disableTrigger("DIALOGUE"+idx).emitReading("dialogue_data", {
-                                            user_id: localStorage.userId,
-                                            dialogue_guid: el.guid,
-                                            days_in_treatment: el.days_in_treatment,
-                                            answer: l10nStrings.yes
-                                        }),
-                                        buttonLabelB: "",
-                                        scriptB: PurpleRobotClient.disableTrigger("DIALOGUE"+idx),
-                                        tag: "",
-                                        priority: 1
-                                    }),
-                        tag: "CONEMO DIALOGUE",
-                        priority: 1
-                      }),
-                    triggerId: "DIALOGUE"+idx,
-                    startAt: triggerStart,
-                    endAt: triggerEnd,
-                    repeatRule: "FREQ=MINUTELY;INTERVAL=15",
-                    fire_on_boot: true
-                }).execute({
-                    done: function() {
-                        dialogueCount++;
-                        if (dialogueCount === dialogueReleases.length) {
-                            $('body').prepend("<div id='confirm-dialogues' style='background-color: green;'>Dialogues set</div>");
-                        }
-                        setTimeout(function(){
-                            $('#confirm-dialogues').fadeOut("slow");
-                        },2000);
-                    }
-                });
-            });
-        }
-            localStorage.setItem("dialogueTriggersScheduled", moment().toDate());
     };
 
     $scope.setUserAccountInfo = function(){

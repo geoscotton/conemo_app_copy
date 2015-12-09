@@ -20,7 +20,6 @@ describe('ConemoVideo', function() {
     $rootScope = _$rootScope_;
     // required (for now) due to the way the run phase is configured
     _$httpBackend_.when('GET', 'scripts/lessons.json').respond();
-    _$httpBackend_.when('GET', 'scripts/dialogues.json').respond();
 
     _$window_.Downloader = function() {
       this.insert = function() {
