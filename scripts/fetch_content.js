@@ -7,10 +7,6 @@ module.exports = function(context) {
 
   var dataToCopy = [
     {
-      'https://conemo.northwestern.edu/api/dialogues.json':
-        'app/scripts/dialogues.json'
-    },
-    {
       'https://conemo.northwestern.edu/api/lessons.json':
         'app/scripts/lessons.json'
     }

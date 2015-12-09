@@ -84,13 +84,6 @@ angular.module('conemoAppApp', [
             })
         });
     })
-    .run(function($rootScope, DialogueService) {
-        DialogueService.get(function(data) {
-            $rootScope.dialogues = _.where(data.dialogues, {
-            l10n: l10n
-            })
-        });
-    })
     .run(function($rootScope) {
 
         $rootScope.downloader = new Downloader();
@@ -109,7 +102,7 @@ angular.module('conemoAppApp', [
         };
 
     })
-    .run(function($rootScope, DialogueService, LessonService) {
+    .run(function($rootScope, LessonService) {
         $rootScope.$watch(function() {
             return localStorage.config;
         }, function() {

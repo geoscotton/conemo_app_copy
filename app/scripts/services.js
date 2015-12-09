@@ -7,9 +7,6 @@ angular.module('conemoAppApp')
   .factory('LessonService', ['$resource', function($resource) {
     return $resource('scripts/lessons.json');
   }])
-  .factory('DialogueService', ['$resource', function($resource) {
-    return $resource('scripts/dialogues.json');
-  }])
   .service('startDateService', function() {
     this.setStartDate = function() {
         if (typeof localStorage.startDate === 'undefined') {
