@@ -20,7 +20,10 @@ angular.module('conemoAppApp')
 
             _.each(slides, function (el, idx) {
 
-                concatenatedSlides += '<div style="height:' + docHeight + 'px;" class="slide"  data-index="' + idx + '" data-position="' + el.position + '">' + el.content + '</div>';
+                concatenatedSlides += '<div style="height:' + docHeight +
+                                      'px;" class="slide"  data-index="' + idx +
+                                      '" data-position="' + el.position + '">' +
+                                      el.content + '</div>';
 
             });
 
@@ -63,13 +66,13 @@ angular.module('conemoAppApp')
                     break;
                 }
             } 
-            $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + "px" });
+            $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
 
         };
 
         $scope.updatePageCounter = function () {
             $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
-            $scope.pageCounter = ($scope.currentSlideIndex + 1) + " / " + slides.length;
+            $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
             $scope.navButtonGenerator($scope.currentSlideIndex);
         };
 
@@ -86,7 +89,7 @@ angular.module('conemoAppApp')
           });
         });
         $scope.currentSlideIndex = 0;
-        $scope.pageCounter = ($scope.currentSlideIndex + 1) + " / " + slides.length;
+        $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
 
         $scope.slideNavigator($scope.currentSlideIndex);
 
@@ -100,7 +103,7 @@ angular.module('conemoAppApp')
                 l10n: localStorage.l10n
             };
 
-            saveContents.form_payload = JSON.stringify($("#slideShowForm").serializeObject());
+            saveContents.form_payload = JSON.stringify($('#slideShowForm').serializeObject());
             (new PurpleRobot()).emitReading('lesson_data', saveContents).execute();
 
             // mark lesson as read    
@@ -114,9 +117,9 @@ angular.module('conemoAppApp')
             return false
         };
     })
-    .directive("scroll", function ($window) {
+    .directive('scroll', function ($window) {
         return function(scope, element, attrs) {
-            angular.element($window).bind("scroll", function() {
+            angular.element($window).bind('scroll', function() {
                 scope.$apply(attrs.scroll);
             })
         }
@@ -136,7 +139,7 @@ angular.module('conemoAppApp')
 
             ctrl.$formatters.unshift(function (modelValue) {
                 scope = scope;
-                if (!dateFormat || !modelValue) return "";
+                if (!dateFormat || !modelValue) return '';
                 var retVal = moment(modelValue).format(dateFormat);
                 return retVal;
             });
@@ -144,7 +147,7 @@ angular.module('conemoAppApp')
             ctrl.$parsers.unshift(function (viewValue) {
                 scope = scope;
                 var date = moment(viewValue, dateFormat);
-                return (date && date.isValid() && date.year() > 1950 ) ? date.toDate() : "";
+                return (date && date.isValid() && date.year() > 1950 ) ? date.toDate() : '';
             });
         }
     };

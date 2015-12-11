@@ -2,7 +2,7 @@
 
 angular.module('conemoAppApp')
   .factory('conemoConfig', [function() {
-    $rootScope.appVersion = "1.0.0";
+    $rootScope.appVersion = '1.0.0';
   }])
   .factory('LessonService', ['$resource', function($resource) {
     return $resource('scripts/lessons.json');
@@ -39,8 +39,5 @@ angular.module('conemoAppApp')
           var daysInTreatment = this.getDateDiff(startDate,dateToday)+1;
 
       return daysInTreatment;
-    };
-    this.test = function() {
-      console.log("i'm a test");
     };
   });

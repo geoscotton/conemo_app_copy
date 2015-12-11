@@ -4,6 +4,7 @@
   },
   "rules": {
     "max-len": [2, 100, 2],
+    "no-multiple-empty-lines": [2],
     "quotes": [2, "single"]
   }
 }

@@ -71,7 +71,7 @@ angular.module('conemoAppApp', [
     .run(function($rootScope) {
         $rootScope.unreadLabel = l10nStrings.unreadLabel;
         $rootScope.checkLessonRead = function(lessonID) {
-            lessonsRead = JSON.parse(localStorage["lessonsRead"]);
+            lessonsRead = JSON.parse(localStorage['lessonsRead']);
             if (lessonsRead.indexOf(lessonID) !== -1) {
                 return true;
             };
@@ -95,17 +95,17 @@ angular.module('conemoAppApp', [
     })
     .run(function($rootScope) {
         $rootScope.$on('$routeChangeSuccess', function() {
-            if (l10n === "es-PE") {
-                $("body").addClass("es-PE");
+            if (l10n === 'es-PE') {
+                $('body').addClass('es-PE');
             }
             else {
-                $("body").removeClass("es-PE");
+                $('body').removeClass('es-PE');
             }
         });
     })
     .run(function($window) {
-        document.addEventListener("deviceready", onDeviceReady, false);
-        document.addEventListener("resume",onResume,false);
+        document.addEventListener('deviceready', onDeviceReady, false);
+        document.addEventListener('resume',onResume,false);
 
         function onDeviceReady() {
             var networkState = navigator.connection.type;

@@ -16,7 +16,8 @@
 
     addTo: function addTo(element) {
       var videoElement = element.find('video');
-      var playPauseButton = '<p style="text-align: center;"><a id="' + playPauseId + '">' + playLabel + '</a></p>';
+      var playPauseButton = '<p style="text-align: center;"><a id="' +
+                            playPauseId + '">' + playLabel + '</a></p>';
 
       videoElement.after(playPauseButton);
       element.find('#' + playPauseId)[0].addEventListener('click', (function() {

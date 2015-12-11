@@ -13,31 +13,35 @@ angular.module('conemoAppApp')
       var verifyPurpleRobotExists = function () {
         var responsePromise = $http.get('http://localhost:12345/json/submit');
         responsePromise.success(function (data, status, headers, config) {
-          $('body').prepend('<div id=\'confirm\' style=\'background-color: green;\'>Purple Robot properly started.</div>');
+          $('body').prepend('<div id="confirm" style="background-color: green;">' +
+                            'Purple Robot properly started.</div>');
           $('#confirm').fadeOut(2000);
         });
         responsePromise.error(function (data, status, headers, config) {
           $('body').html('');
-          $('body').prepend('<div id=\'confirm\' style=\'background-color: red;\'>Purple Robot was not properly started, please start Purple Robot.</div>');
+          $('body').prepend('<div id="confirm" style="background-color: red;">' +
+                            'Purple Robot was not properly started, please start Purple Robot.' +
+                            '</div>');
         });
       };
       verifyPurpleRobotExists();
 
 
-        //set user's Purple Robot Id to the CONEMO project
-        PurpleRobotClient.setUserId('CONEMO')
-                         .updateConfig({
-                            config_enable_data_server: true,
-                            config_restrict_data_wifi: false
-                         })
-                         .execute({
-                            done: function() {
-                                $('body').prepend("<div id='confirm' style='background-color: green;'>User ID set</div>");
-                                $('#confirm').fadeOut(2000);
-                            }
-                         });
-        $scope.showAccountSetup = true;
-        $scope.showHomeScreen = false;
+      //set user's Purple Robot Id to the CONEMO project
+      PurpleRobotClient.setUserId('CONEMO')
+                       .updateConfig({
+                          config_enable_data_server: true,
+                          config_restrict_data_wifi: false
+                       })
+                       .execute({
+                          done: function() {
+                            $('body').prepend('<div id="confirm" style="background-color: ' +
+                                              'green;">User ID set</div>');
+                            $('#confirm').fadeOut(2000);
+                          }
+                       });
+      $scope.showAccountSetup = true;
+      $scope.showHomeScreen = false;
     }
     else{
 
@@ -74,7 +78,8 @@ angular.module('conemoAppApp')
         schedulePRTriggersLessons();
     }
     function schedulePRTriggersLessons() {
-        if (typeof localStorage.lessonTriggersScheduled === 'undefined' || localStorage.lessonTriggersScheduled === 'undefined'){
+        if (typeof localStorage.lessonTriggersScheduled === 'undefined' ||
+            localStorage.lessonTriggersScheduled === 'undefined') {
             var lessonReleases = [];
             // skip first lesson
             for (var i = 1; i < dateSortedLessons.length; i++) {
@@ -96,32 +101,33 @@ angular.module('conemoAppApp')
                   triggerEnd = moment(triggerStart).add('minutes', 1).toDate();
 
               PurpleRobotClient.updateTrigger({
-                  script: PurpleRobotClient.vibrate("buzz").showScriptNotification({
-                      title: "CONEMO: ",
+                  script: PurpleRobotClient.vibrate('buzz').showScriptNotification({
+                      title: 'CONEMO: ',
                       message: el.title,
                       isPersistent: true,
                       isSticky: false,
                       script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
                     }),
-                  triggerId: "LESSON"+idx,
+                  triggerId: 'LESSON'+idx,
                   startAt: triggerStart,
                   endAt: triggerEnd,
-                  repeatRule: "FREQ=YEARLY;COUNT=5", // explicitly specify repeat on long period
+                  repeatRule: 'FREQ=YEARLY;COUNT=5', // explicitly specify repeat on long period
                   fire_on_boot: true
               }).execute({
                   done: function() {
                       lessonCount++;
                       if (lessonCount === lessonReleases.length) {
-                          $('body').prepend("<div id='confirm-lessons' style='background-color: green;'>Lessons set</div>");
+                          $('body').prepend('<div id="confirm-lessons" style="background-color: ' +
+                                            'green;">Lessons set</div>');
                       }
                       setTimeout(function(){
-                          $('#confirm-lessons').fadeOut("slow");
+                          $('#confirm-lessons').fadeOut('slow');
                       },2000);
                   }
               });
             });
         }
-        localStorage.setItem("lessonTriggersScheduled", moment().toDate());
+        localStorage.setItem('lessonTriggersScheduled', moment().toDate());
     };
 
     $scope.setUserAccountInfo = function(){
@@ -131,7 +137,7 @@ angular.module('conemoAppApp')
     }
 
     $scope.enableStep = function(step) {
-        $("#"+step).removeClass("hidden");
+        $('#'+step).removeClass('hidden');
     };
 
     var getRecentLesson = function(daysInTreatment,dateSortedLessons){
@@ -151,8 +157,6 @@ angular.module('conemoAppApp')
     }
 
     var mostRecentLesson = getRecentLesson(daysInTreatment,dateSortedLessons);
-
-    
 
     $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
