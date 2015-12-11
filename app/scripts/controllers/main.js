@@ -134,15 +134,6 @@ angular.module('conemoAppApp')
         $("#"+step).removeClass("hidden");
     };
 
-    $scope.isDownloading = function() {
-        if (angular.element('#progressContainer').css('display') === 'none') {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-
     var getRecentLesson = function(daysInTreatment,dateSortedLessons){
 
         var mostRecentLesson = {}; 
@@ -163,14 +154,11 @@ angular.module('conemoAppApp')
 
     
 
-    $scope.filesDownloaded = typeof localStorage.lastDownload;
     $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
     $scope.currentLessonDay = dateToday.getDate();
     $scope.l10n = l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
-    $scope.downloadLabel = l10nStrings.download;
-    $scope.downloadComplete = l10nStrings.downloaderText.textDownloadComplete;
     $scope.timestamp = (new Date()).valueOf();
   });

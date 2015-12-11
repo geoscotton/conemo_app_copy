@@ -84,35 +84,13 @@ angular.module('conemoAppApp', [
             })
         });
     })
-    .run(function($rootScope) {
-
-        $rootScope.downloader = new Downloader();
-        $rootScope.downloader.getFileSystem();
-        $rootScope.downloader.setDownloadLinks(l10nStrings.videoLinks);
-
-        downloaderGlobal.text = l10nStrings.downloaderText;
-
-        
-        // set locale variables to downloader global variables
-
-        $rootScope.downloadVideos = function() {
-
-            $rootScope.downloader.downloadMultiple();
-
-        };
-
-    })
     .run(function($rootScope, LessonService) {
         $rootScope.$watch(function() {
             return localStorage.config;
         }, function() {
             var currLocale = localStorage.l10n;
             var currLocaleStrings = i18nStrings.filterLocale(currLocale)[0];
-
-            // set downloader settings as per locale
-            downloaderGlobal.text = currLocaleStrings.downloaderText;
             var videoLinks = currLocaleStrings.videoLinks;
-            $rootScope.downloader.setDownloadLinks(videoLinks)
         });
     })
     .run(function($rootScope) {
