@@ -13,7 +13,7 @@ module.exports = function(context) {
     replaceStringInFile(
       filename,
       "/\\* REPLACE \\*/ var l10n = 'pt-BR'; /\\* REPLACE \\*/",
-      "var l10n = '" + process.env.LOCALE + "';"
+      "/* REPLACE */ var l10n = '" + process.env.LOCALE + "'; /* REPLACE */"
     );
   }
 };
