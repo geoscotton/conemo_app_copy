@@ -2,7 +2,7 @@
 
 angular.module('conemoAppApp')
   .factory('conemoConfig', [function() {
-    $rootScope.appVersion = "0.3.7";
+    $rootScope.appVersion = "1.0.0";
   }])
   .factory('LessonService', ['$resource', function($resource) {
     return $resource('scripts/lessons.json');

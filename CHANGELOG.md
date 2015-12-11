@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.0.0 - 2015-12-11
+
+* enable localized video build process
+* remove all but one help request type
+* add timestamp to config for confirmation
+* remove locale selection and video download
+* add locale config parameter to build step
+* update Cordova version to 5.4.1
+* embed videos in application
+* integrate Crosswalk plugin
+
 ## 0.3.7 - 2015-09-22
 
 * update content
