@@ -3,7 +3,7 @@
 var PurpleRobotClient = new PurpleRobot();
 PurpleRobot.setEnvironment('production');
 
-/* REPLACE */ var l10n = 'pt-BR'; /* REPLACE */
+var l10n = 'pt-BR';
 
 localStorage.l10n = l10n;
 var l10nStrings = i18nStrings.filterLocale(l10n)[0];
