@@ -58,6 +58,9 @@ module.exports = function(context) {
     {
       "node_modules/moment/min/moment.min.js":
         "www/vendor/moment.min.js"
+    },
+    {
+      "video/countdown.mp4": "www/videos/countdown.mp4"
     }
   ];
 
@@ -85,12 +88,14 @@ module.exports = function(context) {
 
   var ncp = require('ncp').ncp;
 
+  var localizedVideos = {};
+  localizedVideos[("video/" + process.env.LOCALE)] = "www/videos";
   var directoriesToCopy = [
     { "app/fonts": "www/fonts" },
     { "app/images": "www/images" },
     { "app/scripts": "www/scripts" },
     { "app/styles": "www/styles" },
-    { "video": "www/videos" },
+    localizedVideos,
     { "app/views": "www/views" }
   ];
 
