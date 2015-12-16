@@ -1,15 +1,13 @@
+(function() {
+  'use strict';
 
-'use strict';
-
-angular.module('conemoAppApp')
-
-.controller('MainCtrl', function ($scope, $rootScope, $http,
-                                  $route, startDateService, Constants) {
+  function MainController($window, $scope, $rootScope, $http, $route,
+                          startDateService, Constants) {
+    var PurpleRobotClient = new $window.PurpleRobot();
 
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
-
-    //check that Purple Robot has been properly set up
+      //check that Purple Robot has been properly set up
       var verifyPurpleRobotExists = function () {
         var responsePromise = $http.get('http://localhost:12345/json/submit');
         responsePromise.success(function () {
@@ -165,4 +163,11 @@ angular.module('conemoAppApp')
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
     $scope.timestamp = (new Date()).valueOf();
-  });
+  }
+
+  angular
+    .module('conemoAppApp')
+    .controller('MainCtrl',
+                ['$window', '$scope', '$rootScope', '$http', '$route',
+                 'startDateService', 'Constants', MainController]);
+})();

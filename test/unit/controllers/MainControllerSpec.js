@@ -25,18 +25,14 @@ describe('MainController', function() {
     sinon.spy(prClient, 'updateTrigger');
 
     $provide.constant('startDateService', startDateService);
-    window.PurpleRobotClientTmp = window.PurpleRobotClient;
-    window.PurpleRobotClient = prClient;
   }));
-
-  afterEach(function() {
-    window.PurpleRobotClient = window.PurpleRobotClientTmp;
-    delete window.PurpleRobotClientTmp;
-  });
 
   function injectController($controller) {
     scope = {};
-    $controller('MainCtrl', { $scope: scope });
+    $controller('MainCtrl', {
+                  $scope: scope,
+                  $window: { PurpleRobot: function() { return prClient; } }
+                });
   }
 
   describe('initialization', function() {
