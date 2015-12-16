@@ -13,7 +13,13 @@
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         },
-        "org.apache.cordova.network-information": {
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
+        },
+        "de.appplant.cordova.plugin.local-notification": {
+            "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
+        },
+        "cordova-plugin-network-information": {
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         }
     },
