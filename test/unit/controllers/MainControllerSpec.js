@@ -3,7 +3,7 @@
 var expect = chai.expect;
 
 describe('MainController', function() {
-  var controller, scope, startDateService, prClient;
+  var scope, startDateService, prClient;
 
   beforeEach(module('conemoAppApp'));
 
@@ -36,7 +36,7 @@ describe('MainController', function() {
 
   function injectController($controller) {
     scope = {};
-    controller = $controller('MainCtrl', { $scope: scope });
+    $controller('MainCtrl', { $scope: scope });
   }
 
   describe('initialization', function() {

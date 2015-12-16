@@ -1,6 +1,5 @@
     /*jslint node: true */
 'use strict';
-var PurpleRobotClient = new PurpleRobot();
 PurpleRobot.setEnvironment('production');
 
 /* REPLACE */ var l10n = 'pt-BR'; /* REPLACE */
@@ -84,15 +83,6 @@ angular.module('conemoAppApp', [
             })
         });
     })
-    .run(function($rootScope, LessonService) {
-        $rootScope.$watch(function() {
-            return localStorage.config;
-        }, function() {
-            var currLocale = localStorage.l10n;
-            var currLocaleStrings = i18nStrings.filterLocale(currLocale)[0];
-            var videoLinks = currLocaleStrings.videoLinks;
-        });
-    })
     .run(function($rootScope) {
         $rootScope.$on('$routeChangeSuccess', function() {
             if (l10n === 'es-PE') {
@@ -123,14 +113,13 @@ angular.module('conemoAppApp', [
             localStorage.setItem('connection',states[networkState]);
         }
         function onResume() {
-            if (localStorage['onResume'] == undefined){
-            window.location.href = '';
-            }
-            else {
+          if (localStorage['onResume'] == undefined){
+            $window.location.href = '';
+          } else {
             var pageToGoto = localStorage['onResume'];
             localStorage['onResume'] = '';
-            window.location.href = pageToGoto;
-            }
+            $window.location.href = pageToGoto;
+          }
         }
     })
     .config(function(tmhDynamicLocaleProvider) {

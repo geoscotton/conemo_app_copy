@@ -3,8 +3,8 @@
 
   function SessionAccessLink(purpleRobot, settings) {
     return {
-      link: function(scope, element, attr) {
-        element.on('click', function(event) {
+      link: function(scope, element) {
+        element.on('click', function() {
           purpleRobot
             .emitReading('session_events', {
               eventType: 'access',

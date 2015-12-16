@@ -12,12 +12,12 @@ angular.module('conemoAppApp')
     //check that Purple Robot has been properly set up
       var verifyPurpleRobotExists = function () {
         var responsePromise = $http.get('http://localhost:12345/json/submit');
-        responsePromise.success(function (data, status, headers, config) {
+        responsePromise.success(function () {
           $('body').prepend('<div id="confirm" style="background-color: green;">' +
                             'Purple Robot properly started.</div>');
           $('#confirm').fadeOut(2000);
         });
-        responsePromise.error(function (data, status, headers, config) {
+        responsePromise.error(function () {
           $('body').html('');
           $('body').prepend('<div id="confirm" style="background-color: red;">' +
                             'Purple Robot was not properly started, please start Purple Robot.' +

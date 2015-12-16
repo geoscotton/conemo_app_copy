@@ -2,7 +2,7 @@
   'use strict';
 
   function ConemoSlides($compile, VideoControl) {
-    function link(scope, element, attrs) {
+    function link(scope, element) {
       scope.$watch('slideContent', function(content) {
         if (!content) {
           return;

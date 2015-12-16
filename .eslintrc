@@ -3,8 +3,10 @@
     "angular": true
   },
   "rules": {
+    "comma-dangle": [2, "never"],
     "max-len": [2, 100, 2],
     "no-multiple-empty-lines": [2],
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
     "quotes": [2, "single"]
   }
 }
