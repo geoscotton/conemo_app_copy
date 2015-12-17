@@ -3,7 +3,8 @@
 var expect = chai.expect;
 
 describe('MainController', function() {
-  var scope, startDateService, prClient;
+  var scope, startDateService, prClient, cordovaPlugins,
+      isFirstNotificationPresent = true;
 
   beforeEach(module('conemoAppApp'));
 
@@ -23,6 +24,11 @@ describe('MainController', function() {
       execute: function() {}
     };
     sinon.spy(prClient, 'updateTrigger');
+    cordovaPlugins = { notification: { local: {
+      isPresent: function(i, cb) { cb(isFirstNotificationPresent); },
+      schedule: function() {}
+    } } };
+    sinon.spy(cordovaPlugins.notification.local, 'schedule');
 
     $provide.constant('startDateService', startDateService);
   }));
@@ -31,7 +37,10 @@ describe('MainController', function() {
     scope = {};
     $controller('MainCtrl', {
                   $scope: scope,
-                  $window: { PurpleRobot: function() { return prClient; } }
+                  $window: {
+                    PurpleRobot: function() { return prClient; },
+                    cordova: { plugins: cordovaPlugins }
+                  }
                 });
   }
 
@@ -51,8 +60,10 @@ describe('MainController', function() {
         localStorage.clear();
       });
 
-      describe('when the lessonTriggersScheduled is not cached', function() {
-        it('creates a trigger for each lesson', function() {
+      describe('when there are no lesson notifications scheduled', function() {
+        it('schedules each lesson', function() {
+          isFirstNotificationPresent = false;
+
           localStorage.clear();
           cacheUserId();
           inject(function($rootScope) {
@@ -64,8 +75,13 @@ describe('MainController', function() {
 
           inject(injectController);
 
-          var expectedArgs = sinon.match({ triggerId: 'LESSON0' });
-          expect(prClient.updateTrigger.calledWith(expectedArgs)).to.be.true;
+          var plugin = cordovaPlugins.notification.local;
+          expect(plugin.schedule.calledOnce).to.be_true;
+          expect(plugin.schedule.args[0][0].length).to.eq(1);
+          expect(plugin.schedule.args[0][0][0].id).to.eq(0);
+          expect(plugin.schedule.args[0][0][0].title).to.eq('CONEMO');
+          expect(plugin.schedule.args[0][0][0].text).to.eq('lesson 2');
+          expect(plugin.schedule.args[0][0][0].at).not.to.be_null;
 
           localStorage.clear();
         });
