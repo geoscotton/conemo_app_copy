@@ -7,7 +7,9 @@ angular.module('conemoAppApp')
   .factory('LessonService', ['$resource', function($resource) {
     return $resource('scripts/lessons.json');
   }])
-  .service('startDateService', function() {
+  .service('startDateService', ['$window', function($window) {
+    var PurpleRobotClient = new $window.PurpleRobot();
+
     this.setStartDate = function() {
         if (typeof localStorage.startDate === 'undefined') {
             //could replace later with server side start date
@@ -40,4 +42,4 @@ angular.module('conemoAppApp')
 
       return daysInTreatment;
     };
-  });
+  }]);

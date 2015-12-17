@@ -1,23 +1,21 @@
+(function() {
+  'use strict';
 
-'use strict';
-
-angular.module('conemoAppApp')
-
-.controller('MainCtrl', function ($scope, $rootScope, $http,
-                                  $route, startDateService, Constants) {
+  function MainController($window, $scope, $rootScope, $http, $route,
+                          startDateService, Constants) {
+    var PurpleRobotClient = new $window.PurpleRobot();
 
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
-
-    //check that Purple Robot has been properly set up
+      //check that Purple Robot has been properly set up
       var verifyPurpleRobotExists = function () {
         var responsePromise = $http.get('http://localhost:12345/json/submit');
-        responsePromise.success(function (data, status, headers, config) {
+        responsePromise.success(function () {
           $('body').prepend('<div id="confirm" style="background-color: green;">' +
                             'Purple Robot properly started.</div>');
           $('#confirm').fadeOut(2000);
         });
-        responsePromise.error(function (data, status, headers, config) {
+        responsePromise.error(function () {
           $('body').html('');
           $('body').prepend('<div id="confirm" style="background-color: red;">' +
                             'Purple Robot was not properly started, please start Purple Robot.' +
@@ -72,63 +70,47 @@ angular.module('conemoAppApp')
     //Sort lessons by date to determine first lesson and schedule triggers
     var dateSortedLessons = _.sortBy($rootScope.lessons,'dayInTreatment');
 
+    function lessonNotificationsAttrs() {
+      var lessonTime = Constants.LESSON_RELEASE_TRIGGER_TIME;
+
+      return dateSortedLessons
+             .slice(1)
+             .map(function notificationAttrs(lesson, index) {
+               return {
+                 id: index,
+                 title: 'CONEMO',
+                 text: lesson.title,
+                 at: (moment().add('d', lesson.dayInTreatment - 1))
+                     .hour(lessonTime.hour)
+                     .minute(lessonTime.minute)
+                     .second(lessonTime.second)
+                     .toDate()
+               };
+             });
+    }
+
+    function scheduleLessonNotifications() {
+      var firstNotificationId = 0;
+
+      $window.cordova.plugins.notification.local.isPresent(
+        firstNotificationId,
+        function (isFirstNotificationPresent) {
+          if (isFirstNotificationPresent) {
+            return;
+          }
+
+          $window.cordova.plugins.notification.local.schedule(
+            lessonNotificationsAttrs()
+          );
+        }
+      );
+    }
+
     var dateToday = new Date();
     if (typeof localStorage.userId !== 'undefined') {
         $scope.setStartDate();
-        schedulePRTriggersLessons();
+        scheduleLessonNotifications();
     }
-    function schedulePRTriggersLessons() {
-        if (typeof localStorage.lessonTriggersScheduled === 'undefined' ||
-            localStorage.lessonTriggersScheduled === 'undefined') {
-            var lessonReleases = [];
-            // skip first lesson
-            for (var i = 1; i < dateSortedLessons.length; i++) {
-                var lesson = {
-                    releaseDay: (moment().add('d',(dateSortedLessons[i].dayInTreatment)-1)),
-                    title: dateSortedLessons[i].title
-                };
-                
-                lessonReleases.push(lesson);
-            }
-            var lessonCount = 0;
-            _.each(lessonReleases,function(el,idx) {
-              var lessonTime = Constants.LESSON_RELEASE_TRIGGER_TIME,
-                  triggerStart = moment(el.releaseDay)
-                                 .hour(lessonTime.hour)
-                                 .minute(lessonTime.minute)
-                                 .second(lessonTime.second)
-                                 .toDate(),
-                  triggerEnd = moment(triggerStart).add('minutes', 1).toDate();
-
-              PurpleRobotClient.updateTrigger({
-                  script: PurpleRobotClient.vibrate('buzz').showScriptNotification({
-                      title: 'CONEMO: ',
-                      message: el.title,
-                      isPersistent: true,
-                      isSticky: false,
-                      script: PurpleRobotClient.launchApplication('edu.northwestern.cbits.conemo')
-                    }),
-                  triggerId: 'LESSON'+idx,
-                  startAt: triggerStart,
-                  endAt: triggerEnd,
-                  repeatRule: 'FREQ=YEARLY;COUNT=5', // explicitly specify repeat on long period
-                  fire_on_boot: true
-              }).execute({
-                  done: function() {
-                      lessonCount++;
-                      if (lessonCount === lessonReleases.length) {
-                          $('body').prepend('<div id="confirm-lessons" style="background-color: ' +
-                                            'green;">Lessons set</div>');
-                      }
-                      setTimeout(function(){
-                          $('#confirm-lessons').fadeOut('slow');
-                      },2000);
-                  }
-              });
-            });
-        }
-        localStorage.setItem('lessonTriggersScheduled', moment().toDate());
-    };
 
     $scope.setUserAccountInfo = function(){
         
@@ -165,4 +147,11 @@ angular.module('conemoAppApp')
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
     $scope.timestamp = (new Date()).valueOf();
-  });
+  }
+
+  angular
+    .module('conemoAppApp')
+    .controller('MainCtrl',
+                ['$window', '$scope', '$rootScope', '$http', '$route',
+                 'startDateService', 'Constants', MainController]);
+})();

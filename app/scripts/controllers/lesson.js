@@ -5,7 +5,6 @@ angular.module('conemoAppApp')
                                         $timeout, $window, $rootScope,
                                         startDateService) {
         var docHeight = $(window).height();
-        var docWidth = $(window).width();
 
         var selectedLesson = _.where($rootScope.lessons, {
                 guid: $routeParams.id
