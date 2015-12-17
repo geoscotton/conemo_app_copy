@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2015-12-17
+
+* enable session (lesson) notifications without PR
+
 ## 1.0.0 - 2015-12-11
 
 * enable localized video build process
