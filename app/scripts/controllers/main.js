@@ -92,6 +92,10 @@
     function scheduleLessonNotifications() {
       var firstNotificationId = 0;
 
+      if ($window.cordova.plugins == null) {
+        return;
+      }
+
       $window.cordova.plugins.notification.local.isPresent(
         firstNotificationId,
         function (isFirstNotificationPresent) {
