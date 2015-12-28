@@ -140,7 +140,7 @@ var lessonsRead = [];
         }).execute();
       });
 
-  angular.element(document).ready(function() {
+  angular.element(document).on('deviceready', function() {
     angular.bootstrap(document, ['conemoAppApp']);
   });
 })();
