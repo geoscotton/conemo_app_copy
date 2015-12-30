@@ -8,8 +8,6 @@ angular.module('conemoAppApp')
     return $resource('scripts/lessons.json');
   }])
   .service('startDateService', ['$window', function($window) {
-    var PurpleRobotClient = new $window.PurpleRobot();
-
     this.setStartDate = function() {
         if (typeof localStorage.startDate === 'undefined') {
             //could replace later with server side start date

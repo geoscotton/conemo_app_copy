@@ -3,41 +3,8 @@
 
   function MainController($window, $scope, $rootScope, $http, $route,
                           startDateService, Constants) {
-    var PurpleRobotClient = new $window.PurpleRobot();
-
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
-      //check that Purple Robot has been properly set up
-      var verifyPurpleRobotExists = function () {
-        var responsePromise = $http.get('http://localhost:12345/json/submit');
-        responsePromise.success(function () {
-          $('body').prepend('<div id="confirm" style="background-color: green;">' +
-                            'Purple Robot properly started.</div>');
-          $('#confirm').fadeOut(2000);
-        });
-        responsePromise.error(function () {
-          $('body').html('');
-          $('body').prepend('<div id="confirm" style="background-color: red;">' +
-                            'Purple Robot was not properly started, please start Purple Robot.' +
-                            '</div>');
-        });
-      };
-      verifyPurpleRobotExists();
-
-
-      //set user's Purple Robot Id to the CONEMO project
-      PurpleRobotClient.setUserId('CONEMO')
-                       .updateConfig({
-                          config_enable_data_server: true,
-                          config_restrict_data_wifi: false
-                       })
-                       .execute({
-                          done: function() {
-                            $('body').prepend('<div id="confirm" style="background-color: ' +
-                                              'green;">User ID set</div>');
-                            $('#confirm').fadeOut(2000);
-                          }
-                       });
       $scope.showAccountSetup = true;
       $scope.showHomeScreen = false;
     }

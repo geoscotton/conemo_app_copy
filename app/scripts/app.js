@@ -6,8 +6,6 @@ var lessonsRead = [];
 (function() {
   'use strict';
 
-  PurpleRobot.setEnvironment('production');
-
   localStorage.l10n = l10n;
 
   l10nStrings.availableLocales = _.pluck(i18nStrings.generalContent, 'l10n');
@@ -130,14 +128,6 @@ var lessonsRead = [];
       })
       .run(function(tmhDynamicLocale) {
         tmhDynamicLocale.set(localStorage.l10n);
-      })
-      .run(function(purpleRobot) {
-        purpleRobot.updateConfig({
-          config_enable_log_server: true,
-          config_log_server_uri: 'https://conemo-staging.cbits.northwestern.edu/debug_logs',
-          config_restrict_log_wifi: false,
-          config_log_heartbeat: false
-        }).execute();
       });
 
   angular.element(document).on('deviceready', function() {
