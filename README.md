@@ -37,7 +37,7 @@ If first time running Cordova,
 Subsequent installs only require
 
 ```
-LOCALE=es-PE SERVER=http://localhost:3000 npm run install
+LOCALE=es-PE SERVER=http://localhost:3000 npm run install:android
 ```
 
 ## Running in an emulator
