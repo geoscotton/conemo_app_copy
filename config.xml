@@ -9,14 +9,17 @@
   </author>
     <icon src="icon.png" />
     <content src="index.html" />
-    <access origin="https://*.northwestern.edu" />
-    <allow-navigation href="http://localhost:12345/*" />
+    <access origin="SERVER_URL_TO_REPLACE" />
+    <allow-navigation href="SERVER_URL_TO_REPLACE/*" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
-    <hook src="scripts/localize.js" type="before_prepare" />
+    <hook src="scripts/prepare_web_dir.sh" type="before_prepare" />
     <hook src="scripts/fetch_content.js" type="before_prepare" />
     <hook src="scripts/embed_videos.js" type="before_prepare" />
     <hook src="scripts/prettify_content.sh" type="before_prepare" />
-    <hook src="scripts/copy_assets.js" type="before_compile" />
+    <hook src="scripts/copy_assets.js" type="before_prepare" />
+    <hook src="scripts/localize.js" type="before_prepare" />
+    <hook src="scripts/stagerize.js" type="before_prepare" />
+    <hook src="scripts/cleanup.js" type="after_prepare" />
     <preference name="xwalkVersion" value="15+" />
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
     <preference name="xwalkMode" value="embedded" />

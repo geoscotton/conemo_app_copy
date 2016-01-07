@@ -5,13 +5,11 @@
                           startDateService, Constants) {
     //check to see if the user has been created on app load
     if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
-      $scope.showAccountSetup = true;
       $scope.showHomeScreen = false;
     }
     else{
 
         $scope.userId = localStorage.userId;
-        $scope.showAccountSetup = false;
         $scope.showHomeScreen = false;
         //trigger login to site logging
         var loginLog = {

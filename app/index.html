@@ -14,7 +14,7 @@
             * Enable inline JS: add 'unsafe-inline' to default-src
             * Enable eval(): add 'unsafe-eval' to default-src
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com http://localhost:12345/json/submit; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com SERVER_URL_TO_REPLACE; style-src 'self' 'unsafe-inline'; media-src *">
 
     <link rel="stylesheet" href="vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/main.css">
@@ -33,6 +33,8 @@
     <script src="vendor/angular-route.min.js"></script>
     <script src="vendor/angular-sanitize.min.js"></script>
     <script src="vendor/bootstrap.min.js"></script>
+    <script src="vendor/lovefield.min.js"></script>
+    <script src="vendor/cache_and_sync_love.min.js"></script>
     <script src="vendor/lodash.min.js"></script>
     <script src="vendor/moment.min.js"></script>
 
@@ -45,6 +47,7 @@
 
     <script src="scripts/components/VideoControl.js"></script>
 
+    <script src="scripts/controllers/ConfigurationController.js"></script>
     <script src="scripts/controllers/main.js"></script>
     <script src="scripts/controllers/lesson.js"></script>
     <script src="scripts/controllers/contact.js"></script>
