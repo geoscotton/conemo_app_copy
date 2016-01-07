@@ -10,5 +10,6 @@
     methodCalled(connection, event.data.argument);
   };
 
+  Cache.addTables();
   Cache.initialize();
 })(this);
