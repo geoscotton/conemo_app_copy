@@ -6,8 +6,10 @@
   context.importScripts('Cache.js');
 
   context.onmessage = function onMessage(event) {
-    var methodCalled = context.Cache[event.data.resource][event.data.method];
-    methodCalled(connection, event.data.argument);
+    var Resource = context.Cache[event.data.resource];
+    var methodCalled = Resource[event.data.method].bind(Resource);
+
+    methodCalled(event.data.argument);
   };
 
   Cache.addTables();

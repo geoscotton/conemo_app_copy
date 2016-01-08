@@ -159,8 +159,17 @@ var lessonsRead = [];
       .run(function(tmhDynamicLocale) {
         tmhDynamicLocale.set(localStorage.l10n);
       })
-      .run(function() {
-      });
+      .run(['$rootScope', '$location', function($rootScope, $location) {
+        $rootScope.$on('authentication_token_created', function(event, authenticationToken) {
+          cacheWorker.postMessage({
+            resource: 'AuthenticationTokens',
+            method: 'persist',
+            argument: { value: authenticationToken }
+          });
+          $location.path('/');
+          $rootScope.$digest();
+        });
+      }]);
 
   angular.element(document).on('deviceready', function() {
     angular.bootstrap(document, ['conemoAppApp']);

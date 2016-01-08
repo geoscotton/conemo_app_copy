@@ -25,16 +25,6 @@
       return this;
     },
 
-    dbConnection: null,
-
-    getDbConnection: function getDbConnection() {
-      if (this.dbConnection == null) {
-        this.dbConnection = AuthenticationTokens.connectToDb();
-      }
-
-      return this.dbConnection;
-    },
-
     addTables: function addTables() {
       try {
         AuthenticationTokens.createTable()
@@ -48,7 +38,7 @@
     },
 
     initialize: function initialize() {
-      AuthenticationTokens.fetchAll(this.getDbConnection())
+      AuthenticationTokens.fetchAll()
         .then((function(results) {
           if (results.length > 0) {
             this.context.postMessage({ status: STATUSES.Authenticated });
