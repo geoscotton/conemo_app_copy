@@ -52,8 +52,16 @@ module.exports = function(context) {
         "www/vendor/angular-sanitize.min.js"
     },
     {
+      "node_modules/cache_and_sync_love/dist/cache_and_sync_love.min.js":
+        "www/vendor/cache_and_sync_love.min.js"
+    },
+    {
       "node_modules/jquery/dist/jquery.min.js":
         "www/vendor/jquery.min.js"
+    },
+    {
+      "node_modules/lovefield/dist/lovefield.min.js":
+        "www/vendor/lovefield.min.js"
     },
     {
       "node_modules/moment/min/moment.min.js":
@@ -64,7 +72,7 @@ module.exports = function(context) {
     }
   ];
 
-  var fs = require('fs'),
+  var fs = require('fs-extra'),
       path = require('path'),
       rootDir = context.opts.projectRoot;
 
@@ -80,13 +88,10 @@ module.exports = function(context) {
           fs.mkdirSync(destDir);
         }
 
-        fs.createReadStream(srcFile).pipe(
-          fs.createWriteStream(destFile));
+        fs.copySync(srcFile, destFile);
       }
     });
   });
-
-  var ncp = require('ncp').ncp;
 
   var localizedVideos = {};
   localizedVideos[("video/" + process.env.LOCALE)] = "www/videos";
@@ -103,7 +108,7 @@ module.exports = function(context) {
     Object.keys(directoryMap).forEach(function(srcDirectory) {
       var destDirectory = directoryMap[srcDirectory];
 
-      ncp(srcDirectory, destDirectory);
+      fs.copySync(srcDirectory, destDirectory);
     });
   });
 }

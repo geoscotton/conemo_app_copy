@@ -1,12 +1,14 @@
+sudo: required
+dist: trusty
 language: node_js
 node_js:
-- '0.12'
+- '5.2.0'
 notifications:
   slack:
     secure: dAY1v20/AcToVPC5yjQYEdJQs3xtc82CdrE+c/u2AOpN98gtEJMY3TRViaosUTBNTn1sLMaZ8RYLRgjFNEDnKquy0vT2teHjH5+YhGucxFSleLqS2NfEFWXp8jMMkR04+Ynd/+P9r0RBY6lQbwVgmFp9vR8K2qyRwzdsI7e5B1E=
-sudo: false
-script:
-- npm run test:ci
 before_script:
+- export "PHANTOMJS_BIN=`which phantomjs`"
 - npm install -g bower
 - bower install
+script:
+- npm run test:ci

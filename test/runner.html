@@ -17,14 +17,16 @@
     <script src="../node_modules/angular-resource/angular-resource.js"></script>
     <script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>
     <script src="../node_modules/angular-route/angular-route.js"></script>
+    <script src="../node_modules/lovefield/dist/lovefield.min.js"></script>
+    <script src="../node_modules/cache_and_sync_love/dist/cache_and_sync_love.min.js"></script>
     <script src="../bower_components/lodash/lodash.min.js"></script>
     <script src="../node_modules/moment/min/moment.min.js"></script>
-    <script src="../app/scripts/vendor/purple-robot.min.js"></script>
 
     <!-- test helpers -->
     <script src="../node_modules/angular-mocks/angular-mocks.js"></script>
     <script src="support/sinon.js"></script>
     <script src="support/bind-polyfill.js"></script>
+    <script src="support/es6-promise.min.js"></script>
 
     <!-- test coverage -->
     <script
@@ -36,6 +38,7 @@
     <!-- appplication files -->
     <script src="../app/scripts/i18n.js"></script>
     <script src="../app/scripts/app.js"></script>
+    <script src="../app/scripts/Cache.js"></script>
     <script src="../app/scripts/cbits.js"></script>
     <script src="../app/scripts/constants.js"></script>
     <script src="../app/scripts/filters.js"></script>
@@ -43,6 +46,7 @@
 
     <script src="../app/scripts/components/VideoControl.js"></script>
 
+    <script src="../app/scripts/controllers/ConfigurationController.js"></script>
     <script src="../app/scripts/controllers/contact.js"></script>
     <script src="../app/scripts/controllers/instructions.js"></script>
     <script src="../app/scripts/controllers/lesson.js"></script>
@@ -53,11 +57,13 @@
     <script src="../app/scripts/directives/ConemoSlides.js"></script>
     <script src="../app/scripts/directives/SessionAccessLink.js"></script>
 
-    <script src="../app/scripts/services/demo_notification.js"></script>
-    <script src="../app/scripts/services/purple_robot.js"></script>
     <script src="../app/scripts/services/Settings.js"></script>
 
     <!-- tests -->
+    <script src="unit/CacheSpec.js"></script>
+    <script src="unit/RoutesSpec.js"></script>
+
+    <script src="unit/controllers/ConfigurationControllerSpec.js"></script>
     <script src="unit/controllers/LessonControllerSpec.js"></script>
     <script src="unit/controllers/MainControllerSpec.js"></script>
     <script src="unit/controllers/SampleLessonSpec.js"></script>
