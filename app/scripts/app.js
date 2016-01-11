@@ -56,7 +56,6 @@ var lessonsRead = [];
         .when('/', {
           templateUrl: 'views/main.html',
           controller: 'MainCtrl',
-          controllerAs: 'configuration',
           resolve: { authorize: Authorize }
         })
         .when('/configuration', {
