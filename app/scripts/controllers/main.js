@@ -115,7 +115,6 @@
     $scope.l10n = l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
-    $scope.timestamp = (new Date()).valueOf();
   }
 
   angular

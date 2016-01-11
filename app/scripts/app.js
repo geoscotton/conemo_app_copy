@@ -40,6 +40,11 @@ var lessonsRead = [];
             $location.path('/configuration');
           }
         };
+
+        cacheWorker.postMessage({
+          resource: 'cache',
+          method: 'initialize'
+        });
       });
     }]);
   angular.module('conemoAppApp', [

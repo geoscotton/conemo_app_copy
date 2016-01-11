@@ -6,12 +6,17 @@
   context.importScripts('Cache.js');
 
   context.onmessage = function onMessage(event) {
-    var Resource = context.Cache[event.data.resource];
-    var methodCalled = Resource[event.data.method].bind(Resource);
+    var methodCalled;
+
+    if (event.data.resource === 'cache') {
+      methodCalled = context.Cache[event.data.method].bind(context.Cache);
+    } else {
+      var Resource = context.Cache[event.data.resource];
+      methodCalled = Resource[event.data.method].bind(Resource);
+    }
 
     methodCalled(event.data.argument);
   };
 
-  Cache.addTables();
-  Cache.initialize();
+  context.Cache.addTables();
 })(this);

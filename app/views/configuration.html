@@ -5,18 +5,26 @@
     <h4>{{ 'configureUserLabel' | translate }}</h4>
 
     <label for="configuration-token">Token</label><br/>
-		<input type="text" id="configuration-token" name="configurationToken" ng-model="configuration.configurationToken" required>
+    <input
+      type="text"
+      id="configuration-token"
+      name="configurationToken"
+      ng-model="configuration.configurationToken"
+      ng-pattern="configuration.tokenPattern"
+      required>
 		<br/>
 		<br/>
-    Today's date: {{ timestamp | date:'medium' }}
+    Today's date: {{ configuration.timestamp | date:'medium' }}
     <br />
     If this is correct, please Continue.
     <br />
     <br />
 
-		<button class="btn btn-primary" type="submit" id="submit">
-			{{ 'beginLessonButtonLabel' | translate }}
-		</button>
+    <button
+      class="btn btn-primary"
+      type="submit"
+      id="submit"
+      ng-disabled="accountSetup.$invalid">{{ 'beginLessonButtonLabel' | translate }}</button>
 	</form>
 </div>
 
