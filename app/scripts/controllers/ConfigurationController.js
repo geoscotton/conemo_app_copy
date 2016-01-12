@@ -26,7 +26,7 @@
   }
 
   angular
-    .module('conemoAppApp')
+    .module('conemoApp.controllers')
     .controller(
       'ConfigurationController',
       ['$rootScope', '$window', '$location', 'Constants',

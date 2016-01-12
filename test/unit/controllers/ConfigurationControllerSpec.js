@@ -5,7 +5,7 @@ var expect = chai.expect;
 describe('ConfigurationController', function() {
   var xhr, requests;
 
-  beforeEach(module('conemoAppApp'));
+  beforeEach(module('conemoApp.controllers'));
 
   beforeEach(module(function($provide) {
     var mockLessonService = { get: function() {} };
@@ -41,7 +41,7 @@ describe('ConfigurationController', function() {
             expect(tokenListener.args[0][1]).to.eq('token1');
             done();
           });
-          requests[0].respond(201, { "Content-Type": "application/json" },
+          requests[0].respond(201, { 'Content-Type': 'application/json' },
                               '{"data":{"value":"token1"}}');
         });
       });
