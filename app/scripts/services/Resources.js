@@ -7,7 +7,8 @@
     STATUS: { AUTHENTICATED: 'authenticated' },
 
     NAMES: {
-      AuthenticationTokens: 'AuthenticationTokens'
+      AuthenticationTokens: 'AuthenticationTokens',
+      StaffMessages: 'StaffMessages'
     },
 
     save: function save(resourceType, data) {
@@ -47,7 +48,7 @@
     },
 
     onWorkerError: function onWorkerError(event) {
-      context.alert('An error occurred: ', event.message);
+      context.alert('An error occurred: ' + event.message);
     },
 
     initializeCache: function initializeCache() {
