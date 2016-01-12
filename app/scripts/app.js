@@ -25,26 +25,13 @@ var lessonsRead = [];
     localStorage.lessonsRead = JSON.stringify([]);
   }
 
-  var cacheWorker = new Worker('scripts/CacheWorker.js');
-
   angular.module('conemoApp.constants', []);
   angular.module('conemoApp.directives', ['conemoApp.services']);
   angular.module('conemoApp.services', [])
-    .constant('Authorize', ['$location', function Authorize($location) {
-      return new Promise(function(resolve, reject) {
-        cacheWorker.onmessage = function onWorkerMessage(event) {
-          if (event.data.status === 'authenticated') {
-            resolve();
-          } else {
-            reject();
-            $location.path('/configuration');
-          }
-        };
-
-        cacheWorker.postMessage({
-          resource: 'cache',
-          method: 'initialize'
-        });
+  angular.module('conemoApp.controllers', ['conemoApp.constants'])
+    .constant('Authorize', ['$location', 'Resources', function Authorize($location, Resources) {
+      return Resources.authenticate().catch(function() {
+        $location.path('/configuration');
       });
     }]);
   angular.module('conemoAppApp', [
@@ -53,7 +40,8 @@ var lessonsRead = [];
     'ngRoute',
     'tmh.dynamicLocale',
     'conemoApp.constants',
-    'conemoApp.directives'
+    'conemoApp.directives',
+    'conemoApp.controllers'
   ])
     .constant('l10n', l10n)
     .config(['$routeProvider', 'Authorize', function ($routeProvider, Authorize) {
@@ -78,11 +66,13 @@ var lessonsRead = [];
         })
         .when('/contact', {
           templateUrl: 'views/contact.html',
-          controller: 'ContactCtrl'
+          controller: 'ContactCtrl',
+          controllerAs: 'contact'
         })
         .when('/contact/:type', {
           templateUrl: 'views/contact.html',
-          controller: 'ContactCtrl'
+          controller: 'ContactCtrl',
+          controllerAs: 'contact'
         })
         .when('/instructions', {
           templateUrl: 'views/instructions.html',
@@ -163,12 +153,10 @@ var lessonsRead = [];
       .run(function(tmhDynamicLocale) {
         tmhDynamicLocale.set(localStorage.l10n);
       })
-      .run(['$rootScope', '$location', function($rootScope, $location) {
+      .run(['$rootScope', '$location', 'Resources', function($rootScope, $location, Resources) {
         $rootScope.$on('authentication_token_created', function(event, authenticationToken) {
-          cacheWorker.postMessage({
-            resource: 'AuthenticationTokens',
-            method: 'persist',
-            argument: { value: authenticationToken }
+          Resources.save(Resources.NAMES.AuthenticationTokens, {
+            value: authenticationToken
           });
           $location.path('/');
           $rootScope.$digest();

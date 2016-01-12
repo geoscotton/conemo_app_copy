@@ -1,24 +1,23 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('conemoAppApp')
-  .controller('ContactCtrl', function ($scope) {
-  	$scope.contactHelpLabel = l10nStrings.contactHelpLabel;
-    $scope.contactTypes = l10nStrings.contactTypes;
-    $scope.thankYouAlert = l10nStrings.thankYouAlert;
+  function ContactsController($scope, $window, Resources) {
+    this.contactTypes = $window.l10nStrings.contactTypes;
 
+    this.contactStaff = function contactStaff(message) {
+      var message = {
+        message: message,
+        date_created: new Date(),
+        l10n: $window.localStorage.l10n
+      };
+      Resources.save(Resources.NAMES.StaffMessages, message);
+      this.successAlertVisible = true;
+    };
+  }
 
-    $scope.contactStaff = function(){
-
-            var saveContents = {
-                user_id: localStorage.userId,
-                message: this.contactType,
-                date_created: new Date(),
-                l10n: localStorage.l10n
-            };
-
-        (new PurpleRobot()).emitReading('staff_messages', saveContents).execute();
-
-    	$scope.successAlertVisible = true;
-
-    }
-  });
+  angular.module('conemoAppApp')
+    .controller(
+      'ContactCtrl',
+      ['$scope', '$window', 'Resources', ContactsController]
+    );
+})();

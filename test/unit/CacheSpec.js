@@ -6,7 +6,7 @@ describe('Cache', function() {
   describe('.initialize', function() {
     describe('when an authentication token is not present', function() {
       it('posts the initialized status message', function(done) {
-        Cache.AuthenticationTokens.setStoreType(lf.schema.DataStoreType.MEMORY);
+        Cache.setStoreType(lf.schema.DataStoreType.MEMORY);
         Cache.addTables();
         Cache.setContext({
           lf: lf,
@@ -22,9 +22,9 @@ describe('Cache', function() {
 
     describe('when an authentication token is present', function() {
       it('posts the authenticated status message', function(done) {
-        Cache.AuthenticationTokens.setStoreType(lf.schema.DataStoreType.MEMORY);
+        Cache.setStoreType(lf.schema.DataStoreType.MEMORY);
         Cache.addTables();
-        Cache.AuthenticationTokens.persist({ value: 'asdf' }).then(function() {
+        Cache.resources.AuthenticationTokens.persist({ value: 'asdf' }).then(function() {
           Cache.setContext({
             lf: lf,
             postMessage: function(message) {
