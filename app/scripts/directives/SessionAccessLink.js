@@ -1,19 +1,16 @@
 (function() {
   'use strict';
 
-  function SessionAccessLink(purpleRobot, settings) {
+  function SessionAccessLink(settings, Resources) {
     return {
       link: function(scope, element) {
         element.on('click', function() {
-          purpleRobot
-            .emitReading('session_events', {
-              eventType: 'access',
-              userId: settings.getUserId(),
-              lessonGuid: scope.lessonGuid,
-              dateCreated: new Date(),
-              l10n: settings.getL10n()
-            })
-            .execute();
+          Resources.save(Resources.NAMES.SessionEvents, {
+            eventType: 'access',
+            lessonGuid: scope.lessonGuid,
+            dateCreated: new Date(),
+            l10n: settings.getL10n()
+          });
         });
       },
       restrict: 'E',
@@ -26,5 +23,7 @@
   }
 
   angular.module('conemoApp.directives')
-         .directive('sessionAccessLink', SessionAccessLink);
+    .directive(
+        'sessionAccessLink', ['settings', 'Resources', SessionAccessLink]
+    );
 })();

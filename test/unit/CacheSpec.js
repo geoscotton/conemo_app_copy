@@ -24,7 +24,7 @@ describe('Cache', function() {
       it('posts the authenticated status message', function(done) {
         Cache.setStoreType(lf.schema.DataStoreType.MEMORY);
         Cache.addTables();
-        Cache.resources.AuthenticationTokens.persist({ value: 'asdf' }).then(function() {
+        Cache.localResources.AuthenticationTokens.persist({ value: 'asdf' }).then(function() {
           Cache.setContext({
             lf: lf,
             postMessage: function(message) {

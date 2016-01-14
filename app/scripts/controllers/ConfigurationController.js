@@ -1,8 +1,9 @@
-(function() {
+(function(context) {
   'use strict';
 
   function ConfigurationController($rootScope, $window, $location, Constants) {
-    var TOKENS_RESOURCE_PATH = '/api/authentication_tokens';
+    var TOKENS_RESOURCE_PATH = '/api/authentication_tokens',
+        TOKEN_CREATED_EVENT = 'authentication_token_created';
 
     this.configurationToken = '';
 
@@ -14,11 +15,11 @@
 
     this.createAuthenticationToken = function createAuthenticationToken() {
       var tokens = Object.create(cbit.AuthenticationTokensResource);
-      tokens.setUrl(Constants.SERVER_URL + TOKENS_RESOURCE_PATH);
-      tokens.setClientUuid($window.device.uuid);
+      tokens.setUrl(context.Conemo.Globals.SERVER_URL + TOKENS_RESOURCE_PATH);
+      tokens.setClientUuid($window.device.uuid || Constants.DEFAULT_CLIENT_UUID);
 
       return tokens.create(this.configurationToken).then(function(response) {
-        $rootScope.$emit('authentication_token_created', response.data.value);
+        $rootScope.$emit(TOKEN_CREATED_EVENT, response.data.value);
       }).catch(function(error) {
         $window.alert(error.message);
       });
@@ -32,4 +33,4 @@
       ['$rootScope', '$window', '$location', 'Constants',
        ConfigurationController]
     );
-})();
+})(this);

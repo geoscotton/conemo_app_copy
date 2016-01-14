@@ -153,15 +153,25 @@ var lessonsRead = [];
       .run(function(tmhDynamicLocale) {
         tmhDynamicLocale.set(localStorage.l10n);
       })
-      .run(['$rootScope', '$location', 'Resources', function($rootScope, $location, Resources) {
-        $rootScope.$on('authentication_token_created', function(event, authenticationToken) {
-          Resources.save(Resources.NAMES.AuthenticationTokens, {
-            value: authenticationToken
+      .run([
+        '$rootScope', '$location', '$window', 'Constants', 'Resources',
+        function($rootScope, $location, $window, Constants, Resources) {
+          $rootScope.$on('authentication_token_created', function(event, authenticationToken) {
+            Resources.save(Resources.NAMES.AuthenticationTokens, {
+              value: authenticationToken
+            });
+            Resources.save(Resources.NAMES.Devices, {
+              device_uuid: $window.device.uuid || Constants.DEFAULT_CLIENT_UUID,
+              manufacturer: $window.device.manufacturer,
+              model: $window.device.model,
+              platform: $window.device.platform,
+              device_version: $window.device.version
+            });
+            $location.path('/');
+            $rootScope.$digest();
           });
-          $location.path('/');
-          $rootScope.$digest();
-        });
-      }]);
+        }
+      ]);
 
   angular.element(document).on('deviceready', function() {
     angular.bootstrap(document, ['conemoAppApp']);

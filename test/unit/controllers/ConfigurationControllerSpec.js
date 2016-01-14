@@ -27,6 +27,24 @@ describe('ConfigurationController', function() {
     xhr.restore();
   });
 
+  describe('#tokenPattern', function() {
+    it('matches tokens with 6 characters plus whitespace', function() {
+      inject(function($controller) {
+        var controller = $controller('ConfigurationController');
+        expect(controller.tokenPattern.test('abcdef')).to.be.true;
+        expect(controller.tokenPattern.test(' a  bcd ef ')).to.be.true;
+      });
+    });
+
+    it('does not match tokens with fewer than 6 characters total', function() {
+      inject(function($controller) {
+        var controller = $controller('ConfigurationController');
+        expect(controller.tokenPattern.test('abcde')).to.be.false;
+        expect(controller.tokenPattern.test(' a  bcd')).to.be.false;
+      });
+    });
+  });
+
   describe('#createAuthenticationToken', function() {
     describe('when the token is successfully created', function() {
       it('emits the value', function(done) {

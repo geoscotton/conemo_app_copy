@@ -1,7 +1,7 @@
 module.exports = function(context) {
   var fs = require('fs-extra'),
       filenames = [
-        'www/scripts/constants.js',
+        'www/scripts/Globals.js',
         'www/index.html',
         'config.xml'
       ];

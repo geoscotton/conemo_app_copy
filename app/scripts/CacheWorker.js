@@ -3,6 +3,7 @@
 
   context.importScripts('../vendor/lovefield.min.js');
   context.importScripts('../vendor/cache_and_sync_love.min.js');
+  context.importScripts('Globals.js');
   context.importScripts('Cache.js');
 
   context.onmessage = function onMessage(event) {

@@ -8,6 +8,7 @@
 
     NAMES: {
       AuthenticationTokens: 'AuthenticationTokens',
+      Devices: 'Devices',
       StaffMessages: 'StaffMessages'
     },
 
