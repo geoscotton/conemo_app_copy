@@ -17,7 +17,7 @@ Install the application dependencies
 
 `npm install`
 
-`./node_modules/.bin/bower install`
+`node_modules/.bin/bower install`
 
 ## Running tests
 
@@ -31,13 +31,19 @@ LOCALE=es-PE SERVER=http://localhost:3000 npm run build
 
 If first time running Cordova,
 
-`./node_modules/.bin/cordova platform rm android`
-`./node_modules/.bin/cordova platform add android`
+`node_modules/.bin/cordova platform rm android`
+`node_modules/.bin/cordova platform add android`
 
 Subsequent installs only require
 
 ```
 LOCALE=es-PE SERVER=http://localhost:3000 npm run install:android
+```
+
+## Running in the browser
+
+```
+LOCALE=es-PE SERVER=http://localhost:3000 npm run install:browser
 ```
 
 ## Running in an emulator

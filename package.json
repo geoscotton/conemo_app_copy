@@ -25,6 +25,7 @@
   "scripts": {
     "build": "./node_modules/.bin/cordova build android",
     "install:android": "./node_modules/.bin/cordova run android",
+    "install:browser": "./node_modules/.bin/cordova run browser",
     "test": "./node_modules/.bin/testem",
     "test:ci": "./node_modules/.bin/testem ci"
   }
