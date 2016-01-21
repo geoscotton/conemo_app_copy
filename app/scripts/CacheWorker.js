@@ -12,7 +12,8 @@
     if (event.data.resource === 'cache') {
       methodCalled = context.Cache[event.data.method].bind(context.Cache);
     } else {
-      var Resource = context.Cache.resources[event.data.resource];
+      var Resource = context.Cache.localResources[event.data.resource] ||
+        context.Cache.syncableResources[event.data.resource];
       methodCalled = Resource[event.data.method].bind(Resource);
     }
 

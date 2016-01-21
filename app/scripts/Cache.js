@@ -74,8 +74,7 @@
           .setNetwork({
             // punt on this
             hasConnection: function() { return true; }
-          })
-          .setDbConnection(dbConnection);
+          });
       } catch (error) {
         // schema is finalized
         if (context.DEBUG) {
