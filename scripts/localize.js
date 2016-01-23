@@ -1,6 +1,6 @@
 module.exports = function(context) {
   var fs = require('fs'),
-      filename = 'app/scripts/app.js';
+      filename = 'www/scripts/app.js';
 
   function replaceStringInFile(filename, toReplace, replaceWith) {
     var data = fs.readFileSync(filename, 'utf8');
@@ -13,7 +13,7 @@ module.exports = function(context) {
     replaceStringInFile(
       filename,
       "/\\* REPLACE \\*/ var l10n = 'pt-BR'; /\\* REPLACE \\*/",
-      "/* REPLACE */ var l10n = '" + process.env.LOCALE + "'; /* REPLACE */"
+      "var l10n = '" + process.env.LOCALE + "';"
     );
   }
 };

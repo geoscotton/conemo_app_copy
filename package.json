@@ -7,6 +7,7 @@
     "angular-resource": "=1.4.7",
     "angular-route": "=1.4.7",
     "angular-sanitize": "=1.4.7",
+    "cache_and_sync_love": "0.1.x",
     "cordova": "=5.4.1",
     "jquery": "=1.11.3",
     "moment": "=2.10.6"
@@ -17,12 +18,14 @@
     "chai": "^3.2.0",
     "eslint": "^1.9.0",
     "mocha": "^2.2.5",
-    "ncp": "^2.0.0",
+    "fs-extra": "^0.26.3",
     "sync-request": "^2.1.0",
     "testem": "^0.8.5"
   },
   "scripts": {
-    "build": "rm -rf www; mkdir www; ./node_modules/.bin/cordova build android",
+    "build": "./node_modules/.bin/cordova build android",
+    "install:android": "./node_modules/.bin/cordova run android",
+    "install:browser": "./node_modules/.bin/cordova run browser",
     "test": "./node_modules/.bin/testem",
     "test:ci": "./node_modules/.bin/testem ci"
   }

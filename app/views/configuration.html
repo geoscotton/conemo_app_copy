@@ -1,0 +1,30 @@
+<h1><img src="images/logo-wide.png" alt="{{ 'appName' | translate }}" style='width:100%;'></h1>
+
+<div id="account-setup" class="well">
+	<form name="accountSetup" ng-submit="configuration.createAuthenticationToken();">
+    <h4>{{ 'configureUserLabel' | translate }}</h4>
+
+    <label for="configuration-token">Token</label><br/>
+    <input
+      type="text"
+      id="configuration-token"
+      name="configurationToken"
+      ng-model="configuration.configurationToken"
+      ng-pattern="configuration.tokenPattern"
+      required>
+		<br/>
+		<br/>
+    Today's date: {{ configuration.timestamp | date:'medium' }}
+    <br />
+    If this is correct, please Continue.
+    <br />
+    <br />
+
+    <button
+      class="btn btn-primary"
+      type="submit"
+      id="submit"
+      ng-disabled="accountSetup.$invalid">{{ 'beginLessonButtonLabel' | translate }}</button>
+	</form>
+</div>
+

@@ -7,9 +7,7 @@ CONEMO project.
 
 - NodeJS
 - NPM (NodeJS Package Manager)
-- Purple Robot Client
 - Cordova 5.4.0
-- Purple Robot 1.6.22
 
 ## Installation process
 
@@ -19,7 +17,7 @@ Install the application dependencies
 
 `npm install`
 
-`./node_modules/.bin/bower install`
+`node_modules/.bin/bower install`
 
 ## Running tests
 
@@ -28,17 +26,25 @@ Install the application dependencies
 ## Building Conemo Phone App
 
 ```
-LOCALE=es-PE npm run build
+LOCALE=es-PE SERVER=http://localhost:3000 npm run build
 ```
 
-If first time running cordova,
+If first time running Cordova,
 
-`./node_modules/.bin/cordova platform rm android`
-`./node_modules/.bin/cordova platform add android`
+`node_modules/.bin/cordova platform rm android`
+`node_modules/.bin/cordova platform add android`
 
-Subsequent builds only requires
+Subsequent installs only require
 
-`./node_modules/.bin/cordova run android`
+```
+LOCALE=es-PE SERVER=http://localhost:3000 npm run install:android
+```
+
+## Running in the browser
+
+```
+LOCALE=es-PE SERVER=http://localhost:3000 npm run install:browser
+```
 
 ## Running in an emulator
 

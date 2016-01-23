@@ -1,13 +1,16 @@
 <a ng-href="#/">
 	<button class="btn btn-primary btn-corner">
-	<h2 class="navigation-button"><i class="glyphicon glyphicon-home"></i></h2>
+    <h2 class="navigation-button"><i class="glyphicon glyphicon-home"></i></h2>
 	</button>
 </a>
-<h1>{{'contactHelpLabel' | translate}}</h1>
 
-<button ng-repeat="contactType in contactTypes | filter:translate" ng-click="contactStaff()" class="btn-contact btn btn-info btn-wide">
-	<h2>{{contactType}}</h2></button>
+<h1>{{ 'contactHelpLabel' | translate }}</h1>
+
+<button
+  ng-disabled="contact.successAlertVisible"
+  ng-repeat="contactType in contact.contactTypes | filter:translate"
+  ng-click="contact.contactStaff(contact.contactTypes[$index])"
+  class="btn-contact btn btn-info btn-wide"><h2>{{ contactType }}</h2></button>
 <br/><br/>
 
-<div class="alert alert-success" ng-show="successAlertVisible"><h2>{{'thankYouAlert' | translate}}</h2></div>
-
+<div class="alert alert-success" ng-show="contact.successAlertVisible"><h2>{{ 'thankYouAlert' | translate }}</h2></div>
