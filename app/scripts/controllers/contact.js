@@ -1,16 +1,15 @@
 (function() {
   'use strict';
 
-  function ContactsController($scope, $window, Resources) {
+  function ContactsController($window, Resources) {
     this.contactTypes = $window.l10nStrings.contactTypes;
 
     this.contactStaff = function contactStaff(message) {
-      var message = {
+      var messageData = {
         message: message,
-        date_created: new Date(),
-        l10n: $window.localStorage.l10n
+        sent_at: new Date()
       };
-      Resources.save(Resources.NAMES.StaffMessages, message);
+      Resources.save(Resources.NAMES.HelpMessages, messageData);
       this.successAlertVisible = true;
     };
   }
@@ -18,6 +17,6 @@
   angular.module('conemoAppApp')
     .controller(
       'ContactCtrl',
-      ['$scope', '$window', 'Resources', ContactsController]
+      ['$window', 'Resources', ContactsController]
     );
 })();

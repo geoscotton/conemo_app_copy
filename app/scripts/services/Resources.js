@@ -9,7 +9,7 @@
     NAMES: {
       AuthenticationTokens: 'AuthenticationTokens',
       Devices: 'Devices',
-      StaffMessages: 'StaffMessages'
+      HelpMessages: 'HelpMessages'
     },
 
     save: function save(resourceType, data) {
