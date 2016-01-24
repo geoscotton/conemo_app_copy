@@ -3,37 +3,19 @@
 
   function MainController($window, $scope, $rootScope, $http, $route,
                           startDateService, Constants) {
-    //check to see if the user has been created on app load
-    if (typeof localStorage.userId === 'undefined' || localStorage.userId === 'undefined'){
-      $scope.showHomeScreen = false;
-    }
-    else{
-
-        $scope.userId = localStorage.userId;
-        $scope.showHomeScreen = false;
-        //trigger login to site logging
-        var loginLog = {
-          user_id: localStorage.userId,
-          date_created: new Date(),
-          l10n: localStorage.l10n
-        };
-
-        (new PurpleRobot()).emitReading('app_login', loginLog).execute();
-    }
-
     //set up intervention start date
     $scope.setStartDate = startDateService.setStartDate;
 
-    $scope.availableLocales = l10nStrings.availableLocales;
+    $scope.availableLocales = $window.l10nStrings.availableLocales;
 
     $scope.setLocale = function() {
-        l10n, localStorage.l10n = this.locale;
+        $window.l10n, $window.localStorage.l10n = this.locale;
     };
 
-    var daysInTreatment = startDateService.getDaysInTreatment();
-    
     //Sort lessons by date to determine first lesson and schedule triggers
-    var dateSortedLessons = _.sortBy($rootScope.lessons,'dayInTreatment');
+    var dateSortedLessons = $rootScope.lessons.sort(function(a, b) {
+      return a.dayInTreatment - b.dayInTreatment;
+    });
 
     function lessonNotificationsAttrs() {
       var lessonTime = Constants.LESSON_RELEASE_TRIGGER_TIME;
@@ -45,7 +27,7 @@
                  id: index,
                  title: 'CONEMO',
                  text: lesson.title,
-                 at: (moment().add('d', lesson.dayInTreatment - 1))
+                 at: ($window.moment().add('d', lesson.dayInTreatment - 1))
                      .hour(lessonTime.hour)
                      .minute(lessonTime.minute)
                      .second(lessonTime.second)
@@ -76,43 +58,32 @@
     }
 
     var dateToday = new Date();
-    if (typeof localStorage.userId !== 'undefined') {
-        $scope.setStartDate();
-        scheduleLessonNotifications();
-    }
-
-    $scope.setUserAccountInfo = function(){
-        
-        localStorage.userId = this.userId;
-        window.location.reload();
-    }
+    $scope.setStartDate();
+    scheduleLessonNotifications();
 
     $scope.enableStep = function(step) {
-        $('#'+step).removeClass('hidden');
+        $window.$('#'+step).removeClass('hidden');
     };
 
-    var getRecentLesson = function(daysInTreatment,dateSortedLessons){
+    var getRecentLesson = function(dateSortedLessons){
+      var mostRecentLesson = {}; 
+      var daysInTreatment = startDateService.getDaysInTreatment();
 
-        var mostRecentLesson = {}; 
-        var daysInTreatment = startDateService.getDaysInTreatment();
+      dateSortedLessons.forEach(function(el, idx) {
+        if (el.dayInTreatment <= daysInTreatment) {
+          mostRecentLesson = el;
+          mostRecentLesson.currentSessionIndex = idx + 1;
+        }
+      });
 
-        _.each(dateSortedLessons,function(el,idx){
-            if (el.dayInTreatment <= daysInTreatment){
-                mostRecentLesson = el;
-                mostRecentLesson.currentSessionIndex = idx+1;
-            }
-
-        })
-
-        return mostRecentLesson
+      return mostRecentLesson;
     }
 
-    var mostRecentLesson = getRecentLesson(daysInTreatment,dateSortedLessons);
+    var mostRecentLesson = getRecentLesson(dateSortedLessons);
 
-    $scope.userId = localStorage.userId;
     $scope.currentLessonTitle = mostRecentLesson.title;
     $scope.currentLessonDay = dateToday.getDate();
-    $scope.l10n = l10n;
+    $scope.l10n = $window.l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
   }
