@@ -167,6 +167,9 @@ var lessonsRead = [];
               platform: $window.device.platform,
               device_version: $window.device.version
             });
+            Resources.save(Resources.NAMES.ParticipantStartDates, {
+              date: $window.moment().format('YYYY-MM-DD')
+            });
             $location.path('/');
             $rootScope.$digest();
           });

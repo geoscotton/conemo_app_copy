@@ -9,23 +9,11 @@ angular.module('conemoAppApp')
   }])
   .service('startDateService', [function() {
     this.setStartDate = function() {
-        if (typeof localStorage.startDate === 'undefined') {
-            //could replace later with server side start date
-            var startDate = new Date();
-            startDate.setHours(0, 0, 0, 0);
-            localStorage.startDate = startDate;
-
-        } else {
-            var startDate = new Date(localStorage.startDate);
-            var startDateLog = {
-                user_id: localStorage.userId,
-                date_created: new Date(),
-                start_date: startDate,
-                l10n: localStorage.l10n
-            };
-
-            PurpleRobotClient.emitReading('start_date', startDateLog).execute();
-        }
+      if (typeof localStorage.startDate === 'undefined') {
+        var startDate = new Date();
+        startDate.setHours(0, 0, 0, 0);
+        localStorage.startDate = startDate;
+      }
     };
     this.getDateDiff = function (dateEarlier, dateLater) {
         var oneDay=1000*60*60*24
