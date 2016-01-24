@@ -9,7 +9,8 @@
     NAMES: {
       AuthenticationTokens: 'AuthenticationTokens',
       Devices: 'Devices',
-      HelpMessages: 'HelpMessages'
+      HelpMessages: 'HelpMessages',
+      ParticipantStartDates: 'ParticipantStartDates'
     },
 
     save: function save(resourceType, data) {

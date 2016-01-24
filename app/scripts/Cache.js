@@ -11,7 +11,8 @@
   var TABLES = {
     AuthenticationTokens: 'authentication_tokens',
     Devices: 'devices',
-    HelpMessages: 'help_messages'
+    HelpMessages: 'help_messages',
+    ParticipantStartDates: 'participant_start_dates'
   };
   var schemaBuilder = context.lf.schema.create(SCHEMA_NAME, SCHEMA_VERSION);
 
@@ -48,6 +49,8 @@
       this.syncableResources.HelpMessages.createTable()
         .addColumn('message', this.context.lf.Type.STRING)
         .addColumn('sent_at', this.context.lf.Type.DATE_TIME);
+      this.syncableResources.ParticipantStartDates.createTable()
+        .addColumn('date', this.context.lf.Type.STRING);
     },
 
     addTables: function addTables() {
@@ -110,12 +113,11 @@
   Cache.localResources.AuthenticationTokens = Object.create(context.cbit.LocalResource)
     .setSchemaBuilder(schemaBuilder)
     .setTableName(TABLES.AuthenticationTokens);
-  Cache.syncableResources.Devices = Object.create(context.cbit.ResourceCache)
-    .setSchemaBuilder(schemaBuilder)
-    .setTableName(TABLES.Devices);
-  Cache.syncableResources.HelpMessages = Object.create(context.cbit.ResourceCache)
-    .setSchemaBuilder(schemaBuilder)
-    .setTableName(TABLES.HelpMessages);
+  ['Devices', 'HelpMessages', 'ParticipantStartDates'].forEach(function(resource) {
+    Cache.syncableResources[resource] = Object.create(context.cbit.ResourceCache)
+      .setSchemaBuilder(schemaBuilder)
+      .setTableName(TABLES[resource]);
+  });
 
   context.Cache = Cache;
 })(this);
