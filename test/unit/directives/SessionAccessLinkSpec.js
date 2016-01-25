@@ -33,7 +33,8 @@ describe('SessionAccessLink', function() {
     scope.$digest();
     el.triggerHandler('click');
 
-    var readingMatch = sinon.match({ eventType: 'access' });
-    expect(Resources.save.calledWith('session_events', readingMatch)).to.be.true;
+    var readingMatch = sinon.match({ event_type: 'access' });
+    expect(Resources.save.calledWith('session_events', readingMatch))
+      .to.be.true;
   });
 });

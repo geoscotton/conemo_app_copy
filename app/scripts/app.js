@@ -1,12 +1,3 @@
-function PurpleRobot() {
-  this.emitReading = function() {
-    return this;
-  };
-
-  this.execute = function() {
-  };
-}
-PurpleRobot();
 /* REPLACE */ var l10n = 'pt-BR'; /* REPLACE */
 
 var l10nStrings = i18nStrings.filterLocale(l10n)[0];

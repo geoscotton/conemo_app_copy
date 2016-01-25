@@ -8,9 +8,11 @@
 
     NAMES: {
       AuthenticationTokens: 'AuthenticationTokens',
+      ContentAccessEvents: 'ContentAccessEvents',
       Devices: 'Devices',
       HelpMessages: 'HelpMessages',
-      ParticipantStartDates: 'ParticipantStartDates'
+      ParticipantStartDates: 'ParticipantStartDates',
+      SessionEvents: 'SessionEvents'
     },
 
     save: function save(resourceType, data) {
