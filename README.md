@@ -42,7 +42,7 @@ LOCALE=es-PE SERVER=http://localhost:3000 npm run install:android
 
 ## Running in the browser
 
-If first time running the browser platform, run
+If first time...
 
 ```
 LOCALE=es-PE SERVER=http://localhost:3000 node_modules/.bin/cordova platform add browser
@@ -61,7 +61,8 @@ LOCALE=es-PE SERVER=http://localhost:3000 npm run install:browser
 ```
 
 While running the app in the browser you may want to clear the database. To do
-this run `indexedDB.deleteDatabase('conemo')` in the browser console.
+this run `indexedDB.deleteDatabase('conemo'); localStorage.clear()` in the
+browser console.
 
 ## Running in an emulator
 
