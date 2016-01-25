@@ -126,6 +126,8 @@ var lessonsRead = [];
         }
 
         function onResume() {
+          Resources.save(Resources.NAMES.Logins, { logged_in_at: new Date() });
+
           if (localStorage['onResume'] == undefined){
             $window.location.href = '';
           } else {

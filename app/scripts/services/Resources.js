@@ -11,6 +11,7 @@
       ContentAccessEvents: 'ContentAccessEvents',
       Devices: 'Devices',
       HelpMessages: 'HelpMessages',
+      Logins: 'Logins',
       ParticipantStartDates: 'ParticipantStartDates',
       SessionEvents: 'SessionEvents'
     },
