@@ -109,33 +109,36 @@ var lessonsRead = [];
         });
       })
       .run(function($window) {
-          document.addEventListener('deviceready', onDeviceReady, false);
-          document.addEventListener('resume',onResume,false);
+        function onDeviceReady() {
+          var networkState = navigator.connection.type;
 
-          function onDeviceReady() {
-              var networkState = navigator.connection.type;
+          var states = {};
+          states[Connection.UNKNOWN]  = 'Unknown connection';
+          states[Connection.ETHERNET] = 'Ethernet connection';
+          states[Connection.WIFI]     = 'WiFi connection';
+          states[Connection.CELL_2G]  = 'Cell 2G connection';
+          states[Connection.CELL_3G]  = 'Cell 3G connection';
+          states[Connection.CELL_4G]  = 'Cell 4G connection';
+          states[Connection.CELL]     = 'Cell generic connection';
+          states[Connection.NONE]     = 'No network connection';
 
-              var states = {};
-              states[Connection.UNKNOWN]  = 'Unknown connection';
-              states[Connection.ETHERNET] = 'Ethernet connection';
-              states[Connection.WIFI]     = 'WiFi connection';
-              states[Connection.CELL_2G]  = 'Cell 2G connection';
-              states[Connection.CELL_3G]  = 'Cell 3G connection';
-              states[Connection.CELL_4G]  = 'Cell 4G connection';
-              states[Connection.CELL]     = 'Cell generic connection';
-              states[Connection.NONE]     = 'No network connection';
+          localStorage.setItem('connection', states[networkState]);
+        }
 
-              localStorage.setItem('connection',states[networkState]);
+        function onResume() {
+          Resources.save(Resources.NAMES.Logins, { logged_in_at: new Date() });
+
+          if (localStorage['onResume'] == undefined){
+            $window.location.href = '';
+          } else {
+            var pageToGoto = localStorage['onResume'];
+            localStorage['onResume'] = '';
+            $window.location.href = pageToGoto;
           }
-          function onResume() {
-            if (localStorage['onResume'] == undefined){
-              $window.location.href = '';
-            } else {
-              var pageToGoto = localStorage['onResume'];
-              localStorage['onResume'] = '';
-              $window.location.href = pageToGoto;
-            }
-          }
+        }
+
+        document.addEventListener('deviceready', onDeviceReady, false);
+        document.addEventListener('resume',onResume,false);
       })
       .config(function(tmhDynamicLocaleProvider) {
         tmhDynamicLocaleProvider

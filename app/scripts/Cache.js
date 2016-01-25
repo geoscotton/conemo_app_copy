@@ -10,9 +10,10 @@
   };
   var TABLES = {
     AuthenticationTokens: 'authentication_tokens',
+    ContentAccessEvents: 'content_access_events',
     Devices: 'devices',
     HelpMessages: 'help_messages',
-    ContentAccessEvents: 'content_access_events',
+    Logins: 'logins',
     ParticipantStartDates: 'participant_start_dates',
     SessionEvents: 'session_events'
   };
@@ -42,6 +43,11 @@
 
       this.localResources.AuthenticationTokens.createTable()
         .addColumn('value', Types.STRING);
+
+      this.syncableResources.ContentAccessEvents.createTable()
+        .addColumn('lesson_guid', this.context.lf.Type.STRING)
+        .addColumn('accessed_at', this.context.lf.Type.DATE_TIME)
+        .addColumn('day_in_treatment_accessed', this.context.lf.Type.INTEGER);
       this.syncableResources.Devices.createTable()
         .addColumn('device_uuid', Types.STRING)
         .addColumn('manufacturer', Types.STRING)
@@ -51,10 +57,8 @@
       this.syncableResources.HelpMessages.createTable()
         .addColumn('message', this.context.lf.Type.STRING)
         .addColumn('sent_at', this.context.lf.Type.DATE_TIME);
-      this.syncableResources.ContentAccessEvents.createTable()
-        .addColumn('lesson_guid', this.context.lf.Type.STRING)
-        .addColumn('accessed_at', this.context.lf.Type.DATE_TIME)
-        .addColumn('day_in_treatment_accessed', this.context.lf.Type.INTEGER);
+      this.syncableResources.Logins.createTable()
+        .addColumn('logged_in_at', this.context.lf.Type.DATE_TIME);
       this.syncableResources.ParticipantStartDates.createTable()
         .addColumn('date', this.context.lf.Type.STRING);
       this.syncableResources.SessionEvents.createTable()
@@ -127,6 +131,7 @@
     'ContentAccessEvents',
     'Devices',
     'HelpMessages',
+    'Logins',
     'ParticipantStartDates',
     'SessionEvents'
   ].forEach(function(resource) {
