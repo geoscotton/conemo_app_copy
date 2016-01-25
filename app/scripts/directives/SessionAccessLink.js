@@ -6,10 +6,9 @@
       link: function(scope, element) {
         element.on('click', function() {
           Resources.save(Resources.NAMES.SessionEvents, {
-            eventType: 'access',
-            lessonGuid: scope.lessonGuid,
-            dateCreated: new Date(),
-            l10n: settings.getL10n()
+            event_type: 'access',
+            lesson_guid: scope.lessonGuid,
+            occurred_at: new Date()
           });
         });
       },

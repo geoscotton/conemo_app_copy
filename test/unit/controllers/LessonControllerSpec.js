@@ -3,11 +3,17 @@
 var expect = chai.expect;
 
 describe('LessonController', function() {
+  var Resources = {
+    NAMES: {},
+    save: sinon.spy()
+  };
+
   function injectController($controller, $rootScope) {
     $controller('LessonCtrl', {
                   $scope: scope,
                   $rootScope: $rootScope,
-                  $routeParams: { id: guid }
+                  $routeParams: { id: guid },
+                  Resources: Resources
                 });
   }
 
@@ -26,7 +32,7 @@ describe('LessonController', function() {
     return injectFn;
   }
 
-  var $httpBackend, scope, guid = '123';
+  var scope, guid = '123';
 
   beforeEach(module('conemoAppApp'));
 
@@ -146,15 +152,12 @@ describe('LessonController', function() {
   });
 
   describe('#saveForm', function() {
-    it('emits data to Purple Robot', function() {
-      inject(function(_$httpBackend_) {
-        $httpBackend = _$httpBackend_;
-      });
+    it('saves the data', function() {
       inject(lessonPages({ count: 0 }));
 
-      $httpBackend.expectPOST('/json/submit');
-
       scope.saveForm();
+
+      expect(Resources.save.calledOnce).to.be.true;
     });
   });
 });
