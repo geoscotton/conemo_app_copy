@@ -108,7 +108,7 @@ var lessonsRead = [];
           }
         });
       })
-      .run(function($window) {
+      .run(function($window, Resources) {
         function onDeviceReady() {
           var networkState = navigator.connection.type;
 
