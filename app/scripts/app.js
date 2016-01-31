@@ -49,7 +49,7 @@ var lessonsRead = [];
         })
         .when('/lesson/:id', {
           templateUrl: 'views/lesson.html',
-          controller: 'LessonCtrl'
+          controller: 'LessonController'
         })
         .when('/toolbox', {
           templateUrl: 'views/toolbox.html',

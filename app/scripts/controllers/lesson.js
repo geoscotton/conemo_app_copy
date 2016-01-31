@@ -1,113 +1,108 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('conemoAppApp')
-  .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location,
-                                      $timeout, $window, $rootScope,
-                                      startDateService, Resources) {
-      var docHeight = $($window).height();
+  function LessonsController($scope, $routeParams, $sce, $location, $timeout,
+                             $window, $rootScope, startDateService, Resources) {
+    var docHeight = $($window).height();
 
-      var selectedLesson = _.where($rootScope.lessons, {
-              guid: $routeParams.id
-          })[0];
+    var selectedLesson = $rootScope.lessons.find(function(lesson) {
+      return lesson.guid === $routeParams.id;
+    });
 
-      var slides = _.sortBy(selectedLesson.slides, 'position');
+    var slides = selectedLesson.slides.sort(function(a, b) {
+      return a.position - b.position;
+    });
 
-      var buildSlideContent = function (slides) {
-          var concatenatedSlides = '';
+    function buildSlideContent(slides) {
+      return slides.map(function (el, idx) {
+        return '<div style="height:' + docHeight +
+               'px;" class="slide"  data-index="' + idx +
+               '" data-position="' + el.position + '">' +
+               el.content + '</div>';
+      }).join();
+    }
+    
+    $scope.navButtonGenerator = function (slideIndex) {
+      if (slides.length == 1) {
+        $scope.showHome = true;
+        $scope.showBack = false;
+        $scope.showNext = false;
+      } else if (slideIndex == slides.length - 1) {
+        $scope.showHome = true;
+        $scope.showBack = true;
+        $scope.showNext = false;
+      } else if (slideIndex == 0) {
+        $scope.showHome = false;
+        $scope.showBack = false;
+        $scope.showNext = true;
+      } else {
+        $scope.showHome = false;
+        $scope.showBack = true;
+        $scope.showNext = true;
+      }
+    };
 
-          slides.forEach(function (el, idx) {
-            concatenatedSlides += '<div style="height:' + docHeight +
-                                  'px;" class="slide"  data-index="' + idx +
-                                  '" data-position="' + el.position + '">' +
-                                  el.content + '</div>';
+    $scope.slideNavigator = function (slidemover) {
+      $scope.navButtonGenerator($scope.currentSlideIndex);
 
-          });
-
-          return concatenatedSlides;
-      };
-      
-      $scope.navButtonGenerator = function (slideIndex) {
-          if (slides.length == 1) {
-              $scope.showHome = true;
-              $scope.showBack = false;
-              $scope.showNext = false;
-          } else if (slideIndex == slides.length - 1) {
-              $scope.showHome = true;
-              $scope.showBack = true;
-              $scope.showNext = false;
-          } else if (slideIndex == 0) {
-              $scope.showHome = false;
-              $scope.showBack = false;
-              $scope.showNext = true;
-          } else {
-              $scope.showHome = false;
-              $scope.showBack = true;
-              $scope.showNext = true;
-          }
-      };
-
-
-      $scope.slideNavigator = function (slidemover) {
-          $scope.navButtonGenerator($scope.currentSlideIndex);
-
-          if (typeof (slidemover) !== 'number') {
-
-              switch (slidemover) {
-
-              case 'next':
-                  $scope.currentSlideIndex++;
-                  break;
-              case 'back':
-                  $scope.currentSlideIndex--;
-                  break;
-              }
-          } 
-          $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
-
-      };
-
-      $scope.updatePageCounter = function () {
-          $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
-          $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
-          $scope.navButtonGenerator($scope.currentSlideIndex);
-      };
-
-      var daysInTreatment = startDateService.getDaysInTreatment();
-
-      $scope.backLabel = l10nStrings.backLabel;
-      $scope.nextLabel = l10nStrings.nextLabel;
-      $scope.showSlides = false;
-      $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
-      $timeout(function() {
-        var selects = $window.document.getElementsByTagName('select');
-        Array.prototype.forEach.call(selects, function(select) {
-          select.selectedIndex = -1;
-        });
-      });
-      $scope.currentSlideIndex = 0;
-      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
-
-      $scope.slideNavigator($scope.currentSlideIndex);
-
-      $scope.saveForm = function (path) {
-        Resources.save(Resources.NAMES.ContentAccessEvents, {
-          lesson_guid: $routeParams.id,
-          accessed_at: new Date(),
-          day_in_treatment_accessed: daysInTreatment
-        });
-
-        // mark lesson as read    
-
-        if (lessonsRead.indexOf(selectedLesson.guid) === -1) {
-          lessonsRead.push(selectedLesson.guid);
-          localStorage.setItem('lessonsRead',JSON.stringify(lessonsRead));
+      if (typeof (slidemover) !== 'number') {
+        switch (slidemover) {
+          case 'next':
+            $scope.currentSlideIndex++;
+            break;
+          case 'back':
+            $scope.currentSlideIndex--;
+            break;
         }
+      } 
 
-        $location.path(path);
+      $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
+    };
 
-        return false;
-      };
-  })
+    $scope.updatePageCounter = function () {
+      $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
+      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
+      $scope.navButtonGenerator($scope.currentSlideIndex);
+    };
+
+    var daysInTreatment = startDateService.getDaysInTreatment();
+
+    $scope.backLabel = l10nStrings.backLabel;
+    $scope.nextLabel = l10nStrings.nextLabel;
+    $scope.showSlides = false;
+    $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
+    $timeout(function() {
+      var selects = $window.document.getElementsByTagName('select');
+      Array.prototype.forEach.call(selects, function(select) {
+        select.selectedIndex = -1;
+      });
+    });
+    $scope.currentSlideIndex = 0;
+    $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
+
+    $scope.slideNavigator($scope.currentSlideIndex);
+
+    $scope.saveForm = function (path) {
+      Resources.save(Resources.NAMES.ContentAccessEvents, {
+        lesson_guid: $routeParams.id,
+        accessed_at: new Date(),
+        day_in_treatment_accessed: daysInTreatment
+      });
+
+      // mark lesson as read    
+
+      if (lessonsRead.indexOf(selectedLesson.guid) === -1) {
+        lessonsRead.push(selectedLesson.guid);
+        localStorage.setItem('lessonsRead',JSON.stringify(lessonsRead));
+      }
+
+      $location.path(path);
+
+      return false;
+    };
+  }
+
+  angular.module('conemoAppApp')
     .directive('scroll', function ($window) {
         return function(scope, element, attrs) {
             angular.element($window).bind('scroll', function() {
@@ -143,3 +138,11 @@ angular.module('conemoAppApp')
         }
     };
     });
+
+angular.module('conemoApp.controllers')
+       .controller(
+         'LessonController',
+         ['$scope', '$routeParams', '$sce', '$location', '$timeout', '$window',
+          '$rootScope', 'startDateService', 'Resources', LessonsController]
+       );
+})();

@@ -9,7 +9,7 @@ describe('LessonController', function() {
   };
 
   function injectController($controller, $rootScope) {
-    $controller('LessonCtrl', {
+    $controller('LessonController', {
                   $scope: scope,
                   $rootScope: $rootScope,
                   $routeParams: { id: guid },
@@ -19,14 +19,17 @@ describe('LessonController', function() {
 
   function lessonPages(options) {
     function injectFn($controller, $rootScope) {
-      $rootScope.lessons = [{ guid: guid, slides: slides }];
+      $rootScope.lessons = [
+        { guid: guid, slides: slides },
+        { guid: 'baz', slides: [] }
+      ];
       injectController($controller, $rootScope);
     }
 
     var slides = [];
 
     for (var i = 0; i < options.count; i++) {
-      slides.push({ position: i });
+      slides.push({ position: i, content: 'slide body ' + i });
     }
 
     return injectFn;
@@ -51,6 +54,15 @@ describe('LessonController', function() {
       inject(lessonPages({ count: 0 }));
 
       expect(scope.backLabel).to.eq('Anterior');
+    });
+
+    it('prepares the slide content', function() {
+      inject(lessonPages({ count: 1 }));
+
+      inject(function($sce) {
+        expect($sce.getTrustedHtml(scope.slideContent))
+          .to.match(/slide body 0/);
+      });
     });
   });
 
