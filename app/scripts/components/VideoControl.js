@@ -16,6 +16,11 @@
 
     addTo: function addTo(element) {
       var videoElement = element.find('video');
+
+      if (videoElement.length === 0) {
+        return;
+      }
+
       var playPauseButton = '<p style="text-align: center;"><a id="' +
                             playPauseId + '">' + playLabel + '</a></p>';
 
