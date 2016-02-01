@@ -13,21 +13,36 @@
       return a.position - b.position;
     });
 
-    function buildSlideContent(slides) {
+    var slideCount = slides.length;
+
+    function buildSlideContent(lesson, slides) {
+      var activityPlan = '';
+
+      if (lesson.hasActivityPlanning) {
+        activityPlan = '<div style="height:' + docHeight +
+               'px;" class="slide"  data-index="' + slides.length +
+               '" data-position="' + (slides.length + 1) + '">' +
+               'Can you do something before the next 5 days are up??<br>' +
+               'What can you do?' +
+               '<select><option>Play ping pong!</option></select>' +
+               '</div>';
+        slideCount = slides.length + 1;
+      }
+
       return slides.map(function (el, idx) {
         return '<div style="height:' + docHeight +
                'px;" class="slide"  data-index="' + idx +
                '" data-position="' + el.position + '">' +
                el.content + '</div>';
-      }).join();
+      }).join() + activityPlan;
     }
     
     $scope.navButtonGenerator = function (slideIndex) {
-      if (slides.length == 1) {
+      if (slideCount == 1) {
         $scope.showHome = true;
         $scope.showBack = false;
         $scope.showNext = false;
-      } else if (slideIndex == slides.length - 1) {
+      } else if (slideIndex == slideCount - 1) {
         $scope.showHome = true;
         $scope.showBack = true;
         $scope.showNext = false;
@@ -61,7 +76,7 @@
 
     $scope.updatePageCounter = function () {
       $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
-      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
+      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.navButtonGenerator($scope.currentSlideIndex);
     };
 
@@ -70,7 +85,7 @@
     $scope.backLabel = l10nStrings.backLabel;
     $scope.nextLabel = l10nStrings.nextLabel;
     $scope.showSlides = false;
-    $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
+    $scope.slideContent = $sce.trustAsHtml(buildSlideContent(selectedLesson, slides));
     $timeout(function() {
       var selects = $window.document.getElementsByTagName('select');
       Array.prototype.forEach.call(selects, function(select) {
@@ -78,7 +93,7 @@
       });
     });
     $scope.currentSlideIndex = 0;
-    $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
+    $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
 
     $scope.slideNavigator($scope.currentSlideIndex);
 

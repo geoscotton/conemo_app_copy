@@ -20,7 +20,11 @@ describe('LessonController', function() {
   function lessonPages(options) {
     function injectFn($controller, $rootScope) {
       $rootScope.lessons = [
-        { guid: guid, slides: slides },
+        {
+          guid: guid,
+          slides: slides,
+          hasActivityPlanning: options.hasActivityPlanning || false
+        },
         { guid: 'baz', slides: [] }
       ];
       injectController($controller, $rootScope);
@@ -62,6 +66,15 @@ describe('LessonController', function() {
       inject(function($sce) {
         expect($sce.getTrustedHtml(scope.slideContent))
           .to.match(/slide body 0/);
+      });
+    });
+
+    it('adds a planned activity question if required', function() {
+      inject(lessonPages({ count: 1, hasActivityPlanning: true }));
+
+      inject(function($sce) {
+        expect($sce.getTrustedHtml(scope.slideContent))
+          .to.match(/Can you do something/);
       });
     });
   });
