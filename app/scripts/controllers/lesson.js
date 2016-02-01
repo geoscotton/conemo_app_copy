@@ -119,11 +119,15 @@
 
   angular.module('conemoAppApp')
     .directive('scroll', function ($window) {
-        return function(scope, element, attrs) {
-            angular.element($window).bind('scroll', function() {
-                scope.$apply(attrs.scroll);
-            })
-        }
+      return function(scope, element, attrs) {
+        angular.element($window).bind('scroll', function() {
+          scope.$apply(attrs.scroll);
+        });
+        // prevent memory leak by removing global scroll event listener
+        element.on('$destroy', function() {
+          angular.element($window).unbind('scroll');
+        });
+      };
     })
     .directive('moDateInput', function ($window) {
     return {
