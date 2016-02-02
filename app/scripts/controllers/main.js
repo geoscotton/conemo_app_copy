@@ -37,29 +37,19 @@
     }
 
     function scheduleLessonNotifications() {
-      var firstNotificationId = 0;
-
       if ($window.cordova.plugins == null) {
         return;
       }
 
-      $window.cordova.plugins.notification.local.isPresent(
-        firstNotificationId,
-        function (isFirstNotificationPresent) {
-          if (isFirstNotificationPresent) {
-            return;
-          }
-
-          $window.cordova.plugins.notification.local.schedule(
-            lessonNotificationsAttrs()
-          );
-        }
+      $window.cordova.plugins.notification.local.schedule(
+        lessonNotificationsAttrs()
       );
     }
 
-    var dateToday = new Date();
-    $scope.setStartDate();
-    scheduleLessonNotifications();
+    if (startDateService.getStartDate() == null) {
+      $scope.setStartDate();
+      scheduleLessonNotifications();
+    }
 
     $scope.enableStep = function(step) {
         $window.$('#'+step).removeClass('hidden');
@@ -82,7 +72,7 @@
     var mostRecentLesson = getRecentLesson(dateSortedLessons);
 
     $scope.currentLessonTitle = mostRecentLesson.title;
-    $scope.currentLessonDay = dateToday.getDate();
+    $scope.currentLessonDay = (new Date()).getDate();
     $scope.l10n = $window.l10n;
     $scope.currentSessionIndex = mostRecentLesson.currentSessionIndex;
     $scope.currentLessonGuid = mostRecentLesson.guid;
