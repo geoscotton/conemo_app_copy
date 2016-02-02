@@ -22,11 +22,11 @@ i18nStrings.generalContent.push({
 	backLabel:'Back',
 	nextLabel:'Next',
 	configureUserLabel:'Configure Your User Account',
-	contactHelpLabel:'Contact Study Staff',
+	contactHelpLabel:'Contact Nurse / Nurse Assistant',
 	instructionsLabel:'Instructions',
 	instructionsContent:'stuff',
 	contactTypes:['Ask for Help'],
-	thankYouAlert:'Thank you, the study staff have been contacted.',
+	thankYouAlert:'Thank you, the nurse / nurse assistant has been contacted.',
 	unreadLabel:'unread',
 	downloaderText: {
         textFile: 'file',
@@ -56,7 +56,7 @@ i18nStrings.generalContent.push({
 	backLabel:'Anterior',
 	nextLabel:'Próximo',
 	configureUserLabel:'Configure sua Conta de Usuário',
-	contactHelpLabel:'Solicitação de ajuda',
+	contactHelpLabel:'Contactar auxiliar de enfermagem',
 	instructionsLabel:'Instruções',
 	instructionsLesson: 'Sessão de exemplo',
 	instructionsContent:'<h2><i class="glyphicon glyphicon-question-sign"></i> Como funciona o App:' +
@@ -76,8 +76,9 @@ i18nStrings.generalContent.push({
     '<ol><li>com o aplicativo, se você estiver com problemas com a internet, o CONEMO ou ' +
     'precisa de assistência geral da auxiliar de enfermagem</li><li>para uma auxiliar de ' +
     'enfermagem com o seu telefone</li></ol>',
-	contactTypes:['Ask for Help'],
-	thankYouAlert:'Obrigado, a equipe do estudo foi contactada',
+	contactTypes:['Pedir ajuda'],
+	thankYouAlert:'Obrigado, a/o auxiliar de enfermagem foi contactada/o e vai te chamar nos ' +
+    'próximos 2 dias úteis.',
 	unreadLabel:'não lido',
 	downloaderText: {
         textFile: 'arquivo',
@@ -110,7 +111,7 @@ i18nStrings.generalContent.push({
 	backLabel:'Anterior',
 	nextLabel:'Siguiente',
 	configureUserLabel:'Configurar cuenta',
-	contactHelpLabel:'Solicitar ayuda',
+	contactHelpLabel:'Contactar enfermera',
 	instructionsLabel:'Instrucciones',
 	instructionsLesson: 'Sesión de entrenamiento',
 	instructionsContent: '<h2><i class="glyphicon glyphicon-question-sign"></i> ¿Cómo ' +
@@ -129,8 +130,9 @@ i18nStrings.generalContent.push({
     'las siguientes alternativas: <ol><li>Necesito ayuda con el aplicativo,</li><li>' +
     'Necesito ayuda de mi enfermera</li><li>Tengo dificultades con la conexión de ' +
     'internet</li></ol>',
-	contactTypes:['Ask for Help'],
-	thankYouAlert:'Gracias. Tu mensaje ha sido enviado. Tu enfermera o enfermero te llamará pronto.',
+	contactTypes:['Solicitar ayuda'],
+	thankYouAlert:'Muchas gracias. La enfermera ha sido contactada. Ella te llamará dentro ' +
+    'de los siguientes 2 días laborales.',
 	unreadLabel:'No leído',
 	downloaderText: {
         textFile: 'archivo',
