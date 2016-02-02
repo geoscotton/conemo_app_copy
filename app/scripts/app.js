@@ -123,6 +123,13 @@ var lessonsRead = [];
           states[Connection.NONE]     = 'No network connection';
 
           localStorage.setItem('connection', states[networkState]);
+
+          $window.cordova.plugins.backgroundMode.setDefaults({
+            title: 'CONEMO',
+            ticker: 'CONEMO',
+            text: ''
+          });
+          $window.cordova.plugins.backgroundMode.enable();
         }
 
         function onResume() {
