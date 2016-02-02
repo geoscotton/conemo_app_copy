@@ -70,3 +70,22 @@ Make sure you have an SD card enabled so that the video downloads work.
 
 If your computer is on WiFi, disable your LAN (it may be called "Thunderbolt Bridge").
 Restart your virtual device and confirm that it has access to the internet.
+
+## Testing locally with mock node server
+
+If you'd like to run the app locally without needing to run the dashboard and
+set up a participant, build the app with the mock node server,
+`SERVER=http://127.0.01:1337`, as the endpoint. For example:
+
+```
+LOCALE=es-PE SERVER=http://127.0.0.1:1337 npm run install:android
+```
+
+You will also need to run the mock server.
+
+```
+node path/to/conemo_app/test/support/dummy_server.js
+```
+
+Now, with a phone tethered to your computer and port forwarding enabled, you
+can enter whatever you'd like as the configuration token.
