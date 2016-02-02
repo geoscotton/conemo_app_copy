@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.1.0 - 2016-02-02
+
+* enable background mode for data transmission
+* update help contact text
+* schedule lesson notifications once
+* enable activity planning and reviewing
+* prevent memory leak in LessonController
+* avoid exceptions on lessons without videos
+* sync logins
+* capture and sync lesson access events
+* sync start dates
+* sync help messages
+* complete more robust token config workflow
+* remove Crosswalk due to app crashes
+* remove Purple Robot specific code
+
 ## 1.0.2 - 2015-12-17
 
 * enable session (lesson) notifications without PR
