@@ -49,7 +49,7 @@ var lessonsRead = [];
         })
         .when('/lesson/:id', {
           templateUrl: 'views/lesson.html',
-          controller: 'LessonCtrl'
+          controller: 'LessonController'
         })
         .when('/toolbox', {
           templateUrl: 'views/toolbox.html',
@@ -108,7 +108,7 @@ var lessonsRead = [];
           }
         });
       })
-      .run(function($window) {
+      .run(function($window, Resources) {
         function onDeviceReady() {
           var networkState = navigator.connection.type;
 

@@ -15,6 +15,7 @@
     HelpMessages: 'help_messages',
     Logins: 'logins',
     ParticipantStartDates: 'participant_start_dates',
+    PlannedActivities: 'planned_activities',
     SessionEvents: 'session_events'
   };
   var schemaBuilder = context.lf.schema.create(SCHEMA_NAME, SCHEMA_VERSION);
@@ -61,6 +62,18 @@
         .addColumn('logged_in_at', this.context.lf.Type.DATE_TIME);
       this.syncableResources.ParticipantStartDates.createTable()
         .addColumn('date', this.context.lf.Type.STRING);
+      this.syncableResources.PlannedActivities.createTable()
+        .addColumn('name', this.context.lf.Type.STRING)
+        .addColumn('is_complete', this.context.lf.Type.BOOLEAN)
+        .addColumn('is_help_wanted', this.context.lf.Type.BOOLEAN)
+        .addColumn('level_of_happiness', this.context.lf.Type.STRING)
+        .addColumn('how_worthwhile', this.context.lf.Type.STRING)
+        .addColumn('planned_at', this.context.lf.Type.DATE_TIME)
+        .addColumn('lesson_guid', this.context.lf.Type.STRING)
+        .addNullable([
+          'is_complete', 'is_help_wanted', 'level_of_happiness',
+          'how_worthwhile'
+        ]);
       this.syncableResources.SessionEvents.createTable()
         .addColumn('lesson_guid', this.context.lf.Type.STRING)
         .addColumn('event_type', this.context.lf.Type.STRING)
@@ -133,12 +146,26 @@
     'HelpMessages',
     'Logins',
     'ParticipantStartDates',
+    'PlannedActivities',
     'SessionEvents'
   ].forEach(function(resource) {
     Cache.syncableResources[resource] = Object.create(context.cbit.ResourceCache)
       .setSchemaBuilder(schemaBuilder)
       .setTableName(TABLES[resource]);
   });
+
+  Cache.syncableResources.PlannedActivities.fetchLatestUnreported =
+    function fetchLatestUnreported() {
+      return this.getDbConnection().then((function(db) {
+        var table = this.getTable();
+
+        return db.select().from(table)
+                 .where(table.is_complete.isNull())
+                 .orderBy(table.planned_at, context.lf.Order.DESC)
+                 .limit(1)
+                 .exec();
+      }).bind(this));
+    };
 
   context.Cache = Cache;
 })(this);

@@ -1,119 +1,187 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('conemoAppApp')
-  .controller('LessonCtrl', function ($scope, $routeParams, $sce, $location,
-                                      $timeout, $window, $rootScope,
-                                      startDateService, Resources) {
-      var docHeight = $($window).height();
+  function LessonsController($scope, $routeParams, $sce, $location, $timeout,
+                             $window, $rootScope, startDateService, Resources) {
+    var docHeight = $($window).height();
 
-      var selectedLesson = _.where($rootScope.lessons, {
-              guid: $routeParams.id
-          })[0];
+    var selectedLesson = $rootScope.lessons.find(function(lesson) {
+      return lesson.guid === $routeParams.id;
+    });
 
-      var slides = _.sortBy(selectedLesson.slides, 'position');
+    var slides = selectedLesson.slides.sort(function(a, b) {
+      return a.position - b.position;
+    });
 
-      var buildSlideContent = function (slides) {
-          var concatenatedSlides = '';
+    var slideCount = slides.length;
 
-          slides.forEach(function (el, idx) {
-            concatenatedSlides += '<div style="height:' + docHeight +
-                                  'px;" class="slide"  data-index="' + idx +
-                                  '" data-position="' + el.position + '">' +
-                                  el.content + '</div>';
+    function activityReportTemplate(activity) {
+      return '<div style="height:' + docHeight +
+             'px;" class="slide"  data-index="' + 0 +
+             '" data-position="' + 1 + '">' +
+             'Did you ' + activity.name + '?<br>' +
+             '<div>' +
+               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
+               'Yes</label> ' +
+               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
+               'No</label>' +
+             '</div>' +
+             '<span ng-show="isComplete === \'Yes\'">' +
+               'Great!' +
+               '<div>How happy did it make you?' +
+               '<select name="reported-activity-happiness">' +
+                 '<option>3 - Really Happy</option>' +
+               '</select></div>' +
+               '<div>How worthwhile do you think it was?' +
+               '<select name="reported-activity-worthwhie">' +
+                 '<option>4 - Very Worthwhile</option>' +
+               '</select></div>' +
+               '</div>' +
+            '</span>';
+    }
 
-          });
+    function activityPlanTemplate() {
+      return '<div style="height:' + docHeight +
+             'px;" class="slide"  data-index="' + slideCount +
+             '" data-position="' + (slideCount + 1) + '">' +
+             'Can you do something before the next 5 days are up??<br>' +
+             'What can you do?' +
+             '<select name="planned-activity-name"><option>Play ping pong!</option></select>' +
+             '</div>';
+    }
 
-          return concatenatedSlides;
-      };
-      
-      $scope.navButtonGenerator = function (slideIndex) {
-          if (slides.length == 1) {
-              $scope.showHome = true;
-              $scope.showBack = false;
-              $scope.showNext = false;
-          } else if (slideIndex == slides.length - 1) {
-              $scope.showHome = true;
-              $scope.showBack = true;
-              $scope.showNext = false;
-          } else if (slideIndex == 0) {
-              $scope.showHome = false;
-              $scope.showBack = false;
-              $scope.showNext = true;
-          } else {
-              $scope.showHome = false;
-              $scope.showBack = true;
-              $scope.showNext = true;
-          }
-      };
+    function buildSlideContent(lesson, slides, plannedActivity) {
+      var activityReport = '',
+          slideIndexOffset = 0,
+          activityPlan = '';
 
+      if (plannedActivity != null) {
+        activityReport = activityReportTemplate(plannedActivity);
+        slideCount = slides.length + 1;
+        slideIndexOffset = 1;
+      }
 
-      $scope.slideNavigator = function (slidemover) {
-          $scope.navButtonGenerator($scope.currentSlideIndex);
+      if (lesson.hasActivityPlanning) {
+        activityPlan = activityPlanTemplate(slideIndexOffset);
+        slideCount = slides.length + 1 + slideIndexOffset;
+      }
 
-          if (typeof (slidemover) !== 'number') {
+      return activityReport + slides.map(function (el, idx) {
+        return '<div style="height:' + docHeight +
+               'px;" class="slide"  data-index="' + (idx + slideIndexOffset) +
+               '" data-position="' + (el.position + slideIndexOffset) + '">' +
+               el.content + '</div>';
+      }).join() + activityPlan;
+    }
+    
+    $scope.navButtonGenerator = function (slideIndex) {
+      if (slideCount == 1) {
+        $scope.showHome = true;
+        $scope.showBack = false;
+        $scope.showNext = false;
+      } else if (slideIndex == slideCount - 1) {
+        $scope.showHome = true;
+        $scope.showBack = true;
+        $scope.showNext = false;
+      } else if (slideIndex == 0) {
+        $scope.showHome = false;
+        $scope.showBack = false;
+        $scope.showNext = true;
+      } else {
+        $scope.showHome = false;
+        $scope.showBack = true;
+        $scope.showNext = true;
+      }
+    };
 
-              switch (slidemover) {
+    $scope.slideNavigator = function (slidemover) {
+      $scope.navButtonGenerator($scope.currentSlideIndex);
 
-              case 'next':
-                  $scope.currentSlideIndex++;
-                  break;
-              case 'back':
-                  $scope.currentSlideIndex--;
-                  break;
-              }
-          } 
-          $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
+      if (typeof (slidemover) !== 'number') {
+        switch (slidemover) {
+          case 'next':
+            $scope.currentSlideIndex++;
+            break;
+          case 'back':
+            $scope.currentSlideIndex--;
+            break;
+        }
+      } 
 
-      };
+      $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
+    };
 
-      $scope.updatePageCounter = function () {
-          $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
-          $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
-          $scope.navButtonGenerator($scope.currentSlideIndex);
-      };
+    $scope.updatePageCounter = function () {
+      $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
+      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
+      $scope.navButtonGenerator($scope.currentSlideIndex);
+    };
 
-      var daysInTreatment = startDateService.getDaysInTreatment();
+    var daysInTreatment = startDateService.getDaysInTreatment();
 
-      $scope.backLabel = l10nStrings.backLabel;
-      $scope.nextLabel = l10nStrings.nextLabel;
-      $scope.showSlides = false;
-      $scope.slideContent = $sce.trustAsHtml(buildSlideContent(slides));
-      $timeout(function() {
-        var selects = $window.document.getElementsByTagName('select');
-        Array.prototype.forEach.call(selects, function(select) {
-          select.selectedIndex = -1;
-        });
-      });
+    $scope.backLabel = l10nStrings.backLabel;
+    $scope.nextLabel = l10nStrings.nextLabel;
+    $scope.showSlides = false;
+
+    Resources.fetchLatestUnreportedActivity().then(function(activities) {
+      var content = buildSlideContent(selectedLesson, slides, activities[0]);
+
+      $scope.slideContent = $sce.trustAsHtml(content);
       $scope.currentSlideIndex = 0;
-      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slides.length;
-
+      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.slideNavigator($scope.currentSlideIndex);
+    });
 
-      $scope.saveForm = function (path) {
-        Resources.save(Resources.NAMES.ContentAccessEvents, {
-          lesson_guid: $routeParams.id,
-          accessed_at: new Date(),
-          day_in_treatment_accessed: daysInTreatment
+    $timeout(function() {
+      var selects = $window.document.getElementsByTagName('select');
+      Array.prototype.forEach.call(selects, function(select) {
+        select.selectedIndex = -1;
+      });
+    });
+
+    $scope.saveForm = function (path) {
+      var plannedActivityName =
+        angular.element('form')
+               .serializeObject()['planned-activity-name'];
+
+      if (plannedActivityName != null) {
+        Resources.save(Resources.NAMES.PlannedActivities, {
+          name: plannedActivityName,
+          planned_at: new Date(),
+          lesson_guid: $routeParams.id
         });
+      }
 
-        // mark lesson as read    
+      Resources.save(Resources.NAMES.ContentAccessEvents, {
+        lesson_guid: $routeParams.id,
+        accessed_at: new Date(),
+        day_in_treatment_accessed: daysInTreatment
+      });
 
-        if (lessonsRead.indexOf(selectedLesson.guid) === -1) {
-          lessonsRead.push(selectedLesson.guid);
-          localStorage.setItem('lessonsRead',JSON.stringify(lessonsRead));
-        }
+      // mark lesson as read    
 
-        $location.path(path);
+      if (lessonsRead.indexOf(selectedLesson.guid) === -1) {
+        lessonsRead.push(selectedLesson.guid);
+        localStorage.setItem('lessonsRead',JSON.stringify(lessonsRead));
+      }
 
-        return false;
-      };
-  })
+      $location.path(path);
+
+      return false;
+    };
+  }
+
+  angular.module('conemoAppApp')
     .directive('scroll', function ($window) {
-        return function(scope, element, attrs) {
-            angular.element($window).bind('scroll', function() {
-                scope.$apply(attrs.scroll);
-            })
-        }
+      return function(scope, element, attrs) {
+        angular.element($window).bind('scroll', function() {
+          scope.$apply(attrs.scroll);
+        });
+        // prevent memory leak by removing global scroll event listener
+        element.on('$destroy', function() {
+          angular.element($window).unbind('scroll');
+        });
+      };
     })
     .directive('moDateInput', function ($window) {
     return {
@@ -143,3 +211,11 @@ angular.module('conemoAppApp')
         }
     };
     });
+
+angular.module('conemoApp.controllers')
+       .controller(
+         'LessonController',
+         ['$scope', '$routeParams', '$sce', '$location', '$timeout', '$window',
+          '$rootScope', 'startDateService', 'Resources', LessonsController]
+       );
+})();

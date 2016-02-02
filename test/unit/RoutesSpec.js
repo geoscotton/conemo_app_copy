@@ -20,7 +20,7 @@ describe('Routes', function() {
   });
 
   it('wires /lesson/:id', function() {
-    expect($route.routes['/lesson/:id'].controller).to.eq('LessonCtrl');
+    expect($route.routes['/lesson/:id'].controller).to.eq('LessonController');
   });
 
   it('wires /toolbox', function() {

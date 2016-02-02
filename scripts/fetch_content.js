@@ -5,12 +5,10 @@ module.exports = function(context) {
       path = require('path'),
       rootDir = context.opts.projectRoot;
 
-  var dataToCopy = [
-    {
-      'https://conemo.northwestern.edu/api/lessons.json':
-        'app/scripts/lessons.json'
-    }
-  ];
+  var lessonsData = {};
+  lessonsData[process.env.SERVER + '/api/lessons.json'] =
+    'app/scripts/lessons.json';
+  var dataToCopy = [lessonsData];
 
   dataToCopy.forEach(function(dataMap) {
     Object.keys(dataMap).forEach(function(srcUrl) {

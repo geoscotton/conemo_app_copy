@@ -15,7 +15,8 @@
     'module': true,
     'moment': true,
     'require': true,
-    'sinon': true
+    'sinon': true,
+    'window': true
   },
   'rules': {
     'quotes': [1, 'single'],

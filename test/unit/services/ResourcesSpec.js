@@ -1,5 +1,7 @@
 'use strict';
 
+var expect = chai.expect;
+
 describe('Resources', function() {
   var Resources;
 
@@ -26,7 +28,8 @@ describe('Resources', function() {
         expect(postMessage.calledWith({
           resource: 'FooType',
           method: 'persist',
-          argument: data
+          argument: data,
+          messageId: sinon.match.any
         })).to.be.true;
       });
     });
@@ -50,9 +53,9 @@ describe('Resources', function() {
         resources.loadWorker(function() {
           this.onmessage = null;
           this.postMessage = function() {
-            setTimeout((function() {
+            window.setTimeout((function() {
               this.onmessage({
-                data: { status: Resources.STATUS.AUTHENTICATED }
+                data: { status: Resources.STATUSES.Authenticated }
               });
             }).bind(this), 0);
           };
@@ -68,9 +71,9 @@ describe('Resources', function() {
         resources.loadWorker(function() {
           this.onmessage = null;
           this.postMessage = function() {
-            setTimeout((function() {
+            window.setTimeout((function() {
               this.onmessage({
-                data: { status: 'baz' }
+                data: { status: 'initialized' }
               });
             }).bind(this), 0);
           };

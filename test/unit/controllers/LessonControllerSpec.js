@@ -3,13 +3,17 @@
 var expect = chai.expect;
 
 describe('LessonController', function() {
+  var latestUnreportedActivity = Promise.resolve([]);
   var Resources = {
     NAMES: {},
-    save: sinon.spy()
+    save: sinon.spy(),
+    fetchLatestUnreportedActivity: function() {
+      return latestUnreportedActivity;
+    }
   };
 
   function injectController($controller, $rootScope) {
-    $controller('LessonCtrl', {
+    $controller('LessonController', {
                   $scope: scope,
                   $rootScope: $rootScope,
                   $routeParams: { id: guid },
@@ -19,14 +23,21 @@ describe('LessonController', function() {
 
   function lessonPages(options) {
     function injectFn($controller, $rootScope) {
-      $rootScope.lessons = [{ guid: guid, slides: slides }];
+      $rootScope.lessons = [
+        {
+          guid: guid,
+          slides: slides,
+          hasActivityPlanning: options.hasActivityPlanning || false
+        },
+        { guid: 'baz', slides: [] }
+      ];
       injectController($controller, $rootScope);
     }
 
     var slides = [];
 
     for (var i = 0; i < options.count; i++) {
-      slides.push({ position: i });
+      slides.push({ position: i, content: 'slide body ' + i });
     }
 
     return injectFn;
@@ -52,10 +63,47 @@ describe('LessonController', function() {
 
       expect(scope.backLabel).to.eq('Anterior');
     });
+
+    it('prepares the slide content', function(done) {
+      inject(lessonPages({ count: 1 }));
+
+      inject(function($sce) {
+        latestUnreportedActivity.then(function() {
+          expect($sce.getTrustedHtml(scope.slideContent))
+            .to.match(/slide body 0/);
+          done();
+        });
+      });
+    });
+
+    it('adds a planned activity question if required', function(done) {
+      inject(lessonPages({ count: 1, hasActivityPlanning: true }));
+
+      inject(function($sce) {
+        latestUnreportedActivity.then(function() {
+          expect($sce.getTrustedHtml(scope.slideContent))
+            .to.match(/Can you do something/);
+          done();
+        });
+      });
+    });
+
+    it('adds an activity report question if required', function(done) {
+      latestUnreportedActivity = Promise.resolve([{ name: 'play ping pong' }]);
+      inject(lessonPages({ count: 1 }));
+
+      inject(function($sce) {
+        latestUnreportedActivity.then(function() {
+          expect($sce.getTrustedHtml(scope.slideContent))
+            .to.match(/Did you play ping pong?/);
+          done();
+        });
+      });
+    });
   });
 
   describe('#slideNavigator', function() {
-    context('when there is 1 slide', function() {
+    describe('when there is 1 slide', function() {
       it('sets showHome', function() {
         inject(lessonPages({ count: 1 }));
 
@@ -65,7 +113,7 @@ describe('LessonController', function() {
       });
     });
 
-    context('when on the last slide of > 1', function() {
+    describe('when on the last slide of > 1', function() {
       it('sets showHome and showBack', function() {
         inject(lessonPages({ count: 2 }));
         scope.currentSlideIndex = 1;
@@ -77,7 +125,7 @@ describe('LessonController', function() {
       });
     });
 
-    context('when on the first slide of > 1', function() {
+    describe('when on the first slide of > 1', function() {
       it('sets showNext', function() {
         inject(lessonPages({ count: 2 }));
         scope.currentSlideIndex = 0;
@@ -88,7 +136,7 @@ describe('LessonController', function() {
       });
     });
 
-    context('when on an inner slide', function() {
+    describe('when on an inner slide', function() {
       it('sets showBack and showNext', function() {
         inject(lessonPages({ count: 3 }));
         scope.currentSlideIndex = 1;
@@ -100,7 +148,7 @@ describe('LessonController', function() {
       });
     });
 
-    context('when passed "next"', function() {
+    describe('when passed "next"', function() {
       it('increments the slide index', function() {
         inject(lessonPages({ count: 0 }));
         scope.currentSlideIndex = 1;
@@ -111,7 +159,7 @@ describe('LessonController', function() {
       });
     });
 
-    context('when passed "back"', function() {
+    describe('when passed "back"', function() {
       it('decrements the slide index', function() {
         inject(lessonPages({ count: 0 }));
         scope.currentSlideIndex = 1;
