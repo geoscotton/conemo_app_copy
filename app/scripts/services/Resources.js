@@ -1,10 +1,37 @@
 (function(context) {
   'use strict';
 
+  function createMessage(worker, options) {
+    if (worker == null) {
+      throw new Error('Expected reference to a Worker was null');
+    }
+
+    var message = {
+      onResolve: null,
+      onReject: null,
+      messageId: Math.floor(Math.random() * 1000000000)
+    };
+    message.promise = new Promise(function(resolve, reject) {
+      message.onResolve = resolve;
+      message.onReject = reject;
+    });
+    Messages[message.messageId] = message;
+    options.messageId = message.messageId;
+    worker.postMessage(options);
+
+    return message.promise;
+  }
+
   var WORKER_SCRIPT = 'scripts/CacheWorker.js';
 
+  var Messages = {};
+
   var Resources = {
-    STATUS: { AUTHENTICATED: 'authenticated' },
+    STATUSES: {
+      Initialized: 'initialized',
+      Authenticated: 'authenticated',
+      MessageResolved: 'message_resolved'
+    },
 
     NAMES: {
       AuthenticationTokens: 'AuthenticationTokens',
@@ -13,18 +40,22 @@
       HelpMessages: 'HelpMessages',
       Logins: 'Logins',
       ParticipantStartDates: 'ParticipantStartDates',
+      PlannedActivities: 'PlannedActivities',
       SessionEvents: 'SessionEvents'
     },
 
     save: function save(resourceType, data) {
-      if (this.worker == null) {
-        throw new Error('Expected reference to a Worker was null');
-      }
-
-      this.worker.postMessage({
+      return createMessage(this.worker, {
         resource: resourceType,
         method: 'persist',
         argument: data
+      });
+    },
+
+    fetchLatestUnreportedActivity: function fetchLatestUnreportedActivity() {
+      return createMessage(this.worker, {
+        resource: this.NAMES.PlannedActivities,
+        method: 'fetchLatestUnreported'
       });
     },
 
@@ -42,13 +73,17 @@
     },
 
     onWorkerMessage: function onWorkerMessage(event) {
-      if (event.data.status === this.STATUS.AUTHENTICATED) {
+      if (event.data.status === this.STATUSES.Authenticated) {
         this.authenticated();
-      } else {
+      } else if (event.data.status === this.STATUSES.Initialized) {
         this.notAuthenticated();
         this.authentication = null;
         this.authenticated = null;
         this.notAuthenticated = null;
+      } else if (event.data.status === this.STATUSES.MessageResolved) {
+        var message = Messages[event.data.messageId];
+        message.onResolve(event.data.result);
+        delete Messages[event.data.messageId];
       }
     },
 

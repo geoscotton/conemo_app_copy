@@ -1,6 +1,8 @@
 (function(context) {
   'use strict';
 
+  var STATUSES = { MessageResolved: 'message_resolved' };
+
   context.importScripts('../vendor/lovefield.min.js');
   context.importScripts('../vendor/cache_and_sync_love.min.js');
   context.importScripts('Globals.js');
@@ -17,7 +19,17 @@
       methodCalled = Resource[event.data.method].bind(Resource);
     }
 
-    methodCalled(event.data.argument);
+    Promise.resolve(methodCalled(event.data.argument)).then(function(result) {
+      if (event.data.messageId == null) {
+        return;
+      }
+
+      context.postMessage({
+        status: STATUSES.MessageResolved,
+        result: result,
+        messageId: event.data.messageId
+      });
+    });
   };
 
   context.Cache.addTables();

@@ -15,24 +15,61 @@
 
     var slideCount = slides.length;
 
-    function buildSlideContent(lesson, slides) {
-      var activityPlan = '';
+    function activityReportTemplate(activity) {
+      return '<div style="height:' + docHeight +
+             'px;" class="slide"  data-index="' + 0 +
+             '" data-position="' + 1 + '">' +
+             'Did you ' + activity.name + '?<br>' +
+             '<div>' +
+               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
+               'Yes</label> ' +
+               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
+               'No</label>' +
+             '</div>' +
+             '<span ng-show="isComplete === \'Yes\'">' +
+               'Great!' +
+               '<div>How happy did it make you?' +
+               '<select name="reported-activity-happiness">' +
+                 '<option>3 - Really Happy</option>' +
+               '</select></div>' +
+               '<div>How worthwhile do you think it was?' +
+               '<select name="reported-activity-worthwhie">' +
+                 '<option>4 - Very Worthwhile</option>' +
+               '</select></div>' +
+               '</div>' +
+            '</span>';
+    }
 
-      if (lesson.hasActivityPlanning) {
-        activityPlan = '<div style="height:' + docHeight +
-               'px;" class="slide"  data-index="' + slides.length +
-               '" data-position="' + (slides.length + 1) + '">' +
-               'Can you do something before the next 5 days are up??<br>' +
-               'What can you do?' +
-               '<select><option>Play ping pong!</option></select>' +
-               '</div>';
+    function activityPlanTemplate() {
+      return '<div style="height:' + docHeight +
+             'px;" class="slide"  data-index="' + slideCount +
+             '" data-position="' + (slideCount + 1) + '">' +
+             'Can you do something before the next 5 days are up??<br>' +
+             'What can you do?' +
+             '<select name="planned-activity-name"><option>Play ping pong!</option></select>' +
+             '</div>';
+    }
+
+    function buildSlideContent(lesson, slides, plannedActivity) {
+      var activityReport = '',
+          slideIndexOffset = 0,
+          activityPlan = '';
+
+      if (plannedActivity != null) {
+        activityReport = activityReportTemplate(plannedActivity);
         slideCount = slides.length + 1;
+        slideIndexOffset = 1;
       }
 
-      return slides.map(function (el, idx) {
+      if (lesson.hasActivityPlanning) {
+        activityPlan = activityPlanTemplate(slideIndexOffset);
+        slideCount = slides.length + 1 + slideIndexOffset;
+      }
+
+      return activityReport + slides.map(function (el, idx) {
         return '<div style="height:' + docHeight +
-               'px;" class="slide"  data-index="' + idx +
-               '" data-position="' + el.position + '">' +
+               'px;" class="slide"  data-index="' + (idx + slideIndexOffset) +
+               '" data-position="' + (el.position + slideIndexOffset) + '">' +
                el.content + '</div>';
       }).join() + activityPlan;
     }
@@ -85,19 +122,36 @@
     $scope.backLabel = l10nStrings.backLabel;
     $scope.nextLabel = l10nStrings.nextLabel;
     $scope.showSlides = false;
-    $scope.slideContent = $sce.trustAsHtml(buildSlideContent(selectedLesson, slides));
+
+    Resources.fetchLatestUnreportedActivity().then(function(activities) {
+      var content = buildSlideContent(selectedLesson, slides, activities[0]);
+
+      $scope.slideContent = $sce.trustAsHtml(content);
+      $scope.currentSlideIndex = 0;
+      $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
+      $scope.slideNavigator($scope.currentSlideIndex);
+    });
+
     $timeout(function() {
       var selects = $window.document.getElementsByTagName('select');
       Array.prototype.forEach.call(selects, function(select) {
         select.selectedIndex = -1;
       });
     });
-    $scope.currentSlideIndex = 0;
-    $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
-
-    $scope.slideNavigator($scope.currentSlideIndex);
 
     $scope.saveForm = function (path) {
+      var plannedActivityName =
+        angular.element('form')
+               .serializeObject()['planned-activity-name'];
+
+      if (plannedActivityName != null) {
+        Resources.save(Resources.NAMES.PlannedActivities, {
+          name: plannedActivityName,
+          planned_at: new Date(),
+          lesson_guid: $routeParams.id
+        });
+      }
+
       Resources.save(Resources.NAMES.ContentAccessEvents, {
         lesson_guid: $routeParams.id,
         accessed_at: new Date(),
