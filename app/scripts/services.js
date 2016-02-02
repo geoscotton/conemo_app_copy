@@ -15,10 +15,17 @@ angular.module('conemoAppApp')
         localStorage.startDate = startDate;
       }
     };
-    this.getDateDiff = function (dateEarlier, dateLater) {
-        var oneDay=1000*60*60*24
-        return (Math.round((dateLater.getTime()-dateEarlier.getTime())/oneDay));
+
+    this.getStartDate = function getStartDate() {
+      return localStorage.startDate && new Date(localStorage.startDate);
     };
+
+    this.getDateDiff = function (dateEarlier, dateLater) {
+      var oneDayInMs = 1000 * 60 * 60 * 24;
+
+      return (Math.round((dateLater.getTime()-dateEarlier.getTime())/oneDayInMs));
+    };
+
     this.getDaysInTreatment = function() {
          //Get current time zeroed date for comparison with start
           var dateToday = new Date();

@@ -11,6 +11,7 @@ describe('MainController', function() {
   beforeEach(module(function($provide) {
     startDateService = {
       setStartDate: function() {},
+      getStartDate: function() {},
       getDaysInTreatment: function() {}
     };
     sinon.spy(startDateService, 'setStartDate');
