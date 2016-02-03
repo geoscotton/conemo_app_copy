@@ -6,7 +6,7 @@ module.exports = function(context) {
       rootDir = context.opts.projectRoot;
 
   var lessonsData = {};
-  lessonsData[process.env.SERVER + '/api/lessons.json'] =
+  lessonsData[process.env.LESSON_SERVER + '/api/lessons.json'] =
     'app/scripts/lessons.json';
   var dataToCopy = [lessonsData];
 

@@ -13,10 +13,11 @@ module.exports = function(context) {
     fs.writeFileSync(filename, result, 'utf8');
   }
 
-  if (process.env.SERVER) {
+  if (process.env.API_SERVER) {
     fs.copySync('config.xml', 'config.xml.bak');
     filenames.forEach(function(filename) {
-      replaceStringInFile(filename, 'SERVER_URL_TO_REPLACE', process.env.SERVER);
+      replaceStringInFile(filename, 'SERVER_URL_TO_REPLACE',
+                          process.env.API_SERVER);
     });
   }
 };

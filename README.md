@@ -26,7 +26,8 @@ Install the application dependencies
 ## Building Conemo Phone App
 
 ```
-LOCALE=es-PE SERVER=http://localhost:3000 npm run build
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://lessons.example.com npm run build
 ```
 
 If first time running Cordova,
@@ -37,27 +38,31 @@ If first time running Cordova,
 Subsequent installs only require
 
 ```
-LOCALE=es-PE SERVER=http://localhost:3000 npm run install:android
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://lessons.example.com npm run install:android
 ```
 
 ## Running in the browser
 
-If first time...
+The first time
 
 ```
-LOCALE=es-PE SERVER=http://localhost:3000 node_modules/.bin/cordova platform add browser
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://lessons.example.com node_modules/.bin/cordova platform add browser
 ```
 
-Then build,
+Then build
 
 ```
-LOCALE=es-PE SERVER=http://localhost:3000 node_modules/.bin/cordova build browser
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://lessons.example.com node_modules/.bin/cordova build browser
 ```
 
 And finally install (which is all you will need to run on subsequent installs)
 
 ```
-LOCALE=es-PE SERVER=http://localhost:3000 npm run install:browser
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://lessons.example.com npm run install:browser
 ```
 
 While running the app in the browser you may want to clear the database. To do
@@ -78,7 +83,8 @@ set up a participant, build the app with the mock node server,
 `SERVER=http://127.0.01:1337`, as the endpoint. For example:
 
 ```
-LOCALE=es-PE SERVER=http://127.0.0.1:1337 npm run install:android
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://lessons.example.com npm run install:android
 ```
 
 You will also need to run the mock server.
