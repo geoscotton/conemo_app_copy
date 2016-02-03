@@ -19,25 +19,28 @@
       return '<div style="height:' + docHeight +
              'px;" class="slide"  data-index="' + 0 +
              '" data-position="' + 1 + '">' +
-             'Did you ' + activity.name + '?<br>' +
-             '<div>' +
-               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
-               'Yes</label> ' +
-               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
-               'No</label>' +
-             '</div>' +
-             '<span ng-show="isComplete === \'Yes\'">' +
-               'Great!' +
-               '<div>How happy did it make you?' +
-               '<select name="reported-activity-happiness">' +
-                 '<option>3 - Really Happy</option>' +
-               '</select></div>' +
-               '<div>How worthwhile do you think it was?' +
-               '<select name="reported-activity-worthwhie">' +
-                 '<option>4 - Very Worthwhile</option>' +
-               '</select></div>' +
+               'Did you ' + activity.name + '?<br>' +
+               '<div>' +
+                 '<label>' +
+                   '<input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
+                 'Yes</label> ' +
+                 '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
+                 'No</label>' +
                '</div>' +
-            '</span>';
+               '<span ng-show="isComplete === \'Yes\'">' +
+                 'Great!' +
+                 '<div>How happy did it make you?' +
+                   '<select name="reported-activity-happiness">' +
+                     '<option>3 - Really Happy</option>' +
+                   '</select>' +
+                 '</div>' +
+                 '<div>How worthwhile do you think it was?' +
+                   '<select name="reported-activity-worthwhie">' +
+                     '<option>4 - Very Worthwhile</option>' +
+                   '</select>' +
+                 '</div>' +
+               '</span>' +
+             '</div>';
     }
 
     function activityPlanTemplate() {
@@ -71,7 +74,7 @@
                'px;" class="slide"  data-index="' + (idx + slideIndexOffset) +
                '" data-position="' + (el.position + slideIndexOffset) + '">' +
                el.content + '</div>';
-      }).join() + activityPlan;
+      }).join('') + activityPlan;
     }
     
     $scope.navButtonGenerator = function (slideIndex) {
