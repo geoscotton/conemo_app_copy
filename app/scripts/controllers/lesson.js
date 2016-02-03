@@ -3,7 +3,7 @@
 
   function LessonsController($scope, $routeParams, $sce, $location, $timeout,
                              $window, $rootScope, startDateService, Resources) {
-    var docHeight = $($window).height();
+    var docHeight = angular.element($window).height();
 
     var selectedLesson = $rootScope.lessons.find(function(lesson) {
       return lesson.guid === $routeParams.id;
@@ -108,19 +108,20 @@
         }
       } 
 
-      $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
+      angular.element('html, body')
+             .animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
     };
 
     $scope.updatePageCounter = function () {
-      $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
+      $scope.currentSlideIndex = Math.round($window.scrollY / docHeight);
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.navButtonGenerator($scope.currentSlideIndex);
     };
 
     var daysInTreatment = startDateService.getDaysInTreatment();
 
-    $scope.backLabel = l10nStrings.backLabel;
-    $scope.nextLabel = l10nStrings.nextLabel;
+    $scope.backLabel = $window.l10nStrings.backLabel;
+    $scope.nextLabel = $window.l10nStrings.nextLabel;
     $scope.showSlides = false;
 
     Resources.fetchLatestUnreportedActivity().then(function(activities) {
@@ -160,9 +161,9 @@
 
       // mark lesson as read    
 
-      if (lessonsRead.indexOf(selectedLesson.guid) === -1) {
-        lessonsRead.push(selectedLesson.guid);
-        localStorage.setItem('lessonsRead',JSON.stringify(lessonsRead));
+      if ($window.lessonsRead.indexOf(selectedLesson.guid) === -1) {
+        $window.lessonsRead.push(selectedLesson.guid);
+        $window.localStorage.setItem('lessonsRead', JSON.stringify($window.lessonsRead));
       }
 
       $location.path(path);
