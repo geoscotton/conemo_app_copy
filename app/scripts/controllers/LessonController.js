@@ -3,7 +3,7 @@
 
   function LessonsController($scope, $routeParams, $sce, $location, $timeout,
                              $window, $rootScope, startDateService, Resources) {
-    var docHeight = $($window).height();
+    var docHeight = angular.element($window).height();
 
     var selectedLesson = $rootScope.lessons.find(function(lesson) {
       return lesson.guid === $routeParams.id;
@@ -19,25 +19,28 @@
       return '<div style="height:' + docHeight +
              'px;" class="slide"  data-index="' + 0 +
              '" data-position="' + 1 + '">' +
-             'Did you ' + activity.name + '?<br>' +
-             '<div>' +
-               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
-               'Yes</label> ' +
-               '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
-               'No</label>' +
-             '</div>' +
-             '<span ng-show="isComplete === \'Yes\'">' +
-               'Great!' +
-               '<div>How happy did it make you?' +
-               '<select name="reported-activity-happiness">' +
-                 '<option>3 - Really Happy</option>' +
-               '</select></div>' +
-               '<div>How worthwhile do you think it was?' +
-               '<select name="reported-activity-worthwhie">' +
-                 '<option>4 - Very Worthwhile</option>' +
-               '</select></div>' +
+               'Did you ' + activity.name + '?<br>' +
+               '<div>' +
+                 '<label>' +
+                   '<input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
+                 'Yes</label> ' +
+                 '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
+                 'No</label>' +
                '</div>' +
-            '</span>';
+               '<span ng-show="isComplete === \'Yes\'">' +
+                 'Great!' +
+                 '<div>How happy did it make you?' +
+                   '<select name="reported-activity-happiness">' +
+                     '<option>3 - Really Happy</option>' +
+                   '</select>' +
+                 '</div>' +
+                 '<div>How worthwhile do you think it was?' +
+                   '<select name="reported-activity-worthwhie">' +
+                     '<option>4 - Very Worthwhile</option>' +
+                   '</select>' +
+                 '</div>' +
+               '</span>' +
+             '</div>';
     }
 
     function activityPlanTemplate() {
@@ -71,7 +74,7 @@
                'px;" class="slide"  data-index="' + (idx + slideIndexOffset) +
                '" data-position="' + (el.position + slideIndexOffset) + '">' +
                el.content + '</div>';
-      }).join() + activityPlan;
+      }).join('') + activityPlan;
     }
     
     $scope.navButtonGenerator = function (slideIndex) {
@@ -108,19 +111,20 @@
         }
       } 
 
-      $('html, body').animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
+      angular.element('html, body')
+             .animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
     };
 
     $scope.updatePageCounter = function () {
-      $scope.currentSlideIndex = Math.round(pageYOffset/docHeight);
+      $scope.currentSlideIndex = Math.round($window.scrollY / docHeight);
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.navButtonGenerator($scope.currentSlideIndex);
     };
 
     var daysInTreatment = startDateService.getDaysInTreatment();
 
-    $scope.backLabel = l10nStrings.backLabel;
-    $scope.nextLabel = l10nStrings.nextLabel;
+    $scope.backLabel = $window.l10nStrings.backLabel;
+    $scope.nextLabel = $window.l10nStrings.nextLabel;
     $scope.showSlides = false;
 
     Resources.fetchLatestUnreportedActivity().then(function(activities) {
@@ -130,12 +134,12 @@
       $scope.currentSlideIndex = 0;
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.slideNavigator($scope.currentSlideIndex);
-    });
 
-    $timeout(function() {
-      var selects = $window.document.getElementsByTagName('select');
-      Array.prototype.forEach.call(selects, function(select) {
-        select.selectedIndex = -1;
+      $timeout(function() {
+        var selects = $window.document.getElementsByTagName('select');
+        Array.prototype.forEach.call(selects, function(select) {
+          select.selectedIndex = -1;
+        });
       });
     });
 
@@ -160,9 +164,9 @@
 
       // mark lesson as read    
 
-      if (lessonsRead.indexOf(selectedLesson.guid) === -1) {
-        lessonsRead.push(selectedLesson.guid);
-        localStorage.setItem('lessonsRead',JSON.stringify(lessonsRead));
+      if ($window.lessonsRead.indexOf(selectedLesson.guid) === -1) {
+        $window.lessonsRead.push(selectedLesson.guid);
+        $window.localStorage.setItem('lessonsRead', JSON.stringify($window.lessonsRead));
       }
 
       $location.path(path);
