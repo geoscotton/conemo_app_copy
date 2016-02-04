@@ -29,15 +29,35 @@
                '</div>' +
                '<span ng-show="isComplete === \'Yes\'">' +
                  'Great!' +
-                 '<div>How happy did it make you?' +
+                 '<div>How much did you like doing the activity?' +
                    '<select name="reported-activity-happiness">' +
-                     '<option>3 - Really Happy</option>' +
+                     '<option>1 - A lot</option>' +
+                     '<option>2 - A lot</option>' +
+                     '<option>3 - A lot</option>' +
+                     '<option>4 - A lot</option>' +
+                     '<option>5 - A lot</option>' +
                    '</select>' +
                  '</div>' +
-                 '<div>How worthwhile do you think it was?' +
+                 '<div>How satisfied did you feel afterwards?' +
                    '<select name="reported-activity-worthwhie">' +
-                     '<option>4 - Very Worthwhile</option>' +
+                     '<option>1 - Very Satisfied</option>' +
+                     '<option>2 - Very Satisfied</option>' +
+                     '<option>3 - Very Satisfied</option>' +
+                     '<option>4 - Very Satisfied</option>' +
+                     '<option>5 - Very Satisfied</option>' +
                    '</select>' +
+                 '</div>' +
+               '</span>' +
+               '<span ng-show="isComplete === \'No\'">' +
+                 'That\'s unfortunate, it can really help to do the things you ' +
+                 'schedule.' +
+                 '<div>Do you want help figuring out how to do this in the future?</div>' +
+                 '<div>' +
+                   '<label>' +
+                     '<input type="radio" value="Yes"> ' +
+                   'Yes</label> ' +
+                   '<label><input type="radio" value="No"> ' +
+                   'No</label>' +
                  '</div>' +
                '</span>' +
              '</div>';
