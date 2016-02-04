@@ -108,7 +108,7 @@ var lessonsRead = [];
           }
         });
       })
-      .run(function($window, Resources) {
+      .run(function($window, $route, Resources) {
         function onDeviceReady() {
           var networkState = navigator.connection.type;
 
@@ -135,13 +135,13 @@ var lessonsRead = [];
         function onResume() {
           Resources.save(Resources.NAMES.Logins, { logged_in_at: new Date() });
 
-          if (localStorage['onResume'] == undefined){
-            $window.location.href = '';
-          } else {
-            var pageToGoto = localStorage['onResume'];
-            localStorage['onResume'] = '';
+          if ($window.localStorage.onResume != null) {
+            var pageToGoto = $window.localStorage.onResume;
+            $window.localStorage.onResume = '';
             $window.location.href = pageToGoto;
           }
+
+          $route.reload();
         }
 
         document.addEventListener('deviceready', onDeviceReady, false);
