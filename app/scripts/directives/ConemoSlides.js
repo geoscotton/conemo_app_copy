@@ -1,28 +1,47 @@
 (function() {
   'use strict';
 
-  function ConemoSlides($compile, VideoControl) {
-    function link(scope, element) {
-      scope.$watch('slideContent', function(content) {
-        if (!content) {
-          return;
-        }
+  function buildSlideContent(scope, plannedActivity) {
+    scope.slideCount = scope.slides.length;
+    scope.plannedActivity = plannedActivity;
+    scope.slideIndexOffset = 0;
 
-        var slidesElement = $compile(content.toString())(scope);
-        element.html(slidesElement);
+    if (plannedActivity != null) {
+      scope.slideCount = scope.slides.length + 1;
+      scope.slideIndexOffset = 1;
+    }
+
+    if (scope.selectedLesson.hasActivityPlanning) {
+      scope.slideCount = scope.slides.length + 1 + scope.slideIndexOffset;
+    }
+
+    scope.isReady = true;
+    scope.$digest();
+  }
+
+  function ConemoSlides($window, $compile, $sce, VideoControl, Resources) {
+    function link(scope, element) {
+      scope.unsafe = function(input) { return $sce.trustAsHtml(input); };
+      scope.docHeight = angular.element($window).height();
+
+      Resources.fetchLatestUnreportedActivity().then(function(activities) {
+        buildSlideContent(scope, activities[0]);
         VideoControl.addTo(element);
       });
     }
 
     return {
+      templateUrl: 'views/conemo-slides.html',
       scope: {
-        slideContent: '='
+        slides: '=',
+        selectedLesson: '='
       },
       link: link
     };
   }
 
-  angular.module('conemoAppApp')
+  angular.module('conemoApp.directives')
          .directive('conemoSlides',
-                    ['$compile', 'VideoControl', ConemoSlides]);
+                    ['$window', '$compile', '$sce', 'VideoControl', 'Resources',
+                     ConemoSlides]);
 })();

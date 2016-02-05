@@ -14,7 +14,7 @@
             * Enable inline JS: add 'unsafe-inline' to default-src
             * Enable eval(): add 'unsafe-eval' to default-src
     -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com SERVER_URL_TO_REPLACE; style-src 'self' 'unsafe-inline'; media-src *">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval' data: gap: https://ssl.gstatic.com SERVER_URL_TO_REPLACE; style-src 'self' 'unsafe-inline' 'unsafe-eval'; img-src 'self' data: android-webview-video-poster:">
 
     <link rel="stylesheet" href="vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/main.css">
