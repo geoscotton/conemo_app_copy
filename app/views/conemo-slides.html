@@ -1,0 +1,89 @@
+<div ng-if="isReady && plannedActivity"
+     style="height: {{ docHeight }}px;"
+     class="slide"
+     data-index="0"
+     data-position="1">
+  <input type="hidden" name="reported-activity-uuid" ng-value="plannedActivity.uuid" />
+  <input type="hidden" name="reported-activity-name" ng-value="plannedActivity.name" />
+  <input type="hidden" name="reported-activity-planned-at" ng-value="plannedActivity.planned_at" />
+  <input type="hidden" name="reported-activity-lesson-guid" ng-value="plannedActivity.lesson_guid" />
+
+  Did you {{ plannedActivity.name }}?
+
+  <div>
+    <label>
+      <input name="reported-activity-is-complete" ng-model="isComplete" type="radio" value="Yes">
+      Yes
+    </label>
+
+    <label>
+      <input name="reported-activity-is-complete" ng-model="isComplete" type="radio" value="No">
+      No
+    </label>
+  </div>
+
+  <span ng-if="isComplete === 'Yes'">
+    Great!
+
+    <div>
+      How much did you like doing the activity?
+      <select name="reported-activity-happiness">
+        <option>1 - A lot</option>
+        <option>2 - A lot</option>
+        <option>3 - A lot</option>
+        <option>4 - A lot</option>
+        <option>5 - A lot</option>
+      </select>
+    </div>
+
+    <div>
+      How satisfied did you feel afterwards?
+      <select name="reported-activity-worthwhile">
+        <option>1 - Very Satisfied</option>
+        <option>2 - Very Satisfied</option>
+        <option>3 - Very Satisfied</option>
+        <option>4 - Very Satisfied</option>
+        <option>5 - Very Satisfied</option>
+      </select>
+    </div>
+  </span>
+
+  <span ng-if="isComplete === 'No'">
+     That's unfortunate, it can really help to do the things you schedule.
+
+    <div>Do you want help figuring out how to do this in the future?</div>
+
+    <div>
+      <label>
+        <input name="reported-activity-help-wanted" type="radio" value="Yes"> 
+        Yes
+      </label> 
+
+      <label>
+        <input name="reported-activity-help-wanted" type="radio" value="No"> 
+        No
+      </label>
+    </div>
+  </span>
+</div>
+
+<div ng-if="isReady"
+     ng-repeat="slide in slides"
+     style="height: {{ docHeight }}px;"
+     class="slide"
+     data-index="{{ $index + slideIndexOffset }}"
+     data-position="{{ $index + 1 + slideIndexOffset }}"
+     ng-bind-html="unsafe(slide.content)">
+</div>
+
+<div ng-if="isReady && selectedLesson.hasActivityPlanning"
+     style="height: {{ docHeight }}px;"
+     class="slide"
+     data-index="{{ slideCount }}"
+     data-position="{{ slideCount + 1 }}">
+  Can you do something before the next 5 days are up??<br>
+  What can you do?
+  <select name="planned-activity-name">
+    <option>Play ping pong!</option>
+  </select>
+</div>

@@ -63,43 +63,6 @@ describe('LessonController', function() {
 
       expect(scope.backLabel).to.eq('Anterior');
     });
-
-    it('prepares the slide content', function(done) {
-      inject(lessonPages({ count: 1 }));
-
-      inject(function($sce) {
-        latestUnreportedActivity.then(function() {
-          expect($sce.getTrustedHtml(scope.slideContent))
-            .to.match(/slide body 0/);
-          done();
-        });
-      });
-    });
-
-    it('adds a planned activity question if required', function(done) {
-      inject(lessonPages({ count: 1, hasActivityPlanning: true }));
-
-      inject(function($sce) {
-        latestUnreportedActivity.then(function() {
-          expect($sce.getTrustedHtml(scope.slideContent))
-            .to.match(/Can you do something/);
-          done();
-        });
-      });
-    });
-
-    it('adds an activity report question if required', function(done) {
-      latestUnreportedActivity = Promise.resolve([{ name: 'play ping pong' }]);
-      inject(lessonPages({ count: 1 }));
-
-      inject(function($sce) {
-        latestUnreportedActivity.then(function() {
-          expect($sce.getTrustedHtml(scope.slideContent))
-            .to.match(/Did you play ping pong?/);
-          done();
-        });
-      });
-    });
   });
 
   describe('#slideNavigator', function() {

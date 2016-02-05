@@ -1,100 +1,31 @@
 (function() {
   'use strict';
 
-  function LessonsController($scope, $routeParams, $sce, $location, $timeout,
+  function LessonsController($scope, $routeParams, $location, $timeout,
                              $window, $rootScope, startDateService, Resources) {
     var docHeight = angular.element($window).height();
 
-    var selectedLesson = $rootScope.lessons.find(function(lesson) {
+    $scope.selectedLesson = $rootScope.lessons.find(function(lesson) {
       return lesson.guid === $routeParams.id;
     });
 
-    var slides = selectedLesson.slides.sort(function(a, b) {
+    $scope.slides = $scope.selectedLesson.slides.sort(function(a, b) {
       return a.position - b.position;
     });
 
-    var slideCount = slides.length;
-
-    function activityReportTemplate(activity) {
-      return '<div style="height:' + docHeight +
-             'px;" class="slide"  data-index="' + 0 +
-             '" data-position="' + 1 + '">' +
-               'Did you ' + activity.name + '?<br>' +
-               '<div>' +
-                 '<label>' +
-                   '<input name="isComplete" ng-model="isComplete" type="radio" value="Yes"> ' +
-                 'Yes</label> ' +
-                 '<label><input name="isComplete" ng-model="isComplete" type="radio" value="No"> ' +
-                 'No</label>' +
-               '</div>' +
-               '<span ng-show="isComplete === \'Yes\'">' +
-                 'Great!' +
-                 '<div>How much did you like doing the activity?' +
-                   '<select name="reported-activity-happiness">' +
-                     '<option>1 - A lot</option>' +
-                     '<option>2 - A lot</option>' +
-                     '<option>3 - A lot</option>' +
-                     '<option>4 - A lot</option>' +
-                     '<option>5 - A lot</option>' +
-                   '</select>' +
-                 '</div>' +
-                 '<div>How satisfied did you feel afterwards?' +
-                   '<select name="reported-activity-worthwhie">' +
-                     '<option>1 - Very Satisfied</option>' +
-                     '<option>2 - Very Satisfied</option>' +
-                     '<option>3 - Very Satisfied</option>' +
-                     '<option>4 - Very Satisfied</option>' +
-                     '<option>5 - Very Satisfied</option>' +
-                   '</select>' +
-                 '</div>' +
-               '</span>' +
-               '<span ng-show="isComplete === \'No\'">' +
-                 'That\'s unfortunate, it can really help to do the things you ' +
-                 'schedule.' +
-                 '<div>Do you want help figuring out how to do this in the future?</div>' +
-                 '<div>' +
-                   '<label>' +
-                     '<input type="radio" value="Yes"> ' +
-                   'Yes</label> ' +
-                   '<label><input type="radio" value="No"> ' +
-                   'No</label>' +
-                 '</div>' +
-               '</span>' +
-             '</div>';
-    }
-
-    function activityPlanTemplate() {
-      return '<div style="height:' + docHeight +
-             'px;" class="slide"  data-index="' + slideCount +
-             '" data-position="' + (slideCount + 1) + '">' +
-             'Can you do something before the next 5 days are up??<br>' +
-             'What can you do?' +
-             '<select name="planned-activity-name"><option>Play ping pong!</option></select>' +
-             '</div>';
-    }
+    var slideCount = $scope.slides.length;
 
     function buildSlideContent(lesson, slides, plannedActivity) {
-      var activityReport = '',
-          slideIndexOffset = 0,
-          activityPlan = '';
+      var slideIndexOffset = 0;
 
       if (plannedActivity != null) {
-        activityReport = activityReportTemplate(plannedActivity);
-        slideCount = slides.length + 1;
+        slideCount = $scope.slides.length + 1;
         slideIndexOffset = 1;
       }
 
       if (lesson.hasActivityPlanning) {
-        activityPlan = activityPlanTemplate(slideIndexOffset);
-        slideCount = slides.length + 1 + slideIndexOffset;
+        slideCount = $scope.slides.length + 1 + slideIndexOffset;
       }
-
-      return activityReport + slides.map(function (el, idx) {
-        return '<div style="height:' + docHeight +
-               'px;" class="slide"  data-index="' + (idx + slideIndexOffset) +
-               '" data-position="' + (el.position + slideIndexOffset) + '">' +
-               el.content + '</div>';
-      }).join('') + activityPlan;
     }
     
     $scope.navButtonGenerator = function (slideIndex) {
@@ -148,9 +79,8 @@
     $scope.showSlides = false;
 
     Resources.fetchLatestUnreportedActivity().then(function(activities) {
-      var content = buildSlideContent(selectedLesson, slides, activities[0]);
+      buildSlideContent($scope.selectedLesson, slides, activities[0]);
 
-      $scope.slideContent = $sce.trustAsHtml(content);
       $scope.currentSlideIndex = 0;
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.slideNavigator($scope.currentSlideIndex);
@@ -164,15 +94,32 @@
     });
 
     $scope.saveForm = function (path) {
-      var plannedActivityName =
-        angular.element('form')
-               .serializeObject()['planned-activity-name'];
+      var formData = angular.element('form').serializeObject();
+      var plannedActivityName = formData['planned-activity-name'];
+      var reportedActivityIsComplete = formData['reported-activity-is-complete'];
 
       if (plannedActivityName != null) {
         Resources.save(Resources.NAMES.PlannedActivities, {
           name: plannedActivityName,
           planned_at: new Date(),
           lesson_guid: $routeParams.id
+        });
+      }
+
+      if (reportedActivityIsComplete === 'Yes' ||
+          reportedActivityIsComplete === 'No') {
+        var isHelpWanted = formData['reported-activity-help-wanted'];
+        isHelpWanted = { Yes: true, No: false }[isHelpWanted];
+
+        Resources.save(Resources.NAMES.PlannedActivities, {
+          uuid: formData['reported-activity-uuid'],
+          name: formData['reported-activity-name'],
+          is_complete: reportedActivityIsComplete === 'Yes',
+          is_help_wanted: isHelpWanted,
+          planned_at: new Date(formData['reported-activity-planned-at']),
+          lesson_guid: formData['reported-activity-lesson-guid'],
+          level_of_happiness: formData['reported-activity-happiness'],
+          how_worthwhile: formData['reported-activity-worthwhile']
         });
       }
 
@@ -184,8 +131,8 @@
 
       // mark lesson as read    
 
-      if ($window.lessonsRead.indexOf(selectedLesson.guid) === -1) {
-        $window.lessonsRead.push(selectedLesson.guid);
+      if ($window.lessonsRead.indexOf($scope.selectedLesson.guid) === -1) {
+        $window.lessonsRead.push($scope.selectedLesson.guid);
         $window.localStorage.setItem('lessonsRead', JSON.stringify($window.lessonsRead));
       }
 
@@ -239,7 +186,7 @@
 angular.module('conemoApp.controllers')
        .controller(
          'LessonController',
-         ['$scope', '$routeParams', '$sce', '$location', '$timeout', '$window',
+         ['$scope', '$routeParams', '$location', '$timeout', '$window',
           '$rootScope', 'startDateService', 'Resources', LessonsController]
        );
 })();
