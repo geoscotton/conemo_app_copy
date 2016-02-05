@@ -32,12 +32,5 @@ describe('SampleLessonController', function() {
 
       expect(localStorage.onResume).to.equal('#/sample_lesson');
     });
-
-    it('executes the appropriate l10n notification', function() {
-      controller.demoNotification();
-
-      expect(mockDemoNotification.execute.calledOnce).to.be.true;
-      expect(mockDemoNotification.execute.args[0][0]).to.equal('wookie');
-    });
   });
 });

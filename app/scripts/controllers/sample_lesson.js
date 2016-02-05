@@ -1,10 +1,9 @@
 (function() {
   'use strict';
 
-  function SampleLessonController($window, l10n, demoNotification) {
+  function SampleLessonController($window, l10n) {
     this.storage = $window.localStorage;
     this.l10n = l10n;
-    this.notification = demoNotification;
   }
 
   SampleLessonController.prototype.getL10n = function() {
@@ -13,11 +12,10 @@
 
   SampleLessonController.prototype.demoNotification = function() {
     this.storage.onResume = '#/sample_lesson';
-    this.notification.execute(this.l10n);
   };
 
   angular.module('conemoAppApp')
          .controller('SampleLessonController',
-                     ['$window', 'l10n', 'demoNotification',
+                     ['$window', 'l10n',
                       SampleLessonController]);
 })();
