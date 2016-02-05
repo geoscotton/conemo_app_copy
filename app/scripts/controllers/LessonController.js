@@ -1,6 +1,8 @@
 (function() {
   'use strict';
 
+  var YES = 'Yes', NO = 'No';
+
   function LessonsController($scope, $routeParams, $location, $timeout,
                              $window, $rootScope, startDateService, Resources) {
     var docHeight = angular.element($window).height();
@@ -106,15 +108,15 @@
         });
       }
 
-      if (reportedActivityIsComplete === 'Yes' ||
-          reportedActivityIsComplete === 'No') {
+      if (reportedActivityIsComplete === YES ||
+          reportedActivityIsComplete === NO) {
         var isHelpWanted = formData['reported-activity-help-wanted'];
         isHelpWanted = { Yes: true, No: false }[isHelpWanted];
 
         Resources.save(Resources.NAMES.PlannedActivities, {
           uuid: formData['reported-activity-uuid'],
           name: formData['reported-activity-name'],
-          is_complete: reportedActivityIsComplete === 'Yes',
+          is_complete: reportedActivityIsComplete === YES,
           is_help_wanted: isHelpWanted,
           planned_at: new Date(formData['reported-activity-planned-at']),
           lesson_guid: formData['reported-activity-lesson-guid'],
