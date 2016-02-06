@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.1 - 2016-02-06
+
+* update Lesson content
+* prevent unnecessary page reload stutter
+* refactoring and code cleanup
+* complete activity plan/review feature in English
+* fix occasional failure of lesson/session slides
+* allow for building with separate server and lesson targets
+
 ## 1.1.0 - 2016-02-02
 
 * enable background mode for data transmission
