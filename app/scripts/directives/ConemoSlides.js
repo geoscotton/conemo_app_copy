@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  function buildSlideContent(scope, plannedActivity) {
+  function buildSlideContent(scope, element, plannedActivity) {
     scope.slideCount = scope.slides.length;
     scope.plannedActivity = plannedActivity;
     scope.slideIndexOffset = 0;
@@ -17,6 +17,11 @@
 
     scope.isReady = true;
     scope.$digest();
+
+    var selects = element.find('select');
+    Array.prototype.forEach.call(selects, function(select) {
+      select.selectedIndex = -1;
+    });
   }
 
   function ConemoSlides($window, $compile, $sce, VideoControl, Resources) {
@@ -25,7 +30,7 @@
       scope.docHeight = angular.element($window).height();
 
       Resources.fetchLatestUnreportedActivity().then(function(activities) {
-        buildSlideContent(scope, activities[0]);
+        buildSlideContent(scope, element, activities[0]);
         VideoControl.addTo(element);
       });
     }

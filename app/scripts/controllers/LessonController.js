@@ -3,7 +3,7 @@
 
   var YES = 'Yes', NO = 'No';
 
-  function LessonsController($scope, $routeParams, $location, $timeout,
+  function LessonsController($scope, $routeParams, $location,
                              $window, $rootScope, startDateService, Resources) {
     var docHeight = angular.element($window).height();
 
@@ -86,13 +86,6 @@
       $scope.currentSlideIndex = 0;
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.slideNavigator($scope.currentSlideIndex);
-
-      $timeout(function() {
-        var selects = $window.document.getElementsByTagName('select');
-        Array.prototype.forEach.call(selects, function(select) {
-          select.selectedIndex = -1;
-        });
-      });
     });
 
     $scope.saveForm = function (path) {
@@ -185,7 +178,7 @@
 angular.module('conemoApp.controllers')
        .controller(
          'LessonController',
-         ['$scope', '$routeParams', '$location', '$timeout', '$window',
+         ['$scope', '$routeParams', '$location', '$window',
           '$rootScope', 'startDateService', 'Resources', LessonsController]
        );
 })();
