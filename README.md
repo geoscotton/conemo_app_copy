@@ -69,6 +69,16 @@ While running the app in the browser you may want to clear the database. To do
 this run `indexedDB.deleteDatabase('conemo'); localStorage.clear()` in the
 browser console.
 
+## Building a production release
+
+This assumes you have a build configuration file at `~/.ssh/android-build.json`
+
+```
+LOCALE=es-PE API_SERVER=http://example.com \
+LESSON_SERVER=http://example.com node_modules/.bin/cordova build android \
+--buildConfig ~/.ssh/android-build.json --release
+```
+
 ## Running in an emulator
 
 Make sure you have an SD card enabled so that the video downloads work.
