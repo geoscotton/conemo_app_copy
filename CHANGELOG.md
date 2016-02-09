@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.2 - 2016-02-08
+
+* ensure session select inputs have blank option
+* remove "do you want help..." q&a
+* capture responses to session form inputs
+
 ## 1.1.1 - 2016-02-06
 
 * update Lesson content
