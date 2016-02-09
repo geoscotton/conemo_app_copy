@@ -5,7 +5,7 @@ var expect = chai.expect;
 describe('LessonController', function() {
   var latestUnreportedActivity = Promise.resolve([]);
   var Resources = {
-    NAMES: {},
+    NAMES: { ContentAccessEvents: 'content_access_events' },
     save: sinon.spy(),
     fetchLatestUnreportedActivity: function() {
       return latestUnreportedActivity;
@@ -168,7 +168,9 @@ describe('LessonController', function() {
 
       scope.saveForm();
 
-      expect(Resources.save.calledOnce).to.be.true;
+      var eventMatch = sinon.match({ lesson_guid: guid });
+      expect(Resources.save.calledWith('content_access_events', eventMatch))
+        .to.be.true;
     });
   });
 });

@@ -2,7 +2,7 @@
   'use strict';
 
   var SCHEMA_NAME = 'conemo',
-      SCHEMA_VERSION = 1;
+      SCHEMA_VERSION = 3;
   var PAYLOADS_API_PATH = '/api/payloads';
   var STATUSES = {
     Initialized: 'initialized',
@@ -48,7 +48,9 @@
       this.syncableResources.ContentAccessEvents.createTable()
         .addColumn('lesson_guid', this.context.lf.Type.STRING)
         .addColumn('accessed_at', this.context.lf.Type.DATE_TIME)
-        .addColumn('day_in_treatment_accessed', this.context.lf.Type.INTEGER);
+        .addColumn('day_in_treatment_accessed', this.context.lf.Type.INTEGER)
+        .addColumn('response_attributes', this.context.lf.Type.STRING)
+        .addNullable(['response_attributes']);
       this.syncableResources.Devices.createTable()
         .addColumn('device_uuid', Types.STRING)
         .addColumn('manufacturer', Types.STRING)
@@ -80,11 +82,20 @@
         .addColumn('occurred_at', this.context.lf.Type.DATE_TIME);
     },
 
+    onUpgrade: function onUpgrade(rawDb) {
+      rawDb.addTableColumn(TABLES.ContentAccessEvents, 'response_attributes');
+
+      return rawDb.dump();
+    },
+
     addTables: function addTables() {
       try {
         this.defineSchema();
         // the db connection must be shared between resources
-        var dbConnection = schemaBuilder.connect({ storeType: this.storeType });
+        var dbConnection = schemaBuilder.connect({
+          storeType: this.storeType,
+          onUpgrade: this.onUpgrade
+        });
 
         for (var resourceName in this.syncableResources) {
           var resource = this.syncableResources[resourceName];

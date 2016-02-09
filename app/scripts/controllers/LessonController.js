@@ -128,7 +128,8 @@
       Resources.save(Resources.NAMES.ContentAccessEvents, {
         lesson_guid: $routeParams.id,
         accessed_at: new Date(),
-        day_in_treatment_accessed: daysInTreatment
+        day_in_treatment_accessed: daysInTreatment,
+        response_attributes: JSON.stringify({ answer: formData })
       });
 
       // mark lesson as read    
