@@ -42,5 +42,13 @@
             "type": "registry",
             "id": "org.apache.cordova.device"
         }
+    },
+    "cordova-plugin-crosswalk-webview": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-crosswalk-webview"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }
