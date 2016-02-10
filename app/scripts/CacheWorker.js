@@ -3,6 +3,7 @@
 
   var STATUSES = { MessageResolved: 'message_resolved' };
 
+  context.importScripts('../scripts/vendor/es6-promise.min.js');
   context.importScripts('../vendor/lovefield.min.js');
   context.importScripts('../vendor/cache_and_sync_love.min.js');
   context.importScripts('Globals.js');
