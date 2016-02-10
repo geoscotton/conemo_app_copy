@@ -3,7 +3,7 @@
 
   var Globals = {
     SERVER_URL: 'SERVER_URL_TO_REPLACE',
-    VERSION: '1.1.2'
+    VERSION: '1.1.3'
   };
 
   context.Conemo = context.Conemo || {};

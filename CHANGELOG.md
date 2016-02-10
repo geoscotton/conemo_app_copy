@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.3 - 2016-02-10
+
+* update Cordova to v6.0.0
+* install Crosswalk v16 to support Android 4.x
+
 ## 1.1.2 - 2016-02-08
 
 * ensure session select inputs have blank option
