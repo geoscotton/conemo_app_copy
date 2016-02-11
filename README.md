@@ -1,13 +1,12 @@
 # CONEMO Android App
 
-This application serves as the patient-facing PhoneGap portion of the NIH funded
+This application serves as the patient-facing Cordova portion of the NIH funded
 CONEMO project.
 
-## Key dependencies
+## Build dependencies
 
 - NodeJS
 - NPM (NodeJS Package Manager)
-- Cordova 5.4.0
 
 ## Installation process
 
@@ -23,23 +22,29 @@ Install the application dependencies
 
 `npm test`
 
-## Building Conemo Phone App
+## Adding the background mode plugin
+
+```
+LOCALE=pt-BR API_SERVER=http://localhost:3000 \
+LESSON_SERVER=https://conemo.northwestern.edu \
+node_modules/.bin/cordova plugin add https://github.com/katzer/cordova-plugin-background-mode.git#0.6.4
+```
+
+## Adding the Android platform
+
+```
+mkdir www
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://localhost:3000 \
+node_modules/.bin/cordova platform add android
+```
+
+## Building and installing the app on an Android device or emulator
 
 ```
 LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://lessons.example.com npm run build
-```
-
-If first time running Cordova,
-
-`node_modules/.bin/cordova platform rm android`
-`node_modules/.bin/cordova platform add android`
-
-Subsequent installs only require
-
-```
-LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://lessons.example.com npm run install:android
+LESSON_SERVER=http://lessons.example.com \
+npm run install:android
 ```
 
 ## Running in the browser
@@ -48,21 +53,24 @@ The first time
 
 ```
 LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://lessons.example.com node_modules/.bin/cordova platform add browser
+LESSON_SERVER=http://lessons.example.com \
+node_modules/.bin/cordova platform add browser
 ```
 
 Then build
 
 ```
 LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://lessons.example.com node_modules/.bin/cordova build browser
+LESSON_SERVER=http://lessons.example.com \
+node_modules/.bin/cordova build browser
 ```
 
 And finally install (which is all you will need to run on subsequent installs)
 
 ```
 LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://lessons.example.com npm run install:browser
+LESSON_SERVER=http://lessons.example.com \
+npm run install:browser
 ```
 
 While running the app in the browser you may want to clear the database. To do
@@ -75,7 +83,8 @@ This assumes you have a build configuration file at `~/.ssh/android-build.json`
 
 ```
 LOCALE=es-PE API_SERVER=http://example.com \
-LESSON_SERVER=http://example.com node_modules/.bin/cordova build android \
+LESSON_SERVER=http://example.com \
+node_modules/.bin/cordova build android \
 --buildConfig ~/.ssh/android-build.json --release
 ```
 
@@ -94,7 +103,8 @@ set up a participant, build the app with the mock node server,
 
 ```
 LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://lessons.example.com npm run install:android
+LESSON_SERVER=http://lessons.example.com \
+npm run install:android
 ```
 
 You will also need to run the mock server.
