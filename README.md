@@ -83,7 +83,7 @@ This assumes you have a build configuration file at `~/.ssh/android-build.json`
 
 ```
 LOCALE=es-PE API_SERVER=http://example.com \
-LESSON_SERVER=http://example.com \
+LESSON_SERVER=http://example.com HOCKEY_APP_ID=12345 \
 node_modules/.bin/cordova build android \
 --buildConfig ~/.ssh/android-build.json --release
 ```

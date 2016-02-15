@@ -10,6 +10,8 @@ npm-debug.log
 
 # build directories
 /platforms
+!/platforms/android/build.gradle
+!/platforms/android/src/edu/northwestern/cbits/conemo/MainActivity.java
 /www
 
 # development directories

@@ -19,7 +19,8 @@
     <hook src="scripts/copy_assets.js" type="before_prepare" />
     <hook src="scripts/localize.js" type="before_prepare" />
     <hook src="scripts/stagerize.js" type="before_prepare" />
-    <hook src="scripts/cleanup.js" type="after_prepare" />
+    <hook src="scripts/hockey_apperize.js" type="before_prepare" />
+    <hook src="scripts/cleanup.js" type="after_compile" />
     <plugin name="cordova-plugin-device" spec="~1.1.0" />
     <plugin name="de.appplant.cordova.plugin.background-mode" spec="~0.6.4" />
     <plugin name="de.appplant.cordova.plugin.local-notification" spec="~0.8.2" />
