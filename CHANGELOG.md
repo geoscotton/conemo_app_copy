@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.1.4 - 2016-02-15
+
+* enable crash reports to HockeyApp
+* update lesson content
+* update Portuguese videos
+* update crosswalk and local-notification versions
+
 ## 1.1.3 - 2016-02-10
 
 * update Cordova to v6.0.0
