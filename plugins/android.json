@@ -7,6 +7,12 @@
         "files": {}
     },
     "installed_plugins": {
+        "cordova-plugin-crosswalk-webview": {
+            "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
+        },
         "cordova-plugin-device": {
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         },
@@ -20,9 +26,6 @@
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         },
         "de.appplant.cordova.plugin.local-notification": {
-            "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
-        },
-        "cordova-plugin-crosswalk-webview": {
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         }
     },
