@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.5 - 2016-02-16
+
+* fix pt-BR videos for sessions 15 and 18
+
 ## 1.1.4 - 2016-02-15
 
 * enable crash reports to HockeyApp
