@@ -566,7 +566,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Bem-vindo/a a sess&atilde;o 15! Vamos come&ccedil;ar com este video:</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">[V&Iacute;DEO - Relapses]</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Bem-vindo/a a sess&atilde;o 15! Vamos come&ccedil;ar com este video:</span></p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP5.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -707,7 +707,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</span></p>\r\n\r\n<p>[<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">VIDEO - Goodbye]</span></p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</span></p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
