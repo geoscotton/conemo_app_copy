@@ -8,6 +8,7 @@
     Initialized: 'initialized',
     Authenticated: 'authenticated'
   };
+  var SYNC_PERIOD_IN_MS = 2 * 60 * 1000;
   var TABLES = {
     AuthenticationTokens: 'authentication_tokens',
     ContentAccessEvents: 'content_access_events',
@@ -139,6 +140,7 @@
                   .setSecret(tokens[0].value)
                   .setKey(devices[0].device_uuid);
                 context.cbit.Synchronizer.setPayloadResource(context.cbit.Payload);
+                context.cbit.Synchronizer.setPeriod(SYNC_PERIOD_IN_MS);
                 context.cbit.Synchronizer.run();
               });
           } else {
