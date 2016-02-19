@@ -86,6 +86,7 @@
       $scope.currentSlideIndex = 0;
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.slideNavigator($scope.currentSlideIndex);
+      $scope.$digest();
     });
 
     $scope.saveForm = function (path) {
