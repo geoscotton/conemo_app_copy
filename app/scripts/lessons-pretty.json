@@ -83,7 +83,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">D&ecirc; uma olhada na lista abaixo e escolha uma ou mais atividades prazerosas que voc&ecirc; costumava fazer, mas que N&Atilde;O faz mais h&aacute; algum tempo </span>(c<span style=\"background-color:transparent; color:rgb(0, 0, 0); font-family:arial; font-size:13.3333px\">lique no tri&acirc;ngulo preto para ver todas as op&ccedil;&otilde;es)</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">:</span></p>\r\n\r\n<p dir=\"ltr\"><select name=\"neglected_activities\"><option value=\"Relaxar (massagem, ler um livro, ouvir m\u00fasica, etc.)\">Relaxar (massagem, ler um livro, ouvir m&uacute;sica, etc.)</option><option value=\"Passar tempo com fam\u00edlia e amigos\">Passar tempo com fam&iacute;lia e amigos</option><option value=\"Fazer atividades f\u00edsicas\">Fazer atividades f&iacute;sicas</option><option value=\"Sair (parque, almo\u00e7o, shopping, cinema, etc.)\">Sair (parque, almo&ccedil;o, shopping, cinema, etc.)</option><option value=\"Participar de atividades na comunidade (coral, igreja, trabalho volunt\u00e1rio, etc.)\">Participar de atividades na comunidade (coral, igreja, trabalho volunt&aacute;rio, etc.)</option><option value=\"Assistir uma palestra / aprender algo novo\">Assistir uma palestra / aprender algo novo</option><option value=\"Cuidar da casa ou do jardim\">Cuidar da casa ou do jardim</option><option value=\"Fazer croch\u00ea ou artesanato\">Fazer croch&ecirc; ou artesanato</option><option value=\"Cuidar da minha sa\u00fade\">Cuidar da minha sa&uacute;de</option></select></p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">D&ecirc; uma olhada na lista abaixo e escolha uma ou mais atividades prazerosas que voc&ecirc; costumava fazer, mas que N&Atilde;O faz mais h&aacute; algum tempo (clique no tri&acirc;ngulo preto para ver todas as op&ccedil;&otilde;es):</span></p>\r\n\r\n<p dir=\"ltr\"><select name=\"neglected_activities\"><option value=\"Relaxar (massagem, ler um livro, ouvir m\u00fasica, etc.)\">Relaxar (massagem, ler um livro, ouvir m&uacute;sica, etc.)</option><option value=\"Passar tempo com fam\u00edlia e amigos\">Passar tempo com fam&iacute;lia e amigos</option><option value=\"Fazer atividades f\u00edsicas\">Fazer atividades f&iacute;sicas</option><option value=\"Sair (parque, almo\u00e7o, shopping, cinema, etc.)\">Sair (parque, almo&ccedil;o, shopping, cinema, etc.)</option><option value=\"Participar de atividades na comunidade (coral, igreja, trabalho volunt\u00e1rio, etc.)\">Participar de atividades na comunidade (coral, igreja, trabalho volunt&aacute;rio, etc.)</option><option value=\"Assistir uma palestra / aprender algo novo\">Assistir uma palestra / aprender algo novo</option><option value=\"Cuidar da casa ou do jardim\">Cuidar da casa ou do jardim</option><option value=\"Fazer croch\u00ea ou artesanato\">Fazer croch&ecirc; ou artesanato</option><option value=\"Cuidar da minha sa\u00fade\">Cuidar da minha sa&uacute;de</option></select></p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
@@ -728,57 +728,51 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<h2>&iexcl;Bienvenido a CONEMO!</h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa fue desarrollado para ayudarte a mejorar tu salud f&iacute;sica y emocional.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando tenemos alg&uacute;n problema de salud, como diabetes o hipertensi&oacute;n, es com&uacute;n que nos sintamos desanimados o con poca energ&iacute;a para hacer las cosas.</p>\r\n",
+                    "content": "<h2>&nbsp;</h2>\r\n\r\n<h2>&iexcl;Bienvenido a CONEMO!</h2>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa fue desarrollado para ayudarte a mejorar no solo tu salud f&iacute;sica, sino tambi&eacute;n tu salud emocional.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Por eso, a veces dejamos de hacer nuestras actividades y otras veces dejamos cosas importantes sin terminar.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El objetivo de CONEMO es ayudarte a que mejores tu salud f&iacute;sica y emocional, practicando actividades que te har&aacute;n sentir mas sano, fuerte y feliz.&nbsp;</p>\r\n",
+                    "content": "<p>Cuando tenemos un problema de salud como diabetes o hipertensi&oacute;n, es com&uacute;n que nos sintamos deca&iacute;dos o desanimados.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Como resultado nos toma m&aacute;s esfuerzo hacer las cosas y a veces dejamos de hacer nuestras actividades o dejamos cosas sin terminar.</p>\r\n",
                     "position": 2,
-                    "title": "Slide 1aa"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Te sugeriremos algunas actividades para mejorar tu salud f&iacute;sica, como tomar tu medicaci&oacute;n o comer m&aacute;s sano.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Otras actividades tienen la finalidad de aumentar tu motivaci&oacute;n, elevar tu estado de &aacute;nimo y lograr que est&eacute;s m&aacute;s feliz.&nbsp;</p>\r\n",
-                    "position": 3,
-                    "title": "Slide 1a"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Queremos que te involucres en actividades que te hagan sentir m&aacute;s feliz y motivado.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, probar nuevas actividades en tu tiempo libre o pasar m&aacute;s tiempo con tus seres queridos u otras cosas que puedas disfrutar.</p>\r\n",
-                    "position": 4,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>As&iacute;, combinando actividades para mejorar tu salud f&iacute;sica y tu salud emocional, tendr&aacute;s una vida m&aacute;s satisfactoria y feliz.</p>\r\n",
-                    "position": 5,
-                    "title": "Slide 2a"
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>El objetivo de CONEMO es ayudarte a realizar nuevas actividades que te har&aacute;n sentir m&aacute;s saludable y m&aacute;s feliz.</p>\r\n",
+                    "position": 3,
+                    "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Durante las 6 semanas que dura este programa, una enfermera o enfermero te acompa&ntilde;ar&aacute;, motiv&aacute;ndote y aclarando tus dudas. As&iacute;, podr&aacute;s sacar lo m&aacute;ximo de este programa.</p>\r\n",
-                    "position": 6,
-                    "title": "Slide 3a"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo debajo del v&iacute;deo.&nbsp;</p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
-                    "position": 7,
-                    "title": "Slide 3 Video 1"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Has aceptado participar en CONEMO por alg&uacute;n motivo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Cu&eacute;ntanos por qu&eacute; te gustar&iacute;a tener una vida m&aacute;s saludable!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Presione el rect&aacute;ngulo blanco y elige una o varias de las siguientes opciones:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select multiple=\"true\" name=\"raz\u00f3n_para_usar_aplicaci\u00f3n\" size=\"3\"><option value=\"Para ser m\u00e1s feliz\">Para ser m&aacute;s feliz</option><option value=\"Para sentirme mejor conmigo mismo/a\">Para sentirme mejor conmigo mismo/a</option><option value=\"Para disfrutar m\u00e1s de la vida\">Para disfrutar m&aacute;s de la vida</option><option value=\"Para tener una salud m\u00e1s fuerte\">Para tener una salud m&aacute;s fuerte</option><option value=\"Para volver a trabajar\">Para volver a trabajar</option><option value=\"Para hacer feliz a mi familia y a mis amigos\">Para hacer feliz a mi familia y a mis amigos</option><option value=\"Para poder cuidar mejor a mi familia\">Para poder cuidar mejor a mi familia</option></select></p>\r\n",
-                    "position": 8,
+                    "content": "<p>Algunas de las actividades que te sugeriremos son dirigidas directamente a mejorar tu salud f&iacute;sica, como tomar tu medicaci&oacute;n regularmente o tener una dieta saludable.</p>\r\n\r\n<p>Pero CONEMO tambi&eacute;n te ayudar&aacute; a probar nuevas actividades en tu tiempo libre, como pasar m&aacute;s tiempo con tus seres queridos u otras cosas que puedas disfrutar.</p>\r\n",
+                    "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Esa es una muy buena raz&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Es importante que recuerdes siempre por qu&eacute; te gustar&iacute;a tener una vida m&aacute;s saludable.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&Eacute;sta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades, aun cuando tengas que hacer cosas que sean dif&iacute;ciles al comienzo.</p>\r\n",
-                    "position": 9,
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>As&iacute;, combinando distintas actividades para mejorar tu salud f&iacute;sica y tu salud emocional, tendr&aacute;s una vida m&aacute;s satisfactoria y feliz.</p>\r\n",
+                    "position": 5,
                     "title": "Slide 5"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana. En algunas de estas sesiones se te pedir&aacute; ver un video que contiene informaci&oacute;n para ayudarte a aprovechar al m&aacute;ximo este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p>[<em>VIDEO 1 - Introduction</em>]&nbsp;<video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
+                    "position": 6,
+                    "title": "Slide 6"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&iquest;Qu&eacute; te gustar&iacute;a lograr al finalizar este programa? Elige una o varias de las siguientes opciones:</p>\r\n\r\n<p style=\"text-align: center;\">&nbsp;</p>\r\n\r\n<p><select multiple=\"true\" name=\"Objetivo_personal\"><option value=\"Ser m\u00e1s feliz\">Ser m&aacute;s feliz</option><option value=\"Sentirme mejor conmigo mismo\">Sentirme mejor conmigo mismo</option><option value=\"Volver a trabajar\">Volver a trabajar</option><option value=\"Cuidar mejor a mi familia\">Cuidar mejor a mi familia</option><option value=\"Mejorar mi salud\">Mejorar mi salud</option><option value=\"Disfrutar m\u00e1s mi vida\">Disfrutar m&aacute;s mi vida</option></select></p>\r\n",
+                    "position": 7,
+                    "title": "Slide 7"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&iexcl;Esa es una excelente meta! Durante las siguientes 6 semanas es importante que recuerdes lo que quieres lograr con este programa. Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro de este programa.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "position": 8,
+                    "title": "Slide 8"
                 }
             ],
             "title": "\u00a1Bienvenido a CONEMO! "
@@ -791,19 +785,19 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Este programa te ayudar&aacute; a tener una vida m&aacute;s saludable y feliz.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El programa es sencillo, pero tendr&aacute;s que esforzarte un poco y dedicarle algunos minutos a la semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Te ense&ntilde;aremos algunas habilidades que han ayudado a muchas personas a disfrutar m&aacute;s de la vida. &nbsp;</p>\r\n",
+                    "content": "<p style=\"margin-left:3.8pt\">Cuando no nos sentimos bien, nos volvemos menos activos. Quiz&aacute;s algunas cosas que antes hac&iacute;as sin dificultad ahora requieren mucho m&aacute;s esfuerzo.</p>\r\n\r\n<p style=\"margin-left:3.8pt\">&nbsp;</p>\r\n\r\n<p style=\"margin-left:3.8pt\">Podr&iacute;a tratarse de actividades cotidianas como limpiar la casa o cosas relacionadas a controlar nuestra enfermedad, como tomar la medicaci&oacute;n o ir al doctor.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Cuando las personas se sienten desanimadas o deca&iacute;das se vuelven menos activas.&nbsp;Quiz&aacute;s algunas cosas que antes hac&iacute;as sin dificultad, ahora requieren de ti un esfuerzo mucho m&aacute;s grande.&nbsp;</p>\r\n",
+                    "content": "<p>Con frecuencia tambi&eacute;n hacemos menos actividades que disfrut&aacute;bamos antes, como visitar a amigos o salir.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Como resultado nos sentimos aun peor, entrando a un c&iacute;rculo vicioso que nos lleva a hacer cada vez menos cosas y a sentirnos cada vez m&aacute;s deca&iacute;dos.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Nos referimos a actividades que haces todos los d&iacute;as, como trabajar, hacer los quehaceres de la casa, tomar tus medicamentos o ir al doctor.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&Eacute;ste programa te ayudar&aacute; a superar estas dificultades y a retomar estas actividades que son buenas para tu bienestar y tu salud. &nbsp;</p>\r\n",
+                    "content": "<p>Este programa intenta ayudarte a encontrar formas de superar este c&iacute;rculo vicioso que te hace menos feliz o que puede interferir en mejorar tu salud.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero el primer paso es identificar qu&eacute; actividades has dejado atr&aacute;s.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
@@ -826,7 +820,7 @@
                     "title": "Slide 5"
                 }
             ],
-            "title": "Estar activo te ayudar\u00e1 a tener una vida m\u00e1s saludable"
+            "title": "Sentirte deca\u00eddo puede causar que dejes de hacer cosas que antes hac\u00edas"
         },
         {
             "_class": "Lesson",
