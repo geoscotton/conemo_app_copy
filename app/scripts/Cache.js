@@ -2,7 +2,7 @@
   'use strict';
 
   var SCHEMA_NAME = 'conemo',
-      SCHEMA_VERSION = 4;
+      SCHEMA_VERSION = 6;
   var PAYLOADS_API_PATH = '/api/payloads';
   var STATUSES = {
     Initialized: 'initialized',
@@ -72,7 +72,8 @@
         .addColumn('message', this.context.lf.Type.STRING)
         .addColumn('sent_at', this.context.lf.Type.DATE_TIME);
       this.syncableResources.Logins.createTable()
-        .addColumn('logged_in_at', this.context.lf.Type.DATE_TIME);
+        .addColumn('logged_in_at', this.context.lf.Type.DATE_TIME)
+        .addColumn('app_version', this.context.lf.Type.STRING);
       this.syncableResources.ParticipantStartDates.createTable()
         .addColumn('date', this.context.lf.Type.STRING);
       this.syncableResources.PlannedActivities.createTable()
@@ -95,6 +96,7 @@
 
     onUpgrade: function onUpgrade(rawDb) {
       rawDb.addTableColumn(TABLES.ContentAccessEvents, 'response_attributes');
+      rawDb.addTableColumn(TABLES.Logins, 'app_version');
 
       return rawDb.dump();
     },
