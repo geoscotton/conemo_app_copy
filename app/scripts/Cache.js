@@ -2,7 +2,7 @@
   'use strict';
 
   var SCHEMA_NAME = 'conemo',
-      SCHEMA_VERSION = 3;
+      SCHEMA_VERSION = 4;
   var PAYLOADS_API_PATH = '/api/payloads';
   var STATUSES = {
     Initialized: 'initialized',
@@ -13,6 +13,7 @@
     AuthenticationTokens: 'authentication_tokens',
     ContentAccessEvents: 'content_access_events',
     Devices: 'devices',
+    ExceptionReports: 'exception_reports',
     HelpMessages: 'help_messages',
     Logins: 'logins',
     ParticipantStartDates: 'participant_start_dates',
@@ -58,6 +59,15 @@
         .addColumn('model', Types.STRING)
         .addColumn('platform', Types.STRING)
         .addColumn('device_version', Types.STRING);
+      this.syncableResources.ExceptionReports.createTable()
+        .addColumn('url', this.context.lf.Type.STRING)
+        .addColumn('app_version', this.context.lf.Type.STRING)
+        .addColumn('cause', this.context.lf.Type.STRING)
+        .addColumn('stack_trace', this.context.lf.Type.STRING)
+        .addColumn('occurred_at', this.context.lf.Type.DATE_TIME)
+        .addNullable([
+          'url', 'app_version', 'cause', 'stack_trace', 'occurred_at'
+        ]);
       this.syncableResources.HelpMessages.createTable()
         .addColumn('message', this.context.lf.Type.STRING)
         .addColumn('sent_at', this.context.lf.Type.DATE_TIME);
@@ -156,6 +166,7 @@
   [
     'ContentAccessEvents',
     'Devices',
+    'ExceptionReports',
     'HelpMessages',
     'Logins',
     'ParticipantStartDates',
