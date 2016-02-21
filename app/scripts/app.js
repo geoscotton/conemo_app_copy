@@ -133,7 +133,10 @@ var lessonsRead = [];
         }
 
         function onResume() {
-          Resources.save(Resources.NAMES.Logins, { logged_in_at: new Date() });
+          Resources.save(Resources.NAMES.Logins, {
+            logged_in_at: new Date(),
+            app_version: $window.Conemo.Globals.VERSION
+          });
 
           if ($window.localStorage.onResume != null) {
             var pageToGoto = $window.localStorage.onResume;
