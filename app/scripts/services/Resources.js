@@ -37,6 +37,7 @@
       AuthenticationTokens: 'AuthenticationTokens',
       ContentAccessEvents: 'ContentAccessEvents',
       Devices: 'Devices',
+      ExceptionReports: 'ExceptionReports',
       HelpMessages: 'HelpMessages',
       Logins: 'Logins',
       ParticipantStartDates: 'ParticipantStartDates',
