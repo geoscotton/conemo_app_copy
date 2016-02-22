@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.6 - 2016-02-21
+
+* update with latest lesson content
+* add app version to logins data
+* catch and report JS exceptions
+* increase sync period to 2 minutes
+* ensure lesson nav is rendered
+
 ## 1.1.5 - 2016-02-16
 
 * fix pt-BR videos for sessions 15 and 18
