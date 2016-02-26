@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.7 - 2016-02-26
+
+* update ES content; remove ES specific CSS styles
+
 ## 1.1.6 - 2016-02-21
 
 * update with latest lesson content
