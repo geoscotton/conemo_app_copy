@@ -216,35 +216,6 @@ p, div.slide > * {
     font-size: 1em;
 }
 
-.es-PE p {
-    font-size: 1.6em;
-}
-
-.es-PE .main-title {
-    font-size: 1.2em !important;
-}
-
-.es-PE div.slide > * {
-    font-size: 1.6em;
-}
-
-.es-PE .btn {
-    font-size: 1.4em;
-}
-
-.es-PE div.alert {
-    font-size: 1.6em;
-}
-
-
-.es-PE #instructions {
-    font-size: 1.4em;
-}
-
-.es-PE .sampleLesson p {
-    font-size: 1em;
-}
-
 #instructions img {
     max-width: 100%;
 }

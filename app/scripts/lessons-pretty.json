@@ -734,7 +734,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Cuando tenemos un problema de salud como diabetes o hipertensi&oacute;n, es com&uacute;n que nos sintamos deca&iacute;dos o desanimados.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Como resultado nos toma m&aacute;s esfuerzo hacer las cosas y a veces dejamos de hacer nuestras actividades o dejamos cosas sin terminar.</p>\r\n",
+                    "content": "<p>Cuando tenemos un problema de salud como diabetes o hipertensi&oacute;n, es com&uacute;n que nos sintamos deca&iacute;dos o desanimados.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando nos sentimos as&iacute;, nos toma m&aacute;s esfuerzo hacer las cosas, dejamos cosas sin terminar y a veces hasta dejamos de hacer nuestras actividades.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -746,7 +746,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Algunas de las actividades que te sugeriremos son dirigidas directamente a mejorar tu salud f&iacute;sica, como tomar tu medicaci&oacute;n regularmente o tener una dieta saludable.</p>\r\n\r\n<p>Pero CONEMO tambi&eacute;n te ayudar&aacute; a probar nuevas actividades en tu tiempo libre, como pasar m&aacute;s tiempo con tus seres queridos u otras cosas que puedas disfrutar.</p>\r\n",
+                    "content": "<p>Algunas de las actividades que te sugeriremos buscan mejorar tu salud f&iacute;sica, como tomar tu medicaci&oacute;n regularmente o tener una dieta saludable.&nbsp;</p>\r\n\r\n<p>Pero CONEMO tambi&eacute;n te ayudar&aacute; a hacer nuevas actividades en tu tiempo libre, a pasar m&aacute;s tiempo con tus seres queridos y hacer otras cosas que puedas disfrutar.&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
@@ -758,7 +758,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana. En algunas de estas sesiones se te pedir&aacute; ver un video que contiene informaci&oacute;n para ayudarte a aprovechar al m&aacute;ximo este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p>[<em>VIDEO 1 - Introduction</em>]&nbsp;<video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
+                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana. En algunas de estas sesiones se te pedir&aacute; ver un video con informaci&oacute;n que te ayudar&aacute; a aprovechar al m&aacute;ximo este programa.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p>[<em>VIDEO 1 - Introduction</em>]&nbsp;<video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
@@ -770,7 +770,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Esa es una excelente meta! Durante las siguientes 6 semanas es importante que recuerdes lo que quieres lograr con este programa. Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro de este programa.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "content": "<p>&iexcl;Esa es una excelente meta!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Durante las siguientes 6 semanas es importante que recuerdes lo qu&eacute; quieres lograr con este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro de este programa.</p>\r\n",
                     "position": 8,
                     "title": "Slide 8"
                 }
@@ -785,31 +785,31 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p style=\"margin-left:3.8pt\">Cuando no nos sentimos bien, nos volvemos menos activos. Quiz&aacute;s algunas cosas que antes hac&iacute;as sin dificultad ahora requieren mucho m&aacute;s esfuerzo.</p>\r\n\r\n<p style=\"margin-left:3.8pt\">&nbsp;</p>\r\n\r\n<p style=\"margin-left:3.8pt\">Podr&iacute;a tratarse de actividades cotidianas como limpiar la casa o cosas relacionadas a controlar nuestra enfermedad, como tomar la medicaci&oacute;n o ir al doctor.</p>\r\n",
+                    "content": "<p style=\"margin-left:3.8pt\">Cuando no nos sentimos bien, nos volvemos menos activos. Quiz&aacute;s algunas cosas que antes hac&iacute;as sin dificultad ahora requieren mucho m&aacute;s esfuerzo.</p>\r\n\r\n<p style=\"margin-left:3.8pt\">A veces son actividades cotidianas como limpiar la casa o tambi&eacute;n actividades para controlar nuestra enfermedad, como tomar la medicaci&oacute;n o ir al doctor.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Con frecuencia tambi&eacute;n hacemos menos actividades que disfrut&aacute;bamos antes, como visitar a amigos o salir.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Como resultado nos sentimos aun peor, entrando a un c&iacute;rculo vicioso que nos lleva a hacer cada vez menos cosas y a sentirnos cada vez m&aacute;s deca&iacute;dos.</p>\r\n",
+                    "content": "<p>Con frecuencia tambi&eacute;n hacemos menos actividades que antes disfrut&aacute;bamos, como visitar a los amigos o salir.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando eso sucede nos sentimos aun peor, entrando a un c&iacute;rculo vicioso que nos lleva a hacer cada vez menos cosas y a sentirnos cada vez m&aacute;s deca&iacute;dos.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Este programa intenta ayudarte a encontrar formas de superar este c&iacute;rculo vicioso que te hace menos feliz o que puede interferir en mejorar tu salud.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero el primer paso es identificar qu&eacute; actividades has dejado atr&aacute;s.</p>\r\n",
+                    "content": "<p>Este programa intenta ayudarte a encontrar formas de superar este c&iacute;rculo vicioso que te hace menos feliz y que puede hacer m&aacute;s dif&iacute;cil mejorar tu salud.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El primer paso para salir de esta situaci&oacute;n es identificar qu&eacute; actividades has dejado atr&aacute;s.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p style=\"margin-left:3.8pt\">Mira la lista debajo y elige las actividades <strong><em><u>que</u></em></strong><u> <strong><em>antes hac&iacute;as, pero que has dejado de hacer</em></strong></u> o ya no haces tan seguido como antes.&nbsp;</p>\r\n\r\n<p style=\"margin-left:3.8pt\">(Recuerda: Para ver la lista, por favor presiona el rect&aacute;ngulo blanco. Cuando se abra el men&uacute;, presiona las opciones correspondientes para seleccionarlas).</p>\r\n\r\n<p style=\"margin-left:3.8pt; text-align:center\"><select multiple=\"true\" name=\"neglected_activities\"><option value=\"Relajarme (masajes, leer un libro, escuchar m\u00fasica, etc.)\">Relajarme (masajes, leer un libro, escuchar m&uacute;sica, etc.)</option><option value=\"Pasar tiempo con familia o amigos\">Pasar tiempo con familia o amigos</option><option value=\"Hacer actividad f\u00edsica\">Hacer actividad f&iacute;sica</option><option value=\"Salir (al parque, a almorzar, a bailar, de compras, etc.) \">Salir (al parque, a almorzar, a bailar, de compras, etc.)</option><option value=\"Participar de actividades colectivas (iglesia, coro, voluntariado, etc.)\">Participar de actividades colectivas (iglesia, coro, voluntariado, etc.)</option><option value=\"Asistir a charlas / aprender algo nuevo\">Asistir a charlas / aprender algo nuevo</option><option value=\"Cuidar la casa o el jard\u00edn \">Cuidar la casa o el jard&iacute;n</option><option value=\"Tejer / cocer / hacer manualidades\">Tejer / cocer / hacer manualidades</option><option value=\"Cuidar mi salud\">Cuidar mi salud</option></select></p>\r\n",
+                    "content": "<p style=\"margin-left:3.8pt\">Mira la lista debajo y elige todas las actividades <strong><em><u>que</u></em></strong><u> <strong><em>antes hac&iacute;as, pero que has dejado de hacer</em></strong></u> o ya no haces tan seguido como antes.&nbsp;</p>\r\n\r\n<p style=\"margin-left:3.8pt\">(Recuerda: Para ver la lista, por favor presiona el rect&aacute;ngulo blanco. Cuando se abra el men&uacute;, presiona las opciones correspondientes para seleccionarlas).</p>\r\n\r\n<p style=\"margin-left: 3.8pt; text-align: center;\"><select multiple=\"true\" name=\"neglected_activities\"><option value=\"Relajarme (masajes, leer un libro, escuchar m\u00fasica, etc.)\">Relajarme (masajes, leer un libro, escuchar m&uacute;sica, etc.)</option><option value=\"Pasar tiempo con familia o amigos\">Pasar tiempo con familia o amigos</option><option value=\"Hacer deporte o actividad f\u00edsica\">Hacer deporte o actividad f&iacute;sica</option><option value=\"Salir (al parque, a almorzar, a bailar, de compras, etc.) \">Salir (al parque, a almorzar, a bailar, de compras, etc.)</option><option value=\"Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)\">Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)</option><option value=\"Asistir a charlas o aprender algo nuevo\">Asistir a charlas o aprender algo nuevo</option><option value=\"Cuidar la casa o el jard\u00edn \">Cuidar la casa o el jard&iacute;n</option><option value=\"Hacer manualidades, tejer o coser\">Hacer manualidades, tejer o coser</option><option value=\"Cuidar mi salud\">Cuidar mi salud</option></select></p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Gracias por compartir eso.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa te dar&aacute; algunas ideas de c&oacute;mo volver a hacer estas actividades o tareas y terminar con ese c&iacute;rculo vicioso.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa te dar&aacute; algunas ideas de c&oacute;mo volver a hacer estas actividades o tareas y terminar con ese c&iacute;rculo vicioso.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 }
@@ -824,25 +824,25 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Lo que haces puede influir en nuestro estado de &aacute;nimo y nuestros sentimientos, para bien o para mal.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si queremos cambiar la forma en que nos sentimos, necesitamos cambiar tambi&eacute;n lo que hacemos.&nbsp;</p>\r\n",
+                    "content": "<p>Lo que hacemos puede influir en nuestro estado de &aacute;nimo y nuestros sentimientos, para bien o para mal.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si queremos cambiar la forma en que nos sentimos, necesitamos cambiar tambi&eacute;n lo que hacemos.&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Hay muchas cosas que podemos hacer para sentirnos mejor.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Una de ellas es aumentar el n&uacute;mero de actividades que hacemos. </span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Eso ha ayudado a muchas personas a tener una vida m&aacute;s feliz y m&aacute;s saludable.&nbsp;</span></p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "content": "<p>Hay muchas cosas que podemos hacer para sentirnos mejor.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Una de ellas es aumentar el n&uacute;mero de actividades que hacemos.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Eso ha ayudado a muchas personas a tener una vida m&aacute;s feliz y m&aacute;s saludable.&nbsp;</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Entendemos que est&aacute;s ocupado, por lo que concluir las sesiones de CONEMO solo te tomar&aacute; unos cuantos minutos cada semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Podr&aacute;s elegir tus actividades y luego adecuarlas a tu horario.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>As&iacute; puedes adaptar el programa a tu propia rutina.&nbsp;</p>\r\n",
+                    "content": "<p>Entendemos que quiz&aacute;s est&aacute;s ocupado, por lo que realizarlas sesiones de CONEMO solo te tomar&aacute; unos cuantos minutos cada semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Podr&aacute;s elegir tus actividades y luego adecuarlas a tu horario.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>As&iacute; puedes adaptar el programa a tu propia rutina.&nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;T&uacute; eliges las actividades y cu&aacute;ndo hacerlas!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero realizar las actividades que has elegido tambi&eacute;n toma alg&uacute;n esfuerzo de tu parte.</p>\r\n",
+                    "content": "<p>&iexcl;T&uacute; eliges las actividades y cu&aacute;ndo hacerlas!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero claro, realizar las actividades que has elegido tambi&eacute;n necesitar&aacute;s de un esfuerzo de tu parte.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
@@ -854,7 +854,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>En la pr&oacute;xima sesi&oacute;n empezar&aacute;s a incluir poco a poco nuevas actividades en tu d&iacute;a a d&iacute;a.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Al comienzo pueden ser actividades m&aacute;s cortas, luego, har&aacute;s actividades que pueden requerir un poco m&aacute;s de planeamiento y tiempo.</p>\r\n",
+                    "content": "<p>En la pr&oacute;xima sesi&oacute;n empezar&aacute;s a incluir poco a poco nuevas actividades en tu d&iacute;a a d&iacute;a.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Al comienzo pueden ser actividades m&aacute;s cortas.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Luego har&aacute;s actividades que pueden requerir un poco m&aacute;s de tiempo y planificaci&oacute;n.</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
@@ -881,7 +881,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Estas actividades son diferentes para cada persona; a algunos les gusta escuchar m&uacute;sica, por ejemplo, a otros caminar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Como ya hemos aprendido, cuando nos sentimos tristes o preocupados podr&iacute;amos dejar de hacer algunas de estas actividades placenteras, a pesar de que sol&iacute;amos disfrutarlas.&nbsp;</p>\r\n",
+                    "content": "<p>Estas actividades son diferentes para cada persona. Por ejemplo, a algunos les gusta escuchar m&uacute;sica mientras a otros les gusta caminar.</p>\r\n\r\n<p>Como ya hemos aprendido, cuando nos sentimos tristes o preocupados podr&iacute;amos dejar de hacer algunas de estas actividades placenteras, a pesar de que antes las disfrut&aacute;bamos.&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -893,13 +893,13 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Estos pensamientos son comunes cuando empezamos a planear actividades diferentes en nuestra vida.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero recuerda que aumentar el n&uacute;mero de actividades ha sido de ayuda para muchas personas y puede llevar a una vida m&aacute;s feliz y saludable.</p>\r\n",
+                    "content": "<p>Estos pensamientos son comunes cuando empezamos a planear actividades diferentes en nuestra vida.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero recuerda que aumentar el n&uacute;mero de actividades ha sido de ayuda para muchas personas y puede llevarte a una vida m&aacute;s feliz y saludable.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Intentemos! Por favor revisa la siguiente lista de <strong><em><u>actividades placenteras</u></em></strong> y selecciona una que NO hayas estado haciendo &uacute;ltimamente pero te gustar&iacute;a hacer entre <strong>HOY </strong>y<strong> MA&Ntilde;ANA:</strong></p>\r\n\r\n<p style=\"text-align:center\"><strong><select name=\"short_pleasant_activity\"><option value=\"Escuchar m\u00fasica\">Escuchar m&uacute;sica</option><option value=\"Llamar a un amigo o familiar\">Llamar a un amigo o familiar</option><option value=\"Hacer una caminata corta\">Hacer una caminata corta</option><option value=\"Leer un libro\">Leer un libro</option><option value=\"Cocinar algo\">Cocinar algo</option><option value=\"Dibujar o pintar\">Dibujar o pintar</option><option value=\"Arreglarte\">Arreglarte</option><option value=\"Ver una pel\u00edcula\">Ver una pel&iacute;cula</option><option value=\"Cantar\">Cantar</option><option value=\"Conversar con tu vecino\">Conversar con tu vecino</option><option value=\"Tejer\">Tejer</option><option value=\"Hacer jardiner\u00eda\">Hacer jardiner&iacute;a</option></select></strong></p>\r\n",
+                    "content": "<p>&iexcl;Intentemos! Por favor revisa la siguiente lista de <strong><em><u>actividades placenteras</u></em></strong> y selecciona <strong><u><em>una</em></u></strong> que NO hayas estado haciendo &uacute;ltimamente pero te gustar&iacute;a hacer entre <strong>HOY </strong>y<strong> MA&Ntilde;ANA:</strong></p>\r\n\r\n<p style=\"text-align:center\"><strong><select name=\"short_pleasant_activity\"><option value=\"Escuchar m\u00fasica\">Escuchar m&uacute;sica</option><option value=\"Llamar a un amigo o familiar\">Llamar a un amigo o familiar</option><option value=\"Hacer una caminata corta\">Hacer una caminata corta</option><option value=\"Leer un libro\">Leer un libro</option><option value=\"Cocinar algo\">Cocinar algo</option><option value=\"Dibujar o pintar\">Dibujar o pintar</option><option value=\"Arreglarte\">Arreglarte</option><option value=\"Ver una pel\u00edcula\">Ver una pel&iacute;cula</option><option value=\"Cantar\">Cantar</option><option value=\"Conversar con tu vecino\">Conversar con tu vecino</option><option value=\"Tejer\">Tejer</option><option value=\"Hacer jardiner\u00eda\">Hacer jardiner&iacute;a</option></select></strong></p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
@@ -920,19 +920,19 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iquest;Pudiste <strong>[selected small pleasant activity]</strong>?</p>\r\n\r\n<p>S&Iacute;: &iexcl;Excelente!</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gusto hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s?</p>\r\n\r\n<ul>\r\n\t<li>1 = Muy insatisfecho/a</li>\r\n\t<li>2 = insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es que sigues intentando.&nbsp;</p>\r\n",
+                    "content": "<p>&iquest;Pudiste <strong>[selected small pleasant activity]</strong>?</p>\r\n\r\n<p>S&Iacute;: &iexcl;Excelente!</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gust&oacute; hacer la actividad?</p>\r\n\r\n<p><em>Elige la respuesta que mejor describe tu experiencia con la actividad que hiciste.&nbsp;</em></p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s de hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li>1 = Muy insatisfecho/a</li>\r\n\t<li>2 = Insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando.&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1 (FEEDBACK)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Podr&iacute;as haber notado que hacer la actividad que planeaste fue mucho m&aacute;s f&aacute;cil y agradable de lo que imaginaste.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>O tal vez fue m&aacute;s dif&iacute;cil de lo que imaginaste o tuviste dificultades para empezar.</p>\r\n",
+                    "content": "<p>Hacer la actividad que planeaste puede haber sido mucho m&aacute;s f&aacute;cil y agradable de lo que imaginaste al principio.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>O tal vez fue m&aacute;s dif&iacute;cil de lo que imaginaste o tuviste dificultades para empezar.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Sabemos que puede ser dif&iacute;cil empezar. Por ahora, podr&iacute;as no tener ganas de hacer algo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Pero la acci&oacute;n viene antes de la motivaci&oacute;n.</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esto significa que primero debes volverte activo y luego tu motivaci&oacute;n aumentar&aacute; cada vez m&aacute;s.</p>\r\n",
+                    "content": "<p>Sabemos que puede ser dif&iacute;cil empezar. Quiz&aacute;s ahora no tienes las ganas suficientes para hacer algo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><strong>Pero debes saber que la acci&oacute;n viene antes de la motivaci&oacute;n.</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esto significa que primero debes volverte activo y luego tu motivaci&oacute;n y tus ganas aumentar&aacute;n cada vez m&aacute;s.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
@@ -944,7 +944,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Si te sientes mejor luego de haber completado la nueva actividad de esta semana, sabes que es algo para mantener en tu lista de cosas por continuar.</p>\r\n\r\n<p>Si no disfrutaste la actividad o tuviste dificultades para hacerlo, podr&iacute;as intentar con otra actividad.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este es el momento para empezar a &ldquo;probar&rdquo; lo que te hace sentir mejor.</p>\r\n",
+                    "content": "<p>Si te sientes mejor luego de realizar la actividad de esta semana, es importante que la mantengas en tu lista de cosas que debes seguir haciendo.&nbsp;</p>\r\n\r\n<p>Si no disfrutaste la actividad o tuviste dificultades para hacerlo, podr&iacute;as intentar con otra actividad.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este es el momento para empezar a &ldquo;probar&rdquo; lo que te hace sentir mejor.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
@@ -971,19 +971,19 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>A veces sentimos que no hay mucho que podamos hacer para mejorar nuestra salud f&iacute;sica.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Eso no es cierto. Por ejemplo, las actividades f&iacute;sicas, incluso algo tan peque&ntilde;o como caminar por 10 minutos al d&iacute;a, puede hacer una gran diferencia en nuestra salud.</p>\r\n",
+                    "content": "<p>A veces sentimos que no hay mucho que podamos hacer para mejorar nuestra salud f&iacute;sica.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Eso no es cierto. Por ejemplo, hacer actividad f&iacute;sica, incluso algo tan peque&ntilde;o como caminar 10 minutos al d&iacute;a, puede hacer una gran diferencia en nuestra salud.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por favor, revisa la siguiente lista de <strong><em><u>actividades saludables</u></em></strong> y selecciona una con la que te sientas c&oacute;modo/a haci&eacute;ndola <strong>HOY</strong> o<strong> MA&Ntilde;ANA</strong>:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align: center;\"><select name=\"short_healthy_activity\"><option value=\"Comer una fruta o verdura\">Comer una fruta o verdura</option><option value=\"Hacer una caminata corta\">Hacer una caminata corta</option><option value=\"Medir mi presi\u00f3n arterial \">Medir mi presi&oacute;n arterial</option><option value=\"Medir mi az\u00facar en la sangre / glucosa\">Medir mi az&uacute;car en la sangre / glucosa</option><option value=\"Tomar las escaleras en vez del ascensor\">Tomar las escaleras en vez del ascensor</option><option value=\"Comer menos az\u00facar / grasas\">Comer menos az&uacute;car / grasas</option><option value=\"Tomar m\u00e1s agua\">Tomar m&aacute;s agua</option></select></p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por favor, revisa la siguiente lista de <strong><em><u>actividades saludables</u></em></strong> y selecciona <strong><em><u>una</u></em></strong> que NO hayas estado haciendo &uacute;ltimamente pero puedas hacer <strong>HOY</strong> o<strong> MA&Ntilde;ANA</strong>:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"short_healthy_activity\"><option value=\"Comer m\u00e1s frutas o verduras\">Comer m&aacute;s frutas o verduras</option><option value=\"Hacer una caminata corta o alg\u00fan ejercicio\">Hacer una caminata corta o alg&uacute;n ejercicio</option><option value=\"Medir mi presi\u00f3n arterial \">Medir mi presi&oacute;n arterial</option><option value=\"Medir mi az\u00facar en la sangre o glucosa\">Medir mi az&uacute;car en la sangre o glucosa</option><option value=\"Usar las escaleras en vez del ascensor\">Usar las escaleras en vez del ascensor</option><option value=\"Comer menos az\u00facar o grasas\">Comer menos az&uacute;car o grasas</option><option value=\"Tomar m\u00e1s agua\">Tomar m&aacute;s agua</option></select></p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Gracias por compartir eso.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En un par de d&iacute;as te preguntaremos si pudiste realizar esta actividad saludable y c&oacute;mo te hizo sentir.</p>\r\n",
+                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En un par de d&iacute;as te preguntaremos si pudiste realizar esta actividad saludable y c&oacute;mo te hizo sentir.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -998,13 +998,13 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iquest;Pudiste <strong>[selected small healthy activity]</strong>?</p>\r\n\r\n<p>S&Iacute;: &iexcl;Eso es genial!</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gusto hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s?</p>\r\n\r\n<ul>\r\n\t<li>1 = Muy insatisfecho/a</li>\r\n\t<li>2 = insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es que sigues intentando.&nbsp;</p>\r\n",
+                    "content": "<p>&iquest;Pudiste <strong>[selected small healthy activity]</strong>?</p>\r\n\r\n<p>S&Iacute;: &iexcl;Eso es genial!</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gust&oacute; hacer la actividad?</p>\r\n\r\n<p><em>Elige la respuesta que mejor describe tu experiencia con la actividad que hiciste.</em></p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s de hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li><span style=\"line-height:1.6\">1 = Muy insatisfecho/a</span></li>\r\n\t<li>2 = Insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando.&nbsp;</p>\r\n",
                     "position": 1,
                     "title": " Slide 1 (FEEDBACK)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Mira este video y observa c&oacute;mo ser m&aacute;s activo tambi&eacute;n ayud&oacute; a otras personas:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><em>[VIDEO 3 - Testimonial]</em></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>Mira este video y observa c&oacute;mo es que ser m&aacute;s activo tambi&eacute;n ayud&oacute; a otras personas:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><em>[VIDEO 3 - Testimonial]</em></p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -1031,24 +1031,48 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Sabemos que empezar a hacer actividades nuevas puede ser dif&iacute;cil, a&uacute;n siendo actividades placenteras.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En estos momentos es posible que pienses: &uml;No tengo ganas en hacer nada&uml; o &uml;deber&iacute;a usar mi tiempo en cosas m&aacute;s importantes&uml;.</p>\r\n",
+                    "content": "<p>Durante los &uacute;ltimos d&iacute;as has prestado atenci&oacute;n a planear y hacer actividades placenteras y saludables.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Hoy queremos pensar en otro tipo de actividades, en las &ldquo;tareas&rdquo; que uno deber&iacute;a hacer regularmente.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Estos pensamientos son comunes cuando nos piden hacer actividades que no est&aacute;n en nuestra rutina.&nbsp;</p>\r\n",
+                    "content": "<p>Las <strong><em>tareas </em></strong>son aquellas actividades que generan una sensaci&oacute;n de logro y control sobre nuestras vidas una vez que las hemos terminado, como limpiar la casa, pagar las cuentas, ayudar a un familiar con un problema, etc&eacute;tera.</p>\r\n",
                     "position": 2,
-                    "title": "Slide 1a"
+                    "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Si no est&aacute;s segura o seguro de comenzar una nueva actividad, t&oacute;mate unos minutos para recordar tus objetivos para este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Realizar actividades o ser una persona activa puede ser el primer paso hacia tener una vida m&aacute;s saludable y feliz.</p>\r\n",
+                    "content": "<p>A primera vista, no siempre parece placentero hacer estas tareas, pero la verdad es que <strong><em>nos sentimos bien cuando las terminamos</em></strong>.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por eso, cumplir con estas tareas &nbsp;tambi&eacute;n es una forma importante para conseguir sentirnos mejor.</p>\r\n",
                     "position": 3,
-                    "title": "Slide 2"
+                    "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Con frecuencia evitamos estas tareas y no tenemos ganas de hacerlas porque usualmente no son tan divertidas o relajantes como las actividades placenteras.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero si no las hacemos, lo m&aacute;s probable es que nos sintamos peor.&nbsp;</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Si nos motivamos para hacer esas tareas, despu&eacute;s nos sentiremos bien con nosotros mismos y orgullosos de haberlas hecho.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Intentemos!</p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por favor revisa la siguiente lista de <strong><em><u>tareas</u></em></strong> y selecciona <strong><em><u>una</u></em></strong> que puedas hacer <strong>HOY o MA&Ntilde;ANA</strong>:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"task\"><option value=\"Limpiar la casa\">Limpiar la casa</option><option value=\"Lavar los platos\">Lavar los platos</option><option value=\"Pagar una cuenta\">Pagar una cuenta</option><option value=\"Cuidar a un(os) familiar(es)\">Cuidar a un(os) familiar(es)</option><option value=\"Resolver un problema personal\">Resolver un problema personal</option><option value=\"Lavar tu ropa\">Lavar tu ropa</option><option value=\"Cambiar las s\u00e1banas\">Cambiar las s&aacute;banas</option><option value=\"Hacer las compras del hogar\">Hacer las compras del hogar</option><option value=\"Lavarte el pelo\">Lavarte el pelo</option><option value=\"Hacerle un favor a alguien\">Hacerle un favor a alguien</option></select></p>\r\n",
+                    "position": 6,
+                    "title": "Slide 6"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Intenta hacer la tarea seleccionada hoy o ma&ntilde;ana y presta atenci&oacute;n a c&oacute;mo te sentiste despu&eacute;s.</p>\r\n",
+                    "position": 7,
+                    "title": "Slide 7"
                 }
             ],
-            "title": "Puede ser dif\u00edcil comenzar"
+            "title": "\u00a1Terminar tus tareas te har\u00e1 sentir mejor!"
         },
         {
             "_class": "Lesson",
@@ -1058,24 +1082,36 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"line-height:1.6\">Has tenido casi una semana realizando actividades placenteras.&nbsp;</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iquest;Te parecieron m&aacute;s divertidas de lo que esperabas?&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iquest;O quiz&aacute;s fueron m&aacute;s dif&iacute;ciles de lo que imaginabas?&nbsp;</p>\r\n",
+                    "content": "<p>&iquest;Pudiste <strong>[selected task]?</strong></p>\r\n\r\n<p>S&Iacute;: &iexcl;Eso est&aacute; muy bien! &nbsp;</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gust&oacute; hacer la actividad?</p>\r\n\r\n<p><em>Elige la respuesta que mejor describe tu experiencia con la actividad que hiciste.</em></p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s de hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li><span style=\"line-height:1.6\">1 = Muy insatisfecho/a</span></li>\r\n\t<li>2 = Insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando.&nbsp;</p>\r\n",
                     "position": 1,
-                    "title": "Slide 1"
+                    "title": "Slide 1 (FEEDBACK)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Ahora es el momento de probar qu&eacute; actividades son las que te hacen sentir mejor.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si alguna de las actividades de esta semana te ha hecho sentir muy bien, deber&iacute;as seguir haci&eacute;ndola.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Las que no te funcionaron bien, reempl&aacute;zalas por otras actividades y presta atenci&oacute;n a c&oacute;mo te hacen sentir.&nbsp;</p>\r\n",
+                    "content": "<p>Cuando logres realizar una actividad que planeaste hacer, celebra y recomp&eacute;nsate.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tal vez otras personas no reconozcan los pasos positivos que est&aacute;s dando, pero t&uacute; sabes qu&eacute; tan fuerte has trabajado para lograrlo.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Es importante que intentes realizar diferentes actividades para descubrir cu&aacute;les te hacen sentir bien, saludable y feliz.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Incluso aquellas que no te gusten, te habr&aacute;n ayudado a conocerte mejor.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Sigue experimentando para encontrar nuevas maneras para sentirte bien y estar sano.&nbsp;</p>\r\n",
+                    "content": "<p>Aumentar las actividades en tu vida y vivir una vida m&aacute;s saludable y feliz requiere esfuerzo, as&iacute; que es importante ir a tu propio ritmo, descansar cuando sea necesario y recompensarte.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Cuando te recompensas a ti mismo, est&aacute;s reconociendo lo que has logrado.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;As&iacute; que no esperes a que otros te recompensen!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Piensa en una recompensa saludable que podr&iacute;as darte cuando completes una actividad planeada.</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, despu&eacute;s de haber hecho una actividad, como limpiar la casa o hacer ejercicio, podr&iacute;as comprarte algo que te guste o ver una pel&iacute;cula, hacerte las u&ntilde;as o hacerte un masaje.&nbsp;</p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
                 }
             ],
-            "title": "Encontrando las mejores actividades para ti."
+            "title": "\u00a1Recomp\u00e9nsate y celebra el \u00e9xito!"
         },
         {
             "_class": "Lesson",
@@ -1085,30 +1121,36 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>La semana pasada intentamos encontrar las actividades que te daban m&aacute;s placer o alegr&iacute;a. Ahora queremos ayudarte a pensar en <u>deberes y tareas</u>.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Estas pueden ser tambi&eacute;n placenteras o divertidas, pero sobre todo te hacen sentir bien <u>por haberlas realizado</u>.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>Hasta el momento has planeado 3 actividades diferentes.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora planearemos otra <strong><em><u>actividad placentera</u></em></strong><u>.</u></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta puede requerir un poco m&aacute;s de planificaci&oacute;n y tiempo que la que te pedimos hacer antes.&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Un buen inicio es empezar con cosas que te parezcan f&aacute;ciles de hacer y que creas que puedes lograr.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Poco a poco ganar&aacute;s la confianza necesaria para ir haciendo actividades m&aacute;s complejas.&nbsp;</p>\r\n",
+                    "content": "<p>T&oacute;mate un momento para pensar en lo que te gustar&iacute;a lograr esta vez.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Siempre recuerda lo que hemos aprendido: la acci&oacute;n viene antes de la motivaci&oacute;n.&nbsp;</p>\r\n",
                     "position": 2,
-                    "title": "Slide 1a"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&iquest;Qu&eacute; deberes y tareas puedes hacer en los siguientes d&iacute;as?&nbsp;</p>\r\n\r\n<p>Puede ser algo muy sencillo, lo importante es empezar.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>A continuaci&oacute;n te mostramos una lista con ejemplos de actividades que a veces uno debe cumplir. Estas actividades pueden ser distintas para cada persona.</p>\r\n",
-                    "position": 3,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Luego de elegir tu actividad, debes abrir el calendario. Indica la fecha y la hora en la que planeas realizar la actividad elegida.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\">Actividad:</p>\r\n\r\n<p style=\"text-align:center\"><strong><select><option></option><option value=\"Hacer ejercicio\">Hacer ejercicio</option><option value=\"Ayudar a un familiar\">Ayudar a un familiar</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Pagar una cuenta \">Pagar una cuenta&nbsp;</option><option value=\"Resolver un problema personal\">Resolver un problema personal</option><option value=\"Ir al m\u00e9dico\">Ir al m&eacute;dico</option><option value=\"Limpiar o ordenar la casa\">Limpiar o ordenar la casa</option><option value=\"Salir a caminar\">Salir a caminar</option><option value=\"Comer comida m\u00e1s sana\">Comer comida m&aacute;s sana</option><option value=\"Controlar mi nivel de az\u00facar sanguina\">Controlar mi nivel de az&uacute;car sanguina</option><option value=\"Tener mi presi\u00f3n bajo control\">Tener mi presi&oacute;n bajo control</option></select></strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\">Calendario:</p>\r\n\r\n<p style=\"text-align:center\"><input name=\"date\" type=\"date\" /></p>\r\n\r\n<p style=\"text-align:center\"><input name=\"time\" type=\"time\" /></p>\r\n",
-                    "position": 4,
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Selecciona una de las siguientes actividades que NO hayas estado haciendo &uacute;ltimamente pero que puedas hacer durante los pr&oacute;ximos d&iacute;as:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"advanced_pleasant_activity\"><option value=\"Encontrarte con amigos o familiares\">Encontrarte con amigos o familiares</option><option value=\"Participar en actividades de la comunidad\">Participar en actividades de la comunidad</option><option value=\"Salir a comer\">Salir a comer</option><option value=\"Ir a la iglesia\">Ir a la iglesia</option><option value=\"Hacer un almuerzo o una cena para amigos o familia\">Hacer un almuerzo o una cena para amigos o familia</option><option value=\"Ir da comprar algo que te guste\">Ir da comprar algo que te guste</option><option value=\"Ir al cine\">Ir al cine</option><option value=\"Ir al parque\">Ir al parque</option><option value=\"Hacer un trabajo voluntario\">Hacer un trabajo voluntario</option><option value=\"Salir en la noche / bailar\">Salir en la noche / bailar</option><option value=\"Hacer manualidades\">Hacer manualidades</option><option value=\"Asistir a una charla o curso\">Asistir a una charla o curso</option><option value=\"Ir a la peluquer\u00eda\">Ir a la peluquer&iacute;a</option><option value=\"Hacer un paseo peque\u00f1o\">Hacer un paseo peque&ntilde;o</option><option value=\"Hacerte una manicure/pedicure\">Hacerte una manicure/pedicure</option><option value=\"Hacer deportes (v\u00f3ley / f\u00fatbol) con amigos\">Hacer deportes (v&oacute;ley / f&uacute;tbol) con amigos</option></select></p>\r\n",
+                    "position": 3,
                     "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&iexcl;Excelente!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora intenta hacer esta actividad en los pr&oacute;ximos d&iacute;as.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Luego te preguntaremos c&oacute;mo te fue.&nbsp;</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Si realmente disfrutas la actividad que has seleccionado, intenta repetirla.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si no disfrutas con esta actividad, elige otra e intenta de nuevo.</p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
                 }
             ],
-            "title": "Cumplir con nuestros deberes nos hace sentir aliviados"
+            "title": "\u00a1Aumentemos el n\u00famero de actividades que nos dan placer!"
         },
         {
             "_class": "Lesson",
@@ -1118,18 +1160,30 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Cuando te sientas sin energ&iacute;a o con mucho cansancio, es importante intentar hacer las cosas m&aacute;s despacio, un paso a la vez.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Eso significa que vayas a tu propio ritmo y que planifiques tus actividades de tal manera que no tengas que hacer todo al mismo tiempo, sino poco a poco.&nbsp;</p>\r\n",
+                    "content": "<p>&iexcl;Nada se aprende inmediatamente!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si tienes dificultades con una actividad o tarea, lo mejor es partirla en partes m&aacute;s puntuales o peque&ntilde;as.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El cambio es m&aacute;s f&aacute;cil cuando partimos las cosas en peque&ntilde;as piezas.&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Tambi&eacute;n significa saber con anticipaci&oacute;n cu&aacute;ndo estar&aacute;s con muchas tareas y asegurarte de no empezar a hacer m&aacute;s cosas de las que puedes manejar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuidarte es aprender a conocer y respetar tus propios l&iacute;mites.&nbsp;</p>\r\n",
+                    "content": "<p>Mira este video para saber m&aacute;s sobre ello:</p>\r\n\r\n<p>[VIDEO 4 - Step-by-step]</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Resumiendo lo que hemos aprendido en este video:</p>\r\n\r\n<p>1. Identifica la actividad que quieres realizar</p>\r\n\r\n<p>2. Haz una lista, partiendo la actividad en pasos m&aacute;s peque&ntilde;os</p>\r\n\r\n<p>3. Elige una parte peque&ntilde;a para empezar</p>\r\n\r\n<p>4. Planea c&oacute;mo y cu&aacute;ndo hacer cada paso</p>\r\n",
+                    "position": 3,
+                    "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Recuerda:</p>\r\n\r\n<p>Cuando logres hacer la primera parte peque&ntilde;a de tu lista, elige la siguiente parte a realizar, hasta que logres realizar la actividad grande que quer&iacute;as hacer. &nbsp;</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
                 }
             ],
-            "title": "Haz las cosas a tu propio ritmo "
+            "title": "\u00a1Da un paso a la vez!"
         },
         {
             "_class": "Lesson",
@@ -1139,24 +1193,24 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Muchas de nuestros comportamientos los hacemos de forma autom&aacute;tica, casi sin darnos cuenta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Muchas de nuestras tareas diarias se basan en h&aacute;bitos.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para cambiar estos h&aacute;bitos, primero necesitas reconocerlos y planear c&oacute;mo cambiarlos por algo diferente.</p>\r\n",
+                    "content": "<p>&iquest;Pudiste <strong>[selected complex pleasant activity]</strong>?</p>\r\n\r\n<p>S&Iacute;: &iexcl;Muy bien!</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gust&oacute; hacer la actividad?</p>\r\n\r\n<p><em>Elige la respuesta que mejor describe tu experiencia con la actividad que hiciste.</em></p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s de hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li><span style=\"line-height:1.6\">1 = Muy insatisfecho/a</span></li>\r\n\t<li>2 = Insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando.</p>\r\n",
                     "position": 1,
-                    "title": "Slide 1"
+                    "title": "Slide 1 (FEEDBACK)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, en vez de ver televisi&oacute;n todas los noches, intenta hacer algo distinto alg&uacute;n d&iacute;a de la semana, como leer un libro, escuchar m&uacute;sica o conversar con alguien.&nbsp;</p>\r\n",
+                    "content": "<p>Probablemente has podido realizar varias actividades durante las &uacute;ltimas tres semanas.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Recuerda qu&eacute; bien te sentiste cuando lograste hacer lo que planeaste y contin&uacute;a haciendo estas actividades que te hicieron sentir mejor.</p>\r\n",
                     "position": 2,
-                    "title": "Slide 1a"
+                    "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Si eres m&aacute;s consciente de tus acciones y de tus h&aacute;bitos, podr&aacute;s tener la habilidad de elegir qu&eacute; quieres hacer cada d&iacute;a, y, en consecuencia, sentirte diferente.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si eres persistente, puedes crear nuevos h&aacute;bitos.&nbsp;</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Siempre recuerda el objetivo personal que quer&iacute;as lograr con este programa y que llegar a tu meta te ayudar&aacute; a sentirte mejor y tener una vida m&aacute;s saludable.</p>\r\n",
                     "position": 3,
-                    "title": "Slide 2"
+                    "title": "Slide 3"
                 }
             ],
-            "title": "\u00a1La costumbre es lo que te hace seguir adelante!"
+            "title": "\u00a1Recuerda lo que quieres lograr!"
         },
         {
             "_class": "Lesson",
@@ -1166,36 +1220,30 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Esperamos que la semana pasada hayas podido hacer alguna actividad positiva.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Aunque haya sido solo peque&ntilde;a es importante. Peque&ntilde;os pasos pueden generar grandes cambios.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora queremos que pienses en actividades nuevas que pueden <u>mejorar tu salud</u>.</p>\r\n",
+                    "content": "<p>Esperamos que hayas podido realizar la actividad placentera que planeaste hace una semana.</p>\r\n\r\n<p>Ahora queremos que pienses en otra <strong><em><u>actividad saludable</u> </em></strong>para mejorar tu salud, esta vez puede requerir un poco m&aacute;s de planificaci&oacute;n&nbsp;o tiempo que la actividad saludable que hiciste antes en este programa.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Tal vez podr&iacute;as salir a caminar o a correr, practicar alg&uacute;n deporte, ir al gimnasio o seguir una dieta sana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Estas actividades pueden ayudarte a mejorar tu salud f&iacute;sica.</p>\r\n",
+                    "content": "<p>Recuerda:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Cuando mejoramos nuestra salud f&iacute;sica, nuestro &aacute;nimo tambi&eacute;n mejora.</span></p>\r\n",
                     "position": 2,
-                    "title": "Slide 1a"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Recuerda: mejorar tu salud f&iacute;sica tambi&eacute;n puede mejorar tu salud emocional y hacer que te sientas mejor contigo mismo.&nbsp;</p>\r\n\r\n<p><br />\r\n&iquest;Te animas a empezar con alguna de estas actividades?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Este cambio mejorar&aacute; tu salud!</p>\r\n",
-                    "position": 3,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&iquest;Qu&eacute; actividad te gustar&iacute;a experimentar para mejorar tu salud?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Elige una actividad de la siguiente lista.&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"actividade_saludable_realizar\"><option></option><option value=\"Salir a caminar o a correr \">Salir a caminar o a correr</option><option value=\"Practicar un deporte (jugar v\u00f3ley, f\u00fatbol, ir al gimnasio, ir a bailar)\">Practicar un deporte (jugar v&oacute;ley, f&uacute;tbol, ir al gimnasio, ir a bailar)</option><option value=\"Tomar mis medicamentos correctamente\">Tomar mis medicamentos correctamente</option><option value=\"Comer m\u00e1s frutas y verduras\">Comer m&aacute;s frutas y verduras</option><option value=\"Comer menos dulces o grasas\">Comer menos dulces o grasas</option><option value=\"Ir al m\u00e9dico regularmente\">Ir al m&eacute;dico regularmente</option><option value=\"Controlar mi glucosa (az\u00facar en la sangre)\">Controlar mi glucosa (az&uacute;car en la sangre)</option><option value=\"Controlar mi presi\u00f3n arterial \">Controlar mi presi&oacute;n arterial</option></select></p>\r\n",
-                    "position": 4,
+                    "content": "<p>&iquest;Qu&eacute; actividad te gustar&iacute;a intentar para mejorar tu salud?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Mira la lista debajo y selecciona una actividad NO hayas estado haciendo &uacute;ltimamente pero que puedes hacer durante los pr&oacute;ximos d&iacute;as:</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"advanced_healthy_activity\"><option value=\"Tomar mi medicaci\u00f3n regularmente \">Tomar mi medicaci&oacute;n regularmente</option><option value=\"Empezar una dieta saludable\">Empezar una dieta saludable</option><option value=\"Ir al gimnasio / hacer ejercios\">Ir al gimnasio / hacer ejercios</option><option value=\"Hacer un chequeo m\u00e9dico\">Hacer un chequeo m&eacute;dico</option><option value=\"Preparar una comida saludable\">Preparar una comida saludable</option><option value=\"Ir a nadar\">Ir a nadar</option><option value=\"Jugar deportes como v\u00f3ley o f\u00fatbol\">Jugar deportes como v&oacute;ley o f&uacute;tbol</option><option value=\"Montar bicicleta en vez de tomar un auto o bus\">Montar bicicleta en vez de tomar un auto o bus</option><option value=\"Hacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\">Hacer un diario para anotar tu presi&oacute;n arterial o nivel de glucosa</option><option value=\"Hacer una caminata larga\">Hacer una caminata larga</option><option value=\"Ir al pod\u00f3logo\">Ir al pod&oacute;logo</option><option value=\"Hacerte tratamiento de acupuntura\">Hacerte tratamiento de acupuntura</option><option value=\"Hacer yoga o meditar\">Hacer yoga o meditar</option></select></p>\r\n",
+                    "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Luego, en el calendario, indica la fecha y la hora en la que planeas realizar la actividad elegida.&nbsp;</p>\r\n\r\n<p style=\"text-align: center;\">Fecha:</p>\r\n\r\n<p style=\"text-align:center\"><input name=\"date\" type=\"date\" /></p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n\r\n<p style=\"text-align:center\">Hora:</p>\r\n\r\n<p style=\"text-align:center\"><input name=\"time\" type=\"time\" /></p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
-                    "position": 5,
+                    "content": "<p>&iexcl;Muy bien!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En unos d&iacute;as te preguntaremos si pudiste hacer esta actividad.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "position": 4,
                     "title": "Slide 4"
                 }
             ],
-            "title": "Actividades que mejoran tu salud"
+            "title": "Planeemos m\u00e1s actividades para mejorar tu salud"
         },
         {
             "_class": "Lesson",
@@ -1205,24 +1253,30 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Un paso a la vez!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo debajo del v&iacute;deo.&nbsp;</p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM3.mp4\" /></video></p>\r\n",
+                    "content": "<p>En general los grandes cambios no ocurren de un d&iacute;a para el otro, sino que toman algo de tiempo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Usualmente el cambio es tan gradual que es dif&iacute;cil darnos cuenta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero los peque&ntilde;os cambios diarios llevan a grandes cambios en el tiempo.</p>\r\n",
                     "position": 1,
-                    "title": " Slide 1 Video 3"
+                    "title": " Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Si esta semana elegiste una actividad para mejorar tu salud, pero &eacute;sta es muy dif&iacute;cil o muy grande, recuerda que puedes dividirla en peque&ntilde;os pasos o peque&ntilde;as tareas y escoger una para comenzar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si ya has realizado la actividad elegida para esta semana, &iquest;por qu&eacute; no eliges otra para practicar la nueva estrategia que acabas de aprender?</p>\r\n",
+                    "content": "<p>Peque&ntilde;os cambios en tu rutina diaria, por ejemplo, salir a caminar o encontrarte con amigos en vez de ver televisi&oacute;n, pueden llevar a mayores cambios en tu vida con el tiempo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>De esta forma creas, poco a poco, una vida saludable y feliz.&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Inserta ac&aacute; la actividad elegida, luego, en el calendario, indica la fecha y la hora en la que planeas realizarla.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\">Actividad:</p>\r\n\r\n<p style=\"text-align:center\"><input maxlength=\"40\" name=\"actividad grande\" size=\"20\" type=\"text\" /></p>\r\n\r\n<p style=\"text-align:center\">Calendario:</p>\r\n\r\n<p style=\"text-align:center\"><input name=\"date\" type=\"date\" /></p>\r\n\r\n<p style=\"text-align:center\"><input name=\"time\" type=\"time\" /></p>\r\n",
+                    "content": "<p>Es importante recordar qu&eacute; tan lejos has llegado y valorar los cambios que has logrado, aunque algunos te parezcan peque&ntilde;os.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Recuerda que los peque&ntilde;os cambios pueden ser el inicio de grandes cambios a largo plazo.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Sabemos que puede tomar un tiempo hasta que esas actividades formen parte de tu rutina diaria, pero si continuas haci&eacute;ndolas, ser&aacute; cada vez m&aacute;s f&aacute;cil y natural.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si sigues siendo activo/a, alcanzar&aacute;s tu meta.</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
                 }
             ],
-            "title": "\u00a1Un paso a la vez!"
+            "title": "\u00a1Peque\u00f1os pasos llevan a grandes cambios!"
         },
         {
             "_class": "Lesson",
@@ -1232,12 +1286,48 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Alcanzar tu objetivo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s saludable.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora que tienes una lista de actividades, planea cu&aacute;ndo las vas a hacer.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Recuerda lo bien que te sentiste cuando hiciste alguna de las tareas que hab&iacute;as planeado.</p>\r\n\r\n<p>&iexcl;Por eso, contin&uacute;a!</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>&iquest;Pudiste [<strong>selected healthy activity from session 13]</strong>?&nbsp;</p>\r\n\r\n<p>S&Iacute;: &iexcl;Felicitaciones!</p>\r\n\r\n<p>&iquest;Cu&aacute;nto te gust&oacute; hacer la actividad?</p>\r\n\r\n<p><em>Elige la respuesta que mejor describe tu experiencia con la actividad que hiciste.</em></p>\r\n\r\n<ul>\r\n\t<li>1 = No me gust&oacute; para nada</li>\r\n\t<li>2 = No me gust&oacute;</li>\r\n\t<li>3 = Ni me gust&oacute; ni me desagrad&oacute;</li>\r\n\t<li>4 = Me gust&oacute;</li>\r\n\t<li>5 = Me gust&oacute; mucho</li>\r\n</ul>\r\n\r\n<p>&iquest;Qu&eacute; tan satisfecho/a te sentiste despu&eacute;s de hacer la actividad?</p>\r\n\r\n<ul>\r\n\t<li>1 = Muy insatisfecho/a</li>\r\n\t<li>2 = Insatisfecho/a</li>\r\n\t<li>3 = Ni satisfecho/a ni insatisfecho/a</li>\r\n\t<li>4 = Satisfecho/a</li>\r\n\t<li>5 = Muy satisfecho/a</li>\r\n</ul>\r\n\r\n<p>NO: Ser m&aacute;s activo te ayudar&aacute; a sentirte mejor y a tener una vida m&aacute;s sana y feliz. Recuerda que todav&iacute;a puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando.</p>\r\n",
                     "position": 1,
-                    "title": "Slide 1"
+                    "title": "Slide 1 (FEEDBACK)"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Empecemos la sesi&oacute;n de hoy d&iacute;a con este video:</p>\r\n\r\n<p>[VIDEO 5 - Relapses]</p>\r\n",
+                    "position": 2,
+                    "title": "Slide 2"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Un buen plan es como una ruta en un mapa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando sigues una ruta en un mapa, puedes encontrarte con algo que no estaba en el mapa, como un rompemuelle, pero si te mantienes en la ruta y no pierdes de vista tu meta, te mantendr&aacute;s en el camino para llegar a tu destino.</p>\r\n",
+                    "position": 3,
+                    "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Entonces un buen plan te gu&iacute;a por la vida en la misma forma que lo hace una ruta en el mapa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Lo importante es continuar con el plan, incluso cuando te cruces con rompemuelles que te retrasen.</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Un obst&aacute;culo, como un rompemuelle, no necesariamente cambiar&aacute; tu rutina porque lo que haces todos los d&iacute;as importa m&aacute;s que lo que pasa una sola vez.</p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>El peligro de los obst&aacute;culos es que si no haces una actividad una vez, aunque debiste hacerla, es m&aacute;s probable que tampoco la hagas la pr&oacute;xima vez.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>De esta forma es f&aacute;cil entrar de nuevo en el c&iacute;rculo negativo y dejar de hacer cosas.</p>\r\n",
+                    "position": 6,
+                    "title": "Slide 6"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ello es importante que identifiques los obst&aacute;culos y, si te descarrilas, vuelvas al camino tan r&aacute;pido como sea posible y sigas avanzando hacia una vida saludable y feliz.</p>\r\n",
+                    "position": 7,
+                    "title": "Slide 7"
                 }
             ],
-            "title": "\u00a1No te olvides de tu objetivo! "
+            "title": "\u00a1Prep\u00e1rate para los obst\u00e1culos y vuelve al camino!"
         },
         {
             "_class": "Lesson",
@@ -1247,30 +1337,60 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Por lo general, los cambios importantes no ocurren de un d&iacute;a para el otro, sino que toman tiempo.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por eso, a veces es dif&iacute;cil darse cuenta de que estos cambios est&aacute;n sucediendo.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Es importante que recuerdes todo lo que has aprendido y crecido hasta el momento.</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Hacer algo por primera vez puede ser dif&iacute;cil, despu&eacute;s de haberlo hecho cien veces es m&aacute;s f&aacute;cil y despu&eacute;s de hacerlo mil veces es casi autom&aacute;tico.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Valora los cambios que has logrado, aunque algunos te parezcan peque&ntilde;os.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ya sabes que peque&ntilde;os cambios pueden ser el inicio de grandes cambios a lo largo del tiempo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pensar en las cosas que no pudiste hacer te ayudar&aacute;n a aprender algo, pero no gastes mucho tiempo en esto.&nbsp;</p>\r\n",
+                    "content": "<p>Mientras m&aacute;s practicamos algo, menos esfuerzo nos cuesta y es m&aacute;s f&aacute;cil hacerlo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Muchas de las cosas que hacemos en nuestra vida diaria pueden ser consideradas <strong><em>&ldquo;<u>h&aacute;bitos</u>&rdquo;, </em></strong>es decir cosas que hacemos con frecuencia y con poco esfuerzo</p>\r\n",
                     "position": 2,
-                    "title": "Slide 2a"
+                    "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Sigue adelante para que puedas alcanzar cambios m&aacute;s importantes y tener una vida cada vez m&aacute;s saludable y feliz.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Sabemos que tomar&aacute; un tiempo hasta que estos nuevos comportamientos sean parte de tu rutina diaria, pero si eres persistente, ser&aacute; cada vez m&aacute;s f&aacute;cil y m&aacute;s natural.&nbsp;</p>\r\n",
+                    "content": "<p>Algunos de nuestros h&aacute;bitos son muy positivos para nuestras vidas, pero algunos no.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para cambiar los h&aacute;bitos que no son positivos, primero debemos reconocer cu&aacute;les no nos hacen bien y planear una forma de modificarlos.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el v&iacute;deo, por favor, presiona el tri&aacute;ngulo debajo del v&iacute;deo.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM4.mp4\" /></video></p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, en vez de ver televisi&oacute;n todas las noches, podr&iacute;as intentar hacer algo diferente algunos d&iacute;as de la semana, como leer un libro, escuchar m&uacute;sica o conversar con un vecino.</p>\r\n",
                     "position": 4,
-                    "title": "Slide 4 Video 4"
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Si contin&uacute;as poniendo en pr&aacute;ctica tu nueva actividad, aun cuando al comienzo te cueste un poco, luego se volver&aacute; m&aacute;s f&aacute;cil y con el tiempo se convertir&aacute; en un nuevo h&aacute;bito.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iquest;Intentamos?&nbsp;</p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Piensa en una de las actividades que has intentado hacer a lo largo de este programa y que te hizo sentir bien, una que podr&iacute;as incluir en tu rutina con regularidad.</p>\r\n",
+                    "position": 6,
+                    "title": "Slide 6"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Una forma de hacer que una actividad positiva se convierta en una rutina es relacionar esta &nbsp;actividad con un cierto momento del d&iacute;a o con un d&iacute;a de la semana, como hemos visto antes.&nbsp;</p>\r\n",
+                    "position": 7,
+                    "title": "Slide 6a"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Por ejemplo, imaginemos que la actividad que quieres incorporar en tu rutina es caminar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Piensa cu&aacute;l es el mejor momento del d&iacute;a o de la semana para hacerlo, por ejemplo: siempre en las ma&ntilde;anas, despu&eacute;s del trabajo o los s&aacute;bados.</p>\r\n",
+                    "position": 8,
+                    "title": "Slide 7"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Otra estrategia podr&iacute;a ser unir la nueva actividad con otra que ya hagas regularmente, por ejemplo almorzar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En este caso, podr&iacute;as caminar todos los d&iacute;as despu&eacute;s de almuerzo.</p>\r\n",
+                    "position": 9,
+                    "title": "Slide 8"
                 }
             ],
-            "title": "\u00a1Los cambios toman tiempo!"
+            "title": "\u00a1Mejora tu salud creando nuevos h\u00e1bitos!"
         },
         {
             "_class": "Lesson",
@@ -1280,18 +1400,36 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Las cosas que son realmente importantes en nuestra vida requieren de tiempo y esfuerzo para ser alcanzadas.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cambiar tu estilo de vida no es f&aacute;cil. Necesitas hacer una rutina y continuar con ella a pesar de que tengas imprevistos y dificultades.</p>\r\n",
+                    "content": "<p>Los logros que son realmente importantes en nuestras vidas toman cierto tiempo y requieren de esfuerzo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">C</span><span style=\"line-height:1.6\">ambiar nuestro estilo de vida no es f&aacute;cil. </span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Necesitamos crear una rutina y mantenernos en ella, &iexcl;aun cuando haya obst&aacute;culos!</span></p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Solo aquello que hagas con frecuencia, se convertir&aacute; en una costumbre.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Pasito a pasito se construye algo grande!</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Sabemos que toma un tiempo hasta que estas nuevas conductas sean parte de nuestra rutina y formen un nuevo h&aacute;bito, pero si te mantienes firme, cada vez ser&aacute; m&aacute;s f&aacute;cil y natural.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>A algunas personas les ayuda escribir un listado de actividades en un papel o usar un calendario para recordar lo que tienen que hacer.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>A otras tambi&eacute;n les gusta colgar esta lista o calendario en un lugar que siempre est&eacute; a la vista, como por ejemplo, el refrigerador.&nbsp;</p>\r\n",
+                    "position": 3,
+                    "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Estas estrategias pueden ayudarte a mantenerte en el camino correcto y recordarte que debes mantenerte siempre activo.</p>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&iexcl;No olvides recompensarte cuando cumples con tu programaci&oacute;n!&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esto te ayudar&aacute; a seguir motivado y valorar la actividad a&uacute;n m&aacute;s.</p>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
                 }
             ],
-            "title": "\u00a1Contin\u00faa con tu rutina!"
+            "title": "\u00a1Cambiar nuestros h\u00e1bitos toma tiempo!"
         },
         {
             "_class": "Lesson",
@@ -1301,36 +1439,24 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Contin&uacute;a realizando las actividades que te hicieron sentir mejor!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Tener un estilo de vida saludable y lograr cambios importantes requieren de tiempo y de esfuerzo. Si contin&uacute;as haciendo tus actividades y usando las habilidades que has aprendido hasta ahora, tendr&aacute;s una mejor salud f&iacute;sica y emocional.&nbsp;</p>\r\n",
+                    "content": "<p>Durante este programa has dado importantes pasos hacia una vida m&aacute;s saludable y feliz.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Contin&uacute;a haciendo lo que ha funcionado para t&iacute; y lo que te ha hecho sentir bien!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&Eacute;sta es la &uacute;ltima sesi&oacute;n de CONEMO.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esperamos que participar en este programa te haya servido para sentirte mejor.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si quieres revisar alguna de las sesiones nuevamente, estar&aacute;n todas a tu disposici&oacute;n en este mismo programa. &nbsp;</p>\r\n",
+                    "content": "<p>Esta es la &uacute;ltima sesi&oacute;n de CONEMO y nos gustar&iacute;a despedirnos:</p>\r\n\r\n<p>[VIDEO 6 - Goodbye]</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Dentro de poco te contactaramos para programar una cita para que puedas reunirte con el equipo de investigaci&oacute;n del proyecto.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El equipo de investigaci&oacute;n quiere saber c&oacute;mo est&aacute;s y c&oacute;mo fue tu experiencia de participar en nuestro programa.</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Esperamos que este programa te haya ayudado a sentirte mejor y que incluyas en tu vida lo que has aprendido aqu&iacute;.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Al final de la conversaci&oacute;n deber&aacute;s entregar el tel&eacute;fono que has usado durante estas semanas en el programa.</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 3a"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esperamos que participar te haya servido y que te sientas mejor ahora.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Sigue para adelante realizando tus actividades diarias!&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
-                    "position": 5,
-                    "title": "Slide 4"
                 }
             ],
-            "title": "Sesi\u00f3n final"
+            "title": "\u00a1Bienvenido a la \u00faltima sesi\u00f3n de CONEMO!"
         },
         {
             "_class": "Lesson",
