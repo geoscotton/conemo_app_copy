@@ -24,7 +24,6 @@ i18nStrings.generalContent.push({
 	configureUserLabel:'Configure Your User Account',
 	contactHelpLabel:'Contact Nurse / Nurse Assistant',
 	instructionsLabel:'Instructions',
-	instructionsContent:'stuff',
 	contactTypes:['Ask for Help'],
 	thankYouAlert:'Thank you, the nurse / nurse assistant has been contacted.',
 	unreadLabel:'unread',
@@ -59,23 +58,6 @@ i18nStrings.generalContent.push({
 	contactHelpLabel:'Contactar auxiliar de enfermagem',
 	instructionsLabel:'Instruções',
 	instructionsLesson: 'Sessão de exemplo',
-	instructionsContent:'<h2><i class="glyphicon glyphicon-question-sign"></i> Como funciona o App:' +
-    '</h2><ol class="well"><li>3 vezes por semana você deverá fazer o login no aplicativo ' +
-    'CONEMO, haverá novas ferramentas e informações cada vez que você acessá-lo</li><li>' +
-    'Cada vez que você fizer seu login, você irá aprender algumas estratégias testadas que ' +
-    'são desenvolvidas para mantê-lo mais saudável e feliz</li><li>Se você esquecer de ' +
-    'acessar o aplicativo por mais de duas vezes, você será contactado por seu auxiliar de ' +
-    'enfermagem para ter certeza de ' +
-    'que você continue acessando e participando do programa</li></ol><h2><i class="glyphicon ' +
-    'glyphicon-wrench"></i> Sessões anteriores</h2><ol class="well"><li>Você pode voltar para ' +
-    'sessões mais antigas (dos dias anteriores), se você quiser, visitando a caixa de ' +
-    'ferramentas</li><li>Se você pular sessões, você pode visitar as sessões anteriores ' +
-    'para voltar a elas</li></ol> <h2><i class="glyphicon glyphicon-phone"></i> Solicitação ' +
-    'de Ajuda</h2> <ol class="well"><li>Se precisar de ajuda a qualquer momento, pressione o ' +
-    'botão de Solicitação de ajuda.</li><li>Não se preocupe, você pode pedir ajuda ' +
-    '<ol><li>com o aplicativo, se você estiver com problemas com a internet, o CONEMO ou ' +
-    'precisa de assistência geral da auxiliar de enfermagem</li><li>para uma auxiliar de ' +
-    'enfermagem com o seu telefone</li></ol>',
 	contactTypes:['Pedir ajuda'],
 	thankYouAlert:'Obrigado, a/o auxiliar de enfermagem foi contactada/o e vai te chamar nos ' +
     'próximos 2 dias úteis.',
@@ -114,22 +96,6 @@ i18nStrings.generalContent.push({
 	contactHelpLabel:'Contactar enfermera',
 	instructionsLabel:'Instrucciones',
 	instructionsLesson: 'Sesión de entrenamiento',
-	instructionsContent: '<h2><i class="glyphicon glyphicon-question-sign"></i> ¿Cómo ' +
-    'funciona el aplicativo?</h2><ol class="well"><li>Debes ingresar al aplicativo CONEMO ' +
-    '3 veces a la semana. Cada vez que lo hagas, el aplicativo te dará nueva información ' +
-    'y nuevas tareas.</li><li>Cada vez que uses el aplicativo, aprenderás nuevas estrategias ' +
-    'para mantenerte sano y feliz.</li><li>Si olvidas ingresar al aplicativo más de 2 veces ' +
-    'seguidas, una enfermera te llamará para saber si todo está bien e invitarte a seguir ' +
-    'usando CONEMO.</li></ol><h2><i class="glyphicon glyphicon-wrench"></i> Sesiones</h2><ol ' +
-    'class="well"><li>Si quieres mirar una de las sesiones anteriores debes apretar el botón ' +
-    '“Sesiones” y ahí encontrarás la sesión que quieres usar.</li><li>Si pierdes una ' +
-    'sesión o no la haces a tiempo, siempre puedes recuperarla apretando el botón ' +
-    '“Sesiones”.</li></ol> <h2><i class="glyphicon glyphicon-phone"></i> Solicitar ' +
-    'ayuda</h2> <ol class="well"><li>Si en algún momento necesitas ayuda de la ' +
-    'enfermera, por favor aprieta el botón “Solicitar ayuda”.</li><li>Luego elige una de ' +
-    'las siguientes alternativas: <ol><li>Necesito ayuda con el aplicativo,</li><li>' +
-    'Necesito ayuda de mi enfermera</li><li>Tengo dificultades con la conexión de ' +
-    'internet</li></ol>',
 	contactTypes:['Solicitar ayuda'],
 	thankYouAlert:'Muchas gracias. La enfermera ha sido contactada. Ella te llamará dentro ' +
     'de los siguientes 2 días laborales.',

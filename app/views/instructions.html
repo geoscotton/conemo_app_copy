@@ -6,8 +6,7 @@
 
 <h1>{{ instructions.label }}</h1>
 <div id="instructions">
-	<div ng-bind-html="'instructionsContent' | translate">
-	</div>
+  <ng-include src="instructions.contentPath"></ng-include>
 
 	<div class="well"><b>Conemo Phone App:</b> V{{ instructions.appVersion }}</div>
 </div>

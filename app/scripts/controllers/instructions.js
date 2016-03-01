@@ -5,6 +5,7 @@
     $window.localStorage['onResume'] = '';
     this.label = $window.l10nStrings.instructionsLabel;
     this.appVersion = $window.Conemo.Globals.VERSION;
+    this.contentPath = 'views/instructions/' + $window.localStorage.l10n + '.html';
 
     if ($routeParams.key == 'showSample'){
       $window.scrollTo(0, $window.document.body.scrollHeight);
