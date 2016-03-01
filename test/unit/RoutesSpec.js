@@ -36,12 +36,13 @@ describe('Routes', function() {
   });
 
   it('wires /instructions', function() {
-    expect($route.routes['/instructions'].controller).to.eq('InstructionsCtrl');
+    expect($route.routes['/instructions'].controller)
+      .to.eq('InstructionsController');
   });
 
   it('wires /instructions/:key', function() {
     expect($route.routes['/instructions/:key'].controller)
-      .to.eq('InstructionsCtrl');
+      .to.eq('InstructionsController');
   });
 
   it('wires /sample_lesson', function() {

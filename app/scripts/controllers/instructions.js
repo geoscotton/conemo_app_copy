@@ -1,13 +1,19 @@
-'use strict';
+(function() {
+  'use strict';
 
-angular.module('conemoAppApp')
-  .controller('InstructionsCtrl', function ($scope, $rootScope, $routeParams) {
-    localStorage['onResume'] = '';
-    $scope.instructionsLabel = l10nStrings.instructionsLabel;
-
-    $scope.userId = localStorage.userId;
+  function InstructionsController($window, $routeParams) {
+    $window.localStorage['onResume'] = '';
+    this.label = $window.l10nStrings.instructionsLabel;
+    this.appVersion = $window.Conemo.Globals.VERSION;
 
     if ($routeParams.key == 'showSample'){
-        window.scrollTo(0,document.body.scrollHeight);
+      $window.scrollTo(0, $window.document.body.scrollHeight);
     }
-});
+  }
+
+  angular.module('conemoApp.controllers')
+         .controller(
+           'InstructionsController',
+           ['$window', '$routeParams', InstructionsController]
+         );
+})()

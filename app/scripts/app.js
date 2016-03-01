@@ -67,11 +67,13 @@ var lessonsRead = [];
         })
         .when('/instructions', {
           templateUrl: 'views/instructions.html',
-          controller: 'InstructionsCtrl'
+          controller: 'InstructionsController',
+          controllerAs: 'instructions'
         })
         .when('/instructions/:key', {
           templateUrl: 'views/instructions.html',
-          controller: 'InstructionsCtrl'
+          controller: 'InstructionsController',
+          controllerAs: 'instructions'
         })
         .when('/sample_lesson', {
           templateUrl: 'views/sample_lesson.html',
