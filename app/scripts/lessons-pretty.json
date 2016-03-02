@@ -4,6 +4,7 @@
             "_class": "Lesson",
             "dayInTreatment": 0,
             "guid": "5112e366-6249-46f9-89d0-55e09aaac5a2",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -55,6 +56,7 @@
             "_class": "Lesson",
             "dayInTreatment": 1,
             "guid": "81858267-b7c1-407c-8a63-c2d554aea567",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -106,6 +108,7 @@
             "_class": "Lesson",
             "dayInTreatment": 3,
             "guid": "e7625a9f-2b86-4d3a-9828-3a74b6bc39c1",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -151,6 +154,7 @@
             "_class": "Lesson",
             "dayInTreatment": 6,
             "guid": "0d934e95-e7fe-4fb9-84fd-e62ea5af5d9d",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -196,6 +200,7 @@
             "_class": "Lesson",
             "dayInTreatment": 8,
             "guid": "b7cec56a-6354-4626-90e6-e230c16e05b5",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -247,6 +252,7 @@
             "_class": "Lesson",
             "dayInTreatment": 10,
             "guid": "c3905713-9f96-483c-899e-d9a83650fa6d",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -292,6 +298,7 @@
             "_class": "Lesson",
             "dayInTreatment": 13,
             "guid": "524df35a-ab2b-4c56-b8a8-748255e9e5f7",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -325,6 +332,7 @@
             "_class": "Lesson",
             "dayInTreatment": 15,
             "guid": "4bc85705-e0c0-47b8-a0ea-45bb8a9669b5",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -358,6 +366,7 @@
             "_class": "Lesson",
             "dayInTreatment": 17,
             "guid": "21a15760-403c-424b-8126-cb07dd27dfc9",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -403,6 +412,7 @@
             "_class": "Lesson",
             "dayInTreatment": 20,
             "guid": "5c897add-e38b-449c-896b-e01e7349c4e9",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -442,6 +452,7 @@
             "_class": "Lesson",
             "dayInTreatment": 22,
             "guid": "b979fb00-987c-4e19-a563-153cf6a582cc",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -475,6 +486,7 @@
             "_class": "Lesson",
             "dayInTreatment": 24,
             "guid": "6e80f83a-3c40-4d95-a641-a40946a32548",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -514,6 +526,7 @@
             "_class": "Lesson",
             "dayInTreatment": 27,
             "guid": "33afd2b5-bee3-482d-bf0c-a90da2490d7b",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -541,6 +554,7 @@
             "_class": "Lesson",
             "dayInTreatment": 29,
             "guid": "e25cd7c4-45da-4137-aa3a-8dbe32d65801",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -574,6 +588,7 @@
             "_class": "Lesson",
             "dayInTreatment": 31,
             "guid": "62bb2ec6-294e-467c-b3e9-8a8299b8f1a8",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -607,6 +622,7 @@
             "_class": "Lesson",
             "dayInTreatment": 34,
             "guid": "a7fdaa0b-2b88-454c-a192-70d89cbf8b8b",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -658,6 +674,7 @@
             "_class": "Lesson",
             "dayInTreatment": 36,
             "guid": "9b0a220f-896b-4076-b02d-df97fc48a305",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -715,6 +732,7 @@
             "_class": "Lesson",
             "dayInTreatment": 38,
             "guid": "f755864c-fc35-4aaa-8d60-6fd6cd246eca",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -748,6 +766,7 @@
             "_class": "Lesson",
             "dayInTreatment": 41,
             "guid": "62f30e6b-0fff-4afb-9220-9b9ab7cad265",
+            "hasActivityPlanning": false,
             "l10n": "pt-BR",
             "slides": [
                 {
@@ -775,6 +794,7 @@
             "_class": "Lesson",
             "dayInTreatment": 1,
             "guid": "f584a39b-c9b2-4a2f-9aff-f177fd44b85b",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -832,6 +852,7 @@
             "_class": "Lesson",
             "dayInTreatment": 3,
             "guid": "529a2f05-65f8-41f7-ab18-2a673e6eb0f3",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -871,6 +892,7 @@
             "_class": "Lesson",
             "dayInTreatment": 6,
             "guid": "2f6ea7cb-a281-4bf7-98ff-02ac557de206",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -922,6 +944,7 @@
             "_class": "Lesson",
             "dayInTreatment": 8,
             "guid": "0f7a1cc3-3bb0-4a2c-b1fb-3088ef9bc412",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -967,6 +990,7 @@
             "_class": "Lesson",
             "dayInTreatment": 10,
             "guid": "481c9380-d8a7-42c7-b010-7aabfca37e4d",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1012,6 +1036,7 @@
             "_class": "Lesson",
             "dayInTreatment": 13,
             "guid": "bbb5abf3-f8c7-46c2-8bb8-a5296bf00f49",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1045,6 +1070,7 @@
             "_class": "Lesson",
             "dayInTreatment": 15,
             "guid": "f0dc6d45-d678-4806-9e1b-1aa532a6491f",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1078,6 +1104,7 @@
             "_class": "Lesson",
             "dayInTreatment": 17,
             "guid": "410a6881-dc59-4651-8915-4bb7ddab4dbe",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1129,6 +1156,7 @@
             "_class": "Lesson",
             "dayInTreatment": 20,
             "guid": "6e5925d2-c9a8-42ab-b67f-52d95d2a6ed3",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1168,6 +1196,7 @@
             "_class": "Lesson",
             "dayInTreatment": 22,
             "guid": "13a2470e-ce38-4357-b37a-10c37d2686f4",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1207,6 +1236,7 @@
             "_class": "Lesson",
             "dayInTreatment": 24,
             "guid": "f6f33efc-d66b-4c9f-a22b-cbc77fa1de87",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1240,6 +1270,7 @@
             "_class": "Lesson",
             "dayInTreatment": 27,
             "guid": "fd91e151-2a83-4012-b7b0-0c4bd685432f",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1267,6 +1298,7 @@
             "_class": "Lesson",
             "dayInTreatment": 29,
             "guid": "ee4ca5b6-8ac0-4efd-a0c9-eb912754fe8f",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1300,6 +1332,7 @@
             "_class": "Lesson",
             "dayInTreatment": 31,
             "guid": "a8282a46-9b11-45a2-b735-e65fc470b33e",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1333,6 +1366,7 @@
             "_class": "Lesson",
             "dayInTreatment": 34,
             "guid": "40b9d58f-47b8-43a0-a73f-1d76a1033f04",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1384,6 +1418,7 @@
             "_class": "Lesson",
             "dayInTreatment": 36,
             "guid": "a5dfac05-c5bd-4749-8f78-1b8dbb08110c",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1447,6 +1482,7 @@
             "_class": "Lesson",
             "dayInTreatment": 38,
             "guid": "94b9b930-f396-4c43-913c-9b8ac12ab14d",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1486,6 +1522,7 @@
             "_class": "Lesson",
             "dayInTreatment": 41,
             "guid": "40dd808e-83dd-4218-94d0-1f6ce80c0abf",
+            "hasActivityPlanning": false,
             "l10n": "es-PE",
             "slides": [
                 {
@@ -1513,6 +1550,7 @@
             "_class": "Lesson",
             "dayInTreatment": 1,
             "guid": "ee2af651-0165-454f-8ee3-b67b9d556c23",
+            "hasActivityPlanning": false,
             "l10n": "en",
             "slides": [
                 {
@@ -1546,6 +1584,7 @@
             "_class": "Lesson",
             "dayInTreatment": 2,
             "guid": "6e048c42-1673-4de0-b36b-59d30268504a",
+            "hasActivityPlanning": false,
             "l10n": "en",
             "slides": [
                 {
@@ -1573,6 +1612,7 @@
             "_class": "Lesson",
             "dayInTreatment": 3,
             "guid": "ee404ca4-939c-49e0-b1e0-8df23074e10f",
+            "hasActivityPlanning": false,
             "l10n": "en",
             "slides": [
                 {
@@ -1600,6 +1640,7 @@
             "_class": "Lesson",
             "dayInTreatment": 4,
             "guid": "35420b01-eb84-4fff-9b68-0c5ec344f7b2",
+            "hasActivityPlanning": false,
             "l10n": "en",
             "slides": [
                 {
@@ -1633,6 +1674,7 @@
             "_class": "Lesson",
             "dayInTreatment": 5,
             "guid": "9b016256-34e3-4362-88b9-05a68cfeeee7",
+            "hasActivityPlanning": false,
             "l10n": "en",
             "slides": [
                 {
@@ -1660,6 +1702,7 @@
             "_class": "Lesson",
             "dayInTreatment": 12,
             "guid": "8b8f706d-5da8-4924-8c5d-fa6d8f30f263",
+            "hasActivityPlanning": false,
             "l10n": "en",
             "slides": [
                 {
