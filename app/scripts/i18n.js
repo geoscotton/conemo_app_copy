@@ -56,7 +56,7 @@ i18nStrings.generalContent.push({
 	backLabel:'Anterior',
 	nextLabel:'Próximo',
 	configureUserLabel:'Configure sua Conta de Usuário',
-	contactHelpLabel:'Contactar auxiliar de enfermagem',
+	contactHelpLabel:'Pedir ajuda',
 	instructionsLabel:'Instruções',
 	instructionsLesson: 'Sessão de exemplo',
 	instructionsContent:'<h2><i class="glyphicon glyphicon-question-sign"></i> Como funciona o App:' +
