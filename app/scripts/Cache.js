@@ -2,7 +2,7 @@
   'use strict';
 
   var SCHEMA_NAME = 'conemo',
-      SCHEMA_VERSION = 6;
+      SCHEMA_VERSION = 7;
   var PAYLOADS_API_PATH = '/api/payloads';
   var STATUSES = {
     Initialized: 'initialized',
@@ -97,6 +97,21 @@
     onUpgrade: function onUpgrade(rawDb) {
       rawDb.addTableColumn(TABLES.ContentAccessEvents, 'response_attributes');
       rawDb.addTableColumn(TABLES.Logins, 'app_version');
+
+      rawDb.renameTableColumn(TABLES.ContentAccessEvents, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.Devices, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.ExceptionReports, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.HelpMessages, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.ParticipantStartDates, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.PlannedActivities, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.SessionEvents, 'created_at', 'client_created_at');
+      rawDb.renameTableColumn(TABLES.ContentAccessEvents, 'updated_at', 'client_updated_at');
+      rawDb.renameTableColumn(TABLES.Devices, 'updated_at', 'client_updated_at');
+      rawDb.renameTableColumn(TABLES.ExceptionReports, 'updated_at', 'client_updated_at');
+      rawDb.renameTableColumn(TABLES.HelpMessages, 'updated_at', 'client_updated_at');
+      rawDb.renameTableColumn(TABLES.ParticipantStartDates, 'updated_at', 'client_updated_at');
+      rawDb.renameTableColumn(TABLES.PlannedActivities, 'updated_at', 'client_updated_at');
+      rawDb.renameTableColumn(TABLES.SessionEvents, 'updated_at', 'client_updated_at');
 
       return rawDb.dump();
     },
