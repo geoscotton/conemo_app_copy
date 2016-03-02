@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.8 - 2016-03-02
+
+* remove training session
+* change timestamp column names
+* update lesson content
+* fix help text PT
+* add PT updated instructions
+* display app version on instructions page
+
 ## 1.1.7 - 2016-02-26
 
 * update ES content; remove ES specific CSS styles
