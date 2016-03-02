@@ -3,12 +3,10 @@
 	<h2 class="navigation-button"><i class="glyphicon glyphicon-home"></i></h2>
 	</button>
 </a>
-<h1>{{'instructionsLabel' | translate}}</h1>
 
+<h1>{{ instructions.label }}</h1>
 <div id="instructions">
+  <ng-include src="instructions.contentPath"></ng-include>
 
-	<div ng-bind-html="'instructionsContent' | translate">
-	</div>
-
-	<div class="well"><b>Conemo Phone App:</b> V{{ appVersion }}<br/><b>User:</b> {{ userId }}</div>
+	<div class="well"><b>Conemo Phone App:</b> V{{ instructions.appVersion }}</div>
 </div>
