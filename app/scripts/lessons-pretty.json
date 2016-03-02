@@ -2,6 +2,57 @@
     "lessons": [
         {
             "_class": "Lesson",
+            "dayInTreatment": 0,
+            "guid": "5112e366-6249-46f9-89d0-55e09aaac5a2",
+            "l10n": "pt-BR",
+            "slides": [
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Esta &eacute; uma sess&atilde;o de treinamento sobre como usar o aplicativo CONEMO. Neste aplicativo voc&ecirc; vai ler textos, assistir a v&iacute;deos, selecionar objetivos e atividades e responder perguntas.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para ir para pr&oacute;xima p&aacute;gina, pressione a seta &agrave; direita, na parte inferior da tela.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "position": 1,
+                    "title": "Slide 1"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para voltar &agrave; p&aacute;gina anterior, pressione a seta &agrave; esquerda na parte inferior da tela.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "position": 2,
+                    "title": "Slide 2"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">&Aacute;s vezes CONEMO pedir&aacute; que voc&ecirc; selecione atividades. Para selecion&aacute;-las, clique na seta. Uma nova janela ir&aacute; aparecer com todas as op&ccedil;&otilde;es de atividades. Role a p&aacute;gina para cima e para baixo com o dedo para visualizar todas as op&ccedil;&otilde;es e depois selecione aquela que voc&ecirc; escolheu.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Exemplo: Qual &eacute; a sua cor favorita?</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\"><select name=\"favorite color\"><option value=\"Vermelha\">Vermelha</option><option value=\"Azul\">Azul</option><option value=\"Verde\">Verde</option><option value=\"Amarelo\">Amarelo</option><option value=\"Lil\u00e1s\">Lil&aacute;s</option><option value=\"Outra\">Outra</option></select></span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Se quiser mudar sua resposta, clique novamente na seta e escolha outra op&ccedil;&atilde;o.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "position": 3,
+                    "title": "Slide 3"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">&Agrave;s vezes voc&ecirc; pode querer selecionar mais de uma resposta para a mesma pergunta. Por exemplo, na pergunta &ldquo;Quais alimentos voc&ecirc; gosta?&rdquo;. Provavelmente voc&ecirc; vai querer selecionar mais de um alimento. Para isso, pressione a seta e selecione todas as respostas que desejar. Caso tenha selecionado uma resposta errada, clique novamente sobre ela &nbsp;e ela desaparecer&aacute;. &nbsp;&nbsp;</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "position": 4,
+                    "title": "Slide 4"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">&Aacute;s vezes CONEMO vai perguntar se voc&ecirc; conseguiu realizar as atividades planejadas. Para responder, clique em SIM ou N&Atilde;O. Em seguida, podem surgir perguntas sobre como voc&ecirc; se sentiu. Para responder, clique na seta para ver todas as op&ccedil;&otilde;es de resposta. </span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "position": 5,
+                    "title": "Slide 5"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Algumas sess&otilde;es incluem v&iacute;deos.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para assistir, pressione a seta. Para parar, clique novamente.</span></p>\r\n\r\n<div>[include countdown video here]</div>\r\n",
+                    "position": 6,
+                    "title": "Slide 6 (video)"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para voltar &agrave; tela inicial do aplicativo, clique no bot&atilde;o laranja no lado direito na parte superior. </span></p>\r\n",
+                    "position": 7,
+                    "title": "Slide 7"
+                }
+            ],
+            "title": "Sess\u00e3o de treinamento"
+        },
+        {
+            "_class": "Lesson",
             "dayInTreatment": 1,
             "guid": "81858267-b7c1-407c-8a63-c2d554aea567",
             "l10n": "pt-BR",
@@ -38,7 +89,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Qual(is) objetivo(s) voc&ecirc; gostaria de alcan&ccedil;ar at&eacute; o final deste programa? Escolha uma ou mais op&ccedil;&otilde;es (</span>c<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">lique no tri&acirc;ngulo preto para ver todas as op&ccedil;&otilde;es)</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">:</span></p>\r\n\r\n<p><select name=\"personal_goal\"><option value=\"Ser mais feliz\">Ser mais feliz</option><option value=\"Me sentir melhor comigo mesmo\">Me sentir melhor comigo mesmo</option><option value=\"Voltar a trabalhar\">Voltar a trabalhar</option></select></p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Qual(is) objetivo(s) voc&ecirc; gostaria de alcan&ccedil;ar at&eacute; o final deste programa? Escolha uma ou mais op&ccedil;&otilde;es (</span>c<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">lique no tri&acirc;ngulo preto para ver todas as op&ccedil;&otilde;es)</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">:</span></p>\r\n\r\n<p><select name=\"personal_goal\"><option value=\"Ser mais feliz\">Ser mais feliz</option><option value=\"Me sentir melhor comigo mesmo\">Me sentir melhor comigo mesmo</option><option value=\"Voltar a trabalhar\">Voltar a trabalhar</option><option value=\"Poder cuidar melhor dos meus familiares\">Poder cuidar melhor dos meus familiares</option><option value=\"Ter uma sa\u00fade melhor\">Ter uma sa&uacute;de melhor</option><option value=\"Aproveitar mais a vida\">Aproveitar mais a vida</option></select></p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
