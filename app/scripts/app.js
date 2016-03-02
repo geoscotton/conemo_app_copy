@@ -75,11 +75,6 @@ var lessonsRead = [];
           controller: 'InstructionsController',
           controllerAs: 'instructions'
         })
-        .when('/sample_lesson', {
-          templateUrl: 'views/sample_lesson.html',
-          controller: 'SampleLessonController',
-          controllerAs: 'sampleLesson'
-        })
         .otherwise({
           redirectTo: '/'
         });

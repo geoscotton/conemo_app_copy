@@ -45,11 +45,6 @@ describe('Routes', function() {
       .to.eq('InstructionsController');
   });
 
-  it('wires /sample_lesson', function() {
-    expect($route.routes['/sample_lesson'].controller)
-      .to.eq('SampleLessonController');
-  });
-
   describe('when no authentication token is present', function() {
     it('redirects to the configuration controller', function() {
       expect($route.current).to.be.undefined;
