@@ -27,21 +27,14 @@ i18nStrings.generalContent.push({
 	contactTypes:['Ask for Help'],
 	thankYouAlert:'Thank you, the nurse / nurse assistant has been contacted.',
 	unreadLabel:'unread',
-	downloaderText: {
-        textFile: 'file',
-        textFiles: 'files',
-        textMissingContent: 'Please download the most recent content.',
-        textUnavailableMedia: '<p>This media is unavailable.</p>',
-        textUnsupportedFileType: 'That file type is not currently supported.',
-        textAlert: 'That file type is not currently supported.'
-    },
-    videoLinks: [
-    	'https://conemo.northwestern.edu/system/EN1.mp4',
-        'https://conemo.northwestern.edu/system/EN2.mp4'
-    ],
-    yes: 'yes',
-    no: 'no',
-    welcomeToConemo: 'Welcome to CONEMO!'
+  videoLinks: [
+    'https://conemo.northwestern.edu/system/EN1.mp4',
+      'https://conemo.northwestern.edu/system/EN2.mp4'
+  ],
+  yes: 'yes',
+  no: 'no',
+  welcomeToConemo: 'Welcome to CONEMO!',
+  activityChoices: ['Activity 1', 'Activity 2', 'Activity 3']
 });
 
 i18nStrings.generalContent.push({
@@ -62,24 +55,20 @@ i18nStrings.generalContent.push({
 	thankYouAlert:'Obrigado, a/o auxiliar de enfermagem foi contactada/o e vai te chamar nos ' +
     'próximos 2 dias úteis.',
 	unreadLabel:'não lido',
-	downloaderText: {
-        textFile: 'arquivo',
-        textFiles: 'arquivos',
-        textMissingContent: 'Por favor, baixe os videos mais recentes em "Instruções."',
-        textUnavailableMedia: '<p>Arquivo indisponível no momento</p>',
-        textUnsupportedFileType: 'Este tipo de arquivo não é compatível.',
-        textAlert: 'Testing in Português'
-    },
-    videoLinks: [
-    	'https://conemo.northwestern.edu/system/SP1.mp4',
-      'https://conemo.northwestern.edu/system/SP2.mp4',
-      'https://conemo.northwestern.edu/system/SP3.mp4',
-      'https://conemo.northwestern.edu/system/SP4.mp4',
-    	'https://conemo.northwestern.edu/system/countdown.mp4'
-    ],
-    yes: 'sim',
-    no: 'não',
-    welcomeToConemo: 'Benvindo ao CONEMO!'
+  videoLinks: [
+    'https://conemo.northwestern.edu/system/SP1.mp4',
+    'https://conemo.northwestern.edu/system/SP2.mp4',
+    'https://conemo.northwestern.edu/system/SP3.mp4',
+    'https://conemo.northwestern.edu/system/SP4.mp4',
+    'https://conemo.northwestern.edu/system/countdown.mp4'
+  ],
+  yes: 'sim',
+  no: 'não',
+  welcomeToConemo: 'Benvindo ao CONEMO!',
+  activityChoices: ['Ouvir música', 'Ligar para um amigo ou membro da família',
+                   'Fazer uma caminhada curta', 'Ler um livro', 'Cozinhar',
+                   'Pintar', 'Vestir-se bem', 'Assistir um filme', 'Cantar',
+                   'Conversar com vizinhos', 'Fazer crochê', 'Cuidar do jardim']
 });
 
 i18nStrings.generalContent.push({
@@ -100,23 +89,18 @@ i18nStrings.generalContent.push({
 	thankYouAlert:'Muchas gracias. La enfermera ha sido contactada. Ella te llamará dentro ' +
     'de los siguientes 2 días laborales.',
 	unreadLabel:'No leído',
-	downloaderText: {
-        textFile: 'archivo',
-        textFiles: 'archivos',
-        textMissingContent: 'Por favor, descargue la versión más reciente de los vídeos en ' +
-          '"Instrucciones."',
-        textUnavailableMedia: '<p>En este momento este archivo no está disponible.</p>',
-        textUnsupportedFileType: 'En este momento este archivo no es compatible.',
-        textAlert: 'Testing in Português'
-    },
-    videoLinks: [
-			'https://conemo.northwestern.edu/system/LM1.mp4',
-	    'https://conemo.northwestern.edu/system/LM2.mp4',
-	    'https://conemo.northwestern.edu/system/LM3.mp4',
-	    'https://conemo.northwestern.edu/system/LM4.mp4',
-	   	'https://conemo.northwestern.edu/system/countdown.mp4'
-    ],
-    yes: 'sí',
-    no: 'no',
-    welcomeToConemo: '¡Bienvenido a CONEMO!'
+  videoLinks: [
+    'https://conemo.northwestern.edu/system/LM1.mp4',
+    'https://conemo.northwestern.edu/system/LM2.mp4',
+    'https://conemo.northwestern.edu/system/LM3.mp4',
+    'https://conemo.northwestern.edu/system/LM4.mp4',
+    'https://conemo.northwestern.edu/system/countdown.mp4'
+  ],
+  yes: 'sí',
+  no: 'no',
+  welcomeToConemo: '¡Bienvenido a CONEMO!',
+  activityChoices: ['Escuchar música', 'Llamar a un amigo o familiar',
+                   'Hacer una caminata corta', 'Leer un libro', 'Cocinar algo',
+                   'Dibujar o pintar', 'Arreglarte', 'Ver una película',
+                   'Cantar', 'Conversar con tu vecino', 'Tejer', 'Hacer jardinería']
 });

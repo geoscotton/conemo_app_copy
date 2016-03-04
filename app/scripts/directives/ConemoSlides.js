@@ -38,6 +38,7 @@
     return {
       templateUrl: 'views/conemo-slides.html',
       scope: {
+        activityChoices: '=',
         slides: '=',
         selectedLesson: '='
       },

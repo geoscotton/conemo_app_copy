@@ -15,6 +15,8 @@
       return a.position - b.position;
     });
 
+    $scope.activityChoices = $window.l10nStrings.activityChoices;
+
     var slideCount = $scope.slides.length;
 
     function buildSlideContent(lesson, slides, plannedActivity) {
