@@ -18,9 +18,16 @@ Install the application dependencies
 
 `node_modules/.bin/bower install`
 
-## Running tests
+## Adding the Android platform
 
-`npm test`
+```
+rm -rf platforms
+mkdir www
+LOCALE=es-PE API_SERVER=http://localhost:3000 \
+LESSON_SERVER=http://localhost:3000 \
+node_modules/.bin/cordova platform add android
+git checkout platforms/android/build.gradle platforms/android/src/edu/northwestern/cbits/conemo/MainActivity.java
+```
 
 ## Adding the background mode plugin
 
@@ -30,14 +37,9 @@ LESSON_SERVER=https://conemo.northwestern.edu \
 node_modules/.bin/cordova plugin add https://github.com/katzer/cordova-plugin-background-mode.git#0.6.4
 ```
 
-## Adding the Android platform
+## Running tests
 
-```
-mkdir www
-LOCALE=es-PE API_SERVER=http://localhost:3000 \
-LESSON_SERVER=http://localhost:3000 \
-node_modules/.bin/cordova platform add android
-```
+`npm test`
 
 ## Building and installing the app on an Android device or emulator
 
