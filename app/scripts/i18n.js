@@ -34,7 +34,9 @@ i18nStrings.generalContent.push({
   yes: 'yes',
   no: 'no',
   welcomeToConemo: 'Welcome to CONEMO!',
-  activityChoices: ['Activity 1', 'Activity 2', 'Activity 3']
+  activityChoices: ['Activity 1', 'Activity 2', 'Activity 3'],
+  todaysDate: 'Today\'s date',
+  ifCorrectContinue: 'If this is correct, please Continue.'
 });
 
 i18nStrings.generalContent.push({
@@ -68,7 +70,9 @@ i18nStrings.generalContent.push({
   activityChoices: ['Ouvir música', 'Ligar para um amigo ou membro da família',
                    'Fazer uma caminhada curta', 'Ler um livro', 'Cozinhar',
                    'Pintar', 'Vestir-se bem', 'Assistir um filme', 'Cantar',
-                   'Conversar com vizinhos', 'Fazer crochê', 'Cuidar do jardim']
+                   'Conversar com vizinhos', 'Fazer crochê', 'Cuidar do jardim'],
+  todaysDate: 'Data de hoje',
+  ifCorrectContinue: 'Se isso é correto, clique em Iniciar.'
 });
 
 i18nStrings.generalContent.push({
@@ -102,5 +106,7 @@ i18nStrings.generalContent.push({
   activityChoices: ['Escuchar música', 'Llamar a un amigo o familiar',
                    'Hacer una caminata corta', 'Leer un libro', 'Cocinar algo',
                    'Dibujar o pintar', 'Arreglarte', 'Ver una película',
-                   'Cantar', 'Conversar con tu vecino', 'Tejer', 'Hacer jardinería']
+                   'Cantar', 'Conversar con tu vecino', 'Tejer', 'Hacer jardinería'],
+  todaysDate: 'Fecha de hoy',
+  ifCorrectContinue: 'Si la fecha y hora son correctas, por favor continúe.'
 });
