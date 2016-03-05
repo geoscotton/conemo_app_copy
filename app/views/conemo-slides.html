@@ -70,6 +70,6 @@
   Can you do something before the next 5 days are up??<br>
   What can you do?
   <select name="planned-activity-name">
-    <option>Play ping pong!</option>
+    <option ng-repeat="activity in activityChoices | filter:translate">{{ activity }}</option>
   </select>
 </div>
