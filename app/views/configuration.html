@@ -14,9 +14,9 @@
       required>
 		<br/>
 		<br/>
-    Today's date: {{ configuration.timestamp | date:'medium' }}
+    {{ 'todaysDate' | translate }}: {{ configuration.timestamp | date:'medium' }}
     <br />
-    If this is correct, please Continue.
+    {{ 'ifCorrectContinue' | translate }}
     <br />
     <br />
 
