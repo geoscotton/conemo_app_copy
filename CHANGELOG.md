@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.1.9 - 2016-03-06
+
+* translate config page
+* add black background to videos
+* update SP instructions
+* change PT Session 2 slide 5 to be multiple choice
+* remove auto numbered lesson headers
+* move home button on instructions page
+* add activity options
+* update instructions for accuracy
+
 ## 1.1.8 - 2016-03-02
 
 * remove training session

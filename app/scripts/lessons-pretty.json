@@ -85,7 +85,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Voc&ecirc; receber&aacute; sess&otilde;es como esta tr&ecirc;s vezes por semana. Em algumas dessas sess&otilde;es voc&ecirc; vai assistir a um v&iacute;deo que cont&eacute;m mais informa&ccedil;&otilde;es para ajud&aacute;-lo a aproveitar ao m&aacute;ximo este programa. Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo:</span></p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP1.mp4\" /></video></p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Voc&ecirc; receber&aacute; sess&otilde;es como esta tr&ecirc;s vezes por semana. Em algumas dessas sess&otilde;es voc&ecirc; vai assistir a um v&iacute;deo que cont&eacute;m mais informa&ccedil;&otilde;es para ajud&aacute;-lo a aproveitar ao m&aacute;ximo este programa. Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo:</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP1.mp4\" /></video></p>\r\n",
                     "position": 5,
                     "title": "Slide 5 (video)"
                 },
@@ -269,7 +269,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo e aprender mais sobre isso: </span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP2.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo e aprender mais sobre isso: </span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP2.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3 (video)"
                 },
@@ -331,7 +331,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assista a este v&iacute;deo e veja como ser mais ativo ajudou outras pessoas tamb&eacute;m:</span></p>\r\n\r\n<p dir=\"ltr\"><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP3.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assista a este v&iacute;deo e veja como ser mais ativo ajudou outras pessoas tamb&eacute;m:</span></p>\r\n\r\n<p dir=\"ltr\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP3.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1 (video)"
                 },
@@ -479,7 +479,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assista a este v&iacute;deo para aprender mais sobre como isso funciona:</span></p>\r\n\r\n<p dir=\"ltr\"><em><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP4.mp4\" /></video></span></em></p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assista a este v&iacute;deo para aprender mais sobre como isso funciona:</span></p>\r\n\r\n<p dir=\"ltr\"><em><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP4.mp4\" /></video></span></em></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -603,7 +603,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Bem-vindo/a a sess&atilde;o 15! Vamos come&ccedil;ar com este video:</span></p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP5.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Bem-vindo/a a sess&atilde;o 15! Vamos come&ccedil;ar com este video:</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP5.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -747,7 +747,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</span></p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
+                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -869,7 +869,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana. En algunas de estas sesiones se te pedir&aacute; ver un video con informaci&oacute;n que te ayudar&aacute; a aprovechar al m&aacute;ximo este programa.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
+                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana. En algunas de estas sesiones se te pedir&aacute; ver un video con informaci&oacute;n que te ayudar&aacute; a aprovechar al m&aacute;ximo este programa.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
@@ -1047,7 +1047,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Por favor, presiona el tri&aacute;ngulo blanco para iniciar el video y aprender m&aacute;s sobre esto:</p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM2.mp4\" /></video></p>\r\n",
+                    "content": "<p>Por favor, presiona el tri&aacute;ngulo blanco para iniciar el video y aprender m&aacute;s sobre esto:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM2.mp4\" /></video></p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
@@ -1577,7 +1577,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Watch this video!</p>\r\n\r\n<p><video style=\"max-width:100%;\"><source type=\"video/mp4\" src=\"videos/EN1.mp4\" /></video></p>\r\n",
+                    "content": "<p>Watch this video!</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/EN1.mp4\" /></video></p>\r\n",
                     "position": 3,
                     "title": "Lesson Day 1 Video Slide"
                 },
