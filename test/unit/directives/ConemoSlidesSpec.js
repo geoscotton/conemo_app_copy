@@ -17,6 +17,7 @@ describe('ConemoSlides', function() {
 
     $provide.constant('Resources', Resources);
     $provide.constant('VideoControl', null);
+    $provide.constant('translateFilter', function() {});
   }));
 
   beforeEach(inject(function(_$compile_, _$rootScope_, $templateCache) {

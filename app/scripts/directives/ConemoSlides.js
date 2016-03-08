@@ -28,6 +28,7 @@
     function link(scope, element) {
       scope.unsafe = function(input) { return $sce.trustAsHtml(input); };
       scope.docHeight = angular.element($window).height();
+      scope.activityContentPath = 'views/activities/' + $window.localStorage.l10n + '.html';
 
       Resources.fetchLatestUnreportedActivity().then(function(activities) {
         buildSlideContent(scope, element, activities[0]);

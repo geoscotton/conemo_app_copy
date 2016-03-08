@@ -36,7 +36,9 @@ i18nStrings.generalContent.push({
   welcomeToConemo: 'Welcome to CONEMO!',
   activityChoices: ['Activity 1', 'Activity 2', 'Activity 3'],
   todaysDate: 'Today\'s date',
-  ifCorrectContinue: 'If this is correct, please Continue.'
+  ifCorrectContinue: 'If this is correct, please Continue.',
+  didYouDoActivity: 'Did you',
+  noActivity: 'That\'s unfortunate, it can really help to do the things you schedule.'
 });
 
 i18nStrings.generalContent.push({
@@ -72,7 +74,11 @@ i18nStrings.generalContent.push({
                    'Pintar', 'Vestir-se bem', 'Assistir um filme', 'Cantar',
                    'Conversar com vizinhos', 'Fazer crochê', 'Cuidar do jardim'],
   todaysDate: 'Data de hoje',
-  ifCorrectContinue: 'Se isso é correto, clique em Iniciar.'
+  ifCorrectContinue: 'Se isso é correto, clique em Iniciar.',
+  didYouDoActivity: 'Você conseguiu',
+  noActivity: 'Sabemos que pode ser difícil começar, mas lembra-se que isso vai ' +
+              'lhe ajudar a se sentir melhor. Se quiser, pode mudar sua seleção e ' +
+              'tentar outra atividade.'
 });
 
 i18nStrings.generalContent.push({
@@ -108,5 +114,10 @@ i18nStrings.generalContent.push({
                    'Dibujar o pintar', 'Arreglarte', 'Ver una película',
                    'Cantar', 'Conversar con tu vecino', 'Tejer', 'Hacer jardinería'],
   todaysDate: 'Fecha de hoy',
-  ifCorrectContinue: 'Si la fecha y hora son correctas, por favor continúe.'
+  ifCorrectContinue: 'Si la fecha y hora son correctas, por favor continúe.',
+  didYouDoActivity: '¿Pudiste hacerlo',
+  noActivity: 'Ser más activo te ayudará a sentirte mejor y a tener una vida ' +
+              'más sana y feliz. Recuerda que todavía puedes seleccionar otra ' +
+              'actividad si quieres e intentar de nuevo. Lo importante es seguir ' +
+              'intentando.'
 });
