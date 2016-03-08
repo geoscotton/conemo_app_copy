@@ -8,48 +8,26 @@
   <input type="hidden" name="reported-activity-planned-at" ng-value="plannedActivity.planned_at" />
   <input type="hidden" name="reported-activity-lesson-guid" ng-value="plannedActivity.lesson_guid" />
 
-  Did you {{ plannedActivity.name }}?
+  {{ 'didYouDoActivity' | translate }} {{ plannedActivity.name }}?
 
   <div>
     <label>
       <input name="reported-activity-is-complete" ng-model="isComplete" type="radio" value="Yes">
-      Yes
+      {{ 'yes' | translate }}
     </label>
 
     <label>
       <input name="reported-activity-is-complete" ng-model="isComplete" type="radio" value="No">
-      No
+      {{ 'no' | translate }}
     </label>
   </div>
 
   <span ng-if="isComplete === 'Yes'">
-    Great!
-
-    <div>
-      How much did you like doing the activity?
-      <select name="reported-activity-happiness">
-        <option>1 - A lot</option>
-        <option>2 - A lot</option>
-        <option>3 - A lot</option>
-        <option>4 - A lot</option>
-        <option>5 - A lot</option>
-      </select>
-    </div>
-
-    <div>
-      How satisfied did you feel afterwards?
-      <select name="reported-activity-worthwhile">
-        <option>1 - Very Satisfied</option>
-        <option>2 - Very Satisfied</option>
-        <option>3 - Very Satisfied</option>
-        <option>4 - Very Satisfied</option>
-        <option>5 - Very Satisfied</option>
-      </select>
-    </div>
+    <ng-include src="activityContentPath"></ng-include>
   </span>
 
   <span ng-if="isComplete === 'No'">
-     That's unfortunate, it can really help to do the things you schedule.
+    {{ 'noActivity' | translate }}
   </span>
 </div>
 
