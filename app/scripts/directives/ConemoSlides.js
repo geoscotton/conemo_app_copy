@@ -29,6 +29,12 @@
       scope.unsafe = function(input) { return $sce.trustAsHtml(input); };
       scope.docHeight = angular.element($window).height();
       scope.activityContentPath = 'views/activities/' + $window.localStorage.l10n + '.html';
+      scope.plannedActivity = {
+        isComplete: null
+      };
+      scope.selectedActivity = {
+        value: null
+      };
 
       Resources.fetchLatestUnreportedActivity().then(function(activities) {
         buildSlideContent(scope, element, activities[0]);
@@ -41,7 +47,8 @@
       scope: {
         activityChoices: '=',
         slides: '=',
-        selectedLesson: '='
+        selectedLesson: '=',
+        plannedLesson: '='
       },
       link: link
     };

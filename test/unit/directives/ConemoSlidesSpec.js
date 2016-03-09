@@ -16,8 +16,8 @@ describe('ConemoSlides', function() {
     };
 
     $provide.constant('Resources', Resources);
-    $provide.constant('VideoControl', null);
-    $provide.constant('translateFilter', function() {});
+    $provide.constant('VideoControl', { addTo: function() {} });
+    $provide.constant('translateFilter', function(value) { return value; });
   }));
 
   beforeEach(inject(function(_$compile_, _$rootScope_, $templateCache) {
@@ -38,9 +38,12 @@ describe('ConemoSlides', function() {
 
   describe('with no planned or reported activities present', function() {
     it('counts only content slides', function(done) {
-      var element = $compile('<div conemo-slides slides="slides"></div>')(scope);
+      var element = $compile(
+        '<div conemo-slides slides="slides" selected-lesson="selectedLesson"></div>'
+      )(scope);
 
       scope.slides = [{}, {}];
+      scope.selectedLesson = {};
       scope.$digest();
 
       latestUnreportedActivity.then(function() {
@@ -90,7 +93,10 @@ describe('ConemoSlides', function() {
     )(scope);
 
     scope.slides = [];
-    scope.selectedLesson = { hasActivityPlanning: true };
+    scope.selectedLesson = {
+      hasActivityPlanning: true,
+      prePlanningContent: 'Can you do something'
+    };
     scope.isReady = true;
     scope.$digest();
 
@@ -100,7 +106,7 @@ describe('ConemoSlides', function() {
     });
   });
 
-  it('adds an activity report question if required', function() {
+  it('adds an activity report question if required', function(done) {
     var element = $compile(
       '<div conemo-slides slides="slides" selected-lesson="selectedLesson"></div>'
     )(scope);
@@ -112,7 +118,7 @@ describe('ConemoSlides', function() {
     scope.$digest();
 
     latestUnreportedActivity.then(function() {
-      expect(element.html()).to.match(/Did you/);
+      expect(element.html()).to.match(/didYouDoActivity/);
       done();
     });
   });

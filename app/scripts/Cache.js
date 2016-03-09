@@ -2,7 +2,7 @@
   'use strict';
 
   var SCHEMA_NAME = 'conemo',
-      SCHEMA_VERSION = 7;
+      SCHEMA_VERSION = 8;
   var PAYLOADS_API_PATH = '/api/payloads';
   var STATUSES = {
     Initialized: 'initialized',
@@ -83,6 +83,7 @@
         .addColumn('level_of_happiness', this.context.lf.Type.STRING)
         .addColumn('how_worthwhile', this.context.lf.Type.STRING)
         .addColumn('planned_at', this.context.lf.Type.DATE_TIME)
+        .addColumn('follow_up_at', this.context.lf.Type.DATE_TIME)
         .addColumn('lesson_guid', this.context.lf.Type.STRING)
         .addNullable([
           'is_complete', 'is_help_wanted', 'level_of_happiness',
@@ -112,6 +113,8 @@
       rawDb.renameTableColumn(TABLES.ParticipantStartDates, 'updated_at', 'client_updated_at');
       rawDb.renameTableColumn(TABLES.PlannedActivities, 'updated_at', 'client_updated_at');
       rawDb.renameTableColumn(TABLES.SessionEvents, 'updated_at', 'client_updated_at');
+
+      rawDb.addTableColumn(TABLES.PlannedActivities, 'follow_up_at');
 
       return rawDb.dump();
     },
@@ -201,8 +204,10 @@
         var table = this.getTable();
 
         return db.select().from(table)
-                 .where(table.is_complete.isNull())
-                 .orderBy(table.planned_at, context.lf.Order.DESC)
+                 .where(context.lf.op.and(
+                     table.is_complete.isNull(),
+                     table.follow_up_at.lte(new Date())))
+                 .orderBy(table.follow_up_at, context.lf.Order.DESC)
                  .limit(1)
                  .exec();
       }).bind(this));
