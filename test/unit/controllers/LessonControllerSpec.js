@@ -50,7 +50,7 @@ describe('LessonController', function() {
   beforeEach(function() {
     window._alert = window.alert;
     window.alert = function() {};
-    scope = {};
+    scope = { selectedLesson: { slides: [] }, $digest: function() {} };
   });
 
   afterEach(function() {

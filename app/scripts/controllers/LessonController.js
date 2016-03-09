@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  var YES = 'Yes', NO = 'No';
+  var YES = 'Yes', NO = 'No', INCOMPLETE = 'incomplete';
 
   function LessonsController($scope, $routeParams, $location,
                              $window, $rootScope, startDateService, Resources) {
@@ -19,16 +19,16 @@
 
     var slideCount = $scope.slides.length;
 
-    function buildSlideContent(lesson, slides, plannedActivity) {
+    function buildSlideContent(lesson, plannedActivity) {
       var slideIndexOffset = 0;
 
       if (plannedActivity != null) {
-        slideCount = $scope.slides.length + 1;
-        slideIndexOffset = 1;
+        slideCount = $scope.slides.length + 2;
+        slideIndexOffset = 2;
       }
 
       if (lesson.hasActivityPlanning) {
-        slideCount = $scope.slides.length + 1 + slideIndexOffset;
+        slideCount = $scope.slides.length + 2 + slideIndexOffset;
       }
     }
     
@@ -83,23 +83,33 @@
     $scope.showSlides = false;
 
     Resources.fetchLatestUnreportedActivity().then(function(activities) {
-      buildSlideContent($scope.selectedLesson, slides, activities[0]);
+      buildSlideContent($scope.selectedLesson, activities[0]);
 
       $scope.currentSlideIndex = 0;
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.slideNavigator($scope.currentSlideIndex);
+      if (activities[0] == null) {
+        $scope.plannedLesson = null;
+      } else {
+        $scope.plannedLesson = $rootScope.lessons.find(function(lesson) {
+          return lesson.guid === activities[0].lesson_guid;
+        });
+      }
       $scope.$digest();
     });
 
     $scope.saveForm = function (path) {
       var formData = angular.element('form').serializeObject();
       var plannedActivityName = formData['planned-activity-name'];
-      var reportedActivityIsComplete = formData['reported-activity-is-complete'];
+      var reportedActivityIsComplete = formData['reported-activity-is-complete'] || INCOMPLETE;
 
       if (plannedActivityName != null) {
         Resources.save(Resources.NAMES.PlannedActivities, {
           name: plannedActivityName,
           planned_at: new Date(),
+          follow_up_at: $window.moment(formData['reported-activity-planned-at'])
+                               .add($scope.selectedLesson.feedbackAfterDays, 'days')
+                               .toDate(),
           lesson_guid: $routeParams.id
         });
       }
@@ -111,6 +121,7 @@
           name: formData['reported-activity-name'],
           is_complete: reportedActivityIsComplete === YES,
           planned_at: new Date(formData['reported-activity-planned-at']),
+          follow_up_at: new Date(formData['reported-activity-follow-up-at']),
           lesson_guid: formData['reported-activity-lesson-guid'],
           level_of_happiness: formData['reported-activity-happiness'],
           how_worthwhile: formData['reported-activity-worthwhile']

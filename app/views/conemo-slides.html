@@ -6,28 +6,39 @@
   <input type="hidden" name="reported-activity-uuid" ng-value="plannedActivity.uuid" />
   <input type="hidden" name="reported-activity-name" ng-value="plannedActivity.name" />
   <input type="hidden" name="reported-activity-planned-at" ng-value="plannedActivity.planned_at" />
+  <input type="hidden" name="reported-activity-follow-up-at" ng-value="plannedActivity.follow_up_at" />
   <input type="hidden" name="reported-activity-lesson-guid" ng-value="plannedActivity.lesson_guid" />
 
   {{ 'didYouDoActivity' | translate }} {{ plannedActivity.name }}?
 
   <div>
     <label>
-      <input name="reported-activity-is-complete" ng-model="isComplete" type="radio" value="Yes">
+      <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="Yes">
       {{ 'yes' | translate }}
     </label>
 
     <label>
-      <input name="reported-activity-is-complete" ng-model="isComplete" type="radio" value="No">
+      <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="No">
       {{ 'no' | translate }}
     </label>
   </div>
+</div>
 
-  <span ng-if="isComplete === 'Yes'">
-    <ng-include src="activityContentPath"></ng-include>
+<div ng-if="isReady && plannedActivity"
+     style="height: {{ docHeight }}px;"
+     class="slide"
+     data-index="1"
+     data-position="2">
+  <span ng-if="plannedActivity.isComplete == null"
+        ng-bind-html="unsafe(plannedLesson.nonPlanningResponseContent)">
   </span>
 
-  <span ng-if="isComplete === 'No'">
-    {{ 'noActivity' | translate }}
+  <span ng-if="plannedActivity.isComplete === 'Yes'"
+        ng-bind-html="unsafe(plannedLesson.planningResponseYesContent)">
+  </span>
+
+  <span ng-if="plannedActivity.isComplete === 'No'"
+        ng-bind-html="unsafe(plannedLesson.planningResponseNoContent)">
   </span>
 </div>
 
@@ -45,9 +56,26 @@
      class="slide"
      data-index="{{ slideCount }}"
      data-position="{{ slideCount + 1 }}">
-  Can you do something before the next 5 days are up??<br>
-  What can you do?
-  <select name="planned-activity-name">
+
+  <div ng-bind-html="unsafe(selectedLesson.prePlanningContent)">
+  </div>
+
+  <select name="planned-activity-name" ng-model="selectedActivity.value">
     <option ng-repeat="activity in activityChoices | filter:translate">{{ activity }}</option>
   </select>
+</div>
+
+<div ng-if="isReady && selectedLesson.hasActivityPlanning"
+     style="height: {{ docHeight }}px;"
+     class="slide"
+     data-index="{{ slideCount + 1 }}"
+     data-position="{{ slideCount + 2 }}">
+
+  <div ng-if="selectedActivity.value != null"
+       ng-bind-html="selectedLesson.postPlanningContent">
+  </div>
+
+  <div ng-if="selectedActivity.value == null"
+       ng-bind-html="selectedLesson.nonPlanningContent">
+  </div>
 </div>
