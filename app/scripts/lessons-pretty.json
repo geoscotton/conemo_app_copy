@@ -2,6 +2,7 @@
     "lessons": [
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 0,
             "feedbackAfterDays": null,
             "guid": "5112e366-6249-46f9-89d0-55e09aaac5a2",
@@ -61,17 +62,18 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 1,
             "feedbackAfterDays": null,
             "guid": "81858267-b7c1-407c-8a63-c2d554aea567",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -116,21 +118,22 @@
                     "title": "Slide 7"
                 }
             ],
-            "title": "Bem-vindo ao CONEMO!"
+            "title": "1. Bem-vindo ao CONEMO!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 3,
             "feedbackAfterDays": null,
             "guid": "e7625a9f-2b86-4d3a-9828-3a74b6bc39c1",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -169,21 +172,22 @@
                     "title": "Slide 6"
                 }
             ],
-            "title": "Sentir-se para baixo pode levar a deixar de realizar as coisas que costumava fazer."
+            "title": "2. Sentir-se para baixo pode levar a deixar de realizar as coisas que costumava fazer."
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 6,
             "feedbackAfterDays": null,
             "guid": "0d934e95-e7fe-4fb9-84fd-e62ea5af5d9d",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -222,12 +226,13 @@
                     "title": "Slide 6"
                 }
             ],
-            "title": "Mudar o que voc\u00ea faz pode mudar a forma como voc\u00ea se sente."
+            "title": "3. Mudar o que voc\u00ea faz pode mudar a forma como voc\u00ea se sente."
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Ouvir m\u00fasica\r\nLigar para um amigo ou membro da fam\u00edlia\r\nFazer uma caminhada curta\r\nLer um livro\r\nCozinhar\r\nPintar\r\nVestir-se bem\r\nAssistir um filme\r\nCantar\r\nConversar com vizinhos\r\nFazer croch\u00ea\r\nCuidar do jardim",
             "dayInTreatment": 8,
-            "feedbackAfterDays": 10,
+            "feedbackAfterDays": 2,
             "guid": "b7cec56a-6354-4626-90e6-e230c16e05b5",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
@@ -267,35 +272,24 @@
                     "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Esses pensamentos s&atilde;o comuns quando pedimos para as pessoas come&ccedil;arem a planejar atividades diferentes na sua rotina. </p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\">Mas lembre-se que aumentar o n&uacute;mero de atividades j&aacute; t&ecirc;m ajudado muitas pessoas a aproveitar mais a vida.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Vamos tentar! D&ecirc; uma olhada na lista abaixo e selecione uma atividade prazerosa que voc&ecirc; n&atilde;o tenha feito ultimamente, mas que voc&ecirc; poderia fazer <strong><u>hoje ou amanh&atilde;</u></strong> (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><select name=\"short_pleasant_activity\"><option value=\"Ouvir m\u00fasica\">Ouvir m&uacute;sica</option><option value=\"Ligar para um amigo ou membro da fam\u00edlia\">Ligar para um amigo ou membro da fam&iacute;lia</option><option value=\"Fazer uma caminhada curta\">Fazer uma caminhada curta</option><option value=\"Ler um livro\">Ler um livro</option><option value=\"Cozinhar\">Cozinhar</option><option value=\"Pintar \">Pintar</option><option value=\"Vestir-se bem\">Vestir-se bem</option><option value=\"Assistir um filme\">Assistir um filme</option><option value=\"Cantar\">Cantar</option><option value=\"Conversar com vizinhos\">Conversar com vizinhos</option><option value=\"Fazer croch\u00ea\">Fazer croch&ecirc;</option><option value=\"Cuidar do jardim\">Cuidar do jardim</option></select></p>\r\n",
-                    "position": 6,
-                    "title": "Slide 6"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Muito bom! Tente fazer essa atividade que voc&ecirc; selecionou hoje ou amanh&atilde;. Lembre-se de que voc&ecirc; pode mudar sua sele&ccedil;&atilde;o se quiser. Em alguns dias, vamos lhe &nbsp;perguntar se conseguiu realizar essa atividade.</p>\r\n",
-                    "position": 7,
-                    "title": "Slide 7"
                 }
             ],
             "title": "4. Atividades prazerosas nos fazem sentir bem! "
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 10,
             "feedbackAfterDays": null,
             "guid": "c3905713-9f96-483c-899e-d9a83650fa6d",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -328,12 +322,13 @@
                     "title": "Slide 5"
                 }
             ],
-            "title": "Pode ser dif\u00edcil come\u00e7ar."
+            "title": "5. Pode ser dif\u00edcil come\u00e7ar."
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Comer uma fruta ou verdura\r\nFazer uma caminhada curta\r\nMeditar\r\nMedir a minha press\u00e3o\r\nMedir o meu a\u00e7\u00facar no sangue\r\nUsar a escada em vez do elevador\r\nComer menos a\u00e7\u00facar e gordura\r\nBeber mais \u00e1gua",
             "dayInTreatment": 13,
-            "feedbackAfterDays": 15,
+            "feedbackAfterDays": 2,
             "guid": "524df35a-ab2b-4c56-b8a8-748255e9e5f7",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
@@ -355,35 +350,24 @@
                     "content": "<p dir=\"ltr\">Muitas pessoas pensam que n&atilde;o h&aacute; muito o que fazer para melhorar sua sa&uacute;de f&iacute;sica, mas isso n&atilde;o &eacute; verdade! Algumas atividades, mesmo que pequenas, tal como caminhar 10 minutos por dia, podem fazer uma grande diferen&ccedil;a na sua sa&uacute;de como um todo.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;D&ecirc; uma olhada na lista abaixo e selecione uma atividade saud&aacute;vel que voc&ecirc; poderia fazer <strong><u>hoje ou amanh&atilde;</u>&nbsp;</strong>(clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p><select name=\"short_healthy_activity\"><option value=\"Comer uma fruta ou verdura\">Comer uma fruta ou verdura</option><option value=\"Fazer uma caminhada curta\">Fazer uma caminhada curta</option><option value=\"Meditar\">Meditar</option><option value=\"Medir a minha press\u00e3o\">Medir a minha press&atilde;o</option><option value=\"Medir o meu a\u00e7\u00facar no sangue\">Medir o meu a&ccedil;&uacute;car no sangue</option><option value=\"Usar a escada em vez do elevador\">Usar a escada em vez do elevador</option><option value=\"Comer menos a\u00e7\u00facar e gordura\">Comer menos a&ccedil;&uacute;car e gordura</option><option value=\"Beber mais \u00e1gua\">Beber mais &aacute;gua</option></select></p>\r\n",
-                    "position": 3,
-                    "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Obrigado por compartilhar isso com a gente! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade saud&aacute;vel e como se sentiu depois.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 4"
                 }
             ],
             "title": "6. Melhorar a sua sa\u00fade f\u00edsica vai melhorar a sua sa\u00fade emocional!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 15,
             "feedbackAfterDays": null,
             "guid": "4bc85705-e0c0-47b8-a0ea-45bb8a9669b5",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -404,12 +388,13 @@
                     "title": "Slide 3"
                 }
             ],
-            "title": "Fa\u00e7a as coisas em seu pr\u00f3prio ritmo!"
+            "title": "7. Fa\u00e7a as coisas em seu pr\u00f3prio ritmo!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Limpar a casa\r\nLavar a lou\u00e7a\r\nPagar uma conta\r\nCuidar de um membro da fan\u00edlia\r\nResolver um problema pessoal\r\nLavar roupa\r\nTrocar as roupas de cama\r\nFazer as compras\r\nLavar o meu cabelo\r\nFazer um favor a algu\u00e9m",
             "dayInTreatment": 17,
-            "feedbackAfterDays": 20,
+            "feedbackAfterDays": 3,
             "guid": "21a15760-403c-424b-8126-cb07dd27dfc9",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
@@ -443,35 +428,24 @@
                     "content": "<p dir=\"ltr\">Muitas vezes deixamos essas tarefas de lado porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentimos pior. Se conseguimos nos motivar a fazer essas tarefas,<strong> </strong>ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Vamos tentar! D&ecirc; uma olhada na lista abaixo e selecione uma tarefa que voc&ecirc; poderia fazer <strong><u>hoje ou amanh&atilde;</u></strong>&nbsp;(clique na seta para ver todas as op&ccedil;&otilde;es):]</p>\r\n\r\n<p><select name=\"task\"><option value=\"Limpar a casa\">Limpar a casa</option><option value=\"Lavar a lou\u00e7a\">Lavar a lou&ccedil;a</option><option value=\"Pagar uma conta\">Pagar uma conta</option><option value=\"Cuidar de um membro da fan\u00edlia\">Cuidar de um membro da fan&iacute;lia</option><option value=\"Resolver um problema pessoal\">Resolver um problema pessoal</option><option value=\"Lavar roupa\">Lavar roupa</option><option value=\"Trocar as roupas de cama\">Trocar as roupas de cama</option><option value=\"Fazer as compras\">Fazer as compras</option><option value=\"Lavar o meu cabelo\">Lavar o meu cabelo</option><option value=\"Fazer um favor a algu\u00e9m \">Fazer um favor a algu&eacute;m</option></select></p>\r\n",
-                    "position": 5,
-                    "title": "Slide 5"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Obrigado por compartilhar isso com a gente! Tente fazer essa tarefa que voc&ecirc; selecionou hoje ou amanh&atilde; e preste aten&ccedil;&atilde;o em como se sente depois.</p>\r\n",
-                    "position": 6,
-                    "title": "Slide 6"
                 }
             ],
             "title": "8. Terminar suas tarefas vai fazer voc\u00ea se sentir melhor."
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 20,
             "feedbackAfterDays": null,
             "guid": "5c897add-e38b-449c-896b-e01e7349c4e9",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -498,12 +472,13 @@
                     "title": "Slide 4"
                 }
             ],
-            "title": "D\u00ea recompensas a si mesmo e comemore sucesso!"
+            "title": "9. D\u00ea recompensas a si mesmo e comemore sucesso!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Passar tempo com amigos ou a fam\u00edlia\r\nParticipar de um grupo da comunidade\r\nSair para almo\u00e7ar\r\nIr \u00e0 igreja\r\nFazer um jantar para amigos ou fam\u00edlia\r\nIr ao shopping\r\nIr ao cinema\r\nIr ao parque\r\nFazer trabalho volunt\u00e1rio\r\nIr dan\u00e7ar\r\nParticipar de um coral\r\nFazer artesanato\r\nAssistir uma palestra ou curso\r\nIr ao cabeleireiro\r\nFazer um passeio\r\nFazer uma manicure/pedicure\r\nJogar bola ou v\u00f4lei com amigos",
             "dayInTreatment": 22,
-            "feedbackAfterDays": 27,
+            "feedbackAfterDays": 5,
             "guid": "b979fb00-987c-4e19-a563-153cf6a582cc",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
@@ -525,35 +500,24 @@
                     "content": "<p dir=\"ltr\">Tire um momento para pensar sobre o que voc&ecirc; gostaria de alcan&ccedil;ar esta semana. Ao faz&ecirc;-lo, lembre-se da coisa mais importante: a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Selecione uma das seguintes atividades que voc&ecirc; consegue fazer nos pr&oacute;ximos dias (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p dir=\"ltr\"><select name=\"advanced_pleasant_activity\"><option value=\"Passar tempo com amigos ou a fam\u00edlia\">Passar tempo com amigos ou a fam&iacute;lia</option><option value=\"Participar de um grupo da comunidade\">Participar de um grupo da comunidade</option><option value=\"Sair para almo\u00e7ar\">Sair para almo&ccedil;ar</option><option value=\"Ir \u00e0 igreja\">Ir &agrave; igreja</option><option value=\"Fazer um jantar para amigos ou fam\u00edlia\">Fazer um jantar para amigos ou fam&iacute;lia</option><option value=\"Ir ao shopping\">Ir ao shopping</option><option value=\"Ir ao cinema\">Ir ao cinema</option><option value=\"Ir ao parque\">Ir ao parque</option><option value=\"Fazer trabalho volunt\u00e1rio\">Fazer trabalho volunt&aacute;rio</option><option value=\"Ir dan\u00e7ar\">Ir dan&ccedil;ar</option><option value=\"Participar de um coral\">Participar de um coral</option><option value=\"Fazer artesanato\">Fazer artesanato</option><option value=\"Assistir uma palestra ou curso\">Assistir uma palestra ou curso</option><option value=\"Ir ao cabeleireiro\">Ir ao cabeleireiro</option><option value=\"Fazer um passeio\">Fazer um passeio</option><option value=\"Fazer uma manicure/pedicure\">Fazer uma manicure/pedicure</option><option value=\"Jogar bola ou v\u00f4lei com amigos\">Jogar bola ou v&ocirc;lei com amigos</option></select></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
-                    "position": 3,
-                    "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\">&Oacute;timo! Tente fazer esta atividade nos pr&oacute;ximos dias. Depois, vamos perguntar-lhe<strong> </strong>se conseguiu realizar essa atividade. </p>\r\n\r\n<p dir=\"ltr\">Se voc&ecirc; gostou da atividade que voc&ecirc; selecionou, tente repeti-la. Se voc&ecirc; n&atilde;o gostou, escolha outra e tente novamente.</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 4"
                 }
             ],
             "title": "10. Vamos aumentar o n\u00famero de atividades que lhe trazem prazer!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 24,
             "feedbackAfterDays": null,
             "guid": "6e80f83a-3c40-4d95-a641-a40946a32548",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -586,21 +550,22 @@
                     "title": "Slide 5"
                 }
             ],
-            "title": "Fa\u00e7a um passo de cada vez!"
+            "title": "11. Fa\u00e7a um passo de cada vez!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 27,
             "feedbackAfterDays": null,
             "guid": "33afd2b5-bee3-482d-bf0c-a90da2490d7b",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -615,12 +580,13 @@
                     "title": "Slide 2"
                 }
             ],
-            "title": "Lembre-se do seu objetivo!"
+            "title": "12. Lembre-se do seu objetivo!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Tomar a minha medica\u00e7\u00e3o corretamente\r\nCome\u00e7ar uma dieta saud\u00e1vel\r\nFazer uma comida saud\u00e1vel\r\nIr para academia / fazer atividade f\u00edsica\r\nFazer um check-up de sa\u00fade\r\nNadar / fazer hidrogin\u00e1stica\r\nJogar bola ou v\u00f4lei\r\nAndar de bicicleta\r\nAnotar os n\u00edveis de glicose e/ou a press\u00e3o em um di\u00e1rio\r\nFazer uma caminhada longa\r\nIr a um pod\u00f3logo\r\nFazer um tratamento de acupuntura",
             "dayInTreatment": 29,
-            "feedbackAfterDays": 34,
+            "feedbackAfterDays": 5,
             "guid": "e25cd7c4-45da-4137-aa3a-8dbe32d65801",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
@@ -642,35 +608,24 @@
                     "content": "<p>Lembre-se: quando melhoramos a nossa sa&uacute;de f&iacute;sica, o nosso emocional tamb&eacute;m melhora!</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Que atividade voc&ecirc; gostaria de experimentar para melhorar a sua sa&uacute;de? D&ecirc; uma olhada na lista abaixo e selecione uma atividade que voc&ecirc; consegue fazer nos pr&oacute;ximos dias (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p dir=\"ltr\"><select name=\"advanced_healthy_activity\"><option value=\"Tomar a minha medica\u00e7\u00e3o corretamente\">Tomar a minha medica&ccedil;&atilde;o corretamente</option><option value=\"Come\u00e7ar uma dieta saud\u00e1vel\">Come&ccedil;ar uma dieta saud&aacute;vel</option><option value=\"Fazer uma comida saud\u00e1vel\">Fazer uma comida saud&aacute;vel</option><option value=\"Ir para academia / fazer atividade f\u00edsica\">Ir para academia / fazer atividade f&iacute;sica</option><option value=\"Fazer um check-up de sa\u00fade\">Fazer um check-up de sa&uacute;de</option><option value=\"Nadar / fazer hidrogin\u00e1stica\">Nadar / fazer hidrogin&aacute;stica</option><option value=\"Jogar bola ou v\u00f4lei\">Jogar bola ou v&ocirc;lei</option><option value=\"Andar de bicicleta \">Andar de bicicleta</option><option value=\"Anotar os n\u00edveis de glicose e/ou a press\u00e3o em um di\u00e1rio \">Anotar os n&iacute;veis de glicose e/ou a press&atilde;o em um di&aacute;rio</option><option value=\"Fazer uma caminhada longa\">Fazer uma caminhada longa</option><option value=\"Ir a um pod\u00f3logo\">Ir a um pod&oacute;logo</option><option value=\"Fazer um tratamento de acupuntura\">Fazer um tratamento de acupuntura</option></select></p>\r\n",
-                    "position": 3,
-                    "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Muito bom! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade.</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 4"
                 }
             ],
             "title": "13. Vamos planejar mais atividades para melhorar a sua sa\u00fade!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 31,
             "feedbackAfterDays": null,
             "guid": "62bb2ec6-294e-467c-b3e9-8a8299b8f1a8",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -697,21 +652,22 @@
                     "title": "Slide 4"
                 }
             ],
-            "title": "Pequenos passos levam a grandes mudan\u00e7as!"
+            "title": "14. Pequenos passos levam a grandes mudan\u00e7as!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 34,
             "feedbackAfterDays": null,
             "guid": "a7fdaa0b-2b88-454c-a192-70d89cbf8b8b",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -750,21 +706,22 @@
                     "title": "Slide 6"
                 }
             ],
-            "title": "Esteja preparado para reca\u00eddas e volte ao caminho certo!"
+            "title": "15. Esteja preparado para reca\u00eddas e volte ao caminho certo!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 36,
             "feedbackAfterDays": null,
             "guid": "9b0a220f-896b-4076-b02d-df97fc48a305",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -815,21 +772,22 @@
                     "title": "Slide 8"
                 }
             ],
-            "title": "Novos habitos podem melhorar a sua sa\u00fade!"
+            "title": "16. Novos habitos podem melhorar a sua sa\u00fade!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 38,
             "feedbackAfterDays": null,
             "guid": "f755864c-fc35-4aaa-8d60-6fd6cd246eca",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -856,21 +814,22 @@
                     "title": "Slide 4"
                 }
             ],
-            "title": "Leva um tempo para mudarmos os nossos h\u00e1bitos!"
+            "title": "17. Leva um tempo para mudarmos os nossos h\u00e1bitos!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": "",
             "dayInTreatment": 41,
             "feedbackAfterDays": null,
             "guid": "62f30e6b-0fff-4afb-9220-9b9ab7cad265",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
-            "nonPlanningContent": null,
-            "nonPlanningResponseContent": null,
-            "planningResponseNoContent": null,
-            "planningResponseYesContent": null,
-            "postPlanningContent": null,
-            "prePlanningContent": null,
+            "nonPlanningContent": "",
+            "nonPlanningResponseContent": "",
+            "planningResponseNoContent": "",
+            "planningResponseYesContent": "",
+            "postPlanningContent": "",
+            "prePlanningContent": "",
             "slides": [
                 {
                     "_class": "Slide",
@@ -891,10 +850,11 @@
                     "title": "Slide 3"
                 }
             ],
-            "title": "Bem-vindo a \u00faltima sess\u00e3o do CONEMO!"
+            "title": "18. Bem-vindo a \u00faltima sess\u00e3o do CONEMO!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 0,
             "feedbackAfterDays": null,
             "guid": "3fdf935a-5796-48b5-a47e-d953788057ff",
@@ -972,6 +932,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 1,
             "feedbackAfterDays": null,
             "guid": "f584a39b-c9b2-4a2f-9aff-f177fd44b85b",
@@ -1037,6 +998,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 3,
             "feedbackAfterDays": null,
             "guid": "529a2f05-65f8-41f7-ab18-2a673e6eb0f3",
@@ -1084,6 +1046,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 6,
             "feedbackAfterDays": null,
             "guid": "2f6ea7cb-a281-4bf7-98ff-02ac557de206",
@@ -1143,8 +1106,9 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Escuchar m\u00fasica\r\nLlamar a un amigo o familiar\r\nHacer una caminata corta\r\nLeer un libro\r\nCocinar algo\r\nDibujar o pintar\r\nArreglarte\r\nVer una pel\u00edcula\r\nCantar\r\nConversar con tu vecino\r\nTejer\r\nHacer jardiner\u00eda",
             "dayInTreatment": 8,
-            "feedbackAfterDays": 10,
+            "feedbackAfterDays": 2,
             "guid": "0f7a1cc3-3bb0-4a2c-b1fb-3088ef9bc412",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
@@ -1178,24 +1142,13 @@
                     "content": "<p>Estos pensamientos son comunes cuando empezamos a planear actividades diferentes en nuestra vida.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero recuerda que aumentar el n&uacute;mero de actividades ha sido de ayuda para muchas personas y puede llevarte a una vida m&aacute;s feliz y saludable.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&iexcl;Intentemos! Por favor revisa la siguiente lista de <strong><em><u>actividades placenteras</u></em></strong> y selecciona <strong><u><em>una</em></u></strong> que NO hayas estado haciendo &uacute;ltimamente pero te gustar&iacute;a hacer entre <strong>HOY </strong>y<strong> MA&Ntilde;ANA:</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><strong><select name=\"short_pleasant_activity\"><option value=\"Escuchar m\u00fasica\">Escuchar m&uacute;sica</option><option value=\"Llamar a un amigo o familiar\">Llamar a un amigo o familiar</option><option value=\"Hacer una caminata corta\">Hacer una caminata corta</option><option value=\"Leer un libro\">Leer un libro</option><option value=\"Cocinar algo\">Cocinar algo</option><option value=\"Dibujar o pintar\">Dibujar o pintar</option><option value=\"Arreglarte\">Arreglarte</option><option value=\"Ver una pel\u00edcula\">Ver una pel&iacute;cula</option><option value=\"Cantar\">Cantar</option><option value=\"Conversar con tu vecino\">Conversar con tu vecino</option><option value=\"Tejer\">Tejer</option><option value=\"Hacer jardiner\u00eda\">Hacer jardiner&iacute;a</option></select></strong></p>\r\n",
-                    "position": 5,
-                    "title": "Slide 5"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&iexcl;Muy bien! Intenta hacer esta actividad que has seleccionado entre hoy y ma&ntilde;ana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Recuerda que puedes cambiar tu elecci&oacute;n si deseas.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En un par de d&iacute;as te preguntaremos c&oacute;mo te fue.</p>\r\n",
-                    "position": 6,
-                    "title": "Slide 6"
                 }
             ],
             "title": "4. \u00a1Las actividades placenteras te hacen sentir bien!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 10,
             "feedbackAfterDays": null,
             "guid": "481c9380-d8a7-42c7-b010-7aabfca37e4d",
@@ -1243,8 +1196,9 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Comer m\u00e1s frutas o verduras\r\nHacer una caminata corta o alg\u00fan ejercicio\r\nMedir mi presi\u00f3n arterial\r\nMedir mi az\u00facar en la sangre o glucosa\r\nUsar las escaleras en vez del ascensor\r\nComer menos az\u00facar o grasas\r\nTomar m\u00e1s agua",
             "dayInTreatment": 13,
-            "feedbackAfterDays": 15,
+            "feedbackAfterDays": 2,
             "guid": "bbb5abf3-f8c7-46c2-8bb8-a5296bf00f49",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
@@ -1266,24 +1220,13 @@
                     "content": "<p>A veces sentimos que no hay mucho que podamos hacer para mejorar nuestra salud f&iacute;sica.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Eso no es cierto. Por ejemplo, hacer actividad f&iacute;sica, incluso algo tan peque&ntilde;o como caminar 10 minutos al d&iacute;a, puede hacer una gran diferencia en nuestra salud.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por favor, revisa la siguiente lista de <strong><em><u>actividades saludables</u></em></strong> y selecciona <strong><em><u>una</u></em></strong> que NO hayas estado haciendo &uacute;ltimamente pero puedas hacer <strong>HOY</strong> o<strong> MA&Ntilde;ANA</strong>:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"short_healthy_activity\"><option value=\"Comer m\u00e1s frutas o verduras\">Comer m&aacute;s frutas o verduras</option><option value=\"Hacer una caminata corta o alg\u00fan ejercicio\">Hacer una caminata corta o alg&uacute;n ejercicio</option><option value=\"Medir mi presi\u00f3n arterial \">Medir mi presi&oacute;n arterial</option><option value=\"Medir mi az\u00facar en la sangre o glucosa\">Medir mi az&uacute;car en la sangre o glucosa</option><option value=\"Usar las escaleras en vez del ascensor\">Usar las escaleras en vez del ascensor</option><option value=\"Comer menos az\u00facar o grasas\">Comer menos az&uacute;car o grasas</option><option value=\"Tomar m\u00e1s agua\">Tomar m&aacute;s agua</option></select></p>\r\n",
-                    "position": 3,
-                    "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En un par de d&iacute;as te preguntaremos si pudiste realizar esta actividad saludable y c&oacute;mo te hizo sentir.</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 4"
                 }
             ],
             "title": "6. \u00a1Mejorar tu salud f\u00edsica va a mejorar tu salud emocional!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 15,
             "feedbackAfterDays": null,
             "guid": "f0dc6d45-d678-4806-9e1b-1aa532a6491f",
@@ -1319,8 +1262,9 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Limpiar la casa\r\nLavar los platos\r\nPagar una cuenta\r\nCuidar a un(os) familiar(es)\r\nResolver un problema personal\r\nLavar tu ropa\r\nCambiar las s\u00e1banas\r\nHacer las compras del hogar\r\nLavarte el pelo\r\nHacerle un favor a alguien",
             "dayInTreatment": 17,
-            "feedbackAfterDays": 20,
+            "feedbackAfterDays": 3,
             "guid": "410a6881-dc59-4651-8915-4bb7ddab4dbe",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
@@ -1360,24 +1304,13 @@
                     "content": "<p>Si nos motivamos para hacer esas tareas, despu&eacute;s nos sentiremos bien con nosotros mismos y orgullosos de haberlas hecho.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Intentemos!</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por favor revisa la siguiente lista de <strong><em><u>tareas</u></em></strong> y selecciona <strong><em><u>una</u></em></strong> que puedas hacer <strong>HOY o MA&Ntilde;ANA</strong>:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"task\"><option value=\"Limpiar la casa\">Limpiar la casa</option><option value=\"Lavar los platos\">Lavar los platos</option><option value=\"Pagar una cuenta\">Pagar una cuenta</option><option value=\"Cuidar a un(os) familiar(es)\">Cuidar a un(os) familiar(es)</option><option value=\"Resolver un problema personal\">Resolver un problema personal</option><option value=\"Lavar tu ropa\">Lavar tu ropa</option><option value=\"Cambiar las s\u00e1banas\">Cambiar las s&aacute;banas</option><option value=\"Hacer las compras del hogar\">Hacer las compras del hogar</option><option value=\"Lavarte el pelo\">Lavarte el pelo</option><option value=\"Hacerle un favor a alguien\">Hacerle un favor a alguien</option></select></p>\r\n",
-                    "position": 6,
-                    "title": "Slide 6"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Intenta hacer la tarea seleccionada hoy o ma&ntilde;ana y presta atenci&oacute;n a c&oacute;mo te sentiste despu&eacute;s.</p>\r\n",
-                    "position": 7,
-                    "title": "Slide 7"
                 }
             ],
             "title": "8. \u00a1Terminar tus tareas te har\u00e1 sentir mejor!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 20,
             "feedbackAfterDays": null,
             "guid": "6e5925d2-c9a8-42ab-b67f-52d95d2a6ed3",
@@ -1419,8 +1352,9 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Encontrarte con amigos o familiares\r\nParticipar en actividades de la comunidad\r\nSalir a comer\r\nIr a la iglesia\r\nHacer un almuerzo o una cena para amigos o familia\r\nIr a comprar algo que te guste\r\nIr al cine\r\nIr al parque\r\nHacer un trabajo voluntario\r\nSalir en la noche / bailar\r\nHacer manualidades\r\nAsistir a una charla o curso\r\nIr a la peluquer\u00eda\r\nHacer un paseo peque\u00f1o\r\nHacerte una manicure/pedicure\r\nHacer deportes (v\u00f3ley / f\u00fatbol) con amigos",
             "dayInTreatment": 22,
-            "feedbackAfterDays": 27,
+            "feedbackAfterDays": 5,
             "guid": "13a2470e-ce38-4357-b37a-10c37d2686f4",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
@@ -1442,30 +1376,13 @@
                     "content": "<p>T&oacute;mate un momento para pensar en lo que te gustar&iacute;a lograr esta vez.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Siempre recuerda lo que hemos aprendido: la acci&oacute;n viene antes de la motivaci&oacute;n.&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Selecciona una de las siguientes actividades que NO hayas estado haciendo &uacute;ltimamente pero que puedas hacer durante los pr&oacute;ximos d&iacute;as:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"advanced_pleasant_activity\"><option value=\"Encontrarte con amigos o familiares\">Encontrarte con amigos o familiares</option><option value=\"Participar en actividades de la comunidad\">Participar en actividades de la comunidad</option><option value=\"Salir a comer\">Salir a comer</option><option value=\"Ir a la iglesia\">Ir a la iglesia</option><option value=\"Hacer un almuerzo o una cena para amigos o familia\">Hacer un almuerzo o una cena para amigos o familia</option><option value=\"Ir a comprar algo que te guste\">Ir a comprar algo que te guste</option><option value=\"Ir al cine\">Ir al cine</option><option value=\"Ir al parque\">Ir al parque</option><option value=\"Hacer un trabajo voluntario\">Hacer un trabajo voluntario</option><option value=\"Salir en la noche / bailar\">Salir en la noche / bailar</option><option value=\"Hacer manualidades\">Hacer manualidades</option><option value=\"Asistir a una charla o curso\">Asistir a una charla o curso</option><option value=\"Ir a la peluquer\u00eda\">Ir a la peluquer&iacute;a</option><option value=\"Hacer un paseo peque\u00f1o\">Hacer un paseo peque&ntilde;o</option><option value=\"Hacerte una manicure/pedicure\">Hacerte una manicure/pedicure</option><option value=\"Hacer deportes (v\u00f3ley / f\u00fatbol) con amigos\">Hacer deportes (v&oacute;ley / f&uacute;tbol) con amigos</option></select></p>\r\n",
-                    "position": 3,
-                    "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&iexcl;Excelente!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora intenta hacer esta actividad en los pr&oacute;ximos d&iacute;as.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Luego te preguntaremos c&oacute;mo te fue.&nbsp;</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 4"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>Si realmente disfrutas la actividad que has seleccionado, intenta repetirla.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si no disfrutas con esta actividad, elige otra e intenta de nuevo.</p>\r\n",
-                    "position": 5,
-                    "title": "Slide 5"
                 }
             ],
             "title": "10. \u00a1Aumentemos el n\u00famero de actividades que nos dan placer!"
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 24,
             "feedbackAfterDays": null,
             "guid": "f6f33efc-d66b-4c9f-a22b-cbc77fa1de87",
@@ -1507,6 +1424,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 27,
             "feedbackAfterDays": null,
             "guid": "fd91e151-2a83-4012-b7b0-0c4bd685432f",
@@ -1536,8 +1454,9 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": "Tomar mi medicaci\u00f3n regularmente\r\nEmpezar una dieta saludable\r\nIr al gimnasio / hacer ejercios\r\nHacer un chequeo m\u00e9dico\r\nPreparar una comida saludable\r\nIr a nadar\r\nJugar deportes como v\u00f3ley o f\u00fatbol\r\nMontar bicicleta en vez de tomar un auto o bus\r\nHacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\r\nHacer una caminata larga\r\nIr al pod\u00f3logo\r\nHacerte tratamiento de acupuntura\r\nHacer yoga o meditar",
             "dayInTreatment": 29,
-            "feedbackAfterDays": 34,
+            "feedbackAfterDays": 5,
             "guid": "ee4ca5b6-8ac0-4efd-a0c9-eb912754fe8f",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
@@ -1559,24 +1478,13 @@
                     "content": "<p>Recuerda:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando mejoramos nuestra salud f&iacute;sica, nuestro &aacute;nimo tambi&eacute;n mejora.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&iquest;Qu&eacute; actividad te gustar&iacute;a intentar para mejorar tu salud?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Mira la lista debajo y selecciona una actividad NO hayas estado haciendo &uacute;ltimamente pero que puedes hacer durante los pr&oacute;ximos d&iacute;as:</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"advanced_healthy_activity\"><option value=\"Tomar mi medicaci\u00f3n regularmente \">Tomar mi medicaci&oacute;n regularmente</option><option value=\"Empezar una dieta saludable\">Empezar una dieta saludable</option><option value=\"Ir al gimnasio / hacer ejercios\">Ir al gimnasio / hacer ejercios</option><option value=\"Hacer un chequeo m\u00e9dico\">Hacer un chequeo m&eacute;dico</option><option value=\"Preparar una comida saludable\">Preparar una comida saludable</option><option value=\"Ir a nadar\">Ir a nadar</option><option value=\"Jugar deportes como v\u00f3ley o f\u00fatbol\">Jugar deportes como v&oacute;ley o f&uacute;tbol</option><option value=\"Montar bicicleta en vez de tomar un auto o bus\">Montar bicicleta en vez de tomar un auto o bus</option><option value=\"Hacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\">Hacer un diario para anotar tu presi&oacute;n arterial o nivel de glucosa</option><option value=\"Hacer una caminata larga\">Hacer una caminata larga</option><option value=\"Ir al pod\u00f3logo\">Ir al pod&oacute;logo</option><option value=\"Hacerte tratamiento de acupuntura\">Hacerte tratamiento de acupuntura</option><option value=\"Hacer yoga o meditar\">Hacer yoga o meditar</option></select></p>\r\n",
-                    "position": 3,
-                    "title": "Slide 3"
-                },
-                {
-                    "_class": "Slide",
-                    "content": "<p>&iexcl;Muy bien!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En unos d&iacute;as te preguntaremos si pudiste hacer esta actividad.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
-                    "position": 4,
-                    "title": "Slide 4"
                 }
             ],
             "title": "13. Planeemos m\u00e1s actividades para mejorar tu salud"
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 31,
             "feedbackAfterDays": null,
             "guid": "a8282a46-9b11-45a2-b735-e65fc470b33e",
@@ -1618,6 +1526,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 34,
             "feedbackAfterDays": null,
             "guid": "40b9d58f-47b8-43a0-a73f-1d76a1033f04",
@@ -1671,6 +1580,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 36,
             "feedbackAfterDays": null,
             "guid": "a5dfac05-c5bd-4749-8f78-1b8dbb08110c",
@@ -1742,6 +1652,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 38,
             "feedbackAfterDays": null,
             "guid": "94b9b930-f396-4c43-913c-9b8ac12ab14d",
@@ -1789,6 +1700,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 41,
             "feedbackAfterDays": null,
             "guid": "40dd808e-83dd-4218-94d0-1f6ce80c0abf",
@@ -1824,6 +1736,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 1,
             "feedbackAfterDays": null,
             "guid": "ee2af651-0165-454f-8ee3-b67b9d556c23",
@@ -1865,6 +1778,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 2,
             "feedbackAfterDays": null,
             "guid": "6e048c42-1673-4de0-b36b-59d30268504a",
@@ -1900,6 +1814,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 3,
             "feedbackAfterDays": null,
             "guid": "ee404ca4-939c-49e0-b1e0-8df23074e10f",
@@ -1935,6 +1850,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 4,
             "feedbackAfterDays": null,
             "guid": "35420b01-eb84-4fff-9b68-0c5ec344f7b2",
@@ -1976,6 +1892,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 5,
             "feedbackAfterDays": null,
             "guid": "9b016256-34e3-4362-88b9-05a68cfeeee7",
@@ -2011,6 +1928,7 @@
         },
         {
             "_class": "Lesson",
+            "activityChoices": null,
             "dayInTreatment": 12,
             "feedbackAfterDays": null,
             "guid": "8b8f706d-5da8-4924-8c5d-fa6d8f30f263",
