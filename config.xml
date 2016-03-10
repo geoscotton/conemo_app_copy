@@ -12,6 +12,7 @@
     <access origin="SERVER_URL_TO_REPLACE" />
     <allow-navigation href="SERVER_URL_TO_REPLACE/*" />
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="Orientation" value="portrait" />
     <hook src="scripts/prepare_web_dir.sh" type="before_prepare" />
     <hook src="scripts/fetch_content.js" type="before_prepare" />
     <hook src="scripts/embed_videos.js" type="before_prepare" />
