@@ -3,25 +3,32 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 0,
+            "feedbackAfterDays": null,
             "guid": "5112e366-6249-46f9-89d0-55e09aaac5a2",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Esta &eacute; uma sess&atilde;o de treinamento sobre como usar o aplicativo CONEMO. Neste aplicativo voc&ecirc; vai ler textos, assistir a v&iacute;deos, selecionar objetivos e atividades e responder perguntas.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para ir para pr&oacute;xima p&aacute;gina, pressione a seta &agrave; direita, na parte inferior da tela.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Esta &eacute; uma sess&atilde;o de treinamento sobre como usar o aplicativo CONEMO. Neste aplicativo voc&ecirc; vai ler textos, assistir a v&iacute;deos, selecionar objetivos e atividades e responder perguntas.</p>\r\n\r\n<p dir=\"ltr\">Para ir para pr&oacute;xima p&aacute;gina, pressione a seta &agrave; direita, na parte inferior da tela.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para voltar &agrave; p&aacute;gina anterior, <span style=\"font-size:14px\">pressione </span>a seta &agrave; esquerda na parte inferior da tela.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"font-size:14px\">Agora, vamos para frente.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Para voltar &agrave; p&aacute;gina anterior, pressione a seta &agrave; esquerda na parte inferior da tela.</p>\r\n\r\n<p dir=\"ltr\">Agora, vamos para frente.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">&Aacute;s vezes CONEMO pedir&aacute; que voc&ecirc; selecione atividades. Para selecion&aacute;-las, clique na seta. Uma nova janela ir&aacute; aparecer com todas as op&ccedil;&otilde;es de atividades. Role a p&aacute;gina para cima e para baixo com o dedo para visualizar todas as op&ccedil;&otilde;es e depois selecione aquela que voc&ecirc; escolheu.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Exemplo: Qual &eacute; a sua cor favorita?</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\"><select name=\"favorite color\"><option value=\"Vermelha\">Vermelha</option><option value=\"Azul\">Azul</option><option value=\"Verde\">Verde</option><option value=\"Amarelo\">Amarelo</option><option value=\"Lil\u00e1s\">Lil&aacute;s</option><option value=\"Outra\">Outra</option></select></span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Se quiser mudar sua resposta, clique novamente na seta e escolha outra op&ccedil;&atilde;o.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">&Aacute;s vezes CONEMO pedir&aacute; que voc&ecirc; selecione atividades. Para selecion&aacute;-las, clique na seta. Uma nova janela ir&aacute; aparecer com todas as op&ccedil;&otilde;es de atividades. Role a p&aacute;gina para cima e para baixo com o dedo para visualizar todas as op&ccedil;&otilde;es e depois selecione aquela que voc&ecirc; escolheu.</p>\r\n\r\n<p dir=\"ltr\">Exemplo: Qual &eacute; a sua cor favorita?</p>\r\n\r\n<p dir=\"ltr\"><select name=\"favorite color\"><option value=\"Vermelha\">Vermelha</option><option value=\"Azul\">Azul</option><option value=\"Verde\">Verde</option><option value=\"Amarelo\">Amarelo</option><option value=\"Lil\u00e1s\">Lil&aacute;s</option><option value=\"Outra\">Outra</option></select></p>\r\n\r\n<p dir=\"ltr\">Se quiser mudar sua resposta, clique novamente na seta e escolha outra op&ccedil;&atilde;o.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
@@ -33,19 +40,19 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">&Aacute;s vezes CONEMO vai perguntar se voc&ecirc; conseguiu realizar as atividades planejadas. Para responder, clique em SIM ou N&Atilde;O. Em seguida, podem surgir perguntas sobre como voc&ecirc; se sentiu. Para responder, clique na seta para ver todas as op&ccedil;&otilde;es de resposta. </span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">&Aacute;s vezes CONEMO vai perguntar se voc&ecirc; conseguiu realizar as atividades planejadas. Para responder, clique em SIM ou N&Atilde;O. Em seguida, podem surgir perguntas sobre como voc&ecirc; se sentiu. Para responder, clique na seta para ver todas as op&ccedil;&otilde;es de resposta. </p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Algumas sess&otilde;es incluem v&iacute;deos.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para assistir, pressione a seta. Para parar, clique novamente.</span></p>\r\n\r\n<div>[include countdown video here]</div>\r\n",
+                    "content": "<p dir=\"ltr\">Algumas sess&otilde;es incluem v&iacute;deos.</p>\r\n\r\n<p dir=\"ltr\">Para assistir, pressione a seta. Para parar, clique novamente.</p>\r\n\r\n<div>[include countdown video here]</div>\r\n",
                     "position": 6,
                     "title": "Slide 6 (video)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">Para voltar &agrave; tela inicial do aplicativo, clique no bot&atilde;o laranja no lado direito na parte inferior. </span></p>\r\n",
+                    "content": "<p>Para voltar &agrave; tela inicial do aplicativo, clique no bot&atilde;o laranja no lado direito na parte inferior. </p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 }
@@ -55,9 +62,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 1,
+            "feedbackAfterDays": null,
             "guid": "81858267-b7c1-407c-8a63-c2d554aea567",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -67,25 +81,25 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Quando a gente tem algum problema de sa&uacute;de, como diabetes ou hipertens&atilde;o, &eacute; comum se sentir para baixo ou desanimados. Como resultado &eacute; preciso mais esfor&ccedil;o para fazer as coisas ou as coisas s&atilde;o deixadas de lado.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Quando a gente tem algum problema de sa&uacute;de, como diabetes ou hipertens&atilde;o, &eacute; comum se sentir para baixo ou desanimados. Como resultado &eacute; preciso mais esfor&ccedil;o para fazer as coisas ou as coisas s&atilde;o deixadas de lado.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">O objetivo do CONEMO &eacute; ajudar voc&ecirc; a praticar novas atividades que ir&atilde;o ajud&aacute;-lo a ser mais saud&aacute;vel e mais feliz.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">O objetivo do CONEMO &eacute; ajudar voc&ecirc; a praticar novas atividades que ir&atilde;o ajud&aacute;-lo a ser mais saud&aacute;vel e mais feliz.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Al&eacute;m de sugerir atividades que v&atilde;o melhorar a sua sa&uacute;de, tais como tomar sua medica&ccedil;&atilde;o e ter uma alimenta&ccedil;&atilde;o saud&aacute;vel, CONEMO tamb&eacute;m quer te ajudar a realizar atividades como visitar amigos e familiares ou cozinhar sua comida favorita. Isso ir&aacute; ajud&aacute;-lo a ter uma vida mais completa e feliz.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Al&eacute;m de sugerir atividades que v&atilde;o melhorar a sua sa&uacute;de, tais como tomar sua medica&ccedil;&atilde;o e ter uma alimenta&ccedil;&atilde;o saud&aacute;vel, CONEMO tamb&eacute;m quer te ajudar a realizar atividades como visitar amigos e familiares ou cozinhar sua comida favorita. Isso ir&aacute; ajud&aacute;-lo a ter uma vida mais completa e feliz.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Voc&ecirc; receber&aacute; sess&otilde;es como esta tr&ecirc;s vezes por semana. Em algumas dessas sess&otilde;es voc&ecirc; vai assistir a um v&iacute;deo que cont&eacute;m mais informa&ccedil;&otilde;es para ajud&aacute;-lo a aproveitar ao m&aacute;ximo este programa. Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo:</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP1.mp4\" /></video></p>\r\n",
+                    "content": "<p dir=\"ltr\">Voc&ecirc; receber&aacute; sess&otilde;es como esta tr&ecirc;s vezes por semana. Em algumas dessas sess&otilde;es voc&ecirc; vai assistir a um v&iacute;deo que cont&eacute;m mais informa&ccedil;&otilde;es para ajud&aacute;-lo a aproveitar ao m&aacute;ximo este programa. Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP1.mp4\" /></video></p>\r\n",
                     "position": 5,
                     "title": "Slide 5 (video)"
                 },
@@ -97,7 +111,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esse &eacute; um &oacute;timo motivo! Durante as pr&oacute;ximas 6 semanas &eacute; importante sempre lembrar o que voc&ecirc; gostaria de alcan&ccedil;ar com este programa!</span></p>\r\n",
+                    "content": "<p>Esse &eacute; um &oacute;timo motivo! Durante as pr&oacute;ximas 6 semanas &eacute; importante sempre lembrar o que voc&ecirc; gostaria de alcan&ccedil;ar com este programa!</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 }
@@ -107,43 +121,50 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 3,
+            "feedbackAfterDays": null,
             "guid": "e7625a9f-2b86-4d3a-9828-3a74b6bc39c1",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Quando as pessoas n&atilde;o est&atilde;o se sentindo&nbsp;</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">bem, elas se</span><strong style=\"line-height:1.6\"> </strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">tornam menos ativas. Coisas que&nbsp;</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px; line-height:1.6\">foram realizadas com facilidade s&atilde;o deixadas de lado ou feitas com dificuldade.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\">Quando as pessoas n&atilde;o est&atilde;o se sentindo&nbsp;bem, elas se<strong> </strong>tornam menos ativas. Coisas que&nbsp;foram realizadas com facilidade s&atilde;o deixadas de lado ou feitas com dificuldade.</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Podem ser atividades cotidianas, como limpar a casa, ou coisas relacionadas a sua doen&ccedil;a, como tomar a sua medica&ccedil;&atilde;o ou ir ao m&eacute;dico.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\">Podem ser atividades cotidianas, como limpar a casa, ou coisas relacionadas a sua doen&ccedil;a, como tomar a sua medica&ccedil;&atilde;o ou ir ao m&eacute;dico.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Muitas vezes, agente tamb&eacute;m deixa de fazer atividades agrad&aacute;veis, como visitar amigos, ou passear. Como resultado, muitas vezes se sente &nbsp;ainda pior e entra em um ciclo vicioso que te leva a fazer cada vez menos e te faz sentir cada vez mais para baixo.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Muitas vezes, agente tamb&eacute;m deixa de fazer atividades agrad&aacute;veis, como visitar amigos, ou passear. Como resultado, muitas vezes se sente &nbsp;ainda pior e entra em um ciclo vicioso que te leva a fazer cada vez menos e te faz sentir cada vez mais para baixo.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Este programa vai ajud&aacute;-lo/a a encontrar maneiras de sair deste ciclo vicioso que faz voc&ecirc; se sentir menos feliz e que dificulta melhorar a sua sa&uacute;de. O primeiro passo &eacute; identificar quais s&atilde;o as atividades que voc&ecirc; costumava fazer, mas que n&atilde;o faz mais h&aacute; algum tempo. </span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Este programa vai ajud&aacute;-lo/a a encontrar maneiras de sair deste ciclo vicioso que faz voc&ecirc; se sentir menos feliz e que dificulta melhorar a sua sa&uacute;de. O primeiro passo &eacute; identificar quais s&atilde;o as atividades que voc&ecirc; costumava fazer, mas que n&atilde;o faz mais h&aacute; algum tempo. </p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">D&ecirc; uma olhada na lista abaixo e escolha uma ou mais atividades prazerosas que voc&ecirc; costumava fazer, mas que N&Atilde;O faz mais h&aacute; algum tempo (clique na seta para ver todas as op&ccedil;&otilde;es):</span></p>\r\n\r\n<p><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relaxar (massagem, ler um livro, ouvir m\u00fasica, etc.)\" />Relaxar (massagem, ler um livro, ouvir m&uacute;sica, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Passar tempo com fam\u00edlia e amigos\" />Passar tempo com fam&iacute;lia e amigos<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Fazer atividades f\u00edsicas\" />Fazer atividades f&iacute;sicas<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Sair (parque, almo\u00e7o, shopping, cinema, etc.)\" />Sair (parque, almo&ccedil;o, shopping, cinema, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de atividades na comunidade (coral, igreja, trabalho volunt\u00e1rio, etc.)\" />Participar de atividades na comunidade (coral, igreja, trabalho volunt&aacute;rio, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Assistir uma palestra / aprender algo novo\" />Assistir uma palestra / aprender algo novo<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar da casa ou do jardim\" />Cuidar da casa ou do jardim<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Fazer croch\u00ea ou artesanato\" />Fazer croch&ecirc; ou artesanato<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar da minha sa\u00fade\" />Cuidar da minha sa&uacute;de</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">D&ecirc; uma olhada na lista abaixo e escolha uma ou mais atividades prazerosas que voc&ecirc; costumava fazer, mas que N&Atilde;O faz mais h&aacute; algum tempo (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relaxar (massagem, ler um livro, ouvir m\u00fasica, etc.)\" />Relaxar (massagem, ler um livro, ouvir m&uacute;sica, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Passar tempo com fam\u00edlia e amigos\" />Passar tempo com fam&iacute;lia e amigos<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Fazer atividades f\u00edsicas\" />Fazer atividades f&iacute;sicas<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Sair (parque, almo\u00e7o, shopping, cinema, etc.)\" />Sair (parque, almo&ccedil;o, shopping, cinema, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de atividades na comunidade (coral, igreja, trabalho volunt\u00e1rio, etc.)\" />Participar de atividades na comunidade (coral, igreja, trabalho volunt&aacute;rio, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Assistir uma palestra / aprender algo novo\" />Assistir uma palestra / aprender algo novo<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar da casa ou do jardim\" />Cuidar da casa ou do jardim<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Fazer croch\u00ea ou artesanato\" />Fazer croch&ecirc; ou artesanato<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar da minha sa\u00fade\" />Cuidar da minha sa&uacute;de</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Obrigado por compartilhar isso com a gente! Esse programa vai &nbsp;te dar algumas ideias de como voltar a fazer essa atividade e tarefas, e te ajudar a quebrar esse ciclo vicioso</span><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Obrigado por compartilhar isso com a gente! Esse programa vai &nbsp;te dar algumas ideias de como voltar a fazer essa atividade e tarefas, e te ajudar a quebrar esse ciclo vicioso.</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 }
@@ -153,43 +174,50 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 6,
+            "feedbackAfterDays": null,
             "guid": "0d934e95-e7fe-4fb9-84fd-e62ea5af5d9d",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-102.75pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">O que voc&ecirc; faz pode afetar como voc&ecirc; se&nbsp;</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px; line-height:1.6\">sente, para melhor ou para pior. H&aacute; muitas coisas que voc&ecirc; pode fazer para se sentir melhor.&nbsp;</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px; line-height:1.6\">Uma delas &eacute; aumentar a quantidade de atividades prazerosas e saud&aacute;veis em sua vida.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-102.75pt\">O que voc&ecirc; faz pode afetar como voc&ecirc; se&nbsp;sente, para melhor ou para pior. H&aacute; muitas coisas que voc&ecirc; pode fazer para se sentir melhor.&nbsp;Uma delas &eacute; aumentar a quantidade de atividades prazerosas e saud&aacute;veis em sua vida.</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">N&oacute;s sabemos que voc&ecirc; &eacute; uma pessoa ocupada, por isso a conclus&atilde;o de cada sess&atilde;o leva apenas alguns minutos.Voc&ecirc; vai escolher as atividades que voc&ecirc; quer fazer e integra-las no seu dia-a-dia.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">N&oacute;s sabemos que voc&ecirc; &eacute; uma pessoa ocupada, por isso a conclus&atilde;o de cada sess&atilde;o leva apenas alguns minutos.Voc&ecirc; vai escolher as atividades que voc&ecirc; quer fazer e integra-las no seu dia-a-dia.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assim, voc&ecirc; pode adaptar o programa facilmente &agrave; sua rotina. Portanto, voc&ecirc; precisa se esfor&ccedil;ar um pouco para realizar as atividades que voc&ecirc; escolheu!</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Assim, voc&ecirc; pode adaptar o programa facilmente &agrave; sua rotina. Portanto, voc&ecirc; precisa se esfor&ccedil;ar um pouco para realizar as atividades que voc&ecirc; escolheu!</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Durante as pr&oacute;ximas semanas, &eacute; importante lembrar o que voc&ecirc; gostaria de alcan&ccedil;ar at&eacute; o final deste programa. Isso vai ser uma motiva&ccedil;&atilde;o importante para as suas atividades, sobretudo quando voc&ecirc; planejou coisas que s&atilde;o um pouco mais dif&iacute;ceis de come&ccedil;ar.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Durante as pr&oacute;ximas semanas, &eacute; importante lembrar o que voc&ecirc; gostaria de alcan&ccedil;ar at&eacute; o final deste programa. Isso vai ser uma motiva&ccedil;&atilde;o importante para as suas atividades, sobretudo quando voc&ecirc; planejou coisas que s&atilde;o um pouco mais dif&iacute;ceis de come&ccedil;ar.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Na pr&oacute;xima sess&atilde;o voc&ecirc; vai come&ccedil;ar aos poucos a incluir novas atividades no seu dia-a-dia. </span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">No come&ccedil;o voc&ecirc; vai fazer atividades mais curtas. Logo depois voc&ecirc; vai fazer atividades que podem exigir um pouco mais de tempo e planejamento.&nbsp;</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Na pr&oacute;xima sess&atilde;o voc&ecirc; vai come&ccedil;ar aos poucos a incluir novas atividades no seu dia-a-dia. No come&ccedil;o voc&ecirc; vai fazer atividades mais curtas. Logo depois voc&ecirc; vai fazer atividades que podem exigir um pouco mais de tempo e planejamento.&nbsp;</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"font-family:arial; font-size:13.3333px\">Ser mais ativo vai ajudar voc&ecirc; a se sentir melhor, voc&ecirc; vai ver!</span></p>\r\n",
+                    "content": "<p>Ser mais ativo vai ajudar voc&ecirc; a se sentir melhor, voc&ecirc; vai ver!</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 }
@@ -199,89 +227,103 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 8,
+            "feedbackAfterDays": 10,
             "guid": "b7cec56a-6354-4626-90e6-e230c16e05b5",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
+            "nonPlanningContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "nonPlanningResponseContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembra-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade.",
+            "planningResponseYesContent": "Isso \u00e9 otimo! ",
+            "postPlanningContent": "Muito bom! Tente fazer essa atividade que voc\u00ea selecionou hoje ou amanh\u00e3. Lembre-se de que voc\u00ea pode mudar sua sele\u00e7\u00e3o se quiser. Em alguns dias, vamos lhe  perguntar se conseguiu realizar essa atividade.",
+            "prePlanningContent": "Vamos tentar! D\u00ea uma olhada na lista abaixo e selecione uma atividade prazerosa que voc\u00ea n\u00e3o tenha feito ultimamente, mas que voc\u00ea poderia fazer hoje ou amanh\u00e3 (clique na seta para ver todas as op\u00e7\u00f5es):",
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<h2><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Hoje vamos come&ccedil;ar a ser ativos! Para ficar mais f&aacute;cil, vamos come&ccedil;ar com uma atividade prazerosa. Atividades prazerosas s&atilde;o aquelas que gostamos fazer e que fazem a gente se sentir bem.</span></h2>\r\n",
+                    "content": "<h2>Hoje vamos come&ccedil;ar a ser ativos! Para ficar mais f&aacute;cil, vamos come&ccedil;ar com uma atividade prazerosa. Atividades prazerosas s&atilde;o aquelas que gostamos fazer e que fazem a gente se sentir bem.</h2>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Essas atividades s&atilde;o diferentes para cada pessoa. Algumas pessoas podem gostar de ouvir m&uacute;sica, outros gostam de caminhar ou cozinhar</span><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\">.</span></p>\r\n",
+                    "content": "<p>Essas atividades s&atilde;o diferentes para cada pessoa. Algumas pessoas podem gostar de ouvir m&uacute;sica, outros gostam de caminhar ou cozinhar.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Como vimos antes, quando nos sentimos tristes ou preocupados, deixamos de fazer algumas dessas atividades, mesmo as que gostamos. </span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>Como vimos antes, quando nos sentimos tristes ou preocupados, deixamos de fazer algumas dessas atividades, mesmo as que gostamos. </p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Sabemos que planejar fazer novas atividades n&atilde;o &eacute; algo f&aacute;cil, mesmo que sejam agrad&aacute;veis. Nesses momentos, &eacute; normal que voc&ecirc; pense: &ldquo;Eu n&atilde;o tenho vontade de fazer nada&rdquo;, ou &ldquo;Eu deveria gastar meu tempo fazendo outras coisas mais importantes&quot;.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Sabemos que planejar fazer novas atividades n&atilde;o &eacute; algo f&aacute;cil, mesmo que sejam agrad&aacute;veis. Nesses momentos, &eacute; normal que voc&ecirc; pense: &ldquo;Eu n&atilde;o tenho vontade de fazer nada&rdquo;, ou &ldquo;Eu deveria gastar meu tempo fazendo outras coisas mais importantes&quot;.</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esses pensamentos s&atilde;o comuns quando pedimos para as pessoas come&ccedil;arem a planejar atividades diferentes na sua rotina.</span><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\"> </span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Mas lembre-se que aumentar o n&uacute;mero de atividades j&aacute; t&ecirc;m ajudado muitas pessoas a aproveitar mais a vida.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Esses pensamentos s&atilde;o comuns quando pedimos para as pessoas come&ccedil;arem a planejar atividades diferentes na sua rotina. </p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\">Mas lembre-se que aumentar o n&uacute;mero de atividades j&aacute; t&ecirc;m ajudado muitas pessoas a aproveitar mais a vida.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Vamos tentar! D&ecirc; uma olhada na lista abaixo e selecione uma atividade prazerosa que voc&ecirc; n&atilde;o tenha feito ultimamente, mas que voc&ecirc; poderia fazer </span><strong><u>hoje ou amanh&atilde;</u></strong> (c<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">lique na seta para ver todas as op&ccedil;&otilde;es)</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">:</span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><select name=\"short_pleasant_activity\"><option value=\"Ouvir m\u00fasica\">Ouvir m&uacute;sica</option><option value=\"Ligar para um amigo ou membro da fam\u00edlia\">Ligar para um amigo ou membro da fam&iacute;lia</option><option value=\"Fazer uma caminhada curta\">Fazer uma caminhada curta</option><option value=\"Ler um livro\">Ler um livro</option><option value=\"Cozinhar\">Cozinhar</option><option value=\"Pintar \">Pintar</option><option value=\"Vestir-se bem\">Vestir-se bem</option><option value=\"Assistir um filme\">Assistir um filme</option><option value=\"Cantar\">Cantar</option><option value=\"Conversar com vizinhos\">Conversar com vizinhos</option><option value=\"Fazer croch\u00ea\">Fazer croch&ecirc;</option><option value=\"Cuidar do jardim\">Cuidar do jardim</option></select></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Vamos tentar! D&ecirc; uma olhada na lista abaixo e selecione uma atividade prazerosa que voc&ecirc; n&atilde;o tenha feito ultimamente, mas que voc&ecirc; poderia fazer <strong><u>hoje ou amanh&atilde;</u></strong> (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><select name=\"short_pleasant_activity\"><option value=\"Ouvir m\u00fasica\">Ouvir m&uacute;sica</option><option value=\"Ligar para um amigo ou membro da fam\u00edlia\">Ligar para um amigo ou membro da fam&iacute;lia</option><option value=\"Fazer uma caminhada curta\">Fazer uma caminhada curta</option><option value=\"Ler um livro\">Ler um livro</option><option value=\"Cozinhar\">Cozinhar</option><option value=\"Pintar \">Pintar</option><option value=\"Vestir-se bem\">Vestir-se bem</option><option value=\"Assistir um filme\">Assistir um filme</option><option value=\"Cantar\">Cantar</option><option value=\"Conversar com vizinhos\">Conversar com vizinhos</option><option value=\"Fazer croch\u00ea\">Fazer croch&ecirc;</option><option value=\"Cuidar do jardim\">Cuidar do jardim</option></select></p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Muito bom! Tente fazer essa atividade que voc&ecirc; selecionou hoje ou amanh&atilde;. Lembre-se de que voc&ecirc; pode mudar sua sele&ccedil;&atilde;o se quiser. Em alguns dias, vamos lhe &nbsp;perguntar se conseguiu realizar essa atividade.</span></p>\r\n",
+                    "content": "<p>Muito bom! Tente fazer essa atividade que voc&ecirc; selecionou hoje ou amanh&atilde;. Lembre-se de que voc&ecirc; pode mudar sua sele&ccedil;&atilde;o se quiser. Em alguns dias, vamos lhe &nbsp;perguntar se conseguiu realizar essa atividade.</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 }
             ],
-            "title": "Atividades prazerosas nos fazem sentir bem! "
+            "title": "4. Atividades prazerosas nos fazem sentir bem! "
         },
         {
             "_class": "Lesson",
             "dayInTreatment": 10,
+            "feedbackAfterDays": null,
             "guid": "c3905713-9f96-483c-899e-d9a83650fa6d",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Talvez voc&ecirc; tenha reparado que fazer a atividade planejada foi muito mais f&aacute;cil e agrad&aacute;vel do que voc&ecirc; imaginava, ou &nbsp;tenha sido &nbsp;mais dif&iacute;cil, ou ent&atilde;o teve dificuldades para come&ccedil;ar.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Talvez voc&ecirc; tenha reparado que fazer a atividade planejada foi muito mais f&aacute;cil e agrad&aacute;vel do que voc&ecirc; imaginava, ou &nbsp;tenha sido &nbsp;mais dif&iacute;cil, ou ent&atilde;o teve dificuldades para come&ccedil;ar.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Sabemos </span><span style=\"font-family:arial; font-size:13.3333px\">que pode ser dificil come&ccedil;ar. Neste momento, voc&ecirc; pode n&atilde;o sentir vontade de fazer alguma coisa. Mas a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o.</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"> Isso significa que voc&ecirc; primeiro tem que se tornar ativo, e, em seguida, sua motiva&ccedil;&atilde;o vai aumentar mais e mais.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Sabemos que pode ser dificil come&ccedil;ar. Neste momento, voc&ecirc; pode n&atilde;o sentir vontade de fazer alguma coisa. Mas a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o. Isso significa que voc&ecirc; primeiro tem que se tornar ativo, e, em seguida, sua motiva&ccedil;&atilde;o vai aumentar mais e mais.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo e aprender mais sobre isso: </span></p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP2.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Clique no tri&acirc;ngulo branco para iniciar o v&iacute;deo e aprender mais sobre isso: </p>\r\n\r\n<p dir=\"ltr\" style=\"margin-right:-3pt\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP2.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3 (video)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Se voc&ecirc; se sentiu melhor depois de ter realizado a nova atividade nesta semana, voc&ecirc; sabe que deveria continuar com esta atividade. Se voc&ecirc; n&atilde;o gostou da atividade, ou teve dificuldades para faz&ecirc;-la</span><strong>,</strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"> voc&ecirc; pode tentar outra atividade.</span></p>\r\n",
+                    "content": "<p>Se voc&ecirc; se sentiu melhor depois de ter realizado a nova atividade nesta semana, voc&ecirc; sabe que deveria continuar com esta atividade. Se voc&ecirc; n&atilde;o gostou da atividade, ou teve dificuldades para faz&ecirc;-la<strong>,</strong> voc&ecirc; pode tentar outra atividade.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"font-family:arial; font-size:13.3333px\">Esta &eacute; a sua chance de aumentar essas atividades que te fazem sentir melhor e ter uma vida mais saud&aacute;vel!</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Esta &eacute; a sua chance de aumentar essas atividades que te fazem sentir melhor e ter uma vida mais saud&aacute;vel!</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 }
@@ -291,59 +333,73 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 13,
+            "feedbackAfterDays": 15,
             "guid": "524df35a-ab2b-4c56-b8a8-748255e9e5f7",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
+            "nonPlanningContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "nonPlanningResponseContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembra-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade.",
+            "planningResponseYesContent": "Isso \u00e9 otimo!",
+            "postPlanningContent": "Obrigado por compartilhar isso com a gente! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade saud\u00e1vel e como se sentiu depois.",
+            "prePlanningContent": "D\u00ea uma olhada na lista abaixo e selecione uma atividade saud\u00e1vel que voc\u00ea poderia fazer hoje ou amanh\u00e3 (clique na seta para ver todas as op\u00e7\u00f5es):",
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">No in&iacute;cio desta semana prestamos aten&ccedil;&atilde;o que pequenas atividades prazerosas poderiam &nbsp;fazer com que voc&ecirc; se sentisse melhor. Agora &eacute; hora de pensar em atividades que podem ajudar a melhorar a sua sa&uacute;de f&iacute;sica. Melhorar a sua sa&uacute;de f&iacute;sica tamb&eacute;m melhorar&aacute; a sua sa&uacute;de mental!</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">No in&iacute;cio desta semana prestamos aten&ccedil;&atilde;o que pequenas atividades prazerosas poderiam &nbsp;fazer com que voc&ecirc; se sentisse melhor. Agora &eacute; hora de pensar em atividades que podem ajudar a melhorar a sua sa&uacute;de f&iacute;sica. Melhorar a sua sa&uacute;de f&iacute;sica tamb&eacute;m melhorar&aacute; a sua sa&uacute;de mental!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Muitas pessoas pensam que n&atilde;o h&aacute; muito o que fazer para melhorar sua sa&uacute;de f&iacute;sica, mas isso n&atilde;o &eacute; verdade! Algumas atividades, mesmo que pequenas, tal como caminhar 10 minutos por dia, podem fazer uma grande diferen&ccedil;a na sua sa&uacute;de como um todo.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Muitas pessoas pensam que n&atilde;o h&aacute; muito o que fazer para melhorar sua sa&uacute;de f&iacute;sica, mas isso n&atilde;o &eacute; verdade! Algumas atividades, mesmo que pequenas, tal como caminhar 10 minutos por dia, podem fazer uma grande diferen&ccedil;a na sua sa&uacute;de como um todo.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">D&ecirc; uma olhada na lista abaixo e selecione uma atividade saud&aacute;vel que voc&ecirc; poderia fazer </span><strong><u>hoje ou amanh&atilde;</u>&nbsp;</strong>(c<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">lique na seta para ver todas as op&ccedil;&otilde;es):</span></p>\r\n\r\n<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"><select name=\"short_healthy_activity\"><option value=\"Comer uma fruta ou verdura\">Comer uma fruta ou verdura</option><option value=\"Fazer uma caminhada curta\">Fazer uma caminhada curta</option><option value=\"Meditar\">Meditar</option><option value=\"Medir a minha press\u00e3o\">Medir a minha press&atilde;o</option><option value=\"Medir o meu a\u00e7\u00facar no sangue\">Medir o meu a&ccedil;&uacute;car no sangue</option><option value=\"Usar a escada em vez do elevador\">Usar a escada em vez do elevador</option><option value=\"Comer menos a\u00e7\u00facar e gordura\">Comer menos a&ccedil;&uacute;car e gordura</option><option value=\"Beber mais \u00e1gua\">Beber mais &aacute;gua</option></select></span></p>\r\n",
+                    "content": "<p>&nbsp;D&ecirc; uma olhada na lista abaixo e selecione uma atividade saud&aacute;vel que voc&ecirc; poderia fazer <strong><u>hoje ou amanh&atilde;</u>&nbsp;</strong>(clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p><select name=\"short_healthy_activity\"><option value=\"Comer uma fruta ou verdura\">Comer uma fruta ou verdura</option><option value=\"Fazer uma caminhada curta\">Fazer uma caminhada curta</option><option value=\"Meditar\">Meditar</option><option value=\"Medir a minha press\u00e3o\">Medir a minha press&atilde;o</option><option value=\"Medir o meu a\u00e7\u00facar no sangue\">Medir o meu a&ccedil;&uacute;car no sangue</option><option value=\"Usar a escada em vez do elevador\">Usar a escada em vez do elevador</option><option value=\"Comer menos a\u00e7\u00facar e gordura\">Comer menos a&ccedil;&uacute;car e gordura</option><option value=\"Beber mais \u00e1gua\">Beber mais &aacute;gua</option></select></p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Obrigado por compartilhar isso com a gente! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade saud&aacute;vel e como se sentiu depois.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Obrigado por compartilhar isso com a gente! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade saud&aacute;vel e como se sentiu depois.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
             ],
-            "title": "Melhorar a sua sa\u00fade f\u00edsica vai melhorar a sua sa\u00fade emocional!"
+            "title": "6. Melhorar a sua sa\u00fade f\u00edsica vai melhorar a sua sa\u00fade emocional!"
         },
         {
             "_class": "Lesson",
             "dayInTreatment": 15,
+            "feedbackAfterDays": null,
             "guid": "4bc85705-e0c0-47b8-a0ea-45bb8a9669b5",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assista a este v&iacute;deo e veja como ser mais ativo ajudou outras pessoas tamb&eacute;m:</span></p>\r\n\r\n<p dir=\"ltr\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP3.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Assista a este v&iacute;deo e veja como ser mais ativo ajudou outras pessoas tamb&eacute;m:</p>\r\n\r\n<p dir=\"ltr\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP3.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1 (video)"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Quando voc&ecirc; se sente cansado e sem energia, &eacute; importante que tente fazer as coisas de forma mais lenta, passo a passo. Isso significa que voc&ecirc; n&atilde;o precisa fazer todas as suas atividades e tarefas de uma vez s&oacute;, mas pode focar em fazer um pouco de cada vez.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Quando voc&ecirc; se sente cansado e sem energia, &eacute; importante que tente fazer as coisas de forma mais lenta, passo a passo. Isso significa que voc&ecirc; n&atilde;o precisa fazer todas as suas atividades e tarefas de uma vez s&oacute;, mas pode focar em fazer um pouco de cada vez.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Se voc&ecirc; escolheu uma tarefa que est&aacute; muito dif&iacute;cil de fazer, escolha uma mais f&aacute;cil.</span></p>\r\n\r\n<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Planeje suas atividades no seu pr&oacute;prio ritmo, respeitando seus limites, mas continue em frente!</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Se voc&ecirc; escolheu uma tarefa que est&aacute; muito dif&iacute;cil de fazer, escolha uma mais f&aacute;cil.</p>\r\n\r\n<p>Planeje suas atividades no seu pr&oacute;prio ritmo, respeitando seus limites, mas continue em frente!</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 }
@@ -353,77 +409,91 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 17,
+            "feedbackAfterDays": 20,
             "guid": "21a15760-403c-424b-8126-cb07dd27dfc9",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
+            "nonPlanningContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "nonPlanningResponseContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembra-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade.",
+            "planningResponseYesContent": "Isso \u00e9 otimo!",
+            "postPlanningContent": "Obrigado por compartilhar isso com a gente! Tente fazer essa tarefa que voc\u00ea selecionou hoje ou amanh\u00e3 e preste aten\u00e7\u00e3o em como se sente depois.",
+            "prePlanningContent": "Vamos tentar! D\u00ea uma olhada na lista abaixo e selecione uma tarefa que voc\u00ea poderia fazer hoje ou amanh\u00e3 (clique na seta para ver todas as op\u00e7\u00f5es):",
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Nos &uacute;ltimos dias, voc&ecirc; pensou bastante sobre atividades prazerosas e saud&aacute;veis. Hoje vamos pensar em um tipo diferente de atividade, as &quot;tarefas&quot; que se deve fazer regularmente.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\">Nos &uacute;ltimos dias, voc&ecirc; pensou bastante sobre atividades prazerosas e saud&aacute;veis. Hoje vamos pensar em um tipo diferente de atividade, as &quot;tarefas&quot; que se deve fazer regularmente.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Tarefas s&atilde;o aquelas atividades que nos deixam satisfeitos e geram um sentimento de controle sobre nossa vida depois de ter cumprido elas, como por exemplo, terminar uma tarefa de casa, pagar as contas, ou ajudar um familiar com problemas.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:1.5pt\">Tarefas s&atilde;o aquelas atividades que nos deixam satisfeitos e geram um sentimento de controle sobre nossa vida depois de ter cumprido elas, como por exemplo, terminar uma tarefa de casa, pagar as contas, ou ajudar um familiar com problemas.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Fazer essas tarefas n&atilde;o parece agrad&aacute;vel a primeira vista, mas isso tamb&eacute;m &eacute; uma forma importante de melhorar a sua sa&uacute;de e como voc&ecirc; se sente sobre si mesmo.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Fazer essas tarefas n&atilde;o parece agrad&aacute;vel a primeira vista, mas isso tamb&eacute;m &eacute; uma forma importante de melhorar a sua sa&uacute;de e como voc&ecirc; se sente sobre si mesmo.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Muitas vezes deixamos essas tarefas de lado porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentimos pior. Se conseguimos nos motivar a fazer essas tarefas,</span><strong> </strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Muitas vezes deixamos essas tarefas de lado porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentimos pior. Se conseguimos nos motivar a fazer essas tarefas,<strong> </strong>ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Vamos tentar! D&ecirc; uma olhada na lista abaixo e selecione uma tarefa que voc&ecirc; poderia fazer </span><strong><u>hoje ou amanh&atilde;</u></strong>&nbsp;(clique na seta para ver todas as op&ccedil;&otilde;es)<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">:]</span></p>\r\n\r\n<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"><select name=\"task\"><option value=\"Limpar a casa\">Limpar a casa</option><option value=\"Lavar a lou\u00e7a\">Lavar a lou&ccedil;a</option><option value=\"Pagar uma conta\">Pagar uma conta</option><option value=\"Cuidar de um membro da fan\u00edlia\">Cuidar de um membro da fan&iacute;lia</option><option value=\"Resolver um problema pessoal\">Resolver um problema pessoal</option><option value=\"Lavar roupa\">Lavar roupa</option><option value=\"Trocar as roupas de cama\">Trocar as roupas de cama</option><option value=\"Fazer as compras\">Fazer as compras</option><option value=\"Lavar o meu cabelo\">Lavar o meu cabelo</option><option value=\"Fazer um favor a algu\u00e9m \">Fazer um favor a algu&eacute;m</option></select></span></p>\r\n",
+                    "content": "<p>Vamos tentar! D&ecirc; uma olhada na lista abaixo e selecione uma tarefa que voc&ecirc; poderia fazer <strong><u>hoje ou amanh&atilde;</u></strong>&nbsp;(clique na seta para ver todas as op&ccedil;&otilde;es):]</p>\r\n\r\n<p><select name=\"task\"><option value=\"Limpar a casa\">Limpar a casa</option><option value=\"Lavar a lou\u00e7a\">Lavar a lou&ccedil;a</option><option value=\"Pagar uma conta\">Pagar uma conta</option><option value=\"Cuidar de um membro da fan\u00edlia\">Cuidar de um membro da fan&iacute;lia</option><option value=\"Resolver um problema pessoal\">Resolver um problema pessoal</option><option value=\"Lavar roupa\">Lavar roupa</option><option value=\"Trocar as roupas de cama\">Trocar as roupas de cama</option><option value=\"Fazer as compras\">Fazer as compras</option><option value=\"Lavar o meu cabelo\">Lavar o meu cabelo</option><option value=\"Fazer um favor a algu\u00e9m \">Fazer um favor a algu&eacute;m</option></select></p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Obrigado por compartilhar isso com a gente! Tente fazer essa tarefa que voc&ecirc; selecionou hoje ou amanh&atilde; e preste aten&ccedil;&atilde;o em como se sente depois.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Obrigado por compartilhar isso com a gente! Tente fazer essa tarefa que voc&ecirc; selecionou hoje ou amanh&atilde; e preste aten&ccedil;&atilde;o em como se sente depois.</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 }
             ],
-            "title": "Terminar suas tarefas vai fazer voc\u00ea se sentir melhor."
+            "title": "8. Terminar suas tarefas vai fazer voc\u00ea se sentir melhor."
         },
         {
             "_class": "Lesson",
             "dayInTreatment": 20,
+            "feedbackAfterDays": null,
             "guid": "5c897add-e38b-449c-896b-e01e7349c4e9",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Quando conseguir fazer uma atividade, comemore e recompense a si mesmo! Outras pessoas podem n&atilde;o perceber esse passo importante que voc&ecirc; deu, mas voc&ecirc; sabe o quanto voc&ecirc; se esfor&ccedil;ou!</span></p>\r\n",
+                    "content": "<p>Quando conseguir fazer uma atividade, comemore e recompense a si mesmo! Outras pessoas podem n&atilde;o perceber esse passo importante que voc&ecirc; deu, mas voc&ecirc; sabe o quanto voc&ecirc; se esfor&ccedil;ou!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Aumentar as atividades na sua vida e viver uma vida mais saud&aacute;vel e mais feliz requer algum esfor&ccedil;o. Por isso &eacute; importante respeitar o seu pr&oacute;prio ritmo, fazer pausas se for necess&aacute;rio, e dar recompensas a si mesmo. </span></p>\r\n",
+                    "content": "<p>Aumentar as atividades na sua vida e viver uma vida mais saud&aacute;vel e mais feliz requer algum esfor&ccedil;o. Por isso &eacute; importante respeitar o seu pr&oacute;prio ritmo, fazer pausas se for necess&aacute;rio, e dar recompensas a si mesmo. </p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:6pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Quando voc&ecirc; d&aacute; a si mesmo uma recompensa voc&ecirc; valoriza o que voc&ecirc; conseguiu. Portanto, n&atilde;o espere que outra pessoa te recompense. Pense em uma recompensa saud&aacute;vel que voc&ecirc; poderia dar a si mesmo quando voc&ecirc; tiver completado uma atividade planejada.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:6pt\">Quando voc&ecirc; d&aacute; a si mesmo uma recompensa voc&ecirc; valoriza o que voc&ecirc; conseguiu. Portanto, n&atilde;o espere que outra pessoa te recompense. Pense em uma recompensa saud&aacute;vel que voc&ecirc; poderia dar a si mesmo quando voc&ecirc; tiver completado uma atividade planejada.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:6pt\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Por exemplo, a recompensa de limpar a casa poderia ser uma manicure depois. Ou, depois de fazer uma atividade f&iacute;sica, assistir um jogo de futebol com os amigos.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:6pt\">Por exemplo, a recompensa de limpar a casa poderia ser uma manicure depois. Ou, depois de fazer uma atividade f&iacute;sica, assistir um jogo de futebol com os amigos.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -433,71 +503,85 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 22,
+            "feedbackAfterDays": 27,
             "guid": "b979fb00-987c-4e19-a563-153cf6a582cc",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
+            "nonPlanningContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "nonPlanningResponseContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembra-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade.",
+            "planningResponseYesContent": "Isso \u00e9 otimo!",
+            "postPlanningContent": "\u00d3timo! Tente fazer esta atividade nos pr\u00f3ximos dias. Depois, vamos perguntar-lhe se conseguiu realizar essa atividade.\r\nSe voc\u00ea gostou da atividade que voc\u00ea selecionou, tente repeti-la. Se voc\u00ea n\u00e3o gostou, escolha outra e tente novamente.",
+            "prePlanningContent": "Selecione uma das seguintes atividades que voc\u00ea consegue fazer nos pr\u00f3ximos dias (clique na seta para ver todas as op\u00e7\u00f5es):",
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"font-family:arial; font-size:13.3333px\">At&eacute; agora, voc&ecirc; j&aacute; planejou tr&ecirc;s atividades diferentes. Esta semana voc&ecirc; vai planejar outra atividade prazerosa que talvez possa exigir um pouco mais de planejamento e tempo do que as anteriores.</span></p>\r\n\r\n<p dir=\"ltr\">&nbsp;</p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">At&eacute; agora, voc&ecirc; j&aacute; planejou tr&ecirc;s atividades diferentes. Esta semana voc&ecirc; vai planejar outra atividade prazerosa que talvez possa exigir um pouco mais de planejamento e tempo do que as anteriores.</p>\r\n\r\n<p dir=\"ltr\">&nbsp;</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"font-family:arial; font-size:13.3333px\">Tire um momento para pensar sobre o que voc&ecirc; gostaria de alcan&ccedil;ar esta semana. Ao faz&ecirc;-lo, lembre-se da coisa mais importante: a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Tire um momento para pensar sobre o que voc&ecirc; gostaria de alcan&ccedil;ar esta semana. Ao faz&ecirc;-lo, lembre-se da coisa mais importante: a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"font-family:arial; font-size:13.3333px\">Selecione uma das seguintes atividades que voc&ecirc; consegue fazer nos pr&oacute;ximos dias (clique na seta para ver todas as op&ccedil;&otilde;es):</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"font-family:arial; font-size:13.3333px\"><select name=\"advanced_pleasant_activity\"><option value=\"Passar tempo com amigos ou a fam\u00edlia\">Passar tempo com amigos ou a fam&iacute;lia</option><option value=\"Participar de um grupo da comunidade\">Participar de um grupo da comunidade</option><option value=\"Sair para almo\u00e7ar\">Sair para almo&ccedil;ar</option><option value=\"Ir \u00e0 igreja\">Ir &agrave; igreja</option><option value=\"Fazer um jantar para amigos ou fam\u00edlia\">Fazer um jantar para amigos ou fam&iacute;lia</option><option value=\"Ir ao shopping\">Ir ao shopping</option><option value=\"Ir ao cinema\">Ir ao cinema</option><option value=\"Ir ao parque\">Ir ao parque</option><option value=\"Fazer trabalho volunt\u00e1rio\">Fazer trabalho volunt&aacute;rio</option><option value=\"Ir dan\u00e7ar\">Ir dan&ccedil;ar</option><option value=\"Participar de um coral\">Participar de um coral</option><option value=\"Fazer artesanato\">Fazer artesanato</option><option value=\"Assistir uma palestra ou curso\">Assistir uma palestra ou curso</option><option value=\"Ir ao cabeleireiro\">Ir ao cabeleireiro</option><option value=\"Fazer um passeio\">Fazer um passeio</option><option value=\"Fazer uma manicure/pedicure\">Fazer uma manicure/pedicure</option><option value=\"Jogar bola ou v\u00f4lei com amigos\">Jogar bola ou v&ocirc;lei com amigos</option></select></span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Selecione uma das seguintes atividades que voc&ecirc; consegue fazer nos pr&oacute;ximos dias (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p dir=\"ltr\"><select name=\"advanced_pleasant_activity\"><option value=\"Passar tempo com amigos ou a fam\u00edlia\">Passar tempo com amigos ou a fam&iacute;lia</option><option value=\"Participar de um grupo da comunidade\">Participar de um grupo da comunidade</option><option value=\"Sair para almo\u00e7ar\">Sair para almo&ccedil;ar</option><option value=\"Ir \u00e0 igreja\">Ir &agrave; igreja</option><option value=\"Fazer um jantar para amigos ou fam\u00edlia\">Fazer um jantar para amigos ou fam&iacute;lia</option><option value=\"Ir ao shopping\">Ir ao shopping</option><option value=\"Ir ao cinema\">Ir ao cinema</option><option value=\"Ir ao parque\">Ir ao parque</option><option value=\"Fazer trabalho volunt\u00e1rio\">Fazer trabalho volunt&aacute;rio</option><option value=\"Ir dan\u00e7ar\">Ir dan&ccedil;ar</option><option value=\"Participar de um coral\">Participar de um coral</option><option value=\"Fazer artesanato\">Fazer artesanato</option><option value=\"Assistir uma palestra ou curso\">Assistir uma palestra ou curso</option><option value=\"Ir ao cabeleireiro\">Ir ao cabeleireiro</option><option value=\"Fazer um passeio\">Fazer um passeio</option><option value=\"Fazer uma manicure/pedicure\">Fazer uma manicure/pedicure</option><option value=\"Jogar bola ou v\u00f4lei com amigos\">Jogar bola ou v&ocirc;lei com amigos</option></select></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"font-family:arial; font-size:13.3333px\">&Oacute;timo! </span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Tente fazer esta atividade nos pr&oacute;ximos dias. Depois, vamos perguntar-lhe</span><strong> </strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">se conseguiu realizar essa atividade. </span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Se voc&ecirc; gostou da atividade que voc&ecirc; selecionou, tente repeti-la. Se voc&ecirc; n&atilde;o gostou, escolha outra e tente novamente.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">&Oacute;timo! Tente fazer esta atividade nos pr&oacute;ximos dias. Depois, vamos perguntar-lhe<strong> </strong>se conseguiu realizar essa atividade. </p>\r\n\r\n<p dir=\"ltr\">Se voc&ecirc; gostou da atividade que voc&ecirc; selecionou, tente repeti-la. Se voc&ecirc; n&atilde;o gostou, escolha outra e tente novamente.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
             ],
-            "title": "Vamos aumentar o n\u00famero de atividades que lhe trazem prazer!"
+            "title": "10. Vamos aumentar o n\u00famero de atividades que lhe trazem prazer!"
         },
         {
             "_class": "Lesson",
             "dayInTreatment": 24,
+            "feedbackAfterDays": null,
             "guid": "6e80f83a-3c40-4d95-a641-a40946a32548",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Nada</span> &eacute; aprendido<span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"> imediatamente!</span><strong> </strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Se voc&ecirc; est&aacute; com dificuldade em cumprir uma atividade ou tarefa, n&oacute;s temos um conselho que pode ajudar: a mudan&ccedil;a &eacute; mais f&aacute;cil quando dividimos as atividades em pequenas partes. Assim podemos nos concentrar em fazer apenas um pequeno passo</span><strong> </strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">de cada vez!</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Nada &eacute; aprendido imediatamente!<strong> </strong>Se voc&ecirc; est&aacute; com dificuldade em cumprir uma atividade ou tarefa, n&oacute;s temos um conselho que pode ajudar: a mudan&ccedil;a &eacute; mais f&aacute;cil quando dividimos as atividades em pequenas partes. Assim podemos nos concentrar em fazer apenas um pequeno passo<strong> </strong>de cada vez!</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Assista a este v&iacute;deo para aprender mais sobre como isso funciona:</span></p>\r\n\r\n<p dir=\"ltr\"><em><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP4.mp4\" /></video></span></em></p>\r\n",
+                    "content": "<p dir=\"ltr\">Assista a este v&iacute;deo para aprender mais sobre como isso funciona:</p>\r\n\r\n<p dir=\"ltr\"><em><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP4.mp4\" /></video></em></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">A seguir &nbsp;est&atilde;o alguns passos que voc&ecirc; pode usar para completar uma atividade que voc&ecirc; teve dificuldade de realizar.</span></p>\r\n\r\n<ol>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\"><span style=\"background-color:transparent; font-size:13.3333px\">Identifique a atividade que voc&ecirc; quer fazer;</span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\"><span style=\"background-color:transparent; font-size:13.3333px\">Fa&ccedil;a uma lista e divida a atividade em pequenas partes;</span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\"><span style=\"background-color:transparent; font-size:13.3333px\">Escolha uma pequena parte para come&ccedil;ar;</span></p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\"><span style=\"background-color:transparent; font-size:13.3333px\">Planeje quando e como fazer. </span></p>\r\n\t</li>\r\n</ol>\r\n",
+                    "content": "<p dir=\"ltr\">A seguir &nbsp;est&atilde;o alguns passos que voc&ecirc; pode usar para completar uma atividade que voc&ecirc; teve dificuldade de realizar.</p>\r\n\r\n<ol>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Identifique a atividade que voc&ecirc; quer fazer;</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Fa&ccedil;a uma lista e divida a atividade em pequenas partes;</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Escolha uma pequena parte para come&ccedil;ar;</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Planeje quando e como fazer. </p>\r\n\t</li>\r\n</ol>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Veja um exemplo:</p>\r\n\r\n<p>1. Atividade: controlar meu a&ccedil;&uacute;car no sangue</p>\r\n\r\n<p>2. Passos</p>\r\n\r\n<p style=\"margin-left:40px\">a. comer mais verduras</p>\r\n\r\n<p style=\"margin-left:40px\">b. consumir menos a&ccedil;&uacute;car</p>\r\n\r\n<p style=\"margin-left:40px\">c. fazer caminhadas semanalmente</p>\r\n\r\n<p style=\"margin-left:40px\">d. tomar a minha medica&ccedil;&atilde;o corretamente</p>\r\n\r\n<p>3. <span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Primeiro passo: Vou come&ccedil;ar tomando os meus rem&eacute;dios corretamente</span></p>\r\n\r\n<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">4.&nbsp;</span><span style=\"background-color:transparent; font-size:13.3333px\">Para n&atilde;o me esquecer do rem&eacute;dio, vou tomar sempre junto com o caf&eacute; da manh&atilde;.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>Veja um exemplo:</p>\r\n\r\n<p>1. Atividade: controlar meu a&ccedil;&uacute;car no sangue</p>\r\n\r\n<p>2. Passos</p>\r\n\r\n<p style=\"margin-left:40px\">a. comer mais verduras</p>\r\n\r\n<p style=\"margin-left:40px\">b. consumir menos a&ccedil;&uacute;car</p>\r\n\r\n<p style=\"margin-left:40px\">c. fazer caminhadas semanalmente</p>\r\n\r\n<p style=\"margin-left:40px\">d. tomar a minha medica&ccedil;&atilde;o corretamente</p>\r\n\r\n<p>3. Primeiro passo: Vou come&ccedil;ar tomando os meus rem&eacute;dios corretamente</p>\r\n\r\n<p>4.&nbsp;Para n&atilde;o me esquecer do rem&eacute;dio, vou tomar sempre junto com o caf&eacute; da manh&atilde;.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Lembre-se: depois que voc&ecirc; completou a primeira tarefa, escolha um pr&oacute;ximo passo da lista para concluir, at&eacute; que voc&ecirc; alcance o seu objetivo final!</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Lembre-se: depois que voc&ecirc; completou a primeira tarefa, escolha um pr&oacute;ximo passo da lista para concluir, at&eacute; que voc&ecirc; alcance o seu objetivo final!</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 }
@@ -507,19 +591,26 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 27,
+            "feedbackAfterDays": null,
             "guid": "33afd2b5-bee3-482d-bf0c-a90da2490d7b",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Agora voc&ecirc; provavelmente j&aacute; tem uma lista de atividades que voc&ecirc; conseguiu fazer nas &uacute;ltimas 3 semanas. Lembre-se de como voc&ecirc; se sentiu bem quando conseguiu realizar uma tarefa que planejou! E continue realizando as atividades que fizeram voc&ecirc; se sentir melhor.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Agora voc&ecirc; provavelmente j&aacute; tem uma lista de atividades que voc&ecirc; conseguiu fazer nas &uacute;ltimas 3 semanas. Lembre-se de como voc&ecirc; se sentiu bem quando conseguiu realizar uma tarefa que planejou! E continue realizando as atividades que fizeram voc&ecirc; se sentir melhor.</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Lembre-se do seu motivo pessoal para participar neste programa e que alcan&ccedil;ar este objetivo ir&aacute; ajud&aacute;-lo a se sentir melhor e a ter uma vida mais saud&aacute;vel.</span></p>\r\n",
+                    "content": "<p>Lembre-se do seu motivo pessoal para participar neste programa e que alcan&ccedil;ar este objetivo ir&aacute; ajud&aacute;-lo a se sentir melhor e a ter uma vida mais saud&aacute;vel.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 }
@@ -529,65 +620,79 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 29,
+            "feedbackAfterDays": 34,
             "guid": "e25cd7c4-45da-4137-aa3a-8dbe32d65801",
             "hasActivityPlanning": true,
             "l10n": "pt-BR",
+            "nonPlanningContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "nonPlanningResponseContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
+            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembra-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade.",
+            "planningResponseYesContent": "Isso \u00e9 otimo!",
+            "postPlanningContent": "Muito bom! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade.",
+            "prePlanningContent": "Que atividade voc\u00ea gostaria de experimentar para melhorar a sua sa\u00fade? D\u00ea uma olhada na lista abaixo e selecione uma atividade que voc\u00ea consegue fazer nos pr\u00f3ximos dias (clique na seta para ver todas as op\u00e7\u00f5es):",
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esperamos que voc&ecirc; tenha conseguido realizar sua atividade prazerosa na semana passada. Agora n&oacute;s queremos que voc&ecirc; pense em outra atividade que possa melhorar a sua sa&uacute;de, talvez exija um pouco mais de planejamento e tempo do que as anteriores. &nbsp;</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Esperamos que voc&ecirc; tenha conseguido realizar sua atividade prazerosa na semana passada. Agora n&oacute;s queremos que voc&ecirc; pense em outra atividade que possa melhorar a sua sa&uacute;de, talvez exija um pouco mais de planejamento e tempo do que as anteriores. &nbsp;</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Lembre-se: quando melhoramos a nossa sa&uacute;de f&iacute;sica, o nosso emocional tamb&eacute;m melhora!</span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>Lembre-se: quando melhoramos a nossa sa&uacute;de f&iacute;sica, o nosso emocional tamb&eacute;m melhora!</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Que atividade voc&ecirc; gostaria de experimentar para melhorar a sua sa&uacute;de? D&ecirc; uma olhada na lista abaixo e selecione uma atividade que voc&ecirc; </span><span style=\"font-family:arial; font-size:13.3333px\">consegue fazer nos pr&oacute;ximos dias (clique na seta para ver todas as op&ccedil;&otilde;es):</span></p>\r\n\r\n<p dir=\"ltr\"><select name=\"advanced_healthy_activity\"><option value=\"Tomar a minha medica\u00e7\u00e3o corretamente\">Tomar a minha medica&ccedil;&atilde;o corretamente</option><option value=\"Come\u00e7ar uma dieta saud\u00e1vel\">Come&ccedil;ar uma dieta saud&aacute;vel</option><option value=\"Fazer uma comida saud\u00e1vel\">Fazer uma comida saud&aacute;vel</option><option value=\"Ir para academia / fazer atividade f\u00edsica\">Ir para academia / fazer atividade f&iacute;sica</option><option value=\"Fazer um check-up de sa\u00fade\">Fazer um check-up de sa&uacute;de</option><option value=\"Nadar / fazer hidrogin\u00e1stica\">Nadar / fazer hidrogin&aacute;stica</option><option value=\"Jogar bola ou v\u00f4lei\">Jogar bola ou v&ocirc;lei</option><option value=\"Andar de bicicleta \">Andar de bicicleta</option><option value=\"Anotar os n\u00edveis de glicose e/ou a press\u00e3o em um di\u00e1rio \">Anotar os n&iacute;veis de glicose e/ou a press&atilde;o em um di&aacute;rio</option><option value=\"Fazer uma caminhada longa\">Fazer uma caminhada longa</option><option value=\"Ir a um pod\u00f3logo\">Ir a um pod&oacute;logo</option><option value=\"Fazer um tratamento de acupuntura\">Fazer um tratamento de acupuntura</option></select></p>\r\n",
+                    "content": "<p dir=\"ltr\">Que atividade voc&ecirc; gostaria de experimentar para melhorar a sua sa&uacute;de? D&ecirc; uma olhada na lista abaixo e selecione uma atividade que voc&ecirc; consegue fazer nos pr&oacute;ximos dias (clique na seta para ver todas as op&ccedil;&otilde;es):</p>\r\n\r\n<p dir=\"ltr\"><select name=\"advanced_healthy_activity\"><option value=\"Tomar a minha medica\u00e7\u00e3o corretamente\">Tomar a minha medica&ccedil;&atilde;o corretamente</option><option value=\"Come\u00e7ar uma dieta saud\u00e1vel\">Come&ccedil;ar uma dieta saud&aacute;vel</option><option value=\"Fazer uma comida saud\u00e1vel\">Fazer uma comida saud&aacute;vel</option><option value=\"Ir para academia / fazer atividade f\u00edsica\">Ir para academia / fazer atividade f&iacute;sica</option><option value=\"Fazer um check-up de sa\u00fade\">Fazer um check-up de sa&uacute;de</option><option value=\"Nadar / fazer hidrogin\u00e1stica\">Nadar / fazer hidrogin&aacute;stica</option><option value=\"Jogar bola ou v\u00f4lei\">Jogar bola ou v&ocirc;lei</option><option value=\"Andar de bicicleta \">Andar de bicicleta</option><option value=\"Anotar os n\u00edveis de glicose e/ou a press\u00e3o em um di\u00e1rio \">Anotar os n&iacute;veis de glicose e/ou a press&atilde;o em um di&aacute;rio</option><option value=\"Fazer uma caminhada longa\">Fazer uma caminhada longa</option><option value=\"Ir a um pod\u00f3logo\">Ir a um pod&oacute;logo</option><option value=\"Fazer um tratamento de acupuntura\">Fazer um tratamento de acupuntura</option></select></p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Muito bom! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Muito bom! Em alguns dias, vamos perguntar-lhe se conseguiu realizar essa atividade.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
             ],
-            "title": "Vamos planejar mais atividades para melhorar a sua sa\u00fade!"
+            "title": "13. Vamos planejar mais atividades para melhorar a sua sa\u00fade!"
         },
         {
             "_class": "Lesson",
             "dayInTreatment": 31,
+            "feedbackAfterDays": null,
             "guid": "62bb2ec6-294e-467c-b3e9-8a8299b8f1a8",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Geralmente grandes mudan&ccedil;as n&atilde;o acontecem de um dia para o outro, podem levar um tempo. Sobretudo, as mudannn&ccedil;as acontecem pouco a pouco e o progresso &agrave;s vezes pode ser dif&iacute;cil de notar. Mas pequenos passos levam a grandes mudan&ccedil;as ao longo do tempo.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Geralmente grandes mudan&ccedil;as n&atilde;o acontecem de um dia para o outro, podem levar um tempo. Sobretudo, as mudannn&ccedil;as acontecem pouco a pouco e o progresso &agrave;s vezes pode ser dif&iacute;cil de notar. Mas pequenos passos levam a grandes mudan&ccedil;as ao longo do tempo.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">No seu dia-a-dia, pequenas mudan&ccedil;as, por exemplo, lavar roupa em vez de assistir TV, pode levar a grandes mudan&ccedil;as em sua vida ao longo do tempo. Desta forma, pouco a pouco, voc&ecirc; cria a vida que voc&ecirc; realmente quer.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">No seu dia-a-dia, pequenas mudan&ccedil;as, por exemplo, lavar roupa em vez de assistir TV, pode levar a grandes mudan&ccedil;as em sua vida ao longo do tempo. Desta forma, pouco a pouco, voc&ecirc; cria a vida que voc&ecirc; realmente quer.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Lembre-se de todo crescimento que alcan&ccedil;ou at&eacute; aqui e aprecie suas mudan&ccedil;as, mesmo que elas pare&ccedil;am pequenas!</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Lembre-se de todo crescimento que alcan&ccedil;ou at&eacute; aqui e aprecie suas mudan&ccedil;as, mesmo que elas pare&ccedil;am pequenas!</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Sabemos que vai demorar algum tempo at&eacute; que essas atividades se tornem parte de sua rotina di&aacute;ria, mas se voc&ecirc; continuar a faz&ecirc;-las, se tornar&aacute; mais natural e f&aacute;cil a cada vez. Se continuar andando na dire&ccedil;&atilde;o certa, voc&ecirc; vai atingir a sua meta.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Sabemos que vai demorar algum tempo at&eacute; que essas atividades se tornem parte de sua rotina di&aacute;ria, mas se voc&ecirc; continuar a faz&ecirc;-las, se tornar&aacute; mais natural e f&aacute;cil a cada vez. Se continuar andando na dire&ccedil;&atilde;o certa, voc&ecirc; vai atingir a sua meta.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -597,43 +702,50 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 34,
+            "feedbackAfterDays": null,
             "guid": "a7fdaa0b-2b88-454c-a192-70d89cbf8b8b",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Bem-vindo/a a sess&atilde;o 15! Vamos come&ccedil;ar com este video:</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP5.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Bem-vindo/a a sess&atilde;o 15! Vamos come&ccedil;ar com este video:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP5.mp4\" /></video></p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Um bom plano &eacute; como uma rota em um mapa. Ao seguir a sua rota, pode acontecer que voc&ecirc; se depare com algo que n&atilde;o est&aacute; no mapa, tal como uma lombada. Mas, se voc&ecirc; segue sua rota, sem perder o foco no seu destino, voc&ecirc; vai, mesmo assim, chegar onde voc&ecirc; quer estar no final.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Um bom plano &eacute; como uma rota em um mapa. Ao seguir a sua rota, pode acontecer que voc&ecirc; se depare com algo que n&atilde;o est&aacute; no mapa, tal como uma lombada. Mas, se voc&ecirc; segue sua rota, sem perder o foco no seu destino, voc&ecirc; vai, mesmo assim, chegar onde voc&ecirc; quer estar no final.</p>\r\n\r\n<div>&nbsp;</div>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Um bom plano orienta voc&ecirc; atrav&eacute;s da vida da mesma forma como uma rota em um mapa. O importante, por&eacute;m, &eacute; continuar seguindo esse plano, mesmo</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"> </span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">se tiver uma reca&iacute;da.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Um bom plano orienta voc&ecirc; atrav&eacute;s da vida da mesma forma como uma rota em um mapa. O importante, por&eacute;m, &eacute; continuar seguindo esse plano, mesmo se tiver uma reca&iacute;da.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Pois, uma &uacute;nica reca&iacute;da n&atilde;o vai mudar o seu plano, porque o que voc&ecirc; faz todos os dias &eacute; mais importante do que o que aconteceu apenas uma vez. </span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Pois, uma &uacute;nica reca&iacute;da n&atilde;o vai mudar o seu plano, porque o que voc&ecirc; faz todos os dias &eacute; mais importante do que o que aconteceu apenas uma vez. </p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">O perigo com reca&iacute;das &eacute; que, se voc&ecirc; n&atilde;o faz uma atividade planejada uma vez, o risco de n&atilde;o faz&ecirc;-la de novo na pr&oacute;xima vez aumenta. Assim, &eacute; f&aacute;cil entrar no c&iacute;rculo negativo novamente.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">O perigo com reca&iacute;das &eacute; que, se voc&ecirc; n&atilde;o faz uma atividade planejada uma vez, o risco de n&atilde;o faz&ecirc;-la de novo na pr&oacute;xima vez aumenta. Assim, &eacute; f&aacute;cil entrar no c&iacute;rculo negativo novamente.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Por isso, se voc&ecirc; come&ccedil;ou</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"> </span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">a</span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\"> </span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">se desviar,&eacute; importante voltar ao caminho certo o mais r&aacute;pido poss&iacute;vel e come&ccedil;ar a se mover na dire&ccedil;&atilde;o de uma vida mais saud&aacute;vel e feliz!</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Por isso, se voc&ecirc; come&ccedil;ou a se desviar,&eacute; importante voltar ao caminho certo o mais r&aacute;pido poss&iacute;vel e come&ccedil;ar a se mover na dire&ccedil;&atilde;o de uma vida mais saud&aacute;vel e feliz!</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 }
@@ -643,55 +755,62 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 36,
+            "feedbackAfterDays": null,
             "guid": "9b0a220f-896b-4076-b02d-df97fc48a305",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Fazer algo pela primeira vez pode ser dif&iacute;cil. Fazer algo pela cent&eacute;sima vez &eacute; mais f&aacute;cil. Fazer algo pela mil&eacute;sima vez &eacute; quase autom&aacute;tico.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\">Fazer algo pela primeira vez pode ser dif&iacute;cil. Fazer algo pela cent&eacute;sima vez &eacute; mais f&aacute;cil. Fazer algo pela mil&eacute;sima vez &eacute; quase autom&aacute;tico.</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Quanto mais voc&ecirc; pratica algo, menos precisa pensar para fazer e mais f&aacute;cil vai ficar. Muitas coisas que fazemos quase automaticamente na vida cotidiana podem ser consideradas &quot;h&aacute;bitos&quot;.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Quanto mais voc&ecirc; pratica algo, menos precisa pensar para fazer e mais f&aacute;cil vai ficar. Muitas coisas que fazemos quase automaticamente na vida cotidiana podem ser consideradas &quot;h&aacute;bitos&quot;.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Alguns h&aacute;bitos que temos s&atilde;o muito positivos para nossa vida, outros n&atilde;o.</span></p>\r\n\r\n<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Para mudar os h&aacute;bitos que n&atilde;o s&atilde;o positivos, primeiramente temos que reconhecer quais deles n&atilde;o est&atilde;o nos fazendo bem e planejar uma forma de modific&aacute;-los.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Alguns h&aacute;bitos que temos s&atilde;o muito positivos para nossa vida, outros n&atilde;o.</p>\r\n\r\n<p dir=\"ltr\">Para mudar os h&aacute;bitos que n&atilde;o s&atilde;o positivos, primeiramente temos que reconhecer quais deles n&atilde;o est&atilde;o nos fazendo bem e planejar uma forma de modific&aacute;-los.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Por exemplo, ao inv&eacute;s de voc&ecirc; ficar assistindo televis&atilde;o toda noite, voc&ecirc; pode tentar fazer algo diferente em alguns dias da semana, como ler um livro, ouvir m&uacute;sica ou conversar com um vizinho.</span></p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Por exemplo, ao inv&eacute;s de voc&ecirc; ficar assistindo televis&atilde;o toda noite, voc&ecirc; pode tentar fazer algo diferente em alguns dias da semana, como ler um livro, ouvir m&uacute;sica ou conversar com um vizinho.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Se voc&ecirc; continuar fazendo uma nova atividade regularmente, mesmo que pare&ccedil;a estranho no inicio faz&ecirc;-la, essa atividade se tornar&aacute; mais f&aacute;cil e um novo h&aacute;bito ao longo do tempo. </span></p>\r\n",
+                    "content": "<p>Se voc&ecirc; continuar fazendo uma nova atividade regularmente, mesmo que pare&ccedil;a estranho no inicio faz&ecirc;-la, essa atividade se tornar&aacute; mais f&aacute;cil e um novo h&aacute;bito ao longo do tempo. </p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Vamos tentar? Pense em uma atividade que voc&ecirc; experimentou neste programa e que fez voc&ecirc; se sentir bem, que voc&ecirc; pode incluir em sua rotina di&aacute;ria.</span></p>\r\n",
+                    "content": "<p>Vamos tentar? Pense em uma atividade que voc&ecirc; experimentou neste programa e que fez voc&ecirc; se sentir bem, que voc&ecirc; pode incluir em sua rotina di&aacute;ria.</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Uma maneira de fazer isso &eacute; vincular essa atividade a uma determinada hora do dia ou a um dia da semana. Por exemplo, se a atividade que voc&ecirc; quer incluir em sua rotina &eacute; fazer caminhadas, pense sobre quando &eacute; o melhor momento para fazer isso, por exemplo: sempre pela manh&atilde;, depois do trabalho, ou aos</span><strong> </strong><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">s&aacute;bados.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Uma maneira de fazer isso &eacute; vincular essa atividade a uma determinada hora do dia ou a um dia da semana. Por exemplo, se a atividade que voc&ecirc; quer incluir em sua rotina &eacute; fazer caminhadas, pense sobre quando &eacute; o melhor momento para fazer isso, por exemplo: sempre pela manh&atilde;, depois do trabalho, ou aos<strong> </strong>s&aacute;bados.</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Outra estrat&eacute;gia poderia ser: juntar a nova atividade com uma que voc&ecirc; j&aacute; faz regularmente, por exemplo, almo&ccedil;ar. Neste caso, voc&ecirc; poderia fazer uma caminhada todos os dias depois do almo&ccedil;o.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Outra estrat&eacute;gia poderia ser: juntar a nova atividade com uma que voc&ecirc; j&aacute; faz regularmente, por exemplo, almo&ccedil;ar. Neste caso, voc&ecirc; poderia fazer uma caminhada todos os dias depois do almo&ccedil;o.</p>\r\n",
                     "position": 8,
                     "title": "Slide 8"
                 }
@@ -701,31 +820,38 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 38,
+            "feedbackAfterDays": null,
             "guid": "f755864c-fc35-4aaa-8d60-6fd6cd246eca",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<h2><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">As conquistas que s&atilde;o realmente importantes na nossa vida levam um certo tempo e requerem um certo esfor&ccedil;o. Mudar seu estilo de vida n&atilde;o &eacute; nada f&aacute;cil. Voc&ecirc; precisa fazer uma rotina e seguir com ela, mesmo que ocorram contratempos!</span></h2>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<h2>As conquistas que s&atilde;o realmente importantes na nossa vida levam um certo tempo e requerem um certo esfor&ccedil;o. Mudar seu estilo de vida n&atilde;o &eacute; nada f&aacute;cil. Voc&ecirc; precisa fazer uma rotina e seguir com ela, mesmo que ocorram contratempos!</h2>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">N&oacute;s sabemos que leva um tempo at&eacute; que esses novos comportamentos possam fazer parte da sua rotina e se &nbsp;tornar um novo h&aacute;bito, mas se voc&ecirc; continuar firme, vai ficando cada vez mais f&aacute;cil e natural.</span></p>\r\n",
+                    "content": "<p>N&oacute;s sabemos que leva um tempo at&eacute; que esses novos comportamentos possam fazer parte da sua rotina e se &nbsp;tornar um novo h&aacute;bito, mas se voc&ecirc; continuar firme, vai ficando cada vez mais f&aacute;cil e natural.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Para</span><span style=\"background-color:transparent; font-family:arial; font-size:14.6667px\"> </span><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">algumas pessoas pode ajudar escrever um plano de atividades em um peda&ccedil;o de papel ou colocar as atividades em um calend&aacute;rio para se lembrar de faz&ecirc;-las. Pode ajudar tamb&eacute;m pendurar esse plano ou calend&aacute;rio em um lugar bem vis&iacute;vel como, por exemplo, na geladeira. Isso pode ajud&aacute;-lo a manter o foco e se manter ativo.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Para algumas pessoas pode ajudar escrever um plano de atividades em um peda&ccedil;o de papel ou colocar as atividades em um calend&aacute;rio para se lembrar de faz&ecirc;-las. Pode ajudar tamb&eacute;m pendurar esse plano ou calend&aacute;rio em um lugar bem vis&iacute;vel como, por exemplo, na geladeira. Isso pode ajud&aacute;-lo a manter o foco e se manter ativo.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<h2 dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Lembre-se: os h&aacute;bitos determinam quem voc&ecirc; &eacute;. E n&atilde;o se esque&ccedil;a de se dar recompensas quando conseguir seguir o seu plano! Isso vai ajud&aacute;-lo a permanecer motivado e valorizar a atividade cumprida ainda mais.</span></h2>\r\n",
+                    "content": "<h2 dir=\"ltr\">Lembre-se: os h&aacute;bitos determinam quem voc&ecirc; &eacute;. E n&atilde;o se esque&ccedil;a de se dar recompensas quando conseguir seguir o seu plano! Isso vai ajud&aacute;-lo a permanecer motivado e valorizar a atividade cumprida ainda mais.</h2>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -735,25 +861,32 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 41,
+            "feedbackAfterDays": null,
             "guid": "62f30e6b-0fff-4afb-9220-9b9ab7cad265",
             "hasActivityPlanning": false,
             "l10n": "pt-BR",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Durante este programa, voc&ecirc; deu passos importantes em dire&ccedil;&atilde;o a uma vida mais saud&aacute;vel e feliz. Continue fazendo o que tem funcionado bem e te faz sentir melhor.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Durante este programa, voc&ecirc; deu passos importantes em dire&ccedil;&atilde;o a uma vida mais saud&aacute;vel e feliz. Continue fazendo o que tem funcionado bem e te faz sentir melhor.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
+                    "content": "<p dir=\"ltr\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\"><span style=\"background-color:transparent; font-family:arial; font-size:13.3333px\">Esperamos que este programa tenha ajudado voc&ecirc; a se sentir melhor e que voc&ecirc; tenha conseguido incluir o que voc&ecirc; aprendeu aqui na sua vida.</span></p>\r\n",
+                    "content": "<p dir=\"ltr\">Esperamos que este programa tenha ajudado voc&ecirc; a se sentir melhor e que voc&ecirc; tenha conseguido incluir o que voc&ecirc; aprendeu aqui na sua vida.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 }
@@ -763,9 +896,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 0,
+            "feedbackAfterDays": null,
             "guid": "3fdf935a-5796-48b5-a47e-d953788057ff",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -833,9 +973,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 1,
+            "feedbackAfterDays": null,
             "guid": "f584a39b-c9b2-4a2f-9aff-f177fd44b85b",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -891,9 +1038,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 3,
+            "feedbackAfterDays": null,
             "guid": "529a2f05-65f8-41f7-ab18-2a673e6eb0f3",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -931,9 +1085,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 6,
+            "feedbackAfterDays": null,
             "guid": "2f6ea7cb-a281-4bf7-98ff-02ac557de206",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -983,9 +1144,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 8,
+            "feedbackAfterDays": 10,
             "guid": "0f7a1cc3-3bb0-4a2c-b1fb-3088ef9bc412",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "planningResponseNoContent": "Ser m\u00e1s activo te ayudar\u00e1 a sentirte mejor y a tener una vida m\u00e1s sana y feliz. Recuerda que todav\u00eda puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando. ",
+            "planningResponseYesContent": "\u00a1Excelente!",
+            "postPlanningContent": "\u00a1Muy bien! Intenta hacer esta actividad que has seleccionado entre hoy y ma\u00f1ana.\r\n \r\nRecuerda que puedes cambiar tu elecci\u00f3n si deseas.\r\n \r\nEn un par de d\u00edas te preguntaremos c\u00f3mo te fue.",
+            "prePlanningContent": "\u00a1Intentemos! Por favor revisa la siguiente lista de actividades placenteras y selecciona una que NO hayas estado haciendo \u00faltimamente pero te gustar\u00eda hacer entre HOY y MA\u00d1ANA:",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1029,9 +1197,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 10,
+            "feedbackAfterDays": null,
             "guid": "481c9380-d8a7-42c7-b010-7aabfca37e4d",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1069,9 +1244,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 13,
+            "feedbackAfterDays": 15,
             "guid": "bbb5abf3-f8c7-46c2-8bb8-a5296bf00f49",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "planningResponseNoContent": "Ser m\u00e1s activo te ayudar\u00e1 a sentirte mejor y a tener una vida m\u00e1s sana y feliz. Recuerda que todav\u00eda puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando. ",
+            "planningResponseYesContent": "\u00a1Excelente!",
+            "postPlanningContent": "Gracias por compartir esa informaci\u00f3n.\r\n\r\n\r\n\r\nEn un par de d\u00edas te preguntaremos si pudiste realizar esta actividad saludable y c\u00f3mo te hizo sentir.",
+            "prePlanningContent": "Por favor, revisa la siguiente lista de actividades saludables y selecciona una que NO hayas estado haciendo \u00faltimamente pero puedas hacer HOY o MA\u00d1ANA:",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1103,9 +1285,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 15,
+            "feedbackAfterDays": null,
             "guid": "f0dc6d45-d678-4806-9e1b-1aa532a6491f",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1131,9 +1320,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 17,
+            "feedbackAfterDays": 20,
             "guid": "410a6881-dc59-4651-8915-4bb7ddab4dbe",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "planningResponseNoContent": "Ser m\u00e1s activo te ayudar\u00e1 a sentirte mejor y a tener una vida m\u00e1s sana y feliz. Recuerda que todav\u00eda puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando. ",
+            "planningResponseYesContent": "\u00a1Excelente!",
+            "postPlanningContent": "Gracias por compartir esa informaci\u00f3n.\r\n\r\n\r\n\r\nIntenta hacer la tarea seleccionada hoy o ma\u00f1ana y presta atenci\u00f3n a c\u00f3mo te sentiste despu\u00e9s.",
+            "prePlanningContent": "Por favor revisa la siguiente lista de tareas y selecciona una que puedas hacer HOY o MA\u00d1ANA:",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1183,9 +1379,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 20,
+            "feedbackAfterDays": null,
             "guid": "6e5925d2-c9a8-42ab-b67f-52d95d2a6ed3",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1217,9 +1420,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 22,
+            "feedbackAfterDays": 27,
             "guid": "13a2470e-ce38-4357-b37a-10c37d2686f4",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "planningResponseNoContent": "Ser m\u00e1s activo te ayudar\u00e1 a sentirte mejor y a tener una vida m\u00e1s sana y feliz. Recuerda que todav\u00eda puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando. ",
+            "planningResponseYesContent": "\u00a1Excelente!",
+            "postPlanningContent": "\u00a1Excelente!\r\n \r\nAhora intenta hacer esta actividad en los pr\u00f3ximos d\u00edas.\r\n \r\nLuego te preguntaremos c\u00f3mo te fue. \r\n\r\nSi realmente disfrutas la actividad que has seleccionado, intenta repetirla.\r\n \r\nSi no disfrutas con esta actividad, elige otra e intenta de nuevo.",
+            "prePlanningContent": "Selecciona una de las siguientes actividades que NO hayas estado haciendo \u00faltimamente pero que puedas hacer durante los pr\u00f3ximos d\u00edas:",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1257,9 +1467,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 24,
+            "feedbackAfterDays": null,
             "guid": "f6f33efc-d66b-4c9f-a22b-cbc77fa1de87",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1291,9 +1508,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 27,
+            "feedbackAfterDays": null,
             "guid": "fd91e151-2a83-4012-b7b0-0c4bd685432f",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1313,9 +1537,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 29,
+            "feedbackAfterDays": 34,
             "guid": "ee4ca5b6-8ac0-4efd-a0c9-eb912754fe8f",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "planningResponseNoContent": "Ser m\u00e1s activo te ayudar\u00e1 a sentirte mejor y a tener una vida m\u00e1s sana y feliz. Recuerda que todav\u00eda puedes seleccionar otra actividad si quieres e intentar de nuevo. Lo importante es seguir intentando. ",
+            "planningResponseYesContent": "\u00a1Excelente!",
+            "postPlanningContent": "\u00a1Muy bien!\r\n\r\n \r\n\r\nEn unos d\u00edas te preguntaremos si pudiste hacer esta actividad.",
+            "prePlanningContent": "\u00bfQu\u00e9 actividad te gustar\u00eda intentar para mejorar tu salud?\r\n \r\nMira la lista debajo y selecciona una actividad NO hayas estado haciendo \u00faltimamente pero que puedes hacer durante los pr\u00f3ximos d\u00edas:",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1325,7 +1556,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Recuerda:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Cuando mejoramos nuestra salud f&iacute;sica, nuestro &aacute;nimo tambi&eacute;n mejora.</span></p>\r\n",
+                    "content": "<p>Recuerda:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando mejoramos nuestra salud f&iacute;sica, nuestro &aacute;nimo tambi&eacute;n mejora.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -1347,9 +1578,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 31,
+            "feedbackAfterDays": null,
             "guid": "a8282a46-9b11-45a2-b735-e65fc470b33e",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1381,9 +1619,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 34,
+            "feedbackAfterDays": null,
             "guid": "40b9d58f-47b8-43a0-a73f-1d76a1033f04",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1427,9 +1672,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 36,
+            "feedbackAfterDays": null,
             "guid": "a5dfac05-c5bd-4749-8f78-1b8dbb08110c",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1491,13 +1743,20 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 38,
+            "feedbackAfterDays": null,
             "guid": "94b9b930-f396-4c43-913c-9b8ac12ab14d",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Los logros que son realmente importantes en nuestras vidas toman cierto tiempo y requieren de esfuerzo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">C</span><span style=\"line-height:1.6\">ambiar nuestro estilo de vida no es f&aacute;cil. </span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Necesitamos crear una rutina y mantenernos en ella, &iexcl;aun cuando haya obst&aacute;culos!</span></p>\r\n",
+                    "content": "<p>Los logros que son realmente importantes en nuestras vidas toman cierto tiempo y requieren de esfuerzo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cambiar nuestro estilo de vida no es f&aacute;cil. </p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Necesitamos crear una rutina y mantenernos en ella, &iexcl;aun cuando haya obst&aacute;culos!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -1531,9 +1790,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 41,
+            "feedbackAfterDays": null,
             "guid": "40dd808e-83dd-4218-94d0-1f6ce80c0abf",
             "hasActivityPlanning": false,
             "l10n": "es-PE",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1559,9 +1825,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 1,
+            "feedbackAfterDays": null,
             "guid": "ee2af651-0165-454f-8ee3-b67b9d556c23",
             "hasActivityPlanning": false,
             "l10n": "en",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1593,9 +1866,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 2,
+            "feedbackAfterDays": null,
             "guid": "6e048c42-1673-4de0-b36b-59d30268504a",
             "hasActivityPlanning": false,
             "l10n": "en",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1621,9 +1901,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 3,
+            "feedbackAfterDays": null,
             "guid": "ee404ca4-939c-49e0-b1e0-8df23074e10f",
             "hasActivityPlanning": false,
             "l10n": "en",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1649,9 +1936,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 4,
+            "feedbackAfterDays": null,
             "guid": "35420b01-eb84-4fff-9b68-0c5ec344f7b2",
             "hasActivityPlanning": false,
             "l10n": "en",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1683,9 +1977,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 5,
+            "feedbackAfterDays": null,
             "guid": "9b016256-34e3-4362-88b9-05a68cfeeee7",
             "hasActivityPlanning": false,
             "l10n": "en",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
@@ -1711,9 +2012,16 @@
         {
             "_class": "Lesson",
             "dayInTreatment": 12,
+            "feedbackAfterDays": null,
             "guid": "8b8f706d-5da8-4924-8c5d-fa6d8f30f263",
             "hasActivityPlanning": false,
             "l10n": "en",
+            "nonPlanningContent": null,
+            "nonPlanningResponseContent": null,
+            "planningResponseNoContent": null,
+            "planningResponseYesContent": null,
+            "postPlanningContent": null,
+            "prePlanningContent": null,
             "slides": [
                 {
                     "_class": "Slide",
