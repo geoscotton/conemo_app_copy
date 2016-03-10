@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.0 - 2016-03-10
+
+* update lesson content
+* lock to portrait orientation
+* enable customized content for activity planning
+* change multi-select to checkboxes
+
 ## 1.1.9 - 2016-03-06
 
 * translate config page
