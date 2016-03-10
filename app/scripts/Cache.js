@@ -2,7 +2,7 @@
   'use strict';
 
   var SCHEMA_NAME = 'conemo',
-      SCHEMA_VERSION = 8;
+      SCHEMA_VERSION = 10;
   var PAYLOADS_API_PATH = '/api/payloads';
   var STATUSES = {
     Initialized: 'initialized',
@@ -73,7 +73,8 @@
         .addColumn('sent_at', this.context.lf.Type.DATE_TIME);
       this.syncableResources.Logins.createTable()
         .addColumn('logged_in_at', this.context.lf.Type.DATE_TIME)
-        .addColumn('app_version', this.context.lf.Type.STRING);
+        .addColumn('app_version', this.context.lf.Type.STRING)
+        .addNullable(['app_version']);
       this.syncableResources.ParticipantStartDates.createTable()
         .addColumn('date', this.context.lf.Type.STRING);
       this.syncableResources.PlannedActivities.createTable()
@@ -87,7 +88,7 @@
         .addColumn('lesson_guid', this.context.lf.Type.STRING)
         .addNullable([
           'is_complete', 'is_help_wanted', 'level_of_happiness',
-          'how_worthwhile'
+          'how_worthwhile', 'follow_up_at'
         ]);
       this.syncableResources.SessionEvents.createTable()
         .addColumn('lesson_guid', this.context.lf.Type.STRING)
