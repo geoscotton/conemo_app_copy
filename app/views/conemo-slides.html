@@ -61,7 +61,7 @@
   </div>
 
   <select name="planned-activity-name" ng-model="selectedActivity.value">
-    <option ng-repeat="activity in activityChoices | filter:translate">{{ activity }}</option>
+    <option ng-repeat="activity in selectedLesson.activityChoices.split('\r\n')">{{ activity }}</option>
   </select>
 </div>
 
