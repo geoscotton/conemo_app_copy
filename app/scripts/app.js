@@ -132,7 +132,7 @@ var lessonsRead = [];
         function onResume() {
           Resources.save(Resources.NAMES.Logins, {
             logged_in_at: new Date(),
-            app_version: '1.2.0'
+            app_version: '1.2.1'
           });
 
           if ($window.localStorage.onResume != null) {

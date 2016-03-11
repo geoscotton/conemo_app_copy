@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.1 - 2016-03-10
+
+* style activity planning radio inputs
+* make font size consistent in Portuguese app
+
 ## 1.2.0 - 2016-03-10
 
 * update lesson content
