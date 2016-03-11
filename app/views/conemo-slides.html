@@ -40,6 +40,7 @@
   <span ng-if="plannedActivity.isComplete === 'Yes'"
         ng-bind-html="unsafe(plannedLesson.planningResponseYesContent)">
   </span>
+  <ng-include ng-if="plannedActivity.isComplete === 'Yes'" src="activityContentPath"></ng-include>
 
   <span ng-if="plannedActivity.isComplete === 'No'"
         ng-bind-html="unsafe(plannedLesson.planningResponseNoContent)">
