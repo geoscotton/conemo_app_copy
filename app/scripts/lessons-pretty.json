@@ -533,7 +533,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">A seguir &nbsp;est&atilde;o alguns passos que voc&ecirc; pode usar para completar uma atividade que voc&ecirc; teve dificuldade de realizar.</p>\r\n\r\n<ol>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Identifique a atividade que voc&ecirc; quer fazer;</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Fa&ccedil;a uma lista e divida a atividade em pequenas partes;</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Escolha uma pequena parte para come&ccedil;ar;</p>\r\n\t</li>\r\n\t<li dir=\"ltr\">\r\n\t<p dir=\"ltr\">Planeje quando e como fazer. </p>\r\n\t</li>\r\n</ol>\r\n",
+                    "content": "<p dir=\"ltr\">A seguir &nbsp;est&atilde;o alguns passos que voc&ecirc; pode usar para completar uma atividade que voc&ecirc; teve dificuldade de realizar.</p>\r\n\r\n<p dir=\"ltr\" style=\"margin-left: 40px;\">1. Identifique a atividade que voc&ecirc; quer fazer;</p>\r\n\r\n<p dir=\"ltr\" style=\"margin-left: 40px;\">2. Fa&ccedil;a uma lista e divida a atividade em pequenas partes;</p>\r\n\r\n<p dir=\"ltr\" style=\"margin-left: 40px;\">3. Escolha uma pequena parte para come&ccedil;ar;</p>\r\n\r\n<p dir=\"ltr\" style=\"margin-left: 40px;\">4. Planeje quando e como fazer.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
