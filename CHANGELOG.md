@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2 - 2016-03-11
+
+* include feedback follow up ratings questions
+
 ## 1.2.1 - 2016-03-10
 
 * style activity planning radio inputs
