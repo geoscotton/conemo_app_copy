@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.3 - 2016-03-17
+
+* update Protuguese lesson content
+* remove duplicate feedback
+
 ## 1.2.2 - 2016-03-11
 
 * include feedback follow up ratings questions
