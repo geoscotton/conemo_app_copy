@@ -11,16 +11,20 @@
 
   {{ 'didYouDoActivity' | translate }} {{ plannedActivity.name }}?
 
-  <div>
-    <label>
-      <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="Yes">
-      {{ 'yes' | translate }}
-    </label>
+  <div class="form-group form-group-lg">
+    <div class="radio">
+      <label>
+        <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="Yes">
+        {{ 'yes' | translate }}
+      </label>
+    </div>
 
-    <label>
-      <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="No">
-      {{ 'no' | translate }}
-    </label>
+    <div class="radio">
+      <label>
+        <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="No">
+        {{ 'no' | translate }}
+      </label>
+    </div>
   </div>
 </div>
 
