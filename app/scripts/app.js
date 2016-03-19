@@ -6,8 +6,6 @@ var lessonsRead = [];
 (function() {
   'use strict';
 
-  localStorage.l10n = l10n;
-
   l10nStrings.availableLocales = _.pluck(i18nStrings.generalContent, 'l10n');
 
   //set up lesson read cache
@@ -138,7 +136,7 @@ var lessonsRead = [];
           .localeLocationPattern('scripts/vendor/angular-locale_{{locale}}.js');
       })
       .run(function(tmhDynamicLocale) {
-        tmhDynamicLocale.set(localStorage.l10n);
+        tmhDynamicLocale.set(l10n);
       })
       .run([
         '$rootScope', '$location', '$window', 'Constants', 'Resources',

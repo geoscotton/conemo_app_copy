@@ -3,17 +3,17 @@
 angular.module('conemoAppApp')
   .filter('translate', [function() {
     function translate(key) {
-      var t = _.find(i18nStrings.generalContent, { l10n: localStorage.l10n });
+      var t = _.find(i18nStrings.generalContent, { l10n: l10n });
       var today = new Date();
       var currentMonth = today.getMonth();
       if (typeof t === 'undefined') {
-        return 'locale not found: ' + localStorage.l10n;
+        return 'locale not found: ' + l10n;
       } 
       else if (key === 'months') {
         return t[key][currentMonth];
       }
       else if (typeof t[key] === 'undefined') {
-        return 'translation not found: ' + localStorage.l10n + ' => ' + key;
+        return 'translation not found: ' + l10n + ' => ' + key;
       }
 
       return t[key];
