@@ -28,7 +28,7 @@
     function link(scope, element) {
       scope.unsafe = function(input) { return $sce.trustAsHtml(input); };
       scope.docHeight = angular.element($window).height();
-      scope.activityContentPath = 'views/activities/' + $window.localStorage.l10n + '.html';
+      scope.activityContentPath = 'views/activities/' + $window.l10n + '.html';
       scope.plannedActivity = {
         isComplete: null
       };

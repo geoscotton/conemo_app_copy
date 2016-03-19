@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  function SessionAccessLink(settings, Resources) {
+  function SessionAccessLink(Resources) {
     return {
       link: function(scope, element) {
         element.on('click', function() {
@@ -23,6 +23,6 @@
 
   angular.module('conemoApp.directives')
     .directive(
-        'sessionAccessLink', ['settings', 'Resources', SessionAccessLink]
+        'sessionAccessLink', ['Resources', SessionAccessLink]
     );
 })();

@@ -9,7 +9,7 @@
     $scope.availableLocales = $window.l10nStrings.availableLocales;
 
     $scope.setLocale = function() {
-        $window.l10n, $window.localStorage.l10n = this.locale;
+      $window.l10n = this.locale;
     };
 
     //Sort lessons by date to determine first lesson and schedule triggers
