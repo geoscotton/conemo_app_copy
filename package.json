@@ -7,7 +7,7 @@
     "angular-resource": "=1.4.7",
     "angular-route": "=1.4.7",
     "angular-sanitize": "=1.4.7",
-    "cache_and_sync_love": "0.1.x",
+    "cache_and_sync_love": "0.2.x",
     "cordova": "=6.0.0",
     "jquery": "=1.11.3",
     "moment": "=2.10.6"

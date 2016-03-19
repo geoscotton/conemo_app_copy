@@ -16,9 +16,6 @@
         "cordova-plugin-device": {
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         },
-        "cordova-plugin-network-information": {
-            "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
-        },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "edu.northwestern.cbits.conemo"
         },
