@@ -9,7 +9,8 @@ describe('LessonController', function() {
     save: sinon.spy(),
     fetchLatestUnreportedActivity: function() {
       return latestUnreportedActivity;
-    }
+    },
+    getDaysInTreatment: function() { return Promise.resolve(1); }
   };
 
   function injectController($controller, $rootScope) {
@@ -163,14 +164,17 @@ describe('LessonController', function() {
   });
 
   describe('#saveForm', function() {
-    it('saves the data', function() {
+    it('saves the data', function(done) {
       inject(lessonPages({ count: 0 }));
 
       scope.saveForm();
 
       var eventMatch = sinon.match({ lesson_guid: guid });
-      expect(Resources.save.calledWith('content_access_events', eventMatch))
-        .to.be.true;
+      Resources.getDaysInTreatment().then(function() {
+        expect(Resources.save.calledWith('content_access_events', eventMatch))
+          .to.be.true;
+        done();
+      });
     });
   });
 });

@@ -214,5 +214,16 @@
       }).bind(this));
     };
 
+  Cache.syncableResources.ParticipantStartDates.fetchLatest = function fetchLatest() {
+    return this.getDbConnection().then((function(db) {
+      var table = this.getTable();
+
+      return db.select().from(table)
+               .orderBy(table.client_created_at, context.lf.Order.DESC)
+               .limit(1)
+               .exec();
+    }).bind(this));
+  };
+
   context.Cache = Cache;
 })(this);

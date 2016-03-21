@@ -60,6 +60,15 @@
       });
     },
 
+    getDaysInTreatment: function getDaysInTreatment() {
+      return createMessage(this.worker, {
+        resource: this.NAMES.ParticipantStartDates,
+        method: 'fetchLatest'
+      }).then(function(startDates) {
+        return context.moment().diff(startDates[0].date, 'days');
+      });
+    },
+
     authenticate: function authenticate() {
       if (this.authentication == null) {
         this.authentication = new Promise((function(resolve, reject) {
