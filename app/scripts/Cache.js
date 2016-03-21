@@ -214,5 +214,16 @@
       }).bind(this));
     };
 
+  Cache.syncableResources.ParticipantStartDates.fetchEarliest = function fetchEarliest() {
+    return this.getDbConnection().then((function(db) {
+      var table = this.getTable();
+
+      return db.select().from(table)
+               .orderBy(table.date)
+               .limit(1)
+               .exec();
+    }).bind(this));
+  };
+
   context.Cache = Cache;
 })(this);

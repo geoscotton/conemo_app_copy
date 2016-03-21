@@ -4,7 +4,7 @@
   var YES = 'Yes', NO = 'No', INCOMPLETE = 'incomplete';
 
   function LessonsController($scope, $routeParams, $location,
-                             $window, $rootScope, startDateService, Resources) {
+                             $window, $rootScope, Resources) {
     var docHeight = angular.element($window).height();
 
     $scope.selectedLesson = $rootScope.lessons.find(function(lesson) {
@@ -76,8 +76,6 @@
       $scope.navButtonGenerator($scope.currentSlideIndex);
     };
 
-    var daysInTreatment = startDateService.getDaysInTreatment();
-
     $scope.backLabel = $window.l10nStrings.backLabel;
     $scope.nextLabel = $window.l10nStrings.nextLabel;
     $scope.showSlides = false;
@@ -128,19 +126,15 @@
         });
       }
 
-      Resources.save(Resources.NAMES.ContentAccessEvents, {
-        lesson_guid: $routeParams.id,
-        accessed_at: new Date(),
-        day_in_treatment_accessed: daysInTreatment,
-        response_attributes: JSON.stringify({ answer: formData })
+      var lessonGuid = $routeParams.id;
+      Resources.getDaysInTreatment().then(function(daysInTreatment) {
+        Resources.save(Resources.NAMES.ContentAccessEvents, {
+          lesson_guid: lessonGuid,
+          accessed_at: new Date(),
+          day_in_treatment_accessed: daysInTreatment,
+          response_attributes: JSON.stringify({ answer: formData })
+        });
       });
-
-      // mark lesson as read    
-
-      if ($window.lessonsRead.indexOf($scope.selectedLesson.guid) === -1) {
-        $window.lessonsRead.push($scope.selectedLesson.guid);
-        $window.localStorage.setItem('lessonsRead', JSON.stringify($window.lessonsRead));
-      }
 
       $location.path(path);
 
@@ -193,6 +187,6 @@ angular.module('conemoApp.controllers')
        .controller(
          'LessonController',
          ['$scope', '$routeParams', '$location', '$window',
-          '$rootScope', 'startDateService', 'Resources', LessonsController]
+          '$rootScope', 'Resources', LessonsController]
        );
 })();
