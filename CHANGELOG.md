@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0 - 2016-03-21
+
+* use Resources instead of localStorage for lessons
+* use start date in Resources, not localStorage
+* use global variable for 'l10n'
+* remvoe unused network connection plugin and code
+
 ## 1.2.3 - 2016-03-17
 
 * update Protuguese lesson content
