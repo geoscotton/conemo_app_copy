@@ -63,8 +63,12 @@
     getDaysInTreatment: function getDaysInTreatment() {
       return createMessage(this.worker, {
         resource: this.NAMES.ParticipantStartDates,
-        method: 'fetchLatest'
+        method: 'fetchEarliest'
       }).then(function(startDates) {
+        if (startDates.length === 0) {
+          return 0;
+        }
+
         return context.moment().diff(startDates[0].date, 'days');
       });
     },
@@ -80,6 +84,17 @@
       }
 
       return this.authentication;
+    },
+
+    getReadLessonIds: function getReadLessonIds() {
+      return createMessage(this.worker, {
+        resource: this.NAMES.ContentAccessEvents,
+        method: 'fetchAll'
+      }).then(function(events) {
+        return events.map(function(accessEvent) {
+          return accessEvent.lesson_guid;
+        });
+      });
     },
 
     onWorkerMessage: function onWorkerMessage(event) {

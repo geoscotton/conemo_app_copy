@@ -136,13 +136,6 @@
         });
       });
 
-      // mark lesson as read    
-
-      if ($window.lessonsRead.indexOf($scope.selectedLesson.guid) === -1) {
-        $window.lessonsRead.push($scope.selectedLesson.guid);
-        $window.localStorage.setItem('lessonsRead', JSON.stringify($window.lessonsRead));
-      }
-
       $location.path(path);
 
       return false;

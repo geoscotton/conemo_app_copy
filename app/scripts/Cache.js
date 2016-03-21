@@ -214,12 +214,12 @@
       }).bind(this));
     };
 
-  Cache.syncableResources.ParticipantStartDates.fetchLatest = function fetchLatest() {
+  Cache.syncableResources.ParticipantStartDates.fetchEarliest = function fetchEarliest() {
     return this.getDbConnection().then((function(db) {
       var table = this.getTable();
 
       return db.select().from(table)
-               .orderBy(table.client_created_at, context.lf.Order.DESC)
+               .orderBy(table.date)
                .limit(1)
                .exec();
     }).bind(this));

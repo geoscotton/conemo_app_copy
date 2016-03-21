@@ -1,16 +1,8 @@
 /* REPLACE */ var l10n = 'pt-BR'; /* REPLACE */
 
 var l10nStrings = i18nStrings.filterLocale(l10n)[0];
-var lessonsRead = [];
-
 (function() {
   'use strict';
-
-  //set up lesson read cache
-  if (typeof localStorage.lessonsRead === 'undefined') {
-    //could replace later with server side start date
-    localStorage.lessonsRead = JSON.stringify([]);
-  }
 
   angular.module('conemoApp.constants', []);
   angular.module('conemoApp.directives', ['conemoApp.services']);
@@ -75,13 +67,21 @@ var lessonsRead = [];
           redirectTo: '/'
         });
       }])
-      .run(function($rootScope) {
+      .run(function($rootScope, Resources) {
         $rootScope.unreadLabel = l10nStrings.unreadLabel;
         $rootScope.checkLessonRead = function(lessonID) {
-          lessonsRead = JSON.parse(localStorage['lessonsRead']);
-          if (lessonsRead.indexOf(lessonID) !== -1) {
-            return true;
+          if ($rootScope.lessonsRead == null) {
+            $rootScope.lessonsRead = [];
           }
+
+          Resources.getReadLessonIds().then(function(ids) {
+            if ($rootScope.lessonsRead.length !== ids.length) {
+              $rootScope.lessonsRead = ids;
+              $rootScope.$digest();
+            }
+          });
+
+          return $rootScope.lessonsRead.indexOf(lessonID) !== -1;
         };
       })
       .run(function($rootScope, LessonService) {
