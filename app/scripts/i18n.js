@@ -115,7 +115,7 @@ i18nStrings.generalContent.push({
                    'Cantar', 'Conversar con tu vecino', 'Tejer', 'Hacer jardinería'],
   todaysDate: 'Fecha de hoy',
   ifCorrectContinue: 'Si la fecha y hora son correctas, por favor continúe.',
-  didYouDoActivity: '¿Pudiste hacerlo',
+  didYouDoActivity: '¿Pudiste',
   noActivity: 'Ser más activo te ayudará a sentirte mejor y a tener una vida ' +
               'más sana y feliz. Recuerda que todavía puedes seleccionar otra ' +
               'actividad si quieres e intentar de nuevo. Lo importante es seguir ' +
