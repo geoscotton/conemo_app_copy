@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.1 - 2016-03-22
+
+* update Portuguese lesson content
+* save form on penultimate slide
+* remove scrollable slide transitions
+* update Spanish feedback text
+* add hidden blank to activity selects
+
 ## 1.3.0 - 2016-03-21
 
 * use Resources instead of localStorage for lessons
