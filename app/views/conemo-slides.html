@@ -1,5 +1,4 @@
-<div ng-if="isReady && plannedActivity"
-     style="height: {{ docHeight }}px;"
+<div ng-if="currentSlideIndex === 0 && isReady && plannedActivity"
      class="slide"
      data-index="0"
      data-position="1">
@@ -28,8 +27,7 @@
   </div>
 </div>
 
-<div ng-if="isReady && plannedActivity"
-     style="height: {{ docHeight }}px;"
+<div ng-if="currentSlideIndex === 1 && isReady && plannedActivity"
      class="slide"
      data-index="1"
      data-position="2">
@@ -48,16 +46,14 @@
 </div>
 
 <div ng-if="isReady"
-     ng-repeat="slide in slides"
-     style="height: {{ docHeight }}px;"
      class="slide"
-     data-index="{{ $index + slideIndexOffset }}"
-     data-position="{{ $index + 1 + slideIndexOffset }}"
-     ng-bind-html="unsafe(slide.content)">
+     data-index="{{ currentSlideIndex + slideIndexOffset }}"
+     data-position="{{ currentSlideIndex + 1 + slideIndexOffset }}"
+     style="padding-bottom: 44px;"
+     ng-bind-html="unsafe(slides[currentSlideIndex - slideIndexOffset - 1].content)">
 </div>
 
-<div ng-if="isReady && selectedLesson.hasActivityPlanning"
-     style="height: {{ docHeight }}px;"
+<div ng-if="currentSlideIndex === slideCount && isReady && selectedLesson.hasActivityPlanning"
      class="slide"
      data-index="{{ slideCount }}"
      data-position="{{ slideCount + 1 }}">
@@ -71,8 +67,7 @@
   </select>
 </div>
 
-<div ng-if="isReady && selectedLesson.hasActivityPlanning"
-     style="height: {{ docHeight }}px;"
+<div ng-if="currentSlideIndex === slideCount + 1 && isReady && selectedLesson.hasActivityPlanning"
      class="slide"
      data-index="{{ slideCount + 1 }}"
      data-position="{{ slideCount + 2 }}">
