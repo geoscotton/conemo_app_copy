@@ -5,6 +5,8 @@
 
   function LessonsController($scope, $routeParams, $location,
                              $window, $rootScope, Resources) {
+    var lessonIsComplete = false;
+
     $scope.selectedLesson = $rootScope.lessons.find(function(lesson) {
       return lesson.guid === $routeParams.id;
     });
@@ -57,6 +59,11 @@
         switch (slidemover) {
           case 'next':
             $scope.currentSlideIndex++;
+            if (lessonIsComplete === false &&
+                $scope.currentSlideIndex === slideCount - 1) {
+              $scope.saveForm();
+              lessonIsComplete = true;
+            }
             break;
           case 'back':
             $scope.currentSlideIndex--;
@@ -91,7 +98,7 @@
       $scope.$digest();
     });
 
-    $scope.saveForm = function (path) {
+    $scope.saveForm = function() {
       var formData = angular.element('form').serializeObject();
       var plannedActivityName = formData['planned-activity-name'];
       var reportedActivityIsComplete = formData['reported-activity-is-complete'] || INCOMPLETE;
@@ -130,10 +137,6 @@
           response_attributes: JSON.stringify({ answer: formData })
         });
       });
-
-      $location.path(path);
-
-      return false;
     };
   }
 
