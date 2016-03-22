@@ -66,6 +66,7 @@
   </div>
 
   <select name="planned-activity-name" ng-model="selectedActivity.value">
+    <option selected disabled hidden style='display: none' value=''></option>
     <option ng-repeat="activity in selectedLesson.activityChoices.split('\r\n')">{{ activity }}</option>
   </select>
 </div>
