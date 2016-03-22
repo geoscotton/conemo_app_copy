@@ -46,6 +46,7 @@
       templateUrl: 'views/conemo-slides.html',
       scope: {
         activityChoices: '=',
+        currentSlideIndex: '=',
         slides: '=',
         selectedLesson: '=',
         plannedLesson: '='

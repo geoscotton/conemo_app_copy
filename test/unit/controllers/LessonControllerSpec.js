@@ -136,15 +136,8 @@ describe('LessonController', function() {
   });
 
   describe('#updatePageCounter', function() {
-    it('updates the slide index based on where the scroll is', function() {
-      inject(lessonPages({ count: 0 }));
-
-      scope.updatePageCounter();
-
-      expect(scope.currentSlideIndex).to.eq(0);
-    });
-
     it('updates the page counter', function() {
+      scope.currentSlideIndex = 0;
       inject(lessonPages({ count: 2 }));
 
       scope.updatePageCounter();
@@ -153,6 +146,7 @@ describe('LessonController', function() {
     });
 
     it('sets showHome, showBack, and showNext accordingly', function() {
+      scope.currentSlideIndex = 0;
       inject(lessonPages({ count: 2 }));
 
       scope.updatePageCounter();

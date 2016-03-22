@@ -82,14 +82,15 @@ describe('ConemoSlides', function() {
     scope.$digest();
 
     latestUnreportedActivity.then(function() {
-      expect(element.html()).to.match(/ng-bind-html="unsafe\(slide.content\)"/);
+      expect(element.html()).to.match(/ng-bind-html="unsafe\(slides/);
       done();
     });
   });
 
   it('adds a planned activity question if required', function(done) {
     var element = $compile(
-      '<div conemo-slides slides="slides" selected-lesson="selectedLesson"></div>'
+      '<div conemo-slides slides="slides" selected-lesson="selectedLesson" ' +
+      'current-slide-index="currentSlideIndex"></div>'
     )(scope);
 
     scope.slides = [];
@@ -97,6 +98,7 @@ describe('ConemoSlides', function() {
       hasActivityPlanning: true,
       prePlanningContent: 'Can you do something'
     };
+    scope.currentSlideIndex = 1;
     scope.isReady = true;
     scope.$digest();
 
@@ -108,12 +110,14 @@ describe('ConemoSlides', function() {
 
   it('adds an activity report question if required', function(done) {
     var element = $compile(
-      '<div conemo-slides slides="slides" selected-lesson="selectedLesson"></div>'
+      '<div conemo-slides slides="slides" selected-lesson="selectedLesson" ' +
+      'current-slide-index="currentSlideIndex"></div>'
     )(scope);
 
     scope.slides = [];
     scope.selectedLesson = { hasActivityPlanning: false };
     latestUnreportedActivity = Promise.resolve([{}]);
+    scope.currentSlideIndex = 0;
     scope.isReady = true;
     scope.$digest();
 

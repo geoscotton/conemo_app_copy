@@ -5,8 +5,6 @@
 
   function LessonsController($scope, $routeParams, $location,
                              $window, $rootScope, Resources) {
-    var docHeight = angular.element($window).height();
-
     $scope.selectedLesson = $rootScope.lessons.find(function(lesson) {
       return lesson.guid === $routeParams.id;
     });
@@ -65,13 +63,10 @@
             break;
         }
       } 
-
-      angular.element('html, body')
-             .animate({ scrollTop: (docHeight * $scope.currentSlideIndex) + 'px' });
+      $scope.updatePageCounter();
     };
 
     $scope.updatePageCounter = function () {
-      $scope.currentSlideIndex = Math.round($window.scrollY / docHeight);
       $scope.pageCounter = ($scope.currentSlideIndex + 1) + ' / ' + slideCount;
       $scope.navButtonGenerator($scope.currentSlideIndex);
     };
@@ -143,17 +138,6 @@
   }
 
   angular.module('conemoAppApp')
-    .directive('scroll', function ($window) {
-      return function(scope, element, attrs) {
-        angular.element($window).bind('scroll', function() {
-          scope.$apply(attrs.scroll);
-        });
-        // prevent memory leak by removing global scroll event listener
-        element.on('$destroy', function() {
-          angular.element($window).unbind('scroll');
-        });
-      };
-    })
     .directive('moDateInput', function ($window) {
     return {
         require:'^ngModel',
