@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2 - 2016-03-23
+
+* add lame fix for broken video functionality
+
 ## 1.3.1 - 2016-03-22
 
 * update Portuguese lesson content
