@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.4 - 2016-03-23
+
+* add hidden blank to activity selects
+* specify network information plugin version
+* update with latest content
+
 ## 1.2.3 - 2016-03-17
 
 * update Protuguese lesson content
