@@ -1,4 +1,4 @@
-<div ng-if="currentSlideIndex === 0 && isReady && plannedActivity"
+<div ng-show="currentSlideIndex === 0 && isReady && plannedActivity"
      class="slide"
      data-index="0"
      data-position="1">
@@ -27,33 +27,33 @@
   </div>
 </div>
 
-<div ng-if="currentSlideIndex === 1 && isReady && plannedActivity"
+<div ng-show="currentSlideIndex === 1 && isReady && plannedActivity"
      class="slide"
      data-index="1"
      data-position="2">
-  <span ng-if="plannedActivity.isComplete == null"
+  <span ng-show="plannedActivity.isComplete == null"
         ng-bind-html="unsafe(plannedLesson.nonPlanningResponseContent)">
   </span>
 
-  <span ng-if="plannedActivity.isComplete === 'Yes'"
+  <span ng-show="plannedActivity.isComplete === 'Yes'"
         ng-bind-html="unsafe(plannedLesson.planningResponseYesContent)">
   </span>
-  <ng-include ng-if="plannedActivity.isComplete === 'Yes'" src="activityContentPath"></ng-include>
+  <ng-include ng-show="plannedActivity.isComplete === 'Yes'" src="activityContentPath"></ng-include>
 
-  <span ng-if="plannedActivity.isComplete === 'No'"
+  <span ng-show="plannedActivity.isComplete === 'No'"
         ng-bind-html="unsafe(plannedLesson.planningResponseNoContent)">
   </span>
 </div>
 
-<div ng-if="isReady"
+<div ng-show="isReady"
      class="slide"
      data-index="{{ currentSlideIndex + slideIndexOffset }}"
      data-position="{{ currentSlideIndex + 1 + slideIndexOffset }}"
      style="padding-bottom: 44px;"
-     ng-bind-html="unsafe(slides[currentSlideIndex - slideIndexOffset - 1].content)">
+     ng-bind-html="unsafe(slides[currentSlideIndex - slideIndexOffset].content)">
 </div>
 
-<div ng-if="currentSlideIndex === slideCount && isReady && selectedLesson.hasActivityPlanning"
+<div ng-show="currentSlideIndex === slideCount - 2 && isReady && selectedLesson.hasActivityPlanning"
      class="slide"
      data-index="{{ slideCount }}"
      data-position="{{ slideCount + 1 }}">
@@ -67,16 +67,16 @@
   </select>
 </div>
 
-<div ng-if="currentSlideIndex === slideCount + 1 && isReady && selectedLesson.hasActivityPlanning"
+<div ng-show="currentSlideIndex === slideCount - 1 && isReady && selectedLesson.hasActivityPlanning"
      class="slide"
      data-index="{{ slideCount + 1 }}"
      data-position="{{ slideCount + 2 }}">
 
-  <div ng-if="selectedActivity.value != null"
+  <div ng-show="selectedActivity.value != null"
        ng-bind-html="selectedLesson.postPlanningContent">
   </div>
 
-  <div ng-if="selectedActivity.value == null"
+  <div ng-show="selectedActivity.value == null"
        ng-bind-html="selectedLesson.nonPlanningContent">
   </div>
 </div>
