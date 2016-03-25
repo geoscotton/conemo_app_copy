@@ -1,7 +1,5 @@
 <div ng-show="currentSlideIndex === 0 && isReady"
-     class="slide"
-     data-index="0"
-     data-position="1">
+     class="slide">
   <span ng-if="plannedActivity">
     <input type="hidden" name="reported-activity-uuid" ng-value="plannedActivity.uuid" />
     <input type="hidden" name="reported-activity-name" ng-value="plannedActivity.name" />
@@ -30,9 +28,7 @@
 </div>
 
 <div ng-show="currentSlideIndex === 1 && isReady"
-     class="slide"
-     data-index="1"
-     data-position="2">
+     class="slide">
   <span ng-if="plannedActivity">
     <span ng-if="plannedActivity.isComplete == null"
           ng-bind-html="unsafe(plannedLesson.nonPlanningResponseContent)">
@@ -56,9 +52,7 @@
 </span>
 
 <div ng-show="currentSlideIndex === slideCount - 2 && isReady"
-     class="slide"
-     data-index="{{ slideCount }}"
-     data-position="{{ slideCount + 1 }}">
+     class="slide">
   <span ng-if="selectedLesson.hasActivityPlanning">
     <div ng-bind-html="unsafe(selectedLesson.prePlanningContent)">
     </div>
@@ -71,9 +65,7 @@
 </div>
 
 <div ng-show="currentSlideIndex === slideCount - 1 && isReady"
-     class="slide"
-     data-index="{{ slideCount + 1 }}"
-     data-position="{{ slideCount + 2 }}">
+     class="slide">
   <span ng-if="selectedLesson.hasActivityPlanning">
     <div ng-show="selectedActivity.value != null"
          ng-bind-html="selectedLesson.postPlanningContent">

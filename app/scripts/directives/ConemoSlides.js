@@ -27,7 +27,6 @@
   function ConemoSlides($window, $compile, $sce, $timeout, VideoControl, Resources) {
     function link(scope, element) {
       scope.unsafe = function(input) { return $sce.trustAsHtml(input); };
-      scope.docHeight = angular.element($window).height();
       scope.activityContentPath = 'views/activities/' + $window.l10n + '.html';
       scope.plannedActivity = {
         isComplete: null
@@ -39,11 +38,6 @@
       Resources.fetchLatestUnreportedActivity().then(function(activities) {
         buildSlideContent(scope, element, activities[0]);
         VideoControl.addTo(element);
-      });
-      scope.$watch('currentSlideIndex', function() {
-        $timeout(function() {
-          VideoControl.addTo(element);
-        }, 10);
       });
     }
 
