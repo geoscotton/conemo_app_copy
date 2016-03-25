@@ -49,13 +49,11 @@
   </span>
 </div>
 
-<div ng-show="isReady"
-     class="slide"
-     data-index="{{ currentSlideIndex + slideIndexOffset }}"
-     data-position="{{ currentSlideIndex + 1 + slideIndexOffset }}"
-     style="padding-bottom: 44px;"
-     ng-bind-html="unsafe(slides[currentSlideIndex - slideIndexOffset].content)">
-</div>
+<span ng-if="isReady" ng-repeat="slide in slides">
+  <div ng-show="currentSlideIndex - slideIndexOffset === $index"
+       class="slide"
+       ng-bind-html="unsafe(slide.content)"></div>
+</span>
 
 <div ng-show="currentSlideIndex === slideCount - 2 && isReady"
      class="slide"
