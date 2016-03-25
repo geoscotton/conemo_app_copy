@@ -17,6 +17,11 @@
 
     scope.isReady = true;
     scope.$digest();
+
+    var selects = element.find('select');
+    Array.prototype.forEach.call(selects, function(select) {
+      select.selectedIndex = -1;
+    });
   }
 
   function ConemoSlides($window, $compile, $sce, $timeout, VideoControl, Resources) {
