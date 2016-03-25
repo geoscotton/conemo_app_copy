@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.4 - 2016-03-25
+
+* add blank prompt to slide form select inputs
+* fix slide form input data capture
+* fix data capture of activity planning and feedback
+* scheduled activity feedback relative to "now"
+
 ## 1.3.3 - 2016-03-24
 
 * update lesson content
