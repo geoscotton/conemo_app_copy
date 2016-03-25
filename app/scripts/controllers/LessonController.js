@@ -107,7 +107,7 @@
         Resources.save(Resources.NAMES.PlannedActivities, {
           name: plannedActivityName,
           planned_at: new Date(),
-          follow_up_at: $window.moment(formData['reported-activity-planned-at'])
+          follow_up_at: $window.moment()
                                .add($scope.selectedLesson.feedbackAfterDays, 'days')
                                .toDate(),
           lesson_guid: $routeParams.id
