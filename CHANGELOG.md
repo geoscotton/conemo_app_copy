@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.7 - 2016-04-04
+
+* fix content size for Spanish activity not done
+* force Main page reload on resume
+
 ## 1.3.6 - 2016-04-04
 
 * notify Angular of URL update rather than reloading
