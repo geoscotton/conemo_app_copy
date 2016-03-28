@@ -84,7 +84,7 @@ describe('ConemoSlides', function() {
     scope.$digest();
 
     latestUnreportedActivity.then(function() {
-      expect(element.html()).to.match(/ng-bind-html="unsafe\(slides/);
+      expect(element.html()).to.match(/ng-bind-html="unsafe\(slide.content/);
       done();
     });
   });
