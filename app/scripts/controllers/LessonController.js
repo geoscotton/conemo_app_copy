@@ -52,7 +52,12 @@
       }
     };
 
+    function pauseVideo() {
+      Array.prototype.forEach.call(angular.element('video'), function(v) { v.pause(); });
+    }
+
     $scope.slideNavigator = function (slidemover) {
+      pauseVideo();
       $scope.navButtonGenerator($scope.currentSlideIndex);
 
       if (typeof (slidemover) !== 'number') {
