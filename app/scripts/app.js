@@ -137,8 +137,8 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
         tmhDynamicLocale.set(l10n);
       })
       .run([
-        '$rootScope', '$location', '$window', 'Constants', 'Resources', 'Lessons',
-        function($rootScope, $location, $window, Constants, Resources, Lessons) {
+        '$rootScope', '$location', '$window', '$timeout', 'Constants', 'Resources', 'Lessons',
+        function($rootScope, $location, $window, $timeout, Constants, Resources, Lessons) {
           $rootScope.$on('authentication_token_created', function(event, authenticationToken) {
             Resources.save(Resources.NAMES.AuthenticationTokens, {
               value: authenticationToken
@@ -153,7 +153,10 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
             Resources.save(Resources.NAMES.ParticipantStartDates, {
               date: $window.moment().format('YYYY-MM-DD')
             });
-            Lessons.scheduleNotifications();
+            // give data sync a chance to complete
+            $timeout(function() {
+              Lessons.scheduleNotifications();
+            }, 10000);
             $location.path('/');
             $rootScope.$digest();
           });
