@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.3 - 2016-03-24
+
+* update lesson content
+* capture all slide form input values
+* fix off-by-1 errors in slide display
+* ensure unread label updates on main page
+
 ## 1.3.2 - 2016-03-23
 
 * add lame fix for broken video functionality
