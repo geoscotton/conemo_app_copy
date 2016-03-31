@@ -27,9 +27,11 @@ describe('ConemoSlides', function() {
     var directiveTemplate = null;
     var req = new XMLHttpRequest();
     req.onload = function() { directiveTemplate = this.responseText; };
-    req.open('get', '../app/views/conemo-slides.html', false);
-    req.send();
-    $templateCache.put('views/conemo-slides.html', directiveTemplate);
+    ['conemo-slides.html', 'activities/pt-BR.html'].forEach(function(t) {
+      req.open('get', '../app/views/' + t, false);
+      req.send();
+      $templateCache.put('views/' + t, directiveTemplate);
+    });
   }));
 
   beforeEach(function() {
