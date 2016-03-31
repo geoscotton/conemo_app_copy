@@ -11,6 +11,10 @@ body {
     padding-bottom: 20px;
 }
 
+body.es-PE #slideShowForm {
+  font-size: 18px;
+}
+
 #slides {
     font-size:1em;
 }
