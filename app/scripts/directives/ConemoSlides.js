@@ -7,21 +7,16 @@
     scope.slideIndexOffset = 0;
 
     if (plannedActivity != null) {
-      scope.slideCount = scope.slides.length + 1;
-      scope.slideIndexOffset = 1;
+      scope.slideCount = scope.slides.length + 2;
+      scope.slideIndexOffset = 2;
     }
 
     if (scope.selectedLesson.hasActivityPlanning) {
-      scope.slideCount = scope.slides.length + 1 + scope.slideIndexOffset;
+      scope.slideCount = scope.slides.length + 2 + scope.slideIndexOffset;
     }
 
     scope.isReady = true;
     scope.$digest();
-
-    var selects = element.find('select');
-    Array.prototype.forEach.call(selects, function(select) {
-      select.selectedIndex = -1;
-    });
   }
 
   function ConemoSlides($window, $compile, $sce, $timeout, VideoControl, Resources) {

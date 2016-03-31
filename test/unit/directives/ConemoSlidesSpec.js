@@ -61,7 +61,7 @@ describe('ConemoSlides', function() {
 
       scope.slides = [{}];
       scope.selectedLesson = { hasActivityPlanning: true };
-      latestUnreportedActivity = Promise.resolve([{}]);
+      latestUnreportedActivity = Promise.resolve([]);
       scope.$digest();
 
       latestUnreportedActivity.then(function() {
@@ -98,7 +98,7 @@ describe('ConemoSlides', function() {
       hasActivityPlanning: true,
       prePlanningContent: 'Can you do something'
     };
-    scope.currentSlideIndex = 1;
+    scope.currentSlideIndex = 0;
     scope.isReady = true;
     scope.$digest();
 

@@ -50,10 +50,10 @@
      data-index="{{ currentSlideIndex + slideIndexOffset }}"
      data-position="{{ currentSlideIndex + 1 + slideIndexOffset }}"
      style="padding-bottom: 44px;"
-     ng-bind-html="unsafe(slides[currentSlideIndex - slideIndexOffset - 1].content)">
+     ng-bind-html="unsafe(slides[currentSlideIndex - slideIndexOffset].content)">
 </div>
 
-<div ng-if="currentSlideIndex === slideCount && isReady && selectedLesson.hasActivityPlanning"
+<div ng-if="currentSlideIndex === slideCount - 2 && isReady && selectedLesson.hasActivityPlanning"
      class="slide"
      data-index="{{ slideCount }}"
      data-position="{{ slideCount + 1 }}">
@@ -67,7 +67,7 @@
   </select>
 </div>
 
-<div ng-if="currentSlideIndex === slideCount + 1 && isReady && selectedLesson.hasActivityPlanning"
+<div ng-if="currentSlideIndex === slideCount - 1 && isReady && selectedLesson.hasActivityPlanning"
      class="slide"
      data-index="{{ slideCount + 1 }}"
      data-position="{{ slideCount + 2 }}">
