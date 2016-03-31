@@ -17,7 +17,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Esta &eacute; uma sess&atilde;o de treinamento sobre como usar o aplicativo CONEMO. Neste aplicativo voc&ecirc; vai ler textos, assistir a v&iacute;deos, selecionar objetivos e atividades e responder perguntas.</p>\r\n\r\n<p dir=\"ltr\">Para ir para pr&oacute;xima p&aacute;gina, pressione a seta &agrave; direita, na parte inferior da tela.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Esta &eacute; uma sess&atilde;o de treinamento sobre como usar o aplicativo CONEMO. Neste aplicativo voc&ecirc; vai ler textos, assistir a v&iacute;deos, selecionar objetivos, atividades e responder perguntas.</p>\r\n\r\n<p dir=\"ltr\">Para ir para pr&oacute;xima p&aacute;gina, pressione a seta &agrave; direita, na parte inferior da tela.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -29,25 +29,25 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">&Aacute;s vezes CONEMO pedir&aacute; que voc&ecirc; selecione atividades. Para selecion&aacute;-las, clique na seta. Uma nova janela ir&aacute; aparecer com todas as op&ccedil;&otilde;es de atividades. Role a p&aacute;gina para cima e para baixo com o dedo para visualizar todas as op&ccedil;&otilde;es e depois selecione aquela que voc&ecirc; escolheu.</p>\r\n\r\n<p dir=\"ltr\">Exemplo: Qual &eacute; a sua cor favorita?</p>\r\n\r\n<p dir=\"ltr\"><select name=\"favorite color\"><option value=\"Vermelha\">Vermelha</option><option value=\"Azul\">Azul</option><option value=\"Verde\">Verde</option><option value=\"Amarelo\">Amarelo</option><option value=\"Lil\u00e1s\">Lil&aacute;s</option><option value=\"Outra\">Outra</option></select></p>\r\n\r\n<p dir=\"ltr\">Se quiser mudar sua resposta, clique novamente na seta e escolha outra op&ccedil;&atilde;o.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">&Agrave;s vezes CONEMO pedir&aacute; que voc&ecirc; selecione atividades. Para selecion&aacute;-las, clique na seta. Uma nova janela ir&aacute; aparecer com todas as op&ccedil;&otilde;es de atividades. Role a p&aacute;gina para cima e para baixo com o dedo para visualizar todas as op&ccedil;&otilde;es e depois selecione aquela que voc&ecirc; escolheu.</p>\r\n\r\n<p dir=\"ltr\">Exemplo: Qual &eacute; a sua cor favorita?</p>\r\n\r\n<p dir=\"ltr\"><select name=\"favorite color\"><option value=\"Vermelha\">Vermelha</option><option value=\"Azul\">Azul</option><option value=\"Verde\">Verde</option><option value=\"Amarelo\">Amarelo</option><option value=\"Pink\">Pink</option><option value=\"Preto\">Preto</option><option value=\"Roxo\">Roxo</option><option value=\"Marrom\">Marrom</option><option value=\"Laranja\">Laranja</option><option value=\"Outra\">Outra</option></select></p>\r\n\r\n<p dir=\"ltr\">Se quiser mudar sua resposta, clique novamente na seta e escolha outra op&ccedil;&atilde;o.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&Agrave;s vezes voc&ecirc; pode querer selecionar mais de uma resposta para a mesma pergunta. Por exemplo, na pergunta &ldquo;Quais alimentos voc&ecirc; gosta?&rdquo;. Provavelmente voc&ecirc; vai querer selecionar mais de um alimento. Para isso, clique nos quadrados para selecionar todas as respostas que desejar. Caso tenha selecionado uma resposta errada, clique novamente sobre ela e ela desaparecer&aacute;. &nbsp;&nbsp;</p>\r\n\r\n<p dir=\"ltr\">Vamos tentar:&nbsp;Quais alimentos voc&ecirc; gosta?</p>\r\n\r\n<p><input name=\"foods\" type=\"checkbox\" value=\"Frutas\" />Frutas<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Cereais\" />Cereais<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Salada\" />Salada<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Feij\u00e3o\" />Feij&atilde;o<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Ovos\" />Ovos<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Carnes\" />Carnes<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Arroz\" />Arroz</p>\r\n",
+                    "content": "<p>&Agrave;s vezes voc&ecirc; pode querer selecionar mais de uma resposta para a mesma pergunta. Por exemplo, na pergunta &ldquo;Quais alimentos voc&ecirc; gosta?&rdquo;. Provavelmente voc&ecirc; vai querer selecionar mais de um alimento. Para isso, clique nas quadradinhas para selecionar todas as respostas que desejar. Caso tenha selecionado uma resposta errada, clique novamente sobre ela e ela desaparecer&aacute;. &nbsp;&nbsp;</p>\r\n\r\n<p dir=\"ltr\">Vamos tentar:&nbsp;Quais alimentos voc&ecirc; gosta?</p>\r\n\r\n<p><input name=\"foods\" type=\"checkbox\" value=\"Frutas\" />Frutas<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Cereais\" />Cereais<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Salada\" />Salada<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Feij\u00e3o\" />Feij&atilde;o<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Ovos\" />Ovos<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Carnes\" />Carnes<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Arroz\" />Arroz</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">&Aacute;s vezes CONEMO vai perguntar se voc&ecirc; conseguiu realizar as atividades planejadas. Para responder, clique em SIM ou N&Atilde;O. Em seguida, podem surgir perguntas sobre como voc&ecirc; se sentiu. Para responder, clique na seta para ver todas as op&ccedil;&otilde;es de resposta. </p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">&Agrave;s vezes CONEMO vai perguntar se voc&ecirc; conseguiu realizar as atividades planejadas. Para responder, clique em SIM ou N&Atilde;O. Em seguida, podem surgir perguntas sobre como voc&ecirc; se sentiu. Para responder, clique na seta para ver todas as op&ccedil;&otilde;es de resposta.</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Algumas sess&otilde;es incluem v&iacute;deos.</p>\r\n\r\n<p dir=\"ltr\">Para assistir, pressione a seta. Para parar, clique novamente.</p>\r\n\r\n<div>[include countdown video here]</div>\r\n",
+                    "content": "<p dir=\"ltr\">Algumas sess&otilde;es incluem v&iacute;deos.</p>\r\n\r\n<p dir=\"ltr\">Para assistir, pressione a seta (\u25ba). Para parar, clique no s&iacute;mbolo de pausa.</p>\r\n\r\n<div>[include countdown video here]</div>\r\n",
                     "position": 6,
                     "title": "Slide 6 (video)"
                 },
@@ -83,7 +83,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Quando a gente tem algum problema de sa&uacute;de, como diabetes ou hipertens&atilde;o, &eacute; comum se sentir para baixo ou desanimados. Como resultado &eacute; preciso mais esfor&ccedil;o para fazer as coisas ou as coisas s&atilde;o deixadas de lado.</p>\r\n",
+                    "content": "<p dir=\"ltr\">Quando a gente tem algum problema de sa&uacute;de, como diabetes ou hipertens&atilde;o, &eacute; comum se sentir para baixo ou desanimado. Como resultado &eacute; preciso mais esfor&ccedil;o para fazer algo ou as coisas s&atilde;o deixadas de lado.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -95,7 +95,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Al&eacute;m de sugerir atividades que v&atilde;o melhorar a sua sa&uacute;de, tais como tomar sua medica&ccedil;&atilde;o e ter uma alimenta&ccedil;&atilde;o saud&aacute;vel, CONEMO tamb&eacute;m quer te ajudar a realizar atividades como visitar amigos e familiares ou cozinhar sua comida favorita. Isso ir&aacute; ajud&aacute;-lo a ter uma vida mais completa e feliz.</p>\r\n",
+                    "content": "<p dir=\"ltr\">CONEMO vai sugerir atividades que v&atilde;o melhorar a sua sa&uacute;de, tais como tomar sua medica&ccedil;&atilde;o e ter uma alimenta&ccedil;&atilde;o saud&aacute;vel. Mas, CONEMO tamb&eacute;m quer te ajudar a realizar atividades como visitar amigos e familiares ou cozinhar sua comida favorita. Isso ir&aacute; ajud&aacute;-lo a ter uma vida mais completa e feliz.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
@@ -149,7 +149,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Muitas vezes, agente tamb&eacute;m deixa de fazer atividades agrad&aacute;veis, como visitar amigos, ou passear. Como resultado, muitas vezes se sente &nbsp;ainda pior e entra em um ciclo vicioso que te leva a fazer cada vez menos e te faz sentir cada vez mais para baixo.</p>\r\n",
+                    "content": "<p dir=\"ltr\">Muitas vezes, a gente tamb&eacute;m deixa de fazer atividades agrad&aacute;veis, como visitar amigos, ou passear. Como resultado, muitas vezes nos sentimos ainda pior e entramos em um ciclo vicioso que nos leva a fazer cada vez menos e nos faz sentir cada vez mais para baixo.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
@@ -167,7 +167,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Obrigado por compartilhar isso com a gente! Esse programa vai &nbsp;te dar algumas ideias de como voltar a fazer essa atividade e tarefas, e te ajudar a quebrar esse ciclo vicioso.</p>\r\n",
+                    "content": "<p dir=\"ltr\">Obrigado por compartilhar isso com a gente! Esse programa vai &nbsp;te dar algumas ideias de como voltar a fazer essas atividades e tarefas, e te ajudar a quebrar esse ciclo vicioso.</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 }
@@ -197,7 +197,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">N&oacute;s sabemos que voc&ecirc; &eacute; uma pessoa ocupada, por isso a conclus&atilde;o de cada sess&atilde;o leva apenas alguns minutos.Voc&ecirc; vai escolher as atividades que voc&ecirc; quer fazer e integra-las no seu dia-a-dia.</p>\r\n",
+                    "content": "<p dir=\"ltr\">N&oacute;s sabemos que voc&ecirc; &eacute; uma pessoa ocupada, por isso, a conclus&atilde;o de cada sess&atilde;o leva apenas alguns minutos.Voc&ecirc; vai escolher as atividades que voc&ecirc; quer fazer e integr&aacute;-las no seu dia a dia.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -245,7 +245,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Hoje vamos come&ccedil;ar a ser ativos! Para ficar mais f&aacute;cil, vamos come&ccedil;ar com uma atividade prazerosa. Atividades prazerosas s&atilde;o aquelas que gostamos fazer e que fazem a gente se sentir bem.</p>\r\n",
+                    "content": "<p>Hoje vamos come&ccedil;ar a ser ativos! Para ficar mais f&aacute;cil, vamos come&ccedil;ar com uma atividade prazerosa. Atividades prazerosas s&atilde;o aquelas que gostamos de fazer e que fazem a gente se sentir bem.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -299,7 +299,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Sabemos que pode ser dificil come&ccedil;ar. Neste momento, voc&ecirc; pode n&atilde;o sentir vontade de fazer alguma coisa. Mas a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o. Isso significa que voc&ecirc; primeiro tem que se tornar ativo, e, em seguida, sua motiva&ccedil;&atilde;o vai aumentar mais e mais.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Sabemos que pode ser dif\u00edcil come&ccedil;ar. Neste momento, voc&ecirc; pode n&atilde;o sentir vontade de fazer alguma coisa. Mas a a&ccedil;&atilde;o vem antes da motiva&ccedil;&atilde;o. Isso significa que voc&ecirc; primeiro tem que se tornar ativo, e, em seguida, sua motiva&ccedil;&atilde;o vai aumentar mais e mais.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -326,7 +326,7 @@
         },
         {
             "_class": "Lesson",
-            "activityChoices": "Comer uma fruta ou verdura\r\nFazer uma caminhada curta\r\nMeditar\r\nMedir a minha press\u00e3o\r\nMedir o meu a\u00e7\u00facar no sangue\r\nUsar a escada em vez do elevador\r\nComer menos a\u00e7\u00facar e gordura\r\nBeber mais \u00e1gua",
+            "activityChoices": "Comer uma fruta ou verdura\r\nFazer uma caminhada curta\r\nMeditar\r\nAferir a minha press\u00e3o\r\nMedir o meu a\u00e7\u00facar no sangue\r\nUsar a escada em vez do elevador\r\nComer menos a\u00e7\u00facar e gordura\r\nBeber mais \u00e1gua",
             "dayInTreatment": 6,
             "feedbackAfterDays": 2,
             "guid": "524df35a-ab2b-4c56-b8a8-748255e9e5f7",
@@ -341,7 +341,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">No in&iacute;cio desta semana prestamos aten&ccedil;&atilde;o que pequenas atividades prazerosas poderiam &nbsp;fazer com que voc&ecirc; se sentisse melhor. Agora &eacute; hora de pensar em atividades que podem ajudar a melhorar a sua sa&uacute;de f&iacute;sica. Melhorar a sua sa&uacute;de f&iacute;sica tamb&eacute;m melhorar&aacute; a sua sa&uacute;de mental!</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">No in&iacute;cio desta semana prestamos aten&ccedil;&atilde;o em pequenas atividades prazerosas que poderiam fazer com que voc&ecirc; se sentisse melhor. Agora &eacute; hora de pensar em atividades que podem ajudar a melhorar a sua sa&uacute;de f&iacute;sica. Melhorar a sua sa&uacute;de f&iacute;sica tamb&eacute;m melhorar&aacute; a sua sa&uacute;de mental!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -392,7 +392,7 @@
         },
         {
             "_class": "Lesson",
-            "activityChoices": "Limpar a casa\r\nLavar a lou\u00e7a\r\nPagar uma conta\r\nCuidar de um membro da fan\u00edlia\r\nResolver um problema pessoal\r\nLavar roupa\r\nTrocar as roupas de cama\r\nFazer as compras\r\nLavar o meu cabelo\r\nFazer um favor a algu\u00e9m",
+            "activityChoices": "Limpar a casa\r\nLavar a lou\u00e7a\r\nPagar uma conta\r\nCuidar de um membro da fam\u00edlia\r\nResolver um problema pessoal\r\nLavar roupa\r\nTrocar as roupas de cama\r\nFazer as compras\r\nLavar o meu cabelo\r\nFazer um favor a algu\u00e9m",
             "dayInTreatment": 8,
             "feedbackAfterDays": 3,
             "guid": "21a15760-403c-424b-8126-cb07dd27dfc9",
@@ -425,7 +425,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Muitas vezes deixamos essas tarefas de lado porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentimos pior. Se conseguimos nos motivar a fazer essas tarefas,<strong> </strong>ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</p>\r\n",
+                    "content": "<p dir=\"ltr\">Muitas vezes deixamos essas tarefas de lado porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentir pior. Se conseguimos nos motivar a fazer essas tarefas,<strong> </strong>ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -455,7 +455,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Aumentar as atividades na sua vida e viver uma vida mais saud&aacute;vel e mais feliz requer algum esfor&ccedil;o. Por isso &eacute; importante respeitar o seu pr&oacute;prio ritmo, fazer pausas se for necess&aacute;rio, e dar recompensas a si mesmo. </p>\r\n",
+                    "content": "<p>Aumentar as atividades na sua vida e viver uma vida mais saud&aacute;vel e mais feliz requer algum esfor&ccedil;o. <span style=\"font-family:arial\">Por isso &eacute; importante respeitar o seu pr&oacute;prio r&iacute;tmo, fazer pausas</span><strong>, </strong>caso<span style=\"font-family:arial\"> necess&aacute;rio, e dar recompensas a si mesmo.</span></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -472,7 +472,7 @@
                     "title": "Slide 4"
                 }
             ],
-            "title": "9. D\u00ea recompensas a si mesmo e comemore sucesso!"
+            "title": "9. D\u00ea recompensas a si mesmo e comemore o sucesso!"
         },
         {
             "_class": "Lesson",
@@ -629,7 +629,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Geralmente grandes mudan&ccedil;as n&atilde;o acontecem de um dia para o outro, podem levar um tempo. Sobretudo, as mudannn&ccedil;as acontecem pouco a pouco e o progresso &agrave;s vezes pode ser dif&iacute;cil de notar. Mas pequenos passos levam a grandes mudan&ccedil;as ao longo do tempo.</p>\r\n",
+                    "content": "<p dir=\"ltr\">Geralmente grandes mudan&ccedil;as n&atilde;o acontecem de um dia para o outro, podem levar um tempo. Sobretudo, as mudan&ccedil;as acontecem pouco a pouco e o progresso &agrave;s vezes pode ser dif&iacute;cil de notar. Mas pequenos passos levam a grandes mudan&ccedil;as ao longo do tempo.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -772,7 +772,7 @@
                     "title": "Slide 8"
                 }
             ],
-            "title": "16. Novos habitos podem melhorar a sua sa\u00fade!"
+            "title": "16. Novos h\u00e1bitos podem melhorar a sua sa\u00fade!"
         },
         {
             "_class": "Lesson",
