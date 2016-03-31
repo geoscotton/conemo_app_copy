@@ -8,7 +8,9 @@ describe('MainController', function() {
   beforeEach(module('conemoAppApp'));
 
   function injectController($controller) {
-    scope = {};
+    scope = {
+      $digest: function() {}
+    };
     Resources = {
                   getDaysInTreatment: function() {
                     return Promise.resolve(3);

@@ -60,16 +60,20 @@
       });
     },
 
-    getDaysInTreatment: function getDaysInTreatment() {
+    fetchEarliestStartDate: function fetchEarliestStartDate() {
       return createMessage(this.worker, {
         resource: this.NAMES.ParticipantStartDates,
         method: 'fetchEarliest'
-      }).then(function(startDates) {
+      });
+    },
+
+    getDaysInTreatment: function getDaysInTreatment() {
+      return this.fetchEarliestStartDate().then(function(startDates) {
         if (startDates.length === 0) {
           return 0;
         }
 
-        return context.moment().diff(startDates[0].date, 'days');
+        return context.moment().diff(startDates[0].date, 'days') + 1;
       });
     },
 
