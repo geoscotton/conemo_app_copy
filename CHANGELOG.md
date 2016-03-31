@@ -1,5 +1,16 @@
 # Changelog
 
+## 1.3.5 - 2016-03-31
+
+* ensure videos pause on navigation
+* always return to the main page on resume
+* disable form inputs after saving data
+* ensure videos pause on navigation
+* increase Spanish version slide font size
+* reduce lesson page count font size
+* update lesson content
+* schedule notifications based on start date
+
 ## 1.3.4 - 2016-03-25
 
 * add blank prompt to slide form select inputs
