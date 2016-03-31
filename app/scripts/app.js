@@ -117,12 +117,7 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
             app_version: '1.3.4'
           });
 
-          if ($window.localStorage.onResume != null) {
-            var pageToGoto = $window.localStorage.onResume;
-            $window.localStorage.onResume = '';
-            $window.location.href = pageToGoto;
-          }
-
+          $window.location.href = '';
           $route.reload();
         }
 
