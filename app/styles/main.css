@@ -216,6 +216,10 @@ p, div.slide > * {
     font-size: 1.2em;
 }
 
+body.es-PE div.slide .smallify > p {
+  font-size: 1em;
+}
+
 .btn {
     font-size: 1em;
 }

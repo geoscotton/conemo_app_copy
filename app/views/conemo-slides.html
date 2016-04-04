@@ -68,7 +68,8 @@
      class="slide">
   <span ng-if="selectedLesson.hasActivityPlanning">
     <div ng-show="selectedActivity.value != null"
-         ng-bind-html="selectedLesson.postPlanningContent">
+      ng-bind-html="selectedLesson.postPlanningContent"
+      class="smallify">
     </div>
 
     <div ng-show="selectedActivity.value == null"
