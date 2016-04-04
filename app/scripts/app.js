@@ -101,7 +101,7 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
           }
         });
       })
-      .run(function($window, $route, Resources) {
+      .run(function($window, $location, $rootScope, Resources) {
         function onDeviceReady() {
           $window.cordova.plugins.backgroundMode.setDefaults({
             title: 'CONEMO',
@@ -117,8 +117,8 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
             app_version: '1.3.5'
           });
 
-          $window.location.href = '';
-          $route.reload();
+          $location.url('/');
+          $rootScope.$apply();
         }
 
         document.addEventListener('deviceready', onDeviceReady, false);
