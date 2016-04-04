@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.6 - 2016-04-04
+
+* notify Angular of URL update rather than reloading
+* apply minor style updates to activity fonts
+* remove extraneous HTML from lesson slide
+
 ## 1.3.5 - 2016-03-31
 
 * ensure videos pause on navigation
