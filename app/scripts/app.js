@@ -117,6 +117,8 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
             app_version: '1.3.6'
           });
 
+          $location.url('/instructions');
+          $rootScope.$apply();
           $location.url('/');
           $rootScope.$apply();
         }
