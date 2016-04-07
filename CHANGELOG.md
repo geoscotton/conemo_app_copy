@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.8 - 2016-04-07
+
+* update lesson content
+* resize lesson titles for Spanish version
+
 ## 1.3.7 - 2016-04-04
 
 * fix content size for Spanish activity not done
