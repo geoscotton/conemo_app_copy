@@ -35,7 +35,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&Agrave;s vezes voc&ecirc; pode querer selecionar mais de uma resposta para a mesma pergunta. Por exemplo, na pergunta &ldquo;Quais alimentos voc&ecirc; gosta?&rdquo;. Provavelmente voc&ecirc; vai querer selecionar mais de um alimento. Para isso, clique nas quadradinhas para selecionar todas as respostas que desejar. Caso tenha selecionado uma resposta errada, clique novamente sobre ela e ela desaparecer&aacute;. &nbsp;&nbsp;</p>\r\n\r\n<p dir=\"ltr\">Vamos tentar:&nbsp;Quais alimentos voc&ecirc; gosta?</p>\r\n\r\n<p><input name=\"foods\" type=\"checkbox\" value=\"Frutas\" />Frutas<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Cereais\" />Cereais<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Salada\" />Salada<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Feij\u00e3o\" />Feij&atilde;o<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Ovos\" />Ovos<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Carnes\" />Carnes<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Arroz\" />Arroz</p>\r\n",
+                    "content": "<p>&Agrave;s vezes voc&ecirc; pode querer selecionar mais de uma resposta para a mesma pergunta. Por exemplo, na pergunta &ldquo;Quais alimentos voc&ecirc; gosta?&rdquo;. Provavelmente voc&ecirc; vai querer selecionar mais de um alimento. Para isso, clique nos quadradinhos para selecionar todas as respostas que desejar. Caso tenha selecionado uma resposta errada, clique novamente sobre ela e ela desaparecer&aacute;. &nbsp;&nbsp;</p>\r\n\r\n<p dir=\"ltr\">Vamos tentar:&nbsp;Quais alimentos voc&ecirc; gosta?</p>\r\n\r\n<p><input name=\"foods\" type=\"checkbox\" value=\"Frutas\" />Frutas<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Cereais\" />Cereais<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Salada\" />Salada<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Feij\u00e3o\" />Feij&atilde;o<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Ovos\" />Ovos<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Carnes\" />Carnes<br />\r\n<input name=\"foods\" type=\"checkbox\" value=\"Arroz\" />Arroz</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
@@ -293,7 +293,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Talvez voc&ecirc; tenha reparado que fazer a atividade planejada foi muito mais f&aacute;cil e agrad&aacute;vel do que voc&ecirc; imaginava, ou &nbsp;tenha sido &nbsp;mais dif&iacute;cil, ou ent&atilde;o teve dificuldades para come&ccedil;ar.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"margin-right:-3pt\">Talvez voc&ecirc; tenha reparado que fazer a atividade planejada foi muito mais f&aacute;cil e agrad&aacute;vel do que voc&ecirc; imaginava, ou tenha sido mais dif&iacute;cil, ou ent&atilde;o teve dificuldades para come&ccedil;ar.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -425,7 +425,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Muitas vezes deixamos essas tarefas de lado porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentir pior. Se conseguimos nos motivar a fazer essas tarefas,<strong> </strong>ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</p>\r\n",
+                    "content": "<p dir=\"ltr\">Muitas vezes deixamos essas tarefas de lado, porque normalmente elas n&atilde;o s&atilde;o t&atilde;o divertidas, relaxantes ou prazerosas. Mas se elas n&atilde;o s&atilde;o feitas, podemos nos sentir pior. Se conseguimos nos motivar a fazer essas tarefas,<strong> </strong>ficamos satisfeitos e orgulhosos de n&oacute;s mesmos.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -701,7 +701,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Por isso, se voc&ecirc; come&ccedil;ou a se desviar,&eacute; importante voltar ao caminho certo o mais r&aacute;pido poss&iacute;vel e come&ccedil;ar a se mover na dire&ccedil;&atilde;o de uma vida mais saud&aacute;vel e feliz!</p>\r\n\r\n<div>&nbsp;</div>\r\n",
+                    "content": "<p dir=\"ltr\">Por isso, se voc&ecirc; come&ccedil;ou a se desviar, &eacute; importante voltar ao caminho certo o mais r&aacute;pido poss&iacute;vel e come&ccedil;ar a se mover na dire&ccedil;&atilde;o de uma vida mais saud&aacute;vel e feliz!</p>\r\n\r\n<div>&nbsp;</div>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 }
@@ -797,7 +797,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>N&oacute;s sabemos que leva um tempo at&eacute; que esses novos comportamentos possam fazer parte da sua rotina e se &nbsp;tornar um novo h&aacute;bito, mas se voc&ecirc; continuar firme, vai ficando cada vez mais f&aacute;cil e natural.</p>\r\n",
+                    "content": "<p>N&oacute;s sabemos que leva um tempo at&eacute; que esses novos comportamentos possam fazer parte da sua rotina e se tornar um novo h&aacute;bito, mas se voc&ecirc; continuar firme, vai ficando cada vez mais f&aacute;cil e natural.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -899,32 +899,38 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Para hacerlo, presiona el rect&aacute;ngulo blanco y presiona todas las respuestas que quieres seleccionar. Si te equivocaste al seleccionar una opci&oacute;n, vuelve a presionar la respuesta elegida y ver&aacute;s que la casilla seleccionada quedar&aacute; nuevamente en blanco.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Lomo saltado\" />Lomo saltado<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Papa a la huanca\u00edna\" />Papa a la huanca&iacute;na<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Milanesa de pollo\" />Milanesa de pollo<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Seco de res\" />Seco de res<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Pescado\" />Pescado<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Arroz con pollo\" />Arroz con pollo<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Papa rellena\" />Papa rellena<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Mariscos\" />Mariscos</p>\r\n",
+                    "content": "<p>Para hacerlo, presiona el rect&aacute;ngulo blanco de cada respuesta que quieres seleccionar.</p>\r\n\r\n<p>Si te equivocaste al seleccionar una opci&oacute;n, vuelve a presionar la respuesta elegida y ver&aacute;s que la casilla seleccionada quedar&aacute; nuevamente en blanco.</p>\r\n\r\n<p>Pract&iacute;calo en la siguiente p&aacute;gina.</p>\r\n",
                     "position": 6,
                     "title": "Slide 4a"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>A veces CONEMO te preguntar&aacute; si pudiste hacer las actividades que planeaste.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para responder, presiona S&Iacute; o NO. Dependiendo de si lo hiciste o no, te preguntaremos qu&eacute; tanto te gust&oacute; cada actividad planeada, como en el siguiente ejemplo.</p>\r\n",
+                    "content": "<p><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Lomo saltado\" />Lomo saltado<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Papa a la huanca\u00edna\" />Papa a la huanca&iacute;na<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Milanesa de pollo\" />Milanesa de pollo<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Seco de res\" />Seco de res<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Pescado\" />Pescado<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Arroz con pollo\" />Arroz con pollo<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Papa rellena\" />Papa rellena<br />\r\n<input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Mariscos\" />Mariscos</p>\r\n",
                     "position": 7,
+                    "title": "Slide 4b"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>A veces CONEMO te preguntar&aacute; si pudiste hacer las actividades que planeaste.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para responder, presiona S&Iacute; o NO. Dependiendo de si lo hiciste o no, te preguntaremos qu&eacute; tanto te gust&oacute; cada actividad planeada, como en el siguiente ejemplo.</p>\r\n",
+                    "position": 8,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>Para evaluar tu experiencia, presiona el rect&aacute;ngulo blanco y elige la respuesta que mejor corresponde a la pregunta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Intentemos: &iquest;Qu&eacute; tanto te gust&oacute; esta sesi&oacute;n de entrenamiento?</p>\r\n\r\n<p style=\"text-align: center;\"><select name=\"training_session_feedback\"><option value=\"1: No me gust\u00f3 para nada\">1: No me gust&oacute; para nada</option><option value=\"2: No me gust\u00f3\">2: No me gust&oacute;</option><option value=\"3: Ni me gust\u00f3 ni me desagrad\u00f3 \">3: Ni me gust&oacute; ni me desagrad&oacute;</option><option value=\"4: Me gust\u00f3 \">4: Me gust&oacute;</option><option value=\"5: Me gust\u00f3 mucho\">5: Me gust&oacute; mucho</option></select></p>\r\n",
-                    "position": 8,
+                    "position": 9,
                     "title": "Slide 5a"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>Algunas sesiones tambi&eacute;n incluyen videos.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para ver los videos presiona la flecha blanca. Para pausarlo, presiona el bot&oacute;n nuevamente.</p>\r\n\r\n<p>[video screen]</p>\r\n",
-                    "position": 9,
+                    "position": 10,
                     "title": "Slide 6"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>Para volver a la pantalla principal del programa CONEMO, presiona el bot&oacute;n naranja con la casita. En las sesiones encontrar&aacute;s &ldquo;la casita&rdquo; al final de la sesi&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En la secci&oacute;n de las &ldquo;Instrucciones&rdquo;, as&iacute; como en la secci&oacute;n &ldquo;Sesiones&rdquo;, encontrar&aacute;s la casita naranja ubicada en la esquina superior derecha de la p&aacute;gina.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Presiona la casita para cerrar la sesi&oacute;n de entrenamiento y volver a la p&aacute;gina principal.</p>\r\n",
-                    "position": 10,
+                    "position": 11,
                     "title": "Slide 7"
                 }
             ],
