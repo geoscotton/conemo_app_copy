@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.9 - 2016-04-07
+
+* resize lesson titles for Spanish version
+
 ## 1.3.8 - 2016-04-07
 
 * update lesson content
