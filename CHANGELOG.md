@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.10 - 2016-04-13
+
+* update lesson content
+* use 1 as default day in study instead of 0
+
 ## 1.3.9 - 2016-04-07
 
 * resize lesson titles for Spanish version
