@@ -70,7 +70,7 @@
     getDaysInTreatment: function getDaysInTreatment() {
       return this.fetchEarliestStartDate().then(function(startDates) {
         if (startDates.length === 0) {
-          return 0;
+          return 1;
         }
 
         return context.moment().diff(startDates[0].date, 'days') + 1;
