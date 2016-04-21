@@ -103,6 +103,9 @@
       var plannedActivityName = formData['planned-activity-name'];
       var reportedActivityIsComplete = formData['reported-activity-is-complete'] || INCOMPLETE;
 
+      // prevent further changes to inputs
+      angular.element('input, select').attr('disabled', 'disabled');
+
       if (plannedActivityName != null) {
         Resources.save(Resources.NAMES.PlannedActivities, {
           name: plannedActivityName,
