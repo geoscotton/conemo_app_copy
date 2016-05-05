@@ -157,14 +157,16 @@ ol.well li {
     white-space: normal !important;
 }
 
-
 .btn {
     font-size: 1em;
 }
 
-
 .label {
     font-size: 1em !important;
+}
+
+.btn-group > label.btn {
+  font-size: 1em;
 }
 
 .navigation-button {

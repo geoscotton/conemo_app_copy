@@ -7,22 +7,30 @@
     <input type="hidden" name="reported-activity-follow-up-at" ng-value="plannedActivity.follow_up_at" />
     <input type="hidden" name="reported-activity-lesson-guid" ng-value="plannedActivity.lesson_guid" />
 
-    {{ 'didYouDoActivity' | translate }} {{ plannedActivity.name }}?
+    <p>{{ 'didYouDoActivity' | translate }} {{ plannedActivity.name }}?</p>
 
-    <div class="form-group form-group-lg">
-      <div class="radio">
-        <label>
-          <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="Yes">
-          {{ 'yes' | translate }}
-        </label>
-      </div>
+    <div class="btn-group" data-toggle="buttons">
+      <label class="btn btn-primary">
+        <input
+          radio-button
+          name="reported-activity-is-complete"
+          ng-model="plannedActivity.isComplete"
+          type="radio"
+          value="Yes"
+          autocomplete="off">
+        {{ 'yes' | translate }}
+      </label>
 
-      <div class="radio">
-        <label>
-          <input name="reported-activity-is-complete" ng-model="plannedActivity.isComplete" type="radio" value="No">
-          {{ 'no' | translate }}
-        </label>
-      </div>
+      <label class="btn btn-primary">
+        <input
+          radio-button
+          name="reported-activity-is-complete"
+          ng-model="plannedActivity.isComplete"
+          type="radio"
+          value="No"
+          autocomplete="off">
+        {{ 'no' | translate }}
+      </label>
     </div>
   </span>
 </div>
