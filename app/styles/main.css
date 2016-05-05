@@ -15,6 +15,14 @@ body.es-PE #slideShowForm {
   font-size: 18px;
 }
 
+body.es-PE select optgroup {
+  font-size: 18px;
+}
+
+body.pt-BR select optgroup {
+  font-size: 16px;
+}
+
 #slides {
     font-size:1em;
 }
