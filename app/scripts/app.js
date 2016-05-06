@@ -158,7 +158,12 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
             $rootScope.$digest();
           });
         }
-      ]);
+      ])
+    .run(['$window', function($window) {
+      document.addEventListener('backbutton', function() {
+        $window.history.back();
+      });
+    }]);
 
   angular.element(document).on('deviceready', function() {
     angular.bootstrap(document, ['conemoAppApp']);
