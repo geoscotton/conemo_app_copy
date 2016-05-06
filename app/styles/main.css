@@ -5,6 +5,10 @@
     padding: 0.2em 0;
 }
 
+#home-screen .btn {
+  font-size: 1.3em;
+}
+
 /* Space out content a bit */
 body {
     padding-top: 20px;
@@ -220,10 +224,6 @@ a h2.navigation-button i {
 
 .btn-corner .navigation-button {
     font-size: .7em !important;
-}
-
-h3.main-date {
-    font-size: 1.2em !important;
 }
 
 select {
