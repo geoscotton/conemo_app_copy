@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.3.11 - 2016-05-05
+
+* resize text on home screen (main page)
+* update lesson content
+* change slide colors for activity planning/review
+* use Bootstrap JS radio buttons for better UI
+* resize font for activity/review selects
+* save empty string for unselected activity ratings
+* center activity planning/reviewing content
+
 ## 1.3.10 - 2016-04-13
 
 * update lesson content
