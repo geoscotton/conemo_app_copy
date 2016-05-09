@@ -12,7 +12,7 @@
     }
 
     if (scope.selectedLesson.hasActivityPlanning) {
-      scope.slideCount = scope.slides.length + 2 + scope.slideIndexOffset;
+      scope.slideCount = scope.slides.length + 3 + scope.slideIndexOffset;
     }
 
     scope.isReady = true;
@@ -28,6 +28,7 @@
     function link(scope, element) {
       scope.unsafe = function(input) { return $sce.trustAsHtml(input); };
       scope.activityContentPath = 'views/activities/' + $window.l10n + '.html';
+      scope.activityFollowUpContentPath = 'views/activities/' + $window.l10n + '-follow-up.html';
       scope.plannedActivity = {
         isComplete: null
       };
