@@ -60,7 +60,7 @@
        ng-bind-html="unsafe(slide.content)"></div>
 </span>
 
-<div ng-show="currentSlideIndex === slideCount - 2 && isReady"
+<div ng-show="currentSlideIndex === slideCount - 3 && isReady"
      class="slide activity-planning">
   <span ng-if="selectedLesson.hasActivityPlanning">
     <div ng-bind-html="unsafe(selectedLesson.prePlanningContent)">
@@ -75,7 +75,7 @@
   </span>
 </div>
 
-<div ng-show="currentSlideIndex === slideCount - 1 && isReady"
+<div ng-show="currentSlideIndex === slideCount - 2 && isReady"
      class="slide activity-planning">
   <span ng-if="selectedLesson.hasActivityPlanning">
     <div ng-show="selectedActivity.value != null"
@@ -86,5 +86,12 @@
     <div ng-show="selectedActivity.value == null"
          ng-bind-html="selectedLesson.nonPlanningContent">
     </div>
+  </span>
+</div>
+
+<div ng-show="currentSlideIndex === slideCount - 1 && isReady"
+     class="slide activity-planning">
+  <span ng-if="selectedLesson.hasActivityPlanning">
+    <ng-include src="activityFollowUpContentPath"></ng-include>
   </span>
 </div>

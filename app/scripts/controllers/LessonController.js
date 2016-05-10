@@ -28,7 +28,7 @@
       }
 
       if (lesson.hasActivityPlanning) {
-        slideCount = $scope.slides.length + 2 + slideIndexOffset;
+        slideCount = $scope.slides.length + 3 + slideIndexOffset;
       }
     }
     
@@ -77,7 +77,7 @@
       } 
 
       if (($scope.selectedLesson.hasActivityPlanning &&
-           $scope.currentSlideIndex >= slideCount - 2) ||
+           $scope.currentSlideIndex >= slideCount - 3) ||
           ($scope.plannedActivity != null && $scope.currentSlideIndex <= 1)) {
         angular.element('body').addClass('gray');
       } else {
