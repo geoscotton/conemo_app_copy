@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.12 - 2016-05-10
+
+* add follow up page to activity planning
+* go back in the browser history on back event
+
 ## 1.3.11 - 2016-05-05
 
 * resize text on home screen (main page)
