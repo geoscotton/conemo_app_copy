@@ -2,6 +2,8 @@
   'use strict';
 
   function MainController($window, $scope, Lessons, Resources) {
+    // reverse any changes made in LessonController
+    angular.element('body').removeClass('gray');
     Resources.getDaysInTreatment().then(function(daysInTreatment) {
       var mostRecentLesson = {}; 
 

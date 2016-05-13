@@ -75,6 +75,15 @@
             break;
         }
       } 
+
+      if (($scope.selectedLesson.hasActivityPlanning &&
+           $scope.currentSlideIndex >= slideCount - 2) ||
+          ($scope.plannedActivity != null && $scope.currentSlideIndex <= 1)) {
+        angular.element('body').addClass('gray');
+      } else {
+        angular.element('body').removeClass('gray');
+      }
+
       $scope.updatePageCounter();
     };
 
@@ -88,6 +97,7 @@
     $scope.showSlides = false;
 
     Resources.fetchLatestUnreportedActivity().then(function(activities) {
+      $scope.plannedActivity = activities[0];
       buildSlideContent($scope.selectedLesson, activities[0]);
 
       $scope.currentSlideIndex = 0;
