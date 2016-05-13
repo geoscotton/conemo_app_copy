@@ -869,7 +869,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Bienvenido!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta es la sesi&oacute;n de entrenamiento en el uso del programa CONEMO. En este programa leer&aacute;s textos, ver&aacute;s videos, seleccionar&aacute;s actividades y responder&aacute;s preguntas.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para ir a la siguiente p&aacute;gina, presiona el bot&oacute;n azul con la flecha hacia la derecha al final de la pantalla.</p>\r\n",
+                    "content": "<p>&iexcl;Bienvenido!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta es la sesi&oacute;n de entrenamiento en el uso del programa CONEMO. En este programa leer&aacute;s textos, ver&aacute;s videos, seleccionar&aacute;s actividades y responder&aacute;s preguntas.</p>\r\n\r\n<p>Para ir a la siguiente p&aacute;gina, presiona el bot&oacute;n azul con la flecha hacia la derecha al final de la pantalla.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -881,7 +881,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>A veces CONEMO te pedir&aacute; seleccionar actividades.</p>\r\n\r\n<p>Para seleccionarlas, presiona el rect&aacute;ngulo blanco. Aparecer&aacute; una nueva ventana con las respuestas que podr&iacute;as elegir. Mueve la pantalla con tu dedo hacia arriba y abajo para ver todas las opciones. Luego selecciona la que m&aacute;s te gustar&iacute;a elegir, apret&aacute;ndola.&nbsp;</p>\r\n\r\n<p style=\"text-align: center;\"><select name=\"training_session_singleopt\"><option value=\"Rojo\">Rojo</option><option value=\"Verde\">Verde</option><option value=\"Azul\">Azul</option><option value=\"Amarillo\">Amarillo</option><option value=\"Mar\u00f3n\">Mar&oacute;n</option><option value=\"Morado\">Morado</option><option value=\"Otro\">Otro</option></select></p>\r\n",
+                    "content": "<p>A veces CONEMO te pedir&aacute; seleccionar actividades.</p>\r\n\r\n<p>Para seleccionarlas, presiona el rect&aacute;ngulo blanco. Aparecer&aacute; una nueva ventana con las respuestas que podr&iacute;as elegir. Mueve la pantalla con tu dedo hacia arriba y abajo para ver todas las opciones. Luego selecciona la que m&aacute;s te gustar&iacute;a elegir, apret&aacute;ndola.&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"training_session_singleopt\"><option value=\"Rojo\">Rojo</option><option value=\"Verde\">Verde</option><option value=\"Azul\">Azul</option><option value=\"Amarillo\">Amarillo</option><option value=\"Marr\u00f3n\">Marr&oacute;n</option><option value=\"Morado\">Morado</option><option value=\"Otro\">Otro</option></select></p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
@@ -899,7 +899,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Para hacerlo, presiona el rect&aacute;ngulo blanco de cada respuesta que quieres seleccionar.</p>\r\n\r\n<p>Si te equivocaste al seleccionar una opci&oacute;n, vuelve a presionar la respuesta elegida y ver&aacute;s que la casilla seleccionada quedar&aacute; nuevamente en blanco.</p>\r\n\r\n<p>Pract&iacute;calo en la siguiente p&aacute;gina.</p>\r\n",
+                    "content": "<p>Para hacerlo, presiona el rect&aacute;ngulo blanco y selecciona todas las respuestas que quieres.</p>\r\n\r\n<p>Si te equivocaste al seleccionar una opci&oacute;n, vuelve a presionar la respuesta elegida y ver&aacute;s que la casilla seleccionada quedar&aacute; nuevamente en blanco.</p>\r\n\r\n<p>Pract&iacute;calo en la siguiente p&aacute;gina.</p>\r\n",
                     "position": 6,
                     "title": "Slide 4a"
                 },
@@ -911,7 +911,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>A veces CONEMO te preguntar&aacute; si pudiste hacer las actividades que planeaste.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para responder, presiona S&Iacute; o NO. Dependiendo de si lo hiciste o no, te preguntaremos qu&eacute; tanto te gust&oacute; cada actividad planeada, como en el siguiente ejemplo.</p>\r\n",
+                    "content": "<p>A veces CONEMO te preguntar&aacute; si pudiste hacer las actividades que planeaste.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para responder, marca la casilla de S&Iacute; o NO. En caso que s&iacute;, te preguntaremos qu&eacute; tanto te gust&oacute; cada actividad planeada, como en el siguiente ejemplo.</p>\r\n",
                     "position": 8,
                     "title": "Slide 5"
                 },
@@ -929,7 +929,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Para volver a la pantalla principal del programa CONEMO, presiona el bot&oacute;n naranja con la casita. En las sesiones encontrar&aacute;s &ldquo;la casita&rdquo; al final de la sesi&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En la secci&oacute;n de las &ldquo;Instrucciones&rdquo;, as&iacute; como en la secci&oacute;n &ldquo;Sesiones&rdquo;, encontrar&aacute;s la casita naranja ubicada en la esquina superior derecha de la p&aacute;gina.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Presiona la casita para cerrar la sesi&oacute;n de entrenamiento y volver a la p&aacute;gina principal.</p>\r\n",
+                    "content": "<p>Para volver a la pantalla principal del programa CONEMO, presiona el bot&oacute;n naranja con la casita. En las sesiones y en&nbsp;la secci&oacute;n de las &ldquo;Instrucciones&rdquo;&nbsp;encontrar&aacute;s &ldquo;la casita&rdquo; al final de la secci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En la secci&oacute;n &ldquo;Sesiones&rdquo;, encontrar&aacute;s la casita naranja ubicada en la esquina superior derecha de la p&aacute;gina.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Presiona la casita para cerrar la sesi&oacute;n de entrenamiento y volver a la p&aacute;gina principal.</p>\r\n",
                     "position": 11,
                     "title": "Slide 7"
                 }
@@ -983,21 +983,27 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana. En algunas de estas sesiones se te pedir&aacute; ver un video con informaci&oacute;n que te ayudar&aacute; a aprovechar al m&aacute;ximo este programa.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
+                    "content": "<p>Recibir&aacute;s sesiones como esta tres veces por semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En algunas de estas sesiones se te pedir&aacute; ver un video con informaci&oacute;n que te ayudar&aacute; a aprovechar al m&aacute;ximo este programa, c&oacute;mo ver&aacute;s en la siguiente p&aacute;gina.&nbsp;</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iquest;Qu&eacute; te gustar&iacute;a lograr al finalizar este programa? Elige una o varias de las siguientes opciones:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><input name=\"personal_goal\" type=\"checkbox\" value=\"Ser m\u00e1s feliz\" />Ser m&aacute;s feliz<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Sentirme mejor conmigo mismo\" />Sentirme mejor conmigo mismo<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Volver a trabajar\" />Volver a trabajar<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Cuidar mejor a mi familia\" />Cuidar mejor a mi familia<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Mejorar mi salud\" />Mejorar mi salud<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Disfrutar m\u00e1s mi vida\" />Disfrutar m&aacute;s mi vida</p>\r\n",
+                    "content": "<p>Para iniciar el video, por favor, presiona el tri&aacute;ngulo blanco en el centro.</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM1.mp4\" /></video></p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Esa es una excelente meta!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Durante las siguientes 6 semanas es importante que recuerdes lo qu&eacute; quieres lograr con este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro de este programa.</p>\r\n",
+                    "content": "<p>&iquest;Qu&eacute; te gustar&iacute;a lograr al finalizar este programa? Elige una o varias de las siguientes opciones:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><input name=\"personal_goal\" type=\"checkbox\" value=\"Ser m\u00e1s feliz\" />Ser m&aacute;s feliz<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Sentirme mejor conmigo mismo\" />Sentirme mejor conmigo mismo<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Volver a trabajar\" />Volver a trabajar<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Cuidar mejor a mi familia\" />Cuidar mejor a mi familia<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Mejorar mi salud\" />Mejorar mi salud<br />\r\n<input name=\"personal_goal\" type=\"checkbox\" value=\"Disfrutar m\u00e1s mi vida\" />Disfrutar m&aacute;s mi vida</p>\r\n",
                     "position": 8,
                     "title": "Slide 8"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&iexcl;Esa es una excelente meta!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Durante las siguientes 6 semanas es importante que recuerdes lo que quieres lograr con este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro del programa CONEMO.</p>\r\n",
+                    "position": 9,
+                    "title": "Slide 9"
                 }
             ],
             "title": "1. \u00a1Bienvenido a CONEMO! "
@@ -1037,15 +1043,21 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p style=\"margin-left:3.8pt\">Mira la lista debajo y elige todas las actividades <strong><em><u>que</u></em></strong><u> <strong><em>antes hac&iacute;as, pero que has dejado de hacer</em></strong></u> o ya no haces tan seguido como antes.&nbsp;</p>\r\n\r\n<p><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relajarme (masajes, leer un libro, escuchar m\u00fasica, etc.)\" />Relajarme (masajes, leer un libro, escuchar m&uacute;sica, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Pasar tiempo con familia o amigos\" />Pasar tiempo con familia o amigos<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer deporte o actividad f\u00edsica\" />Hacer deporte o actividad f&iacute;sica<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Salir (al parque, a almorzar, a bailar, de compras, etc.) \" />Salir (al parque, a almorzar, a bailar, de compras, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)\" />Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Asistir a charlas o aprender algo nuevo\" />Asistir a charlas o aprender algo nuevo<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar la casa o el jard\u00edn \" />Cuidar la casa o el jard&iacute;n<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer manualidades, tejer o coser\" />Hacer manualidades, tejer o coser<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar mi salud\" />Cuidar mi salud</p>\r\n",
+                    "content": "<p style=\"margin-left:3.8pt\">&nbsp;</p>\r\n\r\n<p style=\"margin-left:3.8pt\">Mira la lista en la siguiente p&aacute;gina y elige todas las actividades <strong><em><u>que</u></em></strong><u> <strong><em>antes hac&iacute;as, pero que has dejado de hacer</em></strong></u> o ya no haces tan seguido como antes.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa te dar&aacute; algunas ideas de c&oacute;mo volver a hacer estas actividades o tareas y terminar con ese c&iacute;rculo vicioso.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "content": "<p><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relajarme (masajes, leer un libro, escuchar m\u00fasica, etc.)\" /><span style=\"line-height:20.8px\">Relajarme (masajes, leer un libro, escuchar m&uacute;sica, etc.)</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Pasar tiempo con familia o amigos\" /><span style=\"line-height:20.8px\">Pasar tiempo con familia o amigos</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer deporte o actividad f\u00edsica\" /><span style=\"line-height:20.8px\">Hacer actividad f&iacute;sica</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Salir (al parque, a almorzar, a bailar, de compras, etc.) \" /><span style=\"line-height:20.8px\">Salir (a almorzar, de compras, etc.)</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)\" /><span style=\"line-height:20.8px\">Participar de actividades grupales (iglesia, voluntariado, etc.)</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Asistir a charlas o aprender algo nuevo\" /><span style=\"line-height:20.8px\">Asistir a charlas o aprender algo nuevo</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar la casa o el jard\u00edn \" /><span style=\"line-height:20.8px\">Cuidar la casa o el jard&iacute;n</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer manualidades, tejer o coser\" /><span style=\"line-height:20.8px\">Hacer manualidades</span><br style=\"line-height: 20.8px;\" />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar mi salud\" /><span style=\"line-height:20.8px\">Cuidar mi salud</span></p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa te dar&aacute; algunas ideas de c&oacute;mo volver a hacer estas actividades o tareas y terminar con ese c&iacute;rculo vicioso.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "position": 6,
+                    "title": "Slide 6"
                 }
             ],
             "title": "2. Sentirte deca\u00eddo puede causar que dejes de hacer cosas que antes hac\u00edas"
@@ -1079,19 +1091,19 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Entendemos que quiz&aacute;s est&aacute;s ocupado, por lo que realizarlas sesiones de CONEMO solo te tomar&aacute; unos cuantos minutos cada semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Podr&aacute;s elegir tus actividades y luego adecuarlas a tu horario.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>As&iacute; puedes adaptar el programa a tu propia rutina.&nbsp;</p>\r\n",
+                    "content": "<p>Entendemos que quiz&aacute;s est&aacute;s ocupado, por lo que realizar las sesiones de CONEMO solo te tomar&aacute; unos cuantos minutos cada semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Podr&aacute;s elegir tus actividades y luego adecuarlas a tu horario.</p>\r\n\r\n<p>As&iacute; puedes adaptar el programa a tu propia rutina.&nbsp;</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;T&uacute; eliges las actividades y cu&aacute;ndo hacerlas!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero claro, realizar las actividades que has elegido tambi&eacute;n necesitar&aacute;s de un esfuerzo de tu parte.</p>\r\n",
+                    "content": "<p>&iexcl;T&uacute; eliges las actividades y cu&aacute;ndo hacerlas!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero claro, para realizar las actividades que has elegido tambi&eacute;n necesitar&aacute;s de un esfuerzo de tu parte.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Es importante que siempre recuerdes la meta personal que quieres lograr con CONEMO.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante, especialmente cuando sientas que las cosas son un poco m&aacute;s dif&iacute;ciles de hacer.</p>\r\n",
+                    "content": "<p>Es importante que siempre recuerdes la meta que te has propuesto lograr con CONEMO.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante, especialmente cuando sientas que las cosas son un poco m&aacute;s dif&iacute;ciles de hacer.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
@@ -1118,12 +1130,12 @@
             "guid": "0f7a1cc3-3bb0-4a2c-b1fb-3088ef9bc412",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
-            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
-            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "planningResponseNoContent": "<p>Sabemos que puede ser dif\u00edcil empezar, \u00a1pero recuerda que esto te puede ayudar a sentirte mejor!</p>\r\n<p>Si deseas, puedes cambiar tu elecci\u00f3n e intentar con otra actividad.</p>",
             "planningResponseYesContent": "\u00a1Excelente!",
-            "postPlanningContent": "<p>\u00a1Muy bien! Intenta hacer esta actividad que has seleccionado entre hoy y ma\u00f1ana.</p>\r\n \r\n<p>Recuerda que puedes cambiar tu elecci\u00f3n si deseas.</p>\r\n \r\n<p>En un par de d\u00edas te preguntaremos c\u00f3mo te fue.</p>",
-            "prePlanningContent": "\u00a1Intentemos! Por favor revisa la siguiente lista de actividades placenteras y selecciona una que NO hayas estado haciendo \u00faltimamente pero te gustar\u00eda hacer entre HOY y MA\u00d1ANA:",
+            "postPlanningContent": "<p>\u00a1Muy bien! Intenta hacer esta actividad que has seleccionado entre hoy y ma\u00f1ana.</p>\r\n \r\n\r\n<p>Recuerda que puedes cambiar tu elecci\u00f3n si deseas.</p>\r\n \r\n\r\n<p>En un par de d\u00edas te preguntaremos c\u00f3mo te fue.</p>",
+            "prePlanningContent": "\u00a1Intentemos! Por favor revisa la siguiente lista de actividades placenteras y selecciona una que NO hayas estado haciendo \u00faltimamente pero te gustar\u00eda hacer entre HOY y MA\u00d1ANA:\r\n",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1187,13 +1199,13 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Si te sientes mejor luego de realizar la actividad de esta semana, es importante que la mantengas en tu lista de cosas que debes seguir haciendo.&nbsp;</p>\r\n\r\n<p>Si no disfrutaste la actividad o tuviste dificultades para hacerlo, podr&iacute;as intentar con otra actividad.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este es el momento para empezar a &ldquo;probar&rdquo; lo que te hace sentir mejor.</p>\r\n",
+                    "content": "<p>Si te sientes mejor luego de realizar la actividad de esta semana, es importante que la mantengas en tu lista de cosas que debes seguir haciendo.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si no disfrutaste la actividad o tuviste dificultades para hacerlo, podr&iacute;as intentar con otra actividad.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Esta es tu oportunidad para aumentar las actividades que te hacen sentir mejor y tener una vida m&aacute;s saludable!</p>\r\n",
+                    "content": "<p><span style=\"line-height:20.8px\">Este es el momento para empezar a &ldquo;probar&rdquo; lo que te hace sentir mejor.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Esta es tu oportunidad para aumentar las actividades que te hacen sentir mejor y tener una vida m&aacute;s saludable!</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 }
@@ -1208,12 +1220,12 @@
             "guid": "bbb5abf3-f8c7-46c2-8bb8-a5296bf00f49",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
-            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
-            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "planningResponseNoContent": "<p>\u00a1Recuerda que esta es tu oportunidad para empezar una vida m\u00e1s saludable y feliz!</p>\r\n\r\n<p>Puedes cambiar tu elecci\u00f3n si deseas. Lo importante es que intentes al menos una de las actividades de esta lista.</p>",
             "planningResponseYesContent": "\u00a1Eso es genial!",
             "postPlanningContent": "<p>Gracias por compartir esa informaci\u00f3n.</p>\r\n\r\n<p>En un par de d\u00edas te preguntaremos si pudiste realizar esta actividad saludable y c\u00f3mo te hizo sentir.</p>",
-            "prePlanningContent": "Por favor, revisa la siguiente lista de actividades saludables y selecciona una que NO hayas estado haciendo \u00faltimamente pero puedas hacer HOY o MA\u00d1ANA:",
+            "prePlanningContent": "Por favor, revisa la siguiente lista de actividades saludables y selecciona una que NO hayas estado haciendo \u00faltimamente pero puedas hacer HOY o MA\u00d1ANA:\r\n",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1274,12 +1286,12 @@
             "guid": "410a6881-dc59-4651-8915-4bb7ddab4dbe",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
-            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
-            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "planningResponseNoContent": "<p>Recuerda que cuando hayas terminado esta tarea te sentir\u00e1s m\u00e1s satisfecho/a.</p> \r\n\r\n<p>Tambi\u00e9n puedes intentar hacer otra tarea. Lo importante es seguir intentando.</p>",
             "planningResponseYesContent": "\u00a1Eso est\u00e1 muy bien! ",
             "postPlanningContent": "<p>Gracias por compartir esa informaci\u00f3n.</p>\r\n\r\n<p>Intenta hacer la tarea seleccionada hoy o ma\u00f1ana y presta atenci\u00f3n a c\u00f3mo te sentiste despu\u00e9s.</p>",
-            "prePlanningContent": "Por favor revisa la siguiente lista de tareas y selecciona una que puedas hacer HOY o MA\u00d1ANA:",
+            "prePlanningContent": "Por favor revisa la siguiente lista de tareas y selecciona una que puedas hacer HOY o MA\u00d1ANA:\r\n",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1349,7 +1361,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, despu&eacute;s de haber hecho una actividad, como limpiar la casa o hacer ejercicio, podr&iacute;as comprarte algo que te guste o ver una pel&iacute;cula, hacerte las u&ntilde;as o hacerte un masaje.&nbsp;</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, despu&eacute;s de haber hecho una actividad, como limpiar la casa o hacer ejercicio, podr&iacute;as comprarte algo que te guste, ver una pel&iacute;cula, hacerte las u&ntilde;as o hacerte un masaje.&nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -1364,12 +1376,12 @@
             "guid": "13a2470e-ce38-4357-b37a-10c37d2686f4",
             "hasActivityPlanning": true,
             "l10n": "es-PE",
-            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
-            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
+            "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "planningResponseNoContent": "<p>Recuerda lo que aprendiste en la \u00faltima sesi\u00f3n:</p> \r\n\r\n<p>Si has elegido una actividad dif\u00edcil, p\u00e1rtela en pasos peque\u00f1os y elige el m\u00e1s f\u00e1cil de ellos para empezar.</p>",
             "planningResponseYesContent": "\u00a1Muy bien!",
             "postPlanningContent": "<p>\u00a1Excelente!</p>\r\n \r\n<p>Ahora intenta hacer esta actividad en los pr\u00f3ximos d\u00edas.</p>\r\n \r\n<p>Luego te preguntaremos c\u00f3mo te fue. </p>\r\n\r\n<p>Si realmente disfrutas la actividad que has seleccionado, intenta repetirla.</p>\r\n \r\n<p>Si no disfrutas con esta actividad, elige otra e intenta de nuevo.</p>",
-            "prePlanningContent": "Selecciona una de las siguientes actividades que NO hayas estado haciendo \u00faltimamente pero que puedas hacer durante los pr\u00f3ximos d\u00edas:",
+            "prePlanningContent": "Selecciona una de las siguientes actividades que NO hayas estado haciendo \u00faltimamente pero que puedas hacer durante los pr\u00f3ximos d\u00edas:\r\n",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1403,7 +1415,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Nada se aprende inmediatamente!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si tienes dificultades con una actividad o tarea, lo mejor es partirla en partes m&aacute;s puntuales o peque&ntilde;as.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El cambio es m&aacute;s f&aacute;cil cuando partimos las cosas en peque&ntilde;as piezas.&nbsp;</p>\r\n",
+                    "content": "<p>&iexcl;Nada se aprende inmediatamente!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Si tienes dificultades con una actividad o tarea, lo mejor es partirla en partes m&aacute;s puntuales o peque&ntilde;as.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>El cambio es m&aacute;s f&aacute;cil cuando empezamos a hacer actividades m&aacute;s peque&ntilde;as en vez de grandes.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -1415,13 +1427,13 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Resumiendo lo que hemos aprendido en este video:</p>\r\n\r\n<p>1. Identifica la actividad que quieres realizar</p>\r\n\r\n<p>2. Haz una lista, partiendo la actividad en pasos m&aacute;s peque&ntilde;os</p>\r\n\r\n<p>3. Elige una parte peque&ntilde;a para empezar</p>\r\n\r\n<p>4. Planea c&oacute;mo y cu&aacute;ndo hacer cada paso</p>\r\n",
+                    "content": "<p>Resumiendo lo que hemos aprendido en este video:</p>\r\n\r\n<p>1. Identifica la actividad que quieres realizar</p>\r\n\r\n<p>2. Haz una lista, partiendo la actividad grande en pasos m&aacute;s peque&ntilde;os</p>\r\n\r\n<p>3. Elige una parte peque&ntilde;a para empezar</p>\r\n\r\n<p>4. Planea c&oacute;mo y cu&aacute;ndo hacer cada paso</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Recuerda:</p>\r\n\r\n<p>Cuando logres hacer la primera parte peque&ntilde;a de tu lista, elige la siguiente parte a realizar, hasta que logres realizar la actividad grande que quer&iacute;as hacer. &nbsp;</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Recuerda:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cuando logres hacer la primera parte peque&ntilde;a de tu lista, elige la siguiente parte a realizar, hasta que logres realizar la actividad grande que quer&iacute;as hacer. &nbsp;</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -1460,7 +1472,7 @@
         },
         {
             "_class": "Lesson",
-            "activityChoices": "Tomar mi medicaci\u00f3n regularmente\r\nEmpezar una dieta saludable\r\nIr al gimnasio / hacer ejercios\r\nHacer un chequeo m\u00e9dico\r\nPreparar una comida saludable\r\nIr a nadar\r\nJugar deportes como v\u00f3ley o f\u00fatbol\r\nMontar bicicleta en vez de tomar un auto o bus\r\nHacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\r\nHacer una caminata larga\r\nIr al pod\u00f3logo\r\nHacerte tratamiento de acupuntura\r\nHacer yoga o meditar",
+            "activityChoices": "Tomar mi medicaci\u00f3n regularmente\r\nEmpezar una dieta saludable\r\nIr al gimnasio / hacer ejercicios\r\nHacer un chequeo m\u00e9dico\r\nPreparar una comida saludable\r\nIr a nadar\r\nJugar deportes como v\u00f3ley o f\u00fatbol\r\nMontar bicicleta en vez de tomar un auto o bus\r\nHacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\r\nHacer una caminata larga\r\nIr al pod\u00f3logo\r\nHacerte tratamiento de acupuntura\r\nHacer yoga o meditar",
             "dayInTreatment": 29,
             "feedbackAfterDays": 5,
             "guid": "ee4ca5b6-8ac0-4efd-a0c9-eb912754fe8f",
@@ -1470,8 +1482,8 @@
             "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
             "planningResponseNoContent": "<p>Recuerda que puedes cambiar tu elecci\u00f3n si deseas.</p>\r\n\r\n<p>\u00a1Sigue intentando!</p>",
             "planningResponseYesContent": "\u00a1Felicitaciones!",
-            "postPlanningContent": "<p>\u00a1Muy bien!</p>\r\n\r\n<p>En unos d\u00edas te preguntaremos si pudiste hacer esta actividad.</p>",
-            "prePlanningContent": "<p>\u00bfQu\u00e9 actividad te gustar\u00eda intentar para mejorar tu salud?</p>\r\n \r\n<p>Mira la lista debajo y selecciona una actividad NO hayas estado haciendo \u00faltimamente pero que puedes hacer durante los pr\u00f3ximos d\u00edas:</p>",
+            "postPlanningContent": "<p>\u00a1Muy bien!</p>\r\n\r\n\r\n<p>En unos d\u00edas te preguntaremos si pudiste hacer esta actividad.</p>",
+            "prePlanningContent": "<p>\u00bfQu\u00e9 actividad te gustar\u00eda intentar para mejorar tu salud?</p>\r\n \r\n<p>Mira la lista debajo y selecciona una actividad que NO hayas estado haciendo \u00faltimamente pero que puedes hacer durante los pr\u00f3ximos d\u00edas:</p>",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1547,39 +1559,45 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Empecemos la sesi&oacute;n de hoy d&iacute;a con este video:</p>\r\n\r\n<p>[VIDEO 5 - Relapses]</p>\r\n",
+                    "content": "<p>Empecemos la sesi&oacute;n de hoy d&iacute;a con este video:</p>\r\n\r\n<p>[VIDEO 5 - Relapses]</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Lo importante es tener una meta clara a d&oacute;nde quieres llegar.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Lo importante es tener una meta clara a d&oacute;nde quieres llegar.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Es normal que te encuentras con obst&aacute;culos en tu camino.</p>\r\n\r\n<p>Quiz&aacute;s habr&aacute;n momentos en las cuales ser&aacute; dif&iacute;cil realizar las actividades que incorporaste en tu rutina cotidiana, por ejemplo cuando viene visita de familiares o tienes que atender otro pendiente urgente.&nbsp;</p>\r\n",
+                    "content": "<p>Es normal que te encuentres con obst&aacute;culos en el camino.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Quiz&aacute;s habr&aacute; momentos en los cuales ser&aacute; dif&iacute;cil realizar las actividades que incorporaste en tu rutina cotidiana, por ejemplo cuando viene visita de familiares o tienes que atender otro pendiente urgente.&nbsp;</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>C&oacute;mo hemos visto en el video, cuando dejamos de hacer nuestras actividades una vez, no necesariamente tiene consecuencias negativas, siempre y cuando seguimos haci&eacute;ndolas despu&eacute;s de nuevo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Pero OJO, cuando posponemos nuestras actividades, como las actividades saludables, placenteras y las tareas que has hecho durante las &uacute;ltimas semanas, puede resultar en que posponemos o dejamos de hacer cada vez m&aacute;s actividades y que luego nos sentimos nuevamente deca&iacute;do o sin &aacute;nimo.</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Como hemos visto en el video, cuando dejamos de hacer nuestras actividades una vez, no necesariamente tiene consecuencias negativas, siempre y cuando sigamos haci&eacute;ndolas despu&eacute;s.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Ya sabemos, si dejamos de hacer nuestras actividades una vez, es m&aacute;s probable que tampoco las hagamos la siguiente vez.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esto, a su vez, tiene el peligro que en poco a poco empezamos a descuidar las cosas que son importantes para la salud, como seguir una dieta saludable, hacer ejercicios o ir al m&eacute;dico.</p>\r\n",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Pero OJO, cuando posponemos nuestras actividades, como las actividades saludables, placenteras y las tareas que has hecho durante las &uacute;ltimas semanas, puede resultar en que posponemos o dejamos de hacer cada vez m&aacute;s actividades y que luego nos sentimos nuevamente deca&iacute;dos o sin &aacute;nimo.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Es muy importante que identifiques los obst&aacute;culos y est&eacute;s atento a tu conducta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En momentos dif&iacute;ciles recuerda la meta que ten&iacute;as al principio y las actividades que planeaste para llegar ah&iacute; y vuelve a tu camino.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;No te dejes desviar!</p>\r\n",
+                    "content": "<p>Ya sabemos, si dejamos de hacer nuestras actividades una vez, es m&aacute;s probable que tampoco las hagamos la siguiente vez.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esto, a su vez, tiene el peligro de que poco a poco empezamos a descuidar las cosas que son importantes para la salud, como seguir una dieta saludable, hacer ejercicios o ir al m&eacute;dico.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ello es importante que identifiques los obst&aacute;culos y, si te descarrilas, vuelvas al camino tan r&aacute;pido como sea posible y sigas avanzando hacia una vida saludable y feliz.</p>\r\n",
+                    "content": "<p>Es muy importante que identifiques los obst&aacute;culos y est&eacute;s atento a tu conducta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En momentos dif&iacute;ciles recuerda la meta que ten&iacute;as al principio y las actividades que planeaste para llegar ah&iacute; y vuelve a tu camino.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;No te dejes desviar!</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Por ello es importante que identifiques los obst&aacute;culos y, si te descarrilas, vuelvas al camino tan r&aacute;pido como sea posible y sigas avanzando hacia una vida saludable y feliz.</p>\r\n",
+                    "position": 7,
+                    "title": "Slide 7"
                 }
             ],
             "title": "15. \u00a1Prep\u00e1rate para los obst\u00e1culos y vuelve al camino!"
@@ -1607,7 +1625,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Mientras m&aacute;s practicamos algo, menos esfuerzo nos cuesta y es m&aacute;s f&aacute;cil hacerlo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Muchas de las cosas que hacemos en nuestra vida diaria pueden ser consideradas <strong><em>&ldquo;<u>h&aacute;bitos</u>&rdquo;, </em></strong>es decir cosas que hacemos con frecuencia y con poco esfuerzo</p>\r\n",
+                    "content": "<p>Mientras m&aacute;s practicamos algo, menos esfuerzo nos cuesta y es m&aacute;s f&aacute;cil hacerlo.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Muchas de las cosas que hacemos en nuestra vida diaria pueden ser consideradas <strong><em>&ldquo;<u>h&aacute;bitos</u>&rdquo;, </em></strong>es decir cosas que hacemos con frecuencia y con poco esfuerzo.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -1721,7 +1739,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Durante este programa has dado importantes pasos hacia una vida m&aacute;s saludable y feliz.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Contin&uacute;a haciendo lo que ha funcionado para t&iacute; y lo que te ha hecho sentir bien!</p>\r\n",
+                    "content": "<p>Durante este programa has dado importantes pasos hacia una vida m&aacute;s saludable y feliz.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Contin&uacute;a haciendo lo que ha funcionado para ti y lo que te ha hecho sentir bien!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
