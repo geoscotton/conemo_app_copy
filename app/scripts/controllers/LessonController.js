@@ -76,12 +76,20 @@
         }
       } 
 
-      if (($scope.selectedLesson.hasActivityPlanning &&
-           $scope.currentSlideIndex >= slideCount - 3) ||
-          ($scope.plannedActivity != null && $scope.currentSlideIndex <= 1)) {
-        angular.element('body').addClass('gray');
+      var formData = angular.element('form').serializeObject();
+      if ($scope.plannedActivity != null && $scope.currentSlideIndex === 0) {
+        angular.element('body').removeClass();
+        angular.element('body').addClass('feedback');
+      } else if (($scope.plannedActivity != null &&
+                  $scope.currentSlideIndex === 1 &&
+                  formData['reported-activity-is-complete'] == null) ||
+                 ($scope.selectedLesson.hasActivityPlanning &&
+                  $scope.currentSlideIndex === slideCount - 2 &&
+                  formData['planned-activity-name'] == null)) {
+        angular.element('body').removeClass();
+        angular.element('body').addClass('no-response');
       } else {
-        angular.element('body').removeClass('gray');
+        angular.element('body').removeClass();
       }
 
       $scope.updatePageCounter();
