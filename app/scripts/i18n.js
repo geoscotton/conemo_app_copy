@@ -92,7 +92,7 @@ i18nStrings.generalContent.push({
 	backLabel:'Anterior',
 	nextLabel:'Siguiente',
 	configureUserLabel:'Configurar cuenta',
-	contactHelpLabel:'Contactar enfermera',
+	contactHelpLabel:'Solicitar ayuda',
 	instructionsLabel:'Instrucciones',
 	instructionsLesson: 'Sesión de entrenamiento',
 	contactTypes:['Solicitar ayuda'],
