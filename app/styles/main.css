@@ -27,8 +27,12 @@ body.pt-BR select optgroup {
   font-size: 16px;
 }
 
-body.gray {
-  background-color: #737373;
+body.feedback {
+  background-color: #7D81F5;
+}
+
+body.no-response {
+  background-color: #FF6948;
 }
 
 #slides {
