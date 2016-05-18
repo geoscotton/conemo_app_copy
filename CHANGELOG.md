@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.13 - 2016-05-18
+
+* update translations
+
 ## 1.3.12 - 2016-05-10
 
 * add follow up page to activity planning
