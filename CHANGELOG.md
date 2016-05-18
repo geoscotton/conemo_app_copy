@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.14 - 2016-05-18
+
+* add context-dependent slide colors
+
 ## 1.3.13 - 2016-05-18
 
 * update translations
