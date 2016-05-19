@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.15 - 2016-05-19
+
+* update feedback slide colors
+* update lesson content
+
 ## 1.3.14 - 2016-05-18
 
 * add context-dependent slide colors
