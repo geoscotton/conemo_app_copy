@@ -77,7 +77,10 @@
       } 
 
       var formData = angular.element('form').serializeObject();
-      if ($scope.plannedActivity != null && $scope.currentSlideIndex === 0) {
+      if (($scope.plannedActivity != null && $scope.currentSlideIndex === 0) ||
+          ($scope.plannedActivity != null &&
+           $scope.currentSlideIndex === 1 &&
+           formData['reported-activity-is-complete'] != null)) {
         angular.element('body').removeClass();
         angular.element('body').addClass('feedback');
       } else if (($scope.plannedActivity != null &&
