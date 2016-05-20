@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.17 - 2016-05-20
+
+* ensure body class is reset on route updates
+
 ## 1.3.16 - 2016-05-20
 
 * update content and add Portuguese video
