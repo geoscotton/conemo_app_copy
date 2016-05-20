@@ -59,7 +59,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"text-align:justify\">Algumas sess&otilde;es incluem v&iacute;deos.</p>\r\n\r\n<p dir=\"ltr\" style=\"text-align:justify\">Para assistir, pressione a seta (\u25ba). Para parar, clique no s&iacute;mbolo de pausa.</p>\r\n\r\n<div style=\"text-align: justify;\">[include countdown video here]</div>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align:justify\">Algumas sess&otilde;es incluem v&iacute;deos.</p>\r\n\r\n<p dir=\"ltr\" style=\"text-align:justify\">Para assistir, pressione a seta (\u25ba). Para parar, clique no s&iacute;mbolo de pausa.</p>\r\n\r\n<div style=\"text-align: justify;\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP0.mp4\" /></video></div>\r\n",
                     "position": 8,
                     "title": "Slide 8 (video)"
                 },
@@ -173,7 +173,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">D&ecirc; uma olhada na lista na p&oacute;xima p&aacute;gina e escolha uma ou mais atividades prazerosas que voc&ecirc; costumava fazer, mas que N&Atilde;O faz mais h&aacute; algum tempo.</p>\r\n\r\n<p><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relaxar (massagem, ler um livro, ouvir m\u00fasica, etc.)\" />&nbsp; Relaxar (massagem, ler um livro, ouvir m&uacute;sica, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Passar tempo com fam\u00edlia e amigos\" />&nbsp; Passar tempo com fam&iacute;lia e amigos<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Fazer atividades f\u00edsicas\" />&nbsp; Fazer atividades f&iacute;sicas<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Sair (parque, almo\u00e7o, shopping, cinema, etc.)\" />&nbsp; Sair (parque, almo&ccedil;o, shopping, cinema, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de atividades na comunidade (coral, igreja, trabalho volunt\u00e1rio, etc.)\" />&nbsp; Participar de atividades na comunidade (coral, igreja, trabalho volunt&aacute;rio, etc.)<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Assistir uma palestra / aprender algo novo\" />&nbsp; Assistir uma palestra / aprender algo novo<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar da casa ou do jardim\" />&nbsp; Cuidar da casa ou do jardim<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Fazer croch\u00ea ou artesanato\" />&nbsp; Fazer croch&ecirc; ou artesanato<br />\r\n<input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar da minha sa\u00fade\" />&nbsp; Cuidar da minha sa&uacute;de</p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align:justify\">D&ecirc; uma olhada na lista na p&oacute;xima p&aacute;gina e escolha uma ou mais atividades prazerosas que voc&ecirc; costumava fazer, mas que N&Atilde;O faz mais h&aacute; algum tempo.</p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
@@ -779,13 +779,13 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Uma maneira de fazer isso &eacute; vincular essa atividade a uma determinada hora do dia ou a um dia da semana. Por exemplo, se a atividade que voc&ecirc; quer incluir em sua rotina &eacute; fazer caminhadas, pense sobre quando &eacute; o melhor momento para fazer isso, por exemplo: sempre pela manh&atilde;, depois do trabalho, ou aos<strong> </strong>s&aacute;bados.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Uma maneira de fazer isso &eacute; vincular essa atividade a uma determinada hora do dia ou a um dia da semana. Por exemplo, se a atividade que voc&ecirc; quer incluir em sua rotina &eacute; fazer caminhadas, pense sobre quando &eacute; o melhor momento para fazer isso, por exemplo: sempre pela manh&atilde;, depois do trabalho, ou aos<strong> </strong>s&aacute;bados.</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Outra estrat&eacute;gia poderia ser: juntar a nova atividade com uma que voc&ecirc; j&aacute; faz regularmente, por exemplo, almo&ccedil;ar. Neste caso, voc&ecirc; poderia fazer uma caminhada todos os dias depois do almo&ccedil;o.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Outra estrat&eacute;gia poderia ser: juntar a nova atividade com uma que voc&ecirc; j&aacute; faz regularmente, por exemplo, almo&ccedil;ar. Neste caso, voc&ecirc; poderia fazer uma caminhada todos os dias depois do almo&ccedil;o.</p>\r\n",
                     "position": 8,
                     "title": "Slide 8"
                 }
@@ -809,25 +809,25 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>As conquistas que s&atilde;o realmente importantes na nossa vida levam um certo tempo e requerem um certo esfor&ccedil;o. Mudar seu estilo de vida n&atilde;o &eacute; nada f&aacute;cil. Voc&ecirc; precisa fazer uma rotina e seguir com ela, mesmo que ocorram contratempos!</p>\r\n",
+                    "content": "<p style=\"text-align: justify;\">As conquistas que s&atilde;o realmente importantes na nossa vida levam um certo tempo e requerem um certo esfor&ccedil;o. Mudar seu estilo de vida n&atilde;o &eacute; nada f&aacute;cil. Voc&ecirc; precisa fazer uma rotina e seguir com ela, mesmo que ocorram contratempos!</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>N&oacute;s sabemos que leva um tempo at&eacute; que esses novos comportamentos possam fazer parte da sua rotina e se tornar um novo h&aacute;bito, mas se voc&ecirc; continuar firme, vai ficando cada vez mais f&aacute;cil e natural.</p>\r\n",
+                    "content": "<p style=\"text-align: justify;\">N&oacute;s sabemos que leva um tempo at&eacute; que esses novos comportamentos possam fazer parte da sua rotina e se tornar um novo h&aacute;bito, mas se voc&ecirc; continuar firme, vai ficando cada vez mais f&aacute;cil e natural.</p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Para algumas pessoas pode ajudar escrever um plano de atividades em um peda&ccedil;o de papel ou colocar as atividades em um calend&aacute;rio para se lembrar de faz&ecirc;-las. Pode ajudar tamb&eacute;m pendurar esse plano ou calend&aacute;rio em um lugar bem vis&iacute;vel como, por exemplo, na geladeira. Isso pode ajud&aacute;-lo a manter o foco e se manter ativo.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Para algumas pessoas pode ajudar escrever um plano de atividades em um peda&ccedil;o de papel ou colocar as atividades em um calend&aacute;rio para se lembrar de faz&ecirc;-las. Pode ajudar tamb&eacute;m pendurar esse plano ou calend&aacute;rio em um lugar bem vis&iacute;vel como, por exemplo, na geladeira. Isso pode ajud&aacute;-lo a manter o foco e se manter ativo.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Lembre-se: os h&aacute;bitos determinam quem voc&ecirc; &eacute;. E n&atilde;o se esque&ccedil;a de se dar recompensas quando conseguir seguir o seu plano! Isso vai ajud&aacute;-lo a permanecer motivado e valorizar a atividade cumprida ainda mais.</p>\r\n",
+                    "content": "<p style=\"text-align: justify;\">Lembre-se: os h&aacute;bitos determinam quem voc&ecirc; &eacute;. E n&atilde;o se esque&ccedil;a de se dar recompensas quando conseguir seguir o seu plano! Isso vai ajud&aacute;-lo a permanecer motivado e valorizar a atividade cumprida ainda mais.</p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 }
@@ -851,19 +851,19 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Durante este programa, voc&ecirc; deu passos importantes em dire&ccedil;&atilde;o a uma vida mais saud&aacute;vel e feliz. Continue fazendo o que tem funcionado bem e te faz sentir melhor.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Durante este programa, voc&ecirc; deu passos importantes em dire&ccedil;&atilde;o a uma vida mais saud&aacute;vel e feliz.&nbsp;<span style=\"line-height:1.6\">Continue fazendo o que tem funcionado bem e te faz sentir melhor.</span></p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Esta &eacute; a &uacute;ltima sess&atilde;o do CONEMO e gostar&iacute;amos de nos despedir de voc&ecirc;:</p>\r\n\r\n<p style=\"text-align: justify;\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP6.mp4\" /></video></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\">Esperamos que este programa tenha ajudado voc&ecirc; a se sentir melhor e que voc&ecirc; tenha conseguido incluir o que voc&ecirc; aprendeu aqui na sua vida.</p>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Esperamos que este programa tenha ajudado voc&ecirc; a se sentir melhor e que voc&ecirc; tenha conseguido incluir o que voc&ecirc; aprendeu aqui na sua vida.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 }
