@@ -93,11 +93,13 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
       })
       .run(function($rootScope) {
         $rootScope.$on('$routeChangeSuccess', function() {
+          angular.element('body').removeClass();
+
           if (l10n === 'es-PE') {
-            $('body').addClass('es-PE');
+            angular.element('body').addClass('es-PE');
           }
           else {
-            $('body').removeClass('es-PE');
+            angular.element('body').removeClass('es-PE');
           }
         });
       })
