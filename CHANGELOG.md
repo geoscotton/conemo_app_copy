@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.16 - 2016-05-20
+
+* update content and add Portuguese video
+
 ## 1.3.15 - 2016-05-19
 
 * update feedback slide colors

@@ -114,7 +114,7 @@ var l10nStrings = i18nStrings.filterLocale(l10n)[0];
         function onResume() {
           Resources.save(Resources.NAMES.Logins, {
             logged_in_at: new Date(),
-            app_version: '1.3.15'
+            app_version: '1.3.16'
           });
 
           $location.url('/instructions');
