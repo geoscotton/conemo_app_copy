@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.18 - 2016-05-24
+
+* update HockeyApp sdk; integrate metrics
+* increase slide font sizes
+* update content
+
 ## 1.3.17 - 2016-05-20
 
 * ensure body class is reset on route updates
