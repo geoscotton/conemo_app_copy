@@ -23,6 +23,7 @@ import android.os.Bundle;
 import org.apache.cordova.*;
 
 import net.hockeyapp.android.CrashManager;
+import net.hockeyapp.android.metrics.MetricsManager;
 
 import java.lang.Override;
 
@@ -36,6 +37,7 @@ public class MainActivity extends CordovaActivity
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
+        MetricsManager.register(this, getApplication());
     }
 
     @Override
