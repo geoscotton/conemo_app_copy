@@ -59,7 +59,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"text-align:justify\">Algumas sess&otilde;es incluem v&iacute;deos.</p>\r\n\r\n<p dir=\"ltr\" style=\"text-align:justify\">Para assistir, pressione a seta (\u25ba). Para parar, clique no s&iacute;mbolo de pausa.</p>\r\n\r\n<div style=\"text-align: justify;\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP0.mp4\" /></video></div>\r\n",
+                    "content": "<p dir=\"ltr\" style=\"text-align:justify\">Algumas sess&otilde;es incluem v&iacute;deos.&nbsp;<span style=\"color:rgb(38, 50, 56); font-family:arial,sans-serif\">Afaste dois dedos na tela para aument&aacute;-la.</span></p>\r\n\r\n<p dir=\"ltr\" style=\"text-align:justify\">Para assistir, pressione a seta (\u25ba). Para parar, clique no s&iacute;mbolo de pausa.</p>\r\n\r\n<div style=\"text-align: justify;\"><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/SP0.mp4\" /></video></div>\r\n",
                     "position": 8,
                     "title": "Slide 8 (video)"
                 },
