@@ -1,6 +1,7 @@
 module.exports = function(context) {
   var fs = require('fs-extra'),
-      filename = 'platforms/android/src/edu/northwestern/cbits/conemo/MainActivity.java';
+      filenames = ['platforms/android/src/edu/northwestern/cbits/conemo/MainActivity.java',
+                   'platforms/android/AndroidManifest.xml'];
 
   function replaceStringInFile(filename, toReplace, replaceWith) {
     var data = fs.readFileSync(filename, 'utf8');
@@ -10,8 +11,10 @@ module.exports = function(context) {
   }
 
   if (process.env.HOCKEY_APP_ID) {
-    fs.copySync(filename, filename + '.bak');
-    replaceStringInFile(filename, 'APP_ID_STRING_TO_REPLACE',
-                        process.env.HOCKEY_APP_ID);
+    filenames.forEach(function(filename) {
+      fs.copySync(filename, filename + '.bak');
+      replaceStringInFile(filename, 'APP_ID_STRING_TO_REPLACE',
+                          process.env.HOCKEY_APP_ID);
+    });
   }
 };

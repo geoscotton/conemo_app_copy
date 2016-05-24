@@ -29,8 +29,6 @@ import java.lang.Override;
 
 public class MainActivity extends CordovaActivity
 {
-    private static String APP_ID = "APP_ID_STRING_TO_REPLACE";
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
@@ -47,6 +45,6 @@ public class MainActivity extends CordovaActivity
     }
 
     private void checkForCrashes() {
-        CrashManager.register(this, APP_ID);
+        CrashManager.register(this);
     }
 }
