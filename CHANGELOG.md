@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.3.18 - 2016-05-24
+## 1.3.19 - 2016-05-24
 
 * update HockeyApp sdk; integrate metrics
 * increase slide font sizes
