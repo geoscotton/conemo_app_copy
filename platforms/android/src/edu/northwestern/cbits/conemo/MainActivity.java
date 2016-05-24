@@ -23,19 +23,19 @@ import android.os.Bundle;
 import org.apache.cordova.*;
 
 import net.hockeyapp.android.CrashManager;
+import net.hockeyapp.android.metrics.MetricsManager;
 
 import java.lang.Override;
 
 public class MainActivity extends CordovaActivity
 {
-    private static String APP_ID = "APP_ID_STRING_TO_REPLACE";
-
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         // Set by <content src="index.html" /> in config.xml
         loadUrl(launchUrl);
+        MetricsManager.register(this, getApplication());
     }
 
     @Override
@@ -45,6 +45,6 @@ public class MainActivity extends CordovaActivity
     }
 
     private void checkForCrashes() {
-        CrashManager.register(this, APP_ID);
+        CrashManager.register(this);
     }
 }
