@@ -76,19 +76,18 @@
         }
       } 
 
-      var formData = angular.element('form').serializeObject();
       if (($scope.plannedActivity != null && $scope.currentSlideIndex === 0) ||
           ($scope.plannedActivity != null &&
            $scope.currentSlideIndex === 1 &&
-           formData['reported-activity-is-complete'] != null)) {
+           angular.element('.activity-reported').length != 0)) {
         angular.element('body').removeClass();
         angular.element('body').addClass('feedback');
       } else if (($scope.plannedActivity != null &&
                   $scope.currentSlideIndex === 1 &&
-                  formData['reported-activity-is-complete'] == null) ||
+                  angular.element('.activity-reported').length == 0) ||
                  ($scope.selectedLesson.hasActivityPlanning &&
                   $scope.currentSlideIndex === slideCount - 2 &&
-                  formData['planned-activity-name'] == null)) {
+                  angular.element('.activity-planned').length == 0)) {
         angular.element('body').removeClass();
         angular.element('body').addClass('no-response');
       } else {

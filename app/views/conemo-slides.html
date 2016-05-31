@@ -1,5 +1,5 @@
 <div ng-show="currentSlideIndex === 0 && isReady"
-     class="slide activity-planning">
+     class="slide activity-planning" ng-class="{'activity-reported': plannedActivity.isComplete != null}">
   <span ng-if="plannedActivity">
     <input type="hidden" name="reported-activity-uuid" ng-value="plannedActivity.uuid" />
     <input type="hidden" name="reported-activity-name" ng-value="plannedActivity.name" />
@@ -76,7 +76,7 @@
 </div>
 
 <div ng-show="currentSlideIndex === slideCount - 2 && isReady"
-     class="slide activity-planning">
+     class="slide activity-planning" ng-class="{'activity-planned': selectedActivity.value != null}">
   <span ng-if="selectedLesson.hasActivityPlanning">
     <div ng-show="selectedActivity.value != null"
       ng-bind-html="selectedLesson.postPlanningContent"
