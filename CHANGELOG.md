@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.20 - 2016-05-25
+
+* pass activity planning state via element classes
+* remove extraneous slide markup
+
 ## 1.3.19 - 2016-05-24
 
 * update HockeyApp sdk; integrate metrics
