@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.21 - 2016-06-14
+
+* update ES videos
+* update lesson content
+
 ## 1.3.20 - 2016-05-25
 
 * pass activity planning state via element classes
