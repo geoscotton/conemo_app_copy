@@ -125,9 +125,15 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p style=\"text-align: justify;\">Esse &eacute; um &oacute;timo motivo! Durante as pr&oacute;ximas 6 semanas &eacute; importante sempre lembrar o que voc&ecirc; gostaria de alcan&ccedil;ar com este programa!</p>\r\n",
+                    "content": "<p>Se voc&ecirc; continuar, todas suas respostas ser&atilde;o salvas. Se voc&ecirc; ainda n&atilde;o selecionou uma resposta ou deseja mud&aacute;-la, por favor, volte &agrave; p&aacute;gina anterior e selecione outra(s) resposta(s). Se est&aacute; satisfeito com a sua resposta, siga em frente.</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p style=\"text-align:justify\">Durante as pr&oacute;ximas 6 semanas &eacute; importante sempre lembrar o que voc&ecirc; gostaria de alcan&ccedil;ar com este programa!</p>\r\n",
+                    "position": 8,
+                    "title": "Slide 8"
                 }
             ],
             "title": "1. Bem-vindo ao CONEMO!"
@@ -185,9 +191,15 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p dir=\"ltr\" style=\"text-align: justify;\">Obrigado por compartilhar isso com a gente! Esse programa vai &nbsp;te dar algumas ideias de como voltar a fazer essas atividades e tarefas, e vai lhe ajudar a quebrar esse ciclo vicioso.</p>\r\n",
+                    "content": "<p>Se voc&ecirc; continuar, todas suas respostas ser&atilde;o salvas. Se voc&ecirc; ainda n&atilde;o selecionou uma resposta ou deseja mud&aacute;-la, por favor, volte &agrave; p&aacute;gina anterior e selecione outra(s) resposta(s). Se est&aacute; satisfeito com a sua resposta, siga em frente.</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p dir=\"ltr\" style=\"text-align:justify\">Esse programa vai &nbsp;te dar algumas ideias de como voltar a fazer essas atividades e tarefas, e vai lhe ajudar a quebrar esse ciclo vicioso.</p>\r\n",
+                    "position": 8,
+                    "title": "Slide 8"
                 }
             ],
             "title": "2. Sentir-se para baixo pode levar a deixar de realizar as coisas que costumava fazer."
@@ -256,7 +268,7 @@
             "l10n": "pt-BR",
             "nonPlanningContent": "Voc\u00ea ainda n\u00e3o selecionou nada. Por favor, clique na seta e selecione uma op\u00e7\u00e3o antes de ir para pr\u00f3xima p\u00e1gina.",
             "nonPlanningResponseContent": "Voc\u00ea ainda n\u00e3o respondeu. Por favor, deixe-nos saber se foi capaz de realizar a atividade ou n\u00e3o. ",
-            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembra-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade. N\u00e3o desista!",
+            "planningResponseNoContent": "Sabemos que pode ser dif\u00edcil come\u00e7ar, mas lembre-se que isso vai lhe ajudar a se sentir melhor. Se quiser, pode mudar sua sele\u00e7\u00e3o e tentar outra atividade. N\u00e3o desista!",
             "planningResponseYesContent": "Isso \u00e9 otimo! Continue dessa forma!",
             "postPlanningContent": "Muito bom! Tente fazer essa atividade que voc\u00ea selecionou hoje ou amanh\u00e3. Lembre-se de que voc\u00ea pode mudar sua sele\u00e7\u00e3o se quiser. Em alguns dias, vamos lhe  perguntar se conseguiu realizar essa atividade.",
             "prePlanningContent": "Vamos tentar! D\u00ea uma olhada na lista abaixo e selecione uma atividade prazerosa que voc\u00ea n\u00e3o tenha feito ultimamente, mas que voc\u00ea poderia fazer hoje ou amanh\u00e3 (clique na seta para ver todas as op\u00e7\u00f5es):",
@@ -947,7 +959,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Para volver a la pantalla principal del programa CONEMO, presiona el bot&oacute;n naranja con la casita. En las sesiones y en&nbsp;la secci&oacute;n de las &ldquo;Instrucciones&rdquo;&nbsp;encontrar&aacute;s &ldquo;la casita&rdquo; al final de la secci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>En la secci&oacute;n &ldquo;Sesiones&rdquo;, encontrar&aacute;s la casita naranja ubicada en la esquina superior derecha de la p&aacute;gina.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Presiona la casita para cerrar la sesi&oacute;n de entrenamiento y volver a la p&aacute;gina principal.</p>\r\n",
+                    "content": "<p>Cuando llegues al final de la sesiones, encontrar&aacute;s el bot&oacute;n naranja con una casita.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cada vez que presiones &quot;la casita&quot;, volver&aacute;s a la p&aacute;gina principal de CONEMO.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Int&eacute;ntalo! Presiona la casita para cerrar la sesi&oacute;n de entrenamiento y volver a la p&aacute;gina principal.</p>\r\n",
                     "position": 11,
                     "title": "Slide 7"
                 }
@@ -1019,9 +1031,15 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&iexcl;Esa es una excelente meta!</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Durante las siguientes 6 semanas es importante que recuerdes lo que quieres lograr con este programa.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro del programa CONEMO.</p>\r\n",
+                    "content": "<p>Si presionas la flecha &quot;siguiente&quot; tus respuestas ser&aacute;n guardadas.</p>\r\n\r\n<p>Si a&uacute;n no has hecho una selecci&oacute;n o quieres cambiarla, por favor regresa y haz tu selecci&oacute;n o modif&iacute;cala antes de continuar.&nbsp;</p>\r\n\r\n<p>Si est&aacute;s de acuerdo con tus respuestas, presiona la flecha &quot;siguiente&quot;.</p>\r\n",
                     "position": 9,
                     "title": "Slide 9"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p><span style=\"line-height:1.6\">Tus respuestas han sido guardadas.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><span style=\"line-height:1.6\">Durante las siguientes 6 semanas es importante que recuerdes lo que quieres lograr con este programa.</span></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Esta ser&aacute; una motivaci&oacute;n importante para realizar tus actividades dentro del programa CONEMO.</p>\r\n",
+                    "position": 10,
+                    "title": "Slide 10"
                 }
             ],
             "title": "1. \u00a1Bienvenido a CONEMO! "
@@ -1043,7 +1061,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p style=\"margin-left:3.8pt\">Cuando no nos sentimos bien, nos volvemos menos activos. Quiz&aacute;s algunas cosas que antes hac&iacute;as sin dificultad ahora requieren mucho m&aacute;s esfuerzo.</p>\r\n\r\n<p style=\"margin-left:3.8pt\">A veces son actividades cotidianas como limpiar la casa o tambi&eacute;n actividades para controlar nuestra enfermedad, como tomar la medicaci&oacute;n o ir al doctor.</p>\r\n",
+                    "content": "<p style=\"margin-left:3.8pt\">Cuando no nos sentimos bien, nos volvemos menos activos. Quiz&aacute;s algunas cosas que antes hac&iacute;as sin dificultad ahora requieren mucho m&aacute;s esfuerzo.</p>\r\n\r\n<p style=\"margin-left:3.8pt\">&nbsp;</p>\r\n\r\n<p style=\"margin-left:3.8pt\">A veces son actividades cotidianas como limpiar la casa o tambi&eacute;n actividades para controlar nuestra enfermedad, como tomar la medicaci&oacute;n o ir al doctor.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -1073,9 +1091,15 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Gracias por compartir esa informaci&oacute;n.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa te dar&aacute; algunas ideas de c&oacute;mo volver a hacer estas actividades o tareas y terminar con ese c&iacute;rculo vicioso.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "content": "<p>Si presionas la flecha &quot;siguiente&quot; tus respuestas ser&aacute;n guardadas.</p>\r\n\r\n<p>Si a&uacute;n no has hecho una selecci&oacute;n o quieres cambiarla, por favor regresa y haz tu selecci&oacute;n o modif&iacute;cala antes de continuar.</p>\r\n\r\n<p>Si est&aacute;s de acuerdo con tus respuestas, presiona la flecha &quot;siguiente&quot;.</p>\r\n",
                     "position": 6,
                     "title": "Slide 6"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>Tus respuestas han sido guardadas.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Este programa te dar&aacute; algunas ideas de c&oacute;mo volver a hacer estas actividades o tareas y terminar con ese c&iacute;rculo vicioso.</p>\r\n\r\n<p style=\"text-align:center\">&nbsp;</p>\r\n",
+                    "position": 7,
+                    "title": "Slide 7"
                 }
             ],
             "title": "2. Sentirte deca\u00eddo puede causar que dejes de hacer cosas que antes hac\u00edas"
@@ -1232,7 +1256,7 @@
         },
         {
             "_class": "Lesson",
-            "activityChoices": "Comer m\u00e1s frutas o verduras\r\nHacer una caminata corta o alg\u00fan ejercicio\r\nMedir mi presi\u00f3n arterial\r\nMedir mi az\u00facar en la sangre o glucosa\r\nUsar las escaleras en vez del ascensor\r\nComer menos az\u00facar o grasas\r\nTomar m\u00e1s agua",
+            "activityChoices": "Comer m\u00e1s frutas o verduras\r\nHacer una caminata corta o alg\u00fan ejercicio\r\nMedir tu presi\u00f3n arterial\r\nMedir tu az\u00facar en la sangre o glucosa\r\nUsar las escaleras en vez del ascensor\r\nComer menos az\u00facar o grasas\r\nTomar m\u00e1s agua",
             "dayInTreatment": 13,
             "feedbackAfterDays": 2,
             "guid": "bbb5abf3-f8c7-46c2-8bb8-a5296bf00f49",
@@ -1388,7 +1412,7 @@
         },
         {
             "_class": "Lesson",
-            "activityChoices": "Encontrarte con amigos o familiares\r\nParticipar en actividades de la comunidad\r\nSalir a comer\r\nIr a la iglesia\r\nHacer un almuerzo o una cena para amigos o familia\r\nIr a comprar algo que te guste\r\nIr al cine\r\nIr al parque\r\nHacer un trabajo voluntario\r\nSalir en la noche / bailar\r\nHacer manualidades\r\nAsistir a una charla o curso\r\nIr a la peluquer\u00eda\r\nHacer un paseo peque\u00f1o\r\nHacerte una manicure/pedicure\r\nHacer deportes (v\u00f3ley / f\u00fatbol) con amigos",
+            "activityChoices": "Encontrarte con amigos o familiares\r\nParticipar en actividades de la comunidad\r\nSalir a comer\r\nIr a la iglesia\r\nHacer un almuerzo o una cena para amigos o familia\r\nIr a comprar algo que te guste\r\nIr al cine\r\nIr al parque\r\nHacer un trabajo voluntario\r\nSalir en la noche / bailar\r\nHacer manualidades\r\nAsistir a una charla o curso\r\nIr a la peluquer\u00eda\r\nHacer un paseo peque\u00f1o\r\nHacerte una manicure/pedicure\r\nHacer deportes (v\u00f3ley/f\u00fatbol) con amigos",
             "dayInTreatment": 22,
             "feedbackAfterDays": 5,
             "guid": "13a2470e-ce38-4357-b37a-10c37d2686f4",
@@ -1490,7 +1514,7 @@
         },
         {
             "_class": "Lesson",
-            "activityChoices": "Tomar mi medicaci\u00f3n regularmente\r\nEmpezar una dieta saludable\r\nIr al gimnasio / hacer ejercicios\r\nHacer un chequeo m\u00e9dico\r\nPreparar una comida saludable\r\nIr a nadar\r\nJugar deportes como v\u00f3ley o f\u00fatbol\r\nMontar bicicleta en vez de tomar un auto o bus\r\nHacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\r\nHacer una caminata larga\r\nIr al pod\u00f3logo\r\nHacerte tratamiento de acupuntura\r\nHacer yoga o meditar",
+            "activityChoices": "Tomar tu medicaci\u00f3n regularmente\r\nEmpezar una dieta saludable\r\nIr al gimnasio / hacer ejercicios\r\nHacerte un chequeo m\u00e9dico\r\nPreparar una comida saludable\r\nIr a nadar\r\nJugar deportes como v\u00f3ley o f\u00fatbol\r\nMontar bicicleta en vez de tomar un auto o bus\r\nHacer un diario para anotar tu presi\u00f3n arterial o nivel de glucosa\r\nHacer una caminata larga\r\nIr al pod\u00f3logo\r\nHacerte tratamiento de acupuntura\r\nHacer yoga o meditar",
             "dayInTreatment": 29,
             "feedbackAfterDays": 5,
             "guid": "ee4ca5b6-8ac0-4efd-a0c9-eb912754fe8f",
@@ -1505,7 +1529,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Esperamos que hayas podido realizar la actividad placentera que planeaste hace una semana.</p>\r\n\r\n<p>Ahora queremos que pienses en otra <strong><em><u>actividad saludable</u> </em></strong>para mejorar tu salud, esta vez puede requerir un poco m&aacute;s de planificaci&oacute;n&nbsp;o tiempo que la actividad saludable que hiciste antes en este programa.</p>\r\n",
+                    "content": "<p>Esperamos que hayas podido realizar la actividad placentera que planeaste hace una semana.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Ahora queremos que pienses en otra <strong><em><u>actividad saludable</u> </em></strong>para mejorar tu salud, esta vez puede requerir un poco m&aacute;s de planificaci&oacute;n&nbsp;o tiempo que la actividad saludable que hiciste antes en este programa.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -1595,7 +1619,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>&nbsp;</p>\r\n\r\n<p>Pero OJO, cuando posponemos nuestras actividades, como las actividades saludables, placenteras y las tareas que has hecho durante las &uacute;ltimas semanas, puede resultar en que posponemos o dejamos de hacer cada vez m&aacute;s actividades y que luego nos sentimos nuevamente deca&iacute;dos o sin &aacute;nimo.</p>\r\n",
+                    "content": "<p><span style=\"line-height:1.6\">Pero OJO, cuando posponemos nuestras actividades, como las actividades saludables, placenteras y las tareas que has hecho durante las &uacute;ltimas semanas, puede resultar en que posponemos o dejamos de hacer cada vez m&aacute;s actividades y que luego nos sentimos nuevamente deca&iacute;dos o sin &aacute;nimo.</span></p>\r\n",
                     "position": 4,
                     "title": "Slide 4"
                 },
