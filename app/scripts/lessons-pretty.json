@@ -1787,7 +1787,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Esta es la &uacute;ltima sesi&oacute;n de CONEMO y nos gustar&iacute;a despedirnos:</p>\r\n\r\n<p>[VIDEO 6 - Goodbye]</p>\r\n",
+                    "content": "<p>Esta es la &uacute;ltima sesi&oacute;n de CONEMO y nos gustar&iacute;a despedirnos:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM6.mp4\" /></video></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
