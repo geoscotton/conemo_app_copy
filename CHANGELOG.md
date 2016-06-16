@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.22 - 2016-06-16
+
+* update lesson content
+* add LM6 video
+
 ## 1.3.21 - 2016-06-14
 
 * update ES videos
