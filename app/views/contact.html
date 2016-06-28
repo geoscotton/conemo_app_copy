@@ -6,6 +6,8 @@
 
 <h1>{{ 'contactHelpLabel' | translate }}</h1>
 
+<p>{{ 'contactHelpBody' | translate }}</h1>
+
 <button
   ng-disabled="contact.successAlertVisible"
   ng-repeat="contactType in contact.contactTypes | filter:translate"

@@ -23,6 +23,11 @@ i18nStrings.generalContent.push({
 	nextLabel:'Next',
 	configureUserLabel:'Configure Your User Account',
 	contactHelpLabel:'Contact Nurse / Nurse Assistant',
+  contactHelpBody: 'Only press the "help request" button if you need ' +
+                   'assistance with CONEMO, the cellphone or have a question ' +
+                   'related to the intervention. If you have a health ' +
+                   'problem, please go to your health care center or in case ' +
+                   'of an emergency call 106.',
 	instructionsLabel:'Instructions',
 	contactTypes:['Ask for Help'],
 	thankYouAlert:'Thank you, the nurse / nurse assistant has been contacted.',
@@ -53,6 +58,10 @@ i18nStrings.generalContent.push({
 	nextLabel:'Próximo',
 	configureUserLabel:'Configure sua Conta de Usuário',
 	contactHelpLabel:'Pedir ajuda',
+  contactHelpBody: 'Somente pressione o botão "Pedir Ajuda" se você ' +
+                   'precisa de assistência ou tem dúvidas sobre o CONEMO. ' +
+                   'Se você tem um problema de saúde ou uma emergência ' +
+                   'médica, ligue 192.',
 	instructionsLabel:'Instruções',
 	instructionsLesson: 'Sessão de exemplo',
 	contactTypes:['Pedir ajuda'],
@@ -93,6 +102,10 @@ i18nStrings.generalContent.push({
 	nextLabel:'Siguiente',
 	configureUserLabel:'Configurar cuenta',
 	contactHelpLabel:'Solicitar ayuda',
+  contactHelpBody: 'Solo presiona el botón "Solicitar ayuda" si necesitas ' +
+                   'ayuda o tienes dudas sobre CONEMO. Si tienes un problema ' +
+                   'de salud, por favor ve a tu centro de salud o, si es una ' +
+                   'emergencia, llama al 106.',
 	instructionsLabel:'Instrucciones',
 	instructionsLesson: 'Sesión de entrenamiento',
 	contactTypes:['Solicitar ayuda'],
