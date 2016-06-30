@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.23 - 2016-06-30
+
+* make checkbox labels clickable
+* remove optgroup tags to fix formatting issues
+* add space between activity planning yes/no btns
+* add text to the help request page
+* fetch and display study id on Instructions page
+
 ## 1.3.22 - 2016-06-16
 
 * update lesson content
