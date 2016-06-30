@@ -242,6 +242,10 @@ p, div.slide > * {
     font-size: 1.4em;
 }
 
+div.slide label {
+  font-size: 1em;
+}
+
 body.es-PE div.slide .smallify > p {
   font-size: 1em;
 }
