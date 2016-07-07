@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.24 - 2016-06-30
+
+* update videos with higher volume
+* add blank option to activity feedback
+
 ## 1.3.23 - 2016-06-30
 
 * make checkbox labels clickable
