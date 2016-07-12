@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.25 - 2016-07-11
+
+* prevent duplicate feedback questions for activities
+  (update to cache_and_sync_love library v0.2.2)
+* remove blank option from pt feedback
+
 ## 1.3.24 - 2016-06-30
 
 * update videos with higher volume
