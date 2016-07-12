@@ -141,7 +141,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 2,
+            "dayInTreatment": 3,
             "feedbackAfterDays": null,
             "guid": "e7625a9f-2b86-4d3a-9828-3a74b6bc39c1",
             "hasActivityPlanning": false,
@@ -207,7 +207,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 3,
+            "dayInTreatment": 6,
             "feedbackAfterDays": null,
             "guid": "0d934e95-e7fe-4fb9-84fd-e62ea5af5d9d",
             "hasActivityPlanning": false,
@@ -261,7 +261,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "Ouvir m\u00fasica\r\nLigar para um amigo ou membro da fam\u00edlia\r\nFazer uma caminhada curta\r\nLer um livro\r\nCozinhar\r\nPintar\r\nVestir-se bem\r\nAssistir um filme\r\nCantar\r\nConversar com vizinhos\r\nFazer croch\u00ea\r\nCuidar do jardim",
-            "dayInTreatment": 4,
+            "dayInTreatment": 8,
             "feedbackAfterDays": 2,
             "guid": "b7cec56a-6354-4626-90e6-e230c16e05b5",
             "hasActivityPlanning": true,
@@ -309,7 +309,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 5,
+            "dayInTreatment": 10,
             "feedbackAfterDays": null,
             "guid": "c3905713-9f96-483c-899e-d9a83650fa6d",
             "hasActivityPlanning": false,
@@ -357,7 +357,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "Comer uma fruta ou verdura\r\nFazer uma caminhada curta\r\nMeditar\r\nAferir a minha press\u00e3o\r\nMedir o meu a\u00e7\u00facar no sangue\r\nUsar a escada em vez do elevador\r\nComer menos a\u00e7\u00facar e gordura\r\nBeber mais \u00e1gua",
-            "dayInTreatment": 6,
+            "dayInTreatment": 13,
             "feedbackAfterDays": 2,
             "guid": "524df35a-ab2b-4c56-b8a8-748255e9e5f7",
             "hasActivityPlanning": true,
@@ -387,7 +387,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 7,
+            "dayInTreatment": 15,
             "feedbackAfterDays": null,
             "guid": "4bc85705-e0c0-47b8-a0ea-45bb8a9669b5",
             "hasActivityPlanning": false,
@@ -423,7 +423,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "Limpar a casa\r\nLavar a lou\u00e7a\r\nPagar uma conta\r\nCuidar de um membro da fam\u00edlia\r\nResolver um problema pessoal\r\nLavar roupa\r\nTrocar as roupas de cama\r\nFazer as compras\r\nLavar o cabelo\r\nFazer um favor a algu\u00e9m",
-            "dayInTreatment": 8,
+            "dayInTreatment": 17,
             "feedbackAfterDays": 3,
             "guid": "21a15760-403c-424b-8126-cb07dd27dfc9",
             "hasActivityPlanning": true,
@@ -465,7 +465,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 9,
+            "dayInTreatment": 20,
             "feedbackAfterDays": null,
             "guid": "5c897add-e38b-449c-896b-e01e7349c4e9",
             "hasActivityPlanning": false,
@@ -507,7 +507,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "Passar tempo com amigos ou a fam\u00edlia\r\nParticipar de um grupo da comunidade\r\nSair para almo\u00e7ar\r\nIr \u00e0 igreja\r\nFazer um jantar para amigos ou fam\u00edlia\r\nIr ao shopping\r\nIr ao cinema\r\nIr ao parque\r\nFazer trabalho volunt\u00e1rio\r\nIr dan\u00e7ar\r\nParticipar de um coral\r\nFazer artesanato\r\nAssistir uma palestra ou curso\r\nIr ao cabeleireiro\r\nFazer um passeio\r\nFazer uma manicure/pedicure\r\nJogar bola ou v\u00f4lei com amigos",
-            "dayInTreatment": 10,
+            "dayInTreatment": 22,
             "feedbackAfterDays": 5,
             "guid": "b979fb00-987c-4e19-a563-153cf6a582cc",
             "hasActivityPlanning": true,
@@ -537,7 +537,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 11,
+            "dayInTreatment": 24,
             "feedbackAfterDays": null,
             "guid": "6e80f83a-3c40-4d95-a641-a40946a32548",
             "hasActivityPlanning": false,
@@ -585,7 +585,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 12,
+            "dayInTreatment": 27,
             "feedbackAfterDays": null,
             "guid": "33afd2b5-bee3-482d-bf0c-a90da2490d7b",
             "hasActivityPlanning": false,
@@ -615,7 +615,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "Tomar a minha medica\u00e7\u00e3o corretamente\r\nCome\u00e7ar uma dieta saud\u00e1vel\r\nFazer uma comida saud\u00e1vel\r\nIr para academia / fazer atividade f\u00edsica\r\nFazer um check-up de sa\u00fade\r\nNadar / fazer hidrogin\u00e1stica\r\nJogar bola ou v\u00f4lei\r\nAndar de bicicleta\r\nAnotar os n\u00edveis de glicose e/ou a press\u00e3o em um di\u00e1rio\r\nFazer uma caminhada longa\r\nIr a um pod\u00f3logo\r\nFazer um tratamento de acupuntura",
-            "dayInTreatment": 13,
+            "dayInTreatment": 29,
             "feedbackAfterDays": 5,
             "guid": "e25cd7c4-45da-4137-aa3a-8dbe32d65801",
             "hasActivityPlanning": true,
@@ -645,7 +645,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 14,
+            "dayInTreatment": 31,
             "feedbackAfterDays": null,
             "guid": "62bb2ec6-294e-467c-b3e9-8a8299b8f1a8",
             "hasActivityPlanning": false,
@@ -687,7 +687,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 15,
+            "dayInTreatment": 34,
             "feedbackAfterDays": null,
             "guid": "a7fdaa0b-2b88-454c-a192-70d89cbf8b8b",
             "hasActivityPlanning": false,
@@ -741,7 +741,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 16,
+            "dayInTreatment": 36,
             "feedbackAfterDays": null,
             "guid": "9b0a220f-896b-4076-b02d-df97fc48a305",
             "hasActivityPlanning": false,
@@ -807,7 +807,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 17,
+            "dayInTreatment": 38,
             "feedbackAfterDays": null,
             "guid": "f755864c-fc35-4aaa-8d60-6fd6cd246eca",
             "hasActivityPlanning": false,
@@ -849,7 +849,7 @@
         {
             "_class": "Lesson",
             "activityChoices": "",
-            "dayInTreatment": 18,
+            "dayInTreatment": 41,
             "feedbackAfterDays": null,
             "guid": "62f30e6b-0fff-4afb-9220-9b9ab7cad265",
             "hasActivityPlanning": false,
