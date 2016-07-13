@@ -181,6 +181,10 @@ ol.well li {
   font-size: 1em;
 }
 
+.activity-planning .btn-group .btn+.btn {
+  margin-left: 40px;
+}
+
 .navigation-button {
     font-size: 18px !important;
 }
