@@ -1174,9 +1174,9 @@
             "l10n": "es-PE",
             "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
-            "planningResponseNoContent": "<p>Sabemos que puede ser dif\u00edcil empezar, \u00a1pero recuerda que esto te puede ayudar a sentirte mejor!</p>\r\n<p>Si deseas, puedes cambiar tu elecci\u00f3n e intentar con otra actividad.</p>",
+            "planningResponseNoContent": "Sabemos que puede ser dif\u00edcil empezar, \u00a1pero recuerda que esto te puede ayudar a sentirte mejor!<br><br>\r\nSi deseas, puedes cambiar tu elecci\u00f3n e intentar con otra actividad.",
             "planningResponseYesContent": "\u00a1Excelente!",
-            "postPlanningContent": "<p>\u00a1Muy bien! Intenta hacer esta actividad que has seleccionado entre hoy y ma\u00f1ana.</p>\r\n \r\n\r\n<p>Recuerda que puedes cambiar tu elecci\u00f3n si deseas.</p>\r\n \r\n\r\n<p>En un par de d\u00edas te preguntaremos c\u00f3mo te fue.</p>",
+            "postPlanningContent": "\u00a1Muy bien! Intenta hacer esta actividad que has seleccionado entre hoy y ma\u00f1ana.<br><br>\r\n \r\n\r\nRecuerda que puedes cambiar tu elecci\u00f3n si deseas.<br><br>\r\n \r\n\r\nEn un par de d\u00edas te preguntaremos c\u00f3mo te fue.",
             "prePlanningContent": "\u00a1Intentemos! Por favor revisa la siguiente lista de actividades placenteras y selecciona una que NO hayas estado haciendo \u00faltimamente pero te gustar\u00eda hacer entre HOY y MA\u00d1ANA:\r\n",
             "slides": [
                 {
@@ -1264,9 +1264,9 @@
             "l10n": "es-PE",
             "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
-            "planningResponseNoContent": "<p>\u00a1Recuerda que esta es tu oportunidad para empezar una vida m\u00e1s saludable y feliz!</p>\r\n\r\n<p>Puedes cambiar tu elecci\u00f3n si deseas. Lo importante es que intentes al menos una de las actividades de esta lista.</p>",
+            "planningResponseNoContent": "\u00a1Recuerda que esta es tu oportunidad para empezar una vida m\u00e1s saludable y feliz!<br><br>\r\n\r\nPuedes cambiar tu elecci\u00f3n si deseas. Lo importante es que intentes al menos una de las actividades de esta lista.",
             "planningResponseYesContent": "\u00a1Eso es genial!",
-            "postPlanningContent": "<p>Gracias por compartir esa informaci\u00f3n.</p>\r\n\r\n<p>En un par de d\u00edas te preguntaremos si pudiste realizar esta actividad saludable y c\u00f3mo te hizo sentir.</p>",
+            "postPlanningContent": "Gracias por compartir esa informaci\u00f3n.<br><br>\r\n\r\nEn un par de d\u00edas te preguntaremos si pudiste realizar esta actividad saludable y c\u00f3mo te hizo sentir.",
             "prePlanningContent": "Por favor, revisa la siguiente lista de actividades saludables y selecciona una que NO hayas estado haciendo \u00faltimamente pero puedas hacer HOY o MA\u00d1ANA:\r\n",
             "slides": [
                 {
@@ -1301,7 +1301,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Mira este video y observa c&oacute;mo es que ser m&aacute;s activo tambi&eacute;n ayud&oacute; a otras personas:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><em>[VIDEO 3 - Testimonial]</em></p>\r\n\r\n<p>&nbsp;</p>\r\n",
+                    "content": "<p>Mira este video y observa c&oacute;mo es que ser m&aacute;s activo tambi&eacute;n ayud&oacute; a otras personas:</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM3.mp4\" /></video></p>\r\n\r\n<p>&nbsp;</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
@@ -1330,9 +1330,9 @@
             "l10n": "es-PE",
             "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
-            "planningResponseNoContent": "<p>Recuerda que cuando hayas terminado esta tarea te sentir\u00e1s m\u00e1s satisfecho/a.</p> \r\n\r\n<p>Tambi\u00e9n puedes intentar hacer otra tarea. Lo importante es seguir intentando.</p>",
+            "planningResponseNoContent": "Recuerda que cuando hayas terminado esta tarea te sentir\u00e1s m\u00e1s satisfecho/a.<br><br>\r\n\r\nTambi\u00e9n puedes intentar hacer otra tarea. Lo importante es seguir intentando.",
             "planningResponseYesContent": "\u00a1Eso est\u00e1 muy bien! ",
-            "postPlanningContent": "<p>Gracias por compartir esa informaci\u00f3n.</p>\r\n\r\n<p>Intenta hacer la tarea seleccionada hoy o ma\u00f1ana y presta atenci\u00f3n a c\u00f3mo te sentiste despu\u00e9s.</p>",
+            "postPlanningContent": "Gracias por compartir esa informaci\u00f3n.<br><br>\r\n\r\nIntenta hacer la tarea seleccionada hoy o ma\u00f1ana y presta atenci\u00f3n a c\u00f3mo te sentiste despu\u00e9s.",
             "prePlanningContent": "Por favor revisa la siguiente lista de tareas y selecciona una que puedas hacer HOY o MA\u00d1ANA:\r\n",
             "slides": [
                 {
@@ -1420,9 +1420,9 @@
             "l10n": "es-PE",
             "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
             "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, vuelve a la p\u00e1gina anterior y selecciona una de las opciones de respuesta antes de pasar a la siguiente p\u00e1gina.",
-            "planningResponseNoContent": "<p>Recuerda lo que aprendiste en la \u00faltima sesi\u00f3n:</p> \r\n\r\n<p>Si has elegido una actividad dif\u00edcil, p\u00e1rtela en pasos peque\u00f1os y elige el m\u00e1s f\u00e1cil de ellos para empezar.</p>",
+            "planningResponseNoContent": "Recuerda lo que aprendiste en la \u00faltima sesi\u00f3n:<br><br>\r\n\r\nSi has elegido una actividad dif\u00edcil, p\u00e1rtela en pasos peque\u00f1os y elige el m\u00e1s f\u00e1cil de ellos para empezar.",
             "planningResponseYesContent": "\u00a1Muy bien!",
-            "postPlanningContent": "<p>\u00a1Excelente!</p>\r\n \r\n<p>Ahora intenta hacer esta actividad en los pr\u00f3ximos d\u00edas.</p>\r\n \r\n<p>Luego te preguntaremos c\u00f3mo te fue. </p>\r\n\r\n<p>Si realmente disfrutas la actividad que has seleccionado, intenta repetirla.</p>\r\n \r\n<p>Si no disfrutas con esta actividad, elige otra e intenta de nuevo.</p>",
+            "postPlanningContent": "\u00a1Excelente!<br><br>\r\n \r\nAhora intenta hacer esta actividad en los pr\u00f3ximos d\u00edas.<br><br>\r\n \r\nLuego te preguntaremos c\u00f3mo te fue.<br><br>\r\n\r\nSi realmente disfrutas la actividad que has seleccionado, intenta repetirla.<br><br>\r\n \r\nSi no disfrutas con esta actividad, elige otra e intenta de nuevo.",
             "prePlanningContent": "Selecciona una de las siguientes actividades que NO hayas estado haciendo \u00faltimamente pero que puedas hacer durante los pr\u00f3ximos d\u00edas:\r\n",
             "slides": [
                 {
@@ -1463,7 +1463,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Mira este video para saber m&aacute;s sobre ello:</p>\r\n\r\n<p>[VIDEO 4 - Step-by-step]</p>\r\n",
+                    "content": "<p>Mira este video para saber m&aacute;s sobre ello:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM4.mp4\" /></video></p>\r\n",
                     "position": 2,
                     "title": "Slide 2"
                 },
@@ -1522,10 +1522,10 @@
             "l10n": "es-PE",
             "nonPlanningContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
             "nonPlanningResponseContent": "A\u00fan no has hecho tu selecci\u00f3n. Por favor, presiona el rect\u00e1ngulo blanco y selecciona una de las opciones de la lista antes de pasar a la siguiente p\u00e1gina.",
-            "planningResponseNoContent": "<p>Recuerda que puedes cambiar tu elecci\u00f3n si deseas.</p>\r\n\r\n<p>\u00a1Sigue intentando!</p>",
+            "planningResponseNoContent": "Recuerda que puedes cambiar tu elecci\u00f3n si deseas.<br><br>\r\n\r\n\u00a1Sigue intentando!",
             "planningResponseYesContent": "\u00a1Felicitaciones!",
-            "postPlanningContent": "<p>\u00a1Muy bien!</p>\r\n\r\n\r\n<p>En unos d\u00edas te preguntaremos si pudiste hacer esta actividad.</p>",
-            "prePlanningContent": "<p>\u00bfQu\u00e9 actividad te gustar\u00eda intentar para mejorar tu salud?</p>\r\n \r\n<p>Mira la lista debajo y selecciona una actividad que NO hayas estado haciendo \u00faltimamente pero que puedes hacer durante los pr\u00f3ximos d\u00edas:</p>",
+            "postPlanningContent": "\u00a1Muy bien!<br><br>\r\n\r\n\r\nEn unos d\u00edas te preguntaremos si pudiste hacer esta actividad.",
+            "prePlanningContent": "\u00bfQu\u00e9 actividad te gustar\u00eda intentar para mejorar tu salud?<br><br>\r\n \r\nMira la lista debajo y selecciona una actividad que NO hayas estado haciendo \u00faltimamente pero que puedes hacer durante los pr\u00f3ximos d\u00edas:",
             "slides": [
                 {
                     "_class": "Slide",
@@ -1601,7 +1601,7 @@
             "slides": [
                 {
                     "_class": "Slide",
-                    "content": "<p>Empecemos la sesi&oacute;n de hoy d&iacute;a con este video:</p>\r\n\r\n<p>[VIDEO 5 - Relapses]</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Lo importante es tener una meta clara a d&oacute;nde quieres llegar.</p>\r\n",
+                    "content": "<p>Empecemos la sesi&oacute;n de hoy d&iacute;a con este video:</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM5.mp4\" /></video></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Lo importante es tener una meta clara a d&oacute;nde quieres llegar.</p>\r\n",
                     "position": 1,
                     "title": "Slide 1"
                 },
