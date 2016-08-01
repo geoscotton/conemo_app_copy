@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.26 - 2016-08-01
+
+* update lesson content
+* adjust markup on help page
+* incorporate new Spanish training video; fix border
+* update video style to embiggen
+
 ## 1.3.25 - 2016-07-11
 
 * prevent duplicate feedback questions for activities
