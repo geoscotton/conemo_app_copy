@@ -125,7 +125,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Se voc&ecirc; continuar, todas suas respostas ser&atilde;o salvas. Se voc&ecirc; ainda n&atilde;o selecionou uma resposta ou deseja mud&aacute;-la, por favor, volte &agrave; p&aacute;gina anterior e selecione outra(s) resposta(s). Se est&aacute; satisfeito com a sua resposta, siga em frente.</p>\r\n",
+                    "content": "<p style=\"text-align: justify;\">Se voc&ecirc; continuar, todas suas respostas ser&atilde;o salvas. Se voc&ecirc; ainda n&atilde;o selecionou uma resposta ou deseja mud&aacute;-la, por favor, volte &agrave; p&aacute;gina anterior e selecione outra(s) resposta(s). Se est&aacute; satisfeito com a sua resposta, siga em frente.</p>\r\n",
                     "position": 7,
                     "title": "Slide 7"
                 },
@@ -953,7 +953,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Algunas sesiones tambi&eacute;n incluyen videos.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para ver los videos presiona la flecha blanca. Para pausarlo, presiona el bot&oacute;n nuevamente.</p>\r\n\r\n<p>[video screen]</p>\r\n",
+                    "content": "<p>Algunas sesiones tambi&eacute;n incluyen videos.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para ver los videos presiona la flecha blanca. Para pausarlo, presiona el bot&oacute;n nuevamente.</p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM0.mp4\" /></video></p>\r\n",
                     "position": 10,
                     "title": "Slide 6"
                 },
@@ -1085,7 +1085,7 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p><label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relajarme (masajes, leer un libro, escuchar m\u00fasica, etc.)\" /> Relajarme (masajes, leer un libro, escuchar m&uacute;sica, etc.)</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Pasar tiempo con familia o amigos\" /> Pasar tiempo con familia o amigos</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer deporte o actividad f\u00edsica\" /> Hacer actividad f&iacute;sica</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Salir (al parque, a almorzar, a bailar, de compras, etc.) \" /> Salir (a almorzar, de compras, etc.)</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)\" /> Participar de actividades grupales (iglesia, voluntariado, etc.)</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Asistir a charlas o aprender algo nuevo\" /> Asistir a charlas o aprender algo nuevo</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar la casa o el jard\u00edn \" /> Cuidar la casa o el jard&iacute;n</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer manualidades, tejer o coser\" /> Hacer manualidades</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar mi salud\" /> Cuidar mi salud</label></p>\r\n",
+                    "content": "<p><label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Relajarme (masajes, leer un libro, escuchar m\u00fasica, etc.)\" /> Relajarme (masajes, leer un libro, escuchar m&uacute;sica, etc.)</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Pasar tiempo con familia o amigos\" /> Pasar tiempo con familia o amigos</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer deporte o actividad f\u00edsica\" /> Hacer actividad f&iacute;sica</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Salir (al parque, a almorzar, a bailar, de compras, etc.) \" /> Salir (a almorzar, etc.)</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Participar de actividades con otras personas (iglesia, coro, voluntariado, etc.)\" /> Participar de actividades grupales (iglesia, etc.)</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Asistir a charlas o aprender algo nuevo\" /> Asistir a charlas o aprender algo nuevo</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar la casa o el jard\u00edn \" /> Cuidar la casa o el jard&iacute;n</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Hacer manualidades, tejer o coser\" /> Hacer manualidades</label><br />\r\n<label><input name=\"neglected_activities\" type=\"checkbox\" value=\"Cuidar mi salud\" /> Cuidar mi salud</label></p>\r\n",
                     "position": 5,
                     "title": "Slide 5"
                 },
