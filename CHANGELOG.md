@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.27 - 2016-08-08
+
+* update lesson content
+* fix video cropping; increase volume
+
 ## 1.3.26 - 2016-08-01
 
 * update lesson content
