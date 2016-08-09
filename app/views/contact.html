@@ -13,6 +13,5 @@
   ng-repeat="contactType in contact.contactTypes | filter:translate"
   ng-click="contact.contactStaff(contact.contactTypes[$index])"
   class="btn-contact btn btn-info btn-wide"><p style="margin-bottom: 0;">{{ contactType }}</p></button>
-<br/><br/>
 
 <div class="alert alert-success" ng-show="contact.successAlertVisible"><p>{{ 'thankYouAlert' | translate }}</p></div>

@@ -35,6 +35,10 @@ body.no-response {
   background-color: #FF6948;
 }
 
+.alert.alert-success {
+  padding: 8px;
+}
+
 #slides {
     font-size:1em;
 }
