@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.28 - 2016-08-09
+
+* increase SP video volume
+* ensure help page text fits on small screen
+
 ## 1.3.27 - 2016-08-08
 
 * update lesson content
