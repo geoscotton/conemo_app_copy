@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.29 - 2016-08-11
+
+* update with latest ES training video
+
 ## 1.3.28 - 2016-08-09
 
 * increase SP video volume
