@@ -911,56 +911,62 @@
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>A veces CONEMO te pedir&aacute; seleccionar actividades.</p>\r\n\r\n<p>Para seleccionarlas, presiona el rect&aacute;ngulo blanco. Aparecer&aacute; una nueva ventana con las respuestas que podr&iacute;as elegir. Mueve la pantalla con tu dedo hacia arriba y abajo para ver todas las opciones. Luego selecciona la que m&aacute;s te gustar&iacute;a elegir, apret&aacute;ndola.&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"training_session_singleopt\"><option value=\"Rojo\">Rojo</option><option value=\"Verde\">Verde</option><option value=\"Azul\">Azul</option><option value=\"Amarillo\">Amarillo</option><option value=\"Marr\u00f3n\">Marr&oacute;n</option><option value=\"Morado\">Morado</option><option value=\"Otro\">Otro</option></select></p>\r\n",
+                    "content": "<p>A veces CONEMO te pedir&aacute; seleccionar actividades.</p>\r\n\r\n<p>Para seleccionarlas, presiona el rect&aacute;ngulo blanco. Aparecer&aacute; una ventana con posibles respuestas. Mueve la pantalla con tu dedo hacia arriba y abajo para ver todas las opciones. Luego selecciona la que m&aacute;s te gustar&iacute;a elegir, apret&aacute;ndola.&nbsp;Int&eacute;ntalo en la siguiente p&aacute;gina.</p>\r\n",
                     "position": 3,
                     "title": "Slide 3"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Si quieres cambiar tu respuesta, presiona de nuevo el rect&aacute;ngulo y selecciona la opci&oacute;n correcta que quieres elegir.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Intentemos! Vuelve a la p&aacute;gina anterior y cambia tu selecci&oacute;n.</p>\r\n",
+                    "content": "<p>&iquest;Cu&aacute;l es tu color favorito?</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p style=\"text-align:center\"><select name=\"training_session_singleopt\"><option value=\"Rojo\">Rojo</option><option value=\"Verde\">Verde</option><option value=\"Azul\">Azul</option><option value=\"Amarillo\">Amarillo</option><option value=\"Marr\u00f3n\">Marr&oacute;n</option><option value=\"Morado\">Morado</option><option value=\"Otro\">Otro</option></select></p>\r\n",
                     "position": 4,
                     "title": "Slide 3a"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>A veces puedes seleccionar muchas opciones en una sola pregunta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, si te preguntamos &ldquo;&iquest;qu&eacute; comidas te gustan?&rdquo;, probablemente quieras nombrar varias comidas que te gustan.&nbsp;</p>\r\n",
+                    "content": "<p>Si quieres cambiar tu respuesta, presiona de nuevo el rect&aacute;ngulo y selecciona la opci&oacute;n correcta que quieres elegir.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Intentemos! Vuelve a la p&aacute;gina anterior y cambia tu selecci&oacute;n.</p>\r\n",
                     "position": 5,
+                    "title": "Slide 3b"
+                },
+                {
+                    "_class": "Slide",
+                    "content": "<p>A veces puedes seleccionar muchas opciones en una sola pregunta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Por ejemplo, si te preguntamos &ldquo;&iquest;qu&eacute; comidas te gustan?&rdquo;, probablemente quieras nombrar varias comidas que te gustan.&nbsp;</p>\r\n",
+                    "position": 6,
                     "title": "Slide 4"
                 },
                 {
                     "_class": "Slide",
-                    "content": "<p>Para hacerlo, presiona el rect&aacute;ngulo blanco y selecciona todas las respuestas que quieres.</p>\r\n\r\n<p>Si te equivocaste al seleccionar una opci&oacute;n, vuelve a presionar la respuesta elegida y ver&aacute;s que la casilla seleccionada quedar&aacute; nuevamente en blanco.</p>\r\n\r\n<p>Pract&iacute;calo en la siguiente p&aacute;gina.</p>\r\n",
-                    "position": 6,
+                    "content": "<p>Para hacerlo, presiona la casilla o el texto de las respuestas que quieres seleccionar.</p>\r\n\r\n<p>Si te equivocaste al seleccionar una opci&oacute;n, vuelve a presionar la respuesta elegida y ver&aacute;s que la casilla seleccionada quedar&aacute; nuevamente en blanco.</p>\r\n\r\n<p>Pract&iacute;calo en la siguiente p&aacute;gina.</p>\r\n",
+                    "position": 7,
                     "title": "Slide 4a"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p><label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Lomo saltado\" /> Lomo saltado</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Papa a la huanca\u00edna\" /> Papa a la huanca&iacute;na</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Milanesa de pollo\" /> Milanesa de pollo</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Seco de res\" /> Seco de res</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Pescado\" /> Pescado</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Arroz con pollo\" /> Arroz con pollo</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Papa rellena\" /> Papa rellena</label><br />\r\n<label><input name=\"training_session_multiopt\" type=\"checkbox\" value=\"Mariscos\" /> Mariscos</label></p>\r\n",
-                    "position": 7,
+                    "position": 8,
                     "title": "Slide 4b"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>A veces CONEMO te preguntar&aacute; si pudiste hacer las actividades que planeaste.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Para responder, marca la casilla de S&Iacute; o NO. En caso que s&iacute;, te preguntaremos qu&eacute; tanto te gust&oacute; cada actividad planeada, como en el siguiente ejemplo.</p>\r\n",
-                    "position": 8,
+                    "position": 9,
                     "title": "Slide 5"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>Para evaluar tu experiencia, presiona el rect&aacute;ngulo blanco y elige la respuesta que mejor corresponde a la pregunta.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Intentemos: &iquest;Qu&eacute; tanto te gust&oacute; esta sesi&oacute;n de entrenamiento?</p>\r\n\r\n<p style=\"text-align: center;\"><select name=\"training_session_feedback\"><option value=\"1: No me gust\u00f3 para nada\">1: No me gust&oacute; para nada</option><option value=\"2: No me gust\u00f3\">2: No me gust&oacute;</option><option value=\"3: Ni me gust\u00f3 ni me desagrad\u00f3 \">3: Ni me gust&oacute; ni me desagrad&oacute;</option><option value=\"4: Me gust\u00f3 \">4: Me gust&oacute;</option><option value=\"5: Me gust\u00f3 mucho\">5: Me gust&oacute; mucho</option></select></p>\r\n",
-                    "position": 9,
+                    "position": 10,
                     "title": "Slide 5a"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>Algunas sesiones tambi&eacute;n incluyen videos.&nbsp;<span style=\"line-height:1.6\">Para ver los videos presiona la flecha blanca. Para pausarlo, presiona el bot&oacute;n nuevamente.</span></p>\r\n\r\n<p><video style=\"background-color:black;max-width:100%;\"><source type=\"video/mp4\" src=\"videos/LM0.mp4\" /></video></p>\r\n",
-                    "position": 10,
+                    "position": 11,
                     "title": "Slide 6"
                 },
                 {
                     "_class": "Slide",
                     "content": "<p>Cuando llegues al final de la sesiones, encontrar&aacute;s el bot&oacute;n naranja con una casita.</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Cada vez que presiones &quot;la casita&quot;, volver&aacute;s a la p&aacute;gina principal de CONEMO.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&iexcl;Int&eacute;ntalo! Presiona la casita para cerrar la sesi&oacute;n de entrenamiento y volver a la p&aacute;gina principal.</p>\r\n",
-                    "position": 11,
+                    "position": 12,
                     "title": "Slide 7"
                 }
             ],
