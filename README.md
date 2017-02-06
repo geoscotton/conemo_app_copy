@@ -37,6 +37,14 @@ LESSON_SERVER=https://conemo.northwestern.edu \
 node_modules/.bin/cordova plugin add https://github.com/katzer/cordova-plugin-background-mode.git#0.6.4
 ```
 
+## Adding the start on boot plugin
+
+```
+LOCALE=pt-BR API_SERVER=http://localhost:3000 \
+LESSON_SERVER=https://conemo.northwestern.edu \
+node_modules/.bin/cordova plugin add https://github.com/tsubik/cordova-plugin-start-on-boot.git#1.0.2
+```
+
 ## Running tests
 
 `npm test`
