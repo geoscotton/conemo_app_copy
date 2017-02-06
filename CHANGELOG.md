@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.31 - 2017-02-06
+
+* update Lima content
+* add boot on start plugin
+
 ## 1.3.29 - 2016-08-11
 
 * update with latest ES training video
