@@ -26,7 +26,6 @@ mkdir www
 LOCALE=es-PE API_SERVER=http://localhost:3000 \
 LESSON_SERVER=http://localhost:3000 \
 node_modules/.bin/cordova platform add android
-git checkout platforms/android/build.gradle platforms/android/src/edu/northwestern/cbits/conemo/MainActivity.java
 ```
 
 ## Adding the background mode plugin
@@ -42,7 +41,7 @@ node_modules/.bin/cordova plugin add https://github.com/katzer/cordova-plugin-ba
 ```
 LOCALE=pt-BR API_SERVER=http://localhost:3000 \
 LESSON_SERVER=https://conemo.northwestern.edu \
-node_modules/.bin/cordova plugin add https://github.com/tsubik/cordova-plugin-start-on-boot.git#1.0.2
+node_modules/.bin/cordova plugin add https://github.com/tsubik/cordova-plugin-start-on-boot.git
 ```
 
 ## Running tests
